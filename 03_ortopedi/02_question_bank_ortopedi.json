@@ -1,0 +1,3042 @@
+[
+  {
+    "id": "KIR_ORTOPEDI_001",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Cauda Equina",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket fynd är klassiskt vid cauda equina-syndrom?",
+    "alternativ": {
+      "A": "Ridbyxeanestesi",
+      "B": "Babinskis tecken",
+      "C": "Hyperreflexi",
+      "D": "Klonus"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Ridbyxeanestesi tyder på sakral rotkompression.",
+    "varför_övriga_fel": "Övriga tyder på central skada.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_002",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Cauda Equina",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken röntgenundersökning beställs akut vid misstänkt cauda equina?",
+    "alternativ": {
+      "A": "Slätröntgen",
+      "B": "CT ländrygg",
+      "C": "MR ländrygg",
+      "D": "Ultraljud"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "MR visar nervrotskompression bäst.",
+    "varför_övriga_fel": "CT/Slätröntgen har låg mjukdelsupplösning.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_003",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Cauda Equina",
+    "typ": "Handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken åtgärd görs omedelbart på akuten vid cauda equina-syndrom?",
+    "alternativ": {
+      "A": "Gipsning",
+      "B": "Sätt in KAD",
+      "C": "Ge steroider",
+      "D": "Smärtstillande injektion"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "KAD avlastar blåsan vid urinretention.",
+    "varför_övriga_fel": "Avlastning är kritiskt, steroider ej standard.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_004",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Cauda Equina",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Inom vilken tid måste cauda equina opereras?",
+    "alternativ": {
+      "A": "6 timmar",
+      "B": "24 timmar",
+      "C": "48 timmar",
+      "D": "72 timmar"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Operation ska ske inom 24h för att undvika sfinkterskada.",
+    "varför_övriga_fel": "Väntan ökar risken för permanent skada.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_005",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Cauda Equina",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket test ingår alltid vid misstanke om cauda equina?",
+    "alternativ": {
+      "A": "Lachman test",
+      "B": "Per rektum (PR)",
+      "C": "McMurrays test",
+      "D": "Tinnels test"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "PR testar sfinktertonus.",
+    "varför_övriga_fel": "Övriga testar knä/nervinklämning i arm.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_006",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Kompartmentsyndrom",
+    "typ": "Symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Viktigaste tidiga symtomet vid kompartmentsyndrom?",
+    "alternativ": {
+      "A": "Blekhet",
+      "B": "Pulsbortfall",
+      "C": "Pain out of proportion",
+      "D": "Pares"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Oproportionerlig ischemisk smärta är kardinalsymtom.",
+    "varför_övriga_fel": "Pares och pulsbortfall är sena tecken.",
+    "källa": "Kompartmentsyndrom",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_007",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Kompartmentsyndrom",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad provocerar smärtan starkast vid kompartmentsyndrom i underben?",
+    "alternativ": {
+      "A": "Aktiv flexion",
+      "B": "Passiv extension av tårna",
+      "C": "Kompression av knäleden",
+      "D": "Elevation av benet"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Passiv sträckning av ischemisk muskel gör extremt ont.",
+    "varför_övriga_fel": "Extension sträcker berört muskelkompartment maximalt.",
+    "källa": "Kompartmentsyndrom",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_008",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Kompartmentsyndrom",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur påverkas kompartment-smärta typiskt av opiater?",
+    "alternativ": {
+      "A": "Kuperas helt",
+      "B": "Maskeras dåligt",
+      "C": "Förvärras omedelbart",
+      "D": "Lindras i flera timmar"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Smärtan svarar mycket dåligt på starka analgetika.",
+    "varför_övriga_fel": "Ischemisk smärta bryter igenom morfin.",
+    "källa": "Kompartmentsyndrom",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_009",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Kompartmentsyndrom",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken är den akuta kirurgiska behandlingen för kompartmentsyndrom?",
+    "alternativ": {
+      "A": "Amputation",
+      "B": "Artrotomi",
+      "C": "Fasciotomi",
+      "D": "Märgspikning"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Fascian klyvs för att minska trycket.",
+    "varför_övriga_fel": "Artrotomi öppnar led. Amputation är sista utväg.",
+    "källa": "Kompartmentsyndrom",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_010",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Kompartmentsyndrom",
+    "typ": "Mekanismer",
+    "svårighetsgrad": "svår",
+    "fråga": "Vid vilket absolut tryck i muskeln börjar viabiliteten hotas?",
+    "alternativ": {
+      "A": "&gt; 10 mmHg",
+      "B": "&gt; 30-40 mmHg",
+      "C": "&gt; 80 mmHg",
+      "D": "&gt; 100 mmHg"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Tryck &gt;30-40 mmHg kollapsar kapillärbädden.",
+    "varför_övriga_fel": "Normalt tryck är 2-10 mmHg.",
+    "källa": "Kompartmentsyndrom",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_011",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Kompartmentsyndrom",
+    "typ": "Handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad händer om kompartmentsyndrom opereras efter 8 timmar?",
+    "alternativ": {
+      "A": "Hög risk för irreversibel nekros",
+      "B": "Muskeln läker oftast normalt",
+      "C": "Benet återfår all funktion",
+      "D": "Ingen skillnad mot tidig op"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Efter 8h uppstår irreversibla skador i muskulaturen.",
+    "varför_övriga_fel": "Fördröjning leder till nekros.",
+    "källa": "Kompartmentsyndrom",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_012",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Kompartmentsyndrom",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken kroppsdel drabbas oftast av kompartmentsyndrom?",
+    "alternativ": {
+      "A": "Lår",
+      "B": "Överarm",
+      "C": "Underben",
+      "D": "Buk"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Underbenet har 4 strama kompartments och drabbas oftast.",
+    "varför_övriga_fel": "Lår/överarm har mer eftergivliga fascior.",
+    "källa": "Kompartmentsyndrom",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_013",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Nekrotiserande fasciit",
+    "typ": "Mekanismer",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vanligaste orsakande bakterien vid nekrotiserande fasciit?",
+    "alternativ": {
+      "A": "Staphylococcus aureus",
+      "B": "Betahemolytiska Streptokocker Grupp A",
+      "C": "E. coli",
+      "D": "Pneumokocker"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "GAS är den dominerande orsaken.",
+    "varför_övriga_fel": "S. aureus dominerar vid septisk artrit.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_014",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Nekrotiserande fasciit",
+    "typ": "Symtom",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket är ett typiskt tidigt kliniskt tecken vid nekrotiserande fasciit?",
+    "alternativ": {
+      "A": "Tydlig pussekretion",
+      "B": "Smärta som är oproportionerlig mot lokala fynd",
+      "C": "Lokaliserad muskelkramp",
+      "D": "Smärtfri rodnad"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Smärtan är massiv trots ofta diskreta hudfynd initialt.",
+    "varför_övriga_fel": "Pus syns ej tidigt. Det gör extremt ont.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_015",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Nekrotiserande fasciit",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är den mest akuta behandlingen vid nekrotiserande fasciit?",
+    "alternativ": {
+      "A": "Akut MR",
+      "B": "Enbart bredspektrumantibiotika",
+      "C": "Akut kirurgisk revision",
+      "D": "Högläge och gips"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Livräddande med akut borttagande av nekrotisk vävnad.",
+    "varför_övriga_fel": "MR fördröjer, enbart AB räcker ej mot nekros.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_016",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Septisk artrit",
+    "typ": "Symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "I vilken led är septisk artrit vanligast?",
+    "alternativ": {
+      "A": "Höft",
+      "B": "Axel",
+      "C": "Fotled",
+      "D": "Knäled"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Knäleden drabbas oftast av septisk artrit.",
+    "varför_övriga_fel": "Kan drabba andra, men knä är absolut vanligast.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_017",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Septisk artrit",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad måste göras innan antibiotika sätts in vid septisk artrit?",
+    "alternativ": {
+      "A": "Röntgen",
+      "B": "MR",
+      "C": "Steril ledpunktion",
+      "D": "Artrotomi"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Ledpunktion säkerställer odling före AB slår ut bakterierna.",
+    "varför_övriga_fel": "Antibiotika förstör odlingschansen.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_018",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Septisk artrit",
+    "typ": "Differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken är en vanlig differentialdiagnos som kan imitera septisk artrit?",
+    "alternativ": {
+      "A": "Knäartros",
+      "B": "Giktartrit",
+      "C": "Meniskskada",
+      "D": "Hopparknä"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Gikt ger liknande bild med röd, varm, svullen led och feber.",
+    "varför_övriga_fel": "Övriga ger sällan akut rodnad/feber.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_019",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Septisk artrit",
+    "typ": "Handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "I vilket fall bör en primärvårdsläkare ej puntera ett misstänkt septiskt knä?",
+    "alternativ": {
+      "A": "Vid samtidig feber",
+      "B": "Om patienten har en knäprotes",
+      "C": "Om patienten har gikt",
+      "D": "Vid högt CRP"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Protesled ska punktaras av ortoped pga extrem infektionsrisk.",
+    "varför_övriga_fel": "Andra faktorer är indikation för punktion.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_020",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Septisk artrit",
+    "typ": "Diagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket provfynd i ledvätska talar för septisk artrit?",
+    "alternativ": {
+      "A": "Förhöjt glukosvärde",
+      "B": "Sänkt glukoskvot jämfört med plasma",
+      "C": "Lågt LPK",
+      "D": "Avsaknad av laktat"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Bakterier konsumerar glukos i leden.",
+    "varför_övriga_fel": "Högt LPK och lågt glukos är typiskt.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_021",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Septisk artrit",
+    "typ": "Behandling",
+    "svårighetsgrad": "lätt",
+    "fråga": "Kirurgisk standardbehandling vid septisk knäartrit?",
+    "alternativ": {
+      "A": "Artroskopisk spolning minst x2",
+      "B": "Knäprotes",
+      "C": "Meniskresektion",
+      "D": "Lokal steroider"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Leden måste spolas ren mekaniskt.",
+    "varför_övriga_fel": "Protes/Steroider kontraindicerat vid infektion.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_022",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Septisk artrit",
+    "typ": "Mekanismer",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vanligaste agens vid septisk artrit?",
+    "alternativ": {
+      "A": "Pneumokocker",
+      "B": "Staphylococcus aureus",
+      "C": "Borrelia",
+      "D": "GAS"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "S. aureus är den dominerande patogenen.",
+    "varför_övriga_fel": "GAS orsakar oftare nekr. fasciit.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_023",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Kompartmentsyndrom",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "När på dygnet uppkommer ofta symtomen vid missat kompartmentsyndrom?",
+    "alternativ": {
+      "A": "Morgonen efter operation pga utebliven morfineffekt",
+      "B": "Kan uppstå när som helst, oavsett morfindos",
+      "C": "Bara vid belastning",
+      "D": "Alltid omedelbart efter trauma"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Viktigt att utvärdera smärta trots hög dos morfin under natten.",
+    "varför_övriga_fel": "Det maskeras dåligt av morfin och uppstår under natten post-op.",
+    "källa": "Kompartmentsyndrom",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_ORTOPEDI_024",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Cauda Equina",
+    "typ": "Mekanismer",
+    "svårighetsgrad": "medel",
+    "fråga": "Vanligaste orsaken till Cauda Equina hos en ung patient?",
+    "alternativ": {
+      "A": "Centralt stort diskbråck",
+      "B": "Kotfraktur",
+      "C": "Meningiom",
+      "D": "Spinal stenos"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Massivt centralt diskbråck orsakar ofta akut kompression.",
+    "varför_övriga_fel": "Stenos drabbar ffa äldre.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_025",
+    "huvudområde": "Akuta tillstånd",
+    "subtopic": "Nekrotiserande fasciit",
+    "typ": "Behandling",
+    "svårighetsgrad": "svår",
+    "fråga": "Vilken antibiotika kompletterar Bensyl-PC vid Nekrotiserande Fasciit?",
+    "alternativ": {
+      "A": "Ciprofloxacin",
+      "B": "Klindamycin",
+      "C": "Erytromycin",
+      "D": "Vancomycin"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Klindamycin minskar toxinproduktionen från GAS.",
+    "varför_övriga_fel": "Cipro har ej den toxinspecifika effekten.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_026",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "ATLS",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad fokuserar 'A' på inom ATLS utöver fri luftväg?",
+    "alternativ": {
+      "A": "Artärblödning",
+      "B": "Antibiotika",
+      "C": "Manuell stabilisering av halsrygg",
+      "D": "Analgetika"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Halsryggen skyddas alltid primärt.",
+    "varför_övriga_fel": "A står för Airway + Cervical spine control.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_027",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "ATLS",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad innebär 'C' primärt för en ortoped under ATLS?",
+    "alternativ": {
+      "A": "Centrala nervsystemet",
+      "B": "Stora blödningar i bäcken och rörben",
+      "C": "Cervikalrygg",
+      "D": "Cyanos"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Cirkulation handlar om att stoppa massiva blödningar.",
+    "varför_övriga_fel": "Cervikalrygg är A.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_028",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "Bäckenfraktur",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken åtgärd är livräddande prehospitalt vid en \"open book\" bäckenfraktur?",
+    "alternativ": {
+      "A": "Tourniquet",
+      "B": "Bäckengördel över trochantrarna",
+      "C": "Högläge av ben",
+      "D": "Gips"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Gördel minskar bäckenvolymen och tamponaderar blödningen.",
+    "varför_övriga_fel": "Tourniquet fungerar inte på bäcken.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_029",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "Femurfraktur",
+    "typ": "Mekanismer",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur mycket blod kan gömmas i låret vid en sluten femurfraktur?",
+    "alternativ": {
+      "A": "0.5 L",
+      "B": "1 L",
+      "C": "Upp till 2 L",
+      "D": "Över 4 L"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Låret rymmer ca 2 liter blod vid fraktur.",
+    "varför_övriga_fel": "4 liter är mer än extremiteten kan hålla utan ruptur.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_030",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "Femurfraktur",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är den akuta behandlingen av felställd femurfraktur på olycksplatsen?",
+    "alternativ": {
+      "A": "Märgspikning",
+      "B": "Grovreponering och sträck",
+      "C": "Enbart smärtlindring",
+      "D": "Tourniquet"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Grovreposition och sträck minskar blödning och smärta.",
+    "varför_övriga_fel": "Kirurgi görs ej prehospitalt.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_031",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "ATLS",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur undersöks ryggen säkert i moment E enligt ATLS?",
+    "alternativ": {
+      "A": "Stockvändning (Logroll)",
+      "B": "Patienten får sätta sig",
+      "C": "Framåtböjning",
+      "D": "Genomlysning ryggläge"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Logroll håller ryggraden i linje under vändning.",
+    "varför_övriga_fel": "Sittande kan förvärra ryggmärgsskada.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_032",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "ATLS",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka komponenter ingår i ett komplett distalstatus?",
+    "alternativ": {
+      "A": "Färg, Värme, Svullnad",
+      "B": "Motorik, Sensorik, Cirkulation",
+      "C": "Smärta, Reflexer, Kraft",
+      "D": "Puls, Laktat, Rörelse"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Sensorik, motorik och cirkulation (puls/färg) testas.",
+    "varför_övriga_fel": "Klassisk trias för neurovaskulär kontroll.",
+    "källa": "Ortopediskt Trauma",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_033",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "Kärlskada",
+    "typ": "Handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad görs vid avsaknad av distalpuls efter reponering av knäluxation?",
+    "alternativ": {
+      "A": "Avvakta 1 timme",
+      "B": "Akut DT-angio och kontakt kärlkirurg",
+      "C": "Nytt reponeringsförsök",
+      "D": "Gipsa och lägg i högläge"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Risk för a. poplitea-skada kräver akut utredning.",
+    "varför_övriga_fel": "Ischemi leder snabbt till amputation vid tvekan.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_034",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "ATLS",
+    "typ": "Handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är indikation för temporär extern fixation (ex-fix)?",
+    "alternativ": {
+      "A": "Odislocerad radiusfraktur",
+      "B": "Öppen fraktur med stor mjukdelsskada hos instabil patient",
+      "C": "Clavikel-fraktur",
+      "D": "Sluten fotledsfraktur"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ex-fix ger snabb stabilitet vid \"Damage Control\".",
+    "varför_övriga_fel": "Ej standard för okomplicerade slutna brott.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_035",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "Bäckenfraktur",
+    "typ": "Mekanismer",
+    "svårighetsgrad": "medel",
+    "fråga": "Varifrån blöder det primärt vid en instabil bäckenfraktur?",
+    "alternativ": {
+      "A": "Aorta",
+      "B": "Presakrala venösa plexa",
+      "C": "A. femoralis",
+      "D": "A. iliaca externa"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Venösa plexa i lilla bäckenet orsakar massiv blödning.",
+    "varför_övriga_fel": "Det är i regel venös blödning i bäckenet.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_036",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "ATLS",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "När används Tourniquet?",
+    "alternativ": {
+      "A": "Vid all extremitetssmärta",
+      "B": "Vid pågående massiv arteriell blödning prehospitalt",
+      "C": "Vid venösa bensår",
+      "D": "Vid kompartmentsyndrom"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Livräddande för att stoppa arteriell blödning kortvarigt.",
+    "varför_övriga_fel": "Ger ischemi, används bara vid akut livsfara.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_037",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "Öppna frakturer",
+    "typ": "Klassificering",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket klassifikationssystem används för öppna frakturer?",
+    "alternativ": {
+      "A": "Garden",
+      "B": "Weber",
+      "C": "Gustilo-Anderson",
+      "D": "Frankel"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Gustilo-Anderson bedömer mjukdelsskadan vid öppna brott.",
+    "varför_övriga_fel": "Garden=Höft, Weber=Fotled.",
+    "källa": "Ortopediskt Trauma",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_038",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "Öppna frakturer",
+    "typ": "Handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad utmärker en Gustilo-Anderson Typ 3C skada?",
+    "alternativ": {
+      "A": "Sårskada &lt; 1 cm",
+      "B": "Öppen fraktur med kärlskada som kräver rekonstruktion",
+      "C": "Enbart hudavskrapning",
+      "D": "Sluten fraktur"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "C står för Cirkulation (kärlskada).",
+    "varför_övriga_fel": "Typ 1 är &lt;1 cm.",
+    "källa": "Ortopedisk frakturlära och trauma",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_039",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "Handläggning",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur handläggs misstänkt fraktur med felställning och hudhot primärt?",
+    "alternativ": {
+      "A": "Grovreponera direkt för att avlasta huden",
+      "B": "Vänta tills röntgen är klar",
+      "C": "Sätt en ortos",
+      "D": "Amputera"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Grovreponering skyddar huden från att perforeras inifrån.",
+    "varför_övriga_fel": "Att vänta på rtg leder till hudnekros.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_040",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "Skademekanism",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad menas med högenergivåld?",
+    "alternativ": {
+      "A": "Fall från stående",
+      "B": "Vridvåld i sängen",
+      "C": "Trafikolycka eller fall från hög höjd",
+      "D": "Spontan fraktur vid promenad"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Innefattar mycket rörelseenergi, risk för multitrauma.",
+    "varför_övriga_fel": "De andra är lågenergitrauman.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_041",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "ATLS",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad indikerar avsaknad av sfinktertonus vid logroll på trauma-akuten?",
+    "alternativ": {
+      "A": "Bäckenfraktur",
+      "B": "Ryggmärgsskada",
+      "C": "Femurfraktur",
+      "D": "Ileus"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Sakral nervpåverkan tyder på spinal skada.",
+    "varför_övriga_fel": "Muskeltonus i sfinktern styrs spinalt.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_042",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "Långa rörben",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Varför lägger man sträck vid femurfraktur?",
+    "alternativ": {
+      "A": "Minska smärta och muskelspasm samt minska blödning",
+      "B": "För att bota infektion",
+      "C": "För att undvika gips",
+      "D": "För att testa reflexer"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Sträck drar isär benen, minskar blödning och spasm.",
+    "varför_övriga_fel": "Det är en temporär, inte definitiv, åtgärd.",
+    "källa": "Ortopediskt Trauma",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_043",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "ATLS",
+    "typ": "Handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "När görs \"Secondary Survey\" i ATLS?",
+    "alternativ": {
+      "A": "Direkt på olycksplatsen",
+      "B": "Innan halsryggen säkras",
+      "C": "När patienten är hemodynamiskt stabiliserad",
+      "D": "Efter operationen"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Noggrann helkroppsus görs först när ABC är stabilt.",
+    "varför_övriga_fel": "Livshotande behandlas först (Primary survey).",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_044",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "ATLS",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken madrass används för stabilisering av traumapatient på väg in?",
+    "alternativ": {
+      "A": "Vattensäng",
+      "B": "Traumatransfer/Spineboard",
+      "C": "Luftmadrass",
+      "D": "Mjuk tempur"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Hård transfer för att förhindra ryggrörelser.",
+    "varför_övriga_fel": "Mjuka madrasser kan ge ryggradsförskjutning.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_045",
+    "huvudområde": "Ortopediskt trauma",
+    "subtopic": "Mjukdelar",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad görs med öppna fraktursår på akuten innan op?",
+    "alternativ": {
+      "A": "Spolas ur och läggs om med fuktiga kompresser",
+      "B": "Sys igen direkt",
+      "C": "Bränns med diatermi",
+      "D": "Lämnas helt blottade"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Minskar kontamination och bevarar vävnad.",
+    "varför_övriga_fel": "Ska op-revideras innan sutur.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_046",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Radiusfraktur",
+    "typ": "Bildtolkning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad kallas felställningen vid dorsalbockad distal radiusfraktur?",
+    "alternativ": {
+      "A": "Svanhalsdeformitet",
+      "B": "Bajonettfelställning (Gaffeldeformitet)",
+      "C": "Knapphålsdeformitet",
+      "D": "Drop-hand"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ser ut som en gaffel från sidan.",
+    "varför_övriga_fel": "Övriga är fingersen/nerv-skador.",
+    "källa": "Ortopediskt Trauma",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_047",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Radiusfraktur",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad ges som smärtlindring vid reponering av radiusfraktur på akuten?",
+    "alternativ": {
+      "A": "Sövning",
+      "B": "Lokalbedövning i frakturspalten (ex Carbocain)",
+      "C": "Enbart Paracetamol",
+      "D": "Ingen bedövning behövs"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Lokalbedövning i hematomet ger god effekt.",
+    "varför_övriga_fel": "Sövning är överdrivet, paracetamol otillräckligt.",
+    "källa": "Ortopediskt Trauma",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_048",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Radiusfraktur",
+    "typ": "Bildtolkning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken vinkel mäts för att bedöma om radiusfrakturen är dorsalbockad?",
+    "alternativ": {
+      "A": "Volar tilt",
+      "B": "Radial inklination",
+      "C": "Ulnar varians",
+      "D": "Cobb-vinkel"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Normalt finns volar bockning, vid fraktur kan den bli dorsal.",
+    "varför_övriga_fel": "Cobb=skolios. De andra bedömer längd/sidolutning.",
+    "källa": "Radiologi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_049",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Hand",
+    "typ": "Diagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken handfraktur har stor risk för nekros och smärta i fossa tabatiere?",
+    "alternativ": {
+      "A": "Metakarpal 5",
+      "B": "Scaphoideum",
+      "C": "Radius",
+      "D": "Pisiforme"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Scaphoideum har distal blodförsörjning med risk för nekros.",
+    "varför_övriga_fel": "Fossa tabatiere är palpationspunkt för Scaphoideum.",
+    "källa": "Radiologi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_050",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Terminologi",
+    "typ": "Förståelse",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad betyder 'komminut' fraktur?",
+    "alternativ": {
+      "A": "Tvärgående",
+      "B": "Flerfragmentsfraktur (splittrad)",
+      "C": "Ledengagerande",
+      "D": "Benet är intryckt"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Komminut = splittrad i flera delar.",
+    "varför_övriga_fel": "Intraartikulär = i led.",
+    "källa": "Ortopediskt Trauma",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_051",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Terminologi",
+    "typ": "Förståelse",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad innebär att en fraktur är dislocerad?",
+    "alternativ": {
+      "A": "Ligger i korrekt anatomiskt läge",
+      "B": "Benet är infekterat",
+      "C": "Den är felställd",
+      "D": "Går in i en led"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Dislocerad = ej på sin anatomiska plats.",
+    "varför_övriga_fel": "Odislocerad = rätt läge.",
+    "källa": "Ortopediskt Trauma",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_052",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Höftfraktur",
+    "typ": "Klassificering",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket klassifikationssystem används för cervikala höftfrakturer?",
+    "alternativ": {
+      "A": "Weber",
+      "B": "Garden",
+      "C": "Gustilo",
+      "D": "Salter-Harris"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Garden I-IV används för cervikala femurfrakturer.",
+    "varför_övriga_fel": "Weber = fotled.",
+    "källa": "Ortopediskt Trauma",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_053",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Höftfraktur",
+    "typ": "Behandling",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur behandlas vanligen en äldre patient med Garden III eller IV?",
+    "alternativ": {
+      "A": "Märgspik",
+      "B": "Halv- eller helprotes",
+      "C": "Enbart gips",
+      "D": "Skruvar (osteosyntes)"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Dislocerade frakturer (III-IV) ger risk för caputnekros, behandlas med protes.",
+    "varför_övriga_fel": "Osteosyntes används vid Garden I-II.",
+    "källa": "Ortopediskt Trauma",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_054",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Höftfraktur",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur ter sig benet typiskt vid en dislocerad höftfraktur?",
+    "alternativ": {
+      "A": "Förkortat och inåtroterat",
+      "B": "Förlängt och utåtroterat",
+      "C": "Förkortat och utåtroterat",
+      "D": "Ingen felställning syns"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Klassiskt fynd vid collum/pertrokantär fraktur.",
+    "varför_övriga_fel": "Inåtroterat ses sällan, muskler drar utåt.",
+    "källa": "Ortopediskt Trauma",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_055",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Höftfraktur",
+    "typ": "Patofysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Varför sätter man protes vid cervikal fraktur men ej vid pertrokantär?",
+    "alternativ": {
+      "A": "Pertrokantär läker inte alls",
+      "B": "Cervikala skadar blodförsörjningen till caput femoris",
+      "C": "Protes fäster ej i trochantern",
+      "D": "Cervikala frakturer blöder mer"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Cirkulationen till caput bryts vid cervikal dislokation.",
+    "varför_övriga_fel": "Pertrokantära läker bra med märgspik/glidskruv.",
+    "källa": "Ortopediskt Trauma",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_056",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Axelfraktur",
+    "typ": "Handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur behandlas majoriteten (ca 80%) av proximala humerusfrakturer?",
+    "alternativ": {
+      "A": "Märgspik akut",
+      "B": "Icke-kirurgiskt med slynga",
+      "C": "Halvprotes axel",
+      "D": "Ex-fix"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Oftast odislocerade osteoporosfrakturer som läker i slynga.",
+    "varför_övriga_fel": "Op (platta/protes) endast vid kraftig dislokation.",
+    "källa": "Radiologi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_057",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Fotledsfraktur",
+    "typ": "Klassificering",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken anatomisk struktur utgår Weber-klassifikationen ifrån?",
+    "alternativ": {
+      "A": "Mediala malleolen",
+      "B": "Syndesmosen",
+      "C": "Hälsenan",
+      "D": "Calcaneus"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Weber A, B, C bedömer fibulafrakturen i relation till syndesmosen.",
+    "varför_övriga_fel": "Syndesmosen avgör stabilitet.",
+    "källa": "Ortopediskt Trauma",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_058",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Fotledsfraktur",
+    "typ": "Diagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad innebär en Weber C skada?",
+    "alternativ": {
+      "A": "Fraktur under syndesmosen",
+      "B": "Fraktur i syndesmoshöjd",
+      "C": "Fraktur ovan syndesmosen, alltid instabil",
+      "D": "Enbart skada på mediala malleolen"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Weber C indikerar syndesmosskada och opereras.",
+    "varför_övriga_fel": "A = under, B = i höjd.",
+    "källa": "Ortopediskt Trauma",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_059",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Fotledsfraktur",
+    "typ": "Diagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad används Ottawa-kriterierna till?",
+    "alternativ": {
+      "A": "Avgöra om axeln är luxerad",
+      "B": "Besluta om slätröntgen behövs vid fotledstrauma",
+      "C": "Klassificera ryggmärgsskador",
+      "D": "Välja antibiotika"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Kriterier för röntgenindikation vid stukning/frakturmisstanke.",
+    "varför_övriga_fel": "Gäller enbart fot/fotled.",
+    "källa": "Ortopediskt Trauma",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_060",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Fotledsfraktur",
+    "typ": "Behandling",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur behandlas oftast en odislocerad unimalleolär fotledsfraktur typ Weber A?",
+    "alternativ": {
+      "A": "Extern fixation",
+      "B": "Operation med platta och skruv",
+      "C": "Gips/ortos i 4-6 veckor",
+      "D": "Amputation"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Stabila frakturer läker bra konservativt.",
+    "varför_övriga_fel": "Kirurgi onödigt vid stabil Weber A.",
+    "källa": "Ortopediskt Trauma",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_061",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Radiologi",
+    "typ": "Bildtolkning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur många projektioner krävs minimalt för att bedöma en fraktur?",
+    "alternativ": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Minst frontal och sida krävs för att se felställning.",
+    "varför_övriga_fel": "En bild visar inte 3D-läget.",
+    "källa": "Radiologi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_062",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Radiologi",
+    "typ": "Terminologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad betyder att en fraktur är intraartikulär?",
+    "alternativ": {
+      "A": "Frakturen går in i en led",
+      "B": "Benet är krossat",
+      "C": "En sena har slitits loss",
+      "D": "Barnfraktur"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Artikulär = led.",
+    "varför_övriga_fel": "Engagemang av ledbrosk.",
+    "källa": "Radiologi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_063",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Barnfraktur",
+    "typ": "Terminologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är en Greenstick-fraktur?",
+    "alternativ": {
+      "A": "En falsk led",
+      "B": "Intraartikulär fotledsfraktur",
+      "C": "Fraktur hos barn där cortex är bruten på ena sidan men böjd på andra",
+      "D": "Kotkompression"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Typisk barnfraktur pga mjukare ben.",
+    "varför_övriga_fel": "Benet bryts som en färsk kvist.",
+    "källa": "Ortopedisk frakturlära och trauma",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_ORTOPEDI_064",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Metatarsale",
+    "typ": "Diagnostik",
+    "svårighetsgrad": "svår",
+    "fråga": "Vilken sena kan rycka loss en bit ben vid Jones fraktur (MT 5-bas)?",
+    "alternativ": {
+      "A": "Tibialis anterior",
+      "B": "Peroneus brevis",
+      "C": "Achilles",
+      "D": "Plantarfascian"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "M. peroneus brevis fäster på basen av MT 5.",
+    "varför_övriga_fel": "De andra fäster på andra platser.",
+    "källa": "Fotortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_065",
+    "huvudområde": "Frakturlära",
+    "subtopic": "Fotledsfraktur",
+    "typ": "Farmakologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad rekommenderas generellt till patienter i fotledsgips för att minska komplikation?",
+    "alternativ": {
+      "A": "Kortison",
+      "B": "Fragmin (trombosprofylax)",
+      "C": "Ciprofloxacin",
+      "D": "Kalciumtillskott"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Immobilisering i gips ökar risk för DVT, Fragmin ges.",
+    "varför_övriga_fel": "Trombosprofylax är standard.",
+    "källa": "Radiologi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_066",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Diskbråck",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Ett S1-diskbråck ger bortfall av vilken reflex?",
+    "alternativ": {
+      "A": "Bicepsreflexen",
+      "B": "Patellarreflexen",
+      "C": "Akillesreflexen",
+      "D": "Tricepsreflexen"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "S1 innerverar vadmusklerna (akillessenan).",
+    "varför_övriga_fel": "Patella är L4. Arm är cervikalt.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_067",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Diskbråck",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken motorisk funktion testas för nervrot L5?",
+    "alternativ": {
+      "A": "Stå på tå",
+      "B": "Stå/gå på häl",
+      "C": "Höftextension",
+      "D": "Krama fingrar"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "L5 styr dorsalflexion i foten.",
+    "varför_övriga_fel": "Tå-gång styrs av S1.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_068",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Diskbråck",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur utförs Straight Leg Raise (Lasegue)?",
+    "alternativ": {
+      "A": "Passivt lyft av rakt ben i ryggläge",
+      "B": "Rotation av nacken",
+      "C": "Extension av knä i magläge",
+      "D": "Böja ryggen framåt stående"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Sträcker nervrötterna L4-S1.",
+    "varför_övriga_fel": "Smärta 30-70 grader tyder på inklämning.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_069",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Diskbråck",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad indikerar \"omvänd Lasegue\" (lyft av ben i magläge)?",
+    "alternativ": {
+      "A": "Skada på halsrygg",
+      "B": "Påverkan på höga lumbala rötter (ex L3-L4)",
+      "C": "Cervikal myelopati",
+      "D": "Brustet korsband"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Magläge och knäflexion/lyft sträcker n. femoralis.",
+    "varför_övriga_fel": "S1 testas i ryggläge.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_070",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Terminologi",
+    "typ": "Förståelse",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad betyder 'Lumbago'?",
+    "alternativ": {
+      "A": "Utstrålande nervsmärta",
+      "B": "Ont i nacken",
+      "C": "Ont i ländryggen utan utstrålning",
+      "D": "Förträngning i spinalkanalen"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Lumbago är ryggskott (muskulär smärta).",
+    "varför_övriga_fel": "Utstrålning kallas ischias/rizopati.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_071",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Lumbago",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Behandling av okomplicerad lumbago i primärvård?",
+    "alternativ": {
+      "A": "Märgspikning",
+      "B": "Fysioterapi, tidig rörelse, NSAID/Paracetamol",
+      "C": "Sängläge i 3 veckor",
+      "D": "Omedelbar MR"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Rörelse och smärtlindring läker ryggskott bäst.",
+    "varför_övriga_fel": "Sängläge förvärrar. MR är onödigt utan röda flaggor.",
+    "källa": "TBL",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_072",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Cervikalt diskbråck",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket test kan provocera fram symtom vid misstänkt cervikalt diskbråck?",
+    "alternativ": {
+      "A": "Spurlings test",
+      "B": "Lachmans test",
+      "C": "Matles test",
+      "D": "Hawkins test"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Spurlings komprimerar nervrot i nacken.",
+    "varför_övriga_fel": "Hawkins = axel, Lachman = knä.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_073",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Spinal stenos",
+    "typ": "Symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är det mest typiska symtomet vid spinal stenos i ländryggen?",
+    "alternativ": {
+      "A": "Ont i nacken vid rörelse",
+      "B": "Neurogen claudicatio (ont i benen vid gång, lindras i sittande)",
+      "C": "Morgonstelhet i över en timme",
+      "D": "Armsvaghet"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Det trånga utrymmet ger bencaudicatio som avlastas i flexion.",
+    "varför_övriga_fel": "Morgonstelhet tyder på reumatisk sjd.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_074",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Spinal stenos",
+    "typ": "Patofysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilka tre anatomiska strukturer förtjockas/buktar ofta och orsakar spinal stenos?",
+    "alternativ": {
+      "A": "Lig flavum, facettleder, disk",
+      "B": "Aorta, psoasmuskel, korsband",
+      "C": "Dura mater, lig nuchae, sternum",
+      "D": "Märg, cauda, filum terminale"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Degeneration av flavum, led och disk komprimerar nerverna.",
+    "varför_övriga_fel": "Det är ben och ligament som tar upp plats.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_075",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Spinal stenos",
+    "typ": "Handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur fungerar cykling som motion för patient med lumbal spinal stenos?",
+    "alternativ": {
+      "A": "Omöjligt pga svår smärta",
+      "B": "Går utmärkt då ryggen är i flexion (vilket ökar utrymmet)",
+      "C": "Förvärrar alltid tillståndet permanent",
+      "D": "Kräver akut operation"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Flexion av ryggen öppnar spinalkanalen och lindrar.",
+    "varför_övriga_fel": "Extension smärtar, flexion lindrar.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_076",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Spinal stenos",
+    "typ": "Behandling",
+    "svårighetsgrad": "medel",
+    "fråga": "Kirurgisk behandling vid svår spinal stenos?",
+    "alternativ": {
+      "A": "Bäckengördel",
+      "B": "Dekompression (ta bort lig flavum/facettledsben)",
+      "C": "Injektion av botox",
+      "D": "Amputation"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Kirurgin skapar mer plats för ryggmärgen.",
+    "varför_övriga_fel": "Man tar bort det trängande materialet.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_077",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Röda flaggor",
+    "typ": "Förståelse",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket av följande räknas som 'röd flagga' vid ryggsmärta?",
+    "alternativ": {
+      "A": "Smärta efter tunga lyft",
+      "B": "Nattlig smärta, cauda equina-symtom eller hög feber",
+      "C": "Värk som går över på Alvedon",
+      "D": "Stelhet första 10 min på morgonen"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Dessa tecken kan innebära tumör, infektion eller nervskada.",
+    "varför_övriga_fel": "Övriga är ofarliga lumbago-tecken.",
+    "källa": "TBL",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_078",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Ryggmärgsskada",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur skiljer sig reflexerna vid en övre motorneuronskada (myelopati) mot en perifer rot-skada?",
+    "alternativ": {
+      "A": "Myelopati ger bortfallna reflexer",
+      "B": "Myelopati ger stegrade, hyperaktiva reflexer",
+      "C": "Ingen skillnad",
+      "D": "Myelopati påverkar bara sensorik"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Central skada = stegrade reflexer, klonus, Babinski.",
+    "varför_övriga_fel": "Perifer skada ger slappa pareser/bortfall.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_079",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Halsryggstrauma",
+    "typ": "Beslutsstöd",
+    "svårighetsgrad": "svår",
+    "fråga": "Vad är 'Canadian C-spine rules'?",
+    "alternativ": {
+      "A": "Klassifikation av frakturläkning",
+      "B": "Regler för när halsryggen ska röntgas/skyddas hos traumapatient",
+      "C": "Skala för muskelstyrka",
+      "D": "Operationsmetod för skolios"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Algoritm för att kliniskt fria halsrygg.",
+    "varför_övriga_fel": "Styr rörelsebegränsning/rtg.",
+    "källa": "Thorakolumbala skador",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_080",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Ryggmärgsskada",
+    "typ": "Terminologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är Frankel-klassifikation?",
+    "alternativ": {
+      "A": "Klassifikation av handledsfraktur",
+      "B": "Klassifikation av ryggmärgsskadans allvarlighetsgrad (A-E)",
+      "C": "Skala för artros",
+      "D": "Smärtskala"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Frankel A är komplett skada, E är normalt.",
+    "varför_övriga_fel": "Mäter ryggmärgskadans djup.",
+    "källa": "Thorakolumbala skador",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_081",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Cervikal myelopati",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket kliniskt fynd kan visa sig i händerna vid cervikal myelopati?",
+    "alternativ": {
+      "A": "Palmarerytem",
+      "B": "Fumlighet, dålig finmotorik (finger escape sign)",
+      "C": "Kallsvettning",
+      "D": "Heberdens knutor"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ryggmärgspåverkan i nacken ger spastisk fumlighet i händer.",
+    "varför_övriga_fel": "Heberden är artros.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_082",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Spondylodiskit",
+    "typ": "Diagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken utredning är bäst vid misstanke om infektion i kotpelaren (spondylodiskit)?",
+    "alternativ": {
+      "A": "Slätröntgen",
+      "B": "Ultraljud",
+      "C": "MR med blododlingar och CRP",
+      "D": "Lumbalpunktion"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "MR är golden standard, blododling ger agens.",
+    "varför_övriga_fel": "Röntgen visar sällan tidig infektion.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_083",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Spondylodiskit",
+    "typ": "Patofysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur sprids bakterierna oftast vid en Spondylodiskit?",
+    "alternativ": {
+      "A": "Direkt från huden",
+      "B": "Hematogent",
+      "C": "Lymfogent",
+      "D": "Via andningsvägar"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Hematogen spridning av ofta S. Aureus är vanligast.",
+    "varför_övriga_fel": "Sker via blodet till disken.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_084",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Epiduralabscess",
+    "typ": "Komplikationer",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är den farligaste komplikationen av en epiduralabscess?",
+    "alternativ": {
+      "A": "Diarré",
+      "B": "Ryggmärgskompression (pares)",
+      "C": "Kotkompression utan nervpåverkan",
+      "D": "Håravfall"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Pus i spinalkanalen komprimerar ryggmärgen.",
+    "varför_övriga_fel": "Kan ge permanenta förlamningar.",
+    "källa": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_085",
+    "huvudområde": "Ryggortopedi",
+    "subtopic": "Trauma",
+    "typ": "Behandling",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är vertebroplastik?",
+    "alternativ": {
+      "A": "Borttagning av disk",
+      "B": "Cementinjicering i en komprimerad/frakturerad kota",
+      "C": "Steloperation av nacken",
+      "D": "Avlägsnande av nerv"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Bencement injiceras för att stabilisera en osteoporos-kota.",
+    "varför_övriga_fel": "Görs via nål i röntgengenomlysning.",
+    "källa": "Thorakolumbala skador",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_086",
+    "huvudområde": "Artros",
+    "subtopic": "Radiologi",
+    "typ": "Bildtolkning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka är de 4 klassiska röntgentecknen för artros?",
+    "alternativ": {
+      "A": "Fraktur, dislokation, luxation, svullnad",
+      "B": "Sänkt ledspringa, subkondral skleros, osteofyter, cystor",
+      "C": "Ökad ledspringa, osteopeni, usurer, erosioner",
+      "D": "Bockning, komminution, förkortning, rotation"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Detta är grunden för artrosdiagnostik på rtg.",
+    "varför_övriga_fel": "C beskriver snarare reumatoid artrit.",
+    "källa": "Artros &amp; proteskirurgi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_087",
+    "huvudområde": "Artros",
+    "subtopic": "Knäartros",
+    "typ": "Diagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Är MR indicerat som standard vid okomplicerad knäartros?",
+    "alternativ": {
+      "A": "Ja, alltid",
+      "B": "Nej, nästan aldrig",
+      "C": "Bara om rtg är blank",
+      "D": "Bara hos unga"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "MR tillför sällan kliniskt värde vid klassisk artrosbild.",
+    "varför_övriga_fel": "Slätröntgen räcker, MR överutnyttjas.",
+    "källa": "Artros &amp; proteskirurgi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_088",
+    "huvudområde": "Artros",
+    "subtopic": "Behandling",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken är grundbehandlingen (1:a hand) vid artros?",
+    "alternativ": {
+      "A": "Halvprotes",
+      "B": "Fysioterapi, viktnedgång, artrosskola",
+      "C": "Opiater",
+      "D": "Artroskopi"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Icke-kirurgisk träning och viktnedgång är basen.",
+    "varför_övriga_fel": "Kirurgi är sista utvägen.",
+    "källa": "Artros &amp; proteskirurgi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_089",
+    "huvudområde": "Artros",
+    "subtopic": "Höftartros",
+    "typ": "Symtom",
+    "svårighetsgrad": "medel",
+    "fråga": "Vart förläggs ofta smärtan vid höftartros?",
+    "alternativ": {
+      "A": "I vaden",
+      "B": "I ländryggen enbart",
+      "C": "I ljumsken med utstrålning mot lår och knä",
+      "D": "Symmetriskt i bäckenet"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Ljumskvärk är ett typiskt höft-symtom.",
+    "varför_övriga_fel": "Knäsmärta kan vara refererad från höften.",
+    "källa": "Artros &amp; proteskirurgi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_090",
+    "huvudområde": "Artros",
+    "subtopic": "Knäartros",
+    "typ": "Symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad korrelerar bäst till patientens upplevda besvär vid artros?",
+    "alternativ": {
+      "A": "Röntgenbildens utseende",
+      "B": "Kliniska symtom",
+      "C": "Prover (CRP)",
+      "D": "Patientens ålder"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Dålig korrelation mellan rtg och besvär.",
+    "varför_övriga_fel": "Svår rtg-artros kan vara smärtfri och vice versa.",
+    "källa": "Artros &amp; proteskirurgi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_091",
+    "huvudområde": "Artros",
+    "subtopic": "Diagnostik",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad indikerar Trendelenburghälta?",
+    "alternativ": {
+      "A": "Nedsatt funktion i M. Gluteus medius",
+      "B": "Ischiasskada",
+      "C": "Knäartros",
+      "D": "Nekrotiserande fasciit"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Bäckenet droppar pga svaghet i abduktorerna.",
+    "varför_övriga_fel": "Typiskt tecken vid höft-patologi.",
+    "källa": "Artros &amp; proteskirurgi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_092",
+    "huvudområde": "Artros",
+    "subtopic": "Behandling",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Är artroskopisk spolning bra behandling för artros utan andra skador?",
+    "alternativ": {
+      "A": "Ja, spolar bort partiklar",
+      "B": "Nej, skall inte göras",
+      "C": "Ja, stimulerar brosk",
+      "D": "Endast hos unga"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Behandling är ej aktuell enligt riktlinjer.",
+    "varför_övriga_fel": "Det hjälper ej mot degenerativt brosk.",
+    "källa": "Artros &amp; proteskirurgi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_093",
+    "huvudområde": "Artros",
+    "subtopic": "Höftartros",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket rörelseomfång är ofta smärtsamt/inskränkt tidigt vid höftartros?",
+    "alternativ": {
+      "A": "Kompression i ryggen",
+      "B": "Flexion och inåtrotation",
+      "C": "Extension av knät",
+      "D": "Dorsalflexion fot"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Inåtrotation smärtar ofta tidigt vid patologi i höft.",
+    "varför_övriga_fel": "Flexion/Inåtrot ger ljumsksmärta.",
+    "källa": "Artros &amp; proteskirurgi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_094",
+    "huvudområde": "Artros",
+    "subtopic": "Protesinfektion",
+    "typ": "Symtom",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är ett vanligt symtom på en kronisk lågvirulent protesinfektion?",
+    "alternativ": {
+      "A": "Sepsis",
+      "B": "Nytillkommen belastningssmärta och vilovärk",
+      "C": "Feber 40 grader",
+      "D": "Massiv svullnad av hela benet"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Protes som börjar göra ont efter en smärtfri period inger infektionsmisstanke.",
+    "varför_övriga_fel": "Akuta symtom tyder mer på högvirulent/tidig infektion.",
+    "källa": "Artros &amp; proteskirurgi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_095",
+    "huvudområde": "Artros",
+    "subtopic": "Protesinfektion",
+    "typ": "Handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Vad görs i primärvården vid misstänkt protesinfektion i en höft?",
+    "alternativ": {
+      "A": "Sätter in antibiotika och avvaktar",
+      "B": "Remiss akut till ortoped UTAN att sätta in antibiotika",
+      "C": "Steril punktion på vårdcentralen",
+      "D": "Behandlar med kortison"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "AB i primärvård försvårar ortopedens odling vid revision.",
+    "varför_övriga_fel": "Punktion ska göras på steril sal av ortoped.",
+    "källa": "Artros &amp; proteskirurgi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_096",
+    "huvudområde": "Artros",
+    "subtopic": "Protesinfektion",
+    "typ": "Behandling",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur handläggs vanligen en konstaterad sen protesinfektion kirurgiskt?",
+    "alternativ": {
+      "A": "Amputation",
+      "B": "Enbart antibiotika p.o.",
+      "C": "Två-stegs utbytesoperation (2-seans)",
+      "D": "Låter det vara"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Bort med gammal protes, AB-spacer, ny protes när infektion läkt.",
+    "varför_övriga_fel": "Endast antibiotika botar sällan protesinfektion.",
+    "källa": "Artros &amp; proteskirurgi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_097",
+    "huvudområde": "Artros",
+    "subtopic": "Riskfaktorer",
+    "typ": "Förståelse",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken patientgrupp har ökad risk för protesinfektion post-op?",
+    "alternativ": {
+      "A": "Patienter med rullstol",
+      "B": "Rökare och diabetiker med dålig hud",
+      "C": "Yngre idrottare",
+      "D": "Personer som tränar för mycket"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Cirkulations- och hudsjukdomar ökar infektionsrisken kraftigt.",
+    "varför_övriga_fel": "Dålig sårläkning ger inträde.",
+    "källa": "Artros &amp; proteskirurgi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_098",
+    "huvudområde": "Artros",
+    "subtopic": "Odling",
+    "typ": "Handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur många vävnadsodlingar tas typiskt vid utbytesoperation för protesinfektion?",
+    "alternativ": {
+      "A": "1",
+      "B": "2",
+      "C": "5-10 st",
+      "D": "Inga, enbart blododling"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Man tar många (tex 5st) för att skilja patogen från kontamination.",
+    "varför_övriga_fel": "Flera prov krävs för hög specificitet.",
+    "källa": "Artros &amp; proteskirurgi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_099",
+    "huvudområde": "Artros",
+    "subtopic": "Farmakologi",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket läkemedel undviks generellt vid konservativ artros-behandling?",
+    "alternativ": {
+      "A": "Paracetamol",
+      "B": "NSAID",
+      "C": "Opiater",
+      "D": "Ibuprofen"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Risk för beroende, ska undvikas vid kronisk benign smärta.",
+    "varför_övriga_fel": "NSAID/Paracetamol är basen.",
+    "källa": "Artros &amp; proteskirurgi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_100",
+    "huvudområde": "Artros",
+    "subtopic": "Terminologi",
+    "typ": "Förståelse",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur beskrivs en artros där ben sliter direkt mot ben?",
+    "alternativ": {
+      "A": "Grad 1",
+      "B": "Snedgående",
+      "C": "Ben-mot-ben (Grad 3-4)",
+      "D": "Odislocerad"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Vid hög grad av artros är brosket helt borta.",
+    "varför_övriga_fel": "Ger uttalad röntgenskleros.",
+    "källa": "Artros &amp; proteskirurgi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_101",
+    "huvudområde": "Knä- och underbensortopedi",
+    "subtopic": "ACL",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket specifikt test används bäst för Främre Korsbandet (ACL)?",
+    "alternativ": {
+      "A": "Lachmans test",
+      "B": "McMurrays test",
+      "C": "Apleys test",
+      "D": "Tinnels test"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Lachmans prövar tibias translation framåt i lätt flexion.",
+    "varför_övriga_fel": "McMurray = menisk.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_102",
+    "huvudområde": "Knä- och underbensortopedi",
+    "subtopic": "ACL",
+    "typ": "Mekanismer",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken skademekanism är vanligast vid ACL-skada?",
+    "alternativ": {
+      "A": "Direkt slag bakifrån",
+      "B": "Vridvåld i kombination med instabilitet/tackling",
+      "C": "Lågenergi snubbling hos äldre",
+      "D": "Överbelastning från maraton"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Korsband går ofta av vid vridvåld under idrott.",
+    "varför_övriga_fel": "Det är en traumatisk vridskada.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_103",
+    "huvudområde": "Knä- och underbensortopedi",
+    "subtopic": "ACL",
+    "typ": "Symtom",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är ett typiskt anamnestiskt fynd vid akut ACL-ruptur?",
+    "alternativ": {
+      "A": "Feber",
+      "B": "Snabb uppsvullnad av knät pga hemartros (blödning i led)",
+      "C": "Utstrålning till foten",
+      "D": "Sårskada"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ruptur av korsbandet blöder och ger snabbt tjockt knä.",
+    "varför_övriga_fel": "Vridvåld + svullnad &lt;12h = hemartros/ACL.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_104",
+    "huvudområde": "Knä- och underbensortopedi",
+    "subtopic": "ACL",
+    "typ": "Behandling",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad gäller generellt kring kirurgi vs konservativ behandling vid ACL-skada?",
+    "alternativ": {
+      "A": "Alla opereras akut samma kväll",
+      "B": "Fysioterapi är basen (ca 3 mån), op vid kvarstående instabilitet",
+      "C": "Kirurgi är alltid onödig",
+      "D": "Gips i 8 veckor"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Många klarar sig bra med rehab, operation om idrottskrav eller ej stabil.",
+    "varför_övriga_fel": "Man syr inte korsbandet akut.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_105",
+    "huvudområde": "Knä- och underbensortopedi",
+    "subtopic": "PCL",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket kliniskt fynd är typiskt vid Bakre Korsbandsskada (PCL)?",
+    "alternativ": {
+      "A": "Hängmatta (Posterior sag sign)",
+      "B": "Volarbockning",
+      "C": "Drop-foot",
+      "D": "Varmt knä"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Tibia faller bakåt pga tyngdkraft när knät är böjt 90 gr.",
+    "varför_övriga_fel": "Testas även med bakre draglåda.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_106",
+    "huvudområde": "Knä- och underbensortopedi",
+    "subtopic": "PCL",
+    "typ": "Mekanismer",
+    "svårighetsgrad": "medel",
+    "fråga": "Typisk orsak till isolerad PCL-skada?",
+    "alternativ": {
+      "A": "Direktvåld mot tibia framifrån (Dashboard injury)",
+      "B": "Sträckt knä vid nysning",
+      "C": "Sidotackling",
+      "D": "Långdistanslöpning"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Slag under knät vid ex bilkrock trycker tibia bakåt.",
+    "varför_övriga_fel": "Andra ligament skadas vid vridning.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_107",
+    "huvudområde": "Knä- och underbensortopedi",
+    "subtopic": "MCL/LCL",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur testar man Mediala kollateralligamentet (MCL)?",
+    "alternativ": {
+      "A": "Lachman",
+      "B": "Valgusprovokation (vackling)",
+      "C": "Varusprovokation",
+      "D": "Lasegue"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Valgus trycker knät inåt och frestar på insidans band.",
+    "varför_övriga_fel": "Varus testar LCL på utsidan.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_108",
+    "huvudområde": "Knä- och underbensortopedi",
+    "subtopic": "Menisk",
+    "typ": "Symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket symtom är typiskt vid en inslagen/inklämd meniskruptur?",
+    "alternativ": {
+      "A": "Nattlig feber",
+      "B": "Mekaniska låsningar i knät",
+      "C": "Domningar i foten",
+      "D": "Blåmärken på knäskålen"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Den trasiga menisken fastnar i leden och förhindrar extension.",
+    "varför_övriga_fel": "Ett låst knä opereras snabbt.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_109",
+    "huvudområde": "Knä- och underbensortopedi",
+    "subtopic": "Menisk",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket test indikerar meniskskada?",
+    "alternativ": {
+      "A": "McMurrays test",
+      "B": "Thompsons test",
+      "C": "Tinells test",
+      "D": "Hawkins test"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Provokation genom böjning och rotation av knät.",
+    "varför_övriga_fel": "Thompson = Hälsena.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_110",
+    "huvudområde": "Knä- och underbensortopedi",
+    "subtopic": "Menisk",
+    "typ": "Patofysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken del av menisken har störst potential att läka om den sys?",
+    "alternativ": {
+      "A": "Den inre avaskulära 'vita zonen'",
+      "B": "Den yttre 'röda zonen'",
+      "C": "Ingen del läker någonsin",
+      "D": "Artikulära ytan"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Periferin har blodförsörjning och kan sys fast.",
+    "varför_övriga_fel": "Inre zonen saknar kärl, klipps oftast bort.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_111",
+    "huvudområde": "Knä- och underbensortopedi",
+    "subtopic": "Överbelastning",
+    "typ": "Diagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är Mb Osgood-Schlatter?",
+    "alternativ": {
+      "A": "Artros hos äldre",
+      "B": "Meniskskada",
+      "C": "Överbelastning av patellarsenans fäste på tuberositas tibiae hos unga",
+      "D": "Korsbandsruptur"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Vanligt hos aktiva ungdomar (knöl på smalbenet).",
+    "varför_övriga_fel": "Det är en typisk växande-barn åkomma.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_112",
+    "huvudområde": "Knä- och underbensortopedi",
+    "subtopic": "Diagnostik",
+    "typ": "Handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "När används diagnostisk knäpunktion primärt?",
+    "alternativ": {
+      "A": "För att utesluta fraktur",
+      "B": "Oklar hydrops eller misstanke septisk artrit/hemartros",
+      "C": "Rutinkontroll av korsband",
+      "D": "Alltid före MR"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Vätskan analyseras avseende laktat, glukos, odling, kristaller.",
+    "varför_övriga_fel": "Punktion är onödig utan indikation.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_113",
+    "huvudområde": "Knä- och underbensortopedi",
+    "subtopic": "Radiologi",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "När är en MR knä oftast bäst lämpad?",
+    "alternativ": {
+      "A": "Akut första timmen vid lågenergitrauma",
+      "B": "När mjukdelar/ligament bedöms kliniskt instabila och op övervägs",
+      "C": "För att bekräfta misstänkt artros",
+      "D": "Vid misstanke om septisk artrit"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "MR görs elektivt för att kartlägga mjukdelar inför eventuell op.",
+    "varför_övriga_fel": "Septisk artrit punkeras, artros röntgas.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_114",
+    "huvudområde": "Knä- och underbensortopedi",
+    "subtopic": "Knäluxation",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Viktigaste akuta undersökningen utöver distalstatus vid knäluxation?",
+    "alternativ": {
+      "A": "CT Angio",
+      "B": "MR Korsband",
+      "C": "Ultraljud menisk",
+      "D": "Slätröntgen knästående"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "A. poplitea ligger utsatt och skadas ofta.",
+    "varför_övriga_fel": "Måste utesluta livs/lem-hotande ischemi snabbt.",
+    "källa": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_115",
+    "huvudområde": "Knä- och underbensortopedi",
+    "subtopic": "Knä",
+    "typ": "Terminologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är hemartros?",
+    "alternativ": {
+      "A": "Vatten i knät",
+      "B": "Bakterier i knät",
+      "C": "Blod i en led",
+      "D": "Broskskada"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Uppstår ofta snabbt (&lt;12h) vid korsbandsruptur.",
+    "varför_övriga_fel": "Innehåller blod.",
+    "källa": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_116",
+    "huvudområde": "Fot- och fotledsortopedi",
+    "subtopic": "Hälsena",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket test är positivt vid hälseneruptur?",
+    "alternativ": {
+      "A": "Lasegue",
+      "B": "Thompsons test (kläm på vaden)",
+      "C": "Tinells",
+      "D": "Lachman"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Vaden kläms; foten ska plantarflekteras. Vid ruptur rör den sig ej.",
+    "varför_övriga_fel": "Ett mycket säkert kliniskt test.",
+    "källa": "Fotortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_117",
+    "huvudområde": "Fot- och fotledsortopedi",
+    "subtopic": "Hälsena",
+    "typ": "Diagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Behövs rutinmässig MR för att diagnostisera hälseneruptur?",
+    "alternativ": {
+      "A": "Ja alltid",
+      "B": "Nej, diagnosen är klinisk (+ ev UL)",
+      "C": "Bara om rtg är blank",
+      "D": "Ja för op-beslut"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Palpabel grop, Thompsons och Matles räcker.",
+    "varför_övriga_fel": "MR har ingen plats här.",
+    "källa": "Fotortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_118",
+    "huvudområde": "Fot- och fotledsortopedi",
+    "subtopic": "Hälsena",
+    "typ": "Behandling",
+    "svårighetsgrad": "medel",
+    "fråga": "Standard totalbehandlingstid med gips/ortos vid hälseneruptur?",
+    "alternativ": {
+      "A": "2 veckor",
+      "B": "4 veckor",
+      "C": "8 veckor",
+      "D": "12 veckor"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Ska hållas i spetsfot först, total tid 8v (med/utan op).",
+    "varför_övriga_fel": "Senläkning tar tid.",
+    "källa": "Fotortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_119",
+    "huvudområde": "Fot- och fotledsortopedi",
+    "subtopic": "Charcotfot",
+    "typ": "Mekanismer",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken patientgrupp är i stor risk att utveckla Charcotfot?",
+    "alternativ": {
+      "A": "Elitidrottare",
+      "B": "Patienter med neuropati (ffa diabetiker)",
+      "C": "Barn under 10",
+      "D": "Patienter med RA"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Neuropati gör att de trampar sönder skelettet utan smärta.",
+    "varför_övriga_fel": "Sjukdomen är associerad med diabetes.",
+    "källa": "Fotortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_120",
+    "huvudområde": "Fot- och fotledsortopedi",
+    "subtopic": "Charcotfot",
+    "typ": "Symtom",
+    "svårighetsgrad": "svår",
+    "fråga": "Hur skiljer man kliniskt misstänkt Charcotfot från en rosfeber?",
+    "alternativ": {
+      "A": "Charcot har skyhögt CRP",
+      "B": "Charcot har ofta röd/varm fot men normalt/lågt CRP",
+      "C": "Rosfeber ger ingen rodnad",
+      "D": "Charcot ger svår smärta"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Charcot är en destruktiv men steril process (osteopati).",
+    "varför_övriga_fel": "Erysipelas ger crp-stegring och frossa.",
+    "källa": "Fotortopedi",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_ORTOPEDI_121",
+    "huvudområde": "Fot- och fotledsortopedi",
+    "subtopic": "Plantarabscess",
+    "typ": "Handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken akut behandling krävs vid plantarabscess hos diabetiker?",
+    "alternativ": {
+      "A": "Enbart p.o. antibiotika",
+      "B": "Akut debridering (kirurgi)",
+      "C": "Högläge och is",
+      "D": "Kortison"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Pus måste dräneras operativt för att rädda foten.",
+    "varför_övriga_fel": "Risk för amputation är hög om varlämning sker.",
+    "källa": "Fotortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_122",
+    "huvudområde": "Fot- och fotledsortopedi",
+    "subtopic": "Fotledsdistorsion",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket ledband skadas oftast vid fotledsstukning (supinationsvåld)?",
+    "alternativ": {
+      "A": "Syndesmosen",
+      "B": "Lig. deltoideum",
+      "C": "Lig. talofibulare anterius (FTA)",
+      "D": "Hälsenan"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "FTA ligger lateralt och ryker först vid vrickning.",
+    "varför_övriga_fel": "Deltoideum är medialt och mycket starkt.",
+    "källa": "Fotortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_123",
+    "huvudområde": "Fot- och fotledsortopedi",
+    "subtopic": "Stukning",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är principen för akut handläggning av mjukdelsskada (PRICE)?",
+    "alternativ": {
+      "A": "Paracetamol, Rest, Is, Cast, Elevation",
+      "B": "Protect, Rest, Ice, Compression, Elevation",
+      "C": "Punktion, Reponering, Is, Cut, Evaluate",
+      "D": "Push, Run, Is, Comp, Elev"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Minskar svullnad och sekundär blödning.",
+    "varför_övriga_fel": "Kompression är det viktigaste.",
+    "källa": "Fotortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_124",
+    "huvudområde": "Fot- och fotledsortopedi",
+    "subtopic": "Droppfot",
+    "typ": "Mekanismer",
+    "svårighetsgrad": "medel",
+    "fråga": "Vanligaste centrala orsaken till droppfot?",
+    "alternativ": {
+      "A": "Tumör",
+      "B": "Diskbråck (L4-L5)",
+      "C": "MS",
+      "D": "Stroke"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Kompression av L5-nervroten ger svag dorsalflexion.",
+    "varför_övriga_fel": "Även andra nerver/peroneus, men diskbråck dominerar.",
+    "källa": "Fotortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_125",
+    "huvudområde": "Fot- och fotledsortopedi",
+    "subtopic": "Plattfot",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "svår",
+    "fråga": "Vad händer med en normal (flexibel) fot vid tå-stående?",
+    "alternativ": {
+      "A": "Hälen förblir i valgus",
+      "B": "Hälen variseras",
+      "C": "Tårna böjs uppåt",
+      "D": "Fotvalvet sjunker"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Normalt variseras hälen (vinklas inåt) vid tå-hävning.",
+    "varför_övriga_fel": "Vid rigid plattfot förblir hälen i valgus.",
+    "källa": "Fotortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_126",
+    "huvudområde": "Axel- och armbågsortopedi",
+    "subtopic": "Impingement",
+    "typ": "Symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "När upplever patienten smärta vid ett sk. Painful arc-tecken?",
+    "alternativ": {
+      "A": "Vid abduktion mellan 70-120 grader",
+      "B": "Vid 180 grader abduktion",
+      "C": "Vid inåtrotation av underarmen",
+      "D": "Vid tryck mot clavicula"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "I detta arc kläms subakromiala strukturer (impingement).",
+    "varför_övriga_fel": "Ovan 120gr avlastas ofta senan.",
+    "källa": "Axel",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_127",
+    "huvudområde": "Axel- och armbågsortopedi",
+    "subtopic": "Impingement",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka två test är specifika för subakromial impingement?",
+    "alternativ": {
+      "A": "Hawkins och Neers test",
+      "B": "Lachman och Pivot shift",
+      "C": "Speeds och O'Briens",
+      "D": "Phalens och Tinells"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Dessa provocerar mekaniskt in supraspinatus under akromion.",
+    "varför_övriga_fel": "Speed=Biceps, Phalen=Karpaltunnel.",
+    "källa": "Axel",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_128",
+    "huvudområde": "Axel- och armbågsortopedi",
+    "subtopic": "Rotatorcuff",
+    "typ": "Mekanismer",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken muskel är oftast skadad i rotatorcuffen?",
+    "alternativ": {
+      "A": "Subscapularis",
+      "B": "Teres minor",
+      "C": "Infraspinatus",
+      "D": "Supraspinatus"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Löper trångt under akromion och degenererar ofta.",
+    "varför_övriga_fel": "Det är den abducerande senan.",
+    "källa": "Axel",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_129",
+    "huvudområde": "Axel- och armbågsortopedi",
+    "subtopic": "Impingement",
+    "typ": "Behandling",
+    "svårighetsgrad": "medel",
+    "fråga": "Grundbehandlingen vid subakromial impingement?",
+    "alternativ": {
+      "A": "Direkt kirurgi (akromioplastik)",
+      "B": "Fysioterapi 6 månader + ev. kortison",
+      "C": "Gipsning",
+      "D": "Botoxinjektioner"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Oftast räcker träning av depressorer i axeln.",
+    "varför_övriga_fel": "Op sparas till icke-svarande fall.",
+    "källa": "Axel",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_130",
+    "huvudområde": "Axel- och armbågsortopedi",
+    "subtopic": "Axelluxation",
+    "typ": "Diagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken typ av axelluxation är överlägset vanligast?",
+    "alternativ": {
+      "A": "Bakre",
+      "B": "Främre (Anterior)",
+      "C": "Inferior",
+      "D": "Superior"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Anterior luxation står för ~95%.",
+    "varför_övriga_fel": "Bakre ofta vid kramp/epilepsi.",
+    "källa": "Axel",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_131",
+    "huvudområde": "Axel- och armbågsortopedi",
+    "subtopic": "Axelluxation",
+    "typ": "Terminologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är en Bankart-skada?",
+    "alternativ": {
+      "A": "Ruptur av bicepssenan",
+      "B": "Skelettskada/avulsion på nedre glenoidkanten",
+      "C": "Impingement typ 3",
+      "D": "Fraktur i clavicula"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Uppstår ofta när caput luxerar framåt och sliter av labrum.",
+    "varför_övriga_fel": "Hill-sachs är en impressonsfraktur i caput.",
+    "källa": "Radiologi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_132",
+    "huvudområde": "Axel- och armbågsortopedi",
+    "subtopic": "Axelluxation",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad syns på röntgen frontalbild vid bakre luxation?",
+    "alternativ": {
+      "A": "Bajonettfelställning",
+      "B": "Light bulb sign",
+      "C": "Fat pad sign",
+      "D": "Sail sign"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Caput humeri ser symmetriskt runt ut som en glödlampa.",
+    "varför_övriga_fel": "Bakre lux är lätt att missa utan sidobild.",
+    "källa": "Radiologi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_133",
+    "huvudområde": "Axel- och armbågsortopedi",
+    "subtopic": "Armbåge",
+    "typ": "Symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad testas vid misstänkt tennisarmbåge (lateral epikondylalgi)?",
+    "alternativ": {
+      "A": "Smärta vid böjning av handleden",
+      "B": "Smärta vid extension/dorsalflexion av handled",
+      "C": "Domningar i fingrar",
+      "D": "Puls i a. radialis"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Extensorerna fäster på den laterala epikondylen.",
+    "varför_övriga_fel": "Flexorer sitter medialt (golfarmbåge).",
+    "källa": "Armbåge",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_134",
+    "huvudområde": "Axel- och armbågsortopedi",
+    "subtopic": "Biceps",
+    "typ": "Statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad testar Speeds test och Hooks test?",
+    "alternativ": {
+      "A": "Tricepsruptur",
+      "B": "Skada på Bicepssenan",
+      "C": "Ulnarisinklämning",
+      "D": "Radiusfraktur"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Speeds (proximal) och Hooks (distal) testar bicep.",
+    "varför_övriga_fel": "Ulnaris testas med Tinell/Phalen.",
+    "källa": "Axel/Armbåge",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_135",
+    "huvudområde": "Axel- och armbågsortopedi",
+    "subtopic": "Axel",
+    "typ": "Diagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken nerv skadas lättast vid en främre axelluxation?",
+    "alternativ": {
+      "A": "N. ulnaris",
+      "B": "N. axillaris",
+      "C": "N. ischiadicus",
+      "D": "N. vagus"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Löper nära collum chirurgicum, ger nedsatt sens över deltoideus.",
+    "varför_övriga_fel": "Ska alltid testas i distalstatus.",
+    "källa": "Axel",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_ORTOPEDI_136",
+    "huvudområde": "Tumörortopedi",
+    "subtopic": "Metastaser",
+    "typ": "Mekanismer",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är vanligast; primära bentumörer eller skelettmetastaser?",
+    "alternativ": {
+      "A": "Primära",
+      "B": "Lika vanliga",
+      "C": "Skelettmetastaser (ex. prostatacancer)",
+      "D": "Primära sarkom är vanligast"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "600:1 ration för metastas gentemot primärtumör.",
+    "varför_övriga_fel": "Sarkom är extremt ovanligt.",
+    "källa": "Tumörortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_137",
+    "huvudområde": "Tumörortopedi",
+    "subtopic": "Metastaser",
+    "typ": "Förståelse",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka 5 cancerformer metastaserar oftast till ben (minnesregel BLT-KP)?",
+    "alternativ": {
+      "A": "Bukhinnna, Lever, Tarm, Knä, Penis",
+      "B": "Bröst, Lunga, Tyreoidea, Njure, Prostata",
+      "C": "Blod, Lymfa, Testis, Käke, Pankreas",
+      "D": "Ben, Led, Tå, Kranium, Pelvis"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Dessa bildar oftast dottertumörer i ryggraden.",
+    "varför_övriga_fel": "Bra klinisk minnesregel.",
+    "källa": "Tumörortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_138",
+    "huvudområde": "Tumörortopedi",
+    "subtopic": "SVF Sarkom",
+    "typ": "Handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vid oklar knöl över 5cm på låret. Vad är rätt handläggning?",
+    "alternativ": {
+      "A": "Uteslut cysta med ultraljud i lugn ro",
+      "B": "Gör finnålspunktion direkt på VC",
+      "C": "Remittera för MR (enligt SVF)",
+      "D": "Avvakta 6 mån"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Stora djupa knölar utreds via SVF för mjukdelssarkom.",
+    "varför_övriga_fel": "Finnålspunktion får BARA göras på sarkomcentrum.",
+    "källa": "Tumörortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_139",
+    "huvudområde": "Tumörortopedi",
+    "subtopic": "SVF Sarkom",
+    "typ": "Handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vem ska utföra biopsi på en misstänkt skelett/mjukdelssarkom?",
+    "alternativ": {
+      "A": "Vårdcentralen",
+      "B": "Akutläkaren",
+      "C": "Radiologen på länssjukhus",
+      "D": "Specialister på ett Sarkomcentrum"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Felaktig biopsikanal kan förstöra framtida kirurgi.",
+    "varför_övriga_fel": "Riskerar cellspridning (seeding).",
+    "källa": "Tumörortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_140",
+    "huvudområde": "Tumörortopedi",
+    "subtopic": "Symtom",
+    "typ": "Förståelse",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket är ett typiskt alarmsymtom för tumör i skelett (vuxna/barn)?",
+    "alternativ": {
+      "A": "Oförklarlig smärta och vilovärk",
+      "B": "Klåda över leden",
+      "C": "Morgonstelhet i 10 min",
+      "D": "Värk som går över på Ipren"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Vilovärk/nattlig smärta är ett rött flaggsymtom.",
+    "varför_övriga_fel": "Barn ska inte ha oförklarlig ihållande bense-smärta.",
+    "källa": "Tumörortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_141",
+    "huvudomrade": "Ortopediskt trauma",
+    "subtopic": "Bäckenfraktur",
+    "typ": "Handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "På vilken anatomisk nivå ska en bäckengördel placeras för att effektivt tamponadera blödningen vid en 'open book' bäckenfraktur?",
+    "alternativ": {
+      "A": "Över crista iliaca",
+      "B": "I höjd med trochanter major på femur",
+      "C": "Strax nedom naveln",
+      "D": "Över ländryggen och symfysen"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Bäckengördeln måste placeras i höjd med trochanterna för att mekaniskt kunna stänga bäckenringen.",
+    "varfor_ovriga_fel": "Placering över crista iliaca stänger inte bäckenet och förvärrar snarare 'open book'-mekanismen.",
+    "kalla": "Skyndsamma och allvarliga tillstånd",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_142",
+    "huvudomrade": "Ryggortopedi",
+    "subtopic": "Trauma",
+    "typ": "Diagnostik",
+    "svarighetsgrad": "svår",
+    "fraga": "En 65-årig man med långvarig Mb Bechterew inkommer efter ett fall i hemmet med uttalad ryggsmärta. Slätröntgen visar ett glapp mellan två kotor. Vad kallas denna typ av skada och hur handläggs den?",
+    "alternativ": {
+      "A": "Cervikal myelopati - Behandlas med mjuk halskrage",
+      "B": "Spondylolys - Behandlas med fysioterapi",
+      "C": "DISH-fraktur - Mycket instabil, kräver ofta akut/aggressiv operativ fixering",
+      "D": "Kotkompression - Behandlas konservativt med smärtstillande"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Ett brutet ankyloserat (stelopererat) skelett uppträder som en rörbensfraktur. DISH-frakturer är extremt instabila B-skador.",
+    "varfor_ovriga_fel": "Dessa får absolut inte missas och skickas hem med alvedon pga stor risk för neurologisk transektion.",
+    "kalla": "Thorakolumbala skador",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_143",
+    "huvudomrade": "Ryggortopedi",
+    "subtopic": "Radiologi",
+    "typ": "Bildtolkning",
+    "svarighetsgrad": "medel",
+    "fraga": "Du granskar en MR-bild av en ländrygg. Hur identifierar du snabbt att bilden är T2-viktad och inte T1-viktad?",
+    "alternativ": {
+      "A": "Skelettet lyser kritvitt på T2",
+      "B": "Muskulaturen framträder svart på T2",
+      "C": "Fettvävnaden är den enda vävnaden som syns på T2",
+      "D": "Vätskor (t.ex. ryggmärgsvätskan) lyser ljust/vitt på T2"
+    },
+    "ratt_svar": "D",
+    "kort_forklaring": "På T2-viktade bilder har vätska (CSF i thekalsäcken) en hög signal och blir vit.",
+    "varfor_ovriga_fel": "På T1 blir vätska svart.",
+    "kalla": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_144",
+    "huvudomrade": "Ryggortopedi",
+    "subtopic": "Cervikal myelopati",
+    "typ": "Statusfynd",
+    "svarighetsgrad": "svår",
+    "fraga": "En patient med svår cervikal spinal stenos beskriver obehagliga, elektriska stötar som strålar ut i armarna och ner i ryggen varje gång han böjer huvudet framåt. Vad kallas detta tecken?",
+    "alternativ": {
+      "A": "Lhermittes tecken",
+      "B": "Spurlings tecken",
+      "C": "Hoffmans tecken",
+      "D": "Tinnels tecken"
+    },
+    "ratt_svar": "A",
+    "kort_forklaring": "Lhermittes utlöses vid flexion av nacken och är ett klassiskt tecken på myelopati/ryggmärgspåverkan.",
+    "varfor_ovriga_fel": "Spurling testar perifera nervrötter. Hoffman testar övre motorneuron (fingrar). Tinnel testar perifer nervinklämning.",
+    "kalla": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_145",
+    "huvudomrade": "Ryggortopedi",
+    "subtopic": "Spinal stenos",
+    "typ": "Differentialdiagnostik",
+    "svarighetsgrad": "lätt",
+    "fraga": "En äldre man söker med smärta i benen vid gång som avlastas i vila. Hur särskiljer du enklast i status om det rör sig om neurogen claudicatio (spinal stenos) eller vaskulär claudicatio (kärlförträngning)?",
+    "alternativ": {
+      "A": "Testa Lasegues",
+      "B": "Palpera fotpulsar och utför ev. ABI-mätning",
+      "C": "Mät benlängd",
+      "D": "Genomför Rombergs test"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Normala fotpulsar och ABI utesluter ofta vaskulär orsak och styrker neurogen claudicatio.",
+    "varfor_ovriga_fel": "SLR är för diskbråck. Benlängd/Rombergs är inte relevanta för kärl.",
+    "kalla": "Ryggortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_146",
+    "huvudomrade": "Ryggortopedi",
+    "subtopic": "Trauma",
+    "typ": "Handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "Vad är vertebroplastik?",
+    "alternativ": {
+      "A": "Ett minimalinvasivt ingrepp där bencement injiceras i en osteoporosfrakturerad kota",
+      "B": "En öppen steloperation av hela ländryggen",
+      "C": "Borttagande av lig. flavum för att dekomprimera ryggmärgen",
+      "D": "Transplantation av ett revben till ryggraden"
+    },
+    "ratt_svar": "A",
+    "kort_forklaring": "Görs vid osteoporosfrakturer (nedanför Th7) i smärtlindrande och stabiliserande syfte.",
+    "varfor_ovriga_fel": "Dekompression är för spinal stenos.",
+    "kalla": "Thorakolumbala skador",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_147",
+    "huvudomrade": "Fot- och fotledsortopedi",
+    "subtopic": "Fotbollsvrist",
+    "typ": "Symtom",
+    "svarighetsgrad": "medel",
+    "fraga": "Vad är patofysiologin och typiskt fynd vid en s.k. 'fotbollsvrist'?",
+    "alternativ": {
+      "A": "Ruptur av lig. deltoideum med extrem överrörlighet",
+      "B": "Benpåbyggnad (osteofyter) på fotledens framsida som ger inskränkt dorsalflexion",
+      "C": "Extraben baktill i fotleden (os trigonum)",
+      "D": "Försvagning och plattfot till följd av tibialis posterior-ruptur"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Främre fotledsimpingement beror på osteofyter som mekaniskt tar emot vid uppåtböjning av foten.",
+    "varfor_ovriga_fel": "C beskriver bakre impingement (os trigonum). D är TP-insufficiens.",
+    "kalla": "Fotortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_148",
+    "huvudomrade": "Fot- och fotledsortopedi",
+    "subtopic": "Os trigonum",
+    "typ": "Diagnostik",
+    "svarighetsgrad": "svår",
+    "fraga": "Vilken rörelse utlöser typiskt smärta hos en elitgymnast eller dansare med symptomatisk Os trigonum?",
+    "alternativ": {
+      "A": "Maximal dorsalflexion",
+      "B": "Maximal plantarflexion",
+      "C": "Inversion av framfoten",
+      "D": "Extension av stortån"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Extrabenet sitter bakom talus och kläms ihop mellan calcaneus och tibia vid extrem plantarflexion (t.ex. när man står på tå).",
+    "varfor_ovriga_fel": "Dorsalflexion ger smärta vid främre impingement.",
+    "kalla": "Fotortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_149",
+    "huvudomrade": "Fot- och fotledsortopedi",
+    "subtopic": "Cavovarusfot",
+    "typ": "Statusfynd",
+    "svarighetsgrad": "svår",
+    "fraga": "Vad testar ortopeden genom att utföra ett 'blocktest' (Coleman block test) på en patient med cavovarusfot?",
+    "alternativ": {
+      "A": "Om felställningen i hälen (varus) är flexibel eller rigid",
+      "B": "Om syndesmosen är stabil",
+      "C": "Om det finns ett mortons neurom",
+      "D": "Om droppfot beror på en nerv- eller muskelskada"
+    },
+    "ratt_svar": "A",
+    "kort_forklaring": "Man sätter ett kloss under foten för att avgöra om bakfotsvarus korrigerar sig (flexibel) eller om det rör sig om en stel led, vilket styr kirurgivalet.",
+    "varfor_ovriga_fel": "Testet mäter endast flexibiliteten i mellan/bakfoten.",
+    "kalla": "Fotortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_150",
+    "huvudomrade": "Axel- och armbågsortopedi",
+    "subtopic": "AC-led",
+    "typ": "Statusfynd",
+    "svarighetsgrad": "medel",
+    "fraga": "Vilket specifikt kliniskt test utlöser starkast smärta vid artros i Acromioclavikular-leden (AC-leden)?",
+    "alternativ": {
+      "A": "Hawkins test",
+      "B": "Neers test",
+      "C": "Cross-body test (horisontell adduktion över bröstet)",
+      "D": "Apprehension test"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "När armen pressas hårt över bröstet tvingas clavicula mot akromion vilket komprimerar AC-leden.",
+    "varfor_ovriga_fel": "Hawkins/Neers testar subakromialt impingement. Apprehension testar främre instabilitet.",
+    "kalla": "Primärvård Statusträning",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_151",
+    "huvudomrade": "Artros",
+    "subtopic": "Höft",
+    "typ": "Differentialdiagnostik",
+    "svarighetsgrad": "svår",
+    "fraga": "En 22-årig hockeyspelare söker med smärta i höften. Smärtan provoceras vid ytterlägen, framförallt flexion och inåtrotation. Vad är en stark differentialdiagnos till tidig artros i detta läge?",
+    "alternativ": {
+      "A": "Trokanterit",
+      "B": "Femoro-acetabulär inklämning (FAI)",
+      "C": "Mb Perthes",
+      "D": "Cauda Equina"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "FAI drabbar ffa unga idrottare och kan ge identisk klinisk bild som artros vid provokation i ytterlägen.",
+    "varfor_ovriga_fel": "Perthes är en barnsjukdom. Trokanterit sitter lateralt och är vanligast hos äldre kvinnor.",
+    "kalla": "Artros &amp; proteskirurgi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_152",
+    "huvudomrade": "Knä- och underbensortopedi",
+    "subtopic": "Brosk",
+    "typ": "Patofysiologi",
+    "svarighetsgrad": "medel",
+    "fraga": "Vad kännetecknar Osteokondritis dissekans i knäleden?",
+    "alternativ": {
+      "A": "Avslitning av patellarsenan",
+      "B": "Bakteriell destruktion av menisken",
+      "C": "Lokal nekros av ledbrosk och subkondralt ben som kan bilda en lös mus/fri kropp",
+      "D": "Förbening av korsbanden"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Kallas ibland OC-skada, sker ofta på mediala femurkondylen där en ben/brosk-bit lossnar.",
+    "varfor_ovriga_fel": "Det är en cirkulatorisk/fokal störning i tillväxtbrosket hos yngre.",
+    "kalla": "Artroföreläsning 2",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_153",
+    "huvudomrade": "Frakturlära",
+    "subtopic": "Radiusfraktur",
+    "typ": "Beslutsstöd",
+    "svarighetsgrad": "svår",
+    "fraga": "Vad utgör en stark operationsindikation för en distal radiusfraktur hos en patient med höga funktionskrav?",
+    "alternativ": {
+      "A": "Dorsal vinkelfelställning &gt; 10 grader och ledhak &gt; 2 mm",
+      "B": "Enbart att patienten är högerhänt",
+      "C": "Avlösning av ulnas styloid oavsett radial vinkling",
+      "D": "Alltid operation oavsett vinkling vid lågenergitrauma"
+    },
+    "ratt_svar": "A",
+    "kort_forklaring": "Vinkling över 10 grader dorsalt, 15 grader volart eller förkortning/ledyte-hak på &gt;2 mm utgör op-indikation.",
+    "varfor_ovriga_fel": "Radiusfrakturer i gott läge gipsas 4 v oavsett hänthet.",
+    "kalla": "Ortopediskt trauma",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_154",
+    "huvudomrade": "Akuta tillstånd",
+    "subtopic": "Kompartmentsyndrom",
+    "typ": "Komplikationer",
+    "svarighetsgrad": "svår",
+    "fraga": "Vad är ett fruktat resttillstånd vid ett missat kompartmentsyndrom i en underarm (Volkmanns kontraktur)?",
+    "alternativ": {
+      "A": "Hypertrofisk muskeltillväxt",
+      "B": "Kontraktur i extensorerna med radialispåverkan",
+      "C": "Kontraktur i flexormuskulatur med medianusnervskada",
+      "D": "Enbart kronisk smärta utan motoriskt bortfall"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Ischemin dödar böjmusklerna på volarsidan som fibrotiserar och skrumpnar, vilket böjer handen och klämmer N. medianus.",
+    "varfor_ovriga_fel": "Det är flexorkompartment volart som främst drabbas i underarmen.",
+    "kalla": "Kompartmentsyndrom",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_155",
+    "huvudomrade": "Fot- och fotledsortopedi",
+    "subtopic": "Hälsena",
+    "typ": "Patofysiologi",
+    "svarighetsgrad": "medel",
+    "fraga": "Vad är Haglunds deformitet/häl?",
+    "alternativ": {
+      "A": "En medfödd avsaknad av hälsena",
+      "B": "En benpålagring/spetsig form på hälbenet (calcaneus) som orsakar skav och tendinopati distalt på hälsenan",
+      "C": "Inflammation i plantarfascian",
+      "D": "Artros i subtalarleden"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Ger skav och lokal distal akillestendinopati som kan behöva opereras.",
+    "varfor_ovriga_fel": "Plantarfasciit sitter under foten, Haglunds sitter baktill.",
+    "kalla": "Fot- &amp; fotledsskador",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_156",
+    "huvudomrade": "Fot- och fotledsortopedi",
+    "subtopic": "Klotå",
+    "typ": "Behandling",
+    "svarighetsgrad": "svår",
+    "fraga": "Hur behandlas kirurgiskt en rigid klotå (till skillnad från en passivt korrigerbar)?",
+    "alternativ": {
+      "A": "Enbart böjseneavskärning",
+      "B": "Amputation av tån",
+      "C": "Böjseneavskärning i kombination med PIP-ledsartrodes (steloperation)",
+      "D": "Injektion av botox"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Vid rigida felställningar räcker det inte att lossa senan, utan mjukdelarna och leden har stelnat varför PIP-leden måste stelopereras i rakt läge.",
+    "varfor_ovriga_fel": "Amputation görs sällan för okomplicerad klotå.",
+    "kalla": "Fotortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_157",
+    "huvudomrade": "Artros",
+    "subtopic": "Höft",
+    "typ": "Statusfynd",
+    "svarighetsgrad": "lätt",
+    "fraga": "Hur utförs Patricks test och vad kan det indikera i en primärvårdsmiljö?",
+    "alternativ": {
+      "A": "Foten placeras på motsatt knä (fyrkantsläge) och benet pressas nedåt; smärta indikerar tidig höftartros/patologi",
+      "B": "Patienten står på ett ben; bäckenet tippar vid insufficiens",
+      "C": "Höften roteras i ryggläge med rakt ben; smärta tyder på diskbråck",
+      "D": "Smärta utlöses vid tryck rakt in i SI-leden"
+    },
+    "ratt_svar": "A",
+    "kort_forklaring": "Även kallat FABER (Flexion, ABduction, External Rotation). Utmärkt för att provocera höft/SI-led.",
+    "varfor_ovriga_fel": "Stå på ett ben är Trendelenburg.",
+    "kalla": "Primärvård Statusträning",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_158",
+    "huvudomrade": "Knä- och underbensortopedi",
+    "subtopic": "Patellaluxation",
+    "typ": "Behandling",
+    "svarighetsgrad": "svår",
+    "fraga": "Vid återkommande patellainstabilitet och patellaluxationer, vilket ligament opererar man oftast för att stabilisera knäskålen?",
+    "alternativ": {
+      "A": "MCL (Mediala kollateralligamentet)",
+      "B": "MPFL (Mediala patellofemorala ligamentet)",
+      "C": "ACL (Främre korsbandet)",
+      "D": "Tractus iliotibialis"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "MPFL är den primära mediala stabilisatorn för knäskålen och brister ofta vid luxation. Den rekonstrueras kirurgiskt vid recidiverande besvär.",
+    "varfor_ovriga_fel": "Korsband och kollateralligament stabiliserar femur mot tibia, ej patella.",
+    "kalla": "Knä",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_159",
+    "huvudomrade": "Tumörortopedi",
+    "subtopic": "Sarkom",
+    "typ": "Symtom",
+    "svarighetsgrad": "lätt",
+    "fraga": "Vilket enskilt symtom hos ett barn ska föranleda en stark misstanke och utredning avseende skelettsarkom?",
+    "alternativ": {
+      "A": "Belastningssmärta i knät efter fotbollsträning",
+      "B": "Smärta över tuberositas tibiae som lindras av vila",
+      "C": "Djup, bestående skelettsmärta utan trauma (ofta vilovärk)",
+      "D": "Morgonstelhet i mindre än 10 minuter"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Oförklarlig ihållande natt- och vilovärk i skelettet hos barn/unga är röda flaggan nummer ett för bencancer (t.ex. osteosarkom).",
+    "varfor_ovriga_fel": "Växtvärk/överbelastning lindras ofta av vila.",
+    "kalla": "Tumörortopedi",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORTOPEDI_160",
+    "huvudomrade": "Tumörortopedi",
+    "subtopic": "SVF Sarkom",
+    "typ": "Handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "Vad är strikt obligatoriskt att detaljerat ange i anamnesen vid en MR-remiss gällande en misstänkt mjukdelstumör för att utredningen inte ska fördröjas?",
+    "alternativ": {
+      "A": "Vårdcentralens budgetnummer",
+      "B": "Patientens hereditet för bröstcancer",
+      "C": "Resistensens exakta anatomiska lokalisation, dess konsistens, och hur länge den funnits",
+      "D": "Endast uppgifter om huruvida patienten tål kontrastmedel"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "För att radiologen ska veta exakt var och vad de ska granska krävs noggrann och anatomiskt specifik beskrivning i SVF-remissen.",
+    "varfor_ovriga_fel": "Det finns ett direkt krav på att utrycka anatomiska termer korrekt (t.ex. lateralt hö arm 5cm prox om olecranon).",
+    "kalla": "Tumörortopedi",
+    "needs_review": "nej"
+  }
+]

@@ -1,0 +1,1712 @@
+[
+  {
+    "id": "KIR_HANDKIRURGI_001",
+    "huvudområde": "Anatomi och Handstatus",
+    "subtopic": "Nervanatomi och motorik",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket specifikt kliniskt test utvärderar n. medianus motoriska funktion i handen?",
+    "alternativ": {
+      "A": "Fingerspretning mot motstånd",
+      "B": "Palmarabduktion av tummen mot motstånd (test av abductor pollicis brevis)",
+      "C": "Handledsextension",
+      "D": "Flexion i tummens IP-led (test av FPL)"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "N. medianus innerverar thenarmuskulaturen (APB) och testas genom att patienten lyfter tummen uppåt från handflatan.",
+    "varför_övriga_fel": "A testar n. ulnaris (interosséer). C testar n. radialis. D testar FPL som innerveras av medianus, men palmarabduktion är det primära testet för distala medianusfunktionen i handen.",
+    "källa": "Handkirurgi Anatomi och status.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_002",
+    "huvudområde": "Anatomi och Handstatus",
+    "subtopic": "Nervanatomi och motorik",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket rörelsemönster testar primärt n. ulnaris motoriska funktion i fingrarna?",
+    "alternativ": {
+      "A": "Fingerspretning eller abduktion av pekfingret (interosséer)",
+      "B": "Palmarabduktion av tummen",
+      "C": "Extension i tummens IP-led",
+      "D": "Isolerad böjning av PIP-lederna"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Interosséerna innerveras av n. ulnaris och testas genom att be patienten spreta på fingrarna mot motstånd.",
+    "varför_övriga_fel": "B testar medianus. C testar radialis (EPL). D testar medianus (FDS).",
+    "källa": "Handkirurgi Anatomi och status.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_003",
+    "huvudområde": "Anatomi och Handstatus",
+    "subtopic": "Nervanatomi och motorik",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken motorisk funktion förloras i handen vid en komplett skada på n. radialis?",
+    "alternativ": {
+      "A": "Tumo-opposition mot lillfingret",
+      "B": "Flexion i DIP-lederna",
+      "C": "Extension i handled och fingrar",
+      "D": "Förmågan att abducera fingrarna"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "N. radialis innerverar extensormuskulaturen som sköter sträckning (extension) av handled och fingrar (samt tumme).",
+    "varför_övriga_fel": "A testar medianus. B testar ulnaris/medianus (FDP). D testar ulnaris (interosséer).",
+    "källa": "Handkirurgi Anatomi och status.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_004",
+    "huvudområde": "Anatomi och Handstatus",
+    "subtopic": "Sensorik och Cirkulation",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är det normala gränsvärdet för tvåpunktsdiskrimination (2-PD) hos en vuxen vid test på fingertopp?",
+    "alternativ": {
+      "A": "Cirka 5 mm",
+      "B": "Cirka 10 mm",
+      "C": "Cirka 15 mm",
+      "D": "Cirka 2 mm"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Normal 2-PD är ca 5 mm (varierar 3-7 mm). Värden över 10 mm indikerar kraftig nervpåverkan eller skada.",
+    "varför_övriga_fel": "B och C är tydligt patologiska värden. D är svårt för en vanlig människa att känna och ofta under detektionsgränsen i klinisk vardag.",
+    "källa": "Handkirurgi Elektiv.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_005",
+    "huvudområde": "Anatomi och Handstatus",
+    "subtopic": "Sensorik och Cirkulation",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken fysiologisk funktion utvärderas när man drar ett pennskaft längs huden på ett finger (sudomotorik)?",
+    "alternativ": {
+      "A": "Kapillär återfyllnad och grad av lokal ischemi.",
+      "B": "Funktionen i lokala smärtreceptorer.",
+      "C": "Turgor i den underliggande bindväven.",
+      "D": "Svettkörtelfunktionen som förmedlas via perifera nervers autonoma fibrer."
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Med sensoriska nerver löper autonoma/parasympatiska fibrer som skapar fukt. En skadad nerv leder till torr/glatt hud, vilket märks av att en penna glider onormalt lätt.",
+    "varför_övriga_fel": "Detta testar inte blodcirkulation, turgor eller smärta. Friktionen minskar pga avsaknad av svett.",
+    "källa": "Handkirurgi Anatomi och status.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_006",
+    "huvudområde": "Anatomi och Handstatus",
+    "subtopic": "Senanatomi",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur utestänger man effektivt kraften från FDP-muskeln för att isolerat testa funktionen hos Flexor Digitorum Superficialis (FDS) i ett specifikt finger?",
+    "alternativ": {
+      "A": "Blockera PIP-leden och be patienten flektera DIP-leden.",
+      "B": "Håll patientens övriga fingrar sträckta, och be dem flektera enbart i det testade fingrets PIP-led.",
+      "C": "Fixera handleden i 90 graders dorsalflexion.",
+      "D": "Be patienten spreta med fingrarna mot motstånd."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "FDP-muskeln har en gemensam muskelbuk. Genom att hålla de andra fingrarna helt raka låses FDP i extension, vilket tvingar FDS att ensam utföra PIP-flexionen.",
+    "varför_övriga_fel": "A testar FDP. C minskar bara muskelkraften generellt pga extremposition. D testar interosséer.",
+    "källa": "Handkirurgi Anatomi och status.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_007",
+    "huvudområde": "Anatomi och Handstatus",
+    "subtopic": "Senanatomi",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken senfunktion isoleras när du håller patientens PIP-led rakt och ber patienten att böja på enbart ändfalangen (DIP-leden)?",
+    "alternativ": {
+      "A": "Flexor Digitorum Profundus (FDP)",
+      "B": "Flexor Digitorum Superficialis (FDS)",
+      "C": "Lumbrikaler",
+      "D": "Extensor Digitorum Communis (EDC)"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Endast Flexor Digitorum Profundus fäster distalt om DIP-leden och ansvarar för aktiv flexion där.",
+    "varför_övriga_fel": "FDS fäster på mellanfalangen. Lumbrikaler böjer i MCP. EDC sträcker fingrarna.",
+    "källa": "Handkirurgi Anatomi och status.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_008",
+    "huvudområde": "Anatomi och Handstatus",
+    "subtopic": "Sensorik och Cirkulation",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är det primära syftet med att utföra Allens test?",
+    "alternativ": {
+      "A": "Att verifiera närvaro av karpaltunnelsyndrom.",
+      "B": "Att påvisa artros i CMC-1-leden.",
+      "C": "Att undersöka kollateralcirkulationen via a. ulnaris och a. radialis.",
+      "D": "Att testa stabiliteten i SL-ligamentet."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Båda artärerna trycks av varpå en släpps i taget för att se om handflatan återfår färg. Syftet är att se om en artär på egen hand kan försörja handen (kollateralcirkulation).",
+    "varför_övriga_fel": "Testar varken nerver, senor eller ledband. Det är ett rent vaskulärt test.",
+    "källa": "Handkirurgi Anatomi och status.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_009",
+    "huvudområde": "Anatomi och Handstatus",
+    "subtopic": "Senanatomi",
+    "typ": "anatomi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilka två senor löper gemensamt i handledens första dorsala senfack?",
+    "alternativ": {
+      "A": "Abductor Pollicis Longus (APL) och Extensor Pollicis Brevis (EPB)",
+      "B": "Extensor Carpi Radialis Longus (ECRL) och Brevis (ECRB)",
+      "C": "Extensor Pollicis Longus (EPL) och Extensor Indicis (EI)",
+      "D": "Flexor Pollicis Longus (FPL) och Palmaris Longus (PL)"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "I 1:a senfacket går APL och EPB. Dessa senor är inblandade vid de Quervains tendovaginit.",
+    "varför_övriga_fel": "B är i 2:a facket. C ligger i 3:e respektive 4:e facket. D är volara böjsenor, ej i de dorsala facken.",
+    "källa": "Handkirurgi Handstatus föreläsning.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_010",
+    "huvudområde": "Anatomi och Handstatus",
+    "subtopic": "Senanatomi",
+    "typ": "anatomi",
+    "svårighetsgrad": "medel",
+    "fråga": "Runt vilken benstruktur på dorsala radius vinklas Extensor Pollicis Longus (EPL) för att skapa en hävarm?",
+    "alternativ": {
+      "A": "Radiella styloiden",
+      "B": "Listers tuberkel",
+      "C": "Processus coronoideus",
+      "D": "Hamulus os hamati"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Listers tuberkel är en upphöjning på dorsala radius som fungerar som en mekanisk pulley (hävarm) för EPL.",
+    "varför_övriga_fel": "Radiella styloiden är relaterad till 1:a senfacket. Processus coronoideus finns på ulna/mandibula. Hamulus är volart ulnart.",
+    "källa": "Handkirurgi Handstatus föreläsning.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_011",
+    "huvudområde": "Anatomi och Handstatus",
+    "subtopic": "Senanatomi",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "En patient opponerar tummen mot lillfingret under lätt handledsflexion. En tunn, spänd sena framträder tydligt centralt strax proximalt om karpus. Vilken sena är detta troligast?",
+    "alternativ": {
+      "A": "Flexor Digitorum Profundus",
+      "B": "Extensor Carpi Ulnaris",
+      "C": "Brachioradialis",
+      "D": "Palmaris Longus"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Palmaris Longus-senan framträder centralt över handledens volarsida vid tumbas-lillfinger-opposition. (Saknas hos en del av befolkningen).",
+    "varför_övriga_fel": "FDP är djup och ej synlig som ytlig sträng. ECU är dorsal. Brachioradialis fäster högre upp på radialis styloid.",
+    "källa": "Handkirurgi Handstatus föreläsning.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_012",
+    "huvudområde": "Anatomi och Handstatus",
+    "subtopic": "Sensorik och Cirkulation",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad indikerar en akut avsaknad av hudturgor (huden fjädrar inte tillbaka) hos ett traumatiserat finger?",
+    "alternativ": {
+      "A": "Total senruptur i dig 2",
+      "B": "Högt infektionstryck",
+      "C": "Kritisk lokal ischemi / mycket nedsatt blodcirkulation",
+      "D": "Normal fynd hos patienter över 40 år"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Avsaknad av turgor i en skadad hand (huden blir stum/degig) är en varningsklocka för extremt dålig blodcirkulation/ischemi.",
+    "varför_övriga_fel": "Det har med hydrering och kärlfyllnad att göra, inte specifikt böjsenor eller endast infektionstryck.",
+    "källa": "Handkirurgi Handstatus föreläsning.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_013",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Senskador",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Inom vilken tidsram måste en traumatisk böjseneskada senast opereras på handkirurgisk klinik för bästa prognos?",
+    "alternativ": {
+      "A": "Inom 3 dagar",
+      "B": "Urakut inom 2 timmar",
+      "C": "Inom 14 dagar",
+      "D": "Den läker av sig självt med strikt gipsning i 8 veckor"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Böjseneskador bör opereras inom cirka 3 dagar innan muskeln retraherar för mycket, och senändarna blir svåra att dra ihop.",
+    "varför_övriga_fel": "De opereras ej mitt i natten (ej urakut om inte stor artärskada). Konservativ behandling är verkningslös på komplett ruptur.",
+    "källa": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_014",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Senskador",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken postoperativ regim används konsekvent efter sutur av en böjseneskada för att undvika sammanväxningar (adherenser)?",
+    "alternativ": {
+      "A": "Stelt gips i 12 veckor",
+      "B": "Gummibandsdrag (tillåter aktiv extension och drar passivt fingret i flexion)",
+      "C": "Tung belastningsträning direkt dagen efter",
+      "D": "Steroidinjektion i senans ändar"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "För att senan ska glida i senskidan utan att gå av utförs rehabilitering med ett gummiband tejpat till nageln som mjukt drar fingret i flexion. Patienten kan aktivt sträcka fingret ut.",
+    "varför_övriga_fel": "A ger extrem stelhet. C får lagningssuturen att gå av. D stör sårläkningen negativt.",
+    "källa": "Handkirurgi Akuta handskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_015",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Senskador",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur fördelas ofta ansvaret mellan ortoped- och handkirurgklinik gällande akuta sträckseneskador?",
+    "alternativ": {
+      "A": "Vårdcentralen hanterar alla extensorskador själva.",
+      "B": "Alla typer av extensorskador skickas alltid till handkirurg.",
+      "C": "Skador på handryggen handläggs ofta av ortoped, medan distala extensorskador ute på fingrarna remitteras till handkirurg.",
+      "D": "Ortopeden handlägger endast skador på böjsenor."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Extensorskador över handryggen är vanligast och behandlas rutinmässigt av ortoped. Distalt på fingrarna är extensormekanismen mer komplex och hanteras av handkirurg.",
+    "varför_övriga_fel": "D är helt omvänt. Handkirurgin tar inte alla pga resursbrist och enkelheten av dorsala senligationer.",
+    "källa": "Akuta skador.pdf",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_016",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Senskador",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är standardbehandlingen vid ett nyupptäckt, rent malletfinger (droppfinger) utan stora ledytehak?",
+    "alternativ": {
+      "A": "Direkt operativ sen-sutur",
+      "B": "Kortisoninjektion intraartikulärt i DIP-leden",
+      "C": "Amputation av ändfalangen",
+      "D": "Konservativ behandling med DIP-led i sträckt ortos/skena dygnet runt i 6 veckor, därefter nattetid."
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Malletfinger (ruptur av sträcksenan vid distala falangen) läker oftast utmärkt konservativt om DIP-leden hålls strikt extenderad med ortos under lång tid.",
+    "varför_övriga_fel": "Operation krävs oftast endast vid dislocerat och stort bensegment med subluxation.",
+    "källa": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_017",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Ligamentskador",
+    "typ": "anatomi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken anatomisk struktur skadas vanligen vid en 'skidåkartumme'?",
+    "alternativ": {
+      "A": "Ulnara kollateralligamentet (UCL) i tummens MCP-led",
+      "B": "Radiella kollateralligamentet (RCL) i tummens IP-led",
+      "C": "FPL-senan vid fästet",
+      "D": "Scapholunära (SL) ligamentet"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Vid fall mot utsträckt tumme (t.ex. med stav) sliter radial vackling av det ulnara kollateralligamentet (UCL) i tumbasen.",
+    "varför_övriga_fel": "Det är ulnarsidans ligament som blir sträckt och brister vid trauma mot radial abduktion.",
+    "källa": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_018",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Ligamentskador",
+    "typ": "patofysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "När ett ulnart kollateralligament (UCL) i tummen brister helt och inte kan läka konservativt, beror det ofta på en felpositionering av ligamentet. Vad kallas denna lesion?",
+    "alternativ": {
+      "A": "Bankartskada",
+      "B": "Stenerlesion (ligamentet fastnar utanför adduktoraponeurosen)",
+      "C": "Boutonnière-deformitet",
+      "D": "Kanavels tecken"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "En Stenerlesion uppstår när det avslitna ulnara kollateralligamentet viker sig tillbaka och hamnar ytligt om adduktoraponeurosen. Ligamentändarna kan då inte mötas och läker inte i gips.",
+    "varför_övriga_fel": "Bankart är i axeln. Boutonnière i PIP-leden. Kanavel är vid tendovaginit.",
+    "källa": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_019",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Ligamentskador",
+    "typ": "statusfynd",
+    "svårighetsgrad": "svår",
+    "fråga": "Vilket specifikt kliniskt test utförs vid misstanke om ligamentskada mellan scaphoideum och lunatum (SL-dissociation)?",
+    "alternativ": {
+      "A": "Phalens test",
+      "B": "Finkelsteins test",
+      "C": "Watsons test",
+      "D": "Allens test"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Watsons test utförs för att känna efter instabilitet (glapp/smärta/utbuktning) mellan scaphoideum och lunatum vid dorsal/radial manipulation.",
+    "varför_övriga_fel": "Phalen testar n. medianus. Finkelstein testar de Quervains tendovaginit. Allen testar kärlförsörjning.",
+    "källa": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_020",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Ligamentskador",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur testar du lättast stabiliteten i det komplexa ledbandet TFCC (Triangular Fibrocartilage Complex) i handleden?",
+    "alternativ": {
+      "A": "Genom att komprimera tummen axialt in mot radius.",
+      "B": "Genom att blockera ulna och rucka scaphoideum volart/dorsalt.",
+      "C": "Genom perkussion längs med m. flexor carpi ulnaris.",
+      "D": "Genom att stabilisera radius och manipulera/rucka ulna i volar-dorsal riktning och jämföra med motsatt sida."
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "TFCC stabiliserar DRU-leden (distala radioulnarleden). Vid skada ses en ökad laxitet ulnart vid ruckning anteriort-posteriort jämfört med frisk sida.",
+    "varför_övriga_fel": "A = Scaphoideum / CMC1. B = SL/scaphoid test. C = Knackning letar Tinels tecken.",
+    "källa": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_021",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Frakturer",
+    "typ": "anatomi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket ben och vilken del är skadad vid en klassisk 'boxarfraktur'?",
+    "alternativ": {
+      "A": "Subcapitulär (distal) fraktur i metakarpale V",
+      "B": "Skaftfraktur i proximala falangen dig 3",
+      "C": "Basfraktur i metakarpale I",
+      "D": "Extraartikulär fraktur i scaphoideum"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Boxarfraktur är en fraktur genom halsen på femte metakarpalbenet, ofta orsakad av ett knytnävsslag.",
+    "varför_övriga_fel": "C är en Bennett. D är båtbensbrott. Vinkelfelställning accepteras ofta väl vid boxarfraktur.",
+    "källa": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_022",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Frakturer",
+    "typ": "komplikationer",
+    "svårighetsgrad": "medel",
+    "fråga": "När en patient med 'boxarfraktur' (metakarpale V) har ett litet sår över knogen måste man vara extremt observant. Varför?",
+    "alternativ": {
+      "A": "Detta tyder alltid på extensor-senruptur som urakut måste sys.",
+      "B": "Det medför stor risk för ilsken septisk artrit om skadan orsakats mot någons tänder (människobett/fight bite).",
+      "C": "Boxarfrakturer läker aldrig om de är öppna och kräver extern fixation.",
+      "D": "Hudtransplantation krävs för att täcka blottad led."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Slag mot en mun orsakar ofta sår över MCP-leden. Vid knuten näve öppnas leden och tänderna tränger in; när handen sträcks stängs bakterierna inne. Detta kallas 'fight bite' och ger allvarlig septisk artrit.",
+    "varför_övriga_fel": "Extensorsenorna kan repas men rupturerar sällan fullt av huden. Infektion är primära katastrofrisken.",
+    "källa": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_023",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Frakturer",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är en Bennettfraktur?",
+    "alternativ": {
+      "A": "En spiralfraktur i metakarpale 2.",
+      "B": "En avulsionsfraktur av ulnara kollateralligamentet.",
+      "C": "En intraartikulär fraktur i ulnara hörnet av metakarpale I med luxationstendens pga muskeldrag.",
+      "D": "En dislocerad fraktur i lunatum."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Bennettfraktur sitter i tumbasen (MC1) och är intraartikulär. Drag från APL-senan drar skelettet ur led vilket ofta gör den instabil och i behov av operativ fixation (stift).",
+    "varför_övriga_fel": "B är skidåkartumme (ligamentskada, sällan stor fraktur med denna epitet). D är lunate fraktur/dislokation.",
+    "källa": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_024",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Frakturer",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur upptäcks enklast och säkrast en rotationsfelställning vid en falangfraktur?",
+    "alternativ": {
+      "A": "Man tar en frontal-röntgen och mäter ledvinkeln.",
+      "B": "Man ber patienten sträcka ut handen fullt och tittar dorsalt över knogarna.",
+      "C": "Man gör en ultraljudsundersökning av fingrets senfack.",
+      "D": "Man kliniskt undersöker flekterade fingrar; de ska alla normalt konvergera mot och peka på scaphoideums tuberkel."
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Rotationsfelställning är väldigt svårt att se på slätröntgen. Det testas kliniskt - om fingrarna korsar varandra eller inte konvergerar mot handledens mitt (scaphoideum) vid knytning tyder det på rotation.",
+    "varför_övriga_fel": "Röntgen är inte pålitligt för fingrarnas rotation.",
+    "källa": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_025",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Frakturer",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är principen för 'kobraposition' vid immobilisering/gipsning av en okomplicerad falangfraktur?",
+    "alternativ": {
+      "A": "Lätt extenderad handled, MCP-lederna flekterade 70-90 grader och raka PIP/DIP-leder.",
+      "B": "Kraftigt flekterad handled, raka MCP-leder och flekterade PIP-leder.",
+      "C": "Handleden i 0 grader, alla fingrar maximalt böjda till en knytnäve.",
+      "D": "Alla fingrar och handled helt spikraka."
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Kobraposition (intrinsic plus-ställning) maximerar spänningen i kollateralligamenten för att förhindra skrumpning och bestående stelhet vid gipsning.",
+    "varför_övriga_fel": "Om man låter PIP böjas och MCP vara rakt kan ligamenten skrumpna irreversibelt.",
+    "källa": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_026",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Frakturer",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka kliniska fynd leder ofta misstankarna till en scaphoideumfraktur efter ett fall mot utsträckt hand?",
+    "alternativ": {
+      "A": "Krepitationer volart ulnart över pisiforme",
+      "B": "Palpationsömhet i fossa tabatière (snusgropen) samt smärta vid axial kompression av tummen",
+      "C": "Bortfall av palmarabduktion i tummen",
+      "D": "Rött, svullet finger med flexionskaskad"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ömhet dorsoradialt (fossa tabatière, scaphoideums tuberkel) och vid axiel stöt mot tummen är kardinaltecken på scaphoideumfraktur.",
+    "varför_övriga_fel": "A antyder ulnar skada. C antyder nervskada (medianus). D är en bakteriell tendovaginit.",
+    "källa": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_027",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Frakturer",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Patienten har starka kliniska tecken på scaphoideumfraktur men den akuta slätröntgenbilden visar ingen fraktur. Vad är korrekt handläggning?",
+    "alternativ": {
+      "A": "Säg att det är en lindrig stukning och ordinera fri mobilisering.",
+      "B": "Skicka hem patienten med Alvedon och boka tid hos sjukgymnast om 4 veckor.",
+      "C": "Behandla som fraktur med gips och kalla för MR, CT eller om-röntgen om 1-2 veckor.",
+      "D": "Genomför akut öppen exploration av handleden för att hitta frakturen visullet."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Odislocerade scaphoideumfrakturer är ibland osynliga på akut röntgen pga ödem. Man gipsar vid klinisk misstanke och omprövar med ny bilddiagnostik (MR/CT/Rtg) efter uppklarning.",
+    "varför_övriga_fel": "Om man låter patienten belasta kan frakturen dislocera, vilket ökar risken för pseudoartros drastiskt.",
+    "källa": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_028",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Frakturer",
+    "typ": "komplikationer",
+    "svårighetsgrad": "medel",
+    "fråga": "Varför är det stor risk för omläkning (pseudoartros) eller nekros i den proximala delen av båtbenet vid en scaphoideumfraktur?",
+    "alternativ": {
+      "A": "Eftersom den stora medianusnerven stryper blodflödet i karpaltunneln efter skadan.",
+      "B": "Benet utsätts för enorma krafter från tricepssenan.",
+      "C": "Eftersom tummens leder tar all synovialvätska.",
+      "D": "På grund av retrograd blodförsörjning – blodkärlen går in distalt och grenar sig till den proximala polen som riskerar bli helt devaskulariserad när frakturen skär genom."
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Scaphoideums blodkärl träder in distalt och rinner bakåt (retrograd försörjning). Går benet av dör blodflödet till benets proximala fragment.",
+    "varför_övriga_fel": "A, B och C är helt irrelevanta påhitt.",
+    "källa": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_029",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Fingertoppsskador",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är oftast den bästa behandlingen vid en mindre, ostrukturerad fingertoppsamputation med god mjukvävnadstäckning över benet?",
+    "alternativ": {
+      "A": "Sekundärläkning (omläggning tills den läkt från botten)",
+      "B": "Fullhudstransplantation från magen",
+      "C": "Akut steloperation av DIP-leden",
+      "D": "Förlängning av senorna"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Små amputationsskador på fingertoppar, utan stort blottlagt ben, läker mycket fint av sig själva med konservativ omläggning, och återskapar både form och känsel väl.",
+    "varför_övriga_fel": "Hudtransplantat saknar bra känsel, är komplicerat och oftast överflödigt för små defekter.",
+    "källa": "Handkirurgi Akuta handskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_030",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Fingertoppsskador",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "En man klämt fingret i en bildörr och har ett mycket smärtsamt, helt intakt nagel med ett blått blodfyllt hematom (subungualt hematom) under sig. Hur lindras detta bäst akut?",
+    "alternativ": {
+      "A": "Man rycker genast bort nageln för att torka ut blodet.",
+      "B": "Man borrar eller bränner ett litet hål genom nageln (trepanering) för att lätta på det intensiva trycket.",
+      "C": "Man injicerar lokalbedövning rakt genom hematomet.",
+      "D": "Man lägger fingret i en ispåse i 48 timmar."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Subungualt hematom ger en pulserande svår smärta pga trycket mellan nagel och ben. Ett litet hål låter blodet pysa ut, vilket ger omedelbar lindring.",
+    "varför_övriga_fel": "Att dra av nageln skapar i onödan ett stort sår. C och D adresserar inte grundorsaken till trycket.",
+    "källa": "Handkirurgi Akuta handskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_031",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Amputationer och Replantation",
+    "typ": "fysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är i allmänhet maximal accepterad varm-ischemitid innan irreversibel vävnadsskada uppstår vid totalamputation av respektive vävnad?",
+    "alternativ": {
+      "A": "Muskelvävnad/arm: ca 1 h. Finger: ca 3 h.",
+      "B": "Båda har exakt 2 h gräns.",
+      "C": "Muskelvävnad (arm/hand): ca 6 timmar. Finger (nästan utan muskel): ca 12 till 24 timmar.",
+      "D": "Finger: 1h. Muskel/arm: upp till 24h."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Större muskler bryts ner fortast (inom ca 6 h). Ett amputerat finger innehåller extremt lite muskulatur och överlever ischemi mycket länge, speciellt om det kyls rätt.",
+    "varför_övriga_fel": "Muskulatur är den svagaste länken vad gäller ischemitolerans, därför dör en arm mycket fortare än ett finger.",
+    "källa": "Handkirurgi introduktion.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_032",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Amputationer och Replantation",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur ska ett amputerat finger förvaras optimalt i väntan på eventuell replantation under transport till sjukhuset?",
+    "alternativ": {
+      "A": "Direkt på eller nedstoppad i rikligt med is för snabb nedfrysning.",
+      "B": "Torrt i rumstemperatur i en papperspåse.",
+      "C": "Nedstoppad i steril sprit eller jodlösning.",
+      "D": "Inlindad i fuktig kompress, instoppad i en stängd plastpåse, som i sin tur läggs i isvatten (kyls till ca 4 grader)."
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Amputatet ska kylas ner mot ca 4 grader men får absolut inte frysas, och ska inte ligga direkt i vätska.",
+    "varför_övriga_fel": "Direkt på is orsakar frostskador (nekros). Sprit eller rent vatten förstör vävnaden.",
+    "källa": "Handkirurgi introduktion.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_033",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Amputationer och Replantation",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vid ett isolerat trauma som resulterar i en amputation av ett enda finger, vilket av nedanstående fingrar är kirurger mest restriktiva/minst benägna att replantera (sätta tillbaka) på en vuxen?",
+    "alternativ": {
+      "A": "Pekfingret",
+      "B": "Tummen",
+      "C": "Långfingret",
+      "D": "Lillfingret"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Ett stelt (ofta resultat av op) pekfinger är i vägen och det intilliggande långfingret tar mycket snabbt och bra över pekfingrets pincett-greppsfunktion. Man är därför mer benägen att ta bort ett pekfinger än t.ex. tummen.",
+    "varför_övriga_fel": "Tummen är halva handens funktion och sparas nästan alltid om möjligt. Lång och lillfinger stabiliserar cylindriskt grepp.",
+    "källa": "Handkirurgi introduktion.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_034",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Kompartmentsyndrom",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken symtombild stämmer bäst med ett begynnande kompartmentsyndrom i underarm/hand?",
+    "alternativ": {
+      "A": "Feber, röda strimmor upp mot armhålan och purulent sårsekretion.",
+      "B": "Extrem (oproportionerlig) smärta, kraftig ömhet vid passiv extension av musklerna, och brädhård svullnad.",
+      "C": "Kall hand med tidigt bortfall av perifera pulsar vid radialis, dock smärtfritt.",
+      "D": "Lokaliserat ganglie över carpus med stela fingrar."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "'Pain out of proportion', svår smärta vid muskeltöjning och brädhård svullnad är kardinaltecken. Pulsarna kan ofta vara bevarade till långt sent i förloppet.",
+    "varför_övriga_fel": "A = Infektion/Lymfangit. C = Kärlskada. Pulsar är sällan borta tidigt vid kompartment.",
+    "källa": "Handkirurgi introduktion.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_035",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Luxationer",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är generellt den akuta primära åtgärden för en okomplicerad luxation av en PIP-led i ett finger efter adekvat bedövning (blockad) och frånvaro av fraktur?",
+    "alternativ": {
+      "A": "Sätt fingret i sträck på en gipsskena i tre månader.",
+      "B": "Genomför urakut öppen reponering på operation.",
+      "C": "Sluten reponering med axiel dragning (längsriktning) följt av en kort immobilisering och tidig rörelseträning (fysioterapi) för att undvika stelhet.",
+      "D": "Borra ett stift rakt över leden innan du drar."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Enkla fingerluxationer dras rätt slutet i bedövning. Härefter är tidig mobilisering extremt viktigt pga den stora risken för permanent ledstelhet.",
+    "varför_övriga_fel": "Lång gipsning ger ett permanent stelt finger. Kirurgi behövs oftast bara om sluten reposition misslyckas.",
+    "källa": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_036",
+    "huvudområde": "Akuta handskador",
+    "subtopic": "Amputationer och Replantation",
+    "typ": "fysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken enskild vävnad är den som bryts ner absolut fortast och begränsar chansen för en replantation om avsnörningstiden/ischemitiden drar ut på tiden?",
+    "alternativ": {
+      "A": "Ben",
+      "B": "Sena",
+      "C": "Hud",
+      "D": "Muskulatur"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Muskelvävnad är extremt syreberoende och har sämst ischemitolerans. Detta är anledningen till varför fingrar (med mycket lite muskelvävnad) kan replanteras betydligt längre efter skadan än en hel underarm.",
+    "varför_övriga_fel": "Ben och sena tolererar kyla och syrebrist mycket väl.",
+    "källa": "Handkirurgi introduktion.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_037",
+    "huvudområde": "Elektiv handkirurgi",
+    "subtopic": "Nervkompressioner",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Karpaltunnelsyndrom orsakas av kompression av n. medianus. I vilka fingrar ses typiskt domningar och pirrningar hos dessa patienter?",
+    "alternativ": {
+      "A": "Tumme, pekfinger, långfinger och radiella halvan av ringfingret",
+      "B": "Endast ulnara halvan av ringfingret och lillfingret",
+      "C": "Alla fingrar lika mycket",
+      "D": "Endast dorsalt på handryggen över tummen"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Medianus försörjer de volara tre och en halvt radiella fingrarna (I-III samt halva IV) med sensorik.",
+    "varför_övriga_fel": "B är ulnaris. D är grenar av radialis.",
+    "källa": "Handkirurgi Elektiv.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_038",
+    "huvudområde": "Elektiv handkirurgi",
+    "subtopic": "Nervkompressioner",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur utförs Phalens test vid misstanke om karpaltunnelsyndrom?",
+    "alternativ": {
+      "A": "Man knackar över nerven vid handleden för att framkalla en stöt-känsla.",
+      "B": "Patienten böjer (flekterar) handlederna kraftigt under upp till en minut för att provocera fram symtom/domningar.",
+      "C": "Man klämmer av blodflödet i artärerna.",
+      "D": "Man drar passivt i alla böjsenor för att utvärdera smärta."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Phalens test provocerar n. medianus i karpaltunneln genom handledsflexion. Ett positivt test utlöser symtomen.",
+    "varför_övriga_fel": "A beskriver Tinels test. C beskriver Allens test. D beskriver Kanavels tecken.",
+    "källa": "Handkirurgi Elektiv.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_039",
+    "huvudområde": "Elektiv handkirurgi",
+    "subtopic": "Nervkompressioner",
+    "typ": "behandling",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken konservativ behandling används ofta som första åtgärd vid nydiagnostiserat, icke-akut karpaltunnelsyndrom med milda nattliga besvär?",
+    "alternativ": {
+      "A": "Höga doser peroral kortison",
+      "B": "Fysioterapi med tunga lyft för att stärka handleden",
+      "C": "Nattskena/ortos som håller handleden i lätt extension",
+      "D": "Omedelbar kirurgisk klyvning av flexorretinaklet"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Många sover med böjda handleder vilket ökar trycket på nerven. En nattskena i neutralt eller lätt extenterat läge maximerar volymen i tunneln.",
+    "varför_övriga_fel": "Operation är indikerat först om skena ej hjälper, vid motorikpåverkan, eller konstanta besvär.",
+    "källa": "Elektiv handkirurgi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_040",
+    "huvudområde": "Elektiv handkirurgi",
+    "subtopic": "Nervkompressioner",
+    "typ": "mekanism",
+    "svårighetsgrad": "medel",
+    "fråga": "Karpaltunnelsyndrom är oftast idiopatiskt men det finns underliggande tillstånd som är starkt överrepresenterade. Vilken grupp av tillstånd ökar risken?",
+    "alternativ": {
+      "A": "Celiaki, lungcancer, njursvikt",
+      "B": "Osteoporos, gikt, sarkoidos",
+      "C": "Anorexi, hypogonadism, osteopeni",
+      "D": "Graviditet, diabetes, reumatoid artrit, hypotyreos"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Graviditet (ödem), RA (senskidesinflammation), hypotyreos (ödem/myxödem) och diabetes (nervkänslighet) är klassiska riskfaktorer för karpaltunnelsyndrom.",
+    "varför_övriga_fel": "De andra alternativen saknar stark koppling till KTS.",
+    "källa": "Handkirurgi Elektiv.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_041",
+    "huvudområde": "Elektiv handkirurgi",
+    "subtopic": "Nervkompressioner",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "svår",
+    "fråga": "En patient inkommer med klassiska ulnaris-besvär (pirrningar/svaghet i dig 4-5). Hur kan du via kliniskt status ofta differentiera om nerven sitter i kläm \"högt upp\" (sulcus ulnaris) kontra \"lågt ner\" (Guyons kanal)?",
+    "alternativ": {
+      "A": "Hög kompression ger ofta nedsatt känsel även dorsalt ulnart (dorsala grenen avgår före handleden) samt svaghet i FDP 5.",
+      "B": "Hög kompression är smärtfri, låg kompression ger alltid brutal smärta.",
+      "C": "Vid låg kompression domnar hela armbågen bort.",
+      "D": "Endast låg kompression påverkar tummens palmarabduktion."
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Nervens dorsala sensoriska gren samt de motoriska trådarna till FDP i underarmen avgår proximalt om Guyons kanal i handleden. En kompression i armbågen drar därför med sig dessa funktioner, medan en skada i Guyons sparar dem.",
+    "varför_övriga_fel": "Tumabduktion är Medianus (undantag adduktion = Ulnaris). Smärta kan variera.",
+    "källa": "Handkirurgi Elektiv.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_042",
+    "huvudområde": "Elektiv handkirurgi",
+    "subtopic": "Senåkommor",
+    "typ": "mekanism",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är den patofysiologiska mekanismen bakom ett så kallat 'triggerfinger' (tendovaginitis stenosans)?",
+    "alternativ": {
+      "A": "Inflammation som förstör extensorsenan i höjd med mellanfalangen.",
+      "B": "En lokal förtjockning i böjsenan/senskidan som fastnar och hakar upp sig i mynningen, oftast vid A1-pullyn i handflatan.",
+      "C": "En autoimmun destuktion av muskelbuken i underarmen.",
+      "D": "Luxation av flexorsenorna ur karpaltunneln."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Böjsenan bildar en knuta eller blir för tjock för senskidans första trånga passage (A1), vilket gör att det fastnar när fingret sträcks ut och utlöser ett 'knäpp'.",
+    "varför_övriga_fel": "A gäller ej flexorer. C och D är felaktig anatomi.",
+    "källa": "Elektiv handkirurgi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_043",
+    "huvudområde": "Elektiv handkirurgi",
+    "subtopic": "Senåkommor",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Var känner du bäst den svullnad/knuta som orsakar upphakningen vid ett triggerfinger?",
+    "alternativ": {
+      "A": "Dorsalt över handleden",
+      "B": "Vid DIP-leden volart",
+      "C": "Volart över senskideingången (i höjd med MCP-leden/distala böjvecket i handflatan)",
+      "D": "Dorsalt över knogen"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Problemet sitter vid A1-pullyn som ligger precis vid basen av fingret, under det distala böjvecket i handflatan, alltså vid MCP-leden volart.",
+    "varför_övriga_fel": "Triggerfingrar involverar böjsenorna, inte sträcksenorna (dorsalt). Problemet ligger proximalt, inte distalt (DIP).",
+    "källa": "Handkirurgi Elektiv.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_044",
+    "huvudområde": "Elektiv handkirurgi",
+    "subtopic": "Senåkommor",
+    "typ": "anatomi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilka specifika senor drabbas vid De Quervains tendovaginit?",
+    "alternativ": {
+      "A": "Flexor Pollicis Longus (FPL)",
+      "B": "Extensor Carpi Ulnaris (ECU)",
+      "C": "Flexor Digitorum Superficialis (FDS)",
+      "D": "Abductor Pollicis Longus (APL) och Extensor Pollicis Brevis (EPB)"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "De Quervains tendovaginit är en inflammation av de senor som löper i första dorsala senfacket – APL och EPB.",
+    "varför_övriga_fel": "A och C är volara. B är ulnart. Alla andra är inkorrekta senor.",
+    "källa": "Handkirurgi Elektiv.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_045",
+    "huvudområde": "Elektiv handkirurgi",
+    "subtopic": "Senåkommor",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket specifikt kliniskt test används för att provocera fram smärta och därmed ställa diagnosen De Quervains tendovaginit?",
+    "alternativ": {
+      "A": "Finkelsteins test (patienten greppar om inlagd tumme och ulnardevierar)",
+      "B": "Watsons test (palpation och vackling av scaphoid-benet)",
+      "C": "Tinels test över handleden",
+      "D": "Phalens test"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Finkelsteins test skapar maximal tension på senorna i första dorsala senfacket (EPB och APL) vilket utlöser karakteristisk skarp smärta.",
+    "varför_övriga_fel": "Watsons är ligament. Tinels och Phalens rör nervinklämning.",
+    "källa": "Handkirurgi Elektiv.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_046",
+    "huvudområde": "Elektiv handkirurgi",
+    "subtopic": "Artros",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är ett typiskt och karakteristiskt kliniskt statusfynd/test för misstänkt tumbasartros (artros i CMC 1)?",
+    "alternativ": {
+      "A": "Positivt Tinels tecken över karpaltunneln",
+      "B": "Positivt Grinding test (smärta vid axial kompression och vridning av metakarpale 1 mot ledpannan)",
+      "C": "Hästskoabscess och flexionskaskad",
+      "D": "Oförmåga att aktivt sträcka IP-leden på tummen"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Grinding test utförs för att känna efter krepitationer och provocera fram smärtan i CMC-1-leden då brosket är nedslitet.",
+    "varför_övriga_fel": "A = Medianuspåverkan. C = Infektion. D = EPL-ruptur.",
+    "källa": "Handkirurgi Elektiv.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_047",
+    "huvudområde": "Elektiv handkirurgi",
+    "subtopic": "Artros",
+    "typ": "behandling",
+    "svårighetsgrad": "medel",
+    "fråga": "När konservativ behandling (ortos, NSAID, injektioner) inte längre hjälper vid svår tumbasartros – vilken operationsteknik anses vara standardbehandlingen?",
+    "alternativ": {
+      "A": "Kollagenasinjektion (Xiapex)",
+      "B": "Klyvning av flexorretinaklet",
+      "C": "Interpositionsplastik (excision av hela os trapezium)",
+      "D": "Bred fasciotomi"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Standardbehandling kirurgiskt vid långtgången CMC-1 artros är att man tar bort os trapezium och ibland fyller utrymmet med sena för att avlägsna ben-mot-ben kontakten.",
+    "varför_övriga_fel": "A = Dupuytrens. B = Karpaltunnelsyndrom. D = Kompartmentsyndrom.",
+    "källa": "Handkirurgi Elektiv.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_048",
+    "huvudområde": "Elektiv handkirurgi",
+    "subtopic": "Dupuytrens kontraktur",
+    "typ": "anatomi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken anatomisk struktur i handen blir inflammerad och skrumpnar vid Dupuytrens kontraktur ('vikingasjukan')?",
+    "alternativ": {
+      "A": "FDS-senan",
+      "B": "Dorsala interosséer",
+      "C": "Ligamentum carpi transversum",
+      "D": "Palmaraponeurosen"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Det är inte böjsenorna som är sjuka vid Dupuytrens, utan det är den tjocka bindvävsplattan ytligt i handflatan (palmaraponeurosen) som bygger spända strängar.",
+    "varför_övriga_fel": "Senorna är intakta, de spänns inte direkt utan hindras av hud/aponeurosens skrumpning.",
+    "källa": "Handkirurgi Elektiv.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_049",
+    "huvudområde": "Elektiv handkirurgi",
+    "subtopic": "Dupuytrens kontraktur",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vid ungefär vilken grad av kontraktur är det dags att överväga behandling (nålfasciotomi eller kollagenas) vid Dupuytrens kontraktur?",
+    "alternativ": {
+      "A": "Om krökningen/kontrakturen närmar sig ca 30 grader eller mer",
+      "B": "Alltid, redan vid allra första känning/symtom, för att stoppa förloppet",
+      "C": "Bara om smärtan överstiger 8/10 på VAS-skalan (då de i normalfallet är väldigt smärtsamma)",
+      "D": "När huden spricker"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Behandling inleds när fingret utgör ett hinder, ofta vid över 30 graders krökning. Tillståndet i sig är vanligen inte smärtsamt alls.",
+    "varför_övriga_fel": "Eftersom sjukdomen återkommer opererar man sällan i förstadiet. Smärta är ej typiskt.",
+    "källa": "Handkirurgi Elektiv.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_050",
+    "huvudområde": "Elektiv handkirurgi",
+    "subtopic": "Ganglion",
+    "typ": "klinisk bild",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är den kliniska och fysiologiska definitionen av ett ganglion i handen?",
+    "alternativ": {
+      "A": "Ett pus-fyllt böld i hudens dermis",
+      "B": "En godartad, ofta lätt fluktuerande vätskefylld cysta (innehållande gelé/ledvätska) med stjälk från en ledkapsel eller senskida",
+      "C": "Ett fibrom uppkommet efter mikrotrauma från tangentbordsanvändning",
+      "D": "En malignt degenererad nervcellskada (neurom)"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ett ganglion är en mycket vanlig ofarlig cysta med klar ledvätska/gelé i, ofta med en backventil mot leden.",
+    "varför_övriga_fel": "Det är varken purulent, malignt eller en fibrotisk tumör.",
+    "källa": "Handkirurgi Elektiv.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_051",
+    "huvudområde": "Elektiv handkirurgi",
+    "subtopic": "CRPS",
+    "typ": "klinisk bild",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilka utgör de huvudsakliga, karaktäristiska symtomen vid Complex Regional Pain Syndrome (CRPS) efter en handskada?",
+    "alternativ": {
+      "A": "Total känselbortfall, kalla fingrar utan puls och motorisk pares",
+      "B": "Purulent vätskning, feber och sepsis",
+      "C": "Kombination av oproportionerlig smärta, svullnad, ledstelhet, avvikande hudfärg, glansighet och allodyni",
+      "D": "Snabb muskelatrofi i hela armen med förlust av reflexer, utan smärta"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "CRPS kombinerar sensoriska (smärta, allodyni), motoriska (stelhet) och autonoma (hudfärg, svettning) extrem-reaktioner på ofta små trauman.",
+    "varför_övriga_fel": "A = total kärl-nerv-skada. B = Sepsis/infektion. D = Nervskada. CRPS är oerhört smärtsamt.",
+    "källa": "Handkirurgi Elektiv.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_052",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Allmänt",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad skiljer ofta initiala allvarliga handinfektioner från infektioner på andra ställen i kroppen vad gäller systemiska reaktioner?",
+    "alternativ": {
+      "A": "De orsakar omedelbart massiv sepsis med multiorgansvikt.",
+      "B": "De leder nästan alltid till förlamning i hela armen.",
+      "C": "Patienterna får svåra blödningar i såret.",
+      "D": "Patienten kan helt sakna feber och uppvisa lågt/normalt CRP, trots behov av akut operation."
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Det trånga utrymmet i handen ger lokal trycknekros extremt snabbt (t.ex. senskida eller pulpa), vilket ofta sker utan allmänpåverkan initialt.",
+    "varför_övriga_fel": "Ett normalt CRP eller feberfrihet får inte lura dig att tro att det är en lindrig skada. Kirurgi behövs ofta akut innan vävnaden dör av trycket.",
+    "källa": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_053",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bakteriella infektioner",
+    "typ": "klinisk bild",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken anatomisk region drabbas av infektion vid en 'akut paronyki'?",
+    "alternativ": {
+      "A": "Mjukvävnaden runt kanten på nageln",
+      "B": "Den distala falangens ledkapsel",
+      "C": "Senskidan för flexorsenan",
+      "D": "Underarmens muskelbukar"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Akut paronyki (nagelbandsinfektion) sitter i mjukdelarna precis i kanten på nageln, men kan sprida sig.",
+    "varför_övriga_fel": "Det sitter mest distalt och engagerar inte senor eller led initialt.",
+    "källa": "Handinfektioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_054",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bakteriella infektioner",
+    "typ": "patofysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Varför blir en infektion med abscess i fingerpulpan snabbt vävnadsförstörande och extremt smärtsam?",
+    "alternativ": {
+      "A": "För att senorna är mycket tunnare just i pulpan och går av.",
+      "B": "Fingerpulpan delas in av små fibrösa septa i små fack (compartments), som inte kan tänjas; var och ödem leder därmed direkt till ett högt nekrotiserande tryck.",
+      "C": "Pulpan saknar sensoriska nervändar varpå patienten fortsätter belasta fingret.",
+      "D": "Arteriell spasm utlöses omedelbart i hela handen."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "De bindvävsstråk (septa) som fäster huden mot benet skapar små rum. En abscess här kan inte utvidgas och skapar snabbt ett farligt minikompartmentsyndrom.",
+    "varför_övriga_fel": "A, C och D är felaktiga påståenden om pulpans anatomi och funktion.",
+    "källa": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_055",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bakteriella infektioner",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur måste en fullt utvecklad abscess i fingerpulpan med ökat tryck behandlas kirurgiskt för att lyckas?",
+    "alternativ": {
+      "A": "Den punkteras endast med en tunn nål.",
+      "B": "Gipsas med intravenös antibiotika i 5 dagar.",
+      "C": "Incision, dränering och framförallt måste man operativt dela alla små septa inuti pulpan för att helt tryckavlasta.",
+      "D": "Genom amputation."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Eftersom pulpan består av flera isolerade små fack (septa) måste dessa skäras/klippas av för att puset ska kunna rinna ut och trycket minska från alla vinklar.",
+    "varför_övriga_fel": "Gör man enbart ett litet hål dränerar man ofta bara ett ensamt septum.",
+    "källa": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_056",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bakteriella infektioner",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilka kliniska fynd ingår i Kanavels 4 kardinaltecken, som används för att ställa diagnosen purulent tendovaginit?",
+    "alternativ": {
+      "A": "Lätt svullnad enbart över DIP, stark smärta radialt, röd handflata, feber.",
+      "B": "Svullnad på handryggen, krepitationer vid handledsflexion, frossa, domnad tumme.",
+      "C": "Avsaknad av radialispuls, sval hand, normal rörlighet men ilsket rött, sårskorpa.",
+      "D": "Semiflexion av fingret i vila, stark smärta vid passiv sträckning, ömhet volart över hela senskidan samt en jämn/symmetrisk svullnad över hela fingret."
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Dessa fyra punkter (halvböjt finger, extrem passiv sträcksmärta, jämn korv-lik svullnad och tryckömhet över hela senskidan) kallas Kanavels tecken och tyder starkt på senskideinfektion.",
+    "varför_övriga_fel": "Andra symtom anger fel områden (t.ex. DIP, handrygg) eller generell sepsis.",
+    "källa": "Handinfektioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_057",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bakteriella infektioner",
+    "typ": "anatomi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vid en bakteriell tendovaginit kan infektionen ibland vandra djupt via den s.k. 'hästskoabscessen'. Vilka två fingrars senskidor/bursor kommunicerar ofta och möjliggör detta?",
+    "alternativ": {
+      "A": "Tumme (dig 1) och Lillfinger (dig 5)",
+      "B": "Pekfinger (dig 2) och Långfinger (dig 3)",
+      "C": "Långfinger (dig 3) och Ringfinger (dig 4)",
+      "D": "Alla fingrar kommunicerar alltid öppet."
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Bursa radialis (tummens sena) och bursa ulnaris (lillfingrets senor) fortsätter ner förbi handleden och är hos många människor förbundna därnere.",
+    "varför_övriga_fel": "Senskidorna för dig 2, 3 och 4 slutar vanligtvis ut mot handflatan och har egna separata återvändsgränder.",
+    "källa": "Handkirurgi Handstatus föreläsning.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_058",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bakteriella infektioner",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "En purulent (bakteriell) tendovaginit med tydliga tecken (t.ex. Kanavels) är en urakut diagnos för fingrets rörlighet. Vad är standardbehandlingen initialt?",
+    "alternativ": {
+      "A": "Recept på PcV (Kåvepenin) och vila hemma i 2 dagar.",
+      "B": "Akut kirurgisk senskidespolning i proximala/distala ändarna, efterföljt av iv antibiotika och inläggning.",
+      "C": "Lokalbedövning och klyvning av A1-ligamentet (som vid triggerfinger) för tryckavlastning.",
+      "D": "Lokal incision med kanyl rakt in i senskidan via fingerblomman."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Man måste omgående rensa ut bakterier och var ur senskidan via kontinuerlig spolning med NaCl genom små incissioner, för att undvika att senan dör eller växer fast av purulent inflammation.",
+    "varför_övriga_fel": "Kåvepenin hemma är grovt felbehandlat. Klyvning av A1 räcker ej. Hela skidan måste spolas.",
+    "källa": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_059",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bakteriella infektioner",
+    "typ": "komplikationer",
+    "svårighetsgrad": "medel",
+    "fråga": "Inom vilken ungefärlig tid börjar en purulent septisk artrit (infektion i en led) destruera ledbrosket om den lämnas obehandlad?",
+    "alternativ": {
+      "A": "Efter ungefär 1 vecka",
+      "B": "Inom 72 timmar",
+      "C": "Inom 24 timmar",
+      "D": "Brosket klarar sig i cirka en månad"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Tryck från puset och immuncellernas egna destruktiva enzymer börjar luckra upp ledbrosket redan inom 24 timmar. Det är extremt bråttom att spola leden.",
+    "varför_övriga_fel": "Längre tidsperspektiv resulterar oundvikligen i en totalt utplånad och permanent stel led.",
+    "källa": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_060",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bakteriella infektioner",
+    "typ": "mekanism",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur uppkommer oftast en septisk artrit i handens leder, till skillnad från hur det kan vara i exempelvis knä eller höft?",
+    "alternativ": {
+      "A": "Via direkt blodsmitte (hematogen spridning) från urinvägarna",
+      "B": "Via lymfatisk spridning från ansiktet",
+      "C": "Det är i princip en uteslutande autoimmun manifestation",
+      "D": "Oftast via direkt inokulation till följd av sår/penetrerande trauma mot leden (eller postoperativt)"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Lederna i handen sitter precis under tunn hud. Infektion i smålederna sker alltså mycket oftare genom direkt trauma (t.ex. bitskador) än från spridning via blodbanan.",
+    "varför_övriga_fel": "Hematogen spridning är vanligare i stora leder (knä/höft) hos barn/äldre. Autoimmunt (RA) är icke-septisk artrit.",
+    "källa": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_061",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bakteriella infektioner",
+    "typ": "mekanism",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är den vanligaste mekanismen för osteit/osteomyelit i handens skelett?",
+    "alternativ": {
+      "A": "Direkt inokulation av bakterier i benet (ex. pga sårskada, öppna frakturer eller metallimplantat/kirurgi)",
+      "B": "Spridning från tandinfektioner",
+      "C": "Det uppstår oftast sekundärt till svält",
+      "D": "Primär hematogen spridning utan hudsår"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "På samma sätt som med leder sitter handens ben mycket ytligt, och infektioner härskar oftast från direkt skada genom huden.",
+    "varför_övriga_fel": "Hematogen spridning till ben är ovanligt i handen.",
+    "källa": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_062",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bakteriella infektioner",
+    "typ": "klinisk bild",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är ett av de mest klassiska tidiga symtomen på nekrotiserande fasciit i arm/hand (före omfattande blåsbildning/hudnekros syns)?",
+    "alternativ": {
+      "A": "Hög feber och nackstelhet",
+      "B": "'Pain out of proportion' - en oerhört svår djup smärta som överstiger vad hudförändringarna indikerar",
+      "C": "Knäppande senor med trigger-fenomen",
+      "D": "En distinkt röd fläck som migrerar upp 1 cm per minut"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Den djupa smärtan känns intensiv, diffus och orimlig (pain out of proportion) eftersom infektionen löper snabbt längs den djupa fascian utan att direkt förstöra överhuden i början.",
+    "varför_övriga_fel": "Feber är inte alltid extremt initialt. C är sena. D beskriver röd strimma (lymfangit) men hastigheten och symtomet matchar inte bäst med fasciitens specifika pain out of proportion.",
+    "källa": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_063",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bakteriella infektioner",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken behandling är livs- och armräddande vid konstaterad/misstänkt nekrotiserande fasciit?",
+    "alternativ": {
+      "A": "Is och högläge tills huden ändrar färg",
+      "B": "Enbart snabb insättning av bredspektrumantibiotika (ex. Meropenem)",
+      "C": "Akut och omfattande kirurgisk fasciektomi (borttagning av angripen vävnad), jämte bredspektrumantibiotika och IVA-vård",
+      "D": "Konservativt inväntande av odlingssvar innan kniven rör patienten"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Nekrotiserande fasciit kräver urakut och aggressiv kirurgi där alltdött material avlägsnas radikalt. Antibiotika ensamt penetrerar inte död vävnad för att stoppa infektionen.",
+    "varför_övriga_fel": "Enbart antibiotika (B) är meningslöst. Inväntande (D) är dödligt.",
+    "källa": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_064",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bett",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "En grundläggande princip vid kirurgisk hantering av hund-, katt- och människobett i handen är:",
+    "alternativ": {
+      "A": "Sy snabbt igen med tät icke-resorberbar tråd för kosmetikans skull.",
+      "B": "Tejpa strikt tätt och låt patienten behålla full rörlighet.",
+      "C": "Lägg jod direkt på och limma.",
+      "D": "Rengör noggrant och lämna såren öppna för dränage."
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Bett injicerar bakterier djupt i vävnaden. Suturerar/stänger man ett bett finns en enorm risk för instängd abscessbildning. Man sörjer för ett öppet dränage och rengöring.",
+    "varför_övriga_fel": "Att stänga in bakterierna (A, B, C) i ett bettsår anses vara grovt fel.",
+    "källa": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_065",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bett",
+    "typ": "mikrobiologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken patogen fruktar man primärt vid djupa katt- (och hund)bett i handen, som brukar orsaka snabba symtom (smärta och svullnad) redan inom dygnet?",
+    "alternativ": {
+      "A": "Pasteurella multocida",
+      "B": "Staphylococcus aureus",
+      "C": "Streptococcus pyogenes (GAS)",
+      "D": "Pseudomonas aeruginosa"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Pasteurella multocida växer mkt snabbt i katt/hundbett (inkubationstid ofta 2-24 h).",
+    "varför_övriga_fel": "Staph och Strep kan också vara inblandade men Pasteurella är 'typatogen' för katt/hundbett med tidigt och ilsket insjuknande.",
+    "källa": "Handinfektioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_066",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bett",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket empiriskt p.o.-antibiotikum används vanligen som profylax / vid tidig behandling för hund- eller kattbett (som bl.a. täcker Pasteurella multocida)?",
+    "alternativ": {
+      "A": "Flukloxacillin (Heracillin)",
+      "B": "Fenoximetylpenicillin (Kåvepenin) eller Amoxicillin",
+      "C": "Klindamycin (Dalacin)",
+      "D": "Cefadroxil"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Pasteurella är ofta känslig för vanligt penicillin (Kåvepenin) eller Amimox. Flukloxacillin (Heracillin) som annars är vanlig sår-antibiotika är verkningslöst mot Pasteurella.",
+    "varför_övriga_fel": "A och C biter inte adekvat på Pasteurella.",
+    "källa": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_067",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bett",
+    "typ": "mekanism",
+    "svårighetsgrad": "medel",
+    "fråga": "En patient har ett litet sticksår dorsalt på knogen/MCP-leden efter att ha \"fastnat på en krog i en dörr\". Varför är såkallade fight-bites (människobett mot spänd knoge) oerhört farliga?",
+    "alternativ": {
+      "A": "Bakterierna lägger sig i senan och förstör alltid muskeln.",
+      "B": "Benbrottet orsakar permanent pares.",
+      "C": "När knytnäven är spänd exponeras leden. Om tanden bryter in i leden och handen sedan sträcks ut, kapslas den extremt patogena munfloran inuti leden. Kräver operationsspolning.",
+      "D": "Det orsakar snabbt gangrän i hela underarmen pga syfilisbakterier."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Vävnadsförskjutningen mellan flexerad och extenderad hand gör att infektionsporten (hålet) göms undan, vilket stänger in människomunnens mycket farliga bakterier inuti leden -&gt; septisk artrit.",
+    "varför_övriga_fel": "Mekanismen är inkapsling vid vävnadsglidning efter att ledbrosk komprimerats av tänder.",
+    "källa": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_068",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bett",
+    "typ": "mikrobiologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Varför betraktas människobett som farligare och medför en högre frekvens av svåra infektioner i handen jämfört med ex katt/hund-bett?",
+    "alternativ": {
+      "A": "Människan har generellt större tänder som krossar skelett.",
+      "B": "Bettet bär ofta på stelkramp i högre koncentration.",
+      "C": "Hundar borstar sina tänder.",
+      "D": "Människans munflora är exceptionellt aggressiv (bla streptokocker) och djupt patogen i vävnader, ofta ledande till snabb artritutveckling."
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Människans munflora består av flera stammar agressiva aeroba och anaeroba bakterier (såsom Streptokocker) vilka lätt orsakar ful infektion/septisk artrit.",
+    "varför_övriga_fel": "Flora-typen i munnen bestämmer den patogena agggressiviteten, inte krosskraft eller tetanus.",
+    "källa": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_069",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bett",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "En patient inkommer med ett misstänkt bett och en rodnad ganska nära MCP-leden i dig 2. Vad är den primära regeln för handens bettskador angående antibiotikaprofylax?",
+    "alternativ": {
+      "A": "Man bör i princip alltid överväga/ge profylax pga att alla bett i en hand riskerar att sitta nära en led/senskida.",
+      "B": "Bara om såret är mer än 5 cm djupt.",
+      "C": "Vänta in CRP-stegring på över 50 innan profylax aktiveras.",
+      "D": "Man ger aldrig profylax mot bett för det ökar resistensen utan reell vinning."
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Riktlinjen för bett generellt är restriktivitet med profylax, MED UNDANTAG när bettet sitter nära en led. I handen är *allting* nära en led/sena, vilket gör att profylax nästan alltid ges.",
+    "varför_övriga_fel": "Man inväntar aldrig CRP-ökning i riskabla bett pga faran för septisk destruktion.",
+    "källa": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_070",
+    "huvudområde": "Handinfektioner och bett",
+    "subtopic": "Bett",
+    "typ": "behandling",
+    "svårighetsgrad": "svår",
+    "fråga": "Om ett människobett uppvisar en ful infektion och patienten ankommer relativt sent (mer än 2 dygn efter bettet), vilket antibiotikum föreslås initialt för god täckning i svensk standardvård (ej PC-allergiker)?",
+    "alternativ": {
+      "A": "Klindamycin",
+      "B": "Amoxicillin-klavulansyra (Spektramox)",
+      "C": "Endast Flucloxacillin",
+      "D": "Erythromycin"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ett sent infekterat människobett kan vara en blandflora och då täcker ett bredare penicillinderivat med betalaktamashämmare (Spektramox) in väl. Kåvepenin/Amimox används oftast på tidiga bett.",
+    "varför_övriga_fel": "A och C biter inte på alla floran i en blandinfektion eller ev. Pasteurella. Spektramox är en bred bas för humana bitsår.",
+    "källa": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_071",
+    "huvudomrade": "Anatomi och Handstatus",
+    "subtopic": "Sensorik och Cirkulation",
+    "typ": "statusfynd",
+    "svarighetsgrad": "medel",
+    "fraga": "Hur ska instrumentet appliceras mot huden vid mätning av 2-punktsdiskrimination (2-PD) på ett finger för att undvika falskt positiva resultat?",
+    "alternativ": {
+      "A": "Spetsarna ska placeras tvärs över fingrets bredd för att testa båda digitalnerverna samtidigt.",
+      "B": "Spetsarna ska placeras i fingrets längdriktning (längs med fingret).",
+      "C": "Spetsarna ska tryckas in så hårt att huden vitnar för att aktivera smärtreceptorer.",
+      "D": "Instrumentet ska dras med en snabb rörelse från proximalt till distalt."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Om man sätter spetsarna tvärs över fingret riskerar man att stimulera både radiala och ulnara digitalnerven, vilket kan ge ett felaktigt intryck av att en avklippt nerv fungerar.",
+    "varfor_ovriga_fel": "Att stimulera båda nerverna samtidigt döljer en ensidig skada. Trycket ska vara lätt (tills huden precis bleknar), inte smärtsamt.",
+    "kalla": "Handkirurgi Handstatus föreläsning.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_072",
+    "huvudomrade": "Anatomi och Handstatus",
+    "subtopic": "Nervanatomi och motorik",
+    "typ": "statusfynd",
+    "svarighetsgrad": "lätt",
+    "fraga": "När du inspekterar en hand i vila (vilotonus), vad är ett tydligt tecken på en böjseneskada?",
+    "alternativ": {
+      "A": "Fingret är låst i en maximal flexionskaskad och kan inte rätas ut.",
+      "B": "Fingret ligger rakt och saknar den normala lätta böjningen (flexionskaskaden).",
+      "C": "Handleden faller i maximal palmarflexion.",
+      "D": "Alla fingrar devierar ulnart."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "En frisk hand i vila uppvisar en flexionskaskad där fingrarna är lätt böjda (mer ulnart). Går en böjsena av förloras tonus och fingret lägger sig onormalt rakt jämfört med de andra.",
+    "varfor_ovriga_fel": "A tyder på Dupuytren eller senförkortning. D tyder på Reumatoid Artrit.",
+    "kalla": "Handkirurgi Handstatus föreläsning.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_073",
+    "huvudomrade": "Akuta handskador",
+    "subtopic": "Nervskador",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "Vilka digitalnerver i fingrarna är mest kritiska att prioritera för mikrokirurgisk nervsutur vid skada, på grund av deras betydelse för handens pincettgrepp och kantslag?",
+    "alternativ": {
+      "A": "Båda nerverna på dig 3 och dig 4.",
+      "B": "Radialsidan av dig 2 (pekfinger), ulnarsidan av dig 5 (lillfinger), samt båda nerverna på tummen.",
+      "C": "Ulnarsidan på dig 2 (pekfinger) och radialsidan på dig 5 (lillfinger).",
+      "D": "Enbart nerver distalt om DIP-lederna över alla fingrar."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Tummens nerver är livsviktiga för grepp. Pekfingrets radialsida utgör mothåll i pincettgreppet. Lillfingrets ulnarsida är skyddskänsel för handens utsida.",
+    "varfor_ovriga_fel": "Distalt om DIP-leden är nerverna för små för att i regel sutureras (alternativ D). Ulnar dig 2 och radial dig 5 är mindre exponerade.",
+    "kalla": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_074",
+    "huvudomrade": "Akuta handskador",
+    "subtopic": "Luxationer",
+    "typ": "statusfynd",
+    "svarighetsgrad": "svår",
+    "fraga": "Vid en ventral luxation av PIP-leden i ett finger slits ofta extensormekanismens centrala band av. Vilket kliniskt test används för att verifiera skada på centrala bandet?",
+    "alternativ": {
+      "A": "Watsons test",
+      "B": "Finkelsteins test",
+      "C": "Elsons test",
+      "D": "Kanavels tecken"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Elsons test utvärderar integriteten hos det centrala extensorsenbandet över PIP-leden. Vid ruptur sjunker de laterala banden volart och skapar en Boutonnière-deformitet.",
+    "varfor_ovriga_fel": "Watson = SL-ligament. Finkelstein = de Quervain. Kanavel = tendovaginit.",
+    "kalla": "Handkirurgi Akuta handskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_075",
+    "huvudomrade": "Akuta handskador",
+    "subtopic": "Frakturer",
+    "typ": "behandling",
+    "svarighetsgrad": "medel",
+    "fraga": "En 25-årig patient har en obehandlad scaphoideumfraktur från ett fall för 3 månader sedan, som nu utvecklats till en pseudoartros. Vilken kirurgisk behandling är oftast nödvändig?",
+    "alternativ": {
+      "A": "Artroskopisk spolning av karpus.",
+      "B": "Öppen reposition, bentransplantat (ofta från crista iliaca) och fixation med skruv eller stift.",
+      "C": "Steloperation (artrodes) av hela handleden.",
+      "D": "Excision av scaphoideum och insättande av silikonprotes."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Scaphoideumpseudoartros (falsk led/icke-läkt fraktur) beror på dålig blodförsörjning. Gapet i benet måste fyllas med nytt ben (ex från höftkammen) och stabiliseras operativt.",
+    "varfor_ovriga_fel": "C och D är sista-linjens salvage-ingrepp för grav artros. A hjälper ej läka ben.",
+    "kalla": "Handkirurgi Akuta handskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_076",
+    "huvudomrade": "Akuta handskador",
+    "subtopic": "Plexusskada",
+    "typ": "statusfynd",
+    "svarighetsgrad": "medel",
+    "fraga": "En patient har varit med om en svår motorcykelolycka med ett slitvåld mot arm/nacke och uppvisar en asymmetrisk ansiktsbild med mios (liten pupill), ptos (hängande ögonlock) och enofthalmus på skadesidan. Vad indikerar detta?",
+    "alternativ": {
+      "A": "Att n. medianus är avklippt i karpaltunneln.",
+      "B": "Att patienten har en pågående nekrotiserande fasciit.",
+      "C": "Horners syndrom, vilket ses i samband med svåra skador på plexus brachialis.",
+      "D": "En ischemisk kris i underarmen (kompartmentsyndrom)."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Plexus brachialis rötter ligger nära de sympatiska gränssträngarna i halsen. Ett kraftigt slitvåld som sliter ut nervrötter kan även slita av sympatikus och orsaka Horners syndrom.",
+    "varfor_ovriga_fel": "Symtomen är klassiska för bortfall av sympatikus till ögat. De andra alternativen ger helt andra kliniska bilder.",
+    "kalla": "Handkirurgi introduktion.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_077",
+    "huvudomrade": "Akuta handskador",
+    "subtopic": "Brännskador",
+    "typ": "handläggning",
+    "svarighetsgrad": "lätt",
+    "fraga": "Varför bör stora och omfattande brännskador på händerna tidigt bedömas av, eller remitteras till, en handkirurg?",
+    "alternativ": {
+      "A": "För att omedelbart amputera död vävnad för att hindra gangrän.",
+      "B": "Därför att tidig och korrekt rörelseträning (och ev lambåtäckning) är helt avgörande för att undvika grav stelhet i lederna.",
+      "C": "Handkirurgen är den enda som får förskriva antibiotika profylaktiskt för händer.",
+      "D": "För att sätta handen i stelt gips i 12 veckor så att brännsåren läker ostört."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Brännskador skapar ärr som stramar väldigt mycket (kontrakturer). Tidig, aggressiv mobilisering via experter är livsviktig för att handen inte ska stelna som en klo.",
+    "varfor_ovriga_fel": "Stel gipsning (D) förvärrar stelheten maximalt. A görs inte omgående på stora brännskador innan avgränsning skett.",
+    "kalla": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_078",
+    "huvudomrade": "Elektiv handkirurgi",
+    "subtopic": "Dupuytrens kontraktur",
+    "typ": "fysiologi",
+    "svarighetsgrad": "lätt",
+    "fraga": "Palmaraponeurosen är den bindvävsplatta i handflatan som skrumpnar vid Dupuytrens kontraktur. Vilken är palmaraponeurosens huvudsakliga funktion i en frisk hand?",
+    "alternativ": {
+      "A": "Att glida fritt så att huden kan stretchas ut vid extension av fingrarna.",
+      "B": "Att förankra huden mot underlaget så att den inte glider omkring, vilket möjliggör ett fast grepp.",
+      "C": "Att producera synovialvätska till böjsenorna.",
+      "D": "Den utgör ursprunget för lumbrikalmusklerna."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Palmaraponeurosen förankrar den volara huden stumt mot skelett och djup fascia så man kan greppa föremål utan att huden roterar runt handen (som på handryggen).",
+    "varfor_ovriga_fel": "A är motsatsen till vad den gör. C görs av senskidorna. D är fel (lumbrikaler utgår från FDP-senorna).",
+    "kalla": "Handkirurgi Elektiv.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_079",
+    "huvudomrade": "Elektiv handkirurgi",
+    "subtopic": "Artros",
+    "typ": "statusfynd",
+    "svarighetsgrad": "lätt",
+    "fraga": "En 65-årig kvinna har smärta och beniga utväxter (knutor) över fingrarnas ändleder (DIP-leder). Vad kallas dessa utväxter och vad tyder de på?",
+    "alternativ": {
+      "A": "Bouchards knutor - Psoriasisartrit",
+      "B": "Heberdenknutor - DIP-ledsartros",
+      "C": "Reumatoid noduli - Reumatoid artrit",
+      "D": "Toffi - Gikt"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Benpålagringar vid DIP-ledsartros kallas Heberdenknutor. (Bouchards knutor sitter på PIP-lederna).",
+    "varfor_ovriga_fel": "C och D är andra sjukdomar och ger inte typiskt isolerade knutor med benpålagringar på just DIP-lederna. Bouchards sitter i PIP.",
+    "kalla": "Elektiv handkirurgi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_080",
+    "huvudomrade": "Elektiv handkirurgi",
+    "subtopic": "Reumatoid artrit",
+    "typ": "statusfynd",
+    "svarighetsgrad": "lätt",
+    "fraga": "Vilken kombination av felställningar i handen är patognomon (typisk) för avancerad Reumatoid Artrit (RA)?",
+    "alternativ": {
+      "A": "Radialdrift av fingrarnas MCP-leder och ulnardeviation i handleden.",
+      "B": "Ulnardrift av fingrarnas MCP-leder och radialdeviation i handleden.",
+      "C": "Volar subluxation av tummen och klo-hand.",
+      "D": "Isolerad dropphand utan finger-deviation."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Det kroniska inflammatoriska tillståndet i senfästen och leder vid RA leder klassiskt till ulnardrift av fingrarna i knogarna och kompensatorisk radialdeviation i handleden.",
+    "varfor_ovriga_fel": "A är anatomiskt motsatt. C och D är nervskador (ulnaris/radialis).",
+    "kalla": "Elektiv handkirurgi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_081",
+    "huvudomrade": "Elektiv handkirurgi",
+    "subtopic": "Nervkompressioner",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "En patient med karpaltunnelsyndrom har provat nattskena i 3 månader utan effekt. Besvären är nu närvarande även dagtid och hon upplever en tilltagande svaghet i tummen. Vad är nu starkt indicerat?",
+    "alternativ": {
+      "A": "Öka till 2 nattskenor och kortison po.",
+      "B": "Byt till en tung styrketräningsregim för handen.",
+      "C": "Operation med klyvning av flexorretinaklet (carpal ligamentet).",
+      "D": "Amputation av dig 2 och 3 för avlastning."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Utebliven effekt av nattskena, progress till konstanta/dagliga besvär och tydlig motorikpåverkan (tumsvaghet) är klara operationsindikationer för att förhindra irreversibel nervskada.",
+    "varfor_ovriga_fel": "När motoriken (svaghet/atrofi) drabbas är nerven under svårt tryck. Träning (B) förvärrar trycket. Kortison po (A) har ingen säker långtidseffekt på KTS.",
+    "kalla": "Elektiv handkirurgi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_082",
+    "huvudomrade": "Elektiv handkirurgi",
+    "subtopic": "CRPS",
+    "typ": "behandling",
+    "svarighetsgrad": "medel",
+    "fraga": "Vilken behandling är KONTRAINDICERAD och kommer att kraftigt förvärra symptomen vid fastställd CRPS (Complex Regional Pain Syndrome)?",
+    "alternativ": {
+      "A": "Behandling med NSAID för att minska svullnad.",
+      "B": "Tidig och intensiv sjukgymnastik.",
+      "C": "Förklaring och information till patienten om tillståndet.",
+      "D": "Långvarig immobilisering (t.ex. gipsning för smärtlindring)."
+    },
+    "ratt_svar": "D",
+    "kort_forklaring": "Vid CRPS måste man bryta smärtcirkeln genom mobilisering. Immobiliserar man leden/handen kommer den obönhörligen att stelna helt och tillståndet förvärras extremt.",
+    "varfor_ovriga_fel": "A, B och C är grundpelarna i den korrekta behandlingen av CRPS.",
+    "kalla": "Elektiv handkirurgi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_083",
+    "huvudomrade": "Handinfektioner och bett",
+    "subtopic": "Allmänt",
+    "typ": "mikrobiologi",
+    "svarighetsgrad": "lätt",
+    "fraga": "Vilken typ av bakterier är den absolut vanligaste orsaken till ospecifika bakteriella infektioner i handen?",
+    "alternativ": {
+      "A": "Stafylokocker",
+      "B": "Pseudomonas aeruginosa",
+      "C": "E. coli",
+      "D": "Borrelia"
+    },
+    "ratt_svar": "A",
+    "kort_forklaring": "Stafylokocker (t.ex. S. aureus) dominerar kraftigt bland handinfektioner, tätt följt av Streptokocker.",
+    "varfor_ovriga_fel": "De andra finns, framförallt Pseudomonas hos immunsuprimerade/vattenmiljö, men stafylokocker är i klar majoritet generellt.",
+    "kalla": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_084",
+    "huvudomrade": "Handinfektioner och bett",
+    "subtopic": "Handläggning",
+    "typ": "behandling",
+    "svarighetsgrad": "medel",
+    "fraga": "När en lambå (och därmed medföljande egen blodförsörjning) absolut MÅSTE väljas istället för ett enklare delhudstransplantat för att täcka en defekt i handen, beror det ofta på att:",
+    "alternativ": {
+      "A": "Patienten önskar ett kosmetiskt perfekt resultat.",
+      "B": "Det underliggande benet saknar periost, eller en sena saknar paratenon (dvs defekten saknar kärlbädd).",
+      "C": "Defekten är mindre än 1 kvadratcentimeter.",
+      "D": "Handkirurgen vill korta ned operationstiden."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Ett del/fullhudstransplantat överlever genom att suga näring ur botten på såret (kärlbädden). Blottat ben (utan periost) eller sena (utan paratenon) har ingen kärlbädd, varvid transplantatet dör. En lambå har egna kärl inbyggda.",
+    "varfor_ovriga_fel": "En lambå tar lång tid (D), ger inte alltid snyggare resultat än fullhud (A) och används vid avancerade djupa defekter, inte ytliga skrubbsår.",
+    "kalla": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_085",
+    "huvudomrade": "Handinfektioner och bett",
+    "subtopic": "Tendovaginit",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "En purulent tendovaginit är färdigspolad och patienten inlagd med antibiotika. Vilken rutinmässig uppföljning av resultatet är starkt rekommenderad från handkirurgisk sida?",
+    "alternativ": {
+      "A": "Utskrivning till hemmet om febern går ned inom 2 timmar.",
+      "B": "Klinisk re-evaluering efter cirka 6 timmar för ställningstagande till om skidan behöver spolas (opereras) igen.",
+      "C": "Nytt CRP tas efter 5 dagar för att avgöra op-behov.",
+      "D": "Man gipsar i 4 veckor utan att öppna förbandet."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Senskidesinfektioner är extremt lömska och vävnadsförstörande. Man måste utvärdera om spolningen hade tillräcklig effekt eller om infektionen fortskrider efter ca 6h. Ofta krävs upprepade operationer.",
+    "varfor_ovriga_fel": "Långsamma blodprover är för långsamt. Gips gömmer infektionen. Utskrivning tidigt är oförsvarligt.",
+    "kalla": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_086",
+    "huvudomrade": "Akuta handskador",
+    "subtopic": "Kompartmentsyndrom",
+    "typ": "statusfynd",
+    "svarighetsgrad": "medel",
+    "fraga": "Vid ett begynnande kompartmentsyndrom i armen med svår oproportionerlig smärta, varför ska du INTE exkludera diagnosen bara för att radialis- och ulnarispulsarna palperas starka och normala?",
+    "alternativ": {
+      "A": "Pulsarna sitter inte i armen alls.",
+      "B": "Det är en myt att kompartmentsyndrom ger smärta.",
+      "C": "Det lokala vävnadstrycket (venöst/kapillärt) stryper muskler och nerver långt innan det stora arteriella trycket överstigs; pulsarna är därför oftast normala.",
+      "D": "Kompartmentsyndrom drabbar bara huden."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Kompartmentsyndrom innebär mikrovaskulär ischemi. Det systoliska artärtrycket (som ger pulsen) slås nästan aldrig ut förrän tillståndet är fullkomligt extremt, medan musklerna kvävs på kapillärnivå långt innan.",
+    "varfor_ovriga_fel": "Det är ett mikrovaskulärt tryck-fenomen. Artärerna fortsätter pumpa fram till sista stund.",
+    "kalla": "Handkirurgi introduktion.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_087",
+    "huvudomrade": "Elektiv handkirurgi",
+    "subtopic": "Ganglion",
+    "typ": "komplikationer",
+    "svarighetsgrad": "medel",
+    "fraga": "Om ett symtomgivande ganglion i handleden behandlas, vad är informationen till patienten rörande recidivfrekvensen (återfall)?",
+    "alternativ": {
+      "A": "Den kommer aldrig tillbaka om man sprutar in kortison.",
+      "B": "Punktion/aspiration har ca 50% recidivrisk, och öppen operation har ca 20% recidivrisk.",
+      "C": "Operation garanterar 100% bot utan recidiv.",
+      "D": "Recidiv är extremt sällsynta, oftast rör det sig då om malignitet."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Ganglion är kända för att komma tillbaka oavsett metod, då ledkapselns svaghet/backventil kan bildas på nytt. Punktion ger sämst varaktighet (50% tillbaka).",
+    "varfor_ovriga_fel": "Det finns inga 100% garantier och det blir inte malignt.",
+    "kalla": "Elektiv handkirurgi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_088",
+    "huvudomrade": "Akuta handskador",
+    "subtopic": "Frakturer",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "Vilket alternativ beskriver bäst när en boxarfraktur (subcapitulär metacarpale V) vanligen kräver operation framför konservativ gipsning?",
+    "alternativ": {
+      "A": "Den opereras alltid, oavsett vinkel.",
+      "B": "När den associeras med ett sår över knogen (människobett).",
+      "C": "När det föreligger en extrem och oacceptabel vinkelfelställning, då man annars kan acceptera ganska stora volara vinklar.",
+      "D": "Om patienten har en känd tumbasartros."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "En boxarfraktur tolererar en stor volar vinkel (ofta uppåt 40-50 grader på lillfingret) utan stor funktionsnedsättning. Operation krävs bara vid extrema vinklar eller uttalad rotationsfelställning.",
+    "varfor_ovriga_fel": "Ett sår över knogen (människobett) är en infektionsrisk som ska rengöras/öppnas akut och ges antibiotika, men dikterar inte frakturfixationen i sig initialt.",
+    "kalla": "Handkirurgi Akuta handskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_089",
+    "huvudomrade": "Akuta handskador",
+    "subtopic": "Ligamentskador",
+    "typ": "behandling",
+    "svarighetsgrad": "medel",
+    "fraga": "I vilken situation kan en TFCC-skada skilja sig prognostiskt från en SL-dissociation gällande sen operationstidpunkt?",
+    "alternativ": {
+      "A": "TFCC kan ofta opereras med gott resultat även i ett ganska sent skede, medan en obehandlad SL-skada snabbt leder till karpal kollaps och svår artros.",
+      "B": "TFCC måste opereras inom 2 timmar annars dör leden.",
+      "C": "SL-skador kan aldrig opereras överhuvudtaget.",
+      "D": "Båda måste opereras exakt inom 3 dagar, som böjsenor."
+    },
+    "ratt_svar": "A",
+    "kort_forklaring": "TFCC-skador behandlas först ofta med fysioterapi och tål en fördröjd operation bra. SL-skador som missas glider isär och skapar snabbt en artros-spiral (SNAC) i handleden.",
+    "varfor_ovriga_fel": "TFCC är inte bråttom att fästa (kan göras polikliniskt månader senare).",
+    "kalla": "Akuta skador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_HANDKIRURGI_090",
+    "huvudomrade": "Handinfektioner och bett",
+    "subtopic": "Bett",
+    "typ": "profylax",
+    "svarighetsgrad": "lätt",
+    "fraga": "Bett i hand är särskilt riskabla och ges därför ofta antibiotikaprofylax samt lämnas öppna. Vilken ytterligare profylaktisk medicinsk åtgärd ska alltid övervägas vid kontaminerade bettsår utöver antibiotika?",
+    "alternativ": {
+      "A": "Rabiesvaccin",
+      "B": "Tetanusprofylax (stelkrampsvaccin)",
+      "C": "Högdos steroider",
+      "D": "Injektion av lokalt anestetikum blandat med adrenalin"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Vid alla smutsiga/djupa sår inklusive hund-, katt- och människobett ska patientens tetanusstatus (stelkramp) kontrolleras och vid behov uppdateras (boosterdos).",
+    "varfor_ovriga_fel": "Rabies ges bara vid specifik risk i utland/smittad individ. Steroider försämrar läkning och ökar infektionsrisk.",
+    "kalla": "Handkirurgi Handinfektioner.docx",
+    "needs_review": "nej"
+  }
+]

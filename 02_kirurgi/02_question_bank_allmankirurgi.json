@@ -1,0 +1,3042 @@
+[
+  {
+    "id": "KIR_001",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Ileus",
+    "typ": "etiologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vanligaste orsaken till mekaniskt tunntarmsileus?",
+    "alternativ": {
+      "A": "Koloncancer",
+      "B": "Gallsten",
+      "C": "Adherenser",
+      "D": "Fekalom"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Sammanväxningar/adherenser efter tidigare bukkirurgi är vanligast.",
+    "varför_övriga_fel": "Cancer är vanligast i kolon.",
+    "källa": "1",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_002",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Ileus",
+    "typ": "etiologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är den absolut vanligaste orsaken till kolonileus?",
+    "alternativ": {
+      "A": "Kolorektalcancer",
+      "B": "Adherenser",
+      "C": "Inklämt bråck",
+      "D": "Volvulus"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Malignitet står för majoriteten av hindren i kolon.",
+    "varför_övriga_fel": "Adherenser och bråck gäller ffa tunntarm.",
+    "källa": "1",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_003",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Ileus",
+    "typ": "symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka 4 fynd är kardinalsymtom vid ileus?",
+    "alternativ": {
+      "A": "Feber, defense, takykardi, ikterus",
+      "B": "Intervallsmärta, kräkning, upphävd gas/feces, utspänd buk",
+      "C": "Diarré, blödning, smärta, feber",
+      "D": "Trötthet, viktnedgång, anemi, ikterus"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Hindret ger smärta, retention bakåt (kräk) och stopp (ingen gas/feces).",
+    "varför_övriga_fel": "Feber/defense indikerar peritonit, blödning/diarré inflammation.",
+    "källa": "119",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_004",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Ileus",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur handläggs en okomplicerad adherensileus primärt?",
+    "alternativ": {
+      "A": "Omedelbar laparotomi",
+      "B": "Aktiv observation, iv vätska, v-sond",
+      "C": "Hemgång med laxermedel",
+      "D": "Direkt CT-angio"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Många spontanläker. Avlastas med sond och dropp.",
+    "varför_övriga_fel": "Op endast vid misstänkt strangulation/ischemi.",
+    "källa": "120",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_005",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Ileus",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur handläggs kolonileus primärt?",
+    "alternativ": {
+      "A": "Konservativt i upp till en vecka",
+      "B": "Kräver nästan alltid operation eller avlastande stomi",
+      "C": "Laxermedel peroralt",
+      "D": "Enbart antibiotika iv"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Hindret (ofta tumör) löser sig sällan spontant.",
+    "varför_övriga_fel": "Konservativ behandling fungerar ffa på tunntarm.",
+    "källa": "10",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_006",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Ileus",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken statusundersökning måste utföras på akutrummet för att inte missa en farlig orsak till ileus?",
+    "alternativ": {
+      "A": "Tyreoideapalpation",
+      "B": "Ljumskpalpation för bråck",
+      "C": "Ortopedisk ryggstatus",
+      "D": "Ögonbotten"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Inklämda bråck är livsfarliga men snabbt åtgärdade.",
+    "varför_övriga_fel": "De andra hittar inte orsaken till tarmstoppet.",
+    "källa": "119",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_007",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Appendicit",
+    "typ": "symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur ter sig oftast smärtan initialt och senare vid appendicit?",
+    "alternativ": {
+      "A": "Direkt max i höger fossa",
+      "B": "Börjar centralt/epigastriet, vandrar till höger fossa",
+      "C": "Strålar mot ryggen och vänster axel",
+      "D": "Sitter djupt i lilla bäckenet utan buksmärta"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Visceral smärta först, därefter parietal retning hö fossa.",
+    "varför_övriga_fel": "Smärtvandring är det absolut mest klassiska fyndet.",
+    "källa": "17",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_008",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Appendicit",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad innebär Rovsings tecken?",
+    "alternativ": {
+      "A": "Smärta vid hosta",
+      "B": "Smärta i hö fossa vid palpation/släpp i vänster fossa",
+      "C": "Defense i hela buken",
+      "D": "Smärta vid höftextension"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Indirekt släppömhet/retning över peritoneum mot appendix.",
+    "varför_övriga_fel": "Hostömhet är ej specifikt Rovsings. Höftextension är psoas.",
+    "källa": "17",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_009",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Appendicit",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är handläggningen vid AIR-score 9-12 (stark misstanke)?",
+    "alternativ": {
+      "A": "Hemgång och återbesök",
+      "B": "CT buk",
+      "C": "Inläggning och direkt anmälan till operation",
+      "D": "Aktiv observation i 24h"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Mycket stark klinik kräver ej bilddiagnostik.",
+    "varför_övriga_fel": "CT används vid tveksamma fall (AIR 5-8).",
+    "källa": "19",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_010",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Appendicit",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Varför föredras CT över ULJ vid appendicitmisstanke hos pat >40 år?",
+    "alternativ": {
+      "A": "ULJ har för mycket strålning",
+      "B": "CT är billigare",
+      "C": "Högre risk för diff-diagnoser t.ex. malignitet/divertikulit",
+      "D": "Appendix försvinner hos äldre"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "CT utesluter bättre cancer/divertikulit hos äldre.",
+    "varför_övriga_fel": "ULJ saknar strålning och föredras hos unga/gravida.",
+    "källa": "18",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_011",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Appendicit",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Vilken uppföljning rekommenderas starkt efter konservativt behandlad appendicitabscess hos pat >40 år?",
+    "alternativ": {
+      "A": "Ingen",
+      "B": "Kolonutredning (koloskopi/CT-kolon) 6-8v senare",
+      "C": "Livslång PPI",
+      "D": "Nytt ULJ efter 1 år"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Malignitet i caecum kan maskeras som abscess.",
+    "varför_övriga_fel": "Cancer måste uteslutas hos äldre.",
+    "källa": "20",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_012",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Appendicit",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Ska antibiotika ges som rutinprofylax innan okomplicerad appendektomi?",
+    "alternativ": {
+      "A": "Nej",
+      "B": "Ja, en dos Metronidazol",
+      "C": "Ja, Pip/Taz i 7 dagar",
+      "D": "Endast vid feber >39"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Inför op ges en singeldos profylax.",
+    "varför_övriga_fel": "Bredspektrum (Pip/Taz) ges bara vid perforation/sepsis.",
+    "källa": "19",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_013",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Divertikulit",
+    "typ": "symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Var lokaliseras oftast smärtan vid divertikulit?",
+    "alternativ": {
+      "A": "Höger arcus",
+      "B": "Vänster fossa/nedre buk",
+      "C": "Höger fossa",
+      "D": "Centralt runt naveln"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Divertiklar sitter nästan uteslutande i sigmoideum.",
+    "varför_övriga_fel": "Hö fossa = appendicit. Hö arcus = galla.",
+    "källa": "21",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_014",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Divertikulit",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka fynd definierar en KOMPLICERAD divertikulit?",
+    "alternativ": {
+      "A": "Molande smärta vänster fossa",
+      "B": "Lätt CRP-stegring och diarré",
+      "C": "Abscess, fistel, fri gas eller striktur",
+      "D": "Avsaknad av feber"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Perforation/fistel/abscess/ileus kräver sjukhusvård.",
+    "varför_övriga_fel": "A och B är okomplicerad form.",
+    "källa": "21",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_015",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Divertikulit",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur handläggs en perforerad divertikulit med fri gas och generell peritonit?",
+    "alternativ": {
+      "A": "Hemgång med ciprofloxacin",
+      "B": "Vätska, iv ab (Pip/Taz), CT och oftast akut operation",
+      "C": "Enbart CT-ledd dränering",
+      "D": "Laxermedel"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Livshotande fekal peritonit kräver op (ofta Hartmanns).",
+    "varför_övriga_fel": "Hemgång/laxermedel är livsfarligt.",
+    "källa": "22",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_016",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Divertikulit",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är standardrutin 6-8 v efter förstagångsinsjuknande i okomplicerad divertikulit?",
+    "alternativ": {
+      "A": "Profylaktisk tarmresektion",
+      "B": "Kolonutredning (koloskopi/CT-kolon) för att utesluta cancer",
+      "C": "Ny CT buk för att mäta divertiklarna",
+      "D": "Mäta calprotectin"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Cancer kan härma okomplicerad divertikulit.",
+    "varför_övriga_fel": "Operation utförs ej rutinmässigt okomplicerat.",
+    "källa": "22",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_017",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Divertikulit",
+    "typ": "mekanismer",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är en divertikel?",
+    "alternativ": {
+      "A": "Tarmpolyp",
+      "B": "Bandsmask",
+      "C": "Lokal utbuktning av tarmväggen",
+      "D": "Infekterad lymfkörtel"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "En fickbildning där tarmslemhinnan hernierar ut.",
+    "varför_övriga_fel": "Polyper växer inåt, divertiklar utåt.",
+    "källa": "20",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_018",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Divertikulit",
+    "typ": "diagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka är de radiologiska tecknen på okomplicerad divertikulit på CT?",
+    "alternativ": {
+      "A": "Fri gas subdiafragmalt",
+      "B": "Divertikel + fettretning",
+      "C": "Dilaterad tunntarm",
+      "D": "Kontrast i lilla bäckenet"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Fettretning tyder på lokal inflammation runt fickan.",
+    "varför_övriga_fel": "Fri gas = komplicerad perforation.",
+    "källa": "144",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_019",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "IBD",
+    "typ": "kirurgi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken kirurgi utförs standardmässigt vid akut svårt skov av Ulcerös Kolit?",
+    "alternativ": {
+      "A": "Total proktokolektomi med J-pouch direkt",
+      "B": "Subtotal kolektomi med ändileostomi (rektum sparas initialt)",
+      "C": "Strikturoplastik",
+      "D": "Högersidig hemikolektomi"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Mindre trauma akut. Rektum tas senare eller J-pouch görs elektivt.",
+    "varför_övriga_fel": "J-pouch akut har för hög risk. Strikturoplastik = Crohn.",
+    "källa": "61",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_020",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "IBD",
+    "typ": "mekanismer",
+    "svårighetsgrad": "lätt",
+    "fråga": "Kan Ulcerös Kolit (UC) botas kirurgiskt?",
+    "alternativ": {
+      "A": "Nej, kan uppstå i tunntarm",
+      "B": "Ja, genom att ta bort tjocktarm och ändtarm (proktokolektomi)",
+      "C": "Endast med steroider",
+      "D": "Ja, om man tar bort appendix"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "UC engagerar enbart kolon/rektum. Tas de bort är pat botad i GI.",
+    "varför_övriga_fel": "Crohns botas ej av kirurgi.",
+    "källa": "124",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_021",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "IBD",
+    "typ": "kirurgi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken är indikationen för kirurgi vid Mb Crohn?",
+    "alternativ": {
+      "A": "Bota sjukdomen",
+      "B": "Förebygga all framtida medicinering",
+      "C": "Komplikationer (striktur, fistel, abscess, sviktande medicin)",
+      "D": "Alltid direkt vid diagnos"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Crohn botas ej; op löser endast farliga/symtomgivande hinder/infektioner.",
+    "varför_övriga_fel": "Kirurgi är symtomlindrande/komplikationslösande, ej botande.",
+    "källa": "128",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_022",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "IBD",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Vad är den största risken med preoperativ steroidbehandling (>20mg) vid IBD-kirurgi?",
+    "alternativ": {
+      "A": "Ökad blödning",
+      "B": "DVT",
+      "C": "Kraftigt ökad risk för anastomosinsufficiens (läckage)",
+      "D": "Lungemboli"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Steroider hämmar läkning av tarmskarven avsevärt.",
+    "varför_övriga_fel": "Primära kirurgiska problemet är tarmläkningen.",
+    "källa": "66",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_023",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "IBD",
+    "typ": "kirurgi",
+    "svårighetsgrad": "medel",
+    "fråga": "När används Strikturoplastik vid Crohns sjukdom?",
+    "alternativ": {
+      "A": "Alltid på kolon",
+      "B": "Vid korta (<4-5cm) fibrotiska tunntarmsstrikturer för att spara tarmlängd",
+      "C": "För att stänga perianala fistlar",
+      "D": "Vid total kolektomi"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Öppnar förträngningen längsmed och syr på tvären för att bevara tarm.",
+    "varför_övriga_fel": "Används ej för fistlar eller kolon.",
+    "källa": "65",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_024",
+    "huvudområde": "Nedre gastrointestinal kirurgi",
+    "subtopic": "IBD",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Sverige-index beräknas dag 3 vid svårt skov av UC (Antal tömningar + 0.14xCRP). Vid vilken poäng övervägs starkt operation?",
+    "alternativ": {
+      "A": "> 2",
+      "B": "> 5",
+      "C": "> 8",
+      "D": "< 8"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Index >8 = 72% risk för kolektomi inom 30 dgr.",
+    "varför_övriga_fel": "<8 indikerar hög sannolikhet för svar på medicin.",
+    "källa": "125",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_025",
+    "huvudområde": "Akut buk",
+    "subtopic": "Smärtanalys",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken minnesregel rekommenderas för smärtanalys?",
+    "alternativ": {
+      "A": "ABCDE",
+      "B": "SOCRATES",
+      "C": "FAST",
+      "D": "AVPU"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Site, Onset, Character, Radiation, Assoc, Timing, Exacerb, Severity.",
+    "varför_övriga_fel": "ABCDE = Trauma/A-HLR.",
+    "källa": "150",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_026",
+    "huvudområde": "Akut buk",
+    "subtopic": "Mekanismer",
+    "typ": "etiologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka är akut buk-smärtans 5 primära mekanismer?",
+    "alternativ": {
+      "A": "Inflammation, obstruktion, perforation, ruptur, ischemi",
+      "B": "Infektion, tumör, stenos, blödning, ischemi",
+      "C": "Gallsten, ileus, ulcus, X, AAA",
+      "D": "Trauma, sepsis, stas, kramp, nekros"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "De fem fysiologiska grunderna för kirurgisk buksmärta.",
+    "varför_övriga_fel": "B och C blandar diagnoser med symtom/mekanismer.",
+    "källa": "1",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_027",
+    "huvudområde": "Akut buk",
+    "subtopic": "Perforation",
+    "typ": "symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur ter sig smärtan typiskt urakut vid ett perforerat ulcus?",
+    "alternativ": {
+      "A": "Molande under flera dagar",
+      "B": "Plötslig maximal smärta, brädhård buk (generell peritonit)",
+      "C": "Endast smärta i ryggen",
+      "D": "Intervaller som vid ileus"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Magsaft rinner rätt ut i bukhålan och ger omedelbar max-retning.",
+    "varför_övriga_fel": "Obstruktion ger intervaller, inflammation molande tilltagande.",
+    "källa": "2",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_028",
+    "huvudområde": "Akut buk",
+    "subtopic": "Statusfynd",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad betyder ofrivilligt muskelförsvar (brädhård buk)?",
+    "alternativ": {
+      "A": "Patienten spänner sig pga rädsla",
+      "B": "Reflektorisk kontinuerlig muskelspasm pga utbredd peritonit",
+      "C": "Lokal ömhet över appendix",
+      "D": "Muskelkramp av elektrolytrubbning"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ett allvarligt reflexsvar på generell inflammation i peritoneum.",
+    "varför_övriga_fel": "A = frivilligt försvar.",
+    "källa": "14",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_029",
+    "huvudområde": "Akut buk",
+    "subtopic": "Ischemi",
+    "typ": "symtom",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad menas med 'pain out of proportion' vid tarmischemi?",
+    "alternativ": {
+      "A": "Patienten skriker utan anledning",
+      "B": "Extrem anamnestisk smärta men förvånansvärt mjuk och oöm buk i status",
+      "C": "Hård buk utan smärta",
+      "D": "Smärta som förvärras av mat"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ischemin sitter i slemhinnan initialt och retar ej peritoneum direkt, men gör fruktansvärt ont.",
+    "varför_övriga_fel": "Peritonit = hård buk och smärta.",
+    "källa": "4",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_030",
+    "huvudområde": "Akut buk",
+    "subtopic": "Ischemi",
+    "typ": "patofysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Varför avtar smärtan temporärt i ischemins andra fas?",
+    "alternativ": {
+      "A": "Spontan revaskularisering",
+      "B": "Tarmen går i gangrän (nekros) och paralyserar/slutar krampa",
+      "C": "Smärtstillande verkar äntligen",
+      "D": "Trombosen löses upp"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "När tarmen dör slutar glatta muskelkramperna, följs sedan av peritonit.",
+    "varför_övriga_fel": "Detta är ett illavarslande tecken, inte läkning.",
+    "källa": "5",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_031",
+    "huvudområde": "Akut buk",
+    "subtopic": "Ischemi",
+    "typ": "radiologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken radiologi måste begäras urakut vid misstänkt tarmischemi?",
+    "alternativ": {
+      "A": "CT buk utan kontrast",
+      "B": "BÖS",
+      "C": "CT angiografi (trefas med kontrast)",
+      "D": "MR buk"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Kontrast krävs för att se kärlocklusion (SMA).",
+    "varför_övriga_fel": "Utan kontrast ses ej kärlen adekvat.",
+    "källa": "25",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_032",
+    "huvudområde": "Akut buk",
+    "subtopic": "Ischemi",
+    "typ": "etiologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket tillstånd predisponerar kraftigt för mesenteriell ischemi?",
+    "alternativ": {
+      "A": "Förmaksflimmer (embolikälla)",
+      "B": "Hemorrojder",
+      "C": "Divertikulos",
+      "D": "Astma"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Kardiella embolier från FF fastnar lätt i A. Mesenterica Superior.",
+    "varför_övriga_fel": "De andra är ej källor till artäremboli.",
+    "källa": "13",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_033",
+    "huvudområde": "Akut buk",
+    "subtopic": "Ruptur",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Hur handläggs misstänkt rupturerat AAA hos hemodynamiskt instabil patient?",
+    "alternativ": {
+      "A": "Omedelbar laparotomi (op) efter vätska, ej tid för CT",
+      "B": "Alltid CT Angio först",
+      "C": "Hemgång med analgetika",
+      "D": "ULJ på avdelningen"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Instabil = urakut op. Stabil = CT.",
+    "varför_övriga_fel": "CT i instabilt skede kan leda till död i kameran.",
+    "källa": "3",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_034",
+    "huvudområde": "Akut buk",
+    "subtopic": "Ruptur",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Fertil kvinna med plötslig nedre buksmärta och pre-chock. Viktigaste test att ta blixtsnabbt?",
+    "alternativ": {
+      "A": "P-Amylas",
+      "B": "Graviditetstest (för Extrauterin graviditet)",
+      "C": "F-Hb",
+      "D": "D-dimer"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Rupturerat X blöder massivt och 95% har positivt gravtest.",
+    "varför_övriga_fel": "De andra diff-diagnoserna blöder sällan så urakut.",
+    "källa": "3",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_035",
+    "huvudområde": "Akut buk",
+    "subtopic": "Obstruktion",
+    "typ": "symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur kännetecknas smärtan och patientens beteende vid akut uretär- eller gallsten (obstruktion)?",
+    "alternativ": {
+      "A": "Kontinuerlig smärta, ligger blixt stilla",
+      "B": "Intervallsmärta, motorisk oro (vankar runt)",
+      "C": "Hög feber >39 initialt",
+      "D": "Smärtfri, enbart kräkning"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Sten orsakar muskelkramp (intervaller) och pat kan inte sitta still.",
+    "varför_övriga_fel": "A = inflammation (peritonit).",
+    "källa": "6",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_036",
+    "huvudområde": "Akut buk",
+    "subtopic": "Inflammation",
+    "typ": "symtom",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur skiljer sig debut av feber typiskt mellan 'kirurgisk' och 'medicinsk' (t.ex pneumoni) buk?",
+    "alternativ": {
+      "A": "Medicinsk buk startar ofta med feber >39 direkt; kirurgisk får feber i efterhand",
+      "B": "Kirurgisk buk börjar alltid med frossa",
+      "C": "Bara kirurgisk buk ger feber",
+      "D": "Ingen skillnad alls"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Hög feber vid debut utan föregående smärta pekar mot lunginflammation/pyelonefrit.",
+    "varför_övriga_fel": "Kirurgisk inflammationsfeber byggs upp över tid.",
+    "källa": "6",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_037",
+    "huvudområde": "Akut buk",
+    "subtopic": "Handläggning",
+    "typ": "farmakologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Får man ge opiater till pat med oklara svåra buksmärtor innan diagnos?",
+    "alternativ": {
+      "A": "Nej, maskerar diagnosen helt",
+      "B": "Ja, modern rutin är att lindra lidande; det hindrar ej att man känner peritonit",
+      "C": "Bara NSAID",
+      "D": "Bara lokalbedövning"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Smärtlindring förenklar ofta undersökningen pga mindre spänning/oro.",
+    "varför_övriga_fel": "Myten att man inte får ge morfin är utdaterad.",
+    "källa": "10",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_038",
+    "huvudområde": "Akut buk",
+    "subtopic": "Perforation",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken radiologi väljs vid stark misstanke om GI-perforation (fri gas) hos stabil pat?",
+    "alternativ": {
+      "A": "CT Buk",
+      "B": "ULJ",
+      "C": "MR",
+      "D": "BÖS Liggande"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "CT är överlägsen för att detektera små mängder fri gas och lokalisera hålet.",
+    "varför_övriga_fel": "ULJ och BÖS kan missa mycket.",
+    "källa": "2",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_039",
+    "huvudområde": "Akut buk",
+    "subtopic": "Statusfynd",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad innebär Indirekt Släppömhet?",
+    "alternativ": {
+      "A": "Ont exakt där man släpper trycket",
+      "B": "Ont på ett annat ställe (där inflammationen är) när man släpper trycket annorstädes",
+      "C": "Smärta i benet vid hosta",
+      "D": "Smärta vid perkussion"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Skakningen fortplantar sig till inflammerade organet (ex. Rovsings tecken).",
+    "varför_övriga_fel": "A = Direkt släppömhet.",
+    "källa": "9",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_040",
+    "huvudområde": "Akut buk",
+    "subtopic": "Mekanismer",
+    "typ": "etiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket enskilt organ drabbas kliniskt oftast vid arteriell mesenteriell ischemi?",
+    "alternativ": {
+      "A": "Tunntarm och höger kolon (A. mesenterica superior)",
+      "B": "Ventrikeln (Truncus coeliacus)",
+      "C": "Rektum (A. iliaca)",
+      "D": "Vänster kolon (A. mesenterica inferior)"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "SMA (superior) avgår snävt från aorta och tar oftast emot embolier.",
+    "varför_övriga_fel": "AMI blockeras sällan akut, bättre kollateraler via Riolans anastomos.",
+    "källa": "4",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_041",
+    "huvudområde": "Akut buk",
+    "subtopic": "Blödning",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Pat svimmade hemma. På akuten: blek, RR 26, puls 115, BT 85/50. Mjuk oöm buk. Misstanke?",
+    "alternativ": {
+      "A": "Gallstensanfall",
+      "B": "Inre GI blödning eller ruptur",
+      "C": "Okomplicerad appendicit",
+      "D": "Uretärsten"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Sympatikuspåslag (chock) utan tecken till peritonit pekar mot kraftig hypovolemi.",
+    "varför_övriga_fel": "Stenar och appendicit ger sällan ren hypovolem chock.",
+    "källa": "3",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_042",
+    "huvudområde": "Akut buk",
+    "subtopic": "Statusfynd",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket status är absolut obligatoriskt vid ALLA oförklarliga buksmärtor för att hitta extra-abdominell orsak eller svåra komplikationer?",
+    "alternativ": {
+      "A": "Rutinmässig gastroskopi",
+      "B": "Ljumskpalpation och Rektalpalpation (PR)",
+      "C": "CT Hjärna",
+      "D": "Doppler ben"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "PR kan hitta melena/cancer/bäckenperitonit. Ljumskar = bråck.",
+    "varför_övriga_fel": "Missar man dessa i status missar man viktiga ledtrådar.",
+    "källa": "9",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_043",
+    "huvudområde": "Akut buk",
+    "subtopic": "Ischemi",
+    "typ": "diagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket blodprov tas ofta för att stödja en misstanke om tarmischemi (tillsammans med LPK)?",
+    "alternativ": {
+      "A": "Amylas",
+      "B": "Troponin",
+      "C": "Laktat (och D-dimer)",
+      "D": "Bilirubin"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Ischemi genererar laktat anaerobt, D-dimer stiger vid proppar.",
+    "varför_övriga_fel": "Amylas = pankreas. Troponin = hjärta.",
+    "källa": "25",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_044",
+    "huvudområde": "Akut buk",
+    "subtopic": "Inflammation",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Patient vill ligga absolut stilla och andas ytligt. Vilken typ av retning?",
+    "alternativ": {
+      "A": "Obstruktion (stensmärta)",
+      "B": "Peritoneal retning (inflammation)",
+      "C": "Gastroenterit",
+      "D": "Obstipation"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Bukhinnan gnids vid rörelse/djupandning vilket gör mycket ont vid peritonit.",
+    "varför_övriga_fel": "A och C/D ger motorisk oro eller ej denna typ av smärta.",
+    "källa": "7",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_045",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Ikterus",
+    "typ": "diagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är definitionen av ikterus kemiskt?",
+    "alternativ": {
+      "A": "PK över 2.0",
+      "B": "S-Bilirubin över 50 μmol/l",
+      "C": "S-Amylas 3x förhöjt",
+      "D": "ALAT över 10"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Hud/ögon blir gula när bilirubin ansamlas i blodet pga nedbrytningsdefekt/stopp.",
+    "varför_övriga_fel": "De andra är lever/pankreasvärden men definierar inte gulsot.",
+    "källa": "55",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_046",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Ikterus",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är handläggningsregeln gällande 'tyst ikterus'?",
+    "alternativ": {
+      "A": "Skriv hem med Alvedon",
+      "B": "Det är malignitet tills motsatsen är bevisad och ska utredas direkt (CT/ULJ)",
+      "C": "Beror alltid på alkohol",
+      "D": "Avvakta en vecka"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Smärtfri ikterus är alarmsymtom för pankreas/gallvägscancer.",
+    "varför_övriga_fel": "Gallsten och cholangit gör oftast ont. Tystnad + ikterus = farligt.",
+    "källa": "56",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_047",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Ikterus",
+    "typ": "diagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket leverenzym stiger mest markant vid posthepatiskt hinder (kolestas)?",
+    "alternativ": {
+      "A": "ASAT",
+      "B": "ALP (och Bilirubin)",
+      "C": "Amylas",
+      "D": "LDH"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "ALP är ett gallvägsenzym som frisätts vid gallstas.",
+    "varför_övriga_fel": "ASAT/ALAT stiger vid leverskada (hepatocellulärt).",
+    "källa": "58",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_048",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Ikterus",
+    "typ": "diagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka prov speglar leverns faktiska syntesfunktion?",
+    "alternativ": {
+      "A": "ASAT/ALAT",
+      "B": "ALP/GT",
+      "C": "PK(INR) och Albumin",
+      "D": "Bilirubin och CRP"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Levern bygger koagulationsfaktorer (mäts med PK) och albumin.",
+    "varför_övriga_fel": "Enzymer visar bara skada, ej funktion.",
+    "källa": "58",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_049",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Gallsten",
+    "typ": "radiologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken radiologi beställs först vid misstänkt gallstenssjukdom/ikterus?",
+    "alternativ": {
+      "A": "Ultraljud lever och gallvägar",
+      "B": "Slätröntgen (BÖS)",
+      "C": "PET-CT",
+      "D": "Endast CT-Angio"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "ULJ hittar okomplicerade kolesterolstenar bäst och snabbast.",
+    "varför_övriga_fel": "CT missar stenar utan kalk. BÖS ser dem ej.",
+    "källa": "112",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_050",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Gallstenskomplikationer",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur skiljer man gallkolik från akut cholecystit?",
+    "alternativ": {
+      "A": "Bara gallkolik gör ont",
+      "B": "Cholecystit ger lokal peritonit (ömhet), feber och CRP-stegring",
+      "C": "Cholecystit ger alltid 40 graders feber direkt",
+      "D": "Cholecystit ger alltid ikterus"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Cholecystit = inflammation. Gallkolik = bara tillfälligt stenhinder utan infektion.",
+    "varför_övriga_fel": "Cholecystit (i blåsan) ger sällan ikterus då gången är fri.",
+    "källa": "27",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_051",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Gallstenskomplikationer",
+    "typ": "symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är Charcots triad som indikerar akut cholangit?",
+    "alternativ": {
+      "A": "Feber, ikterus och smärta upptill till höger",
+      "B": "Svart avföring, kräkning, smärta",
+      "C": "Hypotoni, feber, anuri",
+      "D": "Blekhet, svettning, takykardi"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Cholangit = infektion i tilltäppt gallgång. Ger feber+ikterus+smärta.",
+    "varför_övriga_fel": "Cholecystit saknar ikterus.",
+    "källa": "133",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_052",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Gallstenskomplikationer",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Vilken åtgärd är absolut livräddande vid septisk cholangit utöver iv antibiotika?",
+    "alternativ": {
+      "A": "Akut cholecystektomi",
+      "B": "Avlastning/Dränering av gallgången (oftast ERCP)",
+      "C": "Ursofalk",
+      "D": "Hemgång med Alvedon"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Infektion under tryck måste lättas annars når inte antibiotikan och sepsis förvärras.",
+    "varför_övriga_fel": "Att ta blåsan (cholecystektomi) öppnar inte choledochus.",
+    "källa": "133",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_053",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Gallstenskomplikationer",
+    "typ": "komplikationer",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken allvarlig komplikation kan ERCP i sig orsaka?",
+    "alternativ": {
+      "A": "Pneumoni",
+      "B": "Pankreatit",
+      "C": "Myokardit",
+      "D": "Hjärnblödning"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "När papilla vateri manipuleras riskerar pankreasgången att svälla -> pankreatit.",
+    "varför_övriga_fel": "Även tarmperforation finns risk för.",
+    "källa": "15",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_054",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Ikterus",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken färg får avföringen vid totalt avflödeshinder i gallvägarna?",
+    "alternativ": {
+      "A": "Svart (Melena)",
+      "B": "Grön",
+      "C": "Kittfärgad (avfärgad/vitaktig)",
+      "D": "Röd"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Bilirubin når inte tarmen och färgar inte feces brun.",
+    "varför_övriga_fel": "Svart/Röd tyder på blödning.",
+    "källa": "56",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_055",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Ikterus",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur ser urinen oftast ut vid uttalad gallstas (posthepatisk ikterus)?",
+    "alternativ": {
+      "A": "Porterfärgad (mycket mörk)",
+      "B": "Vattenklar",
+      "C": "Röd/Blodig",
+      "D": "Mjölkig"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Konjugerat bilirubin är vattenlösligt och kissas ut, ger mörk färg.",
+    "varför_övriga_fel": "Avfärgad feces + mörk urin = gallstas.",
+    "källa": "55",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_056",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "PBC",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "svår",
+    "fråga": "Kvinna i 50-årsåldern, svår klåda, högt ALP och + AMA-antikroppar. Diagnos?",
+    "alternativ": {
+      "A": "Primär Biliär Kolangit (PBC)",
+      "B": "Primär Skleroserande Kolangit (PSC)",
+      "C": "Cholangiocarcinom",
+      "D": "Gallsten"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "PBC är en autoimmun destruktion av små gallgångar (kvinna, klåda, AMA).",
+    "varför_övriga_fel": "PSC drabbar oftare män med UC.",
+    "källa": "57",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_057",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "PSC",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "svår",
+    "fråga": "Man 30 år, Ulcerös Kolit, högt ALP. På MRCP ses pärlbandsliknande gallgångar. Diagnos?",
+    "alternativ": {
+      "A": "PBC",
+      "B": "Primär Skleroserande Kolangit (PSC)",
+      "C": "Levercirros",
+      "D": "Gallkolik"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "PSC är kopplat till IBD, ger typiskt pärlband av strikturer radiologiskt.",
+    "varför_övriga_fel": "Har ökad risk för gallgångscancer.",
+    "källa": "98",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_058",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Lever",
+    "typ": "diagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur diffar man alkoholorsakad leverskada från viral?",
+    "alternativ": {
+      "A": "Alkohol ger ASAT > ALAT, virus oftast tvärtom",
+      "B": "Alkohol ger bara högt ALP",
+      "C": "Virus ger ingen ikterus",
+      "D": "Ingen skillnad alls"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Etanoltoxicitet driver ASAT högre än ALAT.",
+    "varför_övriga_fel": "Gallstas ger ALP-stegring.",
+    "källa": "95",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_059",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Lever",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket läkemedel orsakar snabbt fatal akut leversvikt med skyhöga ASAT/ALAT vid intoxikation?",
+    "alternativ": {
+      "A": "Paracetamol",
+      "B": "NSAID",
+      "C": "Statiner",
+      "D": "Metronidazol"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Paracetamol i överdos leder till akut fulminant nekros av leverceller.",
+    "varför_övriga_fel": "Antidot är Acetylcystein.",
+    "källa": "105",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_060",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Lever",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka perifera tecken tyder på avancerad levercirros?",
+    "alternativ": {
+      "A": "Enbart bradykardi",
+      "B": "Ascites, spider naevi, palmarerytem",
+      "C": "Stora knölar på halsen",
+      "D": "Svart tunga"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Tecken på dekompenserad funktion och portal hypertension.",
+    "varför_övriga_fel": "Spider naevi = brustna kärl. Ascites = tryck.",
+    "källa": "108",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_061",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Lever",
+    "typ": "radiologi",
+    "svårighetsgrad": "svår",
+    "fråga": "Vilket radiologiskt fynd är klassiskt för HCC (Hepatocellulär cancer) på CT-trefas?",
+    "alternativ": {
+      "A": "Ingen kontrastladdning alls",
+      "B": "Kontrastladdning i artärfas följt av snabb 'wash-out' i venfas",
+      "C": "Fettretning",
+      "D": "Pneumoperitoneum"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "HCC är artärförsörjd i stor grad, släpper kontrast snabbt.",
+    "varför_övriga_fel": "Fettretning = inflammation.",
+    "källa": "102",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_062",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Gallstenskomplikationer",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken är förstahandsbehandlingen för bekräftad akut okomplicerad cholecystit?",
+    "alternativ": {
+      "A": "Exspektans och hem",
+      "B": "Akut cholecystektomi (inom några dygn)",
+      "C": "Enbart IV antibiotika",
+      "D": "ERCP"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Tar bort källan (infekterad gallblåsa) innan för mycket ärrbildning.",
+    "varför_övriga_fel": "ERCP är för sten i choledochus, inte blåsan.",
+    "källa": "162",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_063",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Diagnostik",
+    "typ": "diagnostik",
+    "svårighetsgrad": "svår",
+    "fråga": "Vad antyder fyndet 'Double duct sign' på CT/MRCP?",
+    "alternativ": {
+      "A": "Två appendix",
+      "B": "Vidgad koledokus och pankreasgång, stark misstanke om tumör i papilla vateri/pankreas",
+      "C": "Spräckt aorta",
+      "D": "Helt normalt hos äldre"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Tumör i caput blockerar båda gångarna samtidigt.",
+    "varför_övriga_fel": "Är ett klassiskt alarmsymtom radiologiskt.",
+    "källa": "171",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_064",
+    "huvudområde": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Ikterus",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken godartad orsak ger ofta en isolerad lätt förhöjning av okonjugerat bilirubin hos unga?",
+    "alternativ": {
+      "A": "Gilberts syndrom",
+      "B": "PBC",
+      "C": "Pankreascancer",
+      "D": "Hepatit B"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Defekt i konjugeringsenzym vid stress/fasta. Helt ofarligt.",
+    "varför_övriga_fel": "Pankreas/Galla ger stegring i konjugerat bilirubin + ALP.",
+    "källa": "171",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_065",
+    "huvudområde": "Gastrointestinal blödning",
+    "subtopic": "Handläggning",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket protokoll ska primärt styra omhändertagandet av massivt blödande GI-patient?",
+    "alternativ": {
+      "A": "ABCDE, med säkring av fri luftväg, syrgas, 2 grova infarter, vätska/blod",
+      "B": "Akut gastroskopi i väntrummet",
+      "C": "Sätta KAD först",
+      "D": "Ge enbart PPI po"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Blödning hotar cirkulation och eventuellt luftväg, stabilisering går först.",
+    "varför_övriga_fel": "Skopi kräver ofta åtminstone marginellt stabiliserad patient.",
+    "källa": "43",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_066",
+    "huvudområde": "Gastrointestinal blödning",
+    "subtopic": "Chock",
+    "typ": "symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur identifieras klassisk blödningschock i status?",
+    "alternativ": {
+      "A": "Bradykardi, högt BT, varm hud",
+      "B": "Takykardi (puls >100), hypotension (syst <100), blek/kallsvettig hud",
+      "C": "Generell peritonit",
+      "D": "Feber och dysfagi"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Kroppen kompenserar volymförlust med sympatikuspåslag (hög puls, perifer kyla).",
+    "varför_övriga_fel": "A = kussmauls (hjärntryck) eller neurogen chock.",
+    "källa": "44",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_067",
+    "huvudområde": "Gastrointestinal blödning",
+    "subtopic": "Diagnostik",
+    "typ": "symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är Melena?",
+    "alternativ": {
+      "A": "Rött färskt blod",
+      "B": "Tjärsvart, illaluktande avföring (tecken på övre blödning)",
+      "C": "Slem i feces",
+      "D": "Kräkning"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Blodet bryts ner av magsyra/bakterier och blir svart = blödning ÖVANFÖR colon.",
+    "varför_övriga_fel": "Hematemes = blodkräkning. Hematochezi = färskt blod.",
+    "källa": "45",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_068",
+    "huvudområde": "Gastrointestinal blödning",
+    "subtopic": "Övre blödning",
+    "typ": "anatomi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad kallas den anatomiska gränsen som skiljer Övre från Nedre GI-kanal?",
+    "alternativ": {
+      "A": "Pylorus",
+      "B": "Ligamentum Treitz (mellan duodenum och jejunum)",
+      "C": "Valva ileocecalis",
+      "D": "Papilla vateri"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Definierar om det rör sig om Övre eller Nedre blödning rent operativt.",
+    "varför_övriga_fel": "Alla andra är felaktiga referenspunkter.",
+    "källa": "48",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_069",
+    "huvudområde": "Gastrointestinal blödning",
+    "subtopic": "Övre blödning",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Inom vilken tid ska en LÅGRISK (hemodynamiskt stabil) pat. med misstänkt ÖGI-blödning gastroskoperas?",
+    "alternativ": {
+      "A": "Inom 1 timme",
+      "B": "Inom 24 timmar",
+      "C": "Efter 72 timmar",
+      "D": "Aldrig"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Minskar risk för reblödning och förkortar vårdtid.",
+    "varför_övriga_fel": "Instabila/högrisk ska skoperas urakut.",
+    "källa": "46",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_070",
+    "huvudområde": "Gastrointestinal blödning",
+    "subtopic": "Övre blödning",
+    "typ": "farmakologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket läkemedel ges ALLTID akut intravenöst i högdos vid ulcusblödning?",
+    "alternativ": {
+      "A": "Paracetamol",
+      "B": "Protonpumpshämmare (PPI)",
+      "C": "Steroider",
+      "D": "Morfin"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Koagulationen sviktar i sur miljö. PPI höjer pH i magsäcken och skyddar koaglet.",
+    "varför_övriga_fel": "Steroider kan öka ulcusrisk.",
+    "källa": "81",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_071",
+    "huvudområde": "Gastrointestinal blödning",
+    "subtopic": "Övre blödning",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "svår",
+    "fråga": "Enligt Forrest-klassifikationen, vad innebär ett Forrest Ia ulcus under gastroskopi?",
+    "alternativ": {
+      "A": "Helt läkt",
+      "B": "Synlig kärlpipa",
+      "C": "Sprutande arteriell blödning",
+      "D": "Enbart koagel"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Forrest 1a är den mest akuta fasen med 90% re-blödningsrisk utan åtgärd.",
+    "varför_övriga_fel": "1b är sivande, 2a kärlpipa, 2b koagel.",
+    "källa": "47",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_072",
+    "huvudområde": "Gastrointestinal blödning",
+    "subtopic": "Övre blödning",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Vad gör man om endoskopisk stillning (clips/adrenalin) av ett massivt blödande duodenalulcus misslyckas?",
+    "alternativ": {
+      "A": "Inläggning med enbart exspektans",
+      "B": "Direkt kolektomi",
+      "C": "Angiografi med embolisering (coiling) alt. Laparotomi med omstickning",
+      "D": "Insättning av Danistent"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Om kameran sviktar måste man in via kärlen (coiling) eller öppna kirurgiskt.",
+    "varför_övriga_fel": "Danistent är för esofagusvaricer.",
+    "källa": "80",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_073",
+    "huvudområde": "Gastrointestinal blödning",
+    "subtopic": "Varicer",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken är förstahandsvalet (endoskopiskt) för blödningsstillning av esofagusvaricer?",
+    "alternativ": {
+      "A": "Adrenalininjektion rakt i varicen",
+      "B": "Gummibandsligering",
+      "C": "Clips",
+      "D": "Laserkoagulation"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Mekaniskt snörpa av det vidgade kärlet.",
+    "varför_övriga_fel": "Injektion kan skapa hål i varicen som massblöder.",
+    "källa": "84",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_074",
+    "huvudområde": "Gastrointestinal blödning",
+    "subtopic": "Varicer",
+    "typ": "farmakologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket läkemedel sätts akut in iv vid misstänkt varixblödning?",
+    "alternativ": {
+      "A": "Terlipressin",
+      "B": "Erytromycin",
+      "C": "Adrenalin iv",
+      "D": "Betapred"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Terlipressin sänker portatrycket akut genom att kontrahera splanknikuskärl.",
+    "varför_övriga_fel": "Erytromycin ges för ventrikeltömning, Adrenalin ökar tryck.",
+    "källa": "86",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_075",
+    "huvudområde": "Gastrointestinal blödning",
+    "subtopic": "Varicer",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Gastroskopi fungerar inte pga massiv varixblödning, patienten blöder ihjäl. 'Bail out'-metod?",
+    "alternativ": {
+      "A": "Akut esofagektomi (borttagande av matstrupe)",
+      "B": "Tamponad via Danistent (esofagusstent) eller Sengstakensond",
+      "C": "Dubbel PPI-dos",
+      "D": "Laxering"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "En fysisk stent/ballong komprimerar varicerna i matstrupen mekaniskt.",
+    "varför_övriga_fel": "Kirurgi på urakut cirrotiker är extremt riskabelt.",
+    "källa": "86",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_076",
+    "huvudområde": "Gastrointestinal blödning",
+    "subtopic": "Nedre blödning",
+    "typ": "diagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken undersökning ska utföras på AKUTEN hos alla med färsk nedre GI-blödning (innan pat skickas till avd)?",
+    "alternativ": {
+      "A": "Rektoskopi/Proktoskopi",
+      "B": "Koloskopi",
+      "C": "Kapselendoskopi",
+      "D": "MR-Bäcken"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Utesluter omedelbart blödande hemorrojder/låg cancer som sitter nära anus.",
+    "varför_övriga_fel": "Koloskopi kräver laxering (ej akutrum).",
+    "källa": "50",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_077",
+    "huvudområde": "Gastrointestinal blödning",
+    "subtopic": "Nedre blödning",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken är den vanligaste orsaken till massiv, smärtfri röd blödning per rektum hos äldre?",
+    "alternativ": {
+      "A": "Ischemisk kolit",
+      "B": "Ulcerös Kolit",
+      "C": "Divertikelblödning eller Angiodysplasi",
+      "D": "Analabscess"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Dessa två tillstånd (fickor och kärlnystan) blöder utan inflammation/smärta.",
+    "varför_övriga_fel": "Ischemi och IBD gör ont och ger oftast diarré.",
+    "källa": "76",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_078",
+    "huvudområde": "Gastrointestinal blödning",
+    "subtopic": "Nedre blödning",
+    "typ": "symtom",
+    "svårighetsgrad": "medel",
+    "fråga": "Äldre kärlsjuk pat (FF) får plötsligt ont i vänster flank och blodiga diarréer. Troligaste diagnos?",
+    "alternativ": {
+      "A": "Angiodysplasi",
+      "B": "Divertikulos",
+      "C": "Ischemisk kolit",
+      "D": "Ventrikelulcus"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Triaden (kärlsjuk+smärta+diarré) pekar direkt mot ischemi (ofta vä flexur).",
+    "varför_övriga_fel": "Angiodysplasi/Divertikulos ger smärtfri blödning.",
+    "källa": "76",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_079",
+    "huvudområde": "Gastrointestinal blödning",
+    "subtopic": "Radiologi",
+    "typ": "diagnostik",
+    "svårighetsgrad": "svår",
+    "fråga": "Du misstänker massiv blödning i tjocktarm men rektoskopi är negativ. Vad är bäst som urakut nästa steg om pat är instabil?",
+    "alternativ": {
+      "A": "CT-buk med blödningsprotokoll (iv kontrast)",
+      "B": "Passageröntgen tunntarm",
+      "C": "Koloskopi direkt",
+      "D": "BÖS"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Visar extravasering av kontrast (dvs. blödning) om hastigheten är >0,5 ml/min.",
+    "varför_övriga_fel": "Koloskopi omöjlig i akuta mängder blod/avföring utan laxering.",
+    "källa": "88",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_080",
+    "huvudområde": "Gastrointestinal blödning",
+    "subtopic": "Handläggning",
+    "typ": "farmakologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket läkemedel kan ges för att öka ventrikeltömningen och rensa koagler inför en gastroskopi?",
+    "alternativ": {
+      "A": "Erytromycin iv",
+      "B": "Morfin",
+      "C": "Alvedon",
+      "D": "Laxabon"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Fungerar som motilin-agonist och tömmer magen mekaniskt = bättre sikt.",
+    "varför_övriga_fel": "Laxabon verkar i tarmen, Morfin paralyserar/stänger sfinktrar.",
+    "källa": "78",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_081",
+    "huvudområde": "Övre gastrointestinal kirurgi",
+    "subtopic": "Pankreatit",
+    "typ": "etiologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka är de två absolut vanligaste orsakerna till akut pankreatit (80-90% av fall)?",
+    "alternativ": {
+      "A": "Trauma och läkemedel",
+      "B": "Gallsten och Alkohol",
+      "C": "Virus och hyperkalcemi",
+      "D": "Rökning och autoimmunitet"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Gallsten (40-50%) och alkohol (25-30%) dominerar etiologin.",
+    "varför_övriga_fel": "Trauma/läkemedel utgör bara en bråkdel (GET SMASHED).",
+    "källa": "135",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_082",
+    "huvudområde": "Övre gastrointestinal kirurgi",
+    "subtopic": "Pankreatit",
+    "typ": "diagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka kriterier måste uppfyllas för att ställa diagnosen Akut Pankreatit?",
+    "alternativ": {
+      "A": "Kräver alltid positiv CT-bild",
+      "B": "Minst 2 av 3: Buksmärta, amylas >3 ggr över gräns, och typisk radiologi (CT/ULJ)",
+      "C": "Amylas över 1000 och feber",
+      "D": "Avsaknad av gallsten"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Svenska riktlinjer kräver endast 2 av 3. En klinisk+labb-bild räcker ofta akut.",
+    "varför_övriga_fel": "Eftersom 2/3 räcker krävs inte CT i alla fall.",
+    "källa": "135",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_083",
+    "huvudområde": "Övre gastrointestinal kirurgi",
+    "subtopic": "Pankreatit",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är den primära och livräddande initiala behandlingen vid akut pankreatit?",
+    "alternativ": {
+      "A": "Rutinmässig bredspektrumantibiotika",
+      "B": "Omedelbar operation",
+      "C": "Aggressiv iv vätskebehandling (Ringeracetat)",
+      "D": "Endast smärtlindring po"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Extrema tredjerumsförluster (ödem) leder till hypovolemi/njursvikt om man ej rehydrerar.",
+    "varför_övriga_fel": "Ab hjälper inte (steril inflam). Operation görs ej akut.",
+    "källa": "136",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_084",
+    "huvudområde": "Övre gastrointestinal kirurgi",
+    "subtopic": "Pankreatit",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Ska antibiotika ges profylaktiskt till alla med akut pankreatit?",
+    "alternativ": {
+      "A": "Ja, alltid för att minska dödlighet",
+      "B": "Nej, används bara vid misstänkt/påvisad infektion eller nekros",
+      "C": "Endast vid alkoholpankreatit",
+      "D": "Ja, i kombination med steroider"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Inflammationen är kemisk (steril), Ab har ej visat nytta profylaktiskt.",
+    "varför_övriga_fel": "Onödig Ab ökar risk för resistens och svamp.",
+    "källa": "136",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_085",
+    "huvudområde": "Övre gastrointestinal kirurgi",
+    "subtopic": "Pankreatit",
+    "typ": "komplikationer",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad innebär ett Abdominellt kompartmentsyndrom vid svår pankreatit?",
+    "alternativ": {
+      "A": "Att magen krampar ihop",
+      "B": "Extremt högt tryck i buken pga uttalat ödem/vätska, vilket hotar blodtillförsel till njurar/tarm",
+      "C": "Att pankreas brister",
+      "D": "Levern stannar pga alkohol"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ökat intraabdominellt tryck >20mmHg sänker organperfusion. Kräver dekompression.",
+    "varför_övriga_fel": "A och C är inkorrekta mekanismer.",
+    "källa": "137",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_086",
+    "huvudområde": "Övre gastrointestinal kirurgi",
+    "subtopic": "Pankreatit",
+    "typ": "komplikationer",
+    "svårighetsgrad": "svår",
+    "fråga": "Vad är en pankreatisk pseudocysta?",
+    "alternativ": {
+      "A": "Ett förstadie till cancer",
+      "B": "En malign tumör",
+      "C": "En sen (>4 v) vätskeansamling med vägg, kräver ibland dränage om den smärtar",
+      "D": "En medfödd missbildning i gallträdet"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Läker oftast ur, men kan komprimera magen och dräneras (EUS) om symtomatisk.",
+    "varför_övriga_fel": "Ej cancer, utan post-inflammatorisk restprodukt.",
+    "källa": "15",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_087",
+    "huvudområde": "Övre gastrointestinal kirurgi",
+    "subtopic": "Tumör",
+    "typ": "symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket symtom är ett tydligt alarmsymtom som omedelbart ska leda till gastroskopi på misstanke om Esofaguscancer?",
+    "alternativ": {
+      "A": "Diarré",
+      "B": "Nytillkommen Dysfagi (sväljsvårigheter)",
+      "C": "Övergående sura uppstötningar",
+      "D": "Obstipation"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "När det tar stopp att svälja måste mekanisk tumör uteslutas omedelbart (SVF).",
+    "varför_övriga_fel": "Sura uppstötningar = GERD.",
+    "källa": "111",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_088",
+    "huvudområde": "Övre gastrointestinal kirurgi",
+    "subtopic": "Tumör",
+    "typ": "klassifikation",
+    "svårighetsgrad": "svår",
+    "fråga": "Vad indikerar Siewert-klassifikationen (I-III)?",
+    "alternativ": {
+      "A": "Bröstcancerns hormonreceptor-typ",
+      "B": "Placering av en tumör i relation till gastro-esofageala övergången (cardia)",
+      "C": "Hur allvarlig en pankreatit är",
+      "D": "TNM-stadium i colon"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Siewert 1=Esofagus. Siewert 2=Äkta cardia. Siewert 3=Subkardiell/ventrikel. Styr kirurgin.",
+    "varför_övriga_fel": "Ej tillämpbar på bröst/colon/pankreatit.",
+    "källa": "166",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_089",
+    "huvudområde": "Övre gastrointestinal kirurgi",
+    "subtopic": "Tumör",
+    "typ": "symtom",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken triad av symtom indikerar starkt ventrikelcancer?",
+    "alternativ": {
+      "A": "Feber, frossa, smärta",
+      "B": "Halsbränna, heshet, andnöd",
+      "C": "Viktnedgång, anemi (GI-blödning) och tidig mättnadskänsla",
+      "D": "Ikterus, klåda, brädhård buk"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Tumören blöder, stjäl nutrition och minskar magsäckens distensionsförmåga.",
+    "varför_övriga_fel": "A = kolangit. B = laryngit. D = pankreascancer/peritonit.",
+    "källa": "134",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_090",
+    "huvudområde": "Övre gastrointestinal kirurgi",
+    "subtopic": "Tumör",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Vad är principen för 'FLOT' i behandlingen av esofagus/ventrikel-cancer?",
+    "alternativ": {
+      "A": "Att patienten sätts på flytande kost",
+      "B": "Palliativ endoskopisk stenting",
+      "C": "Perioperativ (neoadjuvant+adjuvant) intensiv cytostatikabehandling runt kirurgin",
+      "D": "Enbart strålning"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Cytostatika före och efter kirurgi krymper tumören och eliminerar mikrometastaser.",
+    "varför_övriga_fel": "Ventrikeln strålas generellt inte preoperativt.",
+    "källa": "111",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_091",
+    "huvudområde": "Övre gastrointestinal kirurgi",
+    "subtopic": "Tumör",
+    "typ": "symtom",
+    "svårighetsgrad": "medel",
+    "fråga": "Ett klassiskt alarmsymtom hos pat över 60 år för Pankreascancer är:",
+    "alternativ": {
+      "A": "Smärtsamma kräkningar",
+      "B": "'Tyst' (smärtfri) ikterus och kraftig viktnedgång",
+      "C": "Återkommande diarréer",
+      "D": "Akut brädhård buk"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Cancer i caput pankreas blockerar gallgången tyst och stjäl mycket energi (S-bilirubin stiger).",
+    "varför_övriga_fel": "C = malabsorption, D = perforation.",
+    "källa": "59",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_092",
+    "huvudområde": "Övre gastrointestinal kirurgi",
+    "subtopic": "Tumör",
+    "typ": "radiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken undersökning beställs för att bedöma om en pankreastumör är operabel?",
+    "alternativ": {
+      "A": "BÖS",
+      "B": "DT pankreas (trefas med kontrast)",
+      "C": "Endast Ultraljud",
+      "D": "Passageröntgen"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Trefas-CT visar tumörens relation till stora kärl (A. mesenterica, truncus coeliacus), avgör operabilitet.",
+    "varför_övriga_fel": "ULJ ser ej djupa kärl tillräckligt exakt.",
+    "källa": "112",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_093",
+    "huvudområde": "Övre gastrointestinal kirurgi",
+    "subtopic": "Ulcus/GERD",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Hur opereras klassiskt tumörer i caput pankreas (huvudet)?",
+    "alternativ": {
+      "A": "Total pankreatektomi",
+      "B": "Pankreatikoduodenektomi (Whipple: caput, duodenum, gallblåsa bort)",
+      "C": "Distal resektion",
+      "D": "Enbart strålning"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Duodenum och caput delar blodförsörjning och måste oftast tas blockvis.",
+    "varför_övriga_fel": "Distal resektion används vid svans-tumörer.",
+    "källa": "169",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_094",
+    "huvudområde": "Övre gastrointestinal kirurgi",
+    "subtopic": "Tumör",
+    "typ": "klassifikation",
+    "svårighetsgrad": "svår",
+    "fråga": "När anses en pankreastumör vara 'gränsresektabel' (borderline)?",
+    "alternativ": {
+      "A": "När den gett levermetastaser",
+      "B": "När den växer <180 grader runt stora artärer/vener (ex SMA)",
+      "C": "När patienten är för gammal",
+      "D": "När den ligger i svansen"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Över 180 grader anes den irresektabel, <180 gränsfall och ges neoadjuvant för att krympa.",
+    "varför_övriga_fel": "Fjärrmetastas = inoperabelt (palliation).",
+    "källa": "113",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_095",
+    "huvudområde": "Övre gastrointestinal kirurgi",
+    "subtopic": "Tumör",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Vid ventrikelcancerkirurgi opereras ofta hela magen bort (total gastrektomi). Hur rekonstrueras MTK vanligast?",
+    "alternativ": {
+      "A": "Stomi på halsen",
+      "B": "Roux-en-Y slynga (jejunum kopplas till esofagus)",
+      "C": "Gummiband",
+      "D": "Låter den läka öppet"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Man skapar en Y-koppling med tunntarmen för att leda ner mat och avleda galla.",
+    "varför_övriga_fel": "Stomi behövs ej.",
+    "källa": "111",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_096",
+    "huvudområde": "Övre gastrointestinal kirurgi",
+    "subtopic": "Ulcus",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur skiljer sig uppföljningen av ett duodenalulcus från ett ventrikelulcus?",
+    "alternativ": {
+      "A": "Duodenalulcus kräver årlig kontroll, ventrikel inte",
+      "B": "Båda måste följas livslångt",
+      "C": "Ventrikelulcus måste ALLTID kontrollskoperas tills utläkning (pga risk för bakomliggande cancer). Duodenalulcus ej rutin.",
+      "D": "Ingen uppföljning alls"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Cancer i magsäcken kan se ut som ett sår. Det måste bevisas att det var godartat (läkt).",
+    "varför_övriga_fel": "Duodenalcancer är extremt sällsynt.",
+    "källa": "82",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_097",
+    "huvudområde": "Radiologi",
+    "subtopic": "Trauma-CT",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad granskas primärt i A (Airways) och B (Breathing) enligt Traumaprotokoll på CT?",
+    "alternativ": {
+      "A": "Mjälte och lever",
+      "B": "Kotfrakturer",
+      "C": "Pneumothorax och Trakealdeviation i Lungfönster",
+      "D": "Aortadissektion"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Luft ska stanna i lungorna. Lungfönster (mörk gråskala) används för detta.",
+    "varför_övriga_fel": "Aorta är C (Cirkulation). Kotskador är D.",
+    "källa": "145",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_098",
+    "huvudområde": "Radiologi",
+    "subtopic": "Trauma-CT",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket radiologiskt 'fönster' används i steg C (Circulation) vid trauma?",
+    "alternativ": {
+      "A": "Skelettfönster",
+      "B": "Mjukdelsfönster (för stora kärl, fri vätska/blod och bukorgan)",
+      "C": "Lungfönster",
+      "D": "PET-fönster"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Optimerat för att urskilja mjukdelar (fett, organ, blod) i buken.",
+    "varför_övriga_fel": "Ben och lungor döljer små mjukdelsblödningar på sina inställningar.",
+    "källa": "146",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_099",
+    "huvudområde": "Radiologi",
+    "subtopic": "Trauma-CT",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad granskas i D (Disability) på Trauma-CT?",
+    "alternativ": {
+      "A": "Bara artärer",
+      "B": "Skelettskador, speciellt bäcken och ryggfrakturer, i skelettfönster",
+      "C": "Levernekros",
+      "D": "Hjärntryck på lungan"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Dislocerade bäckenfrakturer hotar cirkulation och nerver.",
+    "varför_övriga_fel": "Cirkulation granskas i steg C.",
+    "källa": "146",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_100",
+    "huvudområde": "Radiologi",
+    "subtopic": "Akut buk",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad betyder fyndet 'fri gas' (pneumoperitoneum) radiologiskt och var syns det bäst på CT?",
+    "alternativ": {
+      "A": "Ileus, ses i benfönster",
+      "B": "Perforation av mag-tarmkanalen, ses bäst på lungfönster ventralläge hos liggande pat",
+      "C": "Njursvikt, ses i bursa omentalis",
+      "D": "Normalt fynd efter mat"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Luft läcker från tarmen. Lungfönster är designat för att se luft knivskarpt.",
+    "varför_övriga_fel": "Efter op kan fri gas finnas upp till 1-2 v, men ej normalt efter mat.",
+    "källa": "146",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_101",
+    "huvudområde": "Radiologi",
+    "subtopic": "Akut buk",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är tecknet 'fettretning' (fat stranding) på en CT buk?",
+    "alternativ": {
+      "A": "Att fettväv blivit till muskel",
+      "B": "Tecken på lokal inflammation och ödem i fettet runt ett sjukt organ (t.ex appendix/divertikel)",
+      "C": "Tecken på bråck",
+      "D": "Tarmens mesenterium har ischemi"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Det annars svarta fettet blir grå/stråkigt pga vätska/inflammation. Mycket användbart fynd.",
+    "varför_övriga_fel": "Bråck syns som muskeldefekter.",
+    "källa": "144",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_102",
+    "huvudområde": "Radiologi",
+    "subtopic": "Akut buk",
+    "typ": "undersökningsval",
+    "svårighetsgrad": "lätt",
+    "fråga": "Behövs intravenöst kontrastmedel vid CT buk för att hitta de allra flesta njurstenar/uretärstenar?",
+    "alternativ": {
+      "A": "Ja, alltid för stenar saknar kontrast",
+      "B": "Nej, man använder CT utan kontrast (Sten-CT) för att stenen oftast innehåller kalk och lyser vitt av sig själv",
+      "C": "Ja, annars spricker njuren",
+      "D": "Endast peroral kontrast används"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Kontrast i njurarna/uretären riskerar att dölja stenen (vitt mot vitt).",
+    "varför_övriga_fel": "Kontrast används vid tumör/ischemi-frågeställning.",
+    "källa": "139",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_103",
+    "huvudområde": "Radiologi",
+    "subtopic": "Akut buk",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur diagnostiseras radiologiskt en okomplicerad divertikulit?",
+    "alternativ": {
+      "A": "Bara divertiklar utan inflammation",
+      "B": "Divertikel plus omgivande fettretning, inga abscesser/fri gas",
+      "C": "Massa fri vätska",
+      "D": "Aortadissektion intill"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Syns vätska, gas eller abscesser = komplicerad.",
+    "varför_övriga_fel": "Divertiklar utan retning är asymtomatisk divertikulos.",
+    "källa": "144",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_104",
+    "huvudområde": "Radiologi",
+    "subtopic": "Akut buk",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur ter sig klassiskt mekaniskt tunntarmsileus på CT?",
+    "alternativ": {
+      "A": "Endast caecum är extremt stor (>10cm)",
+      "B": "Fettretning i lilla bäckenet",
+      "C": "Dilaterade tunntarmsslyngor (>3cm) följt av en transitionszon där tarmen är sammanfallen distalt",
+      "D": "Hela kolons längd är enorm"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Propp uppströms blir utspänd, nedströms kollapsad. Punkten däremellan kallas transitionszon.",
+    "varför_övriga_fel": "Är bara kolon enorm är det kolonileus.",
+    "källa": "143",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_105",
+    "huvudområde": "Radiologi",
+    "subtopic": "Akut buk",
+    "typ": "undersökningsval",
+    "svårighetsgrad": "svår",
+    "fråga": "När måste en CT-buk utföras TREFAS (artär, ven, och sen fas)?",
+    "alternativ": {
+      "A": "Vid okomplicerad gallsten",
+      "B": "Vid misstänkt appendicit",
+      "C": "Vid misstänkt ischemi, GI blödning eller tumörutredning (pankreas/lever)",
+      "D": "Vid ljumskbråck"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Krävs för att bedöma kontrastuppladdning över tid, blödningsfoci eller tumörens kärlrelation.",
+    "varför_övriga_fel": "Infektioner (appendicit) behöver oftast bara venfas.",
+    "källa": "168",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_106",
+    "huvudområde": "Radiologi",
+    "subtopic": "Akut buk",
+    "typ": "undersökningsval",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad innebär BÖS?",
+    "alternativ": {
+      "A": "Blödningsövervakning och syrgas",
+      "B": "Bäcken-Översikt Stående",
+      "C": "Buk-Över-Sikt (konventionell röntgen utan kontrast eller lågdos-CT utan kontrast)",
+      "D": "Bästa Övre Symtom"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Ger en översiktsbild över gas- och vätskefördelning i buken.",
+    "varför_övriga_fel": "B och D är hittepå.",
+    "källa": "119",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_107",
+    "huvudområde": "Radiologi",
+    "subtopic": "Akut buk",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur ser en lever med uttalad cirros ofta ut på ultraljud/CT?",
+    "alternativ": {
+      "A": "Pärlband i gallgångar",
+      "B": "Ojämn yta, flammig inhomogen ekogenicitet/uppladdning och ibland omgiven av ascites (vatten)",
+      "C": "Luft i portasystemet",
+      "D": "Som en mörk fettklump"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Skrumplever blir knölig och ojämn pga ärr/fibros. Trycket ger vätska (ascites).",
+    "varför_övriga_fel": "Luft i porta är tecken på tarmnekros.",
+    "källa": "109",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_108",
+    "huvudområde": "Radiologi",
+    "subtopic": "Akut buk",
+    "typ": "undersökningsval",
+    "svårighetsgrad": "medel",
+    "fråga": "När är passageröntgen med peroral kontrast indicerad?",
+    "alternativ": {
+      "A": "Vid misstänkt perforerat magsår",
+      "B": "För att diagnosticera uretärsten",
+      "C": "Vid konservativ handläggning av tunntarmsileus för att se om hindret är inkomplett och börjar släppa",
+      "D": "Vid aktiv kolonblödning"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Visar om kontrast passerar hindret ner i kolon efter ett visst antal timmar.",
+    "varför_övriga_fel": "Perforerat sår + peroral kontrast i magen kan läcka ut i buken (farligt med baryt).",
+    "källa": "11",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_109",
+    "huvudområde": "Radiologi",
+    "subtopic": "Trauma-CT",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad innebär Hounsfield-enheter (HU) i CT-sammanhang?",
+    "alternativ": {
+      "A": "Hur mycket strålning patienten fått",
+      "B": "Ett mått på vävnadens densitet/attenuering (ex. Ben=+1000, Vatten=0, Luft=-1000)",
+      "C": "En skala för smärta",
+      "D": "Tiden i kameran"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Fysikaliskt referensvärde för hur mycket vävnaden bromsar röntgenstrålarna.",
+    "varför_övriga_fel": "A = mSv. C = VAS.",
+    "källa": "139",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_110",
+    "huvudområde": "Radiologi",
+    "subtopic": "Trauma-CT",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "svår",
+    "fråga": "Hur många Hounsfield units (HU) har akut koagulerat blod (t.ex. subkapsulär hematom) normalt?",
+    "alternativ": {
+      "A": "-100 HU",
+      "B": "0 HU",
+      "C": "50-90 HU (ofta ca 60)",
+      "D": ">1000 HU"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Akut blod lyser ljust grått (ca +60 HU) på mjukdelsfönster mot vatten/vävnad (+0-30).",
+    "varför_övriga_fel": "-100=fett, 0=vatten, >1000=ben.",
+    "källa": "139",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_111",
+    "huvudområde": "Bråckkirurgi",
+    "subtopic": "Inklämning",
+    "typ": "symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är definitionen av ett INKLÄMT bråck?",
+    "alternativ": {
+      "A": "Ett bråck som bara innehåller fett",
+      "B": "Ett bråckinnehåll som inte går att reponera OCH pat har akuta symtom (smärta/svullnad)",
+      "C": "Ett bråck som spontant åker in i magen",
+      "D": "Nekrotisk tarm i bråcksäcken"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Inklämning innebär bråck i säcken som inte går tillbaka och ger symtom.",
+    "varför_övriga_fel": "D = Strangulerat. A och C är okomplicerat.",
+    "källa": "29",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_112",
+    "huvudområde": "Bråckkirurgi",
+    "subtopic": "Inklämning",
+    "typ": "patofysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "När ett inklämt bråck blir STRANGULERAT, vad har då inträffat?",
+    "alternativ": {
+      "A": "Bråcket spricker och sprids i blodet",
+      "B": "Blodcirkulationen till bråckinnehållet stryps vilket leder till ischemi och eventuell nekros",
+      "C": "Tarmen börjar producera extremt med slem",
+      "D": "Det förvandlas till ett glidbråck"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Strangulation är strypt cirkulation. Livshotande kirurgiskt akuttillstånd.",
+    "varför_övriga_fel": "Glidbråck är en typ av anatomi (organet=bråcksäcken), inte en akut komplikation.",
+    "källa": "29",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_113",
+    "huvudområde": "Bråckkirurgi",
+    "subtopic": "Indikation",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka patienter med LJUMSKBRÅCK ska generellt alltid övervägas för operation pga hög inklämningsrisk?",
+    "alternativ": {
+      "A": "Endast män över 65",
+      "B": "Alla män oavsett ålder",
+      "C": "Alla kvinnor med inguinalbråck samt alla med femoralbråck",
+      "D": "Endast de med medfödda navelbråck"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Hos kvinnor och vid femorala bråck är porten ofta snävare, högre inklämningsrisk.",
+    "varför_övriga_fel": "Män opereras baserat på symtom.",
+    "källa": "32",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_114",
+    "huvudområde": "Bråckkirurgi",
+    "subtopic": "Handläggning",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är rätt primär handläggning för ett inklämt ljumskbråck hos en smärtpåverkad man på akuten?",
+    "alternativ": {
+      "A": "Hemgång med remiss till VC",
+      "B": "Ge iv smärtstillande + lugnande (morfin+midazolam) och gör sedan försiktigt repositionsförsök",
+      "C": "Urakut CT buk utan att röra bråcket",
+      "D": "Stick ett hål med en grov nål"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Muskelavslappning + smärtlindring möjliggör ofta att bråcket smiter tillbaka i buken och undviker urakut op.",
+    "varför_övriga_fel": "Att sticka hål är livsfarligt. Hemgång vid inklämning = strangulation risk.",
+    "källa": "33, 36",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_115",
+    "huvudområde": "Bråckkirurgi",
+    "subtopic": "Indikation",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Du har just lyckats reponera ett akut inklämt ljumskbråck nattetid. Patienten är nu smärtfri. Vad gör du?",
+    "alternativ": {
+      "A": "Skickar hem med lugnande besked",
+      "B": "Lägger in patienten och anmäler till operation följande dag",
+      "C": "Gör ingenting, allt är löst",
+      "D": "Sätter ett tajt bälte runt magen"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Bråcket inklämdes en gång och är stort nog att göra det igen, opereras subakut/nästa dag.",
+    "varför_övriga_fel": "Risken är överhängande att tarmen ramlar ut igen och stryps hemma.",
+    "källa": "37",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_116",
+    "huvudområde": "Bråckkirurgi",
+    "subtopic": "Handläggning",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "När ska man ABSOLUT INTE ens försöka trycka tillbaka (reponera) ett bråck?",
+    "alternativ": {
+      "A": "När det är över 1 cm stort",
+      "B": "Vid rodnad, förhårdnad (induration), grav svullnad eller vid misstanke om död tarm",
+      "C": "Om det låter (kurrar) i bråcket",
+      "D": "När pat är under 50 år"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Då kan man trycka tillbaka nekrotisk/infekterad tarm eller spräcka den in i bukhålan. Kräver akut op istället!",
+    "varför_övriga_fel": "Kurr (tarm) är bra, bekräftar bråck.",
+    "källa": "33",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_117",
+    "huvudområde": "Bråckkirurgi",
+    "subtopic": "Kirurgi",
+    "typ": "anatomi",
+    "svårighetsgrad": "medel",
+    "fråga": "Var utgår ett femoralbråck (lårbråck) i relation till viktiga strukturer?",
+    "alternativ": {
+      "A": "Ovanför ligamentum inguinale, lateralt",
+      "B": "Nedanför ligamentum inguinale, medialt om v. iliaca externa/v. femoralis",
+      "C": "I medellinjen (linea alba)",
+      "D": "Genom naveln"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Femoralkanalen ligger nedanför ljumskligamentet, snävt, vilket förklarar höga klämrisken.",
+    "varför_övriga_fel": "Inguinalbråck går ovanför ligamentet. Navelbråck = i naveln.",
+    "källa": "30",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_118",
+    "huvudområde": "Bråckkirurgi",
+    "subtopic": "Kirurgi",
+    "typ": "behandling",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken är den vanligaste öppna operationsmetoden för ljumskbråck i Sverige ('Golden Standard')?",
+    "alternativ": {
+      "A": "Lichtenstein (främre 'tension-free' nätplastik)",
+      "B": "Shouldice (suturteknik utan nät)",
+      "C": "Bukplastik med medellinjesnitt",
+      "D": "Pannikulektomi"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Ett nät sys in tension-free och pat kan belasta snabbt. Ger lägst recidivfrekvens vid öppen op.",
+    "varför_övriga_fel": "Shouldice var förr, har mer smärta/recidiv.",
+    "källa": "34",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_119",
+    "huvudområde": "Bråckkirurgi",
+    "subtopic": "Bukvägg",
+    "typ": "patofysiologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Varför måste man vid undersökning av en buksmärta/ileus alltid titta på tidigare operationsärr?",
+    "alternativ": {
+      "A": "För att se ärrets kosmetiska resultat",
+      "B": "För att alla ärr i bukväggen utgör potentiella bråck (ärrbråck) som kan klämma in",
+      "C": "För att veta vem som opererade pat",
+      "D": "Ärr ger sällan bråck, man letar infektion"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Incisioner försvagar fascian och tarmen kan leta sig ut och klämma in under hudnivå.",
+    "varför_övriga_fel": "10-20% av buksnitt får bråck.",
+    "källa": "35",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_120",
+    "huvudområde": "Bråckkirurgi",
+    "subtopic": "Bukvägg",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "När opereras ett ventralt bråck (exv navelbråck)?",
+    "alternativ": {
+      "A": "Alltid direkt när det hittas",
+      "B": "Enbart om det kosmetiskt stör pat",
+      "C": "Om det är symtomgivande (smärta, inklämning, begränsande)",
+      "D": "Bara på barn"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Ett asymtomatiskt brett bråck hos vuxen behöver oftast ej opereras rutinmässigt.",
+    "varför_övriga_fel": "Strikta indikationer pga komplikationsrisk med nätkirurgi i buk.",
+    "källa": "35",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_121",
+    "huvudområde": "Proktologi",
+    "subtopic": "Perianalabscess",
+    "typ": "etiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket är det vanligaste ursprunget till en perianal abscess rent anatomiskt/patofysiologiskt?",
+    "alternativ": {
+      "A": "Hårsäcksinflammation (furunkel)",
+      "B": "Infektion i analkörtlarna (kryptae Morgagnis i linea dentata)",
+      "C": "Malignitet i rektum",
+      "D": "Ulcerös kolit"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Körtlarna i analkanalen täpps till, infekteras och bildar en böld som vandrar mot huden.",
+    "varför_övriga_fel": "A är en vanlig böld på rumpan, B är den klassiska anorektala patogenesen.",
+    "källa": "138",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_122",
+    "huvudområde": "Proktologi",
+    "subtopic": "Perianalabscess",
+    "typ": "behandling",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur behandlas en bekräftad ischiorektal/perianal abscess bäst i första skedet?",
+    "alternativ": {
+      "A": "Tablett antibiotika och återbesök 1v",
+      "B": "Kirurgisk incision och dränering (vanligen i narkos eller stark bedövning)",
+      "C": "Kortisonsalva (Scheriproct)",
+      "D": "Endast varma bad"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Som med all kirurgisk varbildning: ubi pus ibi evacua (töm varet!).",
+    "varför_övriga_fel": "Ab löser inte mekanisk böld. Kortison förvärrar saken.",
+    "källa": "138",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_123",
+    "huvudområde": "Proktologi",
+    "subtopic": "Perianalabscess",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Är antibiotika indicerat som standard efter kirurgisk dränering av en okomplicerad perianalabscess hos frisk pat?",
+    "alternativ": {
+      "A": "Nej, används sällan om pat ej är immunsupprimerad/septisk",
+      "B": "Ja, alltid för att minska fistelrisk",
+      "C": "Ja, enbart intravenöst i 3 dygn",
+      "D": "Bara om man inte hittade något var"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Dränage och noggrann sköljning botar oftast. Ab adderar ingen bevisad nytta utan sepsis.",
+    "varför_övriga_fel": "Fistelrisk påverkas minimalt av Ab.",
+    "källa": "138",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_124",
+    "huvudområde": "Proktologi",
+    "subtopic": "Perianalabscess",
+    "typ": "komplikationer",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken är den klassiska långsiktiga sjukdomskomplikationen efter en dränerad perianalabscess (utvecklas i ca 30-50%)?",
+    "alternativ": {
+      "A": "Kolorektalcancer",
+      "B": "Analinkontinens (avsliten sfinkter)",
+      "C": "Analfistel",
+      "D": "Hemorrojder"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Infektionsgången från körteln till huden kan permanentas och bilda ett fistelrör.",
+    "varför_övriga_fel": "Abscess i sig gör inte cancer.",
+    "källa": "138",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_125",
+    "huvudområde": "Proktologi",
+    "subtopic": "Analfissur",
+    "typ": "symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket är kardinalsymtomet vid akut analfissur (spricka)?",
+    "alternativ": {
+      "A": "Kraftig massiv och okontrollerad blödning PR",
+      "B": "Hög feber >39°C",
+      "C": "Skärande svår smärta vid defekation med viss blodstrimma, kan i övrigt kvarstå länge som kramp",
+      "D": "Ikterus"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Patofysiologin domineras av sfinkterkramp som sargar såret, pat fruktar ofta VC-besök.",
+    "varför_övriga_fel": "Abscess ger feber. Massiv blödning = divertikel/angio.",
+    "källa": "49, 160",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_126",
+    "huvudområde": "Proktologi",
+    "subtopic": "Hemorrojder",
+    "typ": "symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vid färskt blod på papperet/toan efter defekation misstänks ofta hemorrojder. Vilken extremt viktig regel gäller?",
+    "alternativ": {
+      "A": "Man behandlar alltid med gummiband först utan att titta",
+      "B": "Man måste absolut säkerställa att det inte rör sig om en kolorektalcancer/rektalcancer innan symtomen skylls helt på hemorrojder",
+      "C": "Man måste utföra en angiografi direkt",
+      "D": "Inget, hemorrojder läker ut spontant"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Blödning är alarmsymtom. En blödande tumör kan finnas bakom även om pat har hemorrojder!",
+    "varför_övriga_fel": "Rektoskopi/Koloskopi är obligat!",
+    "källa": "49, 50",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_127",
+    "huvudområde": "Proktologi",
+    "subtopic": "Perianalabscess",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken egenvård rekommenderas starkt som smärtlindring och renlighet efter perianalkirurgi?",
+    "alternativ": {
+      "A": "Tvätt med sprit 3 ggr/dag",
+      "B": "Duschning av analöppning (handdusch 2ggr/dag + efter toabesök)",
+      "C": "Sittbad i jodlösning",
+      "D": "Applicera klorhexidin-förband"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Kranvatten duschar bort bakterier, håller kanalen öppen och är smärtstillande.",
+    "varför_övriga_fel": "Sprit/Jod irriterar slemhinnan svårt.",
+    "källa": "138",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_128",
+    "huvudområde": "Proktologi",
+    "subtopic": "Abscess",
+    "typ": "klassifikation",
+    "svårighetsgrad": "svår",
+    "fråga": "Vilken typ av perianalabscess betraktas anatomiskt som svårare (mer komplicerad) än ischiorektala abscesser?",
+    "alternativ": {
+      "A": "Abscesser under huden vid anus kanten",
+      "B": "Mukösa abscesser",
+      "C": "Abscesser som klättrat upp ovanför levatorplanet (M. Levator Ani)",
+      "D": "Furunklar"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Supralevatoriska abscesser sprider sig farligt djupt mot bukhålan och är komplicerade att dränera radikalt.",
+    "varför_övriga_fel": "De ytliga/subkutana är enklast.",
+    "källa": "138",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_129",
+    "huvudområde": "Proktologi",
+    "subtopic": "Hemorrojder",
+    "typ": "behandling",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken är en vanligt beprövad lokal kirurgisk behandlingsmetod för blödande/prolaberande inre hemorrojder?",
+    "alternativ": {
+      "A": "Subtotal kolektomi",
+      "B": "Endoskopisk ballongvidgning",
+      "C": "Gummibandsligaturer alternativt operation enligt Milligan-Morgan",
+      "D": "Extirpation av analsfinkter"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Kväver hemorrojden som ramlar av. Milligan vid svårare läge.",
+    "varför_övriga_fel": "A, B och D är extrema metoder för helt andra sjukdomar.",
+    "källa": "51, 160",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_130",
+    "huvudområde": "Proktologi",
+    "subtopic": "Fissur",
+    "typ": "behandling",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken är farmakologisk konservativ förstahandsbehandling för att bryta smärt-kramp-cykeln vid analfissur?",
+    "alternativ": {
+      "A": "Opiater (Morfin)",
+      "B": "Laxermedel (volymökande) och ev. salva/gel som relaxerar sfinktern (ex Diltiazem)",
+      "C": "Tablett antibiotika",
+      "D": "Steroider (Betapred po)"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Lös avföring skonar sprickan, sfinkterrelaxantia (muskelavslappnande) häver ischemin och krampen.",
+    "varför_övriga_fel": "Morfin GER förstoppning och sfinkterkramp!",
+    "källa": "160",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_131",
+    "huvudområde": "Bröstsjukdomar",
+    "subtopic": "Diagnostik",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad ingår i en Trippeldiagnostik för utredning av knöl i bröstet?",
+    "alternativ": {
+      "A": "Anamnes + Blodprov + Röntgen lungor",
+      "B": "Klinisk us (palpation) + Bilddiagnostik (mammografi/ULJ) + Cytologi/Mellanålsbiopsi",
+      "C": "CT buk + PET + MR",
+      "D": "Klinisk us + Mammografi + BRCA gen-test"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Det absolut viktigaste ramverket för att ställa bröstcancerdiagnos säkert och undvika falskt negativa.",
+    "varför_övriga_fel": "A och C ställer ej vävnadsdiagnos av bröstet lokalt.",
+    "källa": "116, 161",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_132",
+    "huvudområde": "Bröstsjukdomar",
+    "subtopic": "Benigna tumörer",
+    "typ": "symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Ung kvinna med en fritt förskjutbar, rund, slät och oöm knöl i bröstet. Troligaste diagnos?",
+    "alternativ": {
+      "A": "Fibroadenom",
+      "B": "Bröstcancer (Luminal A)",
+      "C": "Mastit",
+      "D": "Phyllodes-tumör"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Klassisk presentation av en mycket vanlig godartad bindvävsknöl.",
+    "varför_övriga_fel": "Cancer är oftast fast, oregelbunden, adhererad.",
+    "källa": "115",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_133",
+    "huvudområde": "Bröstsjukdomar",
+    "subtopic": "Cancer",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka kliniska hudförändringar kan antyda avancerad bröstcancer?",
+    "alternativ": {
+      "A": "Flagnande röd hud i axillen",
+      "B": "Hudindragningar (dimpling), apelsinhud (peau d'orange) och tillbakadragen bröstvårta (retraktion)",
+      "C": "Klart avgränsade svarta prickar",
+      "D": "Inga, huden förblir alltid opåverkad"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Tumören drar i Coopers ligament och täpper till lymfbanor. Mycket starka alarmsymtom.",
+    "varför_övriga_fel": "Cancern engagerar huden frekvent.",
+    "källa": "116",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_134",
+    "huvudområde": "Bröstsjukdomar",
+    "subtopic": "Markörer",
+    "typ": "patofysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad mäter markören Ki-67 vid patologisk analys av bröstcancer?",
+    "alternativ": {
+      "A": "Östrogenmottaglighet",
+      "B": "HER2 överuttryck",
+      "C": "Tumörens tillväxthastighet/proliferation",
+      "D": "Malignitetsgrad i lymfkörtlar"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Hög Ki-67 = snabbt delande tumör = ofta mer aggressiv (men mer känslig för cytostatika).",
+    "varför_övriga_fel": "Östrogen = ER, HER2 = HER2.",
+    "källa": "117",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_135",
+    "huvudområde": "Bröstsjukdomar",
+    "subtopic": "Kirurgi",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "En patient opereras för bröstcancer med bröstbevarande kirurgi och SN (Sentinel Node). SN innehåller en metastas på 3 mm. Åtgärd under samma op eller senare?",
+    "alternativ": {
+      "A": "Avbryt operation",
+      "B": "Axillutrymning (borttagande av resterande körtlar) utförs",
+      "C": "Man opererar in ett implantat omedelbart",
+      "D": "Ingenting, man strålar endast"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Makrometastaser (>2mm) i portvaktskörteln föranleder oftast att man tar hela axillstationen (axillutrymning).",
+    "varför_övriga_fel": "Även om ny forskning ändrat detta något, säger källorna (117/118) utrymning.",
+    "källa": "117",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_136",
+    "huvudområde": "Bröstsjukdomar",
+    "subtopic": "Kirurgi",
+    "typ": "indikation",
+    "svårighetsgrad": "medel",
+    "fråga": "När är bröstbevarande kirurgi (sektorresektion) oftast KONTRAINDICERAT, så att hela bröstet bör tas bort (mastektomi)?",
+    "alternativ": {
+      "A": "Tumör > 4 cm eller multifokalitet (flera tumörer i olika kvadranter)",
+      "B": "Om patienten är över 50 år",
+      "C": "Vid trippelnegativ bröstcancer oavsett storlek",
+      "D": "Om den sitter ytligt"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Om tumören är för stor relativt bröstvolymen eller är utspridd kan man inte spara en estetiskt/onkologiskt acceptabel rest.",
+    "varför_övriga_fel": "Ålder och receptortyp dikterar onkologin, ej alltid typ av snitt.",
+    "källa": "118",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_137",
+    "huvudområde": "Obesitaskirurgi",
+    "subtopic": "Metod",
+    "typ": "anatomi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken mag-tarm-anatomisk koppling skapas vid Gastric Bypass-kirurgi?",
+    "alternativ": {
+      "A": "Ett gummiband runt magen (Gastric Banding)",
+      "B": "Magsäcken görs smal som ett rör, men ingen omkoppling (Sleeve)",
+      "C": "En liten magficka kopplas till tunntarm med en Roux-en-Y slynga",
+      "D": "Duodenum kopplas direkt till rektum"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Maten kopplas förbi duodenum, galla/pankreassaft leds via Y-stammen = minskat upptag.",
+    "varför_övriga_fel": "Sleeve (B) och Band (A) är andra metoder.",
+    "källa": "67, 134",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_138",
+    "huvudområde": "Obesitaskirurgi",
+    "subtopic": "Komplikation",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "svår",
+    "fråga": "En 35-årig kvinna som genomgått Gastric Bypass för 2 år sedan inkommer med akuta svåra intervallartade buksmärtor utstrålande mot ryggen. Mjuk buk. Sannolik farlig orsak?",
+    "alternativ": {
+      "A": "Ventrikelulcus",
+      "B": "Intern herniering (tarm har klämt in i slitsen som skapades vid op)",
+      "C": "Levercirros",
+      "D": "Proktit"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "GB-anatomin skapar hålrum i mesenteriet (slitsar) där tunntarm kan snurra sig (strangulation).",
+    "varför_övriga_fel": "Ischemi/ileus av intern herniering är det man måste finna hos post-bariatriska.",
+    "källa": "162",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_139",
+    "huvudområde": "Obesitaskirurgi",
+    "subtopic": "Bukplastik",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "En patient har tappat 50 kg och har ett stort hängande 'hudförkläde' (pannus) som ger svampinfektioner. Operationsmetod landstinget kan erbjuda av medicinska skäl?",
+    "alternativ": {
+      "A": "Fettsugning",
+      "B": "Pannikulektomi (avlägsnande av hudöverskott) / Bukplastik",
+      "C": "Gastric Sleeve",
+      "D": "Inget, ses som kosmetik"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Stora överskott av hud tas bort med bla Pfannenstiel-snitt om kriterier uppfylls (inte kosmetika utan medicinsk grund).",
+    "varför_övriga_fel": "Fettsugning löser inte huden.",
+    "källa": "68",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_140",
+    "huvudområde": "Obesitaskirurgi",
+    "subtopic": "Bukplastik",
+    "typ": "anatomi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken anatomisk struktur plisseras (sys ihop) ofta vid traditionell bukplastik ifall den har glidit isär pga fetma/graviditet?",
+    "alternativ": {
+      "A": "M. Obliquus externus",
+      "B": "A. Epigastrica inferior",
+      "C": "Diastasis recti (rakt muskeldiastas i linea alba)",
+      "D": "Ligamentum inguinale"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Raka bukmusklerna glider isär vid bukexpansion och dras ofta ihop vid plastiken.",
+    "varför_övriga_fel": "Musklerna på sidan sys ej.",
+    "källa": "68",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_141",
+    "huvudomrade": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Kolorektalcancer",
+    "typ": "differentialdiagnostik",
+    "svarighetsgrad": "svår",
+    "fraga": "Vad innebär klassifikationen dMMR (Deficient Mismatch Repair) vid kolorektalcancer för tumörens egenskaper och behandlingsval?",
+    "alternativ": {
+      "A": "Tumören saknar helt förmåga att metastasera.",
+      "B": "Reparationssystemet fungerar dåligt, vilket gör tumören mer muterad och ofta mer känslig för immunterapi.",
+      "C": "Tumören är extremt strålkänslig och opereras sällan.",
+      "D": "Det innebär att patienten har en godartad polyp."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "dMMR innebär en defekt i DNA-reparationen. Detta leder till fler mutationer vilket gör att immunförsvaret (och immunterapi) har lättare att känna igen och angripa tumören.",
+    "varfor_ovriga_fel": "pMMR (Proficient) innebär intakt reparation och sämre svar på immunterapi. dMMR gör inte tumören automatiskt godartad eller icke-metastaserande.",
+    "kalla": "268",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_142",
+    "huvudomrade": "Nedre gastrointestinal kirurgi",
+    "subtopic": "IBD",
+    "typ": "klassifikation",
+    "svarighetsgrad": "medel",
+    "fraga": "Vilka tre huvudsakliga parametrar ligger till grund för Montreal-klassifikationen av Mb Crohn?",
+    "alternativ": {
+      "A": "Antal diarréer, CRP-nivå och feber.",
+      "B": "Tidigare operationer, rökning och BMI.",
+      "C": "Ålder vid diagnos, lokalisation i tarmen och sjukdomsbeteende (t.ex. strikturerande eller penetrerande).",
+      "D": "Förekomst av anemi, albumin och fistlar."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Montreal-klassifikationen indelas i A (Age), L (Location) och B (Behavior).",
+    "varfor_ovriga_fel": "Antal diarréer och CRP används snarare vid bedömning av akut skov (ex. Truelove-Witts för UC).",
+    "kalla": "48",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_143",
+    "huvudomrade": "Nedre gastrointestinal kirurgi",
+    "subtopic": "IBD",
+    "typ": "diagnostik",
+    "svarighetsgrad": "lätt",
+    "fraga": "Vad används det modifierade Truelove-Witts-indexet till inom kirurgin/gastroenterologin?",
+    "alternativ": {
+      "A": "För att diagnosticera pankreascancer.",
+      "B": "För att bedöma svårighetsgraden av ett skov vid Ulcerös kolit.",
+      "C": "För att avgöra om ett ljumskbråck ska opereras.",
+      "D": "För att gradera medvetandegrad vid blödningschock."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Indexet bedömer om skovet är lindrigt, måttligt svårt eller svårt utifrån bl.a. antal blodiga avföringar, puls, temp, Hb och CRP.",
+    "varfor_ovriga_fel": "Sverige-index används sedan för att prediktera risken för akut kolektomi, men Truelove-Witts sätter grundsvårighetsgraden av skovet.",
+    "kalla": "102",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_144",
+    "huvudomrade": "Gastrointestinal blödning",
+    "subtopic": "Handläggning",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "Enligt randomiserade studier rekommenderas en 'restriktiv' blodtransfusionspolicy vid Övre GI-blödning. Vad är målvärdet för Hb hos en i övrigt frisk patient?",
+    "alternativ": {
+      "A": "110-130 g/l",
+      "B": "70-90 g/l",
+      "C": "90-110 g/l",
+      "D": "Över 140 g/l"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "För friska patienter accepteras ett lägre Hb (70-90 g/l) eftersom övertransfusion har visat sig öka risken för re-blödning och mortalitet.",
+    "varfor_ovriga_fel": "90-110 g/l är målvärdet för patienter med samtidig hjärtsjukdom.",
+    "kalla": "33",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_145",
+    "huvudomrade": "Gastrointestinal blödning",
+    "subtopic": "Handläggning",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "Vad är målvärdet för Hb vid blodtransfusion på grund av GI-blödning hos en patient med känd ischemisk hjärtsjukdom?",
+    "alternativ": {
+      "A": "70-90 g/l",
+      "B": "90-110 g/l",
+      "C": "120-140 g/l",
+      "D": "Så länge systoliskt blodtryck är &gt;100 behövs inget mål-Hb."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Patienter med hjärtsjukdom tål anemi sämre (risk för hjärtinfarkt), varför man lägger målvärdet något högre än hos helt friska.",
+    "varfor_ovriga_fel": "70-90 g/l gäller för hjärtfriska patienter. Över 120 ökar blödningsrisken onödigt mycket.",
+    "kalla": "33",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_146",
+    "huvudomrade": "Övre gastrointestinal kirurgi",
+    "subtopic": "Tumör",
+    "typ": "patofysiologi",
+    "svarighetsgrad": "svår",
+    "fraga": "Vilket tillstånd i pankreasgångarna beskrivs som ett förstadie till cancer, drivet av metaplasi till körtelepitel med ökad slemproduktion (likt Barretts esofagus)?",
+    "alternativ": {
+      "A": "Pankreatisk pseudocysta",
+      "B": "IPMN (Intrapankreatisk mucinös neoplasi)",
+      "C": "Primär skleroserande kolangit",
+      "D": "Kronisk pankreatit"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "IPMN är en neoplasi i pankreasgångarna som producerar mucin (slem) och medför en uttalad risk att utvecklas till pankreascancer.",
+    "varfor_ovriga_fel": "En pseudocysta är en inflammatorisk rest efter pankreatit, inte ett pre-malignt förstadie i epitelet.",
+    "kalla": "96",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_147",
+    "huvudomrade": "Gastrointestinal blödning",
+    "subtopic": "Komplikation",
+    "typ": "diagnostik",
+    "svarighetsgrad": "svår",
+    "fraga": "Vad menas med en 'sentinel bleed' postoperativt efter stor abdominell kirurgi med gall- eller pankreasläckage?",
+    "alternativ": {
+      "A": "En ofarlig blödning från buksnittet i huden.",
+      "B": "En mindre varningsblödning från ett pseudoaneurysm som skapats av frätande läckage, vilket föregår en livshotande ruptur.",
+      "C": "En venös blödning orsakad av DVT-profylax.",
+      "D": "Blodig kräkning på grund av stressulcus."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Ett läckage av aggressiva vätskor som pankreassaft/galla kan arrodea (fräta) på närliggande artärer. Detta skapar ett pseudoaneurysm som först läcker lite ('sentinel bleed') innan det brister totalt.",
+    "varfor_ovriga_fel": "Detta är ett fruktat tillstånd som kräver omedelbar ny kärlkartläggning (CT-angio), det är inte ofarligt.",
+    "kalla": "73",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_148",
+    "huvudomrade": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Divertikulit",
+    "typ": "differentialdiagnostik",
+    "svarighetsgrad": "lätt",
+    "fraga": "Vilken viktig klinisk tumörregel anges för patienter med blödande divertiklar i kolon?",
+    "alternativ": {
+      "A": "Blödningen slutar nästan aldrig spontant.",
+      "B": "En divertikel som blöder är cancer tills motsatsen är bevisad.",
+      "C": "Divertiklar blöder aldrig, blodet kommer alltid från hemorrojder.",
+      "D": "Blödande divertiklar orsakar alltid akut buksmärta."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Eftersom divertikulos och kolorektalcancer båda är vanliga hos äldre och kan presentera sig med blödning, måste kolorektalcancer uteslutas rigoröst.",
+    "varfor_ovriga_fel": "Divertikelblödning är ofta smärtfri och avstannar för det mesta spontant (i 80-90% av fallen).",
+    "kalla": "39, 60",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_149",
+    "huvudomrade": "Radiologi",
+    "subtopic": "Akut buk",
+    "typ": "bildtolkning",
+    "svarighetsgrad": "svår",
+    "fraga": "Vilka radiologiska fynd på CT-angiografi är tidiga tecken på akut mesenteriell ischemi?",
+    "alternativ": {
+      "A": "Massa fri gas och uttalad ascites.",
+      "B": "Endast en vidgad mjälte.",
+      "C": "Upphävd kontrastfyllnad i större intestinala kärl, kontrastursparningar och eventuell synkron embolisering i t.ex. en njure.",
+      "D": "Dubbla gallgångar (Double duct sign)."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Proppar (embolier) syns som defekter i kontrastpelaren. Eftersom källan ofta är hjärtat (flimmer) kan man samtidigt se embolier i andra organ, såsom njurinfarkter.",
+    "varfor_ovriga_fel": "Fri gas syns först mycket sent när tarmen gått i total nekros och perforerat. Double duct är tumör.",
+    "kalla": "21",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_150",
+    "huvudomrade": "Bråckkirurgi",
+    "subtopic": "Bukvägg",
+    "typ": "anatomi",
+    "svarighetsgrad": "lätt",
+    "fraga": "Hur definieras rent lokaliseringsmässigt ett epigastrikabråck?",
+    "alternativ": {
+      "A": "Ett bråck medialt om lårkärlen.",
+      "B": "Ett bråck längs med revbensbågen.",
+      "C": "Definitionsmässigt beläget i medellinjen minst 3 cm ovanför naveln.",
+      "D": "Ett ärrbråck efter Pfannenstiel-snitt."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Epigastrikabråck är ett ventralt bråck i linea alba som ligger kranialt (minst 3 cm) om naveln.",
+    "varfor_ovriga_fel": "Medialt om lårkärlen är femoralbråck. Runt naveln är navelbråck.",
+    "kalla": "28",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_151",
+    "huvudomrade": "Nedre gastrointestinal kirurgi",
+    "subtopic": "IBD",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "Vilken roll har primär kirurgisk behandling vid lokaliserad ileocekal Mb Crohn jämfört med medicinsk behandling?",
+    "alternativ": {
+      "A": "Kirurgi är alltid sista utvägen och klart underlägsen all medicin.",
+      "B": "Kirurgi har visats vara lika bra eller till och med bättre än medicinsk behandling som initial terapi för denna specifika lokalisation.",
+      "C": "Kirurgi botar sjukdomen för alltid i detta stadium.",
+      "D": "Kirurgi görs endast om patienten har pågående sepsis."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Medan Crohn i allmänhet inte botas med kirurgi, har tidig resektion av enbart en ileocekal lesion visat mycket goda resultat och används allt oftare som ett likvärdigt primärt alternativ till tunga läkemedel.",
+    "varfor_ovriga_fel": "Crohns botas tyvärr inte permanent (den kan komma tillbaka i andra delar), men lokalkirurgin är mycket effektiv.",
+    "kalla": "49",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_152",
+    "huvudomrade": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Diagnostik",
+    "typ": "komplikationer",
+    "svarighetsgrad": "medel",
+    "fraga": "Vilken bakteriell komplikation ökar risken för efter en ERCP där man skurit upp sfinkter of Oddi (sfinkterotomi)?",
+    "alternativ": {
+      "A": "Clostridium difficile-infektion.",
+      "B": "Akut kolangit, eftersom tarmbakterier lättare kan klättra upp i gallgången.",
+      "C": "Primär skleroserande kolangit.",
+      "D": "Endokardit."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Sfinktern fungerar normalt som en backventil. När den delas mekaniskt vid ERCP försvinner ventilen, och bakterier från duodenum får fri lejd upp i gallträdet.",
+    "varfor_ovriga_fel": "PSC är autoimmun/inflammatorisk, ej en direkt infektionskomplikation från ingreppet.",
+    "kalla": "75",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_153",
+    "huvudomrade": "Akut buk",
+    "subtopic": "Symtom",
+    "typ": "differentialdiagnostik",
+    "svarighetsgrad": "medel",
+    "fraga": "Ett klassiskt kirurgiskt buktillstånd kan paradoxalt nog ibland presentera sig med rikliga vattentunna diarréer istället för total förstoppning. Vilket?",
+    "alternativ": {
+      "A": "Rupturerat aortaaneurysm.",
+      "B": "Partiell tunntarmsobstruktion (subileus).",
+      "C": "Okomplicerad gallsten.",
+      "D": "Perforerat ulcus."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Vid ett partiellt (inkomplett) hinder i tunntarmen kan vätska pressas förbi hindret av den kraftiga peristaltiken, vilket resulterar i vattentunna diarréer.",
+    "varfor_ovriga_fel": "Komplett ileus ger upphävd gas/fecesavgång, men partiellt kan ge diarré.",
+    "kalla": "284",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_154",
+    "huvudomrade": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Lever",
+    "typ": "indikation",
+    "svarighetsgrad": "lätt",
+    "fraga": "Vilka är de två primära indikationerna som ska föranleda övervägande om levertransplantation vid skrumplever (cirros)?",
+    "alternativ": {
+      "A": "Asymtomatisk portal hypertension och spider naevi.",
+      "B": "Alkoholhepatit i aktiv missbruksfas.",
+      "C": "Dekompenserad cirros och Hepatocellulär cancer (HCC).",
+      "D": "Fettlever och gallsten."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "När levern sviktar bortom medicinsk räddning (dekompenserad) eller har utvecklat primär levercancer (inom specifika kriterier) är transplantation den enda kurativa behandlingen.",
+    "varfor_ovriga_fel": "Patienter i aktivt alkoholmissbruk utreds normalt inte för transplantation (krävs karens/stabilitet).",
+    "kalla": "45",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_155",
+    "huvudomrade": "Bröstsjukdomar",
+    "subtopic": "Diagnostik",
+    "typ": "radiologi",
+    "svarighetsgrad": "lätt",
+    "fraga": "Varför är det viktigt att komplettera mammografi med ultraljud framförallt hos yngre kvinnor med en palpabel knöl i bröstet?",
+    "alternativ": {
+      "A": "Yngre kvinnor har körtelrika (täta) bröst, vilket sänker mammografins sensitivitet då både körtlar och tumörer ser vita ut på röntgen.",
+      "B": "Mammografi ökar risken för bröstcancer hos unga mycket mer än hos äldre.",
+      "C": "Ultraljud kan ensamt ta biopsin utan nål.",
+      "D": "Yngre kvinnor får endast fibroadenom som aldrig syns på mammografi."
+    },
+    "ratt_svar": "A",
+    "kort_forklaring": "Tät körtelvävnad hos unga kvinnor maskerar tumörer på en konventionell mammografi. Ultraljudet skiljer mycket bättre på cystor, bindväv och tumör i tät vävnad.",
+    "varfor_ovriga_fel": "Det handlar primärt om diagnostisk tillförlitlighet (sensitivitet), inte bara strålrisk.",
+    "kalla": "97",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_156",
+    "huvudomrade": "Ikterus och gallstenssjukdomar",
+    "subtopic": "Lever",
+    "typ": "diagnostik",
+    "svarighetsgrad": "lätt",
+    "fraga": "Vilket specifikt blodprov fungerar som en viktig tumörmarkör som stiger kraftigt vid Hepatocellulär cancer (HCC)?",
+    "alternativ": {
+      "A": "Amylas",
+      "B": "CA 19-9",
+      "C": "AFP (Alfa-fetoprotein)",
+      "D": "D-dimer"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "AFP är en klassisk markör för primär levercancer (HCC) och övervakas ofta hos riskpatienter (cirrotiker).",
+    "varfor_ovriga_fel": "CA 19-9 är för pankreascancer. Amylas för pankreatit.",
+    "kalla": "86",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_157",
+    "huvudomrade": "Proktologi",
+    "subtopic": "Abscess",
+    "typ": "anatomi",
+    "svarighetsgrad": "svår",
+    "fraga": "Varför betraktas en analabscess belägen ovanför levatorplanet som mycket mer komplicerad än en ytlig perianal abscess?",
+    "alternativ": {
+      "A": "Den sprider sig ner i lårmuskulaturen.",
+      "B": "Den närmar sig bukhålan och risken för allvarlig djup spridning och svår dränering är stor.",
+      "C": "Den orsakas alltid av malignitet.",
+      "D": "Den spricker alltid ut i urinblåsan."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Levatormuskulaturen utgör golvet i bäckenet. En infektion ovanför detta plan (supralevatorisk) är svåråtkomlig för enkel kirurgi nerifrån och kan sprida sig upp mot vitala bukorgan.",
+    "varfor_ovriga_fel": "De andra påståendena är inkorrekta gällande den primära faran med lokalisationen.",
+    "kalla": "54, 273",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_158",
+    "huvudomrade": "Gastrointestinal blödning",
+    "subtopic": "Behandling",
+    "typ": "farmakologi",
+    "svarighetsgrad": "svår",
+    "fraga": "Vid vilken specifik situation med massiv GI-blödning kan läkemedlet Vasopressin (eller analog) prövas i terapisyfte?",
+    "alternativ": {
+      "A": "Vid en stor pågående arteriell sprutande blödning från ett ulcus.",
+      "B": "Framförallt vid diffus blödning från små kärl (t.ex. angiodysplasier eller kapillärbädd).",
+      "C": "Endast vid blödning från rektalcancer.",
+      "D": "Vid blödande hemorrojder."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Vasopressin kontraherar blodkärl kraftigt och kan minska blodflödet på kapillär/småkärlsnivå temporärt när kirurgi eller endoskopi inte fungerar för tillfället.",
+    "varfor_ovriga_fel": "Större artärer kräver coiling eller mekanisk sutur, läkemedel räcker sällan.",
+    "kalla": "38",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_159",
+    "huvudomrade": "Övre gastrointestinal kirurgi",
+    "subtopic": "Ulcus",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "Varför krävs alltid en uppföljande kontrollgastroskopi (efter ca 6-8 veckor) vid ett diagnostiserat ventrikelulcus, men inte rutinmässigt vid duodenalulcus?",
+    "alternativ": {
+      "A": "Duodenum läker aldrig, så det är lönlöst.",
+      "B": "Ventrikelulcus medför en avsevärd risk att vara, eller maskera, en underliggande ventrikelcancer. Läkningen måste bevisas.",
+      "C": "PPI-behandling fungerar sämre i magen än i duodenum.",
+      "D": "För att H. Pylori inte överlever i duodenum."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Cancer i magsäcken presenterar sig ofta som ett sår som blöder. Om såret inte läker på medicinsk behandling är cancermisstanken hög, därför kontrollerar man detta strikt.",
+    "varfor_ovriga_fel": "Duodenalcancer är extremt ovanligt i jämförelse.",
+    "kalla": "39, 65",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_160",
+    "huvudomrade": "Nedre gastrointestinal kirurgi",
+    "subtopic": "Komplikationer",
+    "typ": "symtom",
+    "svarighetsgrad": "medel",
+    "fraga": "En 60-årig patient inkommer med tilltagande smärta djupt nere i buken och frekventa små diarréer sedan några dagar. Palpation per rektum ger uttalad ömhet. Vilken kirurgisk komplikation bör misstänkas i första hand utifrån denna symtombild?",
+    "alternativ": {
+      "A": "Gallstensileus.",
+      "B": "Rupturerat aortaaneurysm.",
+      "C": "Bäckenabscess (t.ex. efter brusten appendix eller divertikulit).",
+      "D": "Pankreatit."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "En varansamling i lilla bäckenet (bäckenabscess) retar rektum och blåsa, vilket leder till diarré, täta trängningar och djup låg buksmärta.",
+    "varfor_ovriga_fel": "Pankreatit och gallsten sitter för högt upp. AAA ger oftast ryggsmärta och hypovolemi, ej primärt diarré.",
+    "kalla": "284",
+    "needs_review": "nej"
+  }
+]

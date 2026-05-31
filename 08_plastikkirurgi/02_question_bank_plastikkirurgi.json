@@ -1,0 +1,1712 @@
+[
+  {
+    "id": "KIR_PLASTIKKIRURGI_001",
+    "huvudområde": "Brännskador",
+    "subtopic": "Djupbedömning",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket av följande påståenden beskriver bäst den kliniska bilden av en epidermal brännskada (första graden)?",
+    "alternativ": {
+      "A": "Huden är stram, läderartad och helt utan känsel.",
+      "B": "Rodnad och smärta med intakt kapillär återfyllnad, oftast helt utan blåsbildning.",
+      "C": "Huden är spräcklig rosavit och blåsor förekommer alltid.",
+      "D": "Det djupa dermala matrixet är förstört och huden re-epitelialiserar aldrig spontant."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Epidermala brännskador (t.ex. solbränna) uppvisar enbart rodnad och smärta, utan blåsor, och läker spontant på cirka en vecka.",
+    "varför_övriga_fel": "A beskriver en fullhudsskada. C beskriver en djup dermal skada. D beskriver en fullhudsskada.",
+    "källa": "Plastikkirurgi Brännskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_002",
+    "huvudområde": "Brännskador",
+    "subtopic": "Djupbedömning",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur presenterar sig vanligtvis en ytlig dermal brännskada vid inspektion och undersökning på akuten?",
+    "alternativ": {
+      "A": "Torr, vit och smärtfri hudyta utan blåsor.",
+      "B": "Svart, förkolnad vävnad med bevarad ytlig blodcirkulation.",
+      "C": "Homogent ljusrosa och fuktig hud, rikligt med blåsor, uttalad smärta och bevarad kapillär återfyllnad.",
+      "D": "Marmorerad rödbrun yta där patienten inte upplever någon smärta vid nålstick."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "En ytlig dermal skada går enbart ner i papillära dermis och kännetecknas av stark smärta, ljusrosa fuktig yta och blåsor.",
+    "varför_övriga_fel": "A är fullhudsskada. B är en extrem fullhud/fjärde gradens skada. D är en djup dermal skada.",
+    "källa": "Plastikkirurgi Brännskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_003",
+    "huvudområde": "Brännskador",
+    "subtopic": "Djupbedömning",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är det främsta särskiljande fyndet vid nåltest (känseltest) som indikerar att en dermal brännskada är djup och därmed kan kräva kirurgisk revision?",
+    "alternativ": {
+      "A": "Patienten känner överdriven smärta (hyperalgesi) av ett lätt nålstick.",
+      "B": "Patienten upplever att det vassa nålsticket enbart känns trubbigt och sensoriken är klart nedsatt.",
+      "C": "Hela extremiteten förlorar omedelbart sin motorik.",
+      "D": "Nåltestet ger upphov till en extrem kapillär blödning som inte avstannar."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Vid en djup dermal skada (som når retikulära dermis) har nerverna delvis skadats, vilket gör att patienten inte känner smärta av vassa objekt, utan de upplevs som trubbigt tryck.",
+    "varför_övriga_fel": "Hyperalgesi tyder på en ytlig dermal skada. Motorik styrs inte av hudens receptorer. Blödning är inte det diagnostiska kriteriet för nervskadan.",
+    "källa": "Plastikkirurgi Brännskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_004",
+    "huvudområde": "Brännskador",
+    "subtopic": "Djupbedömning",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Varför måste en utbredd fullhudsbrännskada revideras och i princip alltid täckas med hudtransplantat?",
+    "alternativ": {
+      "A": "För att förhindra att huden blir för blek i framtiden.",
+      "B": "För att svettkörtlarna producerar för mycket vätska i såret.",
+      "C": "För att inget dermalt matrix finns kvar, vilket omöjliggör spontan läkning underifrån.",
+      "D": "Endast för att Försäkringskassan kräver att ett ingrepp görs."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Fullhudsskador förstör hela epidermis och dermis, inklusive hårsäckar och körtlar (hudbihang), varifrån re-epitelialiseringen normalt utgår. Läkning måste då ske via kirurgi.",
+    "varför_övriga_fel": "B är fel då hudbihangen är förstörda. A och D är fiktiva argument.",
+    "källa": "Plastikkirurgi Brännskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_005",
+    "huvudområde": "Brännskador",
+    "subtopic": "Utbredning (9-regeln)",
+    "typ": "diagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Enligt 9-regeln för bedömning av brännskadans yta hos en vuxen patient, hur många procent motsvarar ETT helt ben (framsida och baksida)?",
+    "alternativ": {
+      "A": "9%",
+      "B": "14%",
+      "C": "18%",
+      "D": "36%"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Hos en vuxen patient utgör ett helt ben 18% av den totala kroppsytan (TBSA) enligt 9-regeln.",
+    "varför_övriga_fel": "9% motsvarar en hel arm eller hela huvudet. Bålen (framsida + baksida) motsvarar 36%.",
+    "källa": "Plastikkirurgi Brännskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_006",
+    "huvudområde": "Brännskador",
+    "subtopic": "Utbredning (Barn)",
+    "typ": "diagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "När man uppskattar TBSA (Total Burn Surface Area) hos barn modifieras 9-regeln. Hur mycket av kroppsytan anses en nyfödds huvud utgöra innan det proportionerligt minskar med åldern?",
+    "alternativ": {
+      "A": "9%",
+      "B": "14%",
+      "C": "18%",
+      "D": "25%"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Hos små barn och spädbarn är huvudet oproportionerligt stort och räknas som 18% hos en nyfödd. För varje år dras sedan 1% av från huvudet och läggs på benen.",
+    "varför_övriga_fel": "9% gäller för vuxna. 14% används ofta för barnens ben. 25% är för högt.",
+    "källa": "Mindre brännskador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_007",
+    "huvudområde": "Brännskador",
+    "subtopic": "Utbredning (Hand-metoden)",
+    "typ": "diagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Ett användbart verktyg för att uppskatta spridda och oregelbundna brännskador är 'hand-metoden'. Vad motsvarar patientens egen hand (inklusive fingrarna) för yta?",
+    "alternativ": {
+      "A": "Cirka 0,5% av TBSA",
+      "B": "Cirka 1% av TBSA",
+      "C": "Cirka 2% av TBSA",
+      "D": "Cirka 5% av TBSA"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Patientens handflata och fingrar sammantaget representerar cirka 1% av deras totala kroppsyta.",
+    "varför_övriga_fel": "Alla andra ytmått är inkorrekta för just handen.",
+    "källa": "Mindre brännskador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_008",
+    "huvudområde": "Brännskador",
+    "subtopic": "Vätskebehandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "En 70 kg tung man inkommer med djupa dermala brännskador över hela framsidan av bålen (18%) samt hela höger arm (9%). Totalt 27% TBSA. Hur mycket Ringer-Acetat ska han få under det första dygnet enligt Parklandformeln om man använder en riktlinje på 3 ml/kg/%TBSA?",
+    "alternativ": {
+      "A": "3780 ml",
+      "B": "5670 ml",
+      "C": "7560 ml",
+      "D": "9450 ml"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Parklandformeln: 3 ml x 70 kg x 27% TBSA = 5670 ml Ringer-Acetat totalt under första dygnet.",
+    "varför_övriga_fel": "3780 är för 2ml/kg. 7560 är för 4ml/kg. 9450 är felräknat.",
+    "källa": "Plastikkirurgi Brännskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_009",
+    "huvudområde": "Brännskador",
+    "subtopic": "Vätskebehandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vid beräkning av vätskebehovet enligt Parklandformeln för de första 24 timmarna, hur ska denna vätskemängd infunderas tidsmässigt?",
+    "alternativ": {
+      "A": "Halva volymen ges de första 8 timmarna, och resten under de påföljande 16 timmarna.",
+      "B": "Vätskan ges i konstant, jämn hastighet under alla 24 timmar.",
+      "C": "Hela volymen måste infunderas inom de första 12 timmarna.",
+      "D": "Tjugo procent ges som en snabb bolus, och resten jämt fördelat över 20 timmar."
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Vätskeläckaget (chocken) är som kraftigast direkt efter skadan. Därför krävs 50% av den uträknade 24h-volymen under de första 8 timmarna (från skadetillfället).",
+    "varför_övriga_fel": "En jämn distribution riskerar initial hypovolemi och organkollaps. Bolus tillämpas ej strikt i formeln på det sättet.",
+    "källa": "Plastikkirurgi Brännskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_010",
+    "huvudområde": "Brännskador",
+    "subtopic": "Vätskebehandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "För att utvärdera om vätskeinfusionen efter en brännskada är adekvat hos en vuxen (utan myoglobinuri) mäts timdiuresen via KAD. Vad är målvärdet för en vuxen patient?",
+    "alternativ": {
+      "A": "Minst 2,0 ml/kg/h",
+      "B": "Minst 1,5 ml/kg/h",
+      "C": "0,5 ml/kg/h",
+      "D": "0,1 ml/kg/h"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "För en vuxen patient utan myoglobinuri är målet en timdiures på ca 0,5 ml/kg/h, vilket indikerar adekvat organgenomblödning utan att övervätska patienten.",
+    "varför_övriga_fel": "Ett mål på >2,0 ml/kg/h används endast vid forcerad diures på grund av pågående rhabdomyolys (myoglobinuri). 1,0 ml/kg/h är målet för barn <30 kg.",
+    "källa": "Större brännskador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_011",
+    "huvudområde": "Brännskador",
+    "subtopic": "Akut handläggning",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur ska den omedelbara nedkylningen av en termisk brännskada gå till på olycksplatsen eller akuten för att vara smärtlindrande men inte farlig?",
+    "alternativ": {
+      "A": "Kyl skadan med is under minst en timme.",
+      "B": "Kyl hela patienten för att bromsa den systemiska inflammationen.",
+      "C": "Kyl enbart själva skadan med svalt, rumstempererat vatten i 10-20 minuter.",
+      "D": "Kylningen ska undvikas helt, eftersom det ökar risken för infektion."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Man ska kyla skadan med rumstempererat (svalt) vatten i cirka 10-20 minuter. Systemisk kylning eller isvatten riskerar hypotermi och förvärrad vävnadsskada.",
+    "varför_övriga_fel": "Is skadar vävnaden. Systemisk kylning ger livshotande hypotermi. Att undvika kylning helt innebär lidande och ökad termisk skada.",
+    "källa": "Plastikkirurgi Brännskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_012",
+    "huvudområde": "Brännskador",
+    "subtopic": "Akut handläggning",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "En patient med en 2:a gradens brännskada ankommer till akuten med stora, spända blåsor över bålen och låren. Vad är den korrekta primära åtgärden gällande dessa blåsor?",
+    "alternativ": {
+      "A": "Lämna blåsorna helt intakta så länge som möjligt för att de fungerar som ett biologiskt plåster.",
+      "B": "Punktera dem försiktigt med en kanyl, men låt blåstaket (huden) ligga kvar.",
+      "C": "Revidera och klipp/skär bort blåsorna och all lös hud, eftersom den annars går i nekros och döljer infektioner.",
+      "D": "Injicera lokalbedövning in i blåsorna."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Förutom blåsor i handflator och fotsulor rekommenderas att brännskadeblåsor revideras bort. Kvarlämnad död hud nekrotiserar och agerar utmärkt grogrund för bakterier, vilket misstolkas som infektion.",
+    "varför_övriga_fel": "Det biologiska plåstret ruttnar. Att bara punktera lämnar kvar nekrotisk hud.",
+    "källa": "Plastikkirurgi Brännskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_013",
+    "huvudområde": "Brännskador",
+    "subtopic": "Eskarotomi",
+    "typ": "indikation",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket akut tillstånd är den primära indikationen för att genomföra en eskarotomi?",
+    "alternativ": {
+      "A": "En ytlig dermal brännskada i ansiktet med stark smärta.",
+      "B": "En cirkumferent (helt omslutande) fullhudsbrännskada på en extremitet där trycket hotar den perifera cirkulationen.",
+      "C": "Vid misstanke om myoglobinuri efter ett el-trauma.",
+      "D": "Varje gång en brännskada överstiger 20% TBSA oavsett lokalisation."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "När en brännskada är cirkumferent och djup bildas en stel läderartad skorpa (eschar). Svullnaden under denna kan leda till en tourniquet-effekt som strangulerar cirkulationen. Eskarotomi (längsgående snitt i den döda huden) släpper trycket.",
+    "varför_övriga_fel": "Eskarotomi görs ej rutinmässigt oavsett TBSA, utan enbart vid tryckhot. Myoglobinuri botas med vätska.",
+    "källa": "Plastikkirurgi Brännskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_014",
+    "huvudområde": "Brännskador",
+    "subtopic": "Elektriska brännskador",
+    "typ": "komplikationer",
+    "svårighetsgrad": "medel",
+    "fråga": "En person har fått en kraftig högspänningsstöt genom ena armen med utgång i benet. Vilken osynlig, men livshotande inre komplikation måste du övervaka tätt och förebygga med hög diures?",
+    "alternativ": {
+      "A": "Ventrombos i Vena Cava",
+      "B": "Massiv rhabdomyolys och påföljande myoglobinuri som kan orsaka akut njursvikt.",
+      "C": "Akut leverinfarkt",
+      "D": "Spontan lungkollaps (Pneumothorax)"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Högspänningsström som passerar kroppen genom perifera kärl- och muskelstråk leder ofta till omfattande djup muskelnekros. Detta frisätter myoglobin i blodet som proppar igen njurtubuli.",
+    "varför_övriga_fel": "De andra komplikationerna är inte den klassiska och mest specifika rädslan vid strömgenomgång via extremitet.",
+    "källa": "Större brännskador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_015",
+    "huvudområde": "Brännskador",
+    "subtopic": "Inhalationsskador",
+    "typ": "komplikationer",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vid allvarliga inhalationsskador från rök exponeras patienten ofta för cyanidgas. Vilken ofarlig, men märkbar biverkan får patienten av antidoten Cyanokit (hydroxokobalamin)?",
+    "alternativ": {
+      "A": "Kraftigt höjt blodtryck",
+      "B": "Förlust av kroppsbehåring",
+      "C": "Urinen och huden färgas intensivt röd.",
+      "D": "Förlamning i ansiktsmuskulaturen"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Hydroxokobalamin är kraftigt rött och utsöndras via njurarna, vilket missfärgar urinen (och ibland huden) intensivt röd. Detta kan misstolkas som hematuri av den oerfarne.",
+    "varför_övriga_fel": "De övriga alternativen är inga biverkningar till Cyanokit.",
+    "källa": "Större brännskador.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_016",
+    "huvudområde": "Brännskador",
+    "subtopic": "Kirurgi",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vid tidig kirurgi (inom 72 timmar) av stora djupa brännskador används metoden 'tangentiell excision'. Vad innebär detta tekniskt?",
+    "alternativ": {
+      "A": "Att excidera all vävnad ända ned till muskelfascian i ett enda svep.",
+      "B": "Att successivt hyvla/skära bort den brända huden skikt för skikt tills man blottlägger en frisk, punktformigt blödande sårbädd.",
+      "C": "Att man med laser förångar den svarta skorpan (escharen).",
+      "D": "Att göra korsformade snitt över såret för att låta det granulerande köttet växa upp."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Tangentiell excision betyder att man gradvis hyvlar av död vävnad tills man ser viabel, blödande vävnad. Därefter appliceras ofta ett delhudstransplantat.",
+    "varför_övriga_fel": "Att gå ner till fascian direkt kallas fascie-excision och görs sällan om inte nödvändigt pga extremt djupa skador.",
+    "källa": "Plastikkirurgi Brännskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_017",
+    "huvudområde": "Brännskador",
+    "subtopic": "Brännskadesekvele",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "En mycket viktig del av eftervården och rehabiliteringen efter hudtransplanterade brännskador syftar till att mjuka upp ärren och förhindra ärrkontrakturer. Vilken konservativ åtgärd är den allra viktigaste basbehandlingen för detta?",
+    "alternativ": {
+      "A": "Dagliga injektioner av kortison.",
+      "B": "Användning av skräddarsydda kompressionsplagg (tryckförband) dygnet runt i ibland flera år.",
+      "C": "Total vila och undvikande av all sjukgymnastik för att inte reta ärret.",
+      "D": "UV-ljusbehandling (solning) av ärret."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Kompressionsterapi med speciella plagg utgör grundpelaren för att motverka ärrhypertrofi, mjuka upp strama ärr och lindra klåda.",
+    "varför_övriga_fel": "Sjukgymnastik är extremt viktigt (ej vila). Solning av ärr ska absolut undvikas (minst solfaktor 30 i 1-2 år).",
+    "källa": "Plastikkirurgi Brännskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_018",
+    "huvudområde": "Sår, sårläkning och sårskador",
+    "subtopic": "Sårläkningens faser",
+    "typ": "kunskap",
+    "svårighetsgrad": "lätt",
+    "fråga": "En normal sårläkningsprocess delas in i tre distinkta biologiska faser. Vilken är den korrekta kronologiska ordningen?",
+    "alternativ": {
+      "A": "Proliferationsfas, Remodelleringsfas, Inflammationsfas",
+      "B": "Inflammationsfas, Proliferationsfas, Remodelleringsfas",
+      "C": "Remodelleringsfas, Inflammationsfas, Proliferationsfas",
+      "D": "Inflammationsfas, Remodelleringsfas, Proliferationsfas"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Processen startar med hemostas och inflammation, övergår sedan i vävnadsnybildning (proliferation) och avslutas med ärrmognad och kontraktion (remodellering).",
+    "varför_övriga_fel": "Ordningen är fast; man kan inte mogna ett ärr innan det prolifererat.",
+    "källa": "Plastikkirurgi Sårskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_019",
+    "huvudområde": "Sår, sårläkning och sårskador",
+    "subtopic": "Primär vs Sekundärläkning",
+    "typ": "kunskap",
+    "svårighetsgrad": "medel",
+    "fråga": "Skillnaden mellan 'primärläkning' och 'sekundärläkning' är kliniskt viktig, men biologiskt sett har de mycket gemensamt. Vad utmärker primärläkning?",
+    "alternativ": {
+      "A": "Det kräver inte närvaro av fibroblaster och sker därför utan någon som helst kollageninlagring.",
+      "B": "Läkningen sker utan någon inflammatorisk fas överhuvudtaget.",
+      "C": "Sårkanterna är adapterade (ihopsydda) mot varandra med minimal vävnadsförlust, vilket förkortar epitelialiseringstiden avsevärt.",
+      "D": "Det innebär att såret lämnats helt öppet för att långsamt fyllas ut av granulationsvävnad från botten."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Primärläkning syftar på ihopsydda sår utan större glipa. Eftersom epitelet har extremt kort väg att migrera går läkningen fort. Sekundärläkning beskrivs i alternativ D.",
+    "varför_övriga_fel": "Alla läkningsfaser engagerar inflammation och fibroblaster, även vid primärläkning.",
+    "källa": "Plastikkirurgi Sårskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_020",
+    "huvudområde": "Sår, sårläkning och sårskador",
+    "subtopic": "Akut handläggning av sår",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "En patient inkommer till akutmottagningen med ett traumatiskt sår efter ett olycksfall i skogen. Var går en vanlig och generellt accepterad tidsgräns för när risken är för hög för att primärsluta (sy ihop) såret med tanke på infektionsrisk?",
+    "alternativ": {
+      "A": "När såret är äldre än 2 timmar",
+      "B": "När såret är äldre än 8-12 timmar",
+      "C": "När såret är äldre än 24 timmar",
+      "D": "Ett sår kan alltid primärslutas oavsett ålder"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Traumatiska (orenade) sår som är äldre än 8-12 timmar har ofta hunnit koloniseras i för stor grad av bakterier och riskerar sårinfektion och abscess om de försluts tätt.",
+    "varför_övriga_fel": "Två timmar är god marginal. Att alltid primärsluta gamla sår är ett etablerat misstag.",
+    "källa": "Plastikkirurgi Sårskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_021",
+    "huvudområde": "Sår, sårläkning och sårskador",
+    "subtopic": "Ansiktstrauma",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Du ska åtgärda en skärskada som skär vinkelrätt över patientens överläpp. Du förbereder att injicera lokalbedövning, men innan du gör det MÅSTE du utföra en särskild åtgärd för att inte riskera ett permanent missprydande ärr. Vilken?",
+    "alternativ": {
+      "A": "Klippa bort all vävnad som ser missfärgad ut.",
+      "B": "Markera övergången mellan det läppröda (vermilion) och den vanliga huden.",
+      "C": "Applicera EMLA-kräm i minst 60 minuter.",
+      "D": "Sy ihop slemhinnan från insidan innan hudbedövningen läggs."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "När du sprutar in lokalbedövning med adrenalin svullnar vävnaden och huden bleknar. Den naturliga gränsen mellan läpprött och hud försvinner då visuellt, vilket medför enorm risk att kanterna sys snett och resulterar i 'hak' i läppen.",
+    "varför_övriga_fel": "Detta fysiologiska optiska bedrägeri från bedövningen kan bara förhindras genom pen-markering innan sprutan sätts.",
+    "källa": "Plastikkirurgi Seminarium sårskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_022",
+    "huvudområde": "Sår, sårläkning och sårskador",
+    "subtopic": "Lokalbedövning",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "När du lägger en subkutan lokalbedövning inför suturering är det en grundregel att ALLTID aspirera med sprutan innan du påbörjar injektionen. Varför är detta livsviktigt?",
+    "alternativ": {
+      "A": "För att kontrollera att det inte finns var inuti såret.",
+      "B": "För att förhindra att nålen fastnar i en sena.",
+      "C": "För att utesluta att nålen hamnat i ett blodkärl, vilket skulle kunna ge toxisk systemverkan (arytmi, kramp) om medlet sprutas intravasalt.",
+      "D": "För att skapa ett undertryck som drar ihop sårkanterna."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Lokalbedövningsmedel är toxiska för hjärta och hjärna i höga koncentrationer. Om de sprutas rakt in i blodbanan uppstår livshotande komplikationer (hjärtstopp, kramper).",
+    "varför_övriga_fel": "Aspiration drar upp blod i sprutan om man ligger fel (i ett kärl). Det suger inte ihop sårkanterna.",
+    "källa": "Plastikkirurgi Plastikkirurgiska tekniker.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_023",
+    "huvudområde": "Sår, sårläkning och sårskador",
+    "subtopic": "Val av sutur",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "En patient har skurit sig på underarmen och du planerar att sluta huden med enkla suturer. Vilken trådtyp och tjocklek utgör grundregeln och förstahandsvalet för hudsuturer på en vuxen extremitet?",
+    "alternativ": {
+      "A": "Resorberbar multifilament 2.0",
+      "B": "Icke-resorberbar monofilament 4.0",
+      "C": "Icke-resorberbar monofilament 6.0",
+      "D": "Resorberbar monofilament 5.0"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Standard på extremiteter och bål är 4.0 monofilament (ofta Ethilon/Nylon eller Prolene) för minimal vävnadsreaktion och god hållfasthet.",
+    "varför_övriga_fel": "6.0 används främst i ansiktet (tunnare tråd). 2.0 är för tjockt och multifilament samlar bakterier. Resorberbart sätts sällan på själva hudytan då det irriterar när det löses upp.",
+    "källa": "Plastikkirurgi Sårskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_024",
+    "huvudområde": "Sår, sårläkning och sårskador",
+    "subtopic": "Suturteknik",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vid suturering av hud rekommenderas ofta användning av madrass-suturer (stående eller liggande). Vad är den största biomekaniska vinsten med ett madrasstygn jämfört med ett vanligt enkelt stygn?",
+    "alternativ": {
+      "A": "Det säkerställer att sårkanterna 'everteras' (viks uppåt/utåt) vilket maximerar ytan av frisk dermis som läker mot varandra.",
+      "B": "Det förhindrar att nervändarna läker ihop felaktigt.",
+      "C": "Det tillåter att tråden kan sitta kvar i huden permanent utan att reagera.",
+      "D": "Det drar automatiskt in epidermislagret (inverterar kanterna) så att ärret blir osynligt."
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Everterade (uppvikta) kanter motverkar det fysiologiska insjunkandet av ärret under remodelleringsfasen och säkerställer kontakt mellan dermislagren.",
+    "varför_övriga_fel": "Inverterade kanter (D) innebär att epidermis ligger mot epidermis, vilket medför en defekt och svag läkningsfog.",
+    "källa": "Plastikkirurgi Sårskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_025",
+    "huvudområde": "Sår, sårläkning och sårskador",
+    "subtopic": "Suturtagningstider",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur dags bör du informera patienten om att komma tillbaka för att ta bort en hudsutur som placerats mitt i ansiktet (exempelvis på kinden)?",
+    "alternativ": {
+      "A": "Efter 3-4 dagar",
+      "B": "Efter 5-7 dagar",
+      "C": "Efter 10-14 dagar",
+      "D": "Efter 21 dagar"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "I ansiktet har huden extremt god cirkulation och låg spänning, suturerna läker snabbt. Tas efter 5-7 dagar för att minimera risken för synliga sutursticksmärken ('räls-ärr').",
+    "varför_övriga_fel": "10-14 dagar gäller bål/extremitet. 21 dgr gäller underben.",
+    "källa": "Sårläkning, akuta sårskador och svårläkta sår.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_026",
+    "huvudområde": "Sår, sårläkning och sårskador",
+    "subtopic": "Suturtagningstider",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "På ett annat ställe, nämligen på underbenet/foten, syr du ihop ett djupt skärsår. När är det säkrast att ta dessa suturer?",
+    "alternativ": {
+      "A": "Efter 5-7 dagar",
+      "B": "Efter 7-10 dagar",
+      "C": "Efter 10-14 dagar",
+      "D": "Efter tidigast 21 dagar"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Underbenet utmärker sig med sämre cirkulation och hög mekanisk spänning. För tidig suturtagning (t.ex. efter 10 dgr) leder ofta till sårruptur.",
+    "varför_övriga_fel": "Tidigare alternativ gäller bål och övre extremiteter.",
+    "källa": "Sårläkning, akuta sårskador och svårläkta sår.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_027",
+    "huvudområde": "Sår, sårläkning och sårskador",
+    "subtopic": "Djurbett",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är den generella guldregeln för akut hantering och förslutning av orena djurbett på en akutmottagning?",
+    "alternativ": {
+      "A": "De ska primärslutas direkt med hudsuturer för att förhindra fula ärr.",
+      "B": "De ska limmas med vävnadslim istället för sutur.",
+      "C": "De ska noggrant spolas/revideras men lämnas öppna för sekundärläkning på grund av hög infektionsrisk.",
+      "D": "De ska enbart täckas med gips utan föregående spolning."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Djur- (och människo-)bett pressar djupt in extremt farliga patogener i sårhålan. Att stänga såret primärt skapar en optimal miljö för abscess och djup sårinfektion.",
+    "varför_övriga_fel": "Tätt förslutande av kontaminerade bett leder rutinmässigt till haveri och kirurgiskt behov senare.",
+    "källa": "Plastikkirurgi Sårskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_028",
+    "huvudområde": "Sår, sårläkning och sårskador",
+    "subtopic": "Djurbett",
+    "typ": "kunskap",
+    "svårighetsgrad": "lätt",
+    "fråga": "Ett kattbett i handen riskerar ofta att leda till en snabbt progredierande infektion. Vilken patogen (bakterie) bär ofta huvudansvaret och styr det initiala valet av antibiotika?",
+    "alternativ": {
+      "A": "Staphylococcus aureus",
+      "B": "Streptococcus pyogenes",
+      "C": "Pasteurella multocida",
+      "D": "Pseudomonas aeruginosa"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Pasteurella multocida är en mycket vanlig bakterie i kattens normala munflora och är den klassiska agensen vid svåra infektioner efter kattbett.",
+    "varför_övriga_fel": "Stafylokocker finns också, men det klassiska särdraget vid kattbett (och hundbett) är Pasteurella.",
+    "källa": "Plastikkirurgi Sårskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_029",
+    "huvudområde": "Sår, sårläkning och sårskador",
+    "subtopic": "Djurbett",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "En man som tidigare genomgått en traumatisk splenektomi (har ingen mjälte) inkommer med ett ytligt, rodnat hundbett. Vilken exceptionellt farlig bakterie motiverar kraftigt och skyndsamt antibiotika hos denna specifika patient?",
+    "alternativ": {
+      "A": "Clostridium tetani",
+      "B": "Capnocytophaga canimorsus",
+      "C": "Mycobacterium tuberculosis",
+      "D": "Escherichia coli"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Capnocytophaga canimorsus förekommer i hundars saliv och kan ge en extremt snabb och dödlig sepsis, särskilt hos aspleniska (mjältlösa) individer.",
+    "varför_övriga_fel": "Stelkramp beror ej på mjälten, utan vaccinering. C. canimorsus är direkt kopplad till hundsaliv och dödlig utgång vid immunbrist (mjälte).",
+    "källa": "Plastikkirurgi Sårskador.docx",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_030",
+    "huvudområde": "Sår, sårläkning och sårskador",
+    "subtopic": "Människobett",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Efter ett människobett på krogen blir en patient inlagd med starkt misstänkt sårinfektion. Vad är det empiriska förstahandsvalet för antibiotikabehandling med tanke på den blandade och aggressiva floran?",
+    "alternativ": {
+      "A": "Enbart Penicillin V",
+      "B": "Flukloxacillin (Heracillin)",
+      "C": "Amoxicillin-klavulansyra (Spektramox)",
+      "D": "Klorhexidintvätt utan antibiotika"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Människans saliv innehåller en bred och farlig blandning av aeroba och anaeroba bakterier, samt beta-laktamasproducerande stafylokocker. Därför krävs en bredare täckning, som Spektramox.",
+    "varför_övriga_fel": "PcV täcker inte S. aureus effektivt. Heracillin är meningslöst som monoterapi vid bred blandflora enligt föreläsningen.",
+    "källa": "Plastikkirurgi Sårskador.docx",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_031",
+    "huvudområde": "Sår, sårläkning och sårskador",
+    "subtopic": "Överdriven ärrläkning",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur särskiljer du i status ett s.k. hypertrofiskt ärr från en äkta keloid?",
+    "alternativ": {
+      "A": "Hypertrofiska ärr respekterar det ursprungliga sårets avgränsningar, medan keloider sprider sig ut på oengagerad hud.",
+      "B": "Hypertrofiska ärr förekommer enbart i ansiktet, medan keloider exklusivt uppstår på ryggen.",
+      "C": "Hypertrofiska ärr är alltid bleka, medan keloider alltid är djupt svarta.",
+      "D": "Hypertrofiska ärr svarar på antibiotika, keloider på svampmedel."
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Båda innebär överdriven inlagring av kollagen. Men keloid tenderar att växa aggressivt som en tumör utanför den initiala sårkanten.",
+    "varför_övriga_fel": "Det handlar om utbredningen, inte platsen på kroppen, infektioner, eller färg.",
+    "källa": "Plastikkirurgi Sårskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_032",
+    "huvudområde": "Sår, sårläkning och sårskador",
+    "subtopic": "Överdriven ärrläkning",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken av följande behandlingsstrategier för ett uttalat keloid-ärr betraktas generellt som felaktig på grund av mycket hög recidivrisk med ofta försämrat resultat?",
+    "alternativ": {
+      "A": "Steroidinjektioner i ärret",
+      "B": "Kontinuerlig kompression/tejpning",
+      "C": "Enkel kirurgisk excision av hela keloiden",
+      "D": "Undvikande av solstrålning"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Att enbart skära bort (excidera) en keloid skapar ett nytt kirurgiskt trauma som vanligen triggar läkningssystemet att producera ett ännu större keloidalt ärr.",
+    "varför_övriga_fel": "Kompression och lokal steroidinjektion utgör standardbehandling.",
+    "källa": "Plastikkirurgi Sårskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_033",
+    "huvudområde": "Sår, sårläkning och sårskador",
+    "subtopic": "Svårläkta sår",
+    "typ": "diagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Inom sjukvården talar man ofta om 'kroniska' eller 'svårläkta' sår. Vilken tidsgräns används generellt i svensk praxis för att ett sår ska anses som 'svårläkt'?",
+    "alternativ": {
+      "A": "Ett sår som inte läkt på 1 vecka.",
+      "B": "Ett sår som inte läkt på 6 veckor.",
+      "C": "Ett sår som inte läkt på 12 månader.",
+      "D": "Ett sår som inte läkt efter 3 dagar med antibiotika."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ett kroniskt/svårläkt sår definieras vanligtvis som ett sår som inte läker inom förväntad tid eller inom ca 6 veckor (upp till 3-6 månader) trots adekvata åtgärder.",
+    "varför_övriga_fel": "1 vecka är alldeles för kort. 1 år är för lång tid för att börja kalla det svårläkt och sätta in särskilda åtgärder.",
+    "källa": "Plastikkirurgi Sårskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_034",
+    "huvudområde": "Sår, sårläkning och sårskador",
+    "subtopic": "Svårläkta sår",
+    "typ": "diagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "En 80-årig rökare har ett sår på underbenet som funnits i fyra månader. Vad är den i särklass vanligaste fysiologiska grundorsaken till bensår av denna typ, som alltid måste utredas och åtgärdas först?",
+    "alternativ": {
+      "A": "Malignt melanom",
+      "B": "Cirkulationsstörningar (venös och/eller arteriell insufficiens)",
+      "C": "Odiagnostiserad osteomyelit",
+      "D": "Vitamin C-brist (skörbjugg)"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "De allra flesta bensår orsakas av cirkulationsproblem. Om man inte adresserar bristen på blodtillförsel eller det venösa ödemet, hjälper sällan kirurgi eller dyra förband.",
+    "varför_övriga_fel": "Malignitet, infektion och malnutrition kan spela in, men vaskulära problem (venös stas/arteriell ischemi) dominerar kraftigt som huvudorsak till bensår.",
+    "källa": "Plastikkirurgi Sårskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_035",
+    "huvudområde": "Plastikkirurgiska tekniker",
+    "subtopic": "Hudtransplantation",
+    "typ": "kunskap",
+    "svårighetsgrad": "medel",
+    "fråga": "Vid val mellan delhudstransplantat och fullhudstransplantat är en specifik egenskap mycket bättre hos delhud. Vilken?",
+    "alternativ": {
+      "A": "Den ger en mycket bättre färgmatchning i ansiktet.",
+      "B": "Den drar inte ihop sig (kontraherar inte) efter inläkning.",
+      "C": "Den har betydligt säkrare och lättare för att läka in i mottagarytan, även över sämre sårbäddar och stora defekter.",
+      "D": "Det kräver att man primärsluter (syr ihop) tagstället."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Delhuden, som saknar den tjockare retikulära dermisdelen, etablerar snabbt och effektivt mikrocirkulation från botten, vilket ger utmärkt överlevnad (inläkning).",
+    "varför_övriga_fel": "Fullhud matchar färg bättre (A) och kontraherar mindre (B). Delhudstagställen lämnas ofta att sekundärläka under förband (D är fel).",
+    "källa": "Plastikkirurgiska tekniker.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_036",
+    "huvudområde": "Plastikkirurgiska tekniker",
+    "subtopic": "Hudtransplantation",
+    "typ": "kunskap",
+    "svårighetsgrad": "medel",
+    "fråga": "Om ett fullhudstransplantat används istället för delhudstransplantat på till exempel handen eller i ansiktet uppnås flera fördelar. Vilket utgör dock en primär utmaning med fullhud?",
+    "alternativ": {
+      "A": "Den växer okontrollerat med hår efter inläkningen.",
+      "B": "Den har en mer osäker inläkning eftersom tjockleken försvårar för de nya blodkärlen (angiogenesen) att penetrera hela vävnaden.",
+      "C": "Den meshas (stansas med hål) vilket skapar missprydande ärr.",
+      "D": "Den förlorar all sin smärtsensorik permanent, oavsett tagställe."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Eftersom fullhuden är tjockare krävs mer syre och en helt perfekt, välvaskulariserad sårbotten för att transplantatet ska överleva den tid det tar för kapillärerna att växa in. Risk för nekros är högre.",
+    "varför_övriga_fel": "Fullhud meshas sällan (C). Den kan få sensorik över tid (D).",
+    "källa": "Plastikkirurgiska tekniker.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_037",
+    "huvudområde": "Plastikkirurgiska tekniker",
+    "subtopic": "Lambåer",
+    "typ": "kunskap",
+    "svårighetsgrad": "medel",
+    "fråga": "Inom plastikkirurgi används begreppen 'lambå' och 'transplantat'. Vad utmärker per definition en lambå (flap)?",
+    "alternativ": {
+      "A": "Vävnaden innehåller enbart epidermis och inget dermis.",
+      "B": "Vävnaden tages från en annan person (allograft).",
+      "C": "Vävnaden behåller hela tiden, eller får operativt återställd, sin egen definierade vaskulära försörjning (blodcirkulation) vid överflyttningen.",
+      "D": "Vävnaden måste växa till på laboratoriet i tre veckor innan applikation."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "En lambå försörjs av egna, stjälkade eller nysydda (fria) blodkärl. Ett transplantat skärs helt loss och förlitar sig helt på att nya blodkärl ska växa in från sårbädden.",
+    "varför_övriga_fel": "Enbart epidermis fungerar knappt ens som transplantat. De andra alternativen är inkorrekta definitioner av begreppet.",
+    "källa": "Plastikkirurgiska tekniker.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_038",
+    "huvudområde": "Plastikkirurgiska tekniker",
+    "subtopic": "Fria lambåer",
+    "typ": "kunskap",
+    "svårighetsgrad": "lätt",
+    "fråga": "En så kallad 'fri lambå' innebär en särskild kirurgisk operationstyp. Vilken teknik är absolut nödvändig för att en fri lambå ska överleva på sin nya plats?",
+    "alternativ": {
+      "A": "Ortopedisk benborrning",
+      "B": "Mikrokirurgisk anastomosering (ihopsyning av blodkärlen i mikroskop)",
+      "C": "Cellgifter för att hindra avstötning",
+      "D": "Intensiv strålbehandling under första dygnet"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "För att en 'fri' lambå (lossad helt från kroppen) ska få blod när den flyttas till t.ex. huvudet, sys de pyttesmå artärerna och venerna ihop igen med mikrokirurgi.",
+    "varför_övriga_fel": "Avstötning (C) ses ej vid kroppsegen (autolog) vävnad. Strålning (D) försämrar läkning extremt.",
+    "källa": "Plastikkirurgiska tekniker.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_039",
+    "huvudområde": "Plastikkirurgiska tekniker",
+    "subtopic": "Z-plastik",
+    "typ": "indikation",
+    "svårighetsgrad": "medel",
+    "fråga": "I vilket kliniskt scenario är det mycket lämpligt att använda en lokal transpositionslambå av typen 'Z-plastik'?",
+    "alternativ": {
+      "A": "För att ta bort extremt stora fettöverskott från magen.",
+      "B": "För att bryta upp och förlänga en stram ärrsträng (kontraktur) som begränsar rörligheten över till exempel en led.",
+      "C": "För att radikalt operera bort ett malignt melanom på ryggen.",
+      "D": "För att permanent hindra keloidbildning hos patienter med mörk hudtyp."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Z-plastiken är känd för sin egenskap att bryta linjära spänningar i huden och rekrytera oengagerad hud från sidorna för att 'förlänga' ärret längs dess ursprungliga riktning.",
+    "varför_övriga_fel": "Används inte för att banta bort fett, hindrar inte keloider och är orelaterat till onkologiska excisioner.",
+    "källa": "Plastikkirurgi Plastikkirurgiska tekniker.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_040",
+    "huvudområde": "Plastikkirurgiska tekniker",
+    "subtopic": "Vävnadsexpansion",
+    "typ": "komplikationer",
+    "svårighetsgrad": "medel",
+    "fråga": "Vid successiv vävnadsexpansion (införande av en saltvattenballong under huden som gradvis tänjs ut under månader) växer huden till i yta. Vad är dock en klassisk biverkan gällande hudens kvalitet ovanför expandern?",
+    "alternativ": {
+      "A": "Den utvecklar svår acne pga överstimulerade talgkörtlar.",
+      "B": "Huden (och det subkutana fettet) förtunnas signifikant.",
+      "C": "Hudens melanocyter dör och den blir kritvit (vitiligo).",
+      "D": "Huden förlorar all sin svettfunktion och temperaturreglering totalt."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Den biomekaniska spänningen stimulerar visserligen viss celldelning (och kärlinväxt), men nettoeffekten är att huden över expandern blir sträckt, spänd och påtagligt tunnare än oskadad hud.",
+    "varför_övriga_fel": "Vitiligo, acne och total svettfunktionförlust beskrivs inte som klassiska mekaniska effekter av expanders.",
+    "källa": "Plastikkirurgi Plastikkirurgiska tekniker.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_041",
+    "huvudområde": "Plastikkirurgiska tekniker",
+    "subtopic": "Undertrycksbehandling",
+    "typ": "indikation",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken av följande situationer är en absolut känd INDIKATION för att starta undertrycksbehandling (VAC) i ett sår?",
+    "alternativ": {
+      "A": "Att stimulera granulering och underlätta sekundärläkning i en nyligen upprensad (reviderad) stor sårhåla.",
+      "B": "För att sanera och dra ut bakterier ur en outredd beninfektion (osteomyelit).",
+      "C": "Som ensam behandling på ett malignt melanom-sår för att krympa tumören.",
+      "D": "Direkt applicering över ett pulserande pulsåderbråck i benet."
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "VAC-behandling stimulerar mikrocirkulationen, hanterar ödemvätska och drar ihop sårkanterna, vilket drastiskt snabbar på granuleringsfasen i öppna reviderade sår.",
+    "varför_övriga_fel": "B, C och D är alla absoluta kontraindikationer (osteomyelit, malignitet, stora fria blodkärl).",
+    "källa": "Plastikkirurgi Undertrycksbehandling av sår.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_042",
+    "huvudområde": "Plastikkirurgiska tekniker",
+    "subtopic": "Undertrycksbehandling",
+    "typ": "komplikationer",
+    "svårighetsgrad": "medel",
+    "fråga": "En ST-läkare ordinerar VAC-pumpbehandling i 4 veckor på ett svårläkt bensår. Vid revisionen noterade hon att skenbenet (tibian) var blottat i botten av såret med kraftig, obehandlad infektion djupt i benet (osteomyelit). Varför är insättning av VAC ett misstag här?",
+    "alternativ": {
+      "A": "Eftersom undertrycket riskerar att spränga skenbenet mekaniskt i småbitar.",
+      "B": "Eftersom maskinen kommer suga ut benmärgen och orsaka anemi.",
+      "C": "Eftersom VAC-svampen inte påverkar skelettinfektionen, och behandlingen av osteomyeliten (dränering/urgröpning/antibiotika) är avgörande att åtgärda innan man kan fokusera enbart på att stänga mjukdelarna.",
+      "D": "Eftersom VAC-behandling är extremt dyrt jämfört med amputation."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "VAC hanterar mjukdelarna på ytan men når inte in i benet och sanerar absolut inte osteomyelit. Tvärtom riskerar man att gömma ett farligt problem under en svamp.",
+    "varför_övriga_fel": "Undertrycket splittrar inte benet (A), drar inte ut benmärgen på det sättet (B).",
+    "källa": "Plastikkirurgi Undertrycksbehandling av sår.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_043",
+    "huvudområde": "Plastikkirurgiska tekniker",
+    "subtopic": "Undertrycksbehandling",
+    "typ": "komplikationer",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är den allvarligaste risken med att applicera ett VAC-förband direkt och oskyddat över ett synligt blottat, större blodkärl i en sårhåla?",
+    "alternativ": {
+      "A": "Bakterier trycks in i blodet och ger sepsis.",
+      "B": "Undertrycket utövar en mekanisk dragkraft på kärlväggen som kan leda till en livshotande kärlruptur och blödning.",
+      "C": "Kärlet sugs tomt på blod så att extremiteten omedelbart dör av ischemi.",
+      "D": "Svampen växer fast och blir en permanent del av patientens vensystem."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Fria blodkärl i sårbotten saknar det stöd som omgivande vävnad normalt ger. Det starka suget från maskinen (-125 mmHg eller liknande) kan därför spräcka kärlväggen med letal blödning som följd.",
+    "varför_övriga_fel": "A, C och D stämmer inte med mekanismen. Kärlen går sönder, de sugs inte bara tomma.",
+    "källa": "Plastikkirurgi Undertrycksbehandling av sår.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_044",
+    "huvudområde": "Plastikkirurgiska tekniker",
+    "subtopic": "Undertrycksbehandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Under vilken tidsperiod är det ofta mest fördelaktigt (når peak effekt) att använda undertrycksbehandling i syfte att bilda granulationsvävnad inför sekundärläkning, innan effekten brukar avstanna?",
+    "alternativ": {
+      "A": "Enbart de första 24 timmarna.",
+      "B": "Oftast under de första 4-6 veckorna.",
+      "C": "Det krävs minst 6 månader innan vävnaden svarar.",
+      "D": "Maskinen bärs vanligen årsvis (2-3 år)."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Den optimala perioden där sårkontraktion och granulationsbildning sker via undertrycksbehandling anges ofta till cirka de första 4-6 veckorna efter revisionen. Därefter bör behandlingen utvärderas noga då kurvan avtar.",
+    "varför_övriga_fel": "24h är för kort för att granulera. Flera månader till år är ofta omotiverat dyrt och utan stor mjukdelseffekt.",
+    "källa": "Plastikkirurgi Undertrycksbehandling av sår.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_045",
+    "huvudområde": "Plastikkirurgiska tekniker",
+    "subtopic": "Langers linjer",
+    "typ": "kunskap",
+    "svårighetsgrad": "medel",
+    "fråga": "En kirurg planerar att skära en ellipsexcision i pannan och vill placera snittet enligt Langers linjer (hudens naturliga spricklinjer) för att minimera ärrbildningen. I vilken anatomisk relation löper oftast dessa linjer jämfört med den underliggande muskeln (m. frontalis)?",
+    "alternativ": {
+      "A": "Linjerna löper oftast vinkelrätt (i 90 graders vinkel) mot den underliggande muskelns fiberriktning.",
+      "B": "Linjerna löper alltid strikt parallellt med muskelns fiberriktning.",
+      "C": "Linjerna löper i stjärnform oavsett muskelfibrernas rörelse.",
+      "D": "Muskelfibrerna i pannan har ingen ordnad riktning, varför ärret kan läggas hursomhelst."
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Langers linjer, det vill säga hudens naturliga spännings- och rynklinjer, bildas vinkelrätt (tvärsöver) den underliggande muskelns kontraktionsriktning. För att få fina ärr i ansiktet skärs de längs dessa (t.ex. horisontellt i pannan över frontalis).",
+    "varför_övriga_fel": "Att skära parallellt (lodrätt i pannan) skapar fula 'tvärs-över-rynkan'-ärr som bryts upp varje gång muskeln spänns.",
+    "källa": "Plastikkirurgi Plastikkirurgiska tekniker.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_046",
+    "huvudområde": "Plastikkirurgiska tekniker",
+    "subtopic": "Lambåer",
+    "typ": "kunskap",
+    "svårighetsgrad": "medel",
+    "fråga": "När man designar och skär ut en lokalt stjälkad hudlambå så pratar man ofta om '1:3-regeln' inom plastikkirurgin. Vad innebär denna regel i praktiken?",
+    "alternativ": {
+      "A": "Att en av tre lambåer dör oavsett kirurgens skicklighet.",
+      "B": "Att 1/3 av lambån måste bestå av rent underhudsfett.",
+      "C": "Att lambåns totala längd från basen till spetsen oftast inte bör överstiga 3 gånger dess bredd vid basen (stjälken) för att orka försörja hudfliken med blod.",
+      "D": "Att patienten måste ha minst tre centimeters hudöverskott innan man kan snitta."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "För att säkerställa att blodtrycket i mikrovaskulaturen från basen når hela vägen ut till lambåns spets och hindrar ischemi, är den generella dimensioneringsregeln för en randomiserad hudlambå ett längd-bredd-förhållande på max 3:1.",
+    "varför_övriga_fel": "Detta handlar enbart om ischemi-förebyggande designmått, de andra alternativen är påhittade.",
+    "källa": "Plastikkirurgi Plastikkirurgiska tekniker.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_047",
+    "huvudområde": "Rekonstruktiv bröstkirurgi och bröstavvikelser",
+    "subtopic": "Offentliga indikationer",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Inom offentlig sjukvård i Sverige opereras de flesta bröstasymmetrier eller bröstptos (hängbröst) inte, eftersom det räknas som fysiologiskt. För vilket extremt tillstånd finns det dock en uttalad offentlig indikation för bröstförstoring med implantat?",
+    "alternativ": {
+      "A": "Graviditetsinducerat hudöverskott som kräver mastopexi.",
+      "B": "Tanner stadium 5 med diffusa smärtor.",
+      "C": "Enbart psykosocial ångest över en B-kupa.",
+      "D": "Aplasi (motsvarande Tanner stadium 1) där bröstkörtelvävnad saknas helt och patienten saknar en definierad submammarfåra."
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Bröstaplasi anses utgöra ett medicinskt, uttalat missbildningstillstånd som inte faller under fysiologisk variation, och opereras därmed med bröstförstoring via landstingsfinansierad vård.",
+    "varför_övriga_fel": "Hängbröst och B-kupor är normal fysiologisk form/storlek och betraktas ofta som kosmetiska ingrepp för egen finansiering.",
+    "källa": "Bröstavvikelser.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_048",
+    "huvudområde": "Rekonstruktiv bröstkirurgi och bröstavvikelser",
+    "subtopic": "Offentliga indikationer",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Inför remiss för en medicinskt motiverad bröstförminskning (vid nack/ryggbesvär) finns starka nationella krav på livsstilsförändring. Vad måste generellt vara uppfyllt?",
+    "alternativ": {
+      "A": "Patienten måste bevisa att hon genomfört ryggträningsprogram hos fysioterapeut i 6 månader. Rökning accepteras i liten mängd.",
+      "B": "Total rökfrihet samt ett normalt eller nära normalt BMI (vanligen <=25 för yngre, upp till 27 accepteras ofta om >50 år).",
+      "C": "Patienten måste ha ammat färdigt och passerat menopaus.",
+      "D": "BMI måste tvärtom överstiga 30 för att operation ska bekostas."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "För bröstkirurgi krävs i regel strikt rökstopp pga hög risk för sårnekros, samt kraftiga BMI-krav. Detta minskar de perioperativa riskerna avsevärt och utesluter byststorlek som beror på allmän fetma.",
+    "varför_övriga_fel": "BMI >30 utgör kontraindikation. Amning eller menopaus krävs inte formellt. Träning är bra, men BMI och rökstopp är de stenhårda inklusionskraven.",
+    "källa": "Plastikkirurgi Quiz Canvas.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_049",
+    "huvudområde": "Rekonstruktiv bröstkirurgi och bröstavvikelser",
+    "subtopic": "Direkt vs Sen Rekonstruktion",
+    "typ": "kunskap",
+    "svårighetsgrad": "medel",
+    "fråga": "En fördel med 'direktrekonstruktion' (samtidig med tumörborttagningen) är att patienten slipper leva utan ett bröst. Vad är den primära farhågan hos onkologen gällande direktrekonstruktion?",
+    "alternativ": {
+      "A": "Att det nya bröstet utsöndrar hormoner som triggar cancern.",
+      "B": "Att en eventuell operationskomplikation (tex ischemi eller infektion i lambån) kan komma att kraftigt försena den livsviktiga post-operativa (adjuvanta) strålningen och kemoterapin.",
+      "C": "Att silikonimplantat drar till sig dottertumörer (metastaser).",
+      "D": "Att mamillen faller av under sövningen."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Det är en välkänd risk att om ett nybyggt bröst drabbas av sårruptur eller nekros som kräver månader av ombandagering eller omgörning, kan patienten inte ligga i strålmaskinen och onkologisk behandling havererar.",
+    "varför_övriga_fel": "Implantat utsöndrar ej onkologiska hormoner. Silikon orsakar inte metastasering.",
+    "källa": "Plastikkirurgi Rekonstruktiv och plastikkirurgi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_050",
+    "huvudområde": "Rekonstruktiv bröstkirurgi och bröstavvikelser",
+    "subtopic": "Strålbehandling och Rekonstruktion",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vid sen bröstrekonstruktion ställs kirurgen inför ett val mellan enbart silikonimplantat och kroppsegen vävnad. Vilken behandlingshistoria gör att man i princip avråder starkt från enbart silikonimplantat?",
+    "alternativ": {
+      "A": "Att patienten erhållit postoperativ strålbehandling över bröstkorgen/axillen.",
+      "B": "Att patienten ätit Tamoxifen (anti-östrogen).",
+      "C": "Att patienten fött flera barn.",
+      "D": "Att patienten tidigare gjort en blindtarmsoperation."
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Strålbehandlad hud är vaskulärt sämre, hårdare och oelastisk. Om man tvingar in ett implantat i detta 'skadade hölje' drabbas man extremt ofta av en stenhård, smärtsam och missprydande kapselkontraktur.",
+    "varför_övriga_fel": "Frisk icke-strålad vävnad (från rygg eller buk) via lambå krävs. Medicinering och tidigare tarmkirurgi utgör inga kontraindikationer.",
+    "källa": "Bröstrekonstruktion.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_051",
+    "huvudområde": "Rekonstruktiv bröstkirurgi och bröstavvikelser",
+    "subtopic": "DIEP-lambå",
+    "typ": "kunskap",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är en 'DIEP-lambå' för någonting inom ramen för autolog bröstrekonstruktion?",
+    "alternativ": {
+      "A": "Ett silikonimplantat i formen av en droppe.",
+      "B": "En muskelstjälk från låret (m. gracilis) som flyttas upp.",
+      "C": "En fri lambå (oftast hud och fettväv från bukens nederdel) där de blodkärl som perforerar magmuskulaturen fridissekeras och sys fast mikrokirurgiskt i bröstkorgen.",
+      "D": "Ett instrument som används för att mäta bröstets storlek."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "DIEP (Deep Inferior Epigastric Perforator) är den absolut vanligaste tekniken för att bygga ett 'eget' bröst med hjälp av magfettet utan att ta med hela raka bukmuskeln (sparande av fascia).",
+    "varför_övriga_fel": "Det är en mikrokirurgisk fri lambå, inte ett implantat eller instrument.",
+    "källa": "Bröstrekonstruktion.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_052",
+    "huvudområde": "Rekonstruktiv bröstkirurgi och bröstavvikelser",
+    "subtopic": "Blandteknik",
+    "typ": "kunskap",
+    "svårighetsgrad": "medel",
+    "fråga": "Ibland använder man sig av en 'blandteknik' för att ge patienten ny frisk hud plus bröstvolym. Vilken stjälkad muskel roteras oftast från baksidan av kroppen till bröstet och kombineras med ett implantat under?",
+    "alternativ": {
+      "A": "M. Pectoralis major",
+      "B": "M. Rectus abdominis",
+      "C": "M. Serratus anterior",
+      "D": "M. Latissimus dorsi (LD)"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Den breda ryggmuskeln, Latissimus dorsi (LD-lambå), kan stjälkas på sin axillära blodförsörjning och fällas fram på bröstkorgen för att bidra med en mjuk, tjock o-strålad vävnadskudde över implantatet.",
+    "varför_övriga_fel": "Pectoralis är redan framtill, och rectus hör till buken. Serratus används sällan i den utsträckningen för detta syfte.",
+    "källa": "Bröstrekonstruktion.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_053",
+    "huvudområde": "Rekonstruktiv bröstkirurgi och bröstavvikelser",
+    "subtopic": "Expanderprotes",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "En patient ska få en sen implantatbaserad bröstrekonstruktion (flera år efter mastektomi). Kirurgen meddelar att detta i regel kräver minst två operationer. Vad genomförs under operation 1?",
+    "alternativ": {
+      "A": "Man transplanterar bröstvårtan och låter den läka i 6 månader.",
+      "B": "Inläggning av en vävnadsexpander under huden och bröstmuskeln, som under de kommande veckorna fylls med koksalt för att sträcka ut den strama hudkostymen.",
+      "C": "Ett fullhudstransplantat läggs över hela ärret.",
+      "D": "Man tar bort tumören en gång till för att vara säker."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Eftersom brösthuden efter en gammal mastektomi ligger platt och stram mot bröstkorgen, måste man använda en expander-ballong för att skapa ett 'tält' i huden innan man kan rymma det slutgiltiga mjuka droppformade implantatet.",
+    "varför_övriga_fel": "Tumören togs bort för länge sedan. Mamillen görs absolut sist av allt. Man lägger inte i allmänhet fullhud här.",
+    "källa": "Plastikkirurgi Rekonstruktiv och plastikkirurgi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_054",
+    "huvudområde": "Rekonstruktiv bröstkirurgi och bröstavvikelser",
+    "subtopic": "Mamillrekonstruktion",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur skapas normalt den pigmenterade vårgården (areola) när man är i slutskedet av en bröstrekonstruktion?",
+    "alternativ": {
+      "A": "Hud från skinkorna transplanteras alltid.",
+      "B": "Man målar dit färg via medicinsk tatuering.",
+      "C": "Man avvaktar i 2 år tills pigmentet vandrar dit av sig själv.",
+      "D": "Laserbränning stimulerar huden att anta mörkare form."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Efter att ha konstruerat en liten hudknopp (eller transplanterat en bit från det friska bröstets vårta) slutförs estetiken enkelt och smärtfritt genom medicinsk tatuering av areolan.",
+    "varför_övriga_fel": "Transplantation från skinkor/ljumskar användes mer historiskt, men pigmentet blir sällan naturligt. Man får inte tillbaka pigmentet spontant (det är vanlig buk/rygg-hud).",
+    "källa": "Bröstrekonstruktion.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_055",
+    "huvudområde": "Kärlanomalier",
+    "subtopic": "Infantila hemangiom",
+    "typ": "diagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Ett infantilt hemangiom ('smultronmärke') upptäcks hos ett par månader gammalt barn. Hur brukar den naturliga tillväxtkurvan se ut för denna lesion?",
+    "alternativ": {
+      "A": "Den existerar fullt utvuxen vid födseln och minskar därefter varje dag.",
+      "B": "Den tillväxer intensivt de första månaderna i livet, för att därefter under en långsam process på flera år spontant krympa och tillbakabildas (regress).",
+      "C": "Den pulserar med hjärtslagen och spricker ständigt.",
+      "D": "Den växer livslångt och maligniseras nästan alltid under puberteten."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Till skillnad från missbildningar växer det infantila hemangiomet fort efter födseln (tumörproliferation) för att därefter involveras/regrediera spontant utan kirurgi.",
+    "varför_övriga_fel": "Det är kongenitalt hemangiom som är färdigt vid födseln. Malignitet (D) och pulserande högflöde (C) tillhör helt andra tillstånd.",
+    "källa": "Kärlanomalier.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_056",
+    "huvudområde": "Kärlanomalier",
+    "subtopic": "Infantila hemangiom",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Om ett infantilt hemangiom sitter väldigt ofördelaktigt och hotar en vital funktion (exempelvis synaxeln eller luftvägen), vilken systemisk läkemedelsbehandling anses vara förstahandsval?",
+    "alternativ": {
+      "A": "Cytostatika (ex. Vincristin)",
+      "B": "Systemisk peroral behandling med betablockerare (Propranolol).",
+      "C": "Lokala injektioner med adrenalin.",
+      "D": "Penicillin (antibiotika)"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Propranolol inducerar en extremt god och riktad vasokonstriktion/regress av infantila hemangiom och ges med framgång till barn med hotande lesioner.",
+    "varför_övriga_fel": "Förr gavs ofta kortison (och i extrema fall cytostatika), men betablockad har revolutionerat vården för dessa hemangiom. Antibiotika biter ej på tumörer.",
+    "källa": "Kärlanomalier.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_057",
+    "huvudområde": "Kärlanomalier",
+    "subtopic": "Kapillära kärlmissbildningar",
+    "typ": "diagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Kapillära kärlmissbildningar ('eldsmärken' eller port-wine stains) skiljer sig tydligt från infantila hemangiom ('smultronmärken'). Vilket påstående stämmer om kapillära missbildningar?",
+    "alternativ": {
+      "A": "De är inte alls synliga vid födseln utan träder fram vid puberteten.",
+      "B": "De försvinner spontant innan skolåldern utan behandling.",
+      "C": "De består av onormalt byggda och vidgade kärl som växer proportionerligt med individen hela livet och ofta mörknar i färg med åren.",
+      "D": "De övergår frekvent i massiva pulserande högflödesmissbildningar."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Missbildningar utgörs av färdiglagda men 'felbyggda' rörsystem (kapillärer i detta fall). De finns där från födseln (0,3% frekvens) och går inte in i spontan regress. De blir snarare mörkare (portvinsfärg).",
+    "varför_övriga_fel": "Missbildningar regredierar inte. Det är lågflödeslesioner, de spricker inte i pulsativa fontäner.",
+    "källa": "Kärlanomalier.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_058",
+    "huvudområde": "Kärlanomalier",
+    "subtopic": "Kongenitala hemangiom",
+    "typ": "diagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "En nyfödd presenteras med en fullt stor, rödlila upphöjd tumör över axeln redan under första dygnet efter förlossningen. Vad kallas denna typ av tumör, förkortad bland annat RICH eller NICH?",
+    "alternativ": {
+      "A": "Kongenitalt hemangiom",
+      "B": "Angiosarkom",
+      "C": "Lymfatisk missbildning",
+      "D": "Infantilt hemangiom"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Kongenitala hemangiom (t.ex. Rapidly Involuting Congenital Hemangioma - RICH) skiljer sig från infantila i att de redan har genomgått sin tillväxtfas in utero (i fosterlivet) och är fullstora direkt vid födseln.",
+    "varför_övriga_fel": "Infantila börjar synas under de första veckorna i livet. Angiosarkom är extremt ovanliga maligniteter.",
+    "källa": "Kärlanomalier.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_059",
+    "huvudområde": "Kärlanomalier",
+    "subtopic": "Arteriovenösa missbildningar (AVM)",
+    "typ": "komplikationer",
+    "svårighetsgrad": "medel",
+    "fråga": "Vid Arteriovenösa missbildningar (AVM) är blodflödet felkopplat (en 'kortslutning') direkt mellan artär och ven. Vad är en systemisk komplikation till följd av stor och ohejdad AVM-shunting?",
+    "alternativ": {
+      "A": "Massiv rhabdomyolys",
+      "B": "Leverinfarkt",
+      "C": "Hjärtsvikt på grund av hög hjärtminutvolym (belastning)",
+      "D": "Demensutveckling"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Ett högt flöde som shuntar förbi kapillärbädden och rusar rakt över i vensystemet tvingar hjärtat att pumpa en större volym och i högre hastighet. En extensiv AVM kan därmed ge upphov till manifest hjärtsvikt.",
+    "varför_övriga_fel": "Rhabdomyolys är förknippat med elektrisk brännskada. Leversvikt eller demens hör ej systemiskt primärt ihop med lokal högflödesshuntning i huden.",
+    "källa": "Kärlanomalier.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_060",
+    "huvudområde": "Kärlanomalier",
+    "subtopic": "ISSVA Klassifikation",
+    "typ": "kunskap",
+    "svårighetsgrad": "medel",
+    "fråga": "Inom klassifikationen från ISSVA (International Society for the Study of Vascular Anomalies) skiljer man strikt på 'Kärltumörer' och 'Kärlmissbildningar'. Vad kännetecknar kärltumörerna rent fysiologiskt i motsats till missbildningarna?",
+    "alternativ": {
+      "A": "Tumörerna drabbas alltid av nekros efter en vecka.",
+      "B": "Tumörerna kännetecknas av cellulär proliferation (ökad celldelning/tillväxt av endotelceller).",
+      "C": "Tumörerna finns alltid färdiga vid födseln.",
+      "D": "Tumörerna har enbart lymfatiskt (vitt) flöde inuti sig."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Tumörer, oavsett om de är benigna eller maligna, definieras biologiskt av en felaktig/ökad cellulär tillväxt och delning (proliferation). Missbildningar är strukturella rörfel skapade in utero utan hyperproliferation.",
+    "varför_övriga_fel": "Missbildningar är de som finns färdiglagda vid födseln (C är missbildning). Tumörer nekrotiserar sällan av sig självt (A). Båda kan ha blod inuti sig.",
+    "källa": "Kärlanomalier.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_061",
+    "huvudområde": "Kranioavvikelser och Läpp-käk-gomspalt (LKG)",
+    "subtopic": "Kraniosynostos Sagittal",
+    "typ": "diagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Den vanligaste formen av tidig sluten kraniell sutur (synostos) är sagittalsynostos, vilket utgör hälften av fallen. Vilken klassisk skalldeformitet skapar detta?",
+    "alternativ": {
+      "A": "En asymmetriskt sned skalle baktill (plagiocephali).",
+      "B": "Ett väldigt brett och kort huvud (brachycephali).",
+      "C": "Ett långsmalt, båtformat huvud med ofta framskjuten panna (scaphocephali).",
+      "D": "Ett klöverbladsformat huvud (treklöver)."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Eftersom den mittgående sagittalsuturen på toppen är låst, kan skallen inte växa i sidled. Hjärnan tvingar då skallen att växa framåt och bakåt, vilket resulterar i 'scaphocephali' eller båtskalle.",
+    "varför_övriga_fel": "Skev nacke ses vid lambdoideasynostos (eller lägesbetingat). Bred skalle ses vid bilateral coronal synostos.",
+    "källa": "Kranioavvikelser.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_062",
+    "huvudområde": "Kranioavvikelser och Läpp-käk-gomspalt (LKG)",
+    "subtopic": "Kraniosynostos Metopika",
+    "typ": "diagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Ett barn observeras på BVC med en tydligt triangulär (eller plogformad) panna med enås längs medellinjen i pannan och tättsittande ögon. Vilken sutur har drabbats av synostos?",
+    "alternativ": {
+      "A": "Metopikasuturen (pannsuturen)",
+      "B": "Coronarsuturen (kranssuturen)",
+      "C": "Sagittalsuturen (pilsuturen)",
+      "D": "Lambdoideasuturen"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Metopikasuturen separerar frontalbenen och är normalt den första som stängs fysiologiskt. Stängs den för tidigt (in utero) dras frontalbenen ihop till en kil eller plog (trigonocefali) med snäv distans mellan ögonen.",
+    "varför_övriga_fel": "Sagittal ger båtform. Coronar ger platt och bred/asymmetrisk panna. Lambdoidea sitter i bakhuvudet.",
+    "källa": "Kranioavvikelser.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_063",
+    "huvudområde": "Kranioavvikelser och Läpp-käk-gomspalt (LKG)",
+    "subtopic": "Kraniosynostos Lambdoidea",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Hos ett spädbarn misstänker man en äkta kraniosynostos i en sutur i bakhuvudet (lambdoideasynostos) för att huvudet är platt på ena sidan baktill. Vilket fynd talar STARKAST för detta snarare än en godartad lägesbetingad (positionell) asymmetri?",
+    "alternativ": {
+      "A": "Huvudet är snett men framsidan är exakt proportionerlig.",
+      "B": "Skallen sedd ovanifrån liknar ett perfekt parallellogram och örat på den platta sidan är skjutet framåt.",
+      "C": "Tillväxten trycks åt motsatt håll från den låsta suturen, så bakhuvudets form blir som en trapezoid (ett snett trapets) och örat dras neråt/bakåt mot den platta sidan.",
+      "D": "En extremt rund och bred panna uppstår sekundärt."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Vid lambdoidea-synostos hålls benet vid stängningen tillbaks, varpå resten av skallen skjuter fram som en asymmetrisk triangel/trapets (örat på låst sida dras ner/bakåt). Vid parallellogram ('vindrutetorkareffekt') rör det sig i regel om tryck i sängen (lägesbetingad plagiocefali) och därmed ingen operation.",
+    "varför_övriga_fel": "Parallellogram (B) är tecknet för det snälla, lägesbetingade tillståndet.",
+    "källa": "Kranioavvikelser.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_064",
+    "huvudområde": "Kranioavvikelser och Läpp-käk-gomspalt (LKG)",
+    "subtopic": "LKG Kirurgi Tidslinje",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "En komplett Läpp-Käk-Gomspalt engagerar flera experter från födseln. När opereras barnet med den första stora slutande plastiken gällande läpp, näsa och den viktiga mjuka gommen?",
+    "alternativ": {
+      "A": "Direkt på BB under de första 24 timmarna.",
+      "B": "Vid cirka 6 månaders ålder.",
+      "C": "Vid 2 års ålder, innan de lär sig prata ordentligt.",
+      "D": "Vid skolstart, runt 7 års ålder."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Kring 6 månaders ålder sluts läppens muskel (orbicularis oris), näsbotten, och mjuka gommen (velopharyngeal funktion).",
+    "varför_övriga_fel": "Hårda gommen väntar man med till ca 2 år. Vid födseln är vävnaden för liten. Bentransplantation sker kring 8 års ålder.",
+    "källa": "Läpp-käk-gomspalt_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_065",
+    "huvudområde": "Kranioavvikelser och Läpp-käk-gomspalt (LKG)",
+    "subtopic": "Gomspalt muskel",
+    "typ": "kunskap",
+    "svårighetsgrad": "medel",
+    "fråga": "Vid kirurgi av en gomspalt är ett extremt viktigt mål att få barnet att kunna tala utan luftläckage genom näsan. Kirurgen lossar och syr därför ihop en avgörande muskel i den mjuka gommen så den sluter som en U-slinga. Vilken?",
+    "alternativ": {
+      "A": "M. Orbicularis oris",
+      "B": "M. Masseter",
+      "C": "M. Sternocleidomastoideus",
+      "D": "M. Levator veli palatini"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Levator veli palatini är muskeln som normalt sträcker sig tvärs över mjuka gommen och drar upp gommen mot bakre svalgväggen under tal och sväljning, för att täppa till passagen upp till näsan.",
+    "varför_övriga_fel": "Orbicularis oris sys i läppen. Masseter är en tuggmuskel.",
+    "källa": "Plastikkirurgi LKG, kraniosynostos och kärllesionerner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_066",
+    "huvudområde": "Postbariatrisk kirurgi och könsbekräftande kirurgi",
+    "subtopic": "Postbariatrisk indikation",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "En 35-årig kvinna har gjort en fantastisk viktresa och tappat 60 kg efter en gastric bypass. Hon ansöker nu om bukplastik finansierad av landstinget/regionen. Vilket absolut krav gäller generellt för att operationen ska vara medicinskt berättigad (ej privatbetald kosmetik)?",
+    "alternativ": {
+      "A": "Ett häng på minst 1 cm räcker oavsett om hon lider av det.",
+      "B": "Hängbuk med ett konstant hudveck på minst 3 cm (mäts oftast med linjal över symfysen), och att hänget orsakar psykosociala, fysiska eller hygieniska besvär. Krav på stabilt BMI (ofta <=25).",
+      "C": "BMI måste vara under 20.",
+      "D": "Hon måste också ha hängande armar, annars nekas enbart bukkirurgi."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Indikationen som plastikkirurgin följer i den offentliga vården är bland annat minst 3 cm hudöverhäng samt manifesta besvär från vecket. BMI ska helst ligga runt 25 (eller max 30).",
+    "varför_övriga_fel": "Mindre än 3 cm brukar nekas. BMI under 20 är för lågt och inget krav. Överarmsplastik betalas sällan oavsett.",
+    "källa": "Vävnadsöverskott.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_067",
+    "huvudområde": "Postbariatrisk kirurgi och könsbekräftande kirurgi",
+    "subtopic": "Bukplastik Komplikationer",
+    "typ": "komplikationer",
+    "svårighetsgrad": "lätt",
+    "fråga": "Bukplastik hos patienter som tidigare varit extremt obesa (obesitas) är stora operationer som sträcker sig över hela nedre buken. Vilken allvarlig och potentiellt direkt dödlig komplikation löper dessa patienter särskilt stor risk för peri-/postoperativt?",
+    "alternativ": {
+      "A": "Gallstensanfall",
+      "B": "Djup ventrombos (DVT) och lungemboli (LE) till följd av massiv vävnadsskada, ökat buktryck och immobilisering.",
+      "C": "Svår njursvikt orsakad av toxiner från fettet.",
+      "D": "Ruptur av urinblåsan"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Trombosprofylax och tidig mobilisering är vitalt hos dessa patienter eftersom ingreppet dramatiskt ökar risken för blodpropp i ben och lungor på grund av den långa knivtiden, det stora döda utrymmet (dead space) och immobiliseringen.",
+    "varför_övriga_fel": "Ingreppet sker i underhudsfettet och stramar åt muskelns yta, inga invärtes organ i mag-tarmkanalen hanteras (som gallblåsa/urinblåsa).",
+    "källa": "Vävnadsöverskott.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_068",
+    "huvudområde": "Postbariatrisk kirurgi och könsbekräftande kirurgi",
+    "subtopic": "Könsbekräftande AFAB",
+    "typ": "kunskap",
+    "svårighetsgrad": "lätt",
+    "fråga": "Inom könsbekräftande kirurgi refererar begreppet 'AFAB' till 'Assigned Female At Birth'. Vilken specifik kirurgi, kallad för top-surgery, är den vanligaste formen av kirurgi som genomförs i denna patientgrupp (transmän)?",
+    "alternativ": {
+      "A": "Mastektomi (bröstkonturering) för att avlägsna bröstkörteln och skapa en maskulin korg.",
+      "B": "Bröstförstoring med implantat.",
+      "C": "Laserassisterad röstsänkning.",
+      "D": "Orkidektomi"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "AFAB-personer som identifierar sig som män (transmän) söker oftast mastektomi (borttagande av bröst) för att matcha sin könsidentitet i fenotypen.",
+    "varför_övriga_fel": "De andra tre alternativen utförs på AMAB-personer (kvinnoidentifierade / transkvinnor).",
+    "källa": "Könsbekräftande kirurgi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_069",
+    "huvudområde": "Postbariatrisk kirurgi och könsbekräftande kirurgi",
+    "subtopic": "Könsbekräftande AMAB",
+    "typ": "kunskap",
+    "svårighetsgrad": "medel",
+    "fråga": "För AMAB-patienter (Assigned Male At Birth) med uttalad könsdysfori kan feminiserande plastikkirurgi utföras. Ett ofta utmärkande strukturellt hinder för en kvinnlig profil sitter på halsen. Vilket ingrepp erbjuds ofta för detta?",
+    "alternativ": {
+      "A": "Cervikal laminektomi.",
+      "B": "Hysterektomi.",
+      "C": "Thyreoideabroskreduktion (Kirurgisk reduktion / slipning av Adamsäpplet).",
+      "D": "Radikal tonsillektomi."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Hos transkvinnor (AMAB) stäms ofta utseendet mot den kvinnliga profilen genom feminiserande ansiktskirurgi. Att hyvla ner sköldbroskets prominens (Adamsäpplet) utgör en hörnsten i denna process.",
+    "varför_övriga_fel": "Hysterektomi = borttagande av livmoder (vilket AMAB inte har). De andra är orelaterade (ryggrad/halsmandlar).",
+    "källa": "Könsbekräftande kirurgi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_070",
+    "huvudområde": "Postbariatrisk kirurgi och könsbekräftande kirurgi",
+    "subtopic": "Könsbekräftande terminologi",
+    "typ": "terminologi",
+    "svårighetsgrad": "medel",
+    "fråga": "En del i könsbekräftande genital kirurgi för AFAB-patienter (kvinna-till-man) kan involvera att kirurgiskt avlägsna vaginan. Vad är den korrekta medicinska termen för detta ingrepp?",
+    "alternativ": {
+      "A": "Vaginoplastik",
+      "B": "Vaginektomi",
+      "C": "Metaidoioplastik",
+      "D": "Ovariektomi"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ordledet '-ektomi' betyder borttagande/excision. 'Vagin-ektomi' är borttagandet av den vaginala slemhinnekanalen, ofta utfört samtidigt som man bygger yttre könsdelar.",
+    "varför_övriga_fel": "Vaginoplastik = att BYGGA en vagina. Metaidoioplastik = frisläppning och förstoring av klitoris. Ovariektomi = borttagande av äggstockar.",
+    "källa": "Könsbekräftande kirurgi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_071",
+    "huvudomrade": "Kranioavvikelser och Läpp-käk-gomspalt (LKG)",
+    "subtopic": "LKG Kirurgi",
+    "typ": "handläggning",
+    "svarighetsgrad": "lätt",
+    "fraga": "Hos barn med Läpp-Käk-Gomspalt fattas det ofta ben i tandanlaget (alveolarutskottet). När och hur åtgärdas detta vanligen kirurgiskt?",
+    "alternativ": {
+      "A": "Vid 6 månaders ålder med ben från skallen.",
+      "B": "Vid 2 års ålder med syntetiskt bengraft.",
+      "C": "Vid ungefär 8 års ålder genom att spongiöst ben transplanteras från tibia.",
+      "D": "Vid 15 års ålder med ett titan-implantat i underkäken."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Runt 8 års ålder, innan de permanenta tänderna bryter fram, genomförs en bentransplantation där man tar spongiöst ben från tibia till tandanlaget.",
+    "varfor_ovriga_fel": "Vid 6 månader stängs läppen/mjuka gommen, vid 2 år stängs hårda gommen. Skallben och titan är fel materialval här.",
+    "kalla": "Läpp-käk-gomspalt_.pdf, Plastikkirurgi LKG, kraniosynostos och kärllesionerner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_072",
+    "huvudomrade": "Kranioavvikelser och Läpp-käk-gomspalt (LKG)",
+    "subtopic": "Submukös spalt",
+    "typ": "diagnostik",
+    "svarighetsgrad": "medel",
+    "fraga": "Vad utmärker en så kallad 'submukös' gomspalt?",
+    "alternativ": {
+      "A": "Spalten sitter endast i underkäken.",
+      "B": "Gommen ser hel ut på ytan, men musklerna (t.ex. levator veli palatini) är spaltade och fungerar inte som de ska.",
+      "C": "Spalten är synlig men påverkar varken muskulatur eller tal.",
+      "D": "Det är ett annat namn för en isolerad gomspalt som syns tydligt i den hårda gommen."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Submukös betyder 'under slemhinnan'. Slemhinnan är intakt och döljer spalten i de underliggande gommusklerna, vilket kan leda till osynlig men uttalad talsvårighet.",
+    "varfor_ovriga_fel": "En isolerad gomspalt är ofta öppen och synlig. Det drabbar överkäken, inte underkäken.",
+    "kalla": "Läpp-käk-gomspalt_.pdf, Plastikkirurgi LKG, kraniosynostos och kärllesionerner.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_073",
+    "huvudomrade": "Kärlanomalier",
+    "subtopic": "Pyogent granulom",
+    "typ": "kunskap",
+    "svarighetsgrad": "lätt",
+    "fraga": "Enligt ISSVA-klassifikationen ingår 'Pyogent granulom' i gruppen kärltumörer. Vad är karaktäristiskt för denna lesion?",
+    "alternativ": {
+      "A": "Det är en godartad tumör som oftast uppkommer sent i livet (ofta efter ett mindre trauma).",
+      "B": "Det är en malign och aggressiv form av angiosarkom.",
+      "C": "Det är en medfödd kärlmissbildning som krymper med åren.",
+      "D": "Det är alltid fullstort vid födseln (RICH)."
+    },
+    "ratt_svar": "A",
+    "kort_forklaring": "Pyogent granulom är en godartad (benign) kärltumör som uppstår reaktivt (ofta i hud eller slemhinna efter småskador) sent i livet, till skillnad från hemangiom hos barn.",
+    "varfor_ovriga_fel": "Det är inte malignt (angiosarkom är maligna). Det är inte en missbildning och är inte medfött.",
+    "kalla": "Kärlanomalier.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_074",
+    "huvudomrade": "Kärlanomalier",
+    "subtopic": "Lymfatiska missbildningar",
+    "typ": "behandling",
+    "svarighetsgrad": "medel",
+    "fraga": "Ett barn diagnostiseras med en storcystisk lymfatisk missbildning på halsen, vilken ofta svullnar vid förkylningar. Vilken är den vanliga primära riktade behandlingen för de stora cystorna?",
+    "alternativ": {
+      "A": "Omedelbar strålbehandling mot halsen.",
+      "B": "Sklerosering (ett medel sprutas in med nål som får cystorna att skrumpna).",
+      "C": "Embolisering via ljumskartären.",
+      "D": "Kräm med högpotent kortison dygnet runt."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "För lymfatiska kärlmissbildningar (särskilt de storcystiska) är sklerosering förstahandsval för att torka ut och skrumpna de vätskefyllda hålrummen.",
+    "varfor_ovriga_fel": "Embolisering används vid högflödes-arteriovenösa missbildningar (AVM). Strålning och kortison har inte god effekt på strukturella lymfcystor.",
+    "kalla": "Kärlanomalier.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_075",
+    "huvudomrade": "Plastikkirurgiska tekniker",
+    "subtopic": "Muskellambåer",
+    "typ": "handläggning",
+    "svarighetsgrad": "svår",
+    "fraga": "En patient har utvecklat ett djupt nekrotiskt sår centralt strax nedom knäleden efter en knäartroplastik, och ledprotesen är exponerad. Vilken stjälkad lokal lambå är ett klassiskt val för att täcka denna typ av djup defekt?",
+    "alternativ": {
+      "A": "Z-plastik från låret.",
+      "B": "Rotationslambå med m. pectoralis major.",
+      "C": "Rotationslambå med mediala m. gastrocnemius.",
+      "D": "Enkelt delhudstransplantat över protesen."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "För blottade proteser runt knät roteras ofta mediala buken av gastrocnemius (vaden) upp, som täcks med hud, för att säkra god mjukdelstäckning och cirkulation.",
+    "varfor_ovriga_fel": "Delhud fäster inte på en metallprotes. Pectoralis sitter på bröstkorgen. Z-plastik löser spänning i befintlig hud men fyller ingen djup vävnadsdefekt.",
+    "kalla": "Plastikkirurgi Plastikkirurgiska tekniker.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_076",
+    "huvudomrade": "Plastikkirurgiska tekniker",
+    "subtopic": "Vävnadsexpansion (ETE)",
+    "typ": "kunskap",
+    "svarighetsgrad": "medel",
+    "fraga": "En metod för vävnadsexpansion är ETE (External Tissue Extension). I vilken specifik klinisk situation är ETE extra lämpligt för att undvika hudtransplantation?",
+    "alternativ": {
+      "A": "I samband med mastektomi vid bröstcancer.",
+      "B": "I samband med stängning av fasciotomier på underbenet.",
+      "C": "Vid kroniska diabetessår på tårna.",
+      "D": "Vid akuta brännskador i ansiktet."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Vid en fasciotomi har vävnaden svullnat, men huden finns kvar. ETE fästs i sårkanterna och drar ihop huden några millimeter varje dag tills den kan slutas primärt när svullnaden går ner.",
+    "varfor_ovriga_fel": "Vid bröstrekonstruktion används oftast inre expanderproteser. ETE är olämpligt för akuta brännskador och diabetessår.",
+    "kalla": "Plastikkirurgiska tekniker.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_077",
+    "huvudomrade": "Sår, sårläkning och sårskador",
+    "subtopic": "Deglaveringsskada",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "En äldre patient trillar och skapar en stor lacerations-/deglaveringsskada där huden skalats av från handryggen men hänger kvar som en flik. Hur bör fliken primärt handläggas?",
+    "alternativ": {
+      "A": "Den skall alltid klippas bort direkt och ersättas med delhud.",
+      "B": "Man klipper bort fliken för att skicka den till patologen.",
+      "C": "Den skall tvättas, kontrolleras undertill, läggas tillbaka och sutureras/tejpas på plats då cirka 50% överlever.",
+      "D": "Den skall brännas fast med diatermi."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "En uppsliten hudflik ska aldrig excideras slentrianmässigt. Efter adekvat tvätt och inspektion under fliken fäster man tillbaka den, och ofta överlever stora delar av den som ett fullhudstransplantat.",
+    "varfor_ovriga_fel": "Excision tar bort potentiellt livskraftig hud i onödan. Diatermi dödar vävnaden.",
+    "kalla": "Plastikkirurgi Seminarium sårskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_078",
+    "huvudomrade": "Sår, sårläkning och sårskador",
+    "subtopic": "Undersökning ansiktstrauma",
+    "typ": "undersökning",
+    "svarighetsgrad": "lätt",
+    "fraga": "En ung man inkommer till akuten med ett djupt skärsår tvärs över kinden efter att ha träffats av en skridsko. Utöver att utesluta frakturer, vilken specifik struktur måste du testa funktionen hos innan du bedövar och syr såret?",
+    "alternativ": {
+      "A": "Nervus trigeminus motoriska grenar till tungan.",
+      "B": "Nervus vagus och svalgreflexen.",
+      "C": "Nervus facialis motorik (testa att patienten ler, blåser upp kinderna etc).",
+      "D": "Nervus opticus genom oftalmoskopi."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Vid djupt våld över kinden riskerar facialisnerven (som styr mimiken) att skäras av. Detta testas med mimik (le, rynka pannan) före bedövning, då en avskuren nerv kan kräva mikrokirurgisk reparation.",
+    "varfor_ovriga_fel": "Trigeminus är primärt sensorisk i ansiktet (men har motorik till käkmuskler, ej tungan). Vagus och Opticus finns ej i den ytliga kinden.",
+    "kalla": "Sår och sårläkning.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_079",
+    "huvudomrade": "Brännskador",
+    "subtopic": "Ansiktsbrännskador",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "Du behandlar en ytlig dermal brännskada i ansiktet. Vilken lokal behandling rekommenderas oftast framför tjocka absorberande förband på denna lokal?",
+    "alternativ": {
+      "A": "Inlindning med torra gasbindor (mummifiering).",
+      "B": "Undertrycksbehandling (VAC) direkt över ansiktet.",
+      "C": "Daglig smörjning med Vaselin 4-5 gånger per dag.",
+      "D": "Silvriga klorhexidinförband fastsydda i pannan."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "I ansiktet är det mycket svårt och stigmatiserande/funktionshindrande att använda förband. Därför smörjs brännskador i ansiktet ofta upprepade gånger per dag med vaselin för att förhindra uttorkning och möjliggöra inspektion.",
+    "varfor_ovriga_fel": "Inlindning och stora förband hindrar syn, andning och matintag samt kan skava vid massivt ödem.",
+    "kalla": "Plastikkirurgi Brännskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_080",
+    "huvudomrade": "Brännskador",
+    "subtopic": "Konsultation och överföring",
+    "typ": "indikation",
+    "svarighetsgrad": "lätt",
+    "fraga": "Även vid mindre utbredda brännskador (TBSA &lt;10%) ska plastikkirurg alltid konsulteras om skadan innefattar så kallade strategiska områden. Vilket av följande är ett sådant strategiskt område?",
+    "alternativ": {
+      "A": "Mitten av buken",
+      "B": "Skulderbladet",
+      "C": "Baksidan av låret",
+      "D": "Händer, fötter, genitalia eller ansikte"
+    },
+    "ratt_svar": "D",
+    "kort_forklaring": "Skador på händer, fötter, över leder, genitalia och huvud/hals riskerar allvarlig funktionsnedsättning genom ärrkontrakturer, och ska konsulteras med plastikkirurg tidigt oavsett TBSA.",
+    "varfor_ovriga_fel": "De andra platserna är stora, platta ytor där konservativ läkning sällan hotar ledrörlighet eller livsviktiga funktioner på samma sätt.",
+    "kalla": "Plastikkirurgi Brännskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_081",
+    "huvudomrade": "Brännskador",
+    "subtopic": "Smärtlindring och IVA",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "En svårt brännskadad patient ska intensivvårdas (BRIVA). Vilken typ av smärtstillande läkemedel bör generellt undvikas i detta akuta multitrauma-skede på grund av påverkan på trombocytfunktion och njurar?",
+    "alternativ": {
+      "A": "Paracetamol",
+      "B": "Morfin intravenöst",
+      "C": "NSAID (t.ex. Ibuprofen/Diklofenak)",
+      "D": "Ketamin"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "NSAID ska undvikas hos patienter som intensivvårdas för stora brännskador då de hämmar trombocytfunktionen (blödningsrisk vid kirurgi) och är njurtoxiska vid den hypovolemi/chock som råder.",
+    "varfor_ovriga_fel": "Opioider (morfin/oxynorm) utgör basen i den akuta smärtlindringen.",
+    "kalla": "Plastikkirurgi Brännskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_082",
+    "huvudomrade": "Sår, sårläkning och sårskador",
+    "subtopic": "Trådval och kroppsdel",
+    "typ": "handläggning",
+    "svarighetsgrad": "lätt",
+    "fraga": "En allmän grundregel styr valet av suturtjocklek (monofilament) baserat på kroppsdel. Vilken kombination är rekommenderad praxis för vuxen?",
+    "alternativ": {
+      "A": "Bål och arm 3.0, Ansikte 2.0, Rygg 6.0",
+      "B": "Bål och arm 4.0, Rygg och ben 3.0, Ansikte 5.0 (eller 6.0)",
+      "C": "Bål och arm 6.0, Ansikte 3.0, Rygg 2.0",
+      "D": "Alla sår sys alltid med tjocklek 4.0."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Ett högre nummer betyder tunnare tråd. Ansiktet (fin kosmetik, låg spänning) sys med 5.0. Bål/armar med 4.0. Rygg och ben (mycket mekanisk spänning) sys med tjockare tråd, 3.0.",
+    "varfor_ovriga_fel": "Alternativ A och C sätter tjock tråd (2.0/3.0) i ansiktet vilket ger mycket fula ärr.",
+    "kalla": "Plastikkirurgi Sårskador.docx, Sår och sårläkning.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_083",
+    "huvudomrade": "Sår, sårläkning och sårskador",
+    "subtopic": "Akut sårslöjd",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "Du handlägger ett skärsår på akuten hos en stökig multitrauma-patient. Du behöver akut stänga såret och minimera tidsåtgången i operationssalen. Vilket metod är snabb, fäster bra och kan övervägas vid tillfällig hemostas/stängning?",
+    "alternativ": {
+      "A": "Intrakutan fortlöpande sutur 4.0",
+      "B": "Hudlim (Dermabond)",
+      "C": "Sårtejp över blödningen",
+      "D": "Agraffer (Staples)"
+    },
+    "ratt_svar": "D",
+    "kort_forklaring": "Agraffer är extremt snabba att sätta och kan approximera ett sår tillfälligt för att stoppa blödning och stänga defekten hos en instabil/stökig patient.",
+    "varfor_ovriga_fel": "Hudlim och tejp kräver totalt torrt och blödningsfritt underlag. Intrakutan sutur är mycket tidskrävande.",
+    "kalla": "Plastikkirurgi Quiz Canvas.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_084",
+    "huvudomrade": "Sår, sårläkning och sårskador",
+    "subtopic": "Tetanusprofylax",
+    "typ": "handläggning",
+    "svarighetsgrad": "lätt",
+    "fraga": "En 45-årig hundägare inkommer med ett djupt hundbett i armen. Såret spolas rent och lämnas öppet. Vilken mycket viktig allmän åtgärd för att skydda patienten mot en specifik toxinmedierad sjukdom får absolut inte glömmas vid denna typ av smutsiga sår?",
+    "alternativ": {
+      "A": "Meningokockvaccin",
+      "B": "Vaccination mot TBE",
+      "C": "Tetanusprofylax (Stelkrampsvaccin)",
+      "D": "Omedelbar rabies-immunoglobulin oavsett var i Sverige skadan skett."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Orena sår, och särskilt bettskador, utgör stor risk för infektion av Clostridium tetani (Stelkramp). Status på grundvaccination måste kontrolleras och eventuell påfyllnad/booster ges.",
+    "varfor_ovriga_fel": "Rabies finns normalt inte hos svenska hundar och ingår inte i rutin. Meningokocker och TBE sprids inte primärt genom bett.",
+    "kalla": "Plastikkirurgi Quiz Canvas.docx, Sår och sårläkning.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_085",
+    "huvudomrade": "Rekonstruktiv bröstkirurgi och bröstavvikelser",
+    "subtopic": "LD-lambå",
+    "typ": "kunskap",
+    "svarighetsgrad": "medel",
+    "fraga": "En strålbehandlad patient behöver autolog vävnad för bröstrekonstruktion men har nedsatt cirkulation/kärlsjukdom, vilket gör fria mikrokirurgiska lambåer (DIEP) riskabla. Vilken pediklad/stjälkad lambå är ett robust alternativ som inte kräver mikrokirurgi?",
+    "alternativ": {
+      "A": "En fri benlambå från fibula.",
+      "B": "Latissimus dorsi (LD)-lambå från ryggen.",
+      "C": "En stjälkad lambå från m. gluteus maximus.",
+      "D": "En vävnadsexpander under pectoralis major."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Latissimus dorsi (LD) kan svingas runt bröstkorgen på sin intakta ursprungliga blodförsörjning (a. thoracodorsalis). Ingen mikrokirurgi behövs, vilket gör metoden säker även vid viss kärlsjukdom.",
+    "varfor_ovriga_fel": "Fibula/gluteal kräver ofta mikrokirurgi (A, C). Expander tillför ingen autolog o-strålad vävnad (D).",
+    "kalla": "Plastikkirurgi Rekonstruktiv och plastikkirurgi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_086",
+    "huvudomrade": "Postbariatrisk kirurgi och könsbekräftande kirurgi",
+    "subtopic": "Pannikulektomi",
+    "typ": "kunskap",
+    "svarighetsgrad": "medel",
+    "fraga": "Inom postbariatrisk bukkirurgi utförs ofta 'traditionell bukplastik', men ibland väljs istället 'pannikulektomi'. Vad utmärker pannikulektomin rent operationstekniskt?",
+    "alternativ": {
+      "A": "Den utförs alltid laparoskopiskt.",
+      "B": "Man drar enbart ihop musklerna inifrån utan att avlägsna någon hud.",
+      "C": "Man skär enbart av hudöverskottet (ofta gigantiskt, 3-4 dm) utan att underminera och fridissekera bukhuden upp till bröstbenet.",
+      "D": "Det innebär att man opererar bort magsäcken i samma seans."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Pannikulektomi är ett mindre raffinerat och mer mekaniskt borttagande av stora hudförkläden (panniculus). Det görs inget större jobb för finbukens spänst som vid en traditionell plastik, utan är till för enorma och svåra överskott.",
+    "varfor_ovriga_fel": "Traditionell plastik löser upp hud från muskel upp till bröstbenet. Pannikulektomi tar inte bort magsäcken (det görs innan vid bariatrin).",
+    "kalla": "Vävnadsöverskott.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_087",
+    "huvudomrade": "Postbariatrisk kirurgi och könsbekräftande kirurgi",
+    "subtopic": "Könsbekräftande kirurgi AFAB",
+    "typ": "kunskap",
+    "svarighetsgrad": "svår",
+    "fraga": "När en transmänniska (kvinna till man) genomgår bottenkirurgi skapas en neo-penis med hjälp av till exempel en radialislambå från armen. Varför är radialislambån ofta fördelaktig i detta mikrokirurgiska ingrepp?",
+    "alternativ": {
+      "A": "Den för med sig ben som ger naturlig rigiditet.",
+      "B": "Den kan bära med sig en nerv som kan mikrokirurgiskt kopplas till klitorisnerven för att ge erogen känsel.",
+      "C": "Den producerar endogent testosteron.",
+      "D": "Huden på armen krymper aldrig efter flytten."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Radialislambån tar med sig tunna underhudska nerver som anastomseras till n. dorsalis clitoridis, vilket syftar till att förmedla sexuell (och taktil) känsel från den nya penisen.",
+    "varfor_ovriga_fel": "Benvävnad följer inte alltid med, rigiditet ordnas ofta med protes. Armen producerar inte hormon.",
+    "kalla": "Könsbekräftande kirurgi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_088",
+    "huvudomrade": "Postbariatrisk kirurgi och könsbekräftande kirurgi",
+    "subtopic": "Könsbekräftande kirurgi",
+    "typ": "komplikationer",
+    "svarighetsgrad": "lätt",
+    "fraga": "Patienter som genomgått falloplastik kan i ett senare skede opereras med erektionsstavar/implantat för att möjliggöra samlag. Vad utgör en starkt begränsande kirurgisk risk med detta moment?",
+    "alternativ": {
+      "A": "Att de kräver ständiga injektioner av kortison.",
+      "B": "Att implantaten blockerar urinflödet totalt.",
+      "C": "Det innebär insättande av utrymmeskrävande främmande material i en mikrokirurgisk lambå, vilket ger avsevärt höjd risk för infektion och extrusion (att implantatet stöts ut).",
+      "D": "Att patienten förlorar sin djupa rösträtt (röstläget höjs)."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Att sätta främmande kropp (plast/silikon) i konstruerad mjukvävnad är extremt förenat med mekaniska komplikationer och infektioner, varför många kirurger och patienter avstår från erektionsimplantat.",
+    "varfor_ovriga_fel": "Stavarna blockerar inte uretra, och de påverkar absolut inte rösten.",
+    "kalla": "Könsbekräftande kirurgi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_089",
+    "huvudomrade": "Sår, sårläkning och sårskador",
+    "subtopic": "Djurbett komplikationer",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "Ett kattbett i fingrarna ger utöver djup infektion stor risk för att skada specifika djupt liggande funktionella strukturer just i handflata/volart om fingrar. Vilken är den stora farhågan om såret är infekterat och svullet, vilket ofta kräver handkirurgisk urspolning?",
+    "alternativ": {
+      "A": "Nekros av nagelbädden.",
+      "B": "Purulent tendovaginit (senhidesinfektion) orsakad av djupt penetrerande tänder.",
+      "C": "Fraktur i metakarpalbenen.",
+      "D": "Spontan ruptur av A. radialis."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Kattens tänder är långa, smala och vassa som kanyler och penetrerar extremt lätt in i senskidor (bland annat i handen) vilket orsakar tendovaginit som kan förstöra senans glidfunktion och kräva omedelbar öppen urspolning.",
+    "varfor_ovriga_fel": "Kattbett ger sällan kross-frakturer på det sättet, och de stora artärerna rupturerar inte spontant på volarsidan bara av infektionen.",
+    "kalla": "Plastikkirurgi Sårskador.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_PLASTIKKIRURGI_090",
+    "huvudomrade": "Plastikkirurgiska tekniker",
+    "subtopic": "Suturteknik infektion",
+    "typ": "kunskap",
+    "svarighetsgrad": "medel",
+    "fraga": "För okomplicerade akuta sår är suturer oftast guldstandard, men vilken negativ läkningsaspekt bidrar tråden (suturen) primärt till om den lämnas kvar för länge eller sätts djupt subkutant i ett orent sår?",
+    "alternativ": {
+      "A": "Den suger ut allt syre ur huden.",
+      "B": "Den agerar som en främmande kropp som bakterier kan fästa på och därigenom underhålla en sårinfektion (s.k. att 'sy in' infektionen).",
+      "C": "Den ökar risken för att utveckla malignt melanom i sårbotten.",
+      "D": "Den bryter ner kollagenet permanent och ger skörbjugg."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Varje sutur är ett främmande material som immunförsvaret inte fullt ut kan penetrera, vilket gör att tråden utgör ett perfekt fäste för bio-film och bakterier om såret är dåligt rensat.",
+    "varfor_ovriga_fel": "Suturer orsakar inte cancer eller syrebrist, de ger snarare biofilm-infektion.",
+    "kalla": "Sår och sårläkning.pdf",
+    "needs_review": "nej"
+  }
+]

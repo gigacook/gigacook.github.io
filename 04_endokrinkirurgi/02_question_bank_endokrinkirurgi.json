@@ -1,0 +1,1712 @@
+[
+  {
+    "id": "KIR_ENDOKRINKIRURGI_001",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Operationsindikationer",
+    "typ": "fakta/kunskap",
+    "svårighetsgrad": "lätt",
+    "fråga": "Det finns tre huvudsakliga operationsindikationer för tyreoidea. Vilken av nedanstående är INTE en av dessa?",
+    "alternativ": {
+      "A": "Neoplasi (misstänkt eller säkerställd malignitet)",
+      "B": "Lokala trycksymtom",
+      "C": "Kosmetiskt missnöje utan lokala besvär",
+      "D": "Hypertyreos"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Operationsindikationerna är neoplasi, lokala trycksymtom och hypertyreos.",
+    "varför_övriga_fel": "Om ingen av A, B eller D är uppfylld ska remiss för kirurgi ej skickas.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx, Endokrinkirurgi hals_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_002",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Tyreoideacancer",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Ett barn inkommer med en palpabel knöl i tyreoidea. Vilken diagnos är viktigast att omedelbart misstänka och utesluta?",
+    "alternativ": {
+      "A": "Papillär tyreoideacancer",
+      "B": "Follikulär tyreoideacancer",
+      "C": "Medullär tyreoideacancer",
+      "D": "Hashimotos tyreoidit"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Klinisk regel: Vid knöl hos barn måste papillär cancer uteslutas. Det är den vanligaste tyreoideacancern hos yngre.",
+    "varför_övriga_fel": "De andra cancertyperna drabbar oftast äldre, förutom vissa medullära vid ärftliga syndrom, men papillär är absolut viktigast.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx, Endokrinkirurgi hals_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_003",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Tyreoideacancer",
+    "typ": "fakta/kunskap",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken är den vanligaste formen av tyreoideacancer (står för cirka 75% av fallen)?",
+    "alternativ": {
+      "A": "Follikulär cancer",
+      "B": "Medullär cancer",
+      "C": "Anaplastisk cancer",
+      "D": "Papillär cancer"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Papillär cancer är den vanligaste tyreoideacancern och har mycket god prognos, ofta med bot.",
+    "varför_övriga_fel": "Follikulär (10%), medullär (5%) och anaplastisk (5%) är mycket ovanligare.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx, Endokrinkirurgi hals_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_004",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Tyreoideacancer",
+    "typ": "fakta/kunskap",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken tyreoideacancer drabbar framförallt äldre och har mycket dålig prognos (närmare 0% femårsöverlevnad)?",
+    "alternativ": {
+      "A": "Follikulär cancer",
+      "B": "Papillär cancer",
+      "C": "Medullär cancer",
+      "D": "Anaplastisk cancer"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Anaplastisk cancer är en ovanlig, extremt aggressiv cancerform med mycket dålig prognos.",
+    "varför_övriga_fel": "Papillär och follikulär har mycket god prognos. Medullär har cirka 50% överlevnad.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx, Endokrinkirurgi hals_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_005",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Tyreoideacancer",
+    "typ": "fakta/kunskap",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken tyreoideacancer utgår från C-cellerna (parafollikulära celler) och ingår ibland i MEN-syndrom?",
+    "alternativ": {
+      "A": "Papillär cancer",
+      "B": "Anaplastisk cancer",
+      "C": "Medullär cancer",
+      "D": "Follikulär cancer"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Medullär tyreoideacancer utgår från de neuroendokrina C-cellerna som producerar calcitonin.",
+    "varför_övriga_fel": "Papillär, follikulär och anaplastisk cancer utgår från follikelcellerna (tyreoideaepitelet).",
+    "källa": "Endokrinkirurgi Tyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_006",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Tyreoideacancer",
+    "typ": "uppföljning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken tumörmarkör används för uppföljning efter operation av papillär och follikulär tyreoideacancer?",
+    "alternativ": {
+      "A": "Kromogranin A",
+      "B": "Calcitonin",
+      "C": "Tyreoglobulin",
+      "D": "TPO-antikroppar"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "När all tyreoideavävnad avlägsnats sjunker tyreoglobulin till noll. En stegring indikerar recidiv av papillär/follikulär cancer.",
+    "varför_övriga_fel": "Calcitonin används vid medullär cancer. Kromogranin A används för NETs. TPO-antikroppar är för Hashimotos.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_007",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Utredning och diagnostik",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken modalitet utgör förstahandsundersökning vid utredning av en nytillkommen förändring i tyreoidea?",
+    "alternativ": {
+      "A": "CT hals",
+      "B": "Ultraljud hals med beredskap för finnålspunktion",
+      "C": "Tyreoideascintigrafi",
+      "D": "PET-CT"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ultraljud är förstahandsval. Det möjliggör bedömning av knölen med TIRADS samt utförande av riktad cytologi.",
+    "varför_övriga_fel": "CT och PET används ej i primär diagnostik av tyreoideaknöl. Scintigrafi är för hyperfunktion.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_008",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Utredning och diagnostik",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är den huvudsakliga indikationen för att utföra en tyreoideascintigrafi under primärutredning?",
+    "alternativ": {
+      "A": "För att bekräfta misstänkt tyreoideacancer",
+      "B": "För att undersöka stämbandens rörlighet",
+      "C": "Vid hypertyreos av oklar etiologi (t.ex. TRAK-negativ hypertyreos med supprimerat TSH)",
+      "D": "Vid lokala trycksymtom för att mäta strumans storlek"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Scintigrafi görs endast vid hypertyreos när man behöver urskilja om det rör sig om toxisk knöl, tyreoidit eller Graves (om TRAK var negativt).",
+    "varför_övriga_fel": "Cancermisstanke och storlek bedöms bäst med ultraljud och cytologi.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx, Endokrinkirurgi hals_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_009",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Utredning och diagnostik",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "svår",
+    "fråga": "En tyreoideaknöl punkteras och svaret blir Bethesda IV (follikulär neoplasi). Varför kan man inte avgöra om det är cancer enbart på detta cytologisvar?",
+    "alternativ": {
+      "A": "Det fanns för få celler i provet, en ny biopsi krävs",
+      "B": "Det går inte att skilja ett follikulärt adenom från en follikulär cancer på enbart cellnivå, kapsel/kärlinvasion måste bedömas på hela vävnaden",
+      "C": "Provtagningen missade tumörcellerna helt",
+      "D": "Follikulär neoplasi betyder att det alltid är en godartad cysta"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Kriteriet för follikulär cancer är kapsel- eller kärlinvasion, vilket endast kan bedömas histologiskt (PAD) på hela knölen, inte på enstaka celler (cytologi).",
+    "varför_övriga_fel": "Bethesda I = för få celler. C och D är felaktiga påståenden om Bethesda IV.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_010",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Utredning och diagnostik",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken kirurgisk åtgärd görs primärt för att få en definitiv diagnos (PAD) vid cytologisvaret Bethesda IV (follikulär neoplasi)?",
+    "alternativ": {
+      "A": "Total tyreoidektomi direkt",
+      "B": "Enbart excision av själva knölen",
+      "C": "Diagnostisk hemityreoidektomi",
+      "D": "Körtelutrymning av centrala halsen"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Eftersom cytologin inte kan skilja på godartad eller elakartad follikulär neoplasi, utförs hemityreoidektomi (borttagande av loben) för att patologen ska kunna bedöma vävnaden i sin helhet.",
+    "varför_övriga_fel": "Total tyreoidektomi är överbehandling om det visar sig vara godartat. Man exciderar sällan bara en knöl.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_011",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Utredning och diagnostik",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Inför operation för en stor struma som går ner i thorax vill man göra en CT. Vilken regel är av yttersta vikt angående denna undersökning?",
+    "alternativ": {
+      "A": "Undersökningen måste göras med bariumkontrast",
+      "B": "Undersökningen måste göras UTAN jodkontrast",
+      "C": "Patienten måste premedicineras med betablockerare",
+      "D": "Enbart CT buk får utföras samtidigt"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Jodkontrast blockerar möjligheten att behandla en eventuell tyreoideacancer med radioaktivt jod postoperativt under lång tid och är kontraindicerat.",
+    "varför_övriga_fel": "Att ge jodkontrast är ett stort fel som försenar eventuell adjuvant behandling.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_012",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Behandling (Kirurgi/Radiojod)",
+    "typ": "fysiologi/mekanism",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket är det primära syftet med att ge radioaktivt jod adjuvant vid papillär och follikulär tyreoideacancer?",
+    "alternativ": {
+      "A": "Att öka röststyrkan postoperativt",
+      "B": "Att släcka ut mikrometastaser och normal tyreoideavävnad för att möjliggöra uppföljning med Tyreoglobulin",
+      "C": "Att minska svullnaden kring operationssåret",
+      "D": "Att ersätta behovet av Levaxin (tyroxin)"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Radiojod söker upp och förstör all tyreoideavävnad i kroppen, vilket dödar cancerceller och nollställer Tyreoglobulin.",
+    "varför_övriga_fel": "Det skapar tvärtom ett hormonbehov (hypotyreos) och ersätter inte hormoner.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_013",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Hypertyreos",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket specifikt blodprov är i princip patognomont för Graves sjukdom vid hypertyreos?",
+    "alternativ": {
+      "A": "Anti-TPO",
+      "B": "Tyreoglobulin",
+      "C": "TRAK (TSH-receptorantikroppar)",
+      "D": "Kromogranin A"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Positiva TRAK-antikroppar vid hypertyreos bekräftar diagnosen Graves sjukdom.",
+    "varför_övriga_fel": "Anti-TPO ses primärt vid Hashimotos tyreoidit. Tyreoglobulin är tumörmarkör.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_014",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Hypertyreos",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket mönster ses på en tyreoideascintigrafi vid en subakut tyreoidit med hypertyreos?",
+    "alternativ": {
+      "A": "Diffust och extremt högt upptag över hela körteln",
+      "B": "Kraftigt upptag samlat i en enda fokal resistens",
+      "C": "Mycket lågt eller nästan obefintligt jodupptag",
+      "D": "Upptag endast i lymfkörtlarna"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Vid tyreoidit läcker färdigt hormon ut (ger hypertyreos), men de sjuka cellerna i körteln slutar ta upp nytt jod, varför scintigrafin blir 'släckt'.",
+    "varför_övriga_fel": "Graves = högt upptag (A). Toxiskt adenom = fokal uppladdning (B).",
+    "källa": "Endokrinkirurgi Tyreoidea.docx, Endokrinkirurgi hals_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_015",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Hypertyreos",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket mönster ses på en tyreoideascintigrafi vid toxiskt adenom?",
+    "alternativ": {
+      "A": "Mycket lågt upptag generellt",
+      "B": "Kraftigt upptag i hela körteln",
+      "C": "Kraftigt jodupptag bara i en fokalt toxisk knöl, med dämpat upptag i resten av körteln",
+      "D": "Flera spridda fläckar i lungorna"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "En toxisk knöl producerar självständigt mängder av hormon, vilket trycker ner TSH. Detta tystar den friska vävnaden som då slutar ta upp jod.",
+    "varför_övriga_fel": "Se föregående förklaringar (Graves/tyreoidit).",
+    "källa": "Endokrinkirurgi Tyreoidea.docx, Endokrinkirurgi hals_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_016",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Komplikationer",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken indikation finns för att utföra en central lymfkörtelutrymning vid tyreoideacancer?",
+    "alternativ": {
+      "A": "Som profylax vid alla mikrocancrar <1 cm",
+      "B": "Vid misstänkt eller säkerställd cancer > 4 cm eller vid påvisade metastaser",
+      "C": "Vid alla fall av Graves sjukdom",
+      "D": "Enbart vid knölstruma med trakealkompression"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Central körtelutrymning utförs vid stora tumörer (>4 cm) pga hög risk för lokal spridning, eller om man redan har påvisat metastaser.",
+    "varför_övriga_fel": "Mindre tumörer utan känd spridning utryms inte centralt som standard enligt källorna.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx, Endokrinkirurgi hals_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_017",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Komplikationer",
+    "typ": "fysiologi/mekanism",
+    "svårighetsgrad": "lätt",
+    "fråga": "En ensidig skada på nervus laryngeus recurrens resulterar oftast i vilket symtom?",
+    "alternativ": {
+      "A": "Akut andningsstopp",
+      "B": "Total stumhet (afasi)",
+      "C": "Heshet på grund av stämbandspares",
+      "D": "Svårighet att ta höga toner utan heshet"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Ensidig recurrensskada paralyserar stämbandet på den skadade sidan, vilket ger uttalad heshet.",
+    "varför_övriga_fel": "Bilateral skada ger luftvägshinder. Skada på n. laryngeus superior påverkar höga toner.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx, Endokrinkirurgi hals_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_018",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Komplikationer",
+    "typ": "statusfynd",
+    "svårighetsgrad": "svår",
+    "fråga": "Om en patient postoperativt har svårt att spänna rösten för att ta höga toner, men saknar heshet och har symmetriskt rörliga stämband vid laryngoskopi, vilken nerv har skadats?",
+    "alternativ": {
+      "A": "Nervus vagus",
+      "B": "Nervus phrenicus",
+      "C": "Nervus laryngeus recurrens",
+      "D": "Nervus laryngeus superior"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Skada på superiorgrenen påverkar musklerna som spänner stämbanden (för t.ex. höga toner) men påverkar inte öppning/stängning (recurrens).",
+    "varför_övriga_fel": "Recurrens ger tydlig pares och heshet.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx, Endokrinkirurgi hals_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_019",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Komplikationer",
+    "typ": "fakta/kunskap",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken teknisk utrustning används rutinmässigt under tyreoideakirurgi för att identifiera och undvika skada på recurrensnerven?",
+    "alternativ": {
+      "A": "NIM (Nerve Integrity Monitor)",
+      "B": "EKG",
+      "C": "Doppler-ultraljud",
+      "D": "Gammakamera"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "NIM används för att elektriskt stimulera och monitorera nerven under operationen.",
+    "varför_övriga_fel": "Gammakamera används för isotoper, Doppler för blodflöde.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_020",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Komplikationer",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Några timmar efter en tyreoideaoperation utvecklar patienten svullnad på halsen, stridor och andningssvårigheter. Vad är den mest sannolika orsaken och rätt åtgärd?",
+    "alternativ": {
+      "A": "Vårdrelaterad infektion – Ge antibiotika i.v.",
+      "B": "Postoperativ blödning – Kräver urakut reoperation för evakuering av hematom",
+      "C": "Hypokalcemi – Administrera kalcium intravenöst",
+      "D": "Skada på n. laryngeus superior – Lugna patienten"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Blödning i halsen ger snabbt ett farligt tryck på trachea (luftvägshinder), vilket är ett urakut tillstånd som kräver reoperation.",
+    "varför_övriga_fel": "Andningshinder botas inte av kalcium eller antibiotika.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_021",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Komplikationer",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur yttrar sig kliniskt en postoperativ hypoparatyreoidism (hypokalcemi) efter total tyreoidektomi?",
+    "alternativ": {
+      "A": "Pirrningar och domningar i läppar och händer, samt eventuellt kramper",
+      "B": "Uttalad takykardi, svettningar och flush",
+      "C": "Akut andnöd utan svullnad",
+      "D": "Kall och blek hud med bradykardi"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Brist på paratyreoideahormon (och därmed kalcium) ger ökad neuromuskulär retbarhet, vilket upplevs som stickningar och pirrningar.",
+    "varför_övriga_fel": "B stämmer in på hypertyreos/carcinoidsyndrom.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx, Endokrinkirurgi hals_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_022",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Hypertyreos",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket av följande är ett tungt vägande skäl att välja kirurgi framför radiojodbehandling vid Graves sjukdom?",
+    "alternativ": {
+      "A": "Patienten är mycket gammal och skör",
+      "B": "Patienten har uttalad endokrin oftalmopati",
+      "C": "Sjukdomen har precis debuterat",
+      "D": "Tyreoidea saknar palpabel struma"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Radiojod kan ge ett initialt hormon- och antikroppsläckage som riskerar att kraftigt förvärra en existerande ögonpåverkan (oftalmopati).",
+    "varför_övriga_fel": "Gammal/skör är ofta bra indikation för radiojod.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_023",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Operationsindikationer",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är den generella rekommendationen vid en stor knölstruma som ger tydliga mekaniska trycksymtom, som globus och andningspåverkan?",
+    "alternativ": {
+      "A": "Exspektans i 2 år",
+      "B": "Livslång behandling med kortison",
+      "C": "Operation är enda lösningen då tryckbesvären ofta blir värre med tiden",
+      "D": "Insättning av höga doser tyreostatika"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Lokala besvär vid knölstruma har en tendens att progrediera och kräver oftast operation (hemi- eller total tyreoidektomi).",
+    "varför_övriga_fel": "Tyreostatika hjälper endast mot hyperfunktion, inte mot mekaniska knölar.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx, Endokrinkirurgi hals_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_024",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Komplikationer",
+    "typ": "fysiologi/mekanism",
+    "svårighetsgrad": "svår",
+    "fråga": "Vilken allvarlig konsekvens uppstår om nervus laryngeus recurrens oavsiktligt kapas bilateralt under en operation?",
+    "alternativ": {
+      "A": "Patienten mister sväljreflexen helt",
+      "B": "Båda stämbanden stillas i medianläge och täpper till luftvägen (akut andningshinder)",
+      "C": "Stämbanden vidgas maximalt och röststyrkan ökar okontrollerat",
+      "D": "Endast en mild kronisk heshet uppstår"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Bilateral skada på recurrensnerven gör att stämbanden paralyseras och faller in mot mitten, vilket effektivt stänger luftvägen.",
+    "varför_övriga_fel": "Det handlar om luftvägarna, inte sväljreflexen (vagus/glossopharyngeus).",
+    "källa": "Endokrinkirurgi Tyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_025",
+    "huvudområde": "Tyreoidea",
+    "subtopic": "Utredning och diagnostik",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur handläggs ett cytologisvar som klassas som Bethesda VI?",
+    "alternativ": {
+      "A": "Ny finnålspunktion om 6 månader",
+      "B": "Definitiv malignitet föreligger, operation planeras via SVF",
+      "C": "Cystan töms och vätskan odlas",
+      "D": "Antibiotikabehandling i 10 dagar"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Bethesda VI (6) står för bekräftad malignitet, vilket innebär en säker cancer och SVF-spår mot operation.",
+    "varför_övriga_fel": "Detta är det högsta steget på skalan och indikerar klar cancer, ingen exspektans.",
+    "källa": "Endokrinkirurgi Tyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_026",
+    "huvudområde": "Binjurar",
+    "subtopic": "Incidentalom i binjuren",
+    "typ": "fakta/kunskap",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är definitionen av ett adrenalt incidentalom?",
+    "alternativ": {
+      "A": "En primärt elakartad cancertyp",
+      "B": "En lesion i binjuren som upptäcks som ett bifynd på en röntgenundersökning som gjorts av annan orsak",
+      "C": "En autoimmun inflammation i barken",
+      "D": "En term för en symtomgivande metastas i binjuren"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Incidentalom betyder bokstavligen en tumör som hittats en passant (incidental finding).",
+    "varför_övriga_fel": "Det är en radiologisk upptäckt, inte en specifik patologisk diagnos.",
+    "källa": "Endokrinkirurgi buk.docx, Endokrinkirurgi buk_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_027",
+    "huvudområde": "Binjurar",
+    "subtopic": "Incidentalom i binjuren",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket attenueringsvärde på CT (utan kontrast) indikerar att ett binjureincidentalom är fettrikt och sannolikt benignt?",
+    "alternativ": {
+      "A": "> 40 HU",
+      "B": "Mellan 50 och 100 HU",
+      "C": "< 10 HU",
+      "D": "> 150 HU"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Homogen låg attenuering (< 10 HU) på CT utan kontrast talar starkt för ett lipom/lipidt adenom (godartat).",
+    "varför_övriga_fel": "Maligniteter och feokromocytom har oftast högre attenuering.",
+    "källa": "Endokrinkirurgi buk.docx, Endokrinkirurgi buk_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_028",
+    "huvudområde": "Binjurar",
+    "subtopic": "Incidentalom i binjuren",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket test ingår ALLTID i den hormonella screeningen av ett binjureincidentalom för att utesluta subklinisk kortisolöverproduktion?",
+    "alternativ": {
+      "A": "72-timmars svälttest",
+      "B": "1 mg dexametasonhämningstest över natten",
+      "C": "Synacthentest",
+      "D": "Saltbelastningstest"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Dexametasonhämningstest kontrollerar om kortisolproduktionen kan bromsas. Om inte, föreligger hyperkortisolism (Cushing).",
+    "varför_övriga_fel": "Synacthen testar svikt (Addison), saltbelastning testar Conn (aldosteron).",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_029",
+    "huvudområde": "Binjurar",
+    "subtopic": "Feokromocytom",
+    "typ": "fakta/kunskap",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är det huvudsakliga hormonet som överproduceras av ett feokromocytom i binjuremärgen?",
+    "alternativ": {
+      "A": "Aldosteron",
+      "B": "Kortisol",
+      "C": "Katekolaminer (Adrenalin, noradrenalin)",
+      "D": "Serotonin"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Binjuremärgen syntetiserar katekolaminer, vilka i överflöd orsakar svår hypertoni och vasokonstriktion.",
+    "varför_övriga_fel": "Barkens hormoner är aldo och kortisol. Serotonin kommer från tunntarmen.",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_030",
+    "huvudområde": "Binjurar",
+    "subtopic": "Feokromocytom",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Inför operation av ett säkerställt feokromocytom krävs en specifik farmakologisk förbehandling för att förhindra en livsfarlig hypertensiv kris under ingreppet. Vilken?",
+    "alternativ": {
+      "A": "Bredspektrumantibiotika",
+      "B": "Enbart profylaktisk betablockerare",
+      "C": "Premedicinering med alfa-receptorblockerare",
+      "D": "Kortison i högdos"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Alfablockad skyddar mot den massiva vasokonstriktionen som uppstår när kirurgen hanterar den adrenalinpumpande tumören.",
+    "varför_övriga_fel": "Att ge enbart betablockerare är farligt då det kan leda till en oemotsagd alfastimulering.",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_031",
+    "huvudområde": "Binjurar",
+    "subtopic": "Feokromocytom",
+    "typ": "fakta/kunskap",
+    "svårighetsgrad": "medel",
+    "fråga": "Cirka 10% av alla feokromocytom är lokaliserade extra-adrenalt (utanför binjuren). Vad kallas dessa specifikt?",
+    "alternativ": {
+      "A": "Medullär tyreoideacancer",
+      "B": "Incidentalom",
+      "C": "Paragangliom",
+      "D": "Aldosteronom"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "När katekolaminproducerande tumörer uppstår i sympatiska/parasympatiska ganglier utanför binjuren kallas de paragangliom.",
+    "varför_övriga_fel": "Det är det korrekta anatomiska namnet.",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_032",
+    "huvudområde": "Binjurar",
+    "subtopic": "Primär aldosteronism (Conns syndrom)",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka kliniska fynd hos en patient bör väcka stark misstanke om primär aldosteronism (Conns syndrom)?",
+    "alternativ": {
+      "A": "Hypertyreos och håravfall",
+      "B": "Hypotoni, hyperkalemi och feber",
+      "C": "Svårbehandlad hypertoni i kombination med hypokalemi",
+      "D": "Njursvikt med lågt p-calcium"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Aldosteron sparar på natrium/vatten (ger hypertoni) och kissar ut kalium (ger hypokalemi).",
+    "varför_övriga_fel": "A = Graves. B = Addisons (svikt). D = Sekundär HPT.",
+    "källa": "Endokrinkirurgi buk.docx, Endokrinkirurgi buk_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_033",
+    "huvudområde": "Binjurar",
+    "subtopic": "Primär aldosteronism (Conns syndrom)",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket biokemiskt prov ställer diagnosen primär aldosteronism och differentierar den från hypertoni av annan orsak?",
+    "alternativ": {
+      "A": "P-Kortisol",
+      "B": "P-Metanefriner",
+      "C": "Aldosteron/renin-kvot",
+      "D": "P-Kromogranin A"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Ett högt aldosteron samtidigt som renin är nedpressat visar att produktionen är autonom och inte styrs fysiologiskt, vilket bevisar primär aldosteronism.",
+    "varför_övriga_fel": "Kortisol är för Cushing. Metanefriner för feo. CgA för NET.",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_034",
+    "huvudområde": "Binjurar",
+    "subtopic": "Primär aldosteronism (Conns syndrom)",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "För att analysen av Aldosteron/renin-kvoten ska bli tillförlitlig måste ett specifikt villkor vara uppfyllt hos patienten pre-analytiskt. Vilket?",
+    "alternativ": {
+      "A": "Patienten måste fasta i 24h",
+      "B": "Kaliumnivån (P-Kalium) måste vara korrigerad till normokalemi",
+      "C": "Patienten ska befinna sig i liggande läge hela dygnet innan",
+      "D": "Kreatininet måste vara förhöjt"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ett lågt kalium hämmas aldosteronfrisättningen fysiologiskt, vilket kan leda till falskt låga testvärden. Normokalemi krävs.",
+    "varför_övriga_fel": "A, C och D är felaktiga krav.",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_035",
+    "huvudområde": "Binjurar",
+    "subtopic": "Primär aldosteronism (Conns syndrom)",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är kirurgens behandling om Conns syndrom med säkerhet enbart beror på ett solitärt (ensidigt) adenom i den ena binjuren?",
+    "alternativ": {
+      "A": "Bilateral adrenalektomi",
+      "B": "Unilateral adrenalektomi",
+      "C": "Radioaktiv jodbehandling",
+      "D": "Livslång medicinering, man opererar aldrig solitära adenom"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Vid unilateral sjukdom opererar man bort den sjuka binjuren. Den friska binjuren klarar hormonproduktionen ensam.",
+    "varför_övriga_fel": "Man sparar den friska binjuren.",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_036",
+    "huvudområde": "Binjurar",
+    "subtopic": "Primär aldosteronism (Conns syndrom)",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vid primär aldosteronism som beror på bilateral sjukdom (hyperplasi i båda binjurarna) väljer man oftast medicinsk behandling. Vilken?",
+    "alternativ": {
+      "A": "Tyreostatika",
+      "B": "Mitotane",
+      "C": "Mineralkortikoidreceptorantagonist (t.ex. Spironolakton eller Eplerenon)",
+      "D": "Kortisonersättning"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Eftersom man undviker att operera bort båda binjurarna, ges medicin (MRA) som blockerar aldosteronets effekt på dess receptorer.",
+    "varför_övriga_fel": "Mitotane ges för barkcancer. Kortison ges vid Addison (svikt).",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_037",
+    "huvudområde": "Binjurar",
+    "subtopic": "Primär aldosteronism (Conns syndrom)",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "När CT-undersökningen vid utredning av Conns syndrom är inkonklusiv (t.ex. knölar i båda binjurarna) används en invasiv undersökning för att skilja mellan unilateral och bilateral hormonproduktion. Vilken?",
+    "alternativ": {
+      "A": "Laparoskopisk biopsi av båda binjurarna",
+      "B": "Lumbalpunktion",
+      "C": "Selektiv binjurevenskateterisering (BVK)",
+      "D": "ERCP"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "BVK (via ljumsken) mäter aldosteronnivåer direkt i blodet som lämnar respektive binjure. Detta fastställer varifrån överproduktionen härstammar.",
+    "varför_övriga_fel": "Biopsi av binjureadenom undviks ofta (ex. risk för feo-kris eller spridning av barkcancer).",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_038",
+    "huvudområde": "Binjurar",
+    "subtopic": "Cushings syndrom (Binjureorsakad)",
+    "typ": "fysiologi/mekanism",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken labbild gällande kortisol och ACTH är typisk vid ett kortisolproducerande adenom i binjuren (Binjure-Cushing)?",
+    "alternativ": {
+      "A": "Förhöjt kortisol med hög dygnsvariation och skyhögt ACTH",
+      "B": "Förhöjt kortisol, utplanad dygnskurva och lågt/nedpressat ACTH",
+      "C": "Lågt kortisol och högt ACTH",
+      "D": "Helt normala prover men kliniska symtom"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Tumören producerar konstant höga nivåer kortisol (utplanad kurva). Detta leder till kraftig negativ feedback, vilket trycker ner hypofysens ACTH.",
+    "varför_övriga_fel": "Ektopisk ACTH-produktion ger högt ACTH.",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_039",
+    "huvudområde": "Binjurar",
+    "subtopic": "Cushings syndrom (Binjureorsakad)",
+    "typ": "uppföljning",
+    "svårighetsgrad": "medel",
+    "fråga": "När en patient blivit kirurgiskt botad från Cushings syndrom föreligger fortfarande en särskild riskfaktor som kräver livslång uppföljning. Vilken?",
+    "alternativ": {
+      "A": "100% risk att tumören återkommer i den andra binjuren",
+      "B": "Kvarstående förhöjd risk för hjärtkärlsjukdomar",
+      "C": "Total blindhet inom 10 år",
+      "D": "Utveckling av anaplastisk tyreoideacancer"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Den metabola stressen från den långvariga hyperkortisolismen sätter spår i kroppen, vilket gör att en ökad risk för hjärtkärlsjukdom kvarstår även efter bot.",
+    "varför_övriga_fel": "Det nämns specifikt i källorna som orsak till långtidsuppföljning.",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_040",
+    "huvudområde": "Binjurar",
+    "subtopic": "Binjurebarkscancer",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket påstående beskriver bäst binjurebarkscancer?",
+    "alternativ": {
+      "A": "Lågmalign tumör som ofta hittas tidigt (< 1 cm)",
+      "B": "Högmalign och ovanlig cancer som oftast hunnit bli mycket stor (> 10 cm) vid upptäckt",
+      "C": "Den vanligaste tumören i binjuren, oftast helt botbar med strålning",
+      "D": "Alltid hormonellt inaktiv"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Barkcancer (ACC) är en sällsynt, snabbt progredierande och mycket aggressiv cancer som ofta upptäcks sent med massiva tumörer.",
+    "varför_övriga_fel": "Incidentalom är de vanliga/små. Strålning fungerar sällan.",
+    "källa": "Endokrinkirurgi buk.docx, Endokrinkirurgi buk_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_041",
+    "huvudområde": "Binjurar",
+    "subtopic": "Binjurebarkscancer",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket binjurebarkshämmande läkemedel används i tillägg till kirurgi för behandling av binjurebarkscancer?",
+    "alternativ": {
+      "A": "Spironolakton",
+      "B": "Imatinib",
+      "C": "Mitotane",
+      "D": "Tyreostatika"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Mitotane är ett cellgift specifikt inriktat på att hämma och destruera binjurebarksvävnad.",
+    "varför_övriga_fel": "Imatinib är för GIST. Spironolakton för Conn.",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_042",
+    "huvudområde": "Binjurar",
+    "subtopic": "Binjurebarkscancer",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Om en binjurebarkscancer är hormonellt aktiv är detta ofta i form av en okonventionell hormonproduktion (jämfört med benigna adenom). Vilket syndrom kan då uppstå, i synnerhet hos kvinnor?",
+    "alternativ": {
+      "A": "Viriliseringssyndrom på grund av androgenproduktion",
+      "B": "Carcinoidsyndromet med flush",
+      "C": "Osteomalaci och njursten",
+      "D": "Hashimotos encefalopati"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Barkcancer producerar ibland okontrollerat med androgener (manliga könshormon), vilket leder till manlig behåring, djupare röst etc hos kvinnor (virilisering).",
+    "varför_övriga_fel": "Adenom ger oftare isolerat aldo/kortisol. Carcinoid = NET. Benskörhet = pHPT.",
+    "källa": "Endokrinkirurgi buk.docx, Endokrinkirurgi buk_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_043",
+    "huvudområde": "Binjurar",
+    "subtopic": "Incidentalom i binjuren",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "En asymptomatisk, hormonellt inaktiv homogen binjuretumör (låg attenuering) upptäcks hos en patient. Vid vilken storleksgräns börjar man generellt överväga operation pga ökad malignitetsrisk?",
+    "alternativ": {
+      "A": "> 1 cm",
+      "B": "> 4 cm",
+      "C": "> 15 cm",
+      "D": "De opereras aldrig oavsett storlek om de är inaktiva"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Tumörer < 4 cm som saknar tecken på malignitet/hormonaktivitet släpps oftast, medan fynd > 4 cm ofta föranleder operation på grund av gradvis ökande risk för binjurebarkscancer.",
+    "varför_övriga_fel": "Gränsen går generellt vid 4 cm i dessa riktlinjer.",
+    "källa": "Endokrinkirurgi buk_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_044",
+    "huvudområde": "Binjurar",
+    "subtopic": "Feokromocytom",
+    "typ": "fakta/kunskap",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur är relationen mellan benign och malign natur när det gäller feokromocytom?",
+    "alternativ": {
+      "A": "Nästan 100% är maligna",
+      "B": "De är alltid maligna om de producerar adrenalin",
+      "C": "De är nästan alltid benigna (men farliga fysiologiskt pga hormonutsöndring)",
+      "D": "Hälften är maligna, hälften benigna"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "De flesta feokromocytom (ca 90%) är fysiologiskt godartade (dvs metastaserar ej), men är livsfarliga pga den kardiovaskulära påverkan.",
+    "varför_övriga_fel": "Kallas ibland '10%-tumören' (10% bilateral, 10% malign, 10% extra-adrenal).",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_045",
+    "huvudområde": "Binjurar",
+    "subtopic": "Feokromocytom",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken symtomtriad är typisk och starkt misstänkt för odiagnostiserat feokromocytom?",
+    "alternativ": {
+      "A": "Polyuri, polydipsi och muskelsvaghet",
+      "B": "Attacker av huvudvärk, hjärtklappning och svettningar/blekhet",
+      "C": "Depression, njursten och trötthet",
+      "D": "Symmetrisk polyneuropati och synbortfall"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Katekolaminpåslagen sker attackvis och orsakar vasokonstriktion (huvudvärk, hypertoni) och sympatikusstimulering (takykardi, svettningar).",
+    "varför_övriga_fel": "A = Diabetes/Conn. C = pHPT.",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_046",
+    "huvudområde": "Endokrinkirurgi buk",
+    "subtopic": "Tunntarms-NET (Carcinoid)",
+    "typ": "fakta/kunskap",
+    "svårighetsgrad": "lätt",
+    "fråga": "När tunntarms-NET upptäcks kliniskt har tumörerna generellt en specifik utbredning. Vilken?",
+    "alternativ": {
+      "A": "De är alltid godartade polyper som bara sitter i slemhinnan",
+      "B": "De är nästan alltid redan metastaserade (lymfkörtlar/lever) trots att primärtumören är liten",
+      "C": "De utgår från levern och metastaserar till tarmen",
+      "D": "De sprider sig omedelbart och isolerat till hjärnan"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Trots låg proliferation har tunntarms-NET egenskapen att tidigt sprida sig till lokala lymfkörtlar och levern, även när primärtumören bara är millimeterstor.",
+    "varför_övriga_fel": "De sprider sig sällan till hjärnan i tidigt skede.",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_047",
+    "huvudområde": "Endokrinkirurgi buk",
+    "subtopic": "Tunntarms-NET (Carcinoid)",
+    "typ": "fakta/kunskap",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket specifikt peptidhormon är det som produceras av tunntarms-NET och orsakar flush och diarré?",
+    "alternativ": {
+      "A": "Gastrin",
+      "B": "Insulin",
+      "C": "Serotonin",
+      "D": "Kortisol"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Tumörcellerna i tunntarmen producerar och utsöndrar stora mängder serotonin.",
+    "varför_övriga_fel": "Gastrin/Insulin härstammar typiskt från pankreas-NETs.",
+    "källa": "Endokrinkirurgi buk.docx, Endokrinkirurgi buk_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_048",
+    "huvudområde": "Endokrinkirurgi buk",
+    "subtopic": "Tunntarms-NET (Carcinoid)",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Varför utvecklar en patient sällan 'carcinoidsyndromet' (flush, diarré) förrän tunntarms-NET spridit sig till levern?",
+    "alternativ": {
+      "A": "Tumören kräver leversyror för att bilda hormoner",
+      "B": "Så länge avflödet går via portavenen till levern bryts serotoninet ned, systemiska symtom uppstår först när metastaser släpper ut hormon bortom denna filterfunktion",
+      "C": "Metastaserna i tarmen blockerar passage",
+      "D": "Det är en autoimmun reaktion mot levern som ger rodnaden"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Förstapassagemetabolismen i levern bryter ned serotonin. När levermetastaser etableras kan hormonet gå direkt ut i systemkretsloppet (V. Cava).",
+    "varför_övriga_fel": "Det handlar om att undgå kroppens normala fysiologiska barriär.",
+    "källa": "Endokrinkirurgi buk.docx, Endokrinkirurgi buk_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_049",
+    "huvudområde": "Endokrinkirurgi buk",
+    "subtopic": "Tunntarms-NET (Carcinoid)",
+    "typ": "fysiologi/mekanism",
+    "svårighetsgrad": "svår",
+    "fråga": "Många patienter med tunntarms-NET opereras akut för buksmärta/ileus. Vad orsakar i regel denna ileus?",
+    "alternativ": {
+      "A": "Tumören blockerar direkt tarmens lumen",
+      "B": "Serotoninet stimulerar fibroblaster som bildar kraftig bindväv/desmoplasi i mesenteriet, vilket drar in och snörper av tarmen",
+      "C": "Serotoninet förlamar tarmens peristaltik helt",
+      "D": "Levern svullnar och klämmer ihop tarmen"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Lokal serotoninfrisättning i mesenteriet kring lymfkörtelmetastaserna triggar extrem fibrosutveckling (desmoplasi) som ger mekaniskt tarmvred.",
+    "varför_övriga_fel": "Primärtumören är för liten för att obstruera fysiskt. Det är en yttre avsnörning.",
+    "källa": "Endokrinkirurgi buk.docx, Endokrinkirurgi buk_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_050",
+    "huvudområde": "Endokrinkirurgi buk",
+    "subtopic": "Tunntarms-NET (Carcinoid)",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken karaktäristisk röntgenbild av kärl/tarmar ses ofta på CT buk vid spridning av tunntarms-NET till mesenteriet?",
+    "alternativ": {
+      "A": "Granulomatös inväxt som ser ut som ett spindelnät",
+      "B": "Pneumatos i tarmväggen",
+      "C": "Ett konglomerat av lymfkörtelmetastaser som drar in kringliggande vävnad och bildar en 'hjuleker'",
+      "D": "En jättelik homogen cysta"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Den kraftiga mesenteriella fibrosen kring metastaserna drar in tarmen och kärlen mot en central punkt likt ekrarna på ett hjul.",
+    "varför_övriga_fel": "Klassisk term för detta radiologiska fynd i källorna.",
+    "källa": "Endokrinkirurgi buk.docx, Endokrinkirurgi buk_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_051",
+    "huvudområde": "Endokrinkirurgi buk",
+    "subtopic": "Diagnostik av NETs",
+    "typ": "fakta/kunskap",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken biokemisk tumörmarkör i blodet tas för att utreda/följa alla typer av GEP-NETs oavsett specifik hormonprofil?",
+    "alternativ": {
+      "A": "Kromogranin A (CgA)",
+      "B": "CEA",
+      "C": "Calcitonin",
+      "D": "CA 19-9"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Kromogranin A utsöndras från de vesiklar som är gemensamma för neuroendokrina celler och fungerar som allmän markör för NET.",
+    "varför_övriga_fel": "De andra är markörer för tarmcancer (CEA), medullär tyreoideacancer (Calcitonin) eller pankreascancer (CA 19-9).",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_052",
+    "huvudområde": "Endokrinkirurgi buk",
+    "subtopic": "Diagnostik av NETs",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket test ordineras för att diagnostisera serotoninöverproduktion vid misstänkt tunntarms-NET?",
+    "alternativ": {
+      "A": "S-Serotonin fastande",
+      "B": "U-Metanefriner",
+      "C": "tU-5HIAA (dygnsmängd av serotoninmetabolit i urinen)",
+      "D": "Dexametasonhämningstest"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Serotonin har kort halveringstid och dess nedbrytningsprodukt (5-HIAA) mäts bäst insamlat via urinen över ett dygn.",
+    "varför_övriga_fel": "S-serotonin är opålitligt. Metanefriner = feo. Dexametason = Cushing.",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_053",
+    "huvudområde": "Endokrinkirurgi buk",
+    "subtopic": "Diagnostik av NETs",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken metod inom nuklearmedicin är förstahandsval för att kartlägga tumörutbredningen vid tunntarms-NET och pankreas-NET?",
+    "alternativ": {
+      "A": "Sestamibi-scintigrafi",
+      "B": "Somatostatinreceptor-PET-DT (Gallium-68-PET)",
+      "C": "FDG-PET (glukos-PET)",
+      "D": "Tyreoideascintigrafi"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "NET-celler uttrycker nästan alltid (80-90%) somatostatinreceptorer som fångar upp spårämnet i denna mycket exakta undersökning.",
+    "varför_övriga_fel": "Sestamibi är för paratyreoidea. FDG-PET funkar sämre då NETs växer långsamt.",
+    "källa": "Endokrinkirurgi buk.docx, Endokrinkirurgi buk_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_054",
+    "huvudområde": "Endokrinkirurgi buk",
+    "subtopic": "Diagnostik av NETs",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "En patient med spridd tunntarms-NET har svåra flush- och diarrésymtom. Vilken typ av läkemedel ges primärt för att lindra symtomen (och bromsa tumörväxten)?",
+    "alternativ": {
+      "A": "Cytostatika CHOP",
+      "B": "Somatostatinanaloger (SSA)",
+      "C": "Adrenalin",
+      "D": "Tyrosinkinashämmare"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "SSA binder till tumörens somatostatinreceptorer och dämpar dess produktion av serotonin, vilket lindrar det kliniska syndromet markant.",
+    "varför_övriga_fel": "Cytostatika har dålig effekt. Tyrosinkinas är för GIST.",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_055",
+    "huvudområde": "Endokrinkirurgi buk",
+    "subtopic": "Appendix-NET",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "En appendix-NET på 0.5 cm har avlägsnats vid en rutinmässig blindtarmsoperation. Ki67 är < 1%. Vad blir den fortsatta kirurgiska handläggningen?",
+    "alternativ": {
+      "A": "Omedelbar högersidig hemikolektomi",
+      "B": "Strålning",
+      "C": "Ingen ytterligare kirurgi krävs, appendektomi är botande",
+      "D": "Livslång cytostatika"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Mindre tumörer (<1 cm) utan aggressiva tecken (som djupt växtsätt eller högt Ki67) anses i regel fullständigt botade av enbart appendektomi.",
+    "varför_övriga_fel": "Vid > 1cm eller aggressiva tecken krävs hemikolektomi.",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_056",
+    "huvudområde": "Endokrinkirurgi buk",
+    "subtopic": "Pankreas-NET (Insulinom & Gastrinom)",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "En 45-årig kvinna söker vård för oförklarlig hunger, svettningar och förvirring vid ansträngning. Hon har ökat i vikt kraftigt eftersom hon 'måste äta hela tiden'. Misstänkt diagnos?",
+    "alternativ": {
+      "A": "Gastrinom",
+      "B": "Insulinom",
+      "C": "Appendix-NET",
+      "D": "Hypotyreos"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Insulinom utsöndrar oreglerat insulin vilket ger attackvis hypoglykemi, vilket patienterna ofta 'självmedicinerar' via högt kaloriintag -> viktuppgång.",
+    "varför_övriga_fel": "Gastrinom ger magsår. De andra ger ej hypoglykemier.",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_057",
+    "huvudområde": "Endokrinkirurgi buk",
+    "subtopic": "Pankreas-NET (Insulinom & Gastrinom)",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur ställs starkast diagnosen för misstänkt insulinom under kontrollerade former?",
+    "alternativ": {
+      "A": "HbA1c-prov",
+      "B": "Glukosbelastning (OGTT)",
+      "C": "72-timmars svälttest med mätning av blodsocker, insulin och c-peptid",
+      "D": "Slumpmässigt p-glukos på VC"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Vid långvarig svält ska friska patienters insulinnivåer sjunka i golvet i takt med blodsockret. Vid insulinom förblir insulin (och c-peptid) högt trots livshotande lågt socker.",
+    "varför_övriga_fel": "Standardprover hittar sällan de intermittenta fallen.",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_058",
+    "huvudområde": "Endokrinkirurgi buk",
+    "subtopic": "Pankreas-NET (Insulinom & Gastrinom)",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket kliniskt syndrom är direkt kopplat till ett pankreas/duodenalt Gastrinom?",
+    "alternativ": {
+      "A": "Zollinger-Ellisons syndrom (svåra peptiska duodenala magsår och diarré)",
+      "B": "Conns syndrom",
+      "C": "Graves oftalmopati",
+      "D": "Mb Crohn"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Den oreglerade utsöndringen av gastrin stimulerar magsäcken att producera enorma volymer magsyra, vilket leder till behandlingsresistenta sår i tolvfingertarmen.",
+    "varför_övriga_fel": "Conn = Binjure. Graves = Tyreoidea.",
+    "källa": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_059",
+    "huvudområde": "Endokrinkirurgi buk",
+    "subtopic": "Abdominella Sarkom (Liposarkom, GIST)",
+    "typ": "fakta/kunskap",
+    "svårighetsgrad": "lätt",
+    "fråga": "Liposarkom som växer i buken (retroperitonealt) utmärker sig ofta genom...",
+    "alternativ": {
+      "A": "...att vara extremt små och snabbväxande",
+      "B": "...att växa expansivt tills de är gigantiska (ofta flera kilo tunga)",
+      "C": "...att vara 100% känsliga för strålning",
+      "D": "...att orsaka massiv adrenalinfrisättning"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Dessa mjukdelstumörer i retroperitoneum växer länge utan symtom och når ofta enorma proportioner innan de ger lokala trycksymtom.",
+    "varför_övriga_fel": "Sarkom svarar tyvärr dåligt på strålning/kemoterapi.",
+    "källa": "Endokrinkirurgi buk.docx, Endokrinkirurgi buk_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_060",
+    "huvudområde": "Endokrinkirurgi buk",
+    "subtopic": "Abdominella Sarkom (Liposarkom, GIST)",
+    "typ": "fakta/kunskap",
+    "svårighetsgrad": "medel",
+    "fråga": "En GIST (Gastrointestinal Stromacellstumör) är en av de få solida buktumörer som förutom kirurgi framgångsrikt kan behandlas med en specifik molekylär måltavlemedicin. Vilken?",
+    "alternativ": {
+      "A": "Mitotane",
+      "B": "Tyrosinkinashämmare (t.ex. Imatinib)",
+      "C": "Kortikosteroider",
+      "D": "Levaxin"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "GIST uttrycker ofta c-KIT (en tyrosinkinasreceptor). Imatinib är en potent hämmare av denna vilket radikalt förbättrat överlevnaden för GIST.",
+    "varför_övriga_fel": "Mitotane = barkcancer.",
+    "källa": "Endokrinkirurgi buk.docx, Endokrinkirurgi buk_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_061",
+    "huvudområde": "Paratyreoidea",
+    "subtopic": "Primär Hyperparatyreoidism (pHPT)",
+    "typ": "fysiologi/mekanism",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken fysiologisk effekt har PTH (paratyreoideahormon) på skelettet?",
+    "alternativ": {
+      "A": "Inlagrar kalcium i benvävnaden (benbildning)",
+      "B": "Stimulerar benresorption och frisätter kalcium till blodet",
+      "C": "Producerar D-vitamin lokalt i märgen",
+      "D": "Krymper benmärgens volym"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "För att akut höja kalciumnivån i blodet tvingar PTH benen att brytas ned, vilket över tid kan leda till osteoporos.",
+    "varför_övriga_fel": "Kroppen offrar benstomme för cirkulerande kalcium.",
+    "källa": "Endokrinkirurgi Paratyreoidea.docx, Endokrinkirurgi hals_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_062",
+    "huvudområde": "Paratyreoidea",
+    "subtopic": "Primär Hyperparatyreoidism (pHPT)",
+    "typ": "fakta/kunskap",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är den vanligaste patologiska orsaken (står för ca 90%) till primär hyperparatyreoidism?",
+    "alternativ": {
+      "A": "Paratyreoideacancer",
+      "B": "Ett solitärt paratyreoidea-adenom i en körtel",
+      "C": "Hyperplasi av alla fyra körtlar",
+      "D": "Infektion i halsen"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Den överlägset vanligaste orsaken till pHPT är en benign tumör (adenom) som bildats i en enda av de fyra körtlarna.",
+    "varför_övriga_fel": "Hyperplasi står för ca 10%, cancer är extremt sällsynt.",
+    "källa": "Endokrinkirurgi Paratyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_063",
+    "huvudområde": "Paratyreoidea",
+    "subtopic": "Primär Hyperparatyreoidism (pHPT)",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken biokemisk profil är det diagnostiska kravet för primär hyperparatyreoidism?",
+    "alternativ": {
+      "A": "Hypokalcemi och lågt PTH",
+      "B": "Förhöjt S-Ca/jon-Ca och samtidigt otillbörligt högt PTH",
+      "C": "Hyperkalcemi och fullt nedpressat PTH",
+      "D": "Normokalcemi men skyhögt D-vitamin"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Att kalcium är förhöjt \nsamtidigt\n som PTH är förhöjt visar att regleringsmekanismen i bisköldkörteln är trasig och att den orsakar överproduktionen.",
+    "varför_övriga_fel": "Vid cancer-hyperkalcemi är PTH fysiologiskt helt tystat (Lågt PTH).",
+    "källa": "Endokrinkirurgi Paratyreoidea.docx, Endokrinkirurgi hals_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_064",
+    "huvudområde": "Paratyreoidea",
+    "subtopic": "Sekundär och Tertiär HPT",
+    "typ": "fysiologi/mekanism",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken underliggande sjukdom är den absolut vanligaste orsaken till sekundär HPT, där alla körtlar tvingas växa (hyperplasi) för att försöka normalisera kalciumnivån?",
+    "alternativ": {
+      "A": "Graves sjukdom",
+      "B": "Njursvikt (njurinsufficiens)",
+      "C": "Levercirros",
+      "D": "Diabetes typ 1"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Njuren tappar förmågan att aktivera D-vitamin och utsöndra fosfat, vilket sänker blodets kalcium. Detta driver paratyreoidea att jobba övertid i ett fysiologiskt svar.",
+    "varför_övriga_fel": "Detta kallas sekundär HPT.",
+    "källa": "Endokrinkirurgi Paratyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_065",
+    "huvudområde": "Paratyreoidea",
+    "subtopic": "Sekundär och Tertiär HPT",
+    "typ": "fysiologi/mekanism",
+    "svårighetsgrad": "svår",
+    "fråga": "En patient med svår njursvikt och känd sekundär HPT får plötsligt uttalad hyperkalcemi trots att njursjukdomen är oförändrad. Vad har hänt patofysiologiskt?",
+    "alternativ": {
+      "A": "Patienten har utvecklat Hashimotos tyreoidit",
+      "B": "Sjukdomen har övergått i Tertiär HPT (paratyreoidea har blivit autonom och stänger inte längre av sig)",
+      "C": "Bisköldkörtlarna har plötsligt dött",
+      "D": "Benresorptionen har avstannat"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Långvarig stimulering av körtlarna (sekundär HPT) leder till att de tappar sin feedback-mekanism och blir okontrollerbart överproducerande. Detta inducerar hyperkalcemi (Tertiär HPT).",
+    "varför_övriga_fel": "Det kräver numera ofta paratyreoideakirurgi för att lösas.",
+    "källa": "Endokrinkirurgi Paratyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_066",
+    "huvudområde": "Paratyreoidea",
+    "subtopic": "Symtom vid pHPT",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hyperkalcemi kan vara förrädiskt diffust. Vid vilka kombinationer av ospecifika symtom bör P-Ca tas frikostigt?",
+    "alternativ": {
+      "A": "Polyneuropati, håravfall och fetma",
+      "B": "Njursten, osteoporos, svår trötthet och depression",
+      "C": "Attackvis huvudvärk och hjärtklappning",
+      "D": "Diarré och flush"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "'Stones, bones, groans and moans' speglar symtombilden från njurpåverkan (sten), skelettnedbrytning och neuromuskulär påverkan (trötthet/psyke).",
+    "varför_övriga_fel": "C = Feokromocytom. D = Tunntarms-NET.",
+    "källa": "Endokrinkirurgi Paratyreoidea.docx, Endokrinkirurgi hals_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_067",
+    "huvudområde": "Paratyreoidea",
+    "subtopic": "Symtom vid pHPT",
+    "typ": "fakta/kunskap",
+    "svårighetsgrad": "medel",
+    "fråga": "Måttlig/svår hyperkalcemi (S-Ca > 3,0 mmol/L) är förenat med akut livsfara genom påverkan på vilket organsystem framförallt?",
+    "alternativ": {
+      "A": "Njuren (akut urinstopp)",
+      "B": "Hjärnan (cerebral blödning)",
+      "C": "Hjärtat (risk för allvarliga arytmier, AV-block och asystoli)",
+      "D": "Lungorna (lungödem)"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Kalcium styr aktionspotentialerna i hjärtat. Extrema värden blockerar signalerna vilket leder till livsfarliga hjärtrytmrubbningar.",
+    "varför_övriga_fel": "Hjärtat är det urakuta hotet.",
+    "källa": "Endokrinkirurgi Paratyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_068",
+    "huvudområde": "Paratyreoidea",
+    "subtopic": "Diagnostik och Preoperativ lokalisering",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilka två undersökningar är standard för att lokalisera ett paratyreoideaadenom preoperativt i avsikt att korta operationstiden?",
+    "alternativ": {
+      "A": "PET-scan och slätröntgen hals",
+      "B": "Ultraljud hals och Sestamibi-scintigrafi",
+      "C": "MR hals och diagnostisk hemityreoidektomi",
+      "D": "Endast blodprov är tillräckligt"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Dessa två modaliteter (UL + nuklearmedicin) överlappar varandra och kan med hög precision 'pricka in' var det lilla adenomet gömmer sig.",
+    "varför_övriga_fel": "Konkordant (samstämmigt) svar från dessa styr ofta kirurgen rakt på tumören.",
+    "källa": "Endokrinkirurgi Paratyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_069",
+    "huvudområde": "Paratyreoidea",
+    "subtopic": "Diagnostik och Preoperativ lokalisering",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "svår",
+    "fråga": "En svaghet med Sestamibi-scintigrafi är att spårämnet tas upp av BÅDE tyreoidea och paratyreoidea. Hur åtgärdar man detta radiologiskt för att enbart se paratyreoideaadenomet?",
+    "alternativ": {
+      "A": "Patienten får stora doser tyroxin innan",
+      "B": "Man mäter enbart isotopen i utandningsluften",
+      "C": "Man gör en kombination med tyreoideascintigrafi (teknetium) och subtraherar (drar av) den bilden från Sestamibi-bilden digitalt",
+      "D": "Man klämmer åt kärlen till tyreoidea under undersökningen"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Genom datorsubtraktion tar man Sestamibi-bilden (T+P) och drar bort Teknetium-bilden (endast T) så att endast upptaget i paratyreoidea (P) kvarstår.",
+    "varför_övriga_fel": "Det är en känd och elegant nuklearmedicinsk metod.",
+    "källa": "Endokrinkirurgi Paratyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_070",
+    "huvudområde": "Paratyreoidea",
+    "subtopic": "Primär Hyperparatyreoidism (pHPT)",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vid hyperplasi av paratyreoidea är alla fyra körtlar drabbade. Hur mycket körtelvävnad brukar man kirurgiskt ta bort för att balansera mellan bot och risken för allvarlig hypokalcemi?",
+    "alternativ": {
+      "A": "Endast den största körteln",
+      "B": "Exakt två körtlar (halva massan)",
+      "C": "Tre och en halv (3,5) körtlar, där man lämnar kvar en halv lättåtkomlig nedre körtel",
+      "D": "Man tar alltid bort alla fyra och ger patienten livslångt syntetiskt PTH"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Detta är standardmetoden (subtotal paratyreoidektomi) för hyperplasi, vilket bevarar precis tillräckligt med PTH-funktion och gör framtida reoperation lättare.",
+    "varför_övriga_fel": "Borttagande av allt utan autotransplantation ger livsfarlig noll-kalcium-nivå.",
+    "källa": "Endokrinkirurgi Paratyreoidea.docx, Endokrinkirurgi hals_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_071",
+    "huvudomrade": "Tyreoidea",
+    "subtopic": "Utredning och diagnostik",
+    "typ": "handläggning",
+    "svarighetsgrad": "lätt",
+    "fraga": "Ett ultraljud av en oklar knöl i tyreoidea visar att förändringen klassificeras som TIRADS 2. Vad är nästa adekvata steg i handläggningen?",
+    "alternativ": {
+      "A": "Riktad finnålspunktion oavsett storlek",
+      "B": "Ingen punktion krävs, knölen är radiologiskt benign och remiss återsänds",
+      "C": "Diagnostisk hemityreoidektomi",
+      "D": "Omedelbar tyreoideascintigrafi"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "TIRADS 1 och 2 indikerar benigna förändringar med mycket låg risk, och cytologi (FNA) är då inte indicerat.",
+    "varfor_ovriga_fel": "Att punktera ofarliga förändringar leder till överdiagnostik och onödigt lidande.",
+    "kalla": "Endokrinkirurgi Tyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_072",
+    "huvudomrade": "Tyreoidea",
+    "subtopic": "Utredning och diagnostik",
+    "typ": "statusfynd",
+    "svarighetsgrad": "medel",
+    "fraga": "En medelålders patient söker för en nytillkommen 3 cm stor knöl på halsen. Vid den kliniska undersökningen ska, förutom att palpera själva tyreoidea, även regionala lymfkörtlar palperas. Vilka stationer är mest relevanta att undersöka enligt källorna?",
+    "alternativ": {
+      "A": "Enbart de supraklavikulära körtlarna",
+      "B": "Axillära och pektorala lymfkörtlar",
+      "C": "Lymfkörtlar på ventral- och lateralsidan av halsen, samt submandibulärt",
+      "D": "Enbart lymfkörtlarna i nacken (occipitalt)"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Vid tyreoideautredning ska lymfkörtelstatus bedömas ventralt och lateralt på halsen (längs jugularis/carotis) samt submandibulärt.",
+    "varfor_ovriga_fel": "Detta är de primära dränagestationerna för tyreoideacancer.",
+    "kalla": "Endokrinkirurgi Tyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_073",
+    "huvudomrade": "Tyreoidea",
+    "subtopic": "Symtom",
+    "typ": "differentialdiagnostik",
+    "svarighetsgrad": "medel",
+    "fraga": "Heshet är ett viktigt symtom vid sköldkörtelsjukdom. Vad talar en uttalad nytillkommen heshet INNAN patienten genomgått kirurgi starkt för?",
+    "alternativ": {
+      "A": "Att patienten lider av en svår hypotyreos",
+      "B": "Att en knölstruma trycker lätt på matstrupen",
+      "C": "Det är ett allvarligt symtom på påverkan av n. laryngeus recurrens, vilket ger ökad misstanke om tyreoideacancer (invasiv växt)",
+      "D": "Det beror nästan alltid på en autoimmun reaktion mot stämbanden (Graves)"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Preoperativ heshet hos en patient med tyreoidearesistens är ett alarmsymtom för elakartad tumör som växer invasivt i recurrensnerven.",
+    "varfor_ovriga_fel": "Benigna strumor tränger oftast undan vävnad mjukt utan att förlama nerven.",
+    "kalla": "Endokrinkirurgi Tyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_074",
+    "huvudomrade": "Tyreoidea",
+    "subtopic": "Komplikationer",
+    "typ": "handläggning",
+    "svarighetsgrad": "svår",
+    "fraga": "En 35-årig kvinna har opererats för tyreoideacancer (patientfall 1 i källorna). Dagen efter är hon påtagligt hes, men laryngoskopi visar att stämbanden rör sig helt normalt och symmetriskt. Vad är den mest sannolika orsaken?",
+    "alternativ": {
+      "A": "Bilateral skada på n. laryngeus recurrens",
+      "B": "Skada på n. vagus",
+      "C": "En fullständigt avklippt n. laryngeus superior",
+      "D": "Röstpåverkan / ödem orsakad av intubationen under narkosen"
+    },
+    "ratt_svar": "D",
+    "kort_forklaring": "Om laryngoskopin visar symmetrisk rörlighet är recurrensnerverna intakta. Röstpåverkan direkt efter operation beror ofta på intubationen och är övergående.",
+    "varfor_ovriga_fel": "Bilateral recurrensskada skulle visa fastlåsta stämband. Superior-skada påverkar tonhöjd snarare än ren heshet.",
+    "kalla": "Endokrinkirurgi Tyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_075",
+    "huvudomrade": "Binjurar",
+    "subtopic": "Incidentalom i binjuren",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "Ett binjureincidentalom är 2,5 cm, hormonellt inaktivt och har en benign radiologisk bild (&lt;10 HU). Patienten följs upp med en ny CT efter 1 år och tumören har nu vuxit till 3,6 cm. Vad blir åtgärden?",
+    "alternativ": {
+      "A": "Fortsatt observation i ytterligare 5 år eftersom den fortfarande är &lt; 4 cm",
+      "B": "Operation (adrenalektomi) rekommenderas på grund av dokumenterad tillväxt",
+      "C": "Patienten sätts in på cytostatika",
+      "D": "Punktion/biopsi av binjuren genomförs"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Radiologisk tillväxt under uppföljningstiden (ofta över ett halvt till 2 år) utgör i sig en indikation för operation pga misstanke om malignitet, även om gränsen på 4 cm ej passerats.",
+    "varfor_ovriga_fel": "Biopsi undviks i regel vid binjuretumörer. Fortsatt exspektans vid dokumenterad tillväxt är fel.",
+    "kalla": "Endokrinkirurgi buk_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_076",
+    "huvudomrade": "Binjurar",
+    "subtopic": "Feokromocytom",
+    "typ": "handläggning",
+    "svarighetsgrad": "lätt",
+    "fraga": "När ett feokromocytom diagnostiseras biokemiskt (p-metoxikatekolaminer) rekommenderas generellt en specifik icke-radiologisk utredning för patienten. Vilken?",
+    "alternativ": {
+      "A": "Långtids-EKG",
+      "B": "Mätning av bentäthet (DEXA)",
+      "C": "Genanalys (för att utesluta hereditära former som MEN, VHL m.m.)",
+      "D": "Gastroskopi"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Eftersom cirka 30% av feokromocytom (historiskt 10%) är kopplade till ärftliga syndrom skall en genanalys rutinmässigt övervägas/utföras vid fynd.",
+    "varfor_ovriga_fel": "Bentäthet är vid Cushing/pHPT. Långtids-EKG utreder inte grundorsaken till tumören.",
+    "kalla": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_077",
+    "huvudomrade": "Binjurar",
+    "subtopic": "Primär aldosteronism (Conns syndrom)",
+    "typ": "fysiologi/mekanism",
+    "svarighetsgrad": "medel",
+    "fraga": "En metod för att bekräfta primär aldosteronism är saltbelastningstestet. Vilken reaktion ses hos en patient med ett autonomt Conns adenom jämfört med en frisk individ när man ger mycket salt/vätska?",
+    "alternativ": {
+      "A": "Båda sänker sitt aldosteron till noll",
+      "B": "Patienten med Conn får en kraftig ökning av aldosteron, den friska påverkas inte",
+      "C": "Den friska sänker sitt aldosteron, men patienten med Conn behåller ett högt, ohämmat aldosteronvärde",
+      "D": "Renin stiger kraftigt hos patienten med Conn"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Vid saltbelastning ska kroppen fysiologiskt bromsa aldosteron för att inte spara mer natrium (hämning). Hos en patient med Conn är produktionen autonom och vägrar hämmas.",
+    "varfor_ovriga_fel": "Det är brist på suppression som är sjukligt, inte en massiv ökning i sig.",
+    "kalla": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_078",
+    "huvudomrade": "Binjurar",
+    "subtopic": "Binjurebarkscancer",
+    "typ": "statusfynd",
+    "svarighetsgrad": "svår",
+    "fraga": "Binjurebarkscancer (ACC) blir ofta mycket stora innan de upptäcks och växer aggressivt i retroperitoneum. Vad är ett känt fenomen gällande tumörens utbredning och invasion i de stora kärlen?",
+    "alternativ": {
+      "A": "Den växer oftast in i aortabågen via lymfkörtlar",
+      "B": "Det är inte ovanligt att man ser en tumörtromb som växer in i Vena Cava Inferior",
+      "C": "Tumören blockerar i regel portavenen helt, vilket leder till leverkoma",
+      "D": "Tumören invaderar aldrig kärl, den trycker bara på dem"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Ett klassiskt och allvarligt särdrag hos binjurebarkscancer är dess tendens att bilda tumörtromber som växer direkt in i njurvenen och vidare in i vena cava.",
+    "varfor_ovriga_fel": "Gör kirurgin mycket mer komplicerad.",
+    "kalla": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_079",
+    "huvudomrade": "Endokrinkirurgi buk",
+    "subtopic": "Diagnostik av NETs",
+    "typ": "differentialdiagnostik",
+    "svarighetsgrad": "svår",
+    "fraga": "Kromogranin A (CgA) och Gastrin är förhöjt hos en patient, men inga tumörer syns på CT. Vilken mycket vanlig läkemedelsorsakad tillstånd/sjukdom MÅSTE uteslutas innan man diagnosticerar ett ockult gastrinom?",
+    "alternativ": {
+      "A": "Hypertyreos behandlad med tyreostatika",
+      "B": "Långvarig diarré behandlad med Loperamid",
+      "C": "Atrofisk gastrit i kombination med långvarig PPI-behandling (Omeprazol)",
+      "D": "Njursvikt under dialys"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Vid syrabrist (av atrofi eller pga PPI) försöker G-cellerna kompensera genom att spruta ut enorma mängder gastrin och CgA. Detta kan felaktigt tolkas som ett gastrinom.",
+    "varfor_ovriga_fel": "Detta är den absolut vanligaste orsaken till falskt förhöjt gastrin.",
+    "kalla": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_080",
+    "huvudomrade": "Endokrinkirurgi buk",
+    "subtopic": "Ventrikel-NET",
+    "typ": "fakta/kunskap",
+    "svarighetsgrad": "lätt",
+    "fraga": "Ventrikel-NETs (neuroendokrina tumörer i magsäcken) utgör ofta en specifik typ av fynd. Vilket påstående stämmer bäst?",
+    "alternativ": {
+      "A": "De är oftast högmaligna och har spridit sig vid diagnos",
+      "B": "De presenterar sig oftast som små godartade polyper orsakade av hypergastrinemi och upptäcks vid gastroskopi",
+      "C": "De är extremt ovanliga och hittas bara vid obduktion",
+      "D": "De är de tumörer som producerar överlägset mest serotonin i kroppen"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Typ 1 ventrikel-NET utvecklas pga kronisk stimulering av gastrin (ex. vid atrofisk gastrit). De är små, oftast benigna och tas bort lokalt under gastroskopi.",
+    "varfor_ovriga_fel": "Serotonin produceras mest av tunntarms-NET.",
+    "kalla": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_081",
+    "huvudomrade": "Endokrinkirurgi buk",
+    "subtopic": "Pankreas-NET",
+    "typ": "fakta/kunskap",
+    "svarighetsgrad": "medel",
+    "fraga": "Vilken biokemisk tumörmarkör i blodet är helt specifik för just pankreas-NET (och stiger inte vid tunntarms-NET)?",
+    "alternativ": {
+      "A": "Kromogranin A (CgA)",
+      "B": "Serotonin",
+      "C": "Calcitonin",
+      "D": "Pankreaspolypeptid (PP)"
+    },
+    "ratt_svar": "D",
+    "kort_forklaring": "Pankreaspolypeptid (PP) produceras bara av endokrina celler i pankreas och är därmed specifikt för dessa tumörer.",
+    "varfor_ovriga_fel": "CgA är en allmän markör för alla NETs.",
+    "kalla": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_082",
+    "huvudomrade": "Endokrinkirurgi buk",
+    "subtopic": "Tunntarms-NET (Carcinoid)",
+    "typ": "fakta/kunskap",
+    "svarighetsgrad": "medel",
+    "fraga": "Neuroendokrina tumörer i tunntarmen klassificeras histologiskt och graderas för aggressivitet baserat på två specifika patologiska variabler. Vilka?",
+    "alternativ": {
+      "A": "Tumörens diameter och djupet av invasion i submucosan",
+      "B": "Antalet mitoser och Ki67-index",
+      "C": "Förekomst av nekros och kärlinvasion",
+      "D": "Mängden serotonin i cellerna och tumörens färg"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Graderingen (G1, G2, G3) för NETs bygger uteslutande på proliferationshastighet, vilken mäts genom andelen Ki67-positiva celler och antalet synliga celldelningar (mitoser).",
+    "varfor_ovriga_fel": "Övriga alternativ ingår ibland i TNM-stadiet, men histologisk *grad* bestäms av Ki67/mitoser.",
+    "kalla": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_083",
+    "huvudomrade": "Endokrinkirurgi buk",
+    "subtopic": "Pankreas-NET",
+    "typ": "fakta/kunskap",
+    "svarighetsgrad": "svår",
+    "fraga": "Vid maligna pankreas-NET (t.ex. gastrinom/insulinom) kan patienten plötsligt byta symtombild (ex. från återkommande magsår till attacker av hypoglykemi). Varför?",
+    "alternativ": {
+      "A": "Levermetastaserna inaktiverar insulinreceptorerna",
+      "B": "Tumören har utvecklats till ett adenocarcinom",
+      "C": "Det är en känd tumörbiologisk egenskap att dessa celler kan ändra hormonprofil och producera ett nytt peptid",
+      "D": "Patienten har utvecklat Graves sjukdom"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Neuroendokrina celler är flexibla i sin genuttryckning, och en tumör (eller dess metastaser) kan sluta producera t.ex. gastrin och börja producera insulin över tid (blandsyndrom/byte av profil).",
+    "varfor_ovriga_fel": "Detta gör att hormonanalyser ofta måste upprepas vid sjukdomsprogress.",
+    "kalla": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_084",
+    "huvudomrade": "Paratyreoidea",
+    "subtopic": "Diagnostik och Preoperativ lokalisering",
+    "typ": "handläggning",
+    "svarighetsgrad": "svår",
+    "fraga": "Selektiv halsvenkateterisering för mätning av PTH är en invasiv metod för att lokalisera sjukdom. När är denna metod kliniskt indicerad?",
+    "alternativ": {
+      "A": "Som förstahandsval vid alla fall av primär HPT",
+      "B": "Endast vid reoperation eller vid persisterande sjukdom när ultraljud och scintigrafi är inkonklusiva",
+      "C": "För att screena familjemedlemmar",
+      "D": "När patienten vägrar genomgå ultraljud"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Metoden är invasiv och tekniskt krävande, varför den reserveras enbart för svåra reoperationsfall eller när primäroperationen misslyckats.",
+    "varfor_ovriga_fel": "Används mycket sällan i primär diagnostik.",
+    "kalla": "Endokrinkirurgi Paratyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_085",
+    "huvudomrade": "Paratyreoidea",
+    "subtopic": "Primär Hyperparatyreoidism (pHPT)",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "Om man tvingas utföra en helt komplett (total) paratyreoidektomi vid svår hyperplasi utförs ofta en autotransplantation. Hur går detta typiskt till?",
+    "alternativ": {
+      "A": "20-30% av vävnaden finhackas och opereras in subkutant i ett mer lättåtkomligt område, oftast bukfettet (under höger arcus)",
+      "B": "Man transplanterar en bisköldkörtel från en donator till patientens hals",
+      "C": "Vävnaden blandas in i tyreoidea igen",
+      "D": "Vävnaden fryses in och ges som tabletter under livstiden"
+    },
+    "ratt_svar": "A",
+    "kort_forklaring": "För att undvika livsfarlig total hypokalcemi återförs en liten del (hackad) av den egna körteln i muskel eller fett (t.ex. brachioradialis eller buken) där den kan försörjas och bilda en ny PTH-källa.",
+    "varfor_ovriga_fel": "Då undviks halsen om man senare behöver minska vävnaden ytterligare.",
+    "kalla": "Endokrinkirurgi Paratyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_086",
+    "huvudomrade": "Paratyreoidea",
+    "subtopic": "Primär Hyperparatyreoidism (pHPT)",
+    "typ": "handläggning",
+    "svarighetsgrad": "lätt",
+    "fraga": "En 82-årig man diagnosticeras med en mild primär HPT. Han är helt asymptomatisk, S-Ca är 2,58 mmol/L och bensköra är uteslutet. Vad rekommenderas oftast för honom?",
+    "alternativ": {
+      "A": "Urakut remiss för total paratyreoidektomi",
+      "B": "Ingen operation krävs vid stabil sjukdom utan symtom; patienten kan observeras",
+      "C": "Insättning av strålbehandling mot halsen",
+      "D": "Sängläge tills nivåerna normaliseras"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Lindrig och stabil pHPT hos asymtomatiska, ofta äldre patienter har låg mortalitetsrisk och exspektans är därför den rekommenderade strategin.",
+    "varfor_ovriga_fel": "Man opererar vid symtom eller vid ung ålder.",
+    "kalla": "Endokrinkirurgi Paratyreoidea.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_087",
+    "huvudomrade": "Endokrinkirurgi buk",
+    "subtopic": "Neuroendokrina tumörer (NETs)",
+    "typ": "fakta/kunskap",
+    "svarighetsgrad": "lätt",
+    "fraga": "Vilka ärftliga syndrom nämns som orsak till vissa fall av familjära pankreas-NET och andra neuroendokrina tumörer?",
+    "alternativ": {
+      "A": "Lynch syndrom och FAP",
+      "B": "MEN-1 (Multipel endokrin neoplasi typ 1) och VHL",
+      "C": "Turners syndrom",
+      "D": "Marfans syndrom"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "MEN-1 och VHL (Von Hippel-Lindau) samt neurofibromatos typ 1 (NF1) är ärftliga syndrom med stark koppling till utveckling av GEP-NETs.",
+    "varfor_ovriga_fel": "A rör kolorektalcancer. C och D är kromosom/bindvävsdefekter.",
+    "kalla": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_088",
+    "huvudomrade": "Endokrinkirurgi buk",
+    "subtopic": "Rektal-NET",
+    "typ": "handläggning",
+    "svarighetsgrad": "lätt",
+    "fraga": "Hur upptäcks och handläggs vanligtvis en rektal-NET?",
+    "alternativ": {
+      "A": "Som gigantiska tumörer vid anal ultraljud som kräver rektumamputation",
+      "B": "Ofta som små benigna polyper som upptäcks som bifynd vid koloskopi och som enkelt kan tas bort där",
+      "C": "Via kraftig flush i samband med defekation",
+      "D": "Endast vid obduktion"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Rektala NETs är ofta &lt; 1cm, lågmaligna och hittas av en slump när man gör en koloskopi för något annat. Lokal borttagning räcker ofta.",
+    "varfor_ovriga_fel": "De ger mycket sällan systemiska syndrom och kräver sällan stora kirurgiska ingrepp om de är små.",
+    "kalla": "Endokrinkirurgi buk.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_089",
+    "huvudomrade": "Binjurar",
+    "subtopic": "Cushings syndrom (Binjureorsakad)",
+    "typ": "statusfynd",
+    "svarighetsgrad": "lätt",
+    "fraga": "En patient med Cushings syndrom uppvisar ofta typiska fysiska tecken på grund av den långvariga exponeringen för högt kortisol. Vilken är den klassiska kroppskonstitutionen?",
+    "alternativ": {
+      "A": "Extrem avmagring med uttalad muskelhypertrofi i överkroppen",
+      "B": "En s.k. 'päronformad' konstitution med fetma centrerad till buken (central fetma) och påfallande smala ben (muskelatrofi), samt månansikte",
+      "C": "Symmetrisk generaliserad övervikt",
+      "D": "Oproportionerligt långa extremiteter"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Kortisolöverskott ger central fettinlagring (bål, ansikte/månansikte, buffalo hump) samtidigt som muskulatur i armar och ben bryts ned.",
+    "varfor_ovriga_fel": "A, C och D beskriver andra endokrina/metabola tillstånd.",
+    "kalla": "Endokrinkirurgi buk_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ENDOKRINKIRURGI_090",
+    "huvudomrade": "Tyreoidea",
+    "subtopic": "Komplikationer",
+    "typ": "fysiologi/mekanism",
+    "svarighetsgrad": "medel",
+    "fraga": "Vad är förklaringen till att en blödning på halsen postoperativt efter en tyreoidektomi anses vara extremt farlig och potentiellt dödlig inom minuter?",
+    "alternativ": {
+      "A": "Det snabba tryckfallet i carotis gör att patienten svimmar",
+      "B": "Tyreoideahormoner åker rakt ut i blodet och ger en toxisk kris",
+      "C": "Halsens loger (fascior) bildar ett slutet, trångt utrymme; ett hematom här trycker snabbt ihop tracheas brosk och skapar ett mekaniskt luftvägshinder",
+      "D": "Blödningen sprider sig ner i mediastinum och ger lungödem"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Ett hematom efter halskirurgi komprimerar luftvägarna på grund av brist på expansionsutrymme inuti de strama halsfasciorna. Det kräver omedelbart öppnande av såret (även på sal om urakut).",
+    "varfor_ovriga_fel": "Detta kallas kompartmentsyndrom i halsen och är det absolut största urakuta hotet efter operationen.",
+    "kalla": "Endokrinkirurgi Tyreoidea.docx, Endokrinkirurgi hals_.pdf",
+    "needs_review": "nej"
+  }
+]

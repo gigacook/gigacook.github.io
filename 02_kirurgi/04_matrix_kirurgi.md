@@ -1,0 +1,1117 @@
+- area: Akut buk
+- entity: Rupturerat AAA
+- tags:
+  - akut
+  - buk
+  - kirurgi
+  - ruptur
+- when_to_suspect:
+  - Urakut svår buksmärta
+  - Prechock/chock
+- discriminators:
+  - Palpabel pulserande resistens
+  - Cirkulatoriskt instabil (lågt BT, hög puls)
+- investigation:
+  - CT-buk (om stabil)
+  - Akut op (om instabil)
+- initial_management:
+  - ABCDE
+  - Akut resuscitering
+- definitive_management:
+  - Akut laparotomi/kärlkirurgi
+- complications:
+  - Förblödning
+- pitfalls:
+  - Njursten (stabil cirkulation men svår smärta)
+- memory_hooks: 
+---
+- area: Akut buk
+- entity: Extrauterin graviditet (X)
+- tags:
+  - akut
+  - buk
+  - ruptur
+- when_to_suspect:
+  - Fertil kvinna
+  - Plötslig smärta i nedre buk
+  - Tecken på prechock
+- discriminators:
+  - Positivt graviditetstest (95%)
+- investigation:
+  - Gravtest
+  - Gyn-undersökning
+- initial_management:
+  - ABCDE
+  - Akut resuscitering
+- definitive_management:
+  - Akut laparoskopi/laparotomi
+- complications:
+  - Livshotande inre blödning
+- pitfalls:
+  - Appendicit
+  - Salpingit
+- memory_hooks: 
+---
+- area: Akut buk
+- entity: Mesenteriell ischemi
+- tags:
+  - akut
+  - buk
+  - ischemi
+- when_to_suspect:
+  - Äldre med FF/kärlsjukdom
+  - "Pain out of proportion"
+- discriminators:
+  - Mjuk oöm buk initialt
+  - Högt laktat, LPK, D-dimer
+  - Embolus i SMA på CT
+- investigation:
+  - CT-angio buk i trefas
+- initial_management:
+  - Urakut kirurgbedömning
+  - ABCDE
+- definitive_management:
+  - Öppen embolektomi alt. tarmresektion
+- complications:
+  - Irreversibel tarmnekros på få timmar
+- pitfalls:
+  - Perforerat ulcus (ger hård buk direkt, ischemi ger mjuk)
+- memory_hooks: 
+---
+- area: Akut buk
+- entity: Perforerat ulcus
+- tags:
+  - akut
+  - buk
+  - perforation
+- when_to_suspect:
+  - Plötslig, maxad buksmärta
+  - Pat ligger blixt stilla
+- discriminators:
+  - Brädhård buk (generell peritonit)
+  - Fri gas på CT (lungfönster)
+- investigation:
+  - CT-buk
+- initial_management:
+  - Fasta, iv vätska
+  - Bredspektrum-ab iv
+- definitive_management:
+  - Akut op (sutur/resektion)
+  - Måste kontrollskoperas senare
+- complications:
+  - Generell fekal/kemisk peritonit
+- pitfalls:
+  - Okomplicerat ulcus (läcker inte gas)
+- memory_hooks: 
+---
+- area: GI-blödning
+- entity: Övre GI-blödning (Ulcus)
+- tags:
+  - akut
+  - blödning
+  - gi-blödning
+- when_to_suspect:
+  - Melena/Hematemes
+  - NSAID/ASA-bruk
+  - Cirkulationspåverkan
+- discriminators:
+  - Rött blod i v-sond
+  - Forrest Ia (sprutande) vs III (läkt) på skopi
+- investigation:
+  - Gastroskopi (inom 24h vid lågrisk, akut vid högrisk)
+- initial_management:
+  - ABCDE
+  - PPI högdos iv
+  - Erytromycin iv
+- definitive_management:
+  - Clips/adrenalin endoskopiskt
+  - Transfusionsmål Hb: 70-90 (frisk), 90-110 (hjärtsjuk)
+- complications:
+  - Re-blödning
+- pitfalls:
+  - Nedre GI-blödning (melena betyder oftast blödning ovan Treitz ligament)
+- memory_hooks: 
+---
+- area: GI-blödning
+- entity: Esofagusvaricer
+- tags:
+  - akut
+  - blödning
+  - gi-blödning
+- when_to_suspect:
+  - Massiv hematemes
+  - Känd levercirros/alkoholism
+- discriminators:
+  - Varicer synliga vid skopi
+  - Lågt TPK/Högt PK
+- investigation:
+  - Akut gastroskopi
+- initial_management:
+  - ABCDE
+  - Terlipressin iv
+  - PPI iv
+- definitive_management:
+  - Gummibandsligatur
+  - Bail-out: Danistent/Sengstakensond
+- complications:
+  - Förblödning
+  - Hepatisk encefalopati
+- pitfalls:
+  - Mallory-Weiss (pat kräks massivt
+- memory_hooks: 
+---
+- area: blod kommer)
+- entity: 
+- tags:
+  - akut
+  - blod
+  - gi-blödning
+  - kirurgi
+  - kommer)
+- when_to_suspect:
+  - Sentinel bleed
+- discriminators:
+  - Blödning
+- investigation:
+  - Varningsblödning 1-2 v post-op (efter pankreas/gallkirurgi)
+- initial_management:
+  - Pseudoaneurysm pga frätande läckage syns på CT-angio
+- definitive_management:
+  - Akut CT-angio (trefas)
+- complications:
+  - Cirkulationsstöd
+  - Larm till angio
+- pitfalls:
+  - Angiografi med embolisering (coiling)
+- memory_hooks: 
+---
+- area: • Tolkas felaktigt som en ofarlig ytlig sårblödning
+- entity: 
+- tags:
+  - akut
+  - en
+  - felaktigt
+  - gi-blödning
+  - ofarlig
+  - som
+  - sårblödning
+  - tolkas
+  - ytlig
+  - •
+- when_to_suspect:
+  - Nedre GI (Divertikel/Angiodysplasi)
+- discriminators:
+  - Blödning
+- investigation:
+  - Äldre patient
+  - Massiv ljusröd blödning PR
+  - Smärtfri
+- initial_management:
+  - CT-angio visar extravasering (>0,5 ml/min)
+  - Rektoskopi identifierar distalt blod
+- definitive_management:
+  - Rektoskopi (på akuten!)
+  - CT-angio (vid massiv blödning)
+- complications:
+  - ABCDE, blodtransfusion
+  - Vasopressin (vid småkärlsblödning)
+- pitfalls:
+  - Exspektans (stannar ofta spontant)
+  - Angio/coiling vid behov
+- memory_hooks: 
+---
+- area: • Tentafälla: Blödande divertikel skall betraktas som cancer tills motsatsen är bevisad
+- entity: [15, 18, 25-27]
+- tags:
+  - akut
+  - betraktas
+  - bevisad
+  - blödande
+  - cancer
+  - divertikel
+  - gi-blödning
+  - motsatsen
+  - skall
+  - som
+  - tentafälla:
+  - tills
+  - är
+  - •
+- when_to_suspect:
+  - Ischemisk kolit
+- discriminators:
+  - Ischemi/ Inflam.
+- investigation:
+  - Äldre med kärlsjukdom (FF)
+  - Akut vänstersidig smärta
+  - Blodig diarré
+- initial_management:
+  - CT visar inflammation i vä flexur
+  - Avsaknad av peritonit initialt
+- definitive_management:
+  - CT-buk med kontrast
+- complications:
+  - Inläggning
+  - Optimera syre/cirkulation
+- pitfalls:
+  - Konservativ oftast
+  - Tarmresektion vid gangrän
+- memory_hooks: 
+---
+- area: • Okomplicerad divertikulit (ger sällan massiv blodig diarré)
+- entity: 
+- tags:
+  - divertikulit
+  - ikterus
+  - okomplicerad
+  - •
+- when_to_suspect:
+  - "Tyst" ikterus & Pankreascancer
+- discriminators:
+  - Malignitet
+- investigation:
+  - Smärtfri gulsot
+  - Viktnedgång
+  - Ljus feces, mörk urin
+- initial_management:
+  - Kolestatisk labbbild (ALP > ALAT/ASAT)
+  - "Double duct sign" på CT
+- definitive_management:
+  - ULJ lever/gallvägar (inom 24h)
+  - DT pankreas (trefas)
+- complications:
+  - Remiss till kirurg
+  - SVF start
+- pitfalls:
+  - Whipple-op (caputtumör)
+  - ERC/PTC-stent (palliation)
+- memory_hooks: 
+---
+- area: • Gallstensikterus (som ger intensiv smärta och ofta feber)
+- entity: 
+- tags:
+  - akut
+  - gallstensikterus
+  - ikterus
+  - infektion
+  - •
+- when_to_suspect:
+  - Akut cholangit
+- discriminators:
+  - Infektion
+- investigation:
+  - Charcots triad: Feber/frossa, ikterus, smärta övre högra buken
+- initial_management:
+  - Vidgade gallgångar på ULJ
+  - Högt LPK/CRP och ALP
+- definitive_management:
+  - ULJ lever/gallvägar
+- complications:
+  - Fasta, iv vätska
+  - Bredspektrum-ab iv
+- pitfalls:
+  - Akut avlastning/dränering (ERCP/PTC)
+  - Cholecystektomi (senare)
+- memory_hooks: 
+---
+- area: • Akut cholecystit (ger infektion och smärta men
+- entity: inte
+- tags:
+  - (ger
+  - akut
+  - cholecystit
+  - ikterus)
+  - infektion
+  - men
+  - och
+  - smärta
+  - •
+- when_to_suspect:
+- discriminators:
+  - Ikterus
+- investigation:
+  - PSC (Primär Skleroserande Kolangit)
+- initial_management:
+  - Autoimmun
+- definitive_management:
+  - Yngre man med Ulcerös Kolit
+  - Smygande ikterus/trötthet
+- complications:
+  - "Pärlband" i gallträdet (strikturer/dilatationer) på MRCP
+- pitfalls:
+  - MRCP
+- memory_hooks: 
+---
+- area: • ERCP med dilatation• Levertransplantation
+- entity: • Kraftigt ökad risk (RR 800) för Cholangiocarcinom (CCC)
+- tags:
+  - dilatation•
+  - ercp
+  - levertransplantation
+  - med
+  - medicin
+  - pbc
+  - •
+- when_to_suspect:
+  - [30, 36-38]
+- discriminators:
+  - Ikterus
+- investigation:
+  - Alkoholhepatit
+- initial_management:
+  - Intox/ Inflam.
+- definitive_management:
+  - Missbruksanamnes
+  - Gul, slö, dekompenserad
+- complications:
+  - ASAT > ALAT
+  - Påverkat PK och albumin
+- pitfalls:
+  - Leverprover
+  - ULJ buk
+- memory_hooks: 
+---
+- area: • Levertransplantation (om karens uppfylls)• Steroider vid svår form
+- entity: • Akut leversvikt
+- tags:
+  - akut
+  - form
+  - levertransplantation
+  - steroider
+  - svår
+  - vid
+  - virushepatit
+  - •
+- when_to_suspect:
+- discriminators:
+  - Ikterus
+- investigation:
+  - Hepatocellulär cancer (HCC)
+- initial_management:
+  - Malignitet
+- definitive_management:
+  - Pat med känd cirros/Hepatit B/C
+  - Plötslig försämring
+- complications:
+  - Tumörmarkör AFP förhöjd
+  - CT: Kontrastladdning artärfas, "wash-out" i venfas
+- pitfalls:
+  - CT-lever trefas
+  - AFP-prov
+- memory_hooks: 
+---
+- area: • Levertransplantation• TACE (kemoembolisering)
+- entity: • Stor blödningsrisk, leversvikt
+- tags:
+  - akut
+  - benign
+  - levercysta
+  - levertransplantation•
+  - tace
+  - •
+- when_to_suspect:
+- discriminators:
+  - Övre GI
+- investigation:
+  - Akut pankreatit
+- initial_management:
+  - Inflam.
+- definitive_management:
+  - Bältesformad smärta epigastriet/rygg
+  - Gallstens- el alkoholanamnes
+- complications:
+  - S-Amylas >3x normalvärdet
+  - Ödem/fettretning kring pankreas på CT
+- pitfalls:
+  - P-Amylas/Lipas
+  - ULJ (hitta gallsten)
+- memory_hooks: 
+---
+- area: • Konservativ oftast• Cholecystektomi (om gallstensutlöst)
+- entity: • Abdominellt kompartmentsyndrom• Pankreatisk pseudocysta
+- tags:
+  - akut
+  - cholecystektomi
+  - konservativ
+  - oftast•
+  - perforerat
+  - ulcus
+  - •
+- when_to_suspect:
+- discriminators:
+  - Övre GI
+- investigation:
+  - IPMN (Intrapankreatisk mucinös neoplasi)
+- initial_management:
+  - Premalignt
+- definitive_management:
+  - Ofta bifynd på CT eller vid oklar buksmärta/ikterus
+- complications:
+  - Mucin(slem)-producerande neoplasi i pankreasgången (ses på MRCP/EUS)
+- pitfalls:
+  - MRCP/EUS
+- memory_hooks: 
+---
+- area: • Resektion om hög risk (förstadie till cancer)• Övervakning
+- entity: • Utveckling till pankreascancer
+- tags:
+  - hög
+  - om
+  - pseudocysta
+  - resektion
+  - risk
+  - övervakning
+  - •
+- when_to_suspect:
+- discriminators:
+  - Övre GI
+- investigation:
+  - Esofagus/Ventrikelcancer
+- initial_management:
+  - Malignitet
+- definitive_management:
+  - Dysfagi (alarmsymtom esofagus!)
+  - Tidig mättnad, anemi (ventrikel)
+- complications:
+  - dMMR-mutation (bättre svar på immunterapi)
+  - Positiva px
+- pitfalls:
+  - Gastroskopi med px
+- memory_hooks: 
+---
+- area: • Perioperativ FLOT (neoadjuvant+adjuvant)• Esofagektomi/Gastrektomi
+- entity: • Dålig prognos, mikrometastaser
+- tags:
+  - (måste
+  - benignt
+  - esofagektomi/gastrektomi
+  - flot
+  - perioperativ
+  - ulcus
+  - •
+- when_to_suspect:
+  - alltid
+- discriminators:
+  - kontrollskoperas för att bevisa läkning pga cancerrisk)
+- investigation:
+- initial_management:
+  - Nedre GI
+- definitive_management:
+  - Mekaniskt tunntarmsileus
+- complications:
+  - Obstruktion
+- pitfalls:
+  - Intervallsmärta, kräkningar
+  - Avsaknad av gas/feces
+  - Ärr på magen (adherens/brid)
+- memory_hooks: 
+---
+- area: • CT-BÖS
+- entity: • V-sond (avlasta magen)• Iv vätska• Aktiv observation
+- tags:
+  - ct-bös
+  - frekvent•
+  - op
+  - spontanläkning
+  - strangulation
+  - vid
+  - •
+- when_to_suspect:
+  - Tarmischemi (om briden stryper blodkärl)
+- discriminators:
+  - Paralytisk ileus (tyst buk, icke-mekanisk, konservativ behandling)
+- investigation:
+- initial_management:
+  - Nedre GI
+- definitive_management:
+  - Kolonileus
+- complications:
+  - Obstruktion
+- pitfalls:
+  - Äldre pat, uppspänd buk
+  - Inga avföringar
+- memory_hooks: 
+---
+- area: • CT-BÖS
+- entity: • Inläggning, fasta• Kirurgkonsult
+- tags:
+  - alltid
+  - ct-bös
+  - eller
+  - kräver
+  - nästan
+  - operation
+  - stomi
+  - •
+- when_to_suspect:
+  - Caecumruptur (perforation) om för utspänd
+- discriminators:
+  - Oupptäckt kolorektalcancer är vanligaste orsaken
+- investigation:
+  - [54, 56-58]
+- initial_management:
+  - Nedre GI
+- definitive_management:
+  - Appendicit
+- complications:
+  - Inflam.
+- pitfalls:
+  - Smärtvandring navel -> hö fossa
+  - Feber, matleda, ung pat
+- memory_hooks: 
+---
+- area: • Klinisk (AIR-score)• CT (>40 år), ULJ (unga)
+- entity: • AIR 9-12 = direkt till op• AIR <5 = hemgång
+- tags:
+  - ,
+  - ab-profylax
+  - appendektomi•
+  - ct
+  - före
+  - klinisk
+  - laparoskopisk
+  - op
+  - ulj
+  - •
+- when_to_suspect:
+  - Perforation med generell peritonit
+- discriminators:
+  - Ekstrauterin graviditet (tag U-hCG på alla kvinnor i fertil ålder!)
+- investigation:
+- initial_management:
+  - Nedre GI
+- definitive_management:
+  - Divertikulit
+- complications:
+  - Inflam.
+- pitfalls:
+  - Smärta vänster fossa
+  - Lättare feber
+- memory_hooks: 
+---
+- area: • CT-buk med iv kontrast
+- entity: • Okomplicerad: hem, exspektans• Komplicerad: inläggning, iv Ab
+- tags:
+  - 1:a
+  - 6-8
+  - ct-buk
+  - efter
+  - fri
+  - gas•
+  - insjuknandet!
+  - iv
+  - koloskopi
+  - kontrast
+  - med
+  - op
+  - uppföljande
+  - v
+  - vid
+  - •
+- when_to_suspect:
+  - Fekal peritonit
+- discriminators:
+  - Kolorektalcancer (härmar symtomen, varför koloskopi krävs post-op)
+- investigation:
+- initial_management:
+  - Nedre GI
+- definitive_management:
+  - Kolorektalcancer
+- complications:
+  - Malignitet
+- pitfalls:
+  - Blod PR, anemi hos äldre
+  - Ändrade avföringsvanor
+- memory_hooks: 
+---
+- area: • Koloskopi (SVF)• F-Hb
+- entity: • Staging (CT thorax/buk)• MDK
+- tags:
+  - /
+  - akut
+  - f-hb
+  - hemikolektomi
+  - koloskopi
+  - onkologi
+  - onkologisk
+  - rektumresektion•
+  - tilläggsbehandling
+  - •
+- when_to_suspect:
+  - Ileusdebut
+- discriminators:
+  - Hemorrojder (Skyll aldrig blödning på hemorrojder utan att skopera!)
+- investigation:
+- initial_management:
+  - Nedre GI
+- definitive_management:
+  - Ulcerös Kolit (UC)
+  - Akut skov
+- complications:
+  - Autoimmun
+- pitfalls:
+  - Täta blodiga diarréer
+  - Börjar alltid i rektum
+- memory_hooks: 
+---
+- area: • Rektoskopi• CRP/Hb/Frekvens
+- entity: • Inläggning• Högdos iv kortison
+- tags:
+  - +
+  - akut
+  - akut:
+  - crp/hb/frekvens
+  - ileostomi
+  - kolektomi
+  - rektoskopi•
+  - subtotal
+  - •
+- when_to_suspect:
+  - Toxisk megakolon
+  - Pre-op steroider ökar anastomosläckage kraftigt
+- discriminators:
+  - Mb Crohn (går att skilja endoskopiskt via "skip lesions")
+- investigation:
+  - [18, 65-69]
+- initial_management:
+  - Nedre GI
+- definitive_management:
+  - Mb Crohn
+- complications:
+  - Autoimmun
+- pitfalls:
+  - Smärta, diarré, viktnedgång
+  - Perianala fistlar
+- memory_hooks: 
+---
+- area: • Koloskopi• MR-tunntarm
+- entity: • Multidisciplinärt• Främst medicinsk (biologika/kortison)
+- tags:
+  - avhjälper
+  - kirurgi
+  - koloskopi•
+  - komplikationer
+  - medicin
+  - men
+  - mr-tunntarm
+  - •
+- when_to_suspect:
+  - botar ej
+- discriminators:
+  - Fistlar och abscesser
+- investigation:
+  - UC (drabbar endast kolon kontinuerligt)
+- initial_management:
+  - [18, 70-73]
+- definitive_management:
+  - Bråck
+- complications:
+  - Inklämt/Strangulerat ljumskbråck
+- pitfalls:
+  - Mekaniskt
+- memory_hooks: 
+---
+- area: • Rodnad/förhårdnad över bråcket tyder på strangulation (ischemi)• Mekaniskt ileus (om tarm)
+- entity: • Klinisk undersökning av ljumskar
+- tags:
+  - (endast
+  - ->
+  - akut
+  - bråcket
+  - ileus
+  - mekaniskt
+  - om
+  - på
+  - repositionsförsök
+  - rodnad/förhårdnad
+  - smärtlindring
+  - strangulation
+  - tyder
+  - över
+  - •
+- when_to_suspect:
+  - ej
+- discriminators:
+  - ischemisk)
+- investigation:
+  - Akut op om strangulerat
+  - Lichtenstein-plastik (nät)
+- initial_management:
+  - Tarmnekros vid strypt blodcirkulation
+- definitive_management:
+  - Försök ALDRIG reponera ett misstänkt strangulerat bråck (spräcker död tarm i magen)
+- complications:
+- pitfalls:
+  - Bråck
+- memory_hooks: 
+---
+- area: Mekaniskt
+- entity: • Kvinna• Utbuktning nedom ligamentum inguinale
+- tags:
+  - femoralis
+  - medialt
+  - mekaniskt
+  - om
+  - sitter
+  - vena
+  - •
+- when_to_suspect:
+  - Klinisk us
+- discriminators:
+  - Remiss för operation
+- investigation:
+  - Operationsindikation föreligger
+- initial_management:
+  - alltid
+- definitive_management:
+  - för femoralbråck (snäv port)
+- complications:
+  - Mycket hög inklämningsrisk
+- pitfalls:
+  - Inguinalbråck (sitter ovanför ligamentet)
+- memory_hooks: 
+---
+- area: Proktologi
+- entity: Perianalabscess
+- tags:
+  - akut
+  - infektion
+  - proktologi
+- when_to_suspect:
+  - Sprängande perianal smärta
+  - Rodnad böld, feber
+- discriminators:
+  - Utgår ofta från infekterad analkörtel (Kryptae Morgagnis) i linea dentata
+- investigation:
+  - Inspektion/Palpation
+- initial_management:
+  - Akut op-anmälan
+- definitive_management:
+  - Incision och dränering ("ubi pus ibi evacua")
+  - Antibiotika behövs sällan rutinmässigt
+- complications:
+  - Analfistel bildas i 30-50%
+  - Supralevatorisk abscess (sprider sig farligt mot bukhålan)
+- pitfalls:
+  - Furunkel (hårsäcksinflammation)
+- memory_hooks: 
+---
+- area: Proktologi
+- entity: Analfissur
+- tags:
+  - kramp
+  - proktologi
+  - smärta/
+- when_to_suspect:
+  - Skärande smärta
+- discriminators:
+  - vid
+- investigation:
+  - och
+- initial_management:
+  - efter
+- definitive_management:
+  - defekation
+  - Ljusröd blodstrimma
+- complications:
+  - Extrem spasm i sfinktern försvårar PR/skopi
+- pitfalls:
+  - Inspektion (kl 6)
+- memory_hooks: 
+---
+- area: • Konservativ: Diltiazemsalva (sfinkterrelaxerande)• Op vid kronisk
+- entity: • Ischemi i sprickan pga kramp
+- tags:
+  - diltiazemsalva
+  - hemorrojder
+  - konservativ:
+  - kronisk
+  - op
+  - vid
+  - •
+- when_to_suspect:
+  - [125 (fråga), 292]
+- discriminators:
+  - Proktologi
+- investigation:
+  - Hemorrojder
+- initial_management:
+  - Kärl
+- definitive_management:
+  - Färskt blod vid torkning/defekation
+  - Prolaps vid krystning
+- complications:
+  - Normal färg/yta till skillnad från cancer (Uteslut alltid cancer!)
+- pitfalls:
+  - Rektoskopi/Proktoskopi
+- memory_hooks: 
+---
+- area: • Gummibandsligatur• Milligans operation
+- entity: • Perianalhematom (tromboserad ven)
+- tags:
+  - gummibandsligatur•
+  - milligans
+  - operation
+  - rektalcancer
+  - •
+- when_to_suspect:
+  - [51, 71, 126 (fråga)]
+- discriminators:
+  - Bröst
+- investigation:
+  - Bröstcancer
+- initial_management:
+  - Malignitet
+- definitive_management:
+  - Oöm, hård, fixerad knöl i bröstet
+  - Hudindragning, apelsinhud (peau d'orange)
+- complications:
+  - Ki-67 = mått på proliferation (tillväxthastighet)
+  - ER, PR, HER2-status styr val
+- pitfalls:
+  - Trippeldiagnostik: (Klinik + Mammografi/ULJ + Cytologi/Biopsi)
+- memory_hooks: 
+---
+- area: • Sektorresektion / Mastektomi• Antihormonell/Cytostatika
+- entity: • Makrometastaser (>2mm) i portvaktskörtel kräver ofta axillutrymning
+- tags:
+  - /
+  - akut
+  - antihormonell/cytostatika
+  - fibroadenom
+  - mastektomi•
+  - sektorresektion
+  - •
+- when_to_suspect:
+- discriminators:
+  - Obesitas
+- investigation:
+  - Intern herniering
+- initial_management:
+  - Obstruktion
+- definitive_management:
+  - Pat opererad med Gastric Bypass
+  - Akuta/intervallartade smärtor i buken
+- complications:
+  - CT-buk visar "virvel" i mesenteriet (tarm snurrad i slitsar)
+- pitfalls:
+  - Urakut CT-buk
+- memory_hooks: 
+---
+- area: • Diagnostisk laparoskopi & slutning av slitsar
+- entity: • Akut tarmstrangulation och gangrän
+- tags:
+  - &
+  - akut
+  - av
+  - diagnostisk
+  - gallstenssmärta
+  - laparoskopi
+  - misstolkas
+  - ofta
+  - post-bariatriskt
+  - radiologi
+  - slitsar
+  - slutning
+  - som
+  - trauma
+  - •
+- when_to_suspect:
+- discriminators:
+  - Radiologi
+- investigation:
+  - Trauma-CT (ABCDE)
+- initial_management:
+  - Trauma
+- definitive_management:
+  - Högenergitrauma
+  - Larm enligt ATLS
+- complications:
+  - •
+- pitfalls:
+  - A, B (Lungfönster):
+- memory_hooks: 
+---
+- area: Kolorektalkirurgi
+- entity: dMMR kontra pMMR vid kolorektalcancer
+- tags:
+  - diagnostik
+  - kolorektalkirurgi
+  - onkologi
+- when_to_suspect:
+  - Patologi/PAD av kolorektalcancer
+- discriminators:
+  - dMMR (Deficient Mismatch Repair): Hög mutationsbörda, mycket starkt svar på immunterapi
+  - pMMR (Proficient Mismatch Repair): Svarar dåligt på immunterapi, ges standardcytostatika
+- investigation:
+  - Immunhistokemi
+  - Mutationsanalys (MSI-high)
+- initial_management:
+- definitive_management:
+  - Anpassning av adjuvant onkologisk behandling
+- complications:
+- pitfalls:
+  - Att missa testa MSI/MMR och ge ineffektiv cellgiftsbehandling
+- memory_hooks: 
+---
+- area: Nedre GI
+- entity: Montreal-klassifikationen (Mb Crohn)
+- tags:
+  - gastroenterologi
+  - kirurgi
+  - klassifikation
+- when_to_suspect:
+  - Diagnostiserad Crohns sjukdom
+- discriminators:
+  - A (Age/Ålder vid diagnos)
+  - L (Location/Lokalisation)
+  - B (Behavior/Beteende - stenoserande, penetrerande etc)
+- investigation:
+  - Endoskopi, MR-tunn tarm
+- initial_management:
+- definitive_management:
+- complications:
+- pitfalls:
+- memory_hooks: 
+---
+- area: Nedre GI
+- entity: Modifierat Truelove-Witts index
+- tags:
+  - akut
+  - diagnostik
+  - gastroenterologi
+- when_to_suspect:
+  - Skov av Ulcerös kolit
+- discriminators:
+  - Avgör svårighetsgrad (Milt, Medelsvårt, Svårt) baserat på avföringsfrekvens (>6/dag), blod i avföring, puls, temp, Hb och CRP/SR.
+- investigation:
+  - Klinisk observation och blodprover
+- initial_management:
+  - Svårt skov kräver inläggning och iv steroider
+- definitive_management:
+- complications:
+  - Toxisk megakolon om felbedömt
+- pitfalls:
+- memory_hooks: 
+---
+- area: GI-Blödning
+- entity: Hb-målvärden vid transfusion
+- tags:
+  - akut
+  - kirurgi
+  - transfusionsmedicin
+- when_to_suspect:
+  - Blödande patient på akutrummet/avdelningen
+- discriminators:
+  - Restriktiv transfusionsstrategi ger bättre överlevnad
+- investigation:
+  - Hb-kontroller
+- initial_management:
+  - Transfundera om Hb <70 g/L (mål 70-90 g/L) hos friska
+  - Transfundera om Hb <90 g/L (mål 90-110 g/L) hos hjärtsjuka
+- definitive_management:
+- complications:
+- pitfalls:
+  - Att överskrida målet vilket ökar portatrycket och ger mer blödning
+- memory_hooks: 
+---
+- area: Övre GI / Pankreas
+- entity: Sentinel bleed
+- tags:
+  - akut
+  - kirurgi
+  - livshotande
+- when_to_suspect:
+  - Mindre övre GI-blödning hos patient med nylig pankreatit/pankreaskirurgi
+- discriminators:
+  - "Varningsblödning" som förebådar massiv ruptur av pseudoaneurysm (kärlskada från bukspott)
+- investigation:
+  - Akut CT-Angiografi
+- initial_management:
+  - Stabilisering
+- definitive_management:
+  - Angioembolisering av a. gastroduodenalis/a. splenica
+- complications:
+  - Katastrofal och dödlig hemmoragi inom timmar
+- pitfalls:
+  - Att skicka hem patienten pga att "blödningen avstannat"
+- memory_hooks: 
+---
+- area: Övre GI / Pankreas
+- entity: IPMN (Intraduktal papillär mucinös neoplasi)
+- tags:
+  - diagnostik
+  - gastroenterologi
+  - onkologi
+- when_to_suspect:
+  - Incidentellt fynd av cysta i pankreas på DT/MR
+- discriminators:
+  - Mucinproducerande. Malignt förstadium till pankreascancer. Huvudgångs-IPMN har mkt hög risk.
+- investigation:
+  - MR Pankreas, ev EUS
+- initial_management:
+- definitive_management:
+  - Pankreasresektion (Whipple) vid tecken på malignisering/huvudgångsengagemang
+- complications:
+- pitfalls:
+  - Att ignorera en "godartad cysta"
+- memory_hooks: 
+---
+- area: Övre GI / Lever
+- entity: Hepatocellulär cancer (Transplantationskriterier)
+- tags:
+  - kirurgi
+  - onkologi
+- when_to_suspect:
+  - Levercirros-patient med fokal förändring i levern
+- discriminators:
+  - AFP (Alfa-fetoprotein) är specifik tumörmarkör. Milano-kriterierna avgör transplantation.
+- investigation:
+  - 3-fas CT/MR lever
+  - AFP i blod
+- initial_management:
+- definitive_management:
+  - Levertransplantation om 1 tumör <5 cm, eller max 3 tumörer <3 cm (utan spridning). Annars resektion/ablation.
+- complications:
+- pitfalls:
+- memory_hooks: 
+---
+- area: GI-Blödning
+- entity: Vasopressin (Glypressin)
+- tags:
+  - akut
+  - farmakologi
+  - kirurgi
+- when_to_suspect:
+  - Övre GI-blödning, ffa varicer
+- discriminators:
+  - Sänker portatrycket genom kontraktion av splanknikuskärlen
+- investigation:
+- initial_management:
+  - Glypressin iv inför gastroskopi (tillsammans med PPI och antibiotika)
+- definitive_management:
+- complications:
+  - Ischemi (farligt vid kranskärlssjukdom)
+- pitfalls:
+  - Att vänta med att ge det till EFTER skopin
+- memory_hooks: 
+---
+- area: Nedre GI
+- entity: Blödande divertikel
+- tags:
+  - akut
+  - diagnostik
+  - kirurgi
+- when_to_suspect:
+  - Smärtfri och massiv färsk blödning per rektum hos äldre
+- discriminators:
+  - Massiv blödning kommer oftast från högerkolon (arteriellt från divertikel)
+- investigation:
+  - Akut rektoskopi för att utesluta rektalcancer, sedan koloskopi när tarmen är laxerad (eller angio)
+- initial_management:
+- definitive_management:
+  - Embolisering via angio eller laparotomi med kolondeklaration
+- complications:
+- pitfalls:
+  - MÅSTE betraktas som kolorektalcancer tills koloskopi bevisat motsatsen (koloskopi måste göras inom några veckor om blödningen stannar spontant)
+- memory_hooks: 

@@ -1,0 +1,1150 @@
+- area: Anatomi och status
+- entity: 2-punktsdiskrimination (2-PD)
+- tags:
+  - anatomi
+  - och
+  - status
+  - statusfynd
+  - trauma
+- when_to_suspect:
+  - Vid distalstatus e. handtrauma
+- discriminators:
+  - Instrumentet ska hållas i fingrets längdriktning
+  - Normalt ca 5 mm
+- investigation:
+  - Kliniskt test
+- initial_management:
+  - >10 mm indikerar allvarlig nervskada
+- definitive_management:
+  - Planera ev. nervsutur
+- complications:
+- pitfalls:
+  - Tentafälla: Test tvärs över fingret riskerar att stimulera 2 digitalnerver och maskera skada
+- memory_hooks: 
+---
+- area: Anatomi och status
+- entity: Vilotonus (flexionskaskad)
+- tags:
+  - akut
+  - anatomi
+  - kirurgi
+  - och
+  - status
+  - statusfynd
+- when_to_suspect:
+  - Akut sårskada på fingrar/hand
+- discriminators:
+  - Skadat finger ligger onormalt rakt i vila och saknar den normala lätta böjningen
+- investigation:
+  - Inspektion av vilotonus
+- initial_management:
+  - Isolera och testa böjsenor (FDS och FDP)
+- definitive_management:
+  - Kirurgi vid fastställd ruptur
+- complications:
+- pitfalls:
+  - Missas lätt om fokus enbart ligger på blödningen/såret
+- memory_hooks: 
+---
+- area: Akuta skador
+- entity: Böjseneskada
+- tags:
+  - akut
+  - akuta
+  - senskada
+  - skador
+- when_to_suspect:
+  - Sårskada volart
+  - Uträtat finger
+- discriminators:
+  - Avsaknad av flexionskaskad
+  - Oförmåga att aktivt flektera PIP (FDS) eller DIP (FDP)
+- investigation:
+  - Kliniskt distalstatus
+- initial_management:
+  - Smärtlindring, rengöring, planera operation
+- definitive_management:
+  - Sen-sutur inom 3 dgr
+  - Gummibandsdrag 4v (aktiv ext/passiv flex)
+- complications:
+  - Stor risk för sammanväxningar (adherenser) i senskidan
+- pitfalls:
+  - Tentafälla: FDP-test kräver blockering av övriga fingrars PIP-leder
+- memory_hooks: 
+---
+- area: Akuta skador
+- entity: Malletfinger (Droppfinger)
+- tags:
+  - akut
+  - akuta
+  - senskada
+  - skador
+- when_to_suspect:
+  - Slutet våld mot fingertopp
+  - Oförmåga att sträcka DIP
+- discriminators:
+  - Ändfalangen hänger passivt nedåt
+- investigation:
+  - Röntgen (uteslut avulsionsfraktur)
+- initial_management:
+  - DIP-led sätts i sträckt ortos/skena
+- definitive_management:
+  - Skena 6v dygnet runt, därefter 6v natt
+  - Op v. stora benfragment
+- complications:
+  - Subluxation av falangen
+- pitfalls:
+  - Proximal sträckseneskada (som oftare handläggs av ortoped)
+- memory_hooks: 
+---
+- area: Akuta skador
+- entity: Skidåkartumme (UCL-skada)
+- tags:
+  - akut
+  - akuta
+  - ligamentskada
+  - skador
+- when_to_suspect:
+  - Fall mot utsträckt tumme (ofta med stav)
+  - Ulnar smärta CMC-1
+- discriminators:
+  - Instabilitet v
+  - radiell vackling (viktigt att jämföra med frisk tumme)
+- investigation:
+  - Röntgen
+  - Stabilitetstest (sträckt och semiflex MCP)
+- initial_management:
+  - Gips vid partiell/stabil skada i 4-5v
+- definitive_management:
+  - Operation vid komplett ruptur/instabilitet
+- complications:
+  - Stenerlesion (ligament viks utanför adduktoraponeurosen, kan ej läka m
+  - gips)
+- pitfalls:
+  - Bennettfraktur
+- memory_hooks: 
+---
+- area: Akuta skador
+- entity: SL-dissociation
+- tags:
+  - akut
+  - akuta
+  - ligamentskada
+  - skador
+- when_to_suspect:
+  - Fall mot utsträckt handled
+  - Smärta dorsalt/radialt
+- discriminators:
+  - Positivt Watsons test (utbuktning/krepitation)
+  - Ökat avstånd scaph/lunate på rtg
+- investigation:
+  - Slätröntgen
+- initial_management:
+  - Om rtg neg men hög klinisk misstanke: Gips & ny rtg e
+  - 10-14 dgr
+- definitive_management:
+  - Titthåls-op inom 6v
+- complications:
+  - Obehandlat ger karpal kollaps och snabb artrosutveckling (SNAC)
+- pitfalls:
+  - Scaphoideumfraktur
+- memory_hooks: 
+---
+- area: Akuta skador
+- entity: TFCC-skada
+- tags:
+  - akut
+  - akuta
+  - ligamentskada
+  - skador
+  - trauma
+- when_to_suspect:
+  - Ulnar handledssmärta e. trauma eller belastning
+- discriminators:
+  - Ökad laxitet/smärta vid passiv ruckning av ulna volart-dorsalt
+- investigation:
+  - Kliniskt stabilitetstest (jämför med frisk sida)
+- initial_management:
+  - Sjukgymnastik i första hand
+- definitive_management:
+  - Operation vid utebliven effekt (tål ofta sen operation bra)
+- complications:
+  - ej tydligt angivet i källorna
+- pitfalls:
+  - Ulnarisinklämning i Guyons kanal
+- memory_hooks: 
+---
+- area: Akuta skador
+- entity: Ventral PIP-luxation
+- tags:
+  - akut
+  - akuta
+  - luxation
+  - skador
+- when_to_suspect:
+  - Fingerfelställning e. luxation
+- discriminators:
+  - Positivt Elsons test (indikerar ruptur av det centrala extensorbandet)
+- investigation:
+  - Röntgen
+- initial_management:
+  - Fingerbasblockad
+  - Sluten reposition i fingrets längsriktning
+- definitive_management:
+  - Ortos och tidig fysioterapi för att undvika stelhet
+- complications:
+  - Extrem risk för permanent ledstelhet
+  - Boutonnière-deformitet
+- pitfalls:
+  - Dorsal luxation (där istället volara plattan skadas)
+- memory_hooks: 
+---
+- area: Akuta skador
+- entity: Boxarfraktur
+- tags:
+  - akut
+  - akuta
+  - fraktur
+  - infektion
+  - skador
+- when_to_suspect:
+  - Knytnävsslag v. vägg eller mun
+- discriminators:
+  - Subcapitulär fraktur metacarpale V
+  - Volar vinkelfelställning
+- investigation:
+  - Röntgen
+- initial_management:
+  - Gips 3v i "Kobraposition"
+  - Stor volar vinkel tolereras ofta väl
+- definitive_management:
+  - Konservativ oftast
+  - Op vid extrem vinkel eller rotationsfelställning
+- complications:
+  - Sår över knogen = Fight bite! (Extrem risk för ilsken infektion)
+- pitfalls:
+  - Banal mjukdelsskada
+- memory_hooks: 
+---
+- area: Akuta skador
+- entity: Bennettfraktur
+- tags:
+  - akut
+  - akuta
+  - fraktur
+  - kirurgi
+  - skador
+  - trauma
+- when_to_suspect:
+  - Våld mot tumbas
+- discriminators:
+  - Intraartikulär i ulnara hörnet av metacarpale I
+  - Ledytehak
+  - Subluxationstendens pga APL-drag
+- investigation:
+  - Röntgen
+- initial_management:
+  - Bedöms instabil och i behov av kirurgi
+- definitive_management:
+  - Op med reponering och stift (ofta till MC II)
+- complications:
+  - Posttraumatisk artros om frakturen läker ojämt
+- pitfalls:
+  - Extraartikulär tumbasfraktur
+- memory_hooks: 
+---
+- area: Akuta skador
+- entity: Falangfraktur (rotation)
+- tags:
+  - akut
+  - akuta
+  - fraktur
+  - kirurgi
+  - skador
+  - trauma
+- when_to_suspect:
+  - Traumavåld mot fingrar
+- discriminators:
+  - Vid böjning ska alla fingrar konvergera mot tuberkulum scaphoidei
+- investigation:
+  - Klinisk undersökning av konvergens
+- initial_management:
+  - Kobrapositionsgips 3v vid odislocerad fx
+- definitive_management:
+  - Kirurgi vid upptäckt rotationsfelställning
+- complications:
+  - Irreversibel stelhet om man gipsar fingrar raka
+- pitfalls:
+  - Tentafälla: Rotationsfelställning är mkt svår/omöjlig att se på vanlig röntgen!
+- memory_hooks: 
+---
+- area: Akuta skador
+- entity: Scaphoideumfraktur
+- tags:
+  - akut
+  - akuta
+  - fraktur
+  - skador
+- when_to_suspect:
+  - Fall mot utsträckt handled
+- discriminators:
+  - Smärta vid axial belastning av tummen
+  - Ömhet i fossa tabatière
+- investigation:
+  - Röntgen
+  - Om neg: Gips och ny rtg/MR e. 10-14 dgr
+- initial_management:
+  - Lång gipstid (8-12v) vid okomplicerad fx
+- definitive_management:
+  - Operation m. skruv vid dislocerad fx
+- complications:
+  - Devaskularisering/nekros av proximal pol pga fraktur genom den retrograda blodförsörjningen
+- pitfalls:
+  - SL-dissociation
+- memory_hooks: 
+---
+- area: Akuta skador
+- entity: Scaphoideumpseudoartros
+- tags:
+  - akut
+  - akuta
+  - kirurgi
+  - komplikation
+  - skador
+- when_to_suspect:
+  - Missad/olekt fx m. kronisk smärta månader senare
+- discriminators:
+  - Fraktur som ej läkt och resorberats, synlig spalt
+- investigation:
+  - CT handled
+- initial_management:
+  - Planera kirurgisk åtgärd
+- definitive_management:
+  - Öppen reposition, bentransplantat från crista iliaca, fixation m stift/skruv
+- complications:
+  - Karpal kollaps / artros
+- pitfalls:
+  - Akut scaphoideumfraktur
+- memory_hooks: 
+---
+- area: Akuta skador
+- entity: Plexusskada / Horners
+- tags:
+  - akut
+  - akuta
+  - nervskada
+  - skador
+  - trauma
+- when_to_suspect:
+  - Högenergivåld (MC-olycka) m. dragvåld arm/nacke
+- discriminators:
+  - Svår smärta/armparalys
+  - Horners syndrom (Mios, Ptos, Enofthalmus)
+- investigation:
+  - Klinisk/Neurologisk
+- initial_management:
+  - Smärtlindring
+  - Akut handläggning av trauma
+- definitive_management:
+  - Nervtransferering/op vid resttillstånd sent
+- complications:
+  - Irreversibel motorisk paralys i armen
+- pitfalls:
+  - Isolerad perifer nervskada
+- memory_hooks: 
+---
+- area: Akuta skador
+- entity: Akut digitalnervsskada
+- tags:
+  - akut
+  - akuta
+  - kirurgi
+  - nervskada
+  - skador
+- when_to_suspect:
+  - Skärskada över fingrar
+- discriminators:
+  - Nedsatt 2-PD och avsaknad av svettfunktion
+- investigation:
+  - Distalstatus FÖRE ev. lokalbedövning
+- initial_management:
+  - Rengöring
+  - Suturering av epineurium m. mikrokirurgi
+- definitive_management:
+  - Prio vid op: Tumme, radialt dig 2, ulnart dig 5
+- complications:
+  - Köldkänslighet och ofullständig känsel hos vuxna
+- pitfalls:
+  - Tentafälla: Distalt om DIP-leden är nerver oftast för tunna för att sys
+- memory_hooks: 
+---
+- area: Akuta skador
+- entity: Kompartmentsyndrom
+- tags:
+  - akut
+  - akuta
+  - cirkulation/tryck
+  - skador
+- when_to_suspect:
+  - Klämskada/fx med oproportionerlig smärta
+- discriminators:
+  - "Pain out of proportion"
+  - Brädhårt ödem
+  - Extrem smärta v. passiv sträckning
+- investigation:
+  - Klinisk bedömning!
+- initial_management:
+  - Urakut fasciotomi (öppna alla compartments)
+- definitive_management:
+  - Sekundärsutur av huden efter att svullnaden lagt sig
+- complications:
+  - Irreversibel ischemisk muskel- och nervdöd inom timmar
+- pitfalls:
+  - Tentafälla: Arteriella pulsar bevaras extremt länge trots pågående ischemi!
+- memory_hooks: 
+---
+- area: Akuta skador
+- entity: Amputation/Replantation
+- tags:
+  - akut
+  - akuta
+  - handläggning
+  - skador
+  - trauma
+- when_to_suspect:
+  - Traumatiskt amputerad kroppsdel
+- discriminators:
+  - Amputatets ischemitid (muskel tål max 6h, isolerat finger 12-24h)
+- investigation:
+  - Inspektion av typ av våld (skarp vs slit)
+- initial_management:
+  - Amputat i fuktig kompress, stängd påse, sänkt i isvatten (4 grader)
+- definitive_management:
+  - Replantation v. stark indikation (Tumme)
+- complications:
+  - Frysskada/nekros på amputat om det lagts direkt på is
+- pitfalls:
+  - Isolerat pekfinger replanteras ogärna (långfingret tar över funktionen)
+- memory_hooks: 
+---
+- area: Akuta skador
+- entity: Mindre fingertoppsamputation
+- tags:
+  - akut
+  - akuta
+  - handläggning
+  - infektion
+  - skador
+- when_to_suspect:
+  - Skärskada på yttersta falangen
+- discriminators:
+  - Defekt m. god mjukvävnad, inget utstickande ben
+- investigation:
+  - Klinisk (rtg f. att utesluta benpåverkan)
+- initial_management:
+  - Konservativ omläggning
+- definitive_management:
+  - Sekundärläkning (ger överlägset bäst resultat för små defekter)
+- complications:
+  - Infektion
+- pitfalls:
+  - Suturera under stramhet ger sämre resultat
+- memory_hooks: 
+---
+- area: Akuta skador
+- entity: Större brännskador
+- tags:
+  - akut
+  - akuta
+  - handläggning
+  - skador
+- when_to_suspect:
+  - Brännskador över hand/arm
+- discriminators:
+  - Svårigheter att röra fingrar pga stramande sår
+- investigation:
+  - Djupbedömning
+- initial_management:
+  - Remiss plastikkirurg/handkirurg tidigt
+- definitive_management:
+  - Aggressiv tidig rörelseträning är avgörande
+- complications:
+  - Strama ärrkontrakturer som orsakar varaktig klo-hand om mobilisering dröjer
+- pitfalls:
+  - Tentafälla: Immobilisering är ofta förödande v
+  - brännskador
+- memory_hooks: 
+---
+- area: Elektiv kirurgi
+- entity: Karpaltunnelsyndrom (KTS)
+- tags:
+  - elektiv
+  - fysiologi
+  - kirurgi
+  - nervkompression
+- when_to_suspect:
+  - Nattliga domningar dig 1-3.5
+  - Fumlighet (vanligt hos gravida, RA, hypothyreos)
+- discriminators:
+  - Tinels/Phalens positivt
+  - Sänkt 2-PD dig 1-3
+  - Svag/atrofisk APB
+- investigation:
+  - Klinisk
+  - Ev. Neurofysiologi
+- initial_management:
+  - Nattskena i lätt extension (utvärdera e. 2 mån)
+- definitive_management:
+  - Op (klyvning av flexorretinaklet) v
+  - konstanta besvär eller muskelpåverkan
+- complications:
+  - Irreversibel thenaratrofi är absolut operationsindikation
+- pitfalls:
+  - Cervikalt diskbråck
+- memory_hooks: 
+---
+- area: Elektiv kirurgi
+- entity: Hög ulnariskompression
+- tags:
+  - elektiv
+  - fysiologi
+  - kirurgi
+  - nervkompression
+- when_to_suspect:
+  - Domning ulnart (dig 4-5)
+  - Symtom v. böjd armbåge (nattbesvär)
+- discriminators:
+  - Nedsatt känsel DORSALT ulnart
+  - Svag FDP5 + svag fingerspretning
+- investigation:
+  - Tinels v. armbåge
+  - Neurofysiologi
+- initial_management:
+  - Ortos över armbåge nattetid
+- definitive_management:
+  - Kirurgisk delning av fascia i armbågen
+- complications:
+  - Ulnaris-atrofi och bestående klo-hand
+- pitfalls:
+  - Låg ulnariskompression (Guyons kanal)
+- memory_hooks: 
+---
+- area: Elektiv kirurgi
+- entity: Låg ulnariskompression
+- tags:
+  - elektiv
+  - kirurgi
+  - nervkompression
+- when_to_suspect:
+  - Domning ulnart (dig 4-5) e
+  - yttre tryck (cykling/ganglion) mot handled
+- discriminators:
+  - BEVARAD känsel dorsalt (grenen har redan avgått)
+  - BEVARAD kraft i FDP5
+- investigation:
+  - Klinisk nervbedömning
+- initial_management:
+  - Eliminera bakomliggande orsak/yttre tryck
+- definitive_management:
+  - Kirurgi i Guyons kanal
+- complications:
+  - Atrofi interosséer
+- pitfalls:
+  - Hög ulnariskompression (Sulcus ulnaris)
+- memory_hooks: 
+---
+- area: Elektiv kirurgi
+- entity: Triggerfinger (Tendovaginitis stenosans)
+- tags:
+  - elektiv
+  - kirurgi
+  - senåkomma
+- when_to_suspect:
+  - Fingret fastnar flekterat
+  - Knäpper v. extension, ffa. morgon
+- discriminators:
+  - Förtjockad, öm knuta proximalt över senskidan (volart v
+  - MCP/distala böjvecket)
+- investigation:
+  - Klinisk
+- initial_management:
+  - Kortisoninjektion i senskidan + immobilisering
+- definitive_management:
+  - Operation (klyver A1-ligamentet) v
+  - utebliven kortisoneffekt
+- complications:
+  - Extrema sammanväxningar e
+  - upprepade kortisonsprutor
+- pitfalls:
+  - Dupuytrens kontraktur (knäpper ej)
+- memory_hooks: 
+---
+- area: Elektiv kirurgi
+- entity: De Quervains tendovaginit
+- tags:
+  - elektiv
+  - kirurgi
+  - senåkomma
+- when_to_suspect:
+  - Smärta över radialsida/tumbas vid repetitiva rörelser
+- discriminators:
+  - Positivt Finkelsteins test (krama tumme, ulnardeviera handled = skarp smärta)
+  - Ömhet 1:a senfacket
+- investigation:
+  - Klinisk
+- initial_management:
+  - NSAID, Ortos
+  - Kortisoninjektion
+- definitive_management:
+  - Operation (klyvning av 1:a dorsala senfacket)
+- complications:
+- pitfalls:
+  - Tumbasartros (CMC-1)
+- memory_hooks: 
+---
+- area: Elektiv kirurgi
+- entity: Tumbasartros (CMC-1)
+- tags:
+  - artros
+  - elektiv
+  - kirurgi
+- when_to_suspect:
+  - Värk vid belastning (öppna burkar)
+  - Ofta kvinna >45
+- discriminators:
+  - Positivt Grinding test (smärta/krepitation v
+  - axial kompression + rotation i MC-1)
+- investigation:
+  - Röntgen (sänkt ledspringa, osteofyter)
+- initial_management:
+  - Ortos, NSAID, Kortison
+- definitive_management:
+  - Interpositionsplastik (exciderar trapezium)
+- complications:
+  - Handikappande vilovärk/nattvärk
+- pitfalls:
+  - De Quervains tendovaginit
+- memory_hooks: 
+---
+- area: Elektiv kirurgi
+- entity: DIP-ledsartros
+- tags:
+  - artros
+  - elektiv
+  - kirurgi
+- when_to_suspect:
+  - Värk, stelhet och svullnad över yttersta fingerlederna
+- discriminators:
+  - Heberdenknutor (benpålagringar på ändfalangerna)
+- investigation:
+  - Klinisk
+  - Röntgen
+- initial_management:
+  - Info, arbetsterapeut, utprovning av hjälpmedel
+- definitive_management:
+  - Steloperation (artrodes) vid grav smärta
+- complications:
+  - Rörelseinskränkning i DIP
+- pitfalls:
+  - Reumatoid Artrit (som extremt sällan drabbar DIP isolerat)
+- memory_hooks: 
+---
+- area: Elektiv kirurgi
+- entity: Dupuytrens kontraktur
+- tags:
+  - bindvävssjukdom
+  - elektiv
+  - kirurgi
+- when_to_suspect:
+  - "Vikingasjukan", fingrar böjs sakta inåt mot handflatan (oftast smärtfritt)
+- discriminators:
+  - Palpabla strama strängar volart i handflatan
+  - Böjsenorna är helt normala och opåverkade
+- investigation:
+  - Klinisk
+- initial_management:
+  - Exspektans tills kontraktur >30 grader
+- definitive_management:
+  - Nålfasciotomi
+  - Kollagenasinjektion (Xiapex)
+  - Öppen kirurgi
+- complications:
+  - Frekventa recidiv är standard
+- pitfalls:
+  - Triggerfinger (som engagerar själva senan)
+- memory_hooks: 
+---
+- area: Elektiv kirurgi
+- entity: Ganglion
+- tags:
+  - cysta
+  - elektiv
+  - kirurgi
+- when_to_suspect:
+  - Knuta oftast dorsalt över handled (eller volart radialt)
+- discriminators:
+  - Fast, lätt fluktuerande
+  - Innehåller klar, trögflytande gelé/ledvätska (Backventil mot leden)
+- investigation:
+  - Klinisk
+- initial_management:
+  - Information om att den ofta går i spontan regress
+- definitive_management:
+  - Punktion (50% recidiv) eller öppen kirurgi v
+  - smärta (20% recidiv)
+- complications:
+  - Operation garanterar ej bot (hög recidivrisk)
+- pitfalls:
+  - Malignitet (neurom/fibrom)
+- memory_hooks: 
+---
+- area: Elektiv kirurgi
+- entity: Reumatoid Artrit (Hand)
+- tags:
+  - autoimmun
+  - elektiv
+  - kirurgi
+- when_to_suspect:
+  - Symmetrisk kronisk ledvärk, morgonstelhet
+- discriminators:
+  - Ulnardrift av fingrar i MCP-leder
+  - Kompensatorisk radialdeviation av handleden
+- investigation:
+  - Reumatologisk provtagning
+- initial_management:
+  - Läkemedelsbehandling via reumatolog
+- definitive_management:
+  - Synovektomi, ledproteser, steloperation, sentransferering
+- complications:
+  - Spontan senruptur orsakad av erosion
+- pitfalls:
+  - Artros
+- memory_hooks: 
+---
+- area: Elektiv kirurgi
+- entity: CRPS
+- tags:
+  - elektiv
+  - infektion
+  - kirurgi
+  - smärtsyndrom
+  - trauma
+- when_to_suspect:
+  - Orimlig kvarstående smärta efter läkning av litet trauma/fraktur
+- discriminators:
+  - Oproportionerlig smärta, glansig/fuktig/avvikande hud, svullnad och allodyni
+- investigation:
+  - Klinisk uteslutningsdiagnos
+- initial_management:
+  - Snar och intensiv sjukgymnastik
+  - NSAID
+- definitive_management:
+  - Långvarig multimodalt smärtteam
+- complications:
+  - Tentafälla: Immobilisering är KONTRAINDICERAT och förvärrar tillståndet katastrofalt
+- pitfalls:
+  - Kvarstående infektion
+- memory_hooks: 
+---
+- area: Infektion
+- entity: Ospecifik bakteriell infektion
+- tags:
+  - akut
+  - bakteriell
+  - infektion
+  - kirurgi
+  - trauma
+- when_to_suspect:
+  - Svullnad/smärta efter trauma/sår
+- discriminators:
+  - Saknar ofta initialt feber eller CRP-stegring (lurigt!)
+- investigation:
+  - Odling från var/vävnad
+- initial_management:
+  - Kirurgi urakut för tryckavlastning
+- definitive_management:
+  - Ab iv riktad mot odlingssvar
+- complications:
+  - Trycknekros i fingrets isolerade compartments
+- pitfalls:
+  - Stafylokocker är absolut vanligast, tentafälla att tro annat
+- memory_hooks: 
+---
+- area: Infektion
+- entity: Pulpainfektion
+- tags:
+  - akut
+  - bakteriell
+  - infektion
+- when_to_suspect:
+  - Bultande extrem smärta i fingerblomma
+- discriminators:
+  - Spänd pulpa som bildar ett kompartmentsyndrom i miniatyr (pga fibrösa septa)
+- investigation:
+  - Klinisk
+- initial_management:
+  - Ab vid mycket lindrigt skede
+- definitive_management:
+  - Urakut op v abscessmisstanke: Incision där man MÅSTE dela ALLA septa
+- complications:
+  - Snabb och massiv vävnadsnekros av fingertoppen pga tryck
+- pitfalls:
+  - Akut paronyki (som är mycket ytligare)
+- memory_hooks: 
+---
+- area: Infektion
+- entity: Akut paronyki
+- tags:
+  - akut
+  - bakteriell
+  - infektion
+- when_to_suspect:
+  - Smärta och varbildning runt nageln
+- discriminators:
+  - Infektionen begränsad till mjukvävnad runt nagelkanten/under nagel
+- investigation:
+  - Klinisk
+- initial_management:
+  - Ab och alsolomslag
+- definitive_management:
+  - Incision och dränage (ofta precis under nageln)
+- complications:
+  - Direkt djup spridning till pulpan
+- pitfalls:
+  - Pulpainfektion
+- memory_hooks: 
+---
+- area: Infektion
+- entity: Purulent Tendovaginit
+- tags:
+  - akut
+  - bakteriell
+  - infektion
+  - trauma
+- when_to_suspect:
+  - Snabbt förlopp, svullet finger, ofta penetrerande trauma i anamnes
+- discriminators:
+  - Kanavels tecken (viktigast är stark smärta vid passiv extension, halvböjt finger i vila)
+- investigation:
+  - Klinisk (Vänta ej på blodprover!)
+- initial_management:
+  - Urakut incision + Spolning av senskida + Ab iv
+- definitive_management:
+  - Klinisk re-evaluering e
+  - ca 6h m
+  - ställningstagande till ny operation/spolning
+- complications:
+  - Adherenser och senruptur
+  - "Hästskoabscess" (spridning dig 1->5 v handled)
+- pitfalls:
+  - Septisk artrit
+- memory_hooks: 
+---
+- area: Infektion
+- entity: Septisk artrit (Fingrar)
+- tags:
+  - akut
+  - bakteriell
+  - infektion
+- when_to_suspect:
+  - Urakut tilltagande smärta, oftast efter DIREKT inokulation (sår/bett)
+- discriminators:
+  - Rött, maxömhet lokalt över ledspringa, extremt inskränkt rörlighet
+- investigation:
+  - Klinisk (punktion är oftast omöjlig i små fingrar)
+- initial_management:
+  - Akut öppen operation m. spolning av led + Ab iv
+- definitive_management:
+  - Gips de första dagarna, ab p.o. 4-6v
+- complications:
+  - Broskdestruktion påbörjas av immunreaktionen INOM 24H!
+- pitfalls:
+  - Tendovaginit
+- memory_hooks: 
+---
+- area: Infektion
+- entity: Osteit / Osteomyelit
+- tags:
+  - beninfektion
+  - infektion
+  - kirurgi
+- when_to_suspect:
+  - Långdragen svullnad e
+  - öppen fx/sår (direkt inokulation är vanligast i hand)
+- discriminators:
+  - Syns ofta inte på rtg förrän i mycket sent skede
+- investigation:
+  - Odling, ev benbiopsi
+- initial_management:
+  - Ab iv, ev kirurgisk debridering
+- definitive_management:
+  - Långdragen Ab-behandling (minst 6 veckor)
+- complications:
+  - Amputation vid uttalad bendestruktion
+- pitfalls:
+  - Hematogen osteit (som främst ses hos barn)
+- memory_hooks: 
+---
+- area: Infektion
+- entity: Nekrotiserande fasciit
+- tags:
+  - akut
+  - infektion
+  - livshotande
+- when_to_suspect:
+  - Blixtsnabbt förlopp e
+  - obetydligt sår, snabb allmänpåverkan
+- discriminators:
+  - "Pain out of proportion"
+  - Intensiv smärta v
+  - passiv sträckning m
+  - normal hud tidigt
+- investigation:
+  - Klinisk bedömning (Får ej dröja för rtg/lab)
+- initial_management:
+  - URAKUT operation: fascioektomi (skär bort fascia m god marginal)
+- definitive_management:
+  - IVA-vård, bredspektrum Ab, ev. Tryckkammare
+- complications:
+  - Snabb utveckling av septisk chock och död
+- pitfalls:
+  - Banal infektion / kompartmentsyndrom
+- memory_hooks: 
+---
+- area: Infektion
+- entity: Djurbett (katt/hund)
+- tags:
+  - bettskada
+  - infektion
+- when_to_suspect:
+  - Djupa punktionshål (ffa katt)
+  - Blixtsnabba symtom (inom 24h)
+- discriminators:
+  - Stark misstanke om Pasteurella multocida
+- investigation:
+  - Odling innan ab insätts
+- initial_management:
+  - Ska alltid lämnas öppna efter spolning! (Suturera ej)
+- definitive_management:
+  - Profylax m
+  - Kåvepenin/Amimox (Pasteurella är ofta resistent mot Fluklox/Klinda)
+- complications:
+  - Instängd abscess / osteit
+- pitfalls:
+  - Okontaminerat skärsår
+- memory_hooks: 
+---
+- area: Infektion
+- entity: Människobett (Fight bite)
+- tags:
+  - bettskada
+  - infektion
+- when_to_suspect:
+  - Sår dorsalt över MCP-led e
+  - knytnävsslag mot tänder
+- discriminators:
+  - Exceptionellt patogen munflora (streptokocker)
+  - Såret "göms" när knuten näve öppnas
+- investigation:
+  - Rtg f att hitta ben-/tand-fragment i leden
+- initial_management:
+  - Spolas ÖPPET på operation. Lämna öppet.
+- definitive_management:
+  - Tetanus/Smittscreening
+  - Spektramox v. sen infektion
+- complications:
+  - Instängd infektion leder ofelbart till septisk artrit och broskdöd
+- pitfalls:
+  - Banaltt skrubbsår (Döljer allvaret!)
+- memory_hooks: 
+---
+- area: Plastik
+- entity: Lambåindikation
+- tags:
+  - kirurgi
+  - mjukdelstäckning
+  - plastik
+  - trauma
+- when_to_suspect:
+  - Sår där djupa strukturer blottats efter trauma/fascioektomi
+- discriminators:
+  - Exponerat ben utan periost ELLER exponerad sena utan paratenon
+- investigation:
+  - Kirurgisk / Klinisk
+- initial_management:
+  - Rengöring, smärtlindring, förbered kirurgi
+- definitive_management:
+  - Frilambå / lokal lambå (Medför egen kärlförsörjning)
+- complications:
+  - Nekros om delhudstransplantat läggs på vävnad utan kärlbädd
+- pitfalls:
+  - Ytliga hudsår (som kan sekundärläka/delhudstäckas)
+- memory_hooks: 
+---
+- area: Status/Undersökning
+- entity: 2-PD mätning
+- tags:
+  - diagnostik
+  - handkirurgi
+  - neurologi
+- when_to_suspect:
+  - Utvärdering av nervskada/nervkompression i fingrar
+- discriminators:
+  - Verktyget/gem ska sättas längs med fingrets LÄNGDRIKTNING.
+- investigation:
+- initial_management:
+- definitive_management:
+- complications:
+- pitfalls:
+  - Sätts den på tvären (sida-till-sida) riskerar man att stimulera både den ulnara och radiala digitalnerven samtidigt, vilket ger falskt normalt resultat vid en partiell nervskada.
+- memory_hooks: 
+---
+- area: Senor
+- entity: Flexionskaskad (Vilotonus)
+- tags:
+  - diagnostik
+  - handkirurgi
+  - traumatologi
+- when_to_suspect:
+  - Skärskada volart/palmart på handen
+- discriminators:
+  - Normalt är fingrarna lätt böjda i vila (flexionskaskad), med ökande flexion från pekfinger till lillfinger.
+- investigation:
+  - Inspektion (be patienten slappna av i handen). Avsaknad av tonus i ett finger = utsträckt finger.
+- initial_management:
+- definitive_management:
+  - Kirurgisk exploration och sensutur
+- complications:
+- pitfalls:
+  - Att tro att senan är hel bara för att patienten kan böja lite (det kan vara tenodeseffekt) när vilotonus saknas.
+- memory_hooks: 
+---
+- area: Nerver
+- entity: Akut nervsutur (Prioritering)
+- tags:
+  - handkirurgi
+  - traumatologi
+- when_to_suspect:
+  - Multipla digitalnervskador
+- discriminators:
+  - De viktigaste känselområdena för funktion är tummens och pekfingrets volara/radiala sida (för pincettgreppet) samt lillfingrets ulnara sida (kantslag/skydd mot brännskador).
+- investigation:
+- initial_management:
+- definitive_management:
+  - Vid omfattande skador med tidsbrist sutureras dessa prioriterade nerver först.
+- complications:
+- pitfalls:
+- memory_hooks: 
+---
+- area: Ledsjukdom/Trauma
+- entity: Ventral PIP-ledsluxation
+- tags:
+  - handkirurgi
+  - ortopedi
+  - trauma
+- when_to_suspect:
+  - Luxation av proximala interfalangealleden mot volarsidan
+- discriminators:
+  - Mycket allvarligare än dorsal luxation. Innebär alltid en ruptur av extensoraponeurosens centrala band (central slip).
+- investigation:
+  - Elsons test (pat böjer PIP 90 grader mot motstånd - DIP ska bli slapp. Om DIP sträcks rigidt = central bandskada)
+- initial_management:
+- definitive_management:
+  - Ortos med PIP i extansion 6 veckor.
+- complications:
+  - Utveckling av Boutonnière-deformitet (knapphålsdeformitet) om det missas
+- pitfalls:
+- memory_hooks: 
+---
+- area: Ben/Fraktur
+- entity: Scaphoideumpseudoartros
+- tags:
+  - handkirurgi
+  - ortopedi
+- when_to_suspect:
+  - Smärta i fossa tabatiere månader/år efter obehandlat fall
+- discriminators:
+  - Utebliven benläkning av scaphoideumfraktur med risk för carpal kollaps (SNAC-wrist)
+- investigation:
+  - Röntgen och CT handled
+- initial_management:
+- definitive_management:
+  - Öppen operation med urfräsning av nekros + inläggning av spongiöst bentransplantat (ofta från crista iliaca) + skruv.
+- complications:
+- pitfalls:
+- memory_hooks: 
+---
+- area: Reumatologi/Artros
+- entity: Reumatoid Handdeformitet
+- tags:
+  - diagnostik
+  - handkirurgi
+  - reumatologi
+- when_to_suspect:
+  - Deformerade händer hos pat med RA
+- discriminators:
+  - Ulnardrift av fingrarna i MCP-lederna kombinerat med Radialdeviation i radiokarpalleden (handleden sjunker ihop mot radius).
+- investigation:
+- initial_management:
+  - Systemisk DMARD-behandling via reumatolog
+- definitive_management:
+  - Artrodes eller artroplastik (t.ex. silikonled i MCP)
+- complications:
+- pitfalls:
+- memory_hooks: 
+---
+- area: Reumatologi/Artros
+- entity: Heberdenknutor
+- tags:
+  - diagnostik
+  - handkirurgi
+  - reumatologi
+- when_to_suspect:
+  - Ömmande och uppdrivna knogar distalt hos äldre kvinnor
+- discriminators:
+  - Osteofyter och artrosbildning specifikt i DIP-lederna. (Till skillnad från Bouchardknutor som sitter i PIP-lederna). Stark ärftlighet.
+- investigation:
+  - Röntgen
+- initial_management:
+- definitive_management:
+- complications:
+- pitfalls:
+  - Att tro det är RA (som drabbar PIP och MCP, men skonar DIP)
+- memory_hooks: 
+---
+- area: Nerver/Plexus
+- entity: Plexus Brachialis Skada + Horners syndrom
+- tags:
+  - handkirurgi
+  - neurologi
+  - trauma
+- when_to_suspect:
+  - Allvarligt MC-trauma / dragvåld mot hals/arm
+- discriminators:
+  - Samtidig förekomst av Mios (liten pupill), Ptos (hängande ögonlock) och Enofthalmus (insjunket öga) på samma sida som armförlamningen.
+- investigation:
+- initial_management:
+- definitive_management:
+  - Avulsionsskada (roten har slitits ut UR ryggmärgen) av C8-T1. Extremt dålig prognos och ej suturerbar.
+- complications:
+- pitfalls:
+- memory_hooks: 
+---
+- area: Plastik/Sår
+- entity: Blottat ben / Sena
+- tags:
+  - handkirurgi
+  - plastikkirurgi
+  - sårvård
+- when_to_suspect:
+  - Djup mjukdelsskada med förlust av vävnad
+- discriminators:
+  - Rent ben utan periost (benhinna) och sena utan paratenon saknar kärlförsörjning i ytan.
+- investigation:
+- initial_management:
+- definitive_management:
+  - MÅSTE täckas med en kirurgisk lambå (hud+underhud med egen blodförsörjning). Kan ALDRIG täckas med enbart delhudstransplantat eftersom det kräver en vaskulariserad bädd för att läka in.
+- complications:
+  - Nekros av sena och infektion i ben (osteit)
+- pitfalls:
+- memory_hooks: 

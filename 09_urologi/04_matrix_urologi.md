@@ -1,0 +1,856 @@
+- area: Akut urologi
+- entity: Akut urinretention
+- tags:
+  - akut
+  - tillstånd
+  - urologi
+- when_to_suspect:
+  - Total oförmåga att kissa
+  - Smärta i nedre buken
+- discriminators:
+  - Extremt smärtsamt (till skillnad från kronisk)
+  - Residualurin >300 ml
+- investigation:
+  - Bladderscan
+  - Kreatinin, Kalium
+- initial_management:
+  - Avlasta med KAD/tappningskateter
+  - Tappa ur och dra kateter om volymen är <700 ml
+- definitive_management:
+  - Behandla grundorsak (t.ex
+  - kraftig förstoppning är vanligaste orsak hos unga friska kvinnor)
+- complications:
+  - Post-distensionshematuri (tryckfall får kärl att brista)
+  - Inläggning om samtidig feber (sepsisrisk)
+- pitfalls:
+  - Förväxlas med kronisk retention
+- memory_hooks: 
+---
+- area: Akut urologi / LUTS
+- entity: Kronisk urinretention / Ischuria paradoxa
+- tags:
+  - /
+  - akut
+  - livshotande
+  - luts
+  - tillstånd
+  - urologi
+- when_to_suspect:
+  - Långvariga tömningsbesvär
+  - Överrinningsinkontinens (droppar urin pga överfylld, slapp blåsa)
+- discriminators:
+  - Ofta helt smärtfri trots enorm volym (>1 liter)
+  - Påverkade njurvärden
+- investigation:
+  - Bladderscan
+  - Alltid P-Kreatinin och Kalium
+- initial_management:
+  - Sätt KAD långsamt
+  - Inläggning om Krea >200 eller om elektrolytrubbning
+- definitive_management:
+  - KAD/RIK i väntan på ev. TUR-P
+- complications:
+  - Uremi
+  - Livshotande hyperkalemi
+  - Posturemisk polyuri (tvingar fram massiv vätskeförlust)
+- pitfalls:
+  - Att tolka överrinningsläckage som ansträngningsinkontinens (livsfarlig fälla)
+- memory_hooks: 
+---
+- area: Akut urologi / Sten
+- entity: Avstängd pyelit
+- tags:
+  - /
+  - akut
+  - infektion
+  - sten
+  - urakut
+  - urologi
+- when_to_suspect:
+  - Intervallartad flanksmärta övergår i ihållande smärta
+  - Feber (>38,5) och frossa
+- discriminators:
+  - Obstruktion (ofta uretärsten) syns på sten-CT
+  - Höga infektionsparametrar
+- investigation:
+  - Sten-CT (utan kontrast)
+  - Blod/Urinodling
+- initial_management:
+  - ABCDE + iv vätska
+  - Sätt in iv bredspektrumantibiotika (Pip/Taz)
+- definitive_management:
+  - Urakut avlastning med perkutan nefropyelostomi (P-kateter)
+  - Stenavlägsnande i lugnt skede
+- complications:
+  - Snabb utveckling till urosepsis
+  - Total njurinfarkt på timmar
+- pitfalls:
+  - Att operera bort stenen akut istället för att bara dränera (ger septisk chock)
+- memory_hooks: 
+---
+- area: Akut urologi
+- entity: Testistorsion
+- tags:
+  - akut
+  - ischemi
+  - urakut
+  - urologi
+- when_to_suspect:
+  - Plötslig skrotal smärta, ofta unga killar
+  - Illamående/kräkning
+- discriminators:
+  - Utslagen cremasterreflex
+  - Testikeln är uppdragen och snedställd
+  - Upphävt doppler-flöde
+- investigation:
+  - Klinisk diagnos
+  - UL med doppler
+- initial_management:
+  - Fasta
+  - Akut urolog/kirurg-kontakt
+- definitive_management:
+  - Akut friläggning och detorkvering
+  - Orkidopexi (syr fast testiklarna)
+- complications:
+  - Irreversibel ischemisk nekros om operation >6h
+- pitfalls:
+  - Förväxla med epididymit
+  - Låta ett ultraljud fördröja akut exploration (tidsfönstret är <6h)
+- memory_hooks: 
+---
+- area: Akut urologi
+- entity: Epididymit (Bitestikel-inflammation)
+- tags:
+  - akut
+  - infektion
+  - urologi
+- when_to_suspect:
+  - Gradvis ökande smärta/svullnad lokalt i bitestikeln
+  - UVI-symtom/feber
+- discriminators:
+  - Bibehållen cremasterreflex
+  - Ökat blodflöde på UL
+  - Positiv urinsticka (ofta E.coli/KAD-bärare)
+- investigation:
+  - Urinodling
+  - Ev UL för diff-dx
+- initial_management:
+  - Peroral antibiotika (Kinolon t.ex
+  - Ciprofloxacin alt
+  - Eusaprim)
+- definitive_management:
+  - 3-4 veckors AB-kur
+  - MÅSTE utvärderas med klinisk palpation och UL efter 4-6 veckor
+- complications:
+  - Abscessbildning
+  - Obehandlat ger risk för infertilitet
+- pitfalls:
+  - Att missa bakomliggande testikelcancer (den maskeras av inflammation, därav kravet på 4-6v UL-kontroll)
+- memory_hooks: 
+---
+- area: Akut urologi
+- entity: Priapism (Ischemisk vs Högflödes)
+- tags:
+  - /
+  - akut
+  - fistel
+  - ischemi
+  - kirurgi
+  - trauma
+  - urologi
+- when_to_suspect:
+  - Förlängd, mycket smärtsam erektion >4h utan sexuell stimulans (lågflödes)
+- discriminators:
+  - Blodgas (kavernös): Lågflödes har pH < 7,25 (acidos/hypoxi)
+  - Högflödes har pH >7,25
+- investigation:
+  - Kavernös blodgas
+  - Läkemedels/drog-anamnes
+- initial_management:
+  - Penisblockad
+  - Aspirera blod
+  - Injektion alfa-agonist (Fenylefedrin/Adrenalin) i corpus cavernosum
+- definitive_management:
+  - Ev. kirurgisk distal shunt vid lågflödes
+  - Högflödes (trauma-orsakad) exspekteras ofta
+- complications:
+  - Irreversibel svällkroppsskada och permanent ED (lågflödes)
+- pitfalls:
+  - Förväxla den o-smärtsamma, traumaorsakade högflödespriapismen med den livsfarliga ischemiska lågflödespriapismen
+- memory_hooks: 
+---
+- area: Akut urologi
+- entity: Parafimosis
+- tags:
+  - akut
+  - stas/ödem
+  - urologi
+- when_to_suspect:
+  - Smärtsam, svullen ollonkrage
+  - KAD-sättning (personal glömt dra fram förhuden)
+- discriminators:
+  - Inspektion (retraherad förhud som fastnat som en stramande klämring bakom glans)
+- investigation:
+  - Klinisk diagnos
+- initial_management:
+  - Smärtlindring (Xylocain-gel)
+  - Manuell kompression i flera minuter + reponera
+- definitive_management:
+  - Dorsalklipp akut om reponering misslyckas
+  - Circumcision i lugnt skede
+- complications:
+  - Nekros/gangrän i ollonet pga nedsatt venöst återflöde
+- pitfalls:
+  - Förväxlas med fimosis (som är en kroniskt trång förhud som INTE går att dra bak)
+- memory_hooks: 
+---
+- area: Akut urologi
+- entity: Penisfraktur
+- tags:
+  - akut
+  - trauma
+  - urologi
+- when_to_suspect:
+  - "Knäckande" ljud vid erektion (ofta sex)
+  - Omedelbar förlust av erektion
+  - Kraftig smärta
+- discriminators:
+  - Hematom typ "aubergine"
+  - Ruptur av tunica albuginea
+- investigation:
+  - MR penis (visar exakt var defekten i kapseln är)
+- initial_management:
+  - Akut urologkontakt
+  - Inspektion efter uretrablod
+- definitive_management:
+  - Akut operation inom 72h (suturera tunica)
+- complications:
+  - Samtidig uretraskada hos 10% (ger makrohematuri)
+  - Framtida krökning/ED
+- pitfalls:
+  - Att tro att penis faktiskt innehåller skelett – det är bindvävskapseln (tunica) som klyvs
+- memory_hooks: 
+---
+- area: Kateterteknik & Trauma
+- entity: Uretratrauma vid bäckenfraktur
+- tags:
+  - &
+  - kateterteknik
+  - trauma
+  - traumakomplikation
+- when_to_suspect:
+  - Trauma med misstänkt bäckenfraktur
+  - Blod ur uretramynningen (meatus)
+- discriminators:
+  - Sipprande blod
+  - Ofta kombinerat med urinretention (spänd över symfysen)
+- investigation:
+  - Trauma-CT / Retrograd uretrografi
+- initial_management:
+  - KONTRAINDICERAT att sätta KAD
+- definitive_management:
+  - Avlasta med Suprapubisk kateter (SPK)
+  - Urologbedömning för reparation
+- complications:
+  - Komplett uretraavslitning
+- pitfalls:
+  - Livsfarlig fälla: Att försöka sätta KAD via penis på en person med meatus-blod efter trauma – förstör uretra helt
+- memory_hooks: 
+---
+- area: Akut urologi / Onkologi
+- entity: Kraftig Makrohematuri / Blåstamponad
+- tags:
+  - /
+  - akut
+  - blödning
+  - onkologi
+  - urologi
+- when_to_suspect:
+  - Röd/porterfärgad urin med sega koagler
+  - Smärta i blåsan vid tamponad
+- discriminators:
+  - Koagler i urinblåsan tyder på massiv/pågående blödning (oftast tumör eller post-op)
+- investigation:
+  - SVF-utredning för makrohematuri (>50 år): Cystoskopi + CT-Urografi
+- initial_management:
+  - Sätt in mycket grov, styv hematurikateter (Trevägs, Ch20-22)
+  - Handspola kraftigt (upp till 4 liter)
+- definitive_management:
+  - Akut blåsevakuering/TUR-B på op om spolning ej löser blödningen
+  - Fasta
+- complications:
+  - Blåstamponad (livshotande, mekaniskt stopp)
+  - Anemisering
+- pitfalls:
+  - Att försöka spola ut koagler med en mjuk KAD (Foley/Tiemann) – den kollapsar när man suger på sprutan
+- memory_hooks: 
+---
+- area: Stensjukdom
+- entity: Njursten / Uretärsten
+- tags:
+  - akut
+  - i
+  - obstruktion
+  - stensjukdom
+  - urinvägar
+  - övre
+- when_to_suspect:
+  - Akut, intervallartad intensiv flanksmärta med utstrålning
+  - Motorisk oro (patienten kan ej sitta still)
+- discriminators:
+  - Njursten syns bäst på CT (stenar är kompakta, hyperdensa)
+  - Mikrohematuri hos >80%
+- investigation:
+  - Sten-CT UTAN kontrast (kontrast döljer stenen)
+- initial_management:
+  - Smärtlindra med NSAID (Diklofenak 50-75 mg im)
+  - Det hämmar PG, minskar diures/tryck + relaxerar ureterspasm
+- definitive_management:
+  - Exspektans vid okomplicerad sten <5 mm enligt "555-regeln" (spontan avgång inom 5 veckor)
+  - Vidare: ESVL eller Uretäroskopi (URS)
+- complications:
+  - Missa feber (tecken på avstängd pyelit!) vilket direkt kräver inläggning
+  - Tyst njurskada över tid
+- pitfalls:
+  - Att förväxla stillaliggande smärta (peritonit) med orolig stensmärta
+  - Att inte följa upp med kontroll-CT "släpp aldrig en sten"
+- memory_hooks: 
+---
+- area: Stensjukdom
+- entity: Njursten hos gravida
+- tags:
+  - fysiologi
+  - komplicerad
+  - stensjukdom
+  - uretärsten
+- when_to_suspect:
+  - Flanksmärta under graviditet (ofta 2:a-3:e trimestern)
+  - Illamående/kräkningar
+- discriminators:
+  - Fysiologisk hydronefros vs obstruktiv hydronefros (svårbedömt)
+- investigation:
+  - Ultraljud njurar i första hand (för att undvika strålning)
+- initial_management:
+  - Smärtlindra med Paracetamol/Opiater i samråd med obstetriker
+  - OBS: NSAID kontraindicerat i 3:e trimestern
+- definitive_management:
+  - Konservativ exspektans
+  - Ev. P-kateter (ESVL/URS är kontraindicerat/svårt)
+- complications:
+  - Prematur slutning av fostrets ductus arteriosus vid givet NSAID
+  - ABU (asymtomatisk bakteriuri)
+- pitfalls:
+  - Att rutinmässigt ge Diklofenak till en höggradigt gravid kvinna med stensmärta
+- memory_hooks: 
+---
+- area: Stensjukdom
+- entity: Infektionsstenar
+- tags:
+  - infektion
+  - kronisk
+  - stensjukdom
+  - urinvägssten
+- when_to_suspect:
+  - Återkommande urinvägsinfektioner
+  - Proteus-infektioner
+- discriminators:
+  - Består av Magnesiumammoniumfosfat
+  - Orsakas av ureas-producerande bakterier (höjer pH i urinen)
+- investigation:
+  - Urinodling
+  - Sten-CT
+- initial_management:
+  - Antibiotika och kartläggning
+- definitive_management:
+  - Bildar ofta enorma korallstenar som fyller njurbäckenet
+  - Kräver i regel Perkutan stenextraktion (PCNL) för borttagning
+- complications:
+  - Njurdestruktion
+  - Kronisk sepsis-risk
+- pitfalls:
+  - Att tro att dessa löser upp sig med alkalisering (de fäller ju ut i alkaliskt urin/högt pH)
+- memory_hooks: 
+---
+- area: Urologisk Onkologi
+- entity: Prostatacancer
+- tags:
+  - malignitet
+  - onkologi
+  - urologisk
+- when_to_suspect:
+  - Ofta helt asymtomatiskt! Uppdagas vid screening
+  - Högt PSA
+- discriminators:
+  - MR (PIRADS-skala) styr misstanke
+  - Asymmetrisk, oöm knölighet utan mittfåra per rektum (DRE)
+  - ISUP/Gleason avgör histologisk grad
+- investigation:
+  - S-PSA
+  - MR Prostata innan biopsi tas (riktade biopsier mot MR-fynd är standard)
+- initial_management:
+  - Riskgruppsindelning utifrån PSA, MR, Biopsi
+  - Aktiv monitorering som förstahandsval vid lågrisk
+- definitive_management:
+  - Radikal prostatektomi ELLER Strålning (de är kurativa och jämställda vid mellan-/högrisk)
+- complications:
+  - Strålproktit (rektal blödning/diarré pga strålad tarm)
+  - Inkontinens (20%) och ED efter operation
+- pitfalls:
+  - Att inte veta att 5-alfareduktashämmare (Finasterid) halverar PSA, man MÅSTE dubbla provsvaret annars missas cancer
+- memory_hooks: 
+---
+- area: Urologisk Onkologi
+- entity: Urotelial Blåscancer
+- tags:
+  - i
+  - malignitet
+  - onkologi
+  - urologisk
+  - urotelet
+- when_to_suspect:
+  - Smärtfri makroskopisk hematuri (kardinalsymtom, >80%)
+  - Ofta rökare eller yrkesexponerad (anilin/färgämnen)
+- discriminators:
+  - T-stadiet definierar biologi: T2 innebär ner i muskeln (detrusor), vilket är en farlig milstolpe
+- investigation:
+  - SVF-utredning med Cystoskopi (tittar i blåsan) och CT-Urografi
+- initial_management:
+  - TUR-B (Transuretral resektion av blåsan) är centralt för både resektion och diagnostik (PAD)
+- definitive_management:
+  - Ytlig (Ta, T1, Tis): Adjuvant BCG-sköljning
+  - Muskelinvasiv (>T2): Neoadjuvant Cytostatika + Radikal Cystektomi m
+  - Bricker-stomi
+- complications:
+  - Mycket hög dödlighet pga mikrometastaser vid T2+
+  - Fältcancerisering ger ständiga lokala recidiv
+- pitfalls:
+  - Att ignorera hematuri hos >50 åring som "enkel UVI"
+  - All makrohematuri MÅSTE få en SVF-remiss
+- memory_hooks: 
+---
+- area: Urologisk Onkologi
+- entity: Njurcancer (RCC)
+- tags:
+  - malignitet
+  - medicin
+  - onkologi
+  - urologisk
+- when_to_suspect:
+  - Ofta asymtomatiska bifynd (incidentalom) på CT (>50%)
+  - "Internmedicinarens tumör"
+- discriminators:
+  - Klassisk triad (smärta, blod, palpabel tumör) är numera extremt ovanlig
+  - Paramaligna fenomen: 3-siffrig SR, hyperkalcemi, anemi
+- investigation:
+  - CT Buk i 3-fas med kontrast (laddar upp mjukdelstumör)
+  - CT Thorax (lungmet)
+- initial_management:
+  - Biopsi övervägs sällan vid klara fall.
+- definitive_management:
+  - <4-7 cm (T1): Nefronsparande partiell nefrektomi
+  - Större/Central: Radikal nefrektomi
+- complications:
+  - Tumören älskar kärl och växer upp som tumörtromber i v
+  - renalis och vena cava
+  - Kan blockera testisvenen och ge varicocele!
+- pitfalls:
+  - Att missa snabbt debuterande varicocele på en vuxen man (det MÅSTE njur-utredas)
+- memory_hooks: 
+---
+- area: Urologisk Onkologi
+- entity: Testikelcancer (Seminom / Non-seminom)
+- tags:
+  - germinalcellscancer
+  - onkologi
+  - urologisk
+- when_to_suspect:
+  - Unga män 20-40 år (toppincidens)
+  - Ensidig asymmetrisk, hård och oöm resistens i själva testikelkroppen
+- discriminators:
+  - Tumören kan INTE genomlysas med ficklampa (skiljer från hydrocele)
+  - Positiva tumörmarkörer: hCG, AFP och S-LD
+- investigation:
+  - Ultraljud testikel
+  - Tumörmarkörer i blod
+- initial_management:
+  - Extremt snabbt handläggning, op inom 1 vecka!
+  - Frysning av spermier
+- definitive_management:
+  - Radikal inguinal orkidektomi (tas bort via ljumsken för att undvika tumörspridning i pungen)
+  - Adjuvant Singel-Carboplatin (vid Seminom T1 >4cm)
+- complications:
+  - Spridning retroperitonealt
+  - Livslång påverkan av stark cytostatika (BEP)
+- pitfalls:
+  - Att ta biopsi rakt genom huden på pungen
+  - LIVSFARLIGT pga spridning längs stickkanalen
+- memory_hooks: 
+---
+- area: Urologisk Onkologi
+- entity: Peniscancer
+- tags:
+  - kirurgi
+  - onkologi
+  - skivepitelcancer
+  - urologisk
+- when_to_suspect:
+  - Sår eller förhårdnad på penis/förhud som inte läker
+- discriminators:
+  - Fimosis (trång förhud) + HPV 16/18 är de absolut starkaste etiologiska faktorerna
+- investigation:
+  - Biopsi
+  - Sentinel node
+- initial_management:
+  - Remiss hud/urolog för SVF
+- definitive_management:
+  - Kirurgi m marginal
+  - Omskärelse till partiell/total amputation
+- complications:
+  - Om metastasrisk T1G2+ (medelhög) krävs sentinel node eller lymfkörtelutrymning
+  - Ödem/Lymfocele efter utrymning
+- pitfalls:
+  - Förväxlas kliniskt ofta med benigna sår tills biopsi bekräftar diagnos
+- memory_hooks: 
+---
+- area: Nedre urinvägar & LUTS
+- entity: Benign Prostatahyperplasi (BPH)
+- tags:
+  - &
+  - körteltillväxt
+  - luts
+  - nedre
+  - obstruktiv
+  - urinvägar
+- when_to_suspect:
+  - LUTS, specifikt tömningssymtom (startsvårigheter, svag stråle, krystmiktion)
+  - Symmetriskt förstorad, slät, mjuk prostata per rektum
+- discriminators:
+  - Objektivt avflödeshinder: Tidsmiktion (tid att kissa första 100ml >16 sek)
+  - Miktionslista för objektiv diures/läckage
+- investigation:
+  - IPSS-enkät
+  - Bladderscan & Residualurin
+  - P-Krea, U-sticka
+- initial_management:
+  - 1) Alfablockerare (t.ex
+  - Alfuzosin) verkar snabbt avslappnande på blåshalsen
+  - 2) 5ARI (Finasterid) krymper prostatan efter 6-12 månader
+- definitive_management:
+  - TUR-P ("hyvling" via urinrör) är standard-operation vid misslyckad läkemedelsbehandling
+- complications:
+  - Absoluta OP-indikationer: Återkommande UVI, Blåssten, svår Retention eller njurpåverkan (Krea-stegring)
+- pitfalls:
+  - Missa IPSS-frågeformulärets värde som behandlingsstyrare
+- memory_hooks: 
+---
+- area: Nedre urinvägar & LUTS
+- entity: Överaktiv blåsa (ÖAB) / Trängningsinkontinens
+- tags:
+  - &
+  - /
+  - lagringssymtom
+  - luts
+  - nedre
+  - urgency
+  - urinvägar
+- when_to_suspect:
+  - Snabbt påkomna urinträngningar (urgency) ofta kombinerat med läckage (trängningsinkontinens)
+- discriminators:
+  - Minimal till ingen residualurin (till skillnad från BPH/kronisk retention)
+- investigation:
+  - Miktionslista
+  - Bladderscan
+  - Uteslut UVI med sticka
+- initial_management:
+  - Uteslut andra diff-diagnoser (sten, cancer)
+- definitive_management:
+  - 1. Antikolinergika (Tolterodin) hämmar blåsmuskeln
+  - 2. Beta-3-agonist (Betmiga) relaxerar blåsan
+- complications:
+  - Antikolinergika-biverkningar: Extrem muntorrhet, obstipation, och kontraindicerat vid Glaukom eller Myasthenia gravis
+- pitfalls:
+  - Att sätta in antikolinergika på en man med BPH/obstruktion
+  - orsakar total urinstämma
+- memory_hooks: 
+---
+- area: Nedre urinvägar & LUTS
+- entity: Ansträngningsinkontinens
+- tags:
+  - &
+  - luts
+  - nedre
+  - stress-inkontinens
+  - urinvägar
+- when_to_suspect:
+  - Hos kvinnor (särskilt parida)
+  - Läckage vid nysning, hosta eller ansträngning utan trängningskänsla
+- discriminators:
+  - Fysiskt intraabdominellt tryck överstiger sfinkterns stängningstryck mekaniskt
+- investigation:
+  - Gyn-undersökning
+  - Urinmätning
+- initial_management:
+  - Bäckenbottenträning (Kegel-övningar)
+- definitive_management:
+  - Operationsmetoder, t.ex
+  - TVT-slynga (ej djupt täckt i urologikurser, skickas gyn)
+- complications:
+  - Negativ påverkan på livskvalitet
+- pitfalls:
+  - Förväxlas med överrinningsinkontinens (Ischuria paradoxa) pga att båda fuktar underkläderna vid aktivitet
+- memory_hooks: 
+---
+- area: Nedre urinvägar & LUTS
+- entity: Hypoton blåsa / Neurogen blåsrubbning
+- tags:
+  - &
+  - iatrogen
+  - kirurgi
+  - luts
+  - nedre
+  - nervskada
+  - urinvägar
+- when_to_suspect:
+  - Utvecklas svårigheter att tömma blåsan efter radikal bäckencancerkirurgi (rektum/hysterektomi)
+- discriminators:
+  - Skada på perifera autonoma plexus i bäckenet gör att m
+  - detrusor (blåsmuskeln) blir slapp/förlamad
+- investigation:
+  - Bladderscan
+  - Cystometri
+- initial_management:
+  - RIK (Ren intermittent kateterisering)
+- definitive_management:
+  - Livslång kateter i värsta fall
+- complications:
+  - Kronisk urinretention
+- pitfalls:
+  - Att tolka det som ett rent mekaniskt avflödeshinder, när det i själva verket saknas pumptryck i blåsan
+- memory_hooks: 
+---
+- area: Andrologi
+- entity: Erektil dysfunktion (ED)
+- tags:
+  - andrologi
+  - dysfunktion
+  - vaskulär/neurogen
+- when_to_suspect:
+  - Sviktande erektion, saknar nattliga/morgonerektioner hos män ffa >50 år
+  - Förlust av sexuell förmåga
+- discriminators:
+  - Plötslig uppkomst av erektil dysfunktion hos i övrigt frisk man ska väcka oro för "farligt" bakomliggande tillstånd
+- investigation:
+  - CVD-Riskfaktorutredning: B-glukos, lipider, BT, BMI
+  - S-Testosteron (för att utesluta brist/låg libido)
+- initial_management:
+  - Uteslut depression/psykogen orsak
+  - Se över Läkemedel (betablockerare)
+- definitive_management:
+  - PDE5-hämmare (Sildenafil, Cialis) förlänger cGMP och relaxerar svällkroppar (kräver dock sexuell lust/stimuli)
+- complications:
+  - Livshotande hjärtinfarkt! (Artärerna i penis är mindre än kranskärlen, varför de slammar igen först, ED är en tidig röd flagga!)
+- pitfalls:
+  - ABSOLUT KONTRAINDIKATION: Samtidigt bruk av Nitroglycerin och PDE5-hämmare ger djupt livshotande blodtrycksfall
+- memory_hooks: 
+---
+- area: Andrologi
+- entity: Hypogonadism (Testosteronbrist)
+- tags:
+  - andrologi
+  - hormonbrist
+- when_to_suspect:
+  - Nedsatt sexlust (libido), kronisk trötthet, ingen orgasmlust
+  - Försvunna morgonerektioner
+- discriminators:
+  - S-Testosteron <8 nmol/L är behandlingskrävande
+  - Högt S-SHBG (binder upp/avaktiverar testosteron)
+- investigation:
+  - Blodprov: P-Testosteron, LH, SHBG x 2
+- initial_management:
+  - Testosteron MÅSTE dras fastande på morgonen innan kl 10, efter god nattvila (följer dygnsrytm)
+- definitive_management:
+  - Testosteron-ersättning
+- complications:
+  - Testikulär (primär) orsak verifieras av ett
+- pitfalls:
+  - högt
+- memory_hooks: 
+---
+- area: • Att ta P-Testosteron hos en stressad man sent på eftermiddagen ger falskt låga "sjukliga" värden
+- entity: 
+- tags:
+  - "sjukliga"
+  - att
+  - eftermiddagen
+  - en
+  - falskt
+  - ger
+  - hos
+  - kirurgi
+  - låga
+  - man
+  - p-testosteron
+  - på
+  - radiologi
+  - sent
+  - stressad
+  - ta
+  - värden
+  - •
+- when_to_suspect:
+  - Njursystor (Bosniak-klassificering)
+- discriminators:
+  - Cystisk förändring
+- investigation:
+  - Ofta slumpmässiga radiologiska fynd i njuren hos äldre patienter på datortomografi
+- initial_management:
+  - Bosniak 1-2 är okomplicerade enkla tunnväggiga vattencystor
+  - Bosniak 3-4 = Komplicerade
+- definitive_management:
+  - CT Buk m kontrast / MR för bedömning
+- complications:
+  - Bosniak 1-2 kan avfärdas och exspekteras direkt, ingen uppföljning krävs
+- pitfalls:
+  - Komplicerade cystor med septa (mellanväggar), förkalkningar eller solid tumörvävnad (Bosniak 3-4) kräver kirurgi (nefrektomi/resektion)
+- memory_hooks: 
+---
+- area: Nedre urinvägar
+- entity: Ischuria paradoxa (Överrinningsinkontinens)
+- tags:
+  - akut
+  - nefrologi
+  - urologi
+- when_to_suspect:
+  - Äldre man som söker för nylig, konstant droppande inkontinens
+- discriminators:
+  - Mycket stort urinretention (>1-2 liter i blåsan) orsakar att trycket överstiger sfinkterns motstånd. Det "rinner över". LÖMSKT TILLSTÅND döljt som "inkontinens".
+- investigation:
+  - Bladderscan
+  - Kreatinin i blod
+- initial_management:
+  - Akut KAD! (Obs polyurifas efteråt)
+- definitive_management:
+- complications:
+  - Bilateral hydronefros -> Postrenal njursvikt -> Uremi -> Död
+- pitfalls:
+  - Att diagnosticera som vanlig trängningsinkontinens och skicka hem utan att göra bladderscan
+- memory_hooks: 
+---
+- area: Trauma
+- entity: Uretraskada
+- tags:
+  - traumatologi
+  - urologi
+- when_to_suspect:
+  - Trauma mot bäcken/perineum (ex. gränsle-fall eller bäckenfraktur)
+- discriminators:
+  - Blod från meatus uretras (urinrörsmynningen) är ett absolut varningstecken
+- investigation:
+  - Retrograd uretrografi innan instrumentering
+- initial_management:
+  - Anlägg suprapubisk kateter (Cystofix) istället för KAD
+- definitive_management:
+- complications:
+  - Falska vägar och total uretrariktur (striktur)
+- pitfalls:
+  - Att okritiskt försöka trycka in en KAD via urinröret och förvärra den partiella bristningen till en totalruptur
+- memory_hooks: 
+---
+- area: LUTS / BPH
+- entity: Operationsindikationer för BPH
+- tags:
+  - kirurgi
+  - urologi
+- when_to_suspect:
+  - Patient med godartad prostataförstoring (BPH)
+- discriminators:
+  - Lindriga LUTS följs med medicinsk exspektans. Men ABSOLUTA operationsindikationer (TUR-P) trumfar mediciner.
+- investigation:
+- initial_management:
+- definitive_management:
+  - OP-kriterier: Återkommande urinstämmor, Återkommande UVI pga resturin, Njurpåverkan (postrenalt hinder), Makroskopisk hematuri, eller Blåsstenar.
+- complications:
+- pitfalls:
+- memory_hooks: 
+---
+- area: Njurcancer
+- entity: Paramaligna njurcancersymtom
+- tags:
+  - diagnostik
+  - onkologi
+  - urologi
+- when_to_suspect:
+  - Internmedicinsk patient med oförklarlig SR-stegring och trötthet
+- discriminators:
+  - Njurcancer kallas "Internmedicinarens tumör" pga uttalade systemeffekter.
+  - Ofta ingen hematuri förrän sent.
+- investigation:
+  - DT Buk med njurfas
+- initial_management:
+- definitive_management:
+  - Nefrektomi
+- complications:
+- pitfalls:
+  - Tredelade klassikern (hög sänka, anemi eller polycytemi, och hyperkalcemi). Missas ofta vid "trötthetsutredning".
+- memory_hooks: 
+---
+- area: LUTS / BPH
+- entity: Tidsmiktion
+- tags:
+  - diagnostik
+  - urologi
+- when_to_suspect:
+  - LUTS-utredning på vårdcentral för att bekräfta avflödeshinder
+- discriminators:
+  - Enkelt objektivt test
+- investigation:
+  - Tiden det tar att kissa de första 100 ml uppmäts.
+  - Normalt < 12 sekunder.
+  - >16 sekunder innebär obstruktion i urinröret (BPH/striktur).
+- initial_management:
+- definitive_management:
+- complications:
+- pitfalls:
+- memory_hooks: 
+---
+- area: Andrologi
+- entity: Testosteronbrist
+- tags:
+  - andrologi
+  - endokrinologi
+  - urologi
+- when_to_suspect:
+  - Minskad libido, impotens, svettningar, minskad muskelmassa
+- discriminators:
+  - Tydligt laboratoriekriterium för diagnos och subvention.
+- investigation:
+  - S-Testosteron (tas FÖRE kl 10:00 på morgonen).
+  - Värde < 8 nmol/L indikerar brist. (Gränszon 8-12 nmol/L).
+- initial_management:
+  - Uteslut orsak (prolaktinom, hypofyssvikt)
+- definitive_management:
+  - Substitution med Testosterongel eller injektioner
+- complications:
+- pitfalls:
+  - Att ta provet kl 15:00 på eftermiddagen (värdet är naturligt mycket lägre då, vilket ger falsk diagnos).
+- memory_hooks: 
+---
+- area: Urolitiasis
+- entity: 555-regeln vid Njursten
+- tags:
+  - handläggning
+  - urologi
+- when_to_suspect:
+  - Njurstensanfall bekräftat med CT-urinvägar
+- discriminators:
+  - Minnesregel för spontanavgang och uppföljning
+- investigation:
+- initial_management:
+  - Stenar < 5 mm passerar nästan alltid spontant.
+  - Stenen förväntas passera inom 5 veckor.
+  - CT-uppföljning görs med lågdos protokoll (kräver strålskydd, max tillåten 5 mSv).
+- definitive_management:
+  - ESVL eller Uretäroskopi om stenen är större eller inte gått ut.
+- complications:
+- pitfalls:
+- memory_hooks: 

@@ -1,0 +1,1712 @@
+[
+  {
+    "id": "KIR_ONKOLOGI_001",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "Neutropen feber",
+    "typ": "definition",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken av följande definitioner stämmer bäst in på neutropen feber enligt onkologins riktlinjer?",
+    "alternativ": {
+      "A": "Leukocyter &lt; 3,0 och en kroppstemperatur över 37,5 grader",
+      "B": "Neutrofila &lt; 0,5 och en engångstemperatur över 38,5 (eller &gt;38,0 vid två tillfällen)",
+      "C": "Neutrofila &lt; 1,5 och en kroppstemperatur över 39,0 grader",
+      "D": "CRP &gt; 100 och LPK &lt; 5,0 oavsett kroppstemperatur"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Definitionen är klassiskt neutropeni (&lt;0,5) plus antingen en engångstemp på &gt;38,5 eller &gt;38 vid två separata tillfällen.",
+    "varför_övriga_fel": "Det krävs specifikt neutropeni (&lt;0,5), inte bara allmän leukopeni, samt tydlig temperaturstegring. CRP är inte en del av grunddefinitionen.",
+    "källa": "Onkologi Akut onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_002",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "Neutropen feber",
+    "typ": "fysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Under vilken tidsperiod inträffar vanligen den djupaste neutropenin (nadir) efter avslutad cytostatikabehandling?",
+    "alternativ": {
+      "A": "Inom 24 till 48 timmar",
+      "B": "Dag 3 till 5",
+      "C": "Dag 7 till 14 (ofta kring dag 10)",
+      "D": "Efter 3 till 4 veckor"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Nadir, då de vita blodkropparna når sin lägsta nivå, inträffar vanligen cirka 7 till 14 dagar (ofta kring dag 10) efter cytostatikabehandlingen.",
+    "varför_övriga_fel": "Benmärgen hinner inte sluta producera och tömma sina förråd på bara ett par dagar, och efter 3 veckor har produktionen normalt börjat återhämta sig.",
+    "källa": "Akut onkologi_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_003",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "Neutropen feber",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket empiriskt antibiotikaval rekommenderas generellt i första hand som intravenös behandling vid neutropen feber?",
+    "alternativ": {
+      "A": "Bensylpenicillin i högdos",
+      "B": "Ciprofloxacin po",
+      "C": "Piperacillin-Tazobactam (ofta 4g x 4)",
+      "D": "Doxycyklin iv"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Vid neutropen feber krävs ett brett spektrum med god Gram-negativ (inklusive Pseudomonas) och anaerob täckning, där Piperacillin-Tazobactam (Pip-Taz) är standard.",
+    "varför_övriga_fel": "Bensylpenicillin är för smalt. Perorala preparat är otillräckliga i det akuta skedet. Doxycyklin saknar adekvat täckning för de farligaste sepsis-agensen i detta läge.",
+    "källa": "Onkologi Akut onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_004",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "Neutropen feber",
+    "typ": "patofysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vid en neutropen sepsis rör det sig i många fall om en s.k. 'autoinfektion'. Vad är den huvudsakliga bakomliggande mekanismen till detta hos cancerpatienter?",
+    "alternativ": {
+      "A": "Cytostatika skadar mag-tarmkanalens slemhinnebarriär, vilket gör att den egna normalfloran läcker ut i blodbanan hos en patient utan immunförsvar.",
+      "B": "Patienten smittar sig själv via aerosoler från sina egna luftvägar när de hostar.",
+      "C": "Cytostatika bryter ned gamla vilande virus i nervganglier som reaktiveras.",
+      "D": "Infektionen drivs alltid av kontaminerade infarter (CVK/Piccline)."
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Tarmslemhinnan har en snabb celldelning och skadas därför svårt av cytostatika. Detta tillsammans med brist på neutrofiler gör att den egna tarmfloran sprids till blodet.",
+    "varför_övriga_fel": "CVK-infektioner förekommer, men 'autoinfektion' syftar ffa på den endogena tarmflorans translokation på grund av mukosit och barriärskada.",
+    "källa": "Akut onkologi_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_005",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "Neutropen feber",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "När en patient inkommer till akuten med manifest neutropen feber, ska du då akut ge G-CSF (benmärgsstimulerande faktor)?",
+    "alternativ": {
+      "A": "Ja, det är den viktigaste åtgärden för att akut höja neutrofilerna.",
+      "B": "Nej, G-CSF rekommenderas inte vid manifest infektion då det inte hinner ha önskad effekt och riskerar förvärra förloppet.",
+      "C": "Ja, men endast om patienten har ett LPK under 0,1.",
+      "D": "Nej, G-CSF är helt kontraindicerat för alla patienter som genomgått kurativ behandling."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "G-CSF används framgångsrikt som profylax dagar efter cytostatikagivan för att förhindra neutropeni, men när patienten väl utvecklat en neutropen sepsis är det för sent att ge G-CSF akut då det inte hjälper det akuta förloppet.",
+    "varför_övriga_fel": "Det hinns inte med att bygga upp benmärgen akut under en brinnande sepsis. Man ska förlita sig på bredspektrumantibiotika och vätska.",
+    "källa": "Onkologi Akut onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_006",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "Medullakompression",
+    "typ": "symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket är det allra vanligaste debutsymtomet hos patienter med metastasorsakad ryggmärgskompression (medullakompression)?",
+    "alternativ": {
+      "A": "Avföringsinkontinens",
+      "B": "Plötslig urinretention",
+      "C": "Smärta i rygg eller nacke (exempelvis nattetid eller vid belastning)",
+      "D": "Paralys (total förlamning) i båda benen"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Upp till 80-90% av patienterna debuterar med ryggsmärta som första symtom, ofta smygande över veckor, innan några motoriska eller sfinkter-relaterade bortfall tillträder.",
+    "varför_övriga_fel": "Förlamning och sfinkterproblem (inkontinens/retention) är mycket allvarliga sena symtom. Smärtan kommer först.",
+    "källa": "Onkologi Akut onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_007",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "Medullakompression",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Du misstänker starkt en medullakompression med neurologisk påverkan. Vilken farmakologisk åtgärd gör du omgående på akuten, innan röntgen?",
+    "alternativ": {
+      "A": "Sätter in högdos paracetamol intravenöst",
+      "B": "Sätter in högdos kortison (ex. Betapred 16 mg x2)",
+      "C": "Ger en akut injektion av cytostatika",
+      "D": "Administrerar en opioidrotation"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Högdos kortison (ofta 16 mg Betapred) minskar omedelbart ödemet kring metastasen och lindrar därmed trycket på ryggmärgen, vilket räddar nervfunktion i väntan på definitiv åtgärd.",
+    "varför_övriga_fel": "Analgetika (paracetamol/opioider) döljer bara smärtan men minskar inte trycket. Cytostatika verkar inte tillräckligt snabbt.",
+    "källa": "Onkologi Akut onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_008",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "Medullakompression",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken radiologisk undersökning ska beställas akut (inom 24h) för att bekräfta misstänkt ryggmärgskompression?",
+    "alternativ": {
+      "A": "DT ländrygg",
+      "B": "MR helrygg",
+      "C": "Slätröntgen ryggrad",
+      "D": "Skelettscintigrafi"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "MR helrygg är guldstandard. Det är kritiskt att avbilda hela ryggen då det kan finnas multipla kompressionsnivåer (även om symtomen verkar sitta lägre ned).",
+    "varför_övriga_fel": "DT och slätröntgen visar ben men är dåliga på att visualisera ryggmärg och mjukdelstryck. Endast ländrygg missar den vanligaste nivån (bröstryggen).",
+    "källa": "Onkologi Akut onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_009",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "Medullakompression",
+    "typ": "fakta",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken del av kotpelaren är den absolut vanligaste lokalisationen för metastasorsakad medullakompression?",
+    "alternativ": {
+      "A": "Cervikalryggen",
+      "B": "Bröstryggen (ca 60%)",
+      "C": "Ländryggen",
+      "D": "Sacrum"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "I cirka 60 % av fallen sitter kompressionen thorakalt (i bröstryggen), även om symtomen märks som svaghet i benen.",
+    "varför_övriga_fel": "Thorakalryggen är statistiskt vanligast för metastasnedslag som trycker på märgen, jämfört med hals eller ländrygg.",
+    "källa": "Onkologi Akut onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_010",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "VCSS",
+    "typ": "symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken symtombild är mest klassisk för Vena Cava Superior-Syndrom (VCSS)?",
+    "alternativ": {
+      "A": "Ena benet svullnar upp och blir kraftigt smärtande",
+      "B": "Svullnad, rodnad/cyanos i ansikte och hals, samt synliga venkollateraler över bröstkorgen",
+      "C": "Akut och kraftig buksmärta med blodiga kräkningar",
+      "D": "Ensidig fascialispares (ansiktsförlamning) och talsvårigheter"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Avflödeshinder i vena cava superior orsakar venös stas från övre kroppshalvan, vilket resulterar i svullet ansikte/hals, dyspné och ytliga venkollateraler.",
+    "varför_övriga_fel": "Bensvullnad är DVT eller VCI-syndrom. Fascialispares är stroke/tumör i CNS. Buksmärta rör ej övre venerna.",
+    "källa": "Akut onkologi_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_011",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "VCSS",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Förutom syrgas, vilken initial icke-farmakologisk/fysisk åtgärd bör vidtas direkt på akuten för att lindra dyspnén hos en patient med VCSS?",
+    "alternativ": {
+      "A": "Placera patienten i s.k. hjärtsängläge (halvsittande) för att minska det venösa trycket i halsen",
+      "B": "Placera patienten i plant ryggläge med benen högt",
+      "C": "Lägg patienten i bukläge för att avlasta ryggen",
+      "D": "Genomför omedelbar HLR"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Gravitationen hjälper blodet att rinna tillbaka om patienten sitter upp. Ett halvsittande läge dämpar stasen och svullnaden i halsen markant.",
+    "varför_övriga_fel": "Plant läge eller benen högt kommer omedelbart att förvärra stasen, dyspnén och kvävningskänslan hos en VCSS-patient.",
+    "källa": "Akut onkologi_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_012",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "VCSS",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken radiologisk metod används i första hand akut för att verifiera diagnosen VCSS?",
+    "alternativ": {
+      "A": "Slätröntgen av hjärtat",
+      "B": "DT thorax med venös kontrast",
+      "C": "MR av halsryggen",
+      "D": "Skelettscintigrafi"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "DT thorax med intravenös kontrast i venfas krävs för att visualisera kärlen och bevisa att Vena Cava Superior är komprimerad eller ockluderad av en tumör.",
+    "varför_övriga_fel": "Slätröntgen kan ibland visa breddökad mediastinum men kan inte bedöma blodflödet i venen. MR tar för lång tid.",
+    "källa": "Onkologi Akut onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_013",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "Hjärnmetastas",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "medel",
+    "fråga": "En 60-årig patient inkommer efter ett första krampanfall. Man misstänker symptomgivande hjärnmetastas. Varför är DT Hjärna med kontrast att föredra framför utan kontrast här?",
+    "alternativ": {
+      "A": "Utan kontrast syns hjärnmetastaser mycket dåligt då de är svåra att särskilja från omgivande hjärnparenkym.",
+      "B": "Kontrastmedlet minskar kramprisken omedelbart.",
+      "C": "Det krävs kontrast för att avgöra om det föreligger en blödning.",
+      "D": "Kontrast används enbart för att förbereda patienten för operation."
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Metastaser laddar kontrast pga bruten blod-hjärnbarriär. Utan kontrast smälter de ofta in i hjärnvävnadens gråskala och kan lätt missas.",
+    "varför_övriga_fel": "DT utan kontrast är bäst för att akut se färskt blod (blödning), inte tumörer. Kontrast har ingen antiepileptisk effekt.",
+    "källa": "Akut onkologi_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_014",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "Hjärnmetastas",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är den primära farmakologiska åtgärden för att akut bryta/profylaktera mot fokala neurologiska bortfall orsakade av hjärnmetastaseringens ödem?",
+    "alternativ": {
+      "A": "Vätskedrivande (Furix) iv",
+      "B": "Högdos kortison (ex. Betapred) i nedtrappningsschema",
+      "C": "Antibiotika i högdos",
+      "D": "Opioider i högdos"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Kortison (Betapred) har en oerhört snabb och effektiv avsvällande verkan på det vasogena hjärnödemet som omger metastaserna, vilket lindrar trycket och neurologiska symtom.",
+    "varför_övriga_fel": "Diuretika hjälper dåligt mot vasogent ödem från tumörer. Opioider döljer smärta men sänker andningen. Antibiotika är för infektion.",
+    "källa": "Onkologi Akut onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_015",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "Immunterapi-biverkningar",
+    "typ": "symtom",
+    "svårighetsgrad": "medel",
+    "fråga": "En patient som behandlas med immunterapi (PD-1 hämmare) söker pga 7 stycken slemtillblandade avföringar per dygn samt buksmärta. Vilken biverkning misstänker du starkast?",
+    "alternativ": {
+      "A": "Cytostatikautlöst neutropeni",
+      "B": "Immunrelaterad kolit",
+      "C": "Gastrointestinal blödning från tumören",
+      "D": "Svampinfektion i esofagus"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ökad avföringsfrekvens med slem och buksmärta hos en immunterapibehandlad patient är den klassiska bilden av en immunrelaterad kolit, en autoimmun inflammation i tarmen.",
+    "varför_övriga_fel": "Det är en typisk biverkning av checkpoint-hämmare. Neutropeni hör till cytostatika. Blödning ger melena/hematemes snarare än bara slemmig diarré.",
+    "källa": "Onkologi Akut onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_016",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "Immunterapi-biverkningar",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är den generella grundpelaren i behandlingen av allvarliga immunterapirelaterade biverkningar (s.k. 'it-er')?",
+    "alternativ": {
+      "A": "Omedelbar bredspektrumantibiotika",
+      "B": "Kortison (ofta högdos, exv Prednisolon/Betapred) samt behandlingspaus",
+      "C": "Kirurgisk resektion av det drabbade organet",
+      "D": "Fortsätta immunterapin men i halverad dos"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Immunterapi tar bort immunförsvarets bromsar, vilket leder till autoimmunitet. Detta dämpas bäst med immunsuppression i form av kortison.",
+    "varför_övriga_fel": "Man minskar inte dosen på immunterapi, utan man pausar/avbryter och behandlar inflammationen med kortison. Antibiotika hjälper ej autoimmunitet.",
+    "källa": "Onkologi Akut onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_017",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "Tumörlyssyndrom",
+    "typ": "mekanism",
+    "svårighetsgrad": "medel",
+    "fråga": "Tumörlyssyndrom är en potentiellt livshotande behandlingskomplikation. Vad orsakar detta rent patofysiologiskt?",
+    "alternativ": {
+      "A": "En extremt långsam celldelning som gör att njurarna slutar fungera",
+      "B": "Snabbt behandlingssvar där massivt cellsönderfall frisätter stora mängder urat, kalium och fosfat i blodet",
+      "C": "Tumörcellerna klumpar ihop sig fysiskt och täpper till njurartären",
+      "D": "Allergisk chock mot immunterapi"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "När särskilt känsliga tumörer (ex leukemier) plötsligt bryts ned i snabb takt av cytostatika, svämmar blodet över av intracellulära metaboliter vilket kan krascha njurarna och ge livshotande arytmier.",
+    "varför_övriga_fel": "Det är toxicitet från innehållet inuti döende celler, inte tumörväxt, allergisk chock eller fysiska proppar i kärl.",
+    "källa": "Onkologi Akut onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_018",
+    "huvudområde": "Medicinsk onkologi",
+    "subtopic": "Behandlingsintention",
+    "typ": "definition",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är syftet med 'adjuvant' onkologisk behandling?",
+    "alternativ": {
+      "A": "Att ges som första åtgärd för att krympa en stor inoperabel tumör",
+      "B": "Att ges palliativt när patienten är i terminalskedet",
+      "C": "Tilläggsbehandling efter en primär kurativ åtgärd (ex. kirurgi) för att döda kvarvarande mikrometastaser och minska recidivrisken",
+      "D": "Att ges enbart i smärtlindrande syfte till skelettet"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Adjuvant ('hjälpande') terapi ges postoperativt för att städa bort osynlig mikrometastasering och förbättra chansen till permanent bot.",
+    "varför_övriga_fel": "Att ge *innan* kirurgi kallas neoadjuvant. Smärtlindrande behandling kallas palliativ.",
+    "källa": "Onkologi Medicinsk onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_019",
+    "huvudområde": "Medicinsk onkologi",
+    "subtopic": "Behandlingsintention",
+    "typ": "definition",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad innebär en 'neoadjuvant' behandling?",
+    "alternativ": {
+      "A": "Behandling som ges postoperativt i 5 år",
+      "B": "Behandling som ges innan en definitiv lokal åtgärd (ex kirurgi) med syfte att krympa tumören och eliminera mikrometastaser",
+      "C": "Läkemedel som tas livslångt för obotlig cancer",
+      "D": "Smärtstillande som sätts in sista veckan i livet"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Neoadjuvant behandling innebär 'ny förbehandling', och ges före den egentliga huvudbehandlingen (ofta kirurgi) för downstaging och systemisk täckning.",
+    "varför_övriga_fel": "A är adjuvant. C och D är palliativ.",
+    "källa": "Onkologi Medicinsk onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_020",
+    "huvudområde": "Medicinsk onkologi",
+    "subtopic": "Behandlingsintention",
+    "typ": "definition",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur ges 'konkomitant' behandling i onkologiska sammanhang?",
+    "alternativ": {
+      "A": "Medicinsk behandling (t.ex. cytostatika) ges exakt samtidigt som en annan åtgärd (ex. strålbehandling) för en synergistisk effekt",
+      "B": "Man ger först kirurgi, sen vilar patienten 6 månader, sedan ger man cellgifter",
+      "C": "Man byter mellan två olika cytostatika varannan dag",
+      "D": "Man ger alla behandlingar palliativt under livets slut"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Konkomitant betyder samtidig. Ofta används det för att beskriva cytostatika som sensibiliserar (ökar känsligheten) tumörcellerna under pågående strålbehandling.",
+    "varför_övriga_fel": "Uppföljande behandling är adjuvant. Alternerande är inte innebörden av ordet.",
+    "källa": "Onkologi Medicinsk onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_021",
+    "huvudområde": "Medicinsk onkologi",
+    "subtopic": "Behandlingsintention",
+    "typ": "förståelse",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket påstående beskriver bäst skillnaden i hur man ser på läkemedelsbiverkningar vid palliativ respektive kurativ intention?",
+    "alternativ": {
+      "A": "Vid palliativ behandling accepteras nästan alla biverkningar för att förlänga livet till varje pris.",
+      "B": "Vid kurativ behandling kan man tolerera svåra, t.o.m. livshotande akuta biverkningar eftersom målet är bot, medan palliativ behandling prioriterar livskvalitet framför toxicitet.",
+      "C": "Det är ingen skillnad, doserna är alltid maximerade oavsett intention.",
+      "D": "Vid kurativ behandling avbryter man medicineringen direkt vid minsta illamående."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Eftersom målet med palliativ vård är god livskvalitet avbryter eller sänker man dosen om biverkningarna förstör patientens mående. Vid kurativ behandling (bot) tvingas man acceptera en period av svårt lidande för att uppnå bot.",
+    "varför_övriga_fel": "Man offrar aldrig livskvalitet maximalt under palliation, det är tvärtom hela grundsyftet.",
+    "källa": "Medicinsk onkologi_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_022",
+    "huvudområde": "Medicinsk onkologi",
+    "subtopic": "ECOG",
+    "typ": "fakta",
+    "svårighetsgrad": "lätt",
+    "fråga": "En patients allmäntillstånd graderas ofta enligt WHO/ECOG Performance Status (PS). Vilken är oftast gränsen (dvs patienten får i regel max vara denna poäng) för att tåla en tung kurativ cytostatikabehandling?",
+    "alternativ": {
+      "A": "PS 0 till 2",
+      "B": "PS 3 till 4",
+      "C": "PS 5",
+      "D": "ECOG-poängen påverkar enbart strålbehandling"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "För kurativt syftande, toxisk medicinsk behandling krävs i allmänhet att patienten har PS 0-2 (klarar av att sköta sig själv, uppegående mer än halva dygnet).",
+    "varför_övriga_fel": "Vid PS 3 och 4 (sängbunden större delen av dygnet) är patienten ofta alltför skör för tunga kurativa cellgifter och får palliativ omvårdnad/lindrigare terapi.",
+    "källa": "Onkologi Medicinsk onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_023",
+    "huvudområde": "Medicinsk onkologi",
+    "subtopic": "Cytostatika",
+    "typ": "fysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Många cytostatika doseras inte efter enbart kroppsvikt utan efter 'kroppsyta' (Body Surface Area, BSA). Varför används detta mått?",
+    "alternativ": {
+      "A": "Kroppsytan reflekterar exakt hudens storlek där tumörer oftast sitter.",
+      "B": "Kroppsyta (som beräknas via längd och vikt) korrelerar bättre med kroppens metabola kapacitet och organfunktion än enbart vikt.",
+      "C": "Eftersom cytostatika utsöndras via svettkörtlarna.",
+      "D": "För att undvika att överdosera hos barn under 12 år."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "BSA används eftersom det anses vara ett mer exakt fysiologiskt mått på blodvolym, njur- och leverfunktion (metabolism) än enbart kilogram, vilket minskar risken för över/under-dosering av toxiska läkemedel.",
+    "varför_övriga_fel": "Utsöndras via lever/njurar. Har inget med hudyteexponering av tumörer att göra.",
+    "källa": "Onkologi Medicinsk onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_024",
+    "huvudområde": "Medicinsk onkologi",
+    "subtopic": "Cytostatika",
+    "typ": "mekanism",
+    "svårighetsgrad": "lätt",
+    "fråga": "En undergrupp av cytostatika heter 'antimetaboliter' (ex. 5-FU/Metotrexat). Vad utgör deras primära verkningsmekanism?",
+    "alternativ": {
+      "A": "De bränner bokstavligen cellkärnan med hög värme",
+      "B": "De agerar 'falska byggstenar' i nukleotidsyntesen och saboterar därmed replikationen av DNA",
+      "C": "De binder upp alla vita blodkroppar och kväver dem",
+      "D": "De stimulerar cancercellens tillväxt så den dör av utmattning"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Antimetaboliter är strukturellt lika kroppens egna ämnen (ex folsyra eller pyrimidiner) och inkorporeras i DNA:t, vilket stoppar cellens förmåga att bygga upp nytt DNA och leda till celldöd.",
+    "varför_övriga_fel": "De är inte värme, de binder inte immunceller primärt.",
+    "källa": "Onkologi Medicinsk onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_025",
+    "huvudområde": "Medicinsk onkologi",
+    "subtopic": "Infart",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Centrala infarter (som PICC-line eller Port-a-cath) används ofta för cytostatikabehandling framför perifera (PVK i handen). Vad är den största medicinska anledningen till detta rent säkerhetsmässigt?",
+    "alternativ": {
+      "A": "Att dölja infusionen",
+      "B": "Många cytostatika är kraftigt vävnadsretande (vesikanter). Om en perifer ven spricker och det läcker ut (extravasering) uppstår svåra vävnadsnekroser.",
+      "C": "För att PVK koagulerar läkemedlet direkt.",
+      "D": "För att cytostatika ska pumpas direkt in i hjärtmuskeln."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Centrala vener är stora och har massivt blodflöde som späder ut det toxiska cellgiftet omedelbart. Läcker ett vesikant cytostatikum subkutant i en arm (vilket är lätt hänt med en PVK) kan vävnaden dö.",
+    "varför_övriga_fel": "Det handlar om att förebygga frätskador på vävnad, inte döljande eller koagulation.",
+    "källa": "Onkologi Medicinsk onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_026",
+    "huvudområde": "Medicinsk onkologi",
+    "subtopic": "Biverkningar",
+    "typ": "symtom",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka tre symptom listas som de generellt allra vanligaste biverkningarna av klassisk cytostatikabehandling?",
+    "alternativ": {
+      "A": "Skelettsmärta, osteoporos och diabetes",
+      "B": "Nefropati, hjärtsvikt och blödningar",
+      "C": "Fatigue (trötthet), benmärgshämning och illamående",
+      "D": "Alopeci (håravfall), svår klåda och katarakt"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Fatigue, illamående och effekter på benmärgen (som neutropeni) drabbar nästan alla i någon grad då cytostatika ospecifikt slår mot celler med hög mitos-aktivitet.",
+    "varför_övriga_fel": "Alopeci är också mycket vanligt men den definierade klassiska triaden fokuserar ffa på fatigue, illamående och benmärg. De andra alternativen är betydligt ovanligare generellt.",
+    "källa": "Medicinsk onkologi 2.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_027",
+    "huvudområde": "Medicinsk onkologi",
+    "subtopic": "Endokrin terapi",
+    "typ": "mekanism",
+    "svårighetsgrad": "medel",
+    "fråga": "Varför är det inte ändamålsenligt att ge aromatashämmare (en typ av endokrin terapi) som monoterapi till pre-menopausala kvinnor med östrogenpositiv bröstcancer?",
+    "alternativ": {
+      "A": "För att aromatashämmare enbart hämmar den perifera östrogensyntesen (i fettdepåer), vilket är meningslöst när äggstockarna fortfarande producerar enorma mängder östrogen.",
+      "B": "Då aromatashämmare endast verkar på HER2-positiva celler, som premenopausala kvinnor aldrig har.",
+      "C": "För att premenopausala kvinnor bryter ner läkemedlet i njurarna för snabbt.",
+      "D": "För att det orsakar omedelbart klimakterium vilket är letalt för unga."
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Aromatas omvandlar androgener till östrogen i perifer vävnad, vilket är den enda östrogenkällan efter klimakteriet. Hos unga kvinnor producerar äggstockarna så mycket östrogen att aromatashämning i fettväv blir otillräcklig.",
+    "varför_övriga_fel": "För att det ska ha effekt på unga kvinnor måste man samtidigt slå ut ovariernas funktion (t.ex. med GnRH-analog).",
+    "källa": "Onkologi Medicinsk onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_028",
+    "huvudområde": "Medicinsk onkologi",
+    "subtopic": "Endokrin terapi",
+    "typ": "biverkningar",
+    "svårighetsgrad": "medel",
+    "fråga": "Tamoxifen (ett antiöstrogen mot bröstcancer) har en specifik och paradoxal biverkan i ett annat organ. Vilken ökad risk finns vid långtidsanvändning?",
+    "alternativ": {
+      "A": "Hjärntumör",
+      "B": "Kraftig bentäthetsminskning (osteoporos)",
+      "C": "Endometriehyperplasi (tillväxt av livmoderslemhinna som kan leda till cancer)",
+      "D": "Leukemi"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Tamoxifen blockerar östrogenreceptorn i bröstet, men agerar delvis som en östrogen-agonist (stimulerar receptorn) i livmoderslemhinnan, vilket ger risk för hyperplasi/endometriecancer.",
+    "varför_övriga_fel": "Aromatashämmare ger svår osteoporos (tillägg av bisfosfonater), men Tamoxifen är faktiskt milt skyddande för skelettet.",
+    "källa": "Onkologi Medicinsk onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_029",
+    "huvudområde": "Medicinsk onkologi",
+    "subtopic": "Målstyrd behandling",
+    "typ": "fakta",
+    "svårighetsgrad": "lätt",
+    "fråga": "Målstyrda läkemedel (Targeted therapy) delas generellt in i monoklonala antikroppar (-mab) och tyrosinkinashämmare (-nib). Vilket påstående om administration och angreppspunkt är generellt sant?",
+    "alternativ": {
+      "A": "-Nib är stora proteiner som ges intravenöst och verkar utanför cellen; -Mab tas i tablettform och verkar i kärnan.",
+      "B": "-Mab (antikroppar) är stora molekyler som ges intravenöst och binder extracellulärt; -Nib är små molekyler som ges peroralt och blockerar enzymer intracellulärt.",
+      "C": "Båda ges som intravenöst dropp men -nib verkar bara på hjärnmetastaser.",
+      "D": "Ingen av dem har några biverkningar alls eftersom de är målstyrda."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Antikroppar (-mab) är stora komplexa proteiner som måste ges IV och verkar på cellens utsida. Små molekyler som kinashämmare (-nib) kan sväljas som piller och ta sig in i cellen för att störa signalvägar.",
+    "varför_övriga_fel": "Alternativ A är precis tvärtom.",
+    "källa": "Onkologi Medicinsk onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_030",
+    "huvudområde": "Medicinsk onkologi",
+    "subtopic": "Målstyrd behandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Inför insättning av en specifik tyrosinkinashämmare (t.ex. Dabrafenib) vad måste i regel ALLTID göras gällande tumören?",
+    "alternativ": {
+      "A": "Man måste stråla tumören i en vecka först.",
+      "B": "En prediktiv analys/mutationsanalys av tumören för att bevisa att just det specifika 'målet' (ex. BRAF-mutation) faktiskt existerar i cancercellerna.",
+      "C": "Man måste operera bort tumören innan tabletten kan verka.",
+      "D": "Man måste testa patientens njurfunktion då läkemedlet slår ut njurarna på 24h."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Målstyrd behandling fungerar endast om tumörcellen uttrycker den mutation (target) som läkemedlet ska angripa, därför är biopsi och molekylär testning (prediktiv analys) ett absolut krav.",
+    "varför_övriga_fel": "Att ge läkemedlet blint utan mutation är verkningslöst och ger enbart biverkningar.",
+    "källa": "Onkologi Medicinsk onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_031",
+    "huvudområde": "Medicinsk onkologi",
+    "subtopic": "Immunterapi",
+    "typ": "mekanism",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur fungerar s.k. checkpoint-hämmare (som PD-1 hämmare) i behandlingen av cancer?",
+    "alternativ": {
+      "A": "De attackerar tumörens DNA-strängar direkt.",
+      "B": "De fungerar som målsökande pilar som levererar ett radioaktivt ämne till cellen.",
+      "C": "De blockerar de broms-receptorer på T-celler som tumören utnyttjar för att gömma sig, vilket 'släpper loss' immunförsvaret mot cancern.",
+      "D": "De framkallar en specifik allergisk reaktion mot plast."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Kroppens immunförsvar har bromsar (checkpoints som PD-1/CTLA-4) för att hindra autoimmunitet. Cancern utnyttjar detta för att inte dödas. Läkemedlet hämmar bromsen, så T-cellerna aktiveras och dödar tumören.",
+    "varför_övriga_fel": "Direkt DNA-attack är cytostatika. Målsökande gift är ADC (Antibody-drug conjugates).",
+    "källa": "Medicinsk onkologi 2.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_032",
+    "huvudområde": "Medicinsk onkologi",
+    "subtopic": "Behandlingsintention",
+    "typ": "fakta",
+    "svårighetsgrad": "svår",
+    "fråga": "En diagnos sticker ut inom onkologin då den behandlas mycket tufft med syfte att BOTA (kurativt) även om patienten är i stadium IV (har omfattande fjärrmetastaser i exempelvis lungor och retroperitonealt). Vilken?",
+    "alternativ": {
+      "A": "Pankreascancer",
+      "B": "Testikelcancer (Germinalcellstumör)",
+      "C": "Glioblastom",
+      "D": "Gallgångscancer"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Testikelcancer är oerhört kemokänslig och unga män botas frekvent med cytostatikaregimen BEP trots massiv fjärrspridning, vilket är unikt bland solida tumörer.",
+    "varför_övriga_fel": "De andra tumörerna är i princip obotliga vid stadium IV och behandlas då enbart palliativt.",
+    "källa": "Onkologi Medicinsk onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_033",
+    "huvudområde": "Palliativ medicin",
+    "subtopic": "Hörnstenar",
+    "typ": "definition",
+    "svårighetsgrad": "lätt",
+    "fråga": "Den palliativa vårdens filosofi bygger på fyra väletablerade hörnstenar. Vilka?",
+    "alternativ": {
+      "A": "Symtomlindring, Teamarbete, Kommunikation/Relation, och Närståendestöd",
+      "B": "Cytostatika, Strålning, Kirurgi, och Sjukgymnastik",
+      "C": "Livsförlängning, Smärtlindring, Total sedering, och Obduktion",
+      "D": "Kurativ vård, Avancerad HLR, Sondmatning, och Morfin"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Dessa fyra aspekter utgör grunden i all palliativ medicin, där man lyfter blicken från enbart det kroppsliga och även ser teamet och familjens roll.",
+    "varför_övriga_fel": "C och D innefattar åtgärder som går emot palliativa principer (exv avancerad HLR i terminalskede).",
+    "källa": "Onkologi Palliativ medicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_034",
+    "huvudområde": "Palliativ medicin",
+    "subtopic": "Total pain",
+    "typ": "koncept",
+    "svårighetsgrad": "medel",
+    "fråga": "En patient i sent palliativt skede beskriver ohanterlig smärta trots massiva opioiddoser, och gråter ofta över att ha missat sina barns uppväxt. Vad innebär begreppet 'Total pain' i detta sammanhang?",
+    "alternativ": {
+      "A": "Att patienten inbillar sig smärtan helt och hållet.",
+      "B": "Att nociceptiv smärta alltid sprider sig till hela kroppen.",
+      "C": "Att lidandet är en väv av fysisk, psykisk, social och existentiell smärta (där alla delar måste omhändertas).",
+      "D": "Att morfindosen måste tiodubblas."
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Total pain betonar att smärta inte bara är fysiologisk. Ångest över döden och brustna relationer förstärker den fysiska smärtupplevelsen, vilket betyder att en kurator eller ett existentiellt samtal kan lindra den fysiska värken.",
+    "varför_övriga_fel": "Att bara öka medicindoserna löser inte den sociala/existentiella dimensionen av lidandet.",
+    "källa": "Palliativ medicin.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_035",
+    "huvudområde": "Palliativ medicin",
+    "subtopic": "Smärtbehandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad utgör basen i farmakologisk behandling av nociceptiv smärta hos palliativa cancerpatienter (som saknar kontraindikationer)?",
+    "alternativ": {
+      "A": "Enbart Gabapentin",
+      "B": "Paracetamol (ofta 1g x 4) i kombination med starka opioider (som Morfin eller Oxykodon)",
+      "C": "Intravenös Ketamin",
+      "D": "Enbart NSAID i mycket hög dos"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Basen i den palliativa smärttrappan för nociceptiv smärta är paracetamol (grundsmärtlindring) följt av adekvata doser opioider, samt vb-doser.",
+    "varför_övriga_fel": "Gabapentin är för neuropatisk smärta. Ketamin är för extrem specialistvård. NSAID används som tillägg ffa vid skelettsmärta men är sällan bas över lång tid pga biverkningar.",
+    "källa": "Onkologi Palliativ medicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_036",
+    "huvudområde": "Palliativ medicin",
+    "subtopic": "Smärtbehandling",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "En patient beskriver smärtan som ytlig, isande och 'brännande' i en arm efter kirurgi. Den svarar dåligt på morfin. Vilken typ av läkemedel rekommenderas oftast som tillägg här?",
+    "alternativ": {
+      "A": "Mer opioider (Fentanyl)",
+      "B": "Läkemedel mot neuropatisk smärta, såsom Gabapentin/Pregabalin eller Tricykliska antidepressiva (Saroten)",
+      "C": "Högdos muskelavslappnande medel",
+      "D": "Bredspektrumantibiotika"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Symtomen beskriver typisk nervsmärta (neuropati). Denna typ av smärta svarar ofta dåligt på traditionella analgetika/opioider och behandlas bäst med antiepileptika (Gabapentin) eller TCA.",
+    "varför_övriga_fel": "Att bara öka morfin hjälper föga och ger bara biverkningar vid rent neuropatisk smärta.",
+    "källa": "Onkologi Palliativ medicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_037",
+    "huvudområde": "Palliativ medicin",
+    "subtopic": "Smärtbehandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är den generella regeln/kvoten för att räkna ut rätt vid-behovsdos (vb-dos) av en snabbverkande opioid, baserat på patientens långverkande dygnsdos?",
+    "alternativ": {
+      "A": "Vb-dosen ska vara 50% av dygnsdosen",
+      "B": "Vb-dosen ska vara ca 1/6 (en sjättedel) av den totala dygnsdosen",
+      "C": "Vb-dosen beräknas enbart på patientens kroppsvikt i milligram",
+      "D": "Vb-dosen är alltid exakt 5 mg oavsett dygnsdos"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "För att ha en adekvat men säker effekt vid genombrottssmärta använder man standardregeln att vid-behovsdosen utgör cirka 1/6 av patientens totala upptitrerade dygnsdos av opioiden.",
+    "varför_övriga_fel": "50% riskerar akut överdosering, och en fast dos tar inte hänsyn till patientens uppbyggda tolerans.",
+    "källa": "Onkologi Palliativ medicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_038",
+    "huvudområde": "Palliativ medicin",
+    "subtopic": "Smärtbehandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Vid opioidrotation (när en patient byter från t.ex. Morfin till Oxykodon pga otolerabla biverkningar), hur justeras den nya dosen i förhållande till ekvianalgetisk omräkningstabell?",
+    "alternativ": {
+      "A": "Den nya dosen ökas med 25-50% för att kompensera för tappad effekt",
+      "B": "Man ger exakt det som tabellen anger",
+      "C": "Den omräknade dosen från tabellen MINSKAS med 25-50% på grund av inkomplett korstolerans mellan preparaten",
+      "D": "Den minskas med 90%"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Eftersom receptorerna kan reagera annorlunda på ett nytt preparat, och patienten saknar full korstolerans, finns risk för överdos om man byter rakt av. Dosen måste därmed reduceras försiktigt (ofta 25-50%).",
+    "varför_övriga_fel": "Att ge mer eller exakt uträknad dos kan orsaka farlig andningsdepression hos den i övrigt opioid-toleranta patienten.",
+    "källa": "Onkologi Palliativ medicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_039",
+    "huvudområde": "Palliativ medicin",
+    "subtopic": "Komplikationer",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Samtliga patienter som sätts in på palliativ opioidbehandling riskerar en specifik och mycket obehaglig biverkan, varför detta MÅSTE hanteras med samtidig profylaktisk förskrivning. Vilken?",
+    "alternativ": {
+      "A": "Svår diarré",
+      "B": "Förstoppning (obstipation)",
+      "C": "Blödande magsår",
+      "D": "Maniskt beteende"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Opioider förlamar tarmmotoriken starkt. Man utvecklar aldrig tolerans mot denna biverkan, varför laxantia (exv. Movicol) ska förskrivas till nästan alla opioidbehandlade patienter.",
+    "varför_övriga_fel": "Diarré är motsatsen. Magsår hör till NSAID och kortison.",
+    "källa": "Palliativ medicin.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_040",
+    "huvudområde": "Palliativ medicin",
+    "subtopic": "Illamående",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "En palliativ patient med tjocktarmscancer klagar på svårt illamående. Du noterar vit beläggning i munnen och patienten har ont när hen sväljer. Vad är den mest sannolika, reversibla orsaken du måste utesluta innan centrala antiemetika (Haldol) prövas?",
+    "alternativ": {
+      "A": "Hjärnmetastas",
+      "B": "Oral/esofageal svampinfektion (candida)",
+      "C": "Direkt toxicitet av Movicol",
+      "D": "Njursten"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Candida i mun/svalg är mycket vanligt hos sköra patienter och ger sveda samt uttalat illamående och sväljsvårigheter. Behandlas det (ex Nystimex) försvinner illamåendet utan att tunga neuroleptika/antiemetika behövs.",
+    "varför_övriga_fel": "Vita beläggningar och smärta vid sväljning är kardinalsymtom på svamp, inte hjärnmetastas.",
+    "källa": "Palliativ medicin.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_041",
+    "huvudområde": "Palliativ medicin",
+    "subtopic": "Dyspne",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "En obotligt sjuk patient i terminalskedet lider av ångestladdad andnöd (dyspné). Pox är 93%. Vilken farmakologisk klass har bäst klinisk evidens för att stilla denna typ av andnöd?",
+    "alternativ": {
+      "A": "Små doser opioider (t.ex. Morfin)",
+      "B": "Bredspektrumantibiotika",
+      "C": "Kraftig inhalationsbehandling med astmamedicin (SABA)",
+      "D": "Blodtransfusion"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Opioider dämpar aktiviteten i andningscentrum och minskar hjärnans upplevelse av lufthunger, vilket ger mycket effektiv lindring av dyspné i slutskedet (kombinerat ofta med lite bensodiazepin vid ångest).",
+    "varför_övriga_fel": "Andnöden i sent palliativt skede är oftast inte reversibel med antibiotika eller SABA om inte akut infektion/astma bekräftats.",
+    "källa": "Onkologi Palliativ medicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_042",
+    "huvudområde": "Palliativ medicin",
+    "subtopic": "Konfusion",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Din palliativa patient blir plötsligt uttalat förvirrad och plockig. Vad är det allra första medicinska steget innan man överväger Haldol?",
+    "alternativ": {
+      "A": "Utföra akut lumbalpunktion",
+      "B": "Söka och åtgärda reversibla somatiska orsaker (såsom urinretention, förstoppning, smärta eller hyperkalcemi)",
+      "C": "Beställa akut MR hjärna",
+      "D": "Flytta patienten till ett rum med många människor så hen inte känner sig ensam"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Akut konfusion/hjärnsvikt utlöses ofta av en fysisk obalans (överfylld urinblåsa är en klassiker). Att sätta KAD kan omedelbart häva förvirringen.",
+    "varför_övriga_fel": "Det är invasivt och felaktigt att börja med LP eller MR på en palliativ patient med konfusion innan man kollar t.ex en bladderscan eller kalkvärde.",
+    "källa": "Onkologi Palliativ medicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_043",
+    "huvudområde": "Palliativ medicin",
+    "subtopic": "Slutskedet",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "En döende patient utvecklar högljudda 'dödsrosslingar' pga sekretstagnation i svalget som oroar anhöriga. Vad är rätt åtgärd?",
+    "alternativ": {
+      "A": "Genomför djupsugning med kateter varje timme.",
+      "B": "Vänd patienten i sidoläge, ge information till anhöriga att patienten sällan lider av det, och överväg ev. antikolinergikum (ex. Robinul) för att minska sekretion.",
+      "C": "Sätt akut in intravenös vätska för att späda ut slemmet.",
+      "D": "Ge slemlösande hostmedicin po."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Rosslingarna uppstår för att svalgreflexen försvagats, men patienten är oftast så djupt sänkt att det inte skapar lidande för dem (bara för anhöriga). Man ska minska vätska, ändra läge, och ej djupsuga då det smärtar.",
+    "varför_övriga_fel": "Djupsug irriterar slemhinnor och är plågsamt. Iv-vätska förvärrar lungödemet och rosslingarna.",
+    "källa": "Onkologi Palliativ medicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_044",
+    "huvudområde": "Palliativ medicin",
+    "subtopic": "Slutskedet",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är principen för s.k. 'trygghetsordinationer' i det palliativa slutskedet?",
+    "alternativ": {
+      "A": "Att skriva ut patienten till hemmet direkt",
+      "B": "Att i förväg ordinera vid behovs-injektioner mot de fyra vanligaste symtomen (smärta, ångest, andnöd, illamående) så sjuksköterskan snabbt kan lindra när patienten inte längre kan svälja",
+      "C": "Att låsa in dörren på rummet för patientens säkerhet",
+      "D": "Att patienten måste dricka minst 2 liter vatten per dygn"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "När döden nalkas tappas sväljförmågan. Läkaren ordinerar subkutana vid-behovs-läkemedel proaktivt så inga onödiga fördröjningar av lindring sker.",
+    "varför_övriga_fel": "Tvingande vätskeintag i terminalskedet förvärrar bara lidandet.",
+    "källa": "Onkologi Palliativ medicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_045",
+    "huvudområde": "Strålbehandling",
+    "subtopic": "Fraktionering",
+    "typ": "förståelse",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur skiljer sig fraktioneringsupplägget generellt mellan en kurativt och en palliativt syftande strålbehandling?",
+    "alternativ": {
+      "A": "Kurativ ges i en enda massiv dos; palliativ ges varje dag i flera år.",
+      "B": "Kurativ ges i många fraktioner med lägre dos per gång men en hög totaldos för att skydda frisk vävnad. Palliativ ges med få fraktioner men hög dos per gång för snabb lindring.",
+      "C": "Det är ingen skillnad på doserna.",
+      "D": "Palliativ strålning fokuserar enbart på att sterilisera huden."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Kurativ = spara frisk vävnad för långtidsöverlevnad -&gt; små fraktioner för att tillåta reparation. Palliativ = snabb symtomlindring och få sjukhusbesök -&gt; stor dos i få (1 till 5) fraktioner.",
+    "varför_övriga_fel": "Få patienter skulle överleva sena biverkningar av palliativa engångsdoser om de levde i 20 år, men målet här är bara temporär/snabb palliation.",
+    "källa": "Onkologi Strålbehandling.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_046",
+    "huvudområde": "Strålbehandling",
+    "subtopic": "Palliativ",
+    "typ": "indikation",
+    "svårighetsgrad": "medel",
+    "fråga": "Palliativ strålbehandling är oftast den absolut mest effektiva metoden för att lindra vilket av följande symtom hos metastaserade patienter?",
+    "alternativ": {
+      "A": "Ohanterlig förstoppning",
+      "B": "Trötthet (Fatigue)",
+      "C": "Smärta från lokaliserade skelettmetastaser",
+      "D": "B-symtom från blodet"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Palliativ strålning (t.ex. en singeldos på 8 Gy) mot smärtande skelettmetastaser har en oerhört god smärtlindrande effekt hos ca 70-80% av patienterna.",
+    "varför_övriga_fel": "Strålning botar inte fatigue eller systemisk inflammation. Den används ffa vid skelettsmärta, blödning och tumörkompression.",
+    "källa": "Strålbehandling.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_047",
+    "huvudområde": "Strålbehandling",
+    "subtopic": "Akuta",
+    "typ": "fakta",
+    "svårighetsgrad": "lätt",
+    "fråga": "En patient inkommer en fredagskväll med misstänkt malignt VCSS. Finns det ett fönster för akut strålbehandling?",
+    "alternativ": {
+      "A": "Nej, strålbehandling ges endast kurativt.",
+      "B": "Ja, VCSS, medullakompression och svår luftvägskompression utgör akuta (inom 24h) indikationer för strålbehandling ifall kirurgi ej är möjlig.",
+      "C": "Nej, strålning på halsen tar alltid minst 6 veckor att starta.",
+      "D": "Ja, men bara om patienten är under 50 år."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Tillstånden VCSS och medullakompression hotar omedelbart vitala funktioner, och utgör de viktigaste indikationerna för att koppla in strålbehandlingsmaskinerna akut.",
+    "varför_övriga_fel": "Onkologiska akutindikationer existerar.",
+    "källa": "Onkologi Strålbehandling.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_048",
+    "huvudområde": "Strålbehandling",
+    "subtopic": "Radiobiologi",
+    "typ": "mekanism",
+    "svårighetsgrad": "svår",
+    "fråga": "Vad är principen för 'indirekt verkan' vid strålbehandling (som utgör ca 75% av effekten för röntgen/fotoner)?",
+    "alternativ": {
+      "A": "Strålningen fäster på vita blodkroppar som i sin tur bryter ned tumören.",
+      "B": "Joniserande strålning träffar vattenmolekyler i cellen, vilket skapar fria radikaler (ex. hydroxylradikaler) som sedan reagerar med och förstör DNA:t.",
+      "C": "Strålningen spränger DNA-strängen rakt av fysiskt med sin energi.",
+      "D": "Strålningen stryper syretillförseln utifrån."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Vattenradiolys (att skingra vatten i cellen till extremt toxiska fria radikaler) är huvudmekanismen. Eftersom vi består av mestadels vatten, skapas en kemisk kaskad som bryter av DNA-strängen.",
+    "varför_övriga_fel": "Fysisk direktträff utgör ca 25%. Inga vita blodkroppar krävs för själva skadan.",
+    "källa": "Strålbehandling.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_049",
+    "huvudområde": "Strålbehandling",
+    "subtopic": "Radiobiologi",
+    "typ": "definition",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilka fyra/fem biologiska processer inkluderas i begreppet 'De 5 R:en' som förklarar den kliniska effekten av fraktionerad strålbehandling?",
+    "alternativ": {
+      "A": "Renovation, Rekonstruktion, Reflux, Relaxation, Remission",
+      "B": "Reparation, Redistribution, Reoxygenering, Repopulation (samt Radiosensitivity)",
+      "C": "Resistens, Relaxation, Receptor-mediering, Reabsorption, Reaktion",
+      "D": "Recovery, Recidiv, Radikaler, Röntgen, Repetition"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Dessa beskriver hur friska celler överlever (Reparation), hur tumörceller synkroniseras in i känsliga cellfaser (Redistribution) och hur syresättningen öppnar upp inuti tumören (Reoxygenering) mellan fraktionerna.",
+    "varför_övriga_fel": "Dessa är de etablerade radiobiologiska R:en. Övriga ord är bara påhittade i sammanhanget.",
+    "källa": "Onkologi Strålbehandling.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_050",
+    "huvudområde": "Strålbehandling",
+    "subtopic": "Biverkningar",
+    "typ": "fakta",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad skiljer i regel prognosen och vävnadspåverkan mellan akuta och sena strålbiverkningar?",
+    "alternativ": {
+      "A": "Akuta drabbar slemhinnor och är oftast irreversibla, sena drabbar benmärg och läker snabbt.",
+      "B": "Akuta drabbar snabbt delande vävnader (hud, MTK) och är oftast reversibla. Sena biverkningar drabbar långsamt delande organ (CNS, lungor, njurar) via fibros och är oftast irreversibla/kroniska.",
+      "C": "Det finns ingen reell skillnad, båda uppkommer inom 1 vecka.",
+      "D": "Sena biverkningar orsakas av att maskinen varit felinställd, akuta är normala."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Akuta reaktioner uppstår direkt när stamceller för tillfället slås ut, men läker när nya produceras. Sena skador beror på permanent kärl-/bindvävsskada i solida organ som är svårläkta.",
+    "varför_övriga_fel": "Sena biverkningar är de farligaste just för att de begränsar livskvaliteten kroniskt (t.ex muntorrhet/strål-enterit).",
+    "källa": "Onkologi Strålbehandling.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_051",
+    "huvudområde": "Strålbehandling",
+    "subtopic": "Tekniker",
+    "typ": "definition",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad kännetecknar stereotaktisk strålbehandling?",
+    "alternativ": {
+      "A": "Att det ges en extremt låg dos fördelad på 100 dagar över hela kroppen",
+      "B": "En extremt precis metod där en mycket hög dos ges till en liten, välavgränsad tumör under endast ett fåtal fraktioner (ofta 1-5)",
+      "C": "Att man placerar radioaktiva frön inuti patientens kropp",
+      "D": "Att patienten andas in radioaktivt material"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Stereotaxi ('Strålkniv') agerar nästan som ett kirurgiskt snitt där man abladerar en exakt punkt i kroppen med massiv dos, då felmarginalen är så liten att omgivande vävnad klarar sig ändå.",
+    "varför_övriga_fel": "Alternativ C är Brachyterapi. Alternativ A är fel, det är få men enorma doser.",
+    "källa": "Strålbehandling.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_052",
+    "huvudområde": "Strålbehandling",
+    "subtopic": "Planering",
+    "typ": "definition",
+    "svårighetsgrad": "svår",
+    "fråga": "I dosplanering används konceptet PTV (Planning Target Volume). Vad innebär det?",
+    "alternativ": {
+      "A": "Bara själva tumörkärnan, inga marginaler.",
+      "B": "Den totala säkerhetsmarginalen som läggs till runt tumören (GTV/CTV) för att ta hänsyn till patientens kroppsrörelser, andning och uppställningsfel under behandlingen.",
+      "C": "Det organ som får absolut maxdos strålning av misstag.",
+      "D": "Dosen som mäts i blodet."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Patienter andas och inre organ flyttar på sig. PTV är den utvidgade virtuella volymen som man tvingas bestråla för att garantera att tumören stannar kvar i fältet hela tiden.",
+    "varför_övriga_fel": "Makroskopisk tumör = GTV. PTV handlar om geometriska säkerhetsmarginaler.",
+    "källa": "Strålterapi_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_053",
+    "huvudområde": "Cancer utan känd primärtumör (CUP)",
+    "subtopic": "Definition",
+    "typ": "fakta",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad definierar diagnosen CUP (Cancer of Unknown Primary)?",
+    "alternativ": {
+      "A": "En primärtumör som sitter gömd inuti en benmärg",
+      "B": "Metastaserad sjukdom där man trots utredning inte kan hitta vilken den ursprungliga modertumören (primärtumören) är",
+      "C": "En ofarlig, godartad knöl i huden",
+      "D": "Cancer som patienten fötts med"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "CUP handlar om att man biopserat en metastas, men var ifrån denna cancertyp härstammar i kroppen förblir dolt (troligen pga att modertumören var pytteliten, opererats bort, eller regresserat).",
+    "varför_övriga_fel": "CUP kräver bevisad metastas utan synlig primär lokal.",
+    "källa": "Cancer utan känd primärtumör (CUP).pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_054",
+    "huvudområde": "Cancer utan känd primärtumör (CUP)",
+    "subtopic": "Utredning",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken enskild åtgärd är den absolut viktigaste under basalutredningen av en misstänkt CUP, för att ge onkologerna en vägledning om behandling?",
+    "alternativ": {
+      "A": "PET-DT",
+      "B": "Mellannålsbiopsi av metastasen för ett detaljerat PAD",
+      "C": "Blododling",
+      "D": "Ultraljud över sköldkörteln"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Kärnan i CUP-utredningen är att få ut en vävnadsbit (med mellannål, inte bara celler via finnål) så att patologen kan färga cellerna med markörer och ge en vink om vad det rör sig om (t.ex. Adenocarcinom eller Skivepitelcancer).",
+    "varför_övriga_fel": "Röntgen är bra men vävnadsprofilen (PAD) styr de molekylära behandlingsbesluten.",
+    "källa": "Cancer utan känd primärtumör (CUP).pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_055",
+    "huvudområde": "Cancer utan känd primärtumör (CUP)",
+    "subtopic": "SVF",
+    "typ": "indikation",
+    "svårighetsgrad": "lätt",
+    "fråga": "När finns indikation att starta ett Standardiserat Vårdförlopp (SVF) specifikt för CUP?",
+    "alternativ": {
+      "A": "När patienten haft B-symtom i två veckor utan synlig orsak",
+      "B": "När man finner en eller flera metastassuspekta förändringar, där primärtumören inte är känd, och organspecifika symtom saknas",
+      "C": "Endast om man redan tagit en biopsi",
+      "D": "Så fort en patient får ont i magen"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Välgrundad misstanke för SVF CUP grundar sig i att man fann metastaser (t.ex. via en DT) men inte kunde lista ut organet kliniskt. Biopsi behövs INTE för att få starta SVF.",
+    "varför_övriga_fel": "B-symtom utan fynd startar SVF-AOS (Allvarliga ospecifika symtom).",
+    "källa": "Onkologi Cancer utan känd primärtumör (CUP).docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_056",
+    "huvudområde": "Onkologisk intro och screening",
+    "subtopic": "Alarmsymtom",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "En 68-årig kvinna söker på vårdcentral för att hon haft svårt att svälja maten (dysfagi) de senaste fyra veckorna. Den känns som den fastnar bakom bröstbenet. Vad måste prioriteras kliniskt?",
+    "alternativ": {
+      "A": "Att det rör sig om psykogen stress",
+      "B": "Ett klassiskt alarmsymtom för esofagus- eller ventrikelcancer, som direkt motiverar SVF/gastroskopi",
+      "C": "Astma",
+      "D": "Ingenting, det är vanligt att gamla får svårt att svälja pga muntorrhet"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Dysfagi (sväljsvårigheter) klassas inom svensk onkologi som ett av de tyngsta alarmsymtomen för malignitet i övre mag-tarmkanalen och ska alltid utredas snabbt med skopi.",
+    "varför_övriga_fel": "Man ska aldrig avfärda progressiv dysfagi hos äldre som normalt eller stress.",
+    "källa": "Onkologi Onkologi introduktion.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_057",
+    "huvudområde": "Onkologisk intro och screening",
+    "subtopic": "Alarmsymtom",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Ett annat starkt alarmsymtom utgörs av 'tyst ikterus' (gulsot utan smärta). Vilken malignitet misstänks i första hand vid detta tillstånd hos en äldre person?",
+    "alternativ": {
+      "A": "Sarkom",
+      "B": "Pankreascancer (tumör i bukspottkörtelns huvud) eller gallgångscancer",
+      "C": "Malignt melanom",
+      "D": "Prostatacancer"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Gulsot som inte gör ont (till skillnad från gallsten som ger kraftiga kolikanfall) uppstår när en tumör växer tyst över koledokusgången, ofta från pankreashuvudet.",
+    "varför_övriga_fel": "Sarkom och melanom sitter i vävnader som inte komprimerar gallvägarna.",
+    "källa": "Onkologi Onkologi introduktion.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_058",
+    "huvudområde": "Onkologisk intro och screening",
+    "subtopic": "Screening",
+    "typ": "fakta",
+    "svårighetsgrad": "lätt",
+    "fråga": "I vilket åldersintervall rekommenderar och driver Socialstyrelsen allmän mammografi-screening för kvinnor i Sverige?",
+    "alternativ": {
+      "A": "18-50 år",
+      "B": "40-75 år",
+      "C": "65-90 år",
+      "D": "Endast kvinnor med känd BRCA-mutation kallas"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Det etablerade screeningprogrammet kallar friska kvinnor mellan 40 och 75 år, vanligen var 18:e till 24:e månad.",
+    "varför_övriga_fel": "Yngre än 40 har för tät bröstvävnad. Efter 75 anses risken minska och överlevnadsvinsten ställas i tveksam relation till ingreppet.",
+    "källa": "Onkologi Onkologi introduktion.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_059",
+    "huvudområde": "Onkologisk intro och screening",
+    "subtopic": "Screening",
+    "typ": "fakta",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken metod har antagits i Sverige för att screena för kolorektalcancer på befolkningsnivå (60-74 år)?",
+    "alternativ": {
+      "A": "Årlig CT-buk",
+      "B": "F-Hb (test för dolt blod i avföringen) vartannat år, med efterföljande koloskopi enbart vid positivt svar",
+      "C": "MR av rektum",
+      "D": "Genetisk testning på alla vid 50 års ålder"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "För att screena en så enorm population görs ett enkelt test för mikroskopiskt blod i avföringen i hemmet (F-Hb). Om det är positivt kallas patienten till koloskopi.",
+    "varför_övriga_fel": "Att koloskopera hela befolkningen är för kostsamt och resurskrävande, varför F-Hb agerar filter.",
+    "källa": "Onkologi Onkologi introduktion.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_060",
+    "huvudområde": "Cancergenetik",
+    "subtopic": "Nedärvning",
+    "typ": "mekanism",
+    "svårighetsgrad": "medel",
+    "fråga": "En mutation som orsakar ärftlig cancer (ex. Lynch eller BRCA) följer oftast vilket nedärvningsmönster?",
+    "alternativ": {
+      "A": "Mitokondriellt",
+      "B": "Autosomalt recessivt",
+      "C": "Autosomalt dominant, men med inkomplett penetrans (anlaget ger bara en hög risk, inte garanti att få cancer)",
+      "D": "X-bundet recessivt"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Syndromen ärvs autosomalt dominant, så barn har 50% risk att ärva genfelet. Dock är penetransen inkomplett (t.ex 70% livstidsrisk) eftersom ett 'second hit' måste drabba den friska genen innan cancer uppstår.",
+    "varför_övriga_fel": "Recessiv nedärvning skulle innebära att man behöver anlag från båda föräldrarna för att syndromet skulle synas, vilket inte är fallet här.",
+    "källa": "Cancergenetik.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_061",
+    "huvudområde": "Cancergenetik",
+    "subtopic": "Lynch syndrom",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilka cancrar är mest typiska och förekommer i störst utsträckning hos patienter med Lynch syndrom?",
+    "alternativ": {
+      "A": "Sarkom och leukemi",
+      "B": "Bröstcancer och ovarialcancer",
+      "C": "Kolorektalcancer (särskilt högersidig) samt Endometriecancer (livmoderkroppscancer)",
+      "D": "Lungcancer och njurcancer"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Lynch syndrom innebär en kraftigt ökad risk för framförallt tjocktarmscancer (ofta högersidig och debuterar ungt) och gynekologiska cancrar (särskilt endometrie/livmoderkropp).",
+    "varför_övriga_fel": "Bröst/Ovarie är BRCA. Sarkom/Leukemi är Li-Fraumeni.",
+    "källa": "Cancergenetik.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_062",
+    "huvudområde": "Cancergenetik",
+    "subtopic": "Utredning",
+    "typ": "indikation",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket av följande scenarion utgör en stark indikation för att skicka en patient för cancergenetisk utredning (misstanke om BRCA)?",
+    "alternativ": {
+      "A": "Kvinna över 80 år med östrogenpositiv bröstcancer",
+      "B": "En 35-årig kvinna med trippelnegativ bröstcancer, eller en man i valfri ålder med bröstcancer",
+      "C": "Man på 85 år med prostatacancer",
+      "D": "Kvinna med okomplicerad hudförändring"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ung ålder vid insjuknande (&lt;40), trippelnegativ receptorprofil och manlig bröstcancer är starka markörer för att bröstcancern kan vara genetiskt nedärvd (BRCA).",
+    "varför_övriga_fel": "Hög ålder vid första insjuknande (ex 80 år) talar snarare för sporadisk, icke-ärftlig cancer.",
+    "källa": "Intro onkologi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_063",
+    "huvudområde": "Cancergenetik",
+    "subtopic": "Syndrom",
+    "typ": "definition",
+    "svårighetsgrad": "svår",
+    "fråga": "Vilket syndrom orsakas av en mutation i p53 ('genomets väktare') och leder till extrem risk för ett brett spektrum av tidiga cancrar (sarkom, leukemier, bröstcancer, hjärntumörer)?",
+    "alternativ": {
+      "A": "Lynch syndrom",
+      "B": "Familjär Adenomatös Polypos (FAP)",
+      "C": "Li-Fraumeni syndrom",
+      "D": "Birt-Hogg-Dubé"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Li-Fraumeni syndrom är ett sällsynt och aggressivt syndrom som drabbar just p53, den cellulära huvudbromsen för DNA-fel. Celler ansamlar snabbt mutationer vilket ger sarkom m.m hos barn och unga.",
+    "varför_övriga_fel": "Lynch är MMR-gener (tarm/endometrie). FAP är APC-genen (polyper).",
+    "källa": "Cancergenetik.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_064",
+    "huvudområde": "Onkologisk intro och screening",
+    "subtopic": "Screening",
+    "typ": "fakta",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är Socialstyrelsens huvudsakliga medicinska argument MOT ett tvingande allmänt screeningprogram med enbart PSA för prostatacancer hos alla män?",
+    "alternativ": {
+      "A": "Att det skulle utplåna prostatacancern helt.",
+      "B": "Att risken för falskt positiva svar och överdiagnostik av ofarliga tumörer (vilket i sin tur leder till operationer med inkontinens/impotens som följd) än så länge anses för hög för populationen.",
+      "C": "Att män inte är mottagliga för blodprov.",
+      "D": "Att PSA endast speglar kolesterolet."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Problemet med PSA är att man hittar många små cancrar som mannen sannolikt aldrig skulle ha lidit eller dött av ('överdiagnostik'), men vars behandling orsakar stort onödigt lidande.",
+    "varför_övriga_fel": "Sverige genomför dock regionala 'organiserade PSA-testningar' i projektform nu, men ett regelrätt tvingande nationellt screeningbeslut undviks ffa pga de allvarliga biverkningarna vid onödig kurativ behandling.",
+    "källa": "Onkologi Onkologi introduktion.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_065",
+    "huvudområde": "Palliativ medicin",
+    "subtopic": "SPIKES",
+    "typ": "förståelse",
+    "svårighetsgrad": "medel",
+    "fråga": "Vid allvarliga sjukdomsbesked (brytpunktsamtal) rekommenderas strukturen SPIKES. Vad syftar bokstaven 'P' (Perception) till?",
+    "alternativ": {
+      "A": "Personalen - se till att rätt team är med i rummet.",
+      "B": "Perception - Att fråga och förstå hur patienten själv uppfattar sin situation innan läkaren lämnar ny information.",
+      "C": "Palliation - Att omgående skriva ut morfin.",
+      "D": "Psykiatri - Att inkalla kuratorn."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Perception är kritiskt: läkaren kollar vad patienten redan vet, tror eller oroar sig för ('Vad har man sagt till dig hittills?'), så informationen kan anpassas efter mottagaren.",
+    "varför_övriga_fel": "Detta skapar ett skräddarsytt informationsflöde. Personal hanteras i Setup (S).",
+    "källa": "Palliativ medicin.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_066",
+    "huvudområde": "Medicinsk onkologi",
+    "subtopic": "Cytostatika",
+    "typ": "biverkningar",
+    "svårighetsgrad": "lätt",
+    "fråga": "En fruktad, långsiktig (sen) komplikation av kurativ cytostatikabehandling (särskilt alkylerande ämnen) som unga patienter måste informeras om är:",
+    "alternativ": {
+      "A": "Akut blindhet.",
+      "B": "Risk för sekundär malignitet (till exempel inducerad leukemi) flera år senare på grund av att cytostatikan skadat benmärgens stamceller.",
+      "C": "Permanent grön urin.",
+      "D": "Kronisk och konstant hicka."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Då cellgifter i grunden är kraftigt DNA-muterande finns en tragisk men reell risk att behandlingen orsakar en ny, sekundär cancertyp (ffa hematologisk) årtionden senare.",
+    "varför_övriga_fel": "Därför är val av kurativ behandling alltid en avvägning. De andra svarsalternativen är inte vanliga sena biverkningar.",
+    "källa": "Onkologi Medicinsk onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_067",
+    "huvudområde": "Palliativ medicin",
+    "subtopic": "Terminalfas",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Under de allra sista dygnen i livet tenderar patientens urinproduktion att minska, och extremiteterna blir kalla/marmorerade. Familjen vill att du sätter ett intravenöst dropp för att patienten inte dricker. Hur bör du agera i de flesta fall?",
+    "alternativ": {
+      "A": "Starta högdos TPN och vätska för att väcka kroppen till liv igen.",
+      "B": "Avstå iv-vätska, då det ofta förvärrar andnöd, ödem och rosslighet eftersom kroppen håller på att stänga ned och inte kan hantera volymen. Förklara lugnt för anhöriga.",
+      "C": "Lägg en ventrikelsond och ge enteral sondnäring.",
+      "D": "Genomför akut hemodialys."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "I dödsfasen saknar organen (hjärta/njurar) pump- och filtreringskapacitet. Tillförd vätska hamnar som vätska i lungorna eller som perifera ödem, vilket bara dränker patienten inifrån och skapar lidande.",
+    "varför_övriga_fel": "Patienten dör inte av törst i detta skede, utan brist på mat och vatten är en naturlig del av terminalfasen.",
+    "källa": "Onkologi Palliativ medicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_068",
+    "huvudområde": "Akut onkologi",
+    "subtopic": "VCSS",
+    "typ": "fysiologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka två bakomliggande maligna diagnoser är de vanligaste vid uppkomst av Vena Cava Superior-syndrom?",
+    "alternativ": {
+      "A": "Pankreascancer och levercancer",
+      "B": "Hjärntumörer och sarkom",
+      "C": "Lungcancer (apikalt) och lymfom (stora mediastinala körtelpaket)",
+      "D": "Bröstcancer och myelom"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Dessa båda tumörformer kan växa extremt snabbt i mediastinum och därmed komprimera halsvenerna och v. cava superior fysiskt inuti bröstkorgen.",
+    "varför_övriga_fel": "Lever, pankreas och hjärna är helt fel anatomisk lokalisation för primärtryck i övre mediastinum.",
+    "källa": "Onkologi Akut onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_069",
+    "huvudområde": "Cancer utan känd primärtumör (CUP)",
+    "subtopic": "CUP Prognos",
+    "typ": "fakta",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken parameter vägleder starkast om man ska behandla en CUP palliativt eller satsa på diagnostik för försök till långtidskontroll?",
+    "alternativ": {
+      "A": "Att patienten är rökare.",
+      "B": "Allmäntillståndet (ECOG) samt om det rör sig om singel-/oligometastasering. Ett begränsat antal metastaser på t.ex en halslymfkörtel ger ibland möjlighet till lokalt botande behandling.",
+      "C": "Bara om CRP är lågt.",
+      "D": "Om patienten har en stark släktanamnes för CUP."
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Gott AT (PS 0-1) och begränsad tumörbörda (oligometastasering) är de absolut starkaste positiva prediktiva faktorerna. Multifokal spridning ger oftast under 6 mån överlevnad.",
+    "varför_övriga_fel": "Få metastaser och stark kropp = kan tåla tuff kombobehandling eller strålning.",
+    "källa": "Cancer utan känd primärtumör (CUP).pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_070",
+    "huvudområde": "Strålbehandling",
+    "subtopic": "Tekniker",
+    "typ": "definition",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är den kliniska definitionen av brachyterapi?",
+    "alternativ": {
+      "A": "Strålbehandling som ges via tabletter",
+      "B": "När radioaktiva isotoper injiceras i blodet för att söka upp skelettet",
+      "C": "Intern strålbehandling där en radioaktiv strålkälla appliceras extremt nära, direkt i, eller intill tumören (exempelvis i prostata eller vaginalt)",
+      "D": "När man strålar med en extern maskin från minst 2 meters avstånd"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Brachy kommer från grekiskans 'kort'. Det handlar om strålning på kort avstånd (inne i kroppskaviteter eller interstitiellt via nålar), vilket skonar omgivande vävnad eftersom dosen faller extremt snabbt runt källan.",
+    "varför_övriga_fel": "Alternativ B är Radionuklidterapi. Alternativ D är extern strålbehandling.",
+    "källa": "Strålterapi_.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_071",
+    "huvudomrade": "Akut onkologi",
+    "subtopic": "Tumörlyssyndrom",
+    "typ": "mekanism",
+    "svarighetsgrad": "medel",
+    "fraga": "Vad är den bakomliggande mekanismen vid tumörlyssyndrom och varför ges ibland profylaktisk behandling inför start av kraftfull cytostatika?",
+    "alternativ": {
+      "A": "Läkemedlet kristalliseras i blodet, profylax ges för att späda ut blodet direkt.",
+      "B": "Ett snabbt sönderfall av tumörceller frisätter stora mängder urat, kalium och fosfat i blodbanan. Profylax (och vätska) ges för att skydda njurarna och undvika arytmier.",
+      "C": "Immunförsvaret överaktiveras och attackerar friska organ i en cytokinstorm. Kortison ges profylaktiskt.",
+      "D": "Tumören blockerar urinvägarna rent mekaniskt när den sväller. KAD sätts alltid som profylax."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Tumörlyssyndrom uppstår när extremt kemokänsliga tumörer bryts ned oerhört fort, varpå det intracellulära innehållet överbelastar och skadar njurarna. Profylax syftar till att skydda njurfunktionen.",
+    "varfor_ovriga_fel": "Det handlar om toxicitet inifrån döende celler, inte kristalliserat läkemedel, autoimmunitet eller fysiskt avflödeshinder.",
+    "kalla": "Onkologi Akut onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_072",
+    "huvudomrade": "Onkologisk intro och screening",
+    "subtopic": "Kostnader och Demografi",
+    "typ": "fakta",
+    "svarighetsgrad": "lätt",
+    "fraga": "Vilken enskild post utgör den absolut största andelen av samhällets totala kostnader för cancersjukdomar i Sverige?",
+    "alternativ": {
+      "A": "Läkemedel (t.ex. dyra immunterapier och målriktade behandlingar)",
+      "B": "Slutenvård och avancerade operationer",
+      "C": "Nationella screeningprogram",
+      "D": "Produktionsförluster (sjukskrivning och bortfall från arbetsmarknaden)"
+    },
+    "ratt_svar": "D",
+    "kort_forklaring": "Produktionsförluster står för hela 44% av kostnaderna för cancer, vilket vida överstiger läkemedel (8%) och screening (2%).",
+    "varfor_ovriga_fel": "Medicinska behandlingar är dyra, men den makroekonomiska kostnaden av att individer i arbetsför ålder tas ur produktion är överlägset störst.",
+    "kalla": "Onkologins framtid.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_073",
+    "huvudomrade": "Onkologisk intro och screening",
+    "subtopic": "Socioekonomi",
+    "typ": "fakta",
+    "svarighetsgrad": "medel",
+    "fraga": "Hur korrelerar utbildningsnivå med cancerincidens och överlevnad i Sverige enligt utredningsdata?",
+    "alternativ": {
+      "A": "Ingen skillnad finns då den svenska vården är skattefinansierad och likvärdig för alla.",
+      "B": "Lungcancer är ungefär dubbelt så vanligt hos personer med låg (endast grundskola) utbildning, och de får i lägre utsträckning tillgång till rekommenderad onkologisk behandling.",
+      "C": "Högutbildade drabbas dramatiskt mycket oftare av lungcancer på grund av mer stressig arbetsmiljö.",
+      "D": "Personer med låg utbildning deltar i de nationella screeningprogrammen i mycket högre utsträckning."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Patienter med kortare utbildning har tyvärr både högre risk för vissa allvarliga cancrar (som lungcancer relaterat till rökning) och missgynnas i vårdkedjan p.g.a. att de söker mindre, sämre compliance och sämre tillgång till rehabilitering.",
+    "varfor_ovriga_fel": "Socioekonomiska skillnader existerar trots den allmänna sjukvården. Högutbildade har tvärtom högre incidens av ex. bröst- och prostatacancer men bättre lungcancerstatistik och screening-deltagande.",
+    "kalla": "Onkologins framtid.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_074",
+    "huvudomrade": "Cancer utan känd primärtumör (CUP)",
+    "subtopic": "SVF-AOS",
+    "typ": "differentialdiagnostik",
+    "svarighetsgrad": "medel",
+    "fraga": "I vilket kliniskt läge är det indicerat att remittera en patient via SVF Allvarliga Ospecifika Symtom (SVF-AOS) snarare än SVF CUP?",
+    "alternativ": {
+      "A": "När primärtumören är känd, men den växer osedvanligt snabbt.",
+      "B": "När patienten har allvarliga symtom (ex. oförklarlig trötthet, viktnedgång, högt CRP) som inger stark misstanke om cancer, men där man efter basal utredning ännu INTE identifierat någon tumör/metastas.",
+      "C": "Endast när en mellannålsbiopsi från en stor tumör blir okonklusiv avseende PAD.",
+      "D": "När patienten har en stark hereditet för tarmpolyper."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "AOS är för patienter som är svårt sjuka och där cancer misstänks kraftigt, men man har blanka röntgensvar och hittar ingen knöl. CUP kräver att man faktiskt har identifierat konkreta metastaser.",
+    "varfor_ovriga_fel": "CUP handlar om verifierade metastaser där ursprunget saknas. AOS handlar om klinisk cancermisstanke utan radiologiskt fastställt tumörfokus.",
+    "kalla": "Onkologi Cancer utan känd primärtumör (CUP).docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_075",
+    "huvudomrade": "Cancer utan känd primärtumör (CUP)",
+    "subtopic": "Tumörmarkörer",
+    "typ": "indikation",
+    "svarighetsgrad": "lätt",
+    "fraga": "Generellt rekommenderas inte bred tumörmarkörstagning initialt, men vid en CUP-utredning letar man specifikt efter PSA hos män samt B-HCG och AFP hos vissa patienter. Varför?",
+    "alternativ": {
+      "A": "För att bevisa att tumören svarar på strålbehandling.",
+      "B": "Eftersom dessa identifierar prostatacancer respektive germinalcellstumörer (testikelcancer) – diagnoser som ofta har utmärkt behandlingsrespons och kan botas eller bromsas kraftigt även vid extensiv spridning.",
+      "C": "De ersätter behovet av en obehaglig mellannålsbiopsi helt och hållet.",
+      "D": "De används uteslutande för att spåra benmärgsmetastaser."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Att finna metastaserad sjukdom innebär oftast obotlighet, men med undantag för exempelvis testikelcancer och prostatacancer. Därför får man inte missa dessa diagnoser (via markörer) som annars felaktigt kunde betraktats som ohanterlig allmän CUP.",
+    "varfor_ovriga_fel": "Markörerna visar inte strålkänslighet. Biopsi för PAD är fortfarande den enskilt viktigaste komponenten i utredningen och kan inte ersättas av blodprov.",
+    "kalla": "Onkologi Cancer utan känd primärtumör (CUP).docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_076",
+    "huvudomrade": "Cancer utan känd primärtumör (CUP)",
+    "subtopic": "Metastaslokaler",
+    "typ": "differentialdiagnostik",
+    "svarighetsgrad": "lätt",
+    "fraga": "En kvinna utreds via SVF för misstänkt CUP. Mellannålsbiopsin visar adenocarcinom i en isolerad axillär lymfkörtel. Vilken primär diagnos måste primärt misstänkas?",
+    "alternativ": {
+      "A": "Lungcancer",
+      "B": "Kolorektalcancer",
+      "C": "Bröstcancer",
+      "D": "Hjärntumör"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Bröstcancer dräneras via de axillära lymfkörtlarna. Ett adenocarcinom (körtelcancer) i axillen hos en kvinna är bröstcancer tills motsatsen bevisats.",
+    "varfor_ovriga_fel": "Kolon- och lungcancer sprider sig i regel inte lymfogent till axillen som enskilt första fynd.",
+    "kalla": "Onkologi Cancer utan känd primärtumör (CUP).docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_077",
+    "huvudomrade": "Cancergenetik",
+    "subtopic": "Lynch syndrom",
+    "typ": "indikation",
+    "svarighetsgrad": "medel",
+    "fraga": "Vilket av följande scenarier utgör, enligt kriterierna, en solklar indikation för cancergenetisk utredning avseende Lynch syndrom (HNPCC)?",
+    "alternativ": {
+      "A": "Ett enstaka fall av prostatacancer hos en släkting över 80 år.",
+      "B": "Ett fall av kolorektalcancer före 50 års ålder, eller en patient med synkrona (samtidiga) tumörer i tarm och endometrium.",
+      "C": "En patient som diagnosticeras med lungcancer och som arbetat i gruva.",
+      "D": "Endast patienter med hundratals tarmpolyper (FAP) innan 20 års ålder."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Lynch syndrom orsakar tjocktarmscancer och gynekologisk cancer mycket tidigt (ofta &lt; 50 åå). Synkrona tumörer i de påverkade organen är ett klassiskt red-flag.",
+    "varfor_ovriga_fel": "Hundratals polyper pekar på FAP (APC-mutation), inte Lynch syndrom. Hög ålder eller lungcancer väcker inga primära misstankar för HNPCC.",
+    "kalla": "Cancergenetik.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_078",
+    "huvudomrade": "Palliativ medicin",
+    "subtopic": "Surprise question",
+    "typ": "verktyg",
+    "svarighetsgrad": "lätt",
+    "fraga": "Inom palliativ vård används ofta 'Surprise question'. Hur är den formulerad och vad är det kliniska syftet med den?",
+    "alternativ": {
+      "A": "'Vilken sista önskan överraskar dig mest?' – Används för att utforma kuratorsstöd.",
+      "B": "'Skulle jag bli förvånad om den här patienten dog inom ett år (eller x månader)?' – Används av läkaren för att uppmärksamma behovet av att i tid initiera ett palliativt förhållningssätt och hålla brytpunktsamtal.",
+      "C": "'Förväntar du dig att botas?' – Den inledande frågan vid SPIKES-samtal.",
+      "D": "'Var det en överraskning att få diagnosen?' – Används för att utreda reaktionsfasen i kris."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Det är ett mentalt trigger-verktyg för vårdpersonalen. Svarar man 'Nej' på frågan, är det en signal om att övergå till symtomlindring, avveckla onödiga mediciner och börja förbereda patienten existentiellt.",
+    "varfor_ovriga_fel": "Frågan ställs inte till patienten eller anhöriga och har inte med patientens önskningar eller chock att göra, utan är ett prognostiskt väckarklockeverktyg för läkaren.",
+    "kalla": "Onkologi Palliativ medicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_079",
+    "huvudomrade": "Strålbehandling",
+    "subtopic": "Blödning",
+    "typ": "indikation",
+    "svarighetsgrad": "medel",
+    "fraga": "En onkologisk patient inkommer med en livshotande, massiv arteriell blödning från en tumör. Hur ser man i allmänhet på akut strålbehandling mot detta?",
+    "alternativ": {
+      "A": "Det är den primära åtgärden och agerar som ett omedelbart tourniquet på kärlen.",
+      "B": "Det är mycket bra mot kroniskt sivande tumörblödningar men sällan förstahandsval vid urakut, massiv blödning (som istället kräver kirurgi eller endovaskulär coiling), eftersom strålningens effekt dröjer.",
+      "C": "Strålning löser omedelbart upp tumören så blödningen avstannar på minuter.",
+      "D": "Strålning ökar kärldilatationen och är absolut kontraindicerat vid alla sorters blödningar i alla skeden."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Strålbehandling har en fantastiskt god hemostatisk effekt i förlängningen, men nekros och ärrbildning tar veckor. En urakut arteriell blödning kräver direkt mekanisk stas/kirurgi.",
+    "varfor_ovriga_fel": "Det fungerar inte som en omedelbar 'avstängningsknapp' och är därför inte akut livräddande på operationsbordet vid ett massivt kärlbrott.",
+    "kalla": "Onkologi Strålbehandling.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_080",
+    "huvudomrade": "Strålbehandling",
+    "subtopic": "Radiobiologi",
+    "typ": "fysiologi",
+    "svarighetsgrad": "svår",
+    "fraga": "I formeln för beräkning av biologisk effektiv dos (BED) används parametern alpha/beta ($\\alpha/\\beta$). Vad syftar den på?",
+    "alternativ": {
+      "A": "Avståndet från strålkällan till huden.",
+      "B": "En vävnadsspecifik konstant som beskriver vävnadens/tumörens inneboende radiosensitivitet (strålkänslighet) och förmåga att reparera DNA-skador.",
+      "C": "Kvot mellan antalet vita blodkroppar och röda blodkroppar i vävnaden.",
+      "D": "Maskinens strålenergi i Megavolt."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "$\\alpha/\\beta$-värdet är ett mått inom strålningsbiologin på hur känslig vävnaden är för dosförändringar, där snabbt delande tumörer (högt värde) reagerar annorlunda på fraktionering än sen-reagerande frisk vävnad (lågt värde).",
+    "varfor_ovriga_fel": "Det är en strikt radiobiologisk vävnadskonstant, inte en maskin- eller avståndsinställning.",
+    "kalla": "Onkologi Strålbehandling.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_081",
+    "huvudomrade": "Medicinsk onkologi",
+    "subtopic": "Målstyrd behandling",
+    "typ": "mekanism",
+    "svarighetsgrad": "lätt",
+    "fraga": "Inom målstyrd onkologisk terapi får preparattypen ADC (Antibody-Drug Conjugates) en allt viktigare roll. Vad kännetecknar denna läkemedelsklass?",
+    "alternativ": {
+      "A": "Det är vacciner som ges i pillerform för att lära T-cellerna hitta cancern.",
+      "B": "Det utgörs av en antikropp (som söker upp tumörcellen) som är sammankopplad med ett extremt potent cytostatika, så att giftet levereras rakt in i cancercellen (endocytos) med minimal spridning i friska organ.",
+      "C": "Det är bredspektrumcytostatika som ges utan prediktiv testning.",
+      "D": "De bryter isär metastaserna rent fysiskt med magnetfält i blodet."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "ADC beskrivs bäst som 'målsökande cytostatika', där en monoklonal antikropp fungerar som en adresslapp, och det påkopplade giftet släpps enbart när komplexet svalts av tumörcellen.",
+    "varfor_ovriga_fel": "De kallas ibland 'Trojan horses' men är läkemedel, inga vaccin eller fysiska magneter.",
+    "kalla": "Medicinsk onkologi 2.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_082",
+    "huvudomrade": "Medicinsk onkologi",
+    "subtopic": "Immunterapi",
+    "typ": "biverkningar",
+    "svarighetsgrad": "medel",
+    "fraga": "Vilken skillnad är mest påtaglig när man använder kombinationsimmunterapi (både PD-1 hämmare och CTLA-4 hämmare) jämfört med monoterapi?",
+    "alternativ": {
+      "A": "Tumörresponsen minskar eftersom de två läkemedlen blockerar varandra.",
+      "B": "Behandlingen ges enbart oralt vid kombination.",
+      "C": "Det föreligger en dramatiskt ökad risk för allvarliga immunrelaterade biverkningar p.g.a. att immunförsvaret släpps lös på dubbla fronter.",
+      "D": "Patienten garanteras att tappa allt hår på grund av den starka effekten."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Genom att blockera både PD-1 (lokalt vid tumören) och CTLA-4 (i lymfkörteln) tas flera centrala bromsar bort samtidigt. Detta gör immunsystemet oerhört aggressivt och ökar risken för livshotande autoimmunitet/biverkningar avsevärt.",
+    "varfor_ovriga_fel": "Håravfall är en cytostatikabiverkning. De ges iv och de potentierar varandras tumöreffekt (men till ett pris av mycket hög toxicitet).",
+    "kalla": "Onkologi Akut onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_083",
+    "huvudomrade": "Medicinsk onkologi",
+    "subtopic": "Resistensutveckling",
+    "typ": "patofysiologi",
+    "svarighetsgrad": "medel",
+    "fraga": "Varför är cytostatikabehandling (med få undantag) inte i stånd att bota patienter med solid cancer som har fjärrmetastaserat (stadium IV)?",
+    "alternativ": {
+      "A": "Cytostatika distribueras aldrig ut i blodomloppet.",
+      "B": "Mutationsfrekvensen och heterogeniteten i metastaser är mycket högre, vilket gör att en stor andel av de spridda cancercellerna har inneboende mekanismer för att motstå behandlingen.",
+      "C": "Metastaser bygger omedelbart upp broskskal som läkemedlet inte tränger igenom.",
+      "D": "Levern försämras så snabbt av metastaser att cellgifterna inte aktiveras."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Tumörbördan och den genetiska kaoset i metastaser gör att enstaka kloner av tumören oundvikligen utvecklar resistens och överlever när de spridit sig till olika organ. De mer känsliga dör, men de resistenta växer till.",
+    "varfor_ovriga_fel": "Det handlar om biokemisk klonal evolution och mutationer, inte mekaniska skal eller brister i distribution.",
+    "kalla": "Onkologi Medicinsk onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_084",
+    "huvudomrade": "Onkologisk intro och screening",
+    "subtopic": "Demografi",
+    "typ": "fakta",
+    "svarighetsgrad": "lätt",
+    "fraga": "Vilken demografisk förändring är den överlägset enskilt största orsaken till att cancerincidensen förväntas öka drastiskt i Sverige fram mot 2040?",
+    "alternativ": {
+      "A": "Att utlandsresandet ökar.",
+      "B": "En växande och åldrande befolkning, eftersom cancer huvudsakligen är en sjukdom som drabbar äldre (två tredjedelar av fallen drabbar personer &gt;65 år).",
+      "C": "Ett dramatiskt försämrat immunförsvar hos yngre.",
+      "D": "Ökad strålning från bildskärmar och teknik."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Cancer bygger på ackumulerade DNA-skador över tid. Fler äldre i befolkningen garanterar automatiskt att fler individer får tillräckligt med tid att utveckla cancer.",
+    "varfor_ovriga_fel": "Strålning från skärmar har inga kända kopplingar till allmän cancerincidens i bevisade studier. Andra miljöfaktorer bidrar, men åldern är den absolut viktigaste faktorn.",
+    "kalla": "Onkologins framtid.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_085",
+    "huvudomrade": "Cancergenetik",
+    "subtopic": "Utredning",
+    "typ": "indikation",
+    "svarighetsgrad": "lätt",
+    "fraga": "Enligt det onkologiska utbildningsunderlaget anges en del tydliga varningsklockor där misstanke om ärftlig bröstcancer (BRCA) är hög. Vilket av dessa patientfall motiverar starkast remiss till onkogenetisk mottagning, oavsett familjehistoria?",
+    "alternativ": {
+      "A": "En man (oavsett ålder) som diagnosticeras med bröstcancer.",
+      "B": "En 75-årig kvinna med godartade fibroadenom i bröstet.",
+      "C": "En 65-årig kvinna med östrogenpositiv bröstcancer med långsam tillväxt.",
+      "D": "En kvinna som genomgått mammografi med otydligt svar."
+    },
+    "ratt_svar": "A",
+    "kort_forklaring": "Manlig bröstcancer är en raritet som sporadisk sjukdom men uppträder mycket oftare hos bärare av BRCA2-mutation, och all manlig bröstcancer är en absolut indikation för ärftlighetsutredning.",
+    "varfor_ovriga_fel": "Övriga alternativ saknar de tre typiska flaggorna (mycket ung ålder, trippelnegativ receptorprofil, eller manligt kön).",
+    "kalla": "Intro onkologi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_086",
+    "huvudomrade": "Palliativ medicin",
+    "subtopic": "Trygghetsordinationer",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "När en palliativ patient övergår i terminalfas sätts ofta 'trygghetsordinationer' (vid behov). Vilka symtom adresserar dessa typiskt, och hur administreras de?",
+    "alternativ": {
+      "A": "Infektion, högt blodsocker och blödning, och ges vanligen peroralt.",
+      "B": "Smärta, ångest, illamående och andningsrosslighet, och förskrivs i injektionsform (subkutant/iv) eftersom förmågan att svälja piller oftast försvinner.",
+      "C": "Trötthet och aptitlöshet, via dropp i central venkateter.",
+      "D": "Endast dödsångest, genom kontinuerlig Propofol-sedering."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Trygghetsordinationernas kärna är att man signerar ut fyra injektionspreparat i förväg (ofta Morfin [smärta/dyspné], Midazolam [ångest], Haldol [illamående] och Robinul [rosslighet]) så vården kan agera direkt mot de vanligaste svåra symtomen hos den döende som tappat ork att svälja.",
+    "varfor_ovriga_fel": "Att behandla hyperglykemi sista dagarna har sällan plats i terminalvård. Perorala mediciner blir omöjliga sista dygnen.",
+    "kalla": "Onkologi Palliativ medicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_087",
+    "huvudomrade": "Akut onkologi",
+    "subtopic": "Hjärnmetastas",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "Vad är onkologins standardbehandling av själva modertumörerna i hjärnan när en patient diagnostiseras med MULTIPLA hjärnmetastaser (stort antal utspridda över hjärnparenkymet)?",
+    "alternativ": {
+      "A": "Stereotaktisk strålbehandling (strålkniv) mot samtliga separata härdar.",
+      "B": "Helhjärnsbestrålning (exempelvis 4 Gy x 5) eftersom spridningen i hjärnan är för omfattande för punktinsatser.",
+      "C": "Akut kraniotomi och fysisk resektion utfört av neurokirurg.",
+      "D": "Att helt avstå behandling då det anses smittsam över blod-hjärnbarriären."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Vid en eller fåtal metastaser (oligo) erbjuder man stereotaxi/kirurgi. När de är många (multipla) kan man inte skära i hela hjärnan, varpå en generaliserad helhjärnsbestrålning ges palliativt för att bromsa all tumörväxt.",
+    "varfor_ovriga_fel": "Man använder inte strålkniven om antalet överstiger gränserna. Det är förstås inte smittsamt.",
+    "kalla": "Onkologi Akut onkologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_088",
+    "huvudomrade": "Onkologisk intro och screening",
+    "subtopic": "B-symtom",
+    "typ": "fakta",
+    "svarighetsgrad": "lätt",
+    "fraga": "Inom hematologin (men ibland även solida tumörer) pratar man om att patienten drabbats av B-symtom, vilket tyder på stor tumörbörda och systeminflammation. Vilka är de tre B-symtomen?",
+    "alternativ": {
+      "A": "Bröstsmärta, blåmärken, buksvullnad.",
+      "B": "Morgonstelhet, feber och lokaliserad svettning i handflatorna.",
+      "C": "Oförklarlig ihållande feber, uttalade nattliga svettningar och ofrivillig viktnedgång.",
+      "D": "Klåda över hela kroppen, gulsot och kräkningar."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "De tre klassiska B-symtomen, som utgör ett diagnostiskt varningspaket, är feber utan infektion, massiva svettningar nattetid (genomblöta lakan) och viktnedgång utan orsak.",
+    "varfor_ovriga_fel": "De andra alternativen saknar koppling till definitionen av det väletablerade begreppet.",
+    "kalla": "Medicinsk onkologi 2.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_089",
+    "huvudomrade": "Palliativ medicin",
+    "subtopic": "Smärtbehandling",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "Vid genombrottssmärta p.g.a. skelettmetastaser svarar patienten ibland dåligt på enbart morfinhöjningar. Vad beror detta på, och vilket preparat läggs därför ofta till med mycket god effekt?",
+    "alternativ": {
+      "A": "Detta beror på muskelkramper i skelettet. Gabapentin läggs till.",
+      "B": "Skelettmetastaser orsakar ofta en djup inflammatorisk smärtkomponent i benhinnan, varför NSAID (om avsaknad av kontraindikationer) adderar utmärkt nociceptiv blockad.",
+      "C": "Metastasen konsumerar morfinet direkt; därmed byter man till intravenös Ketamin.",
+      "D": "Detta sker för att skelettet ruttnar upp av syrebrist, och man lägger in Syrgas 10 L på mask."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "NSAID blockerar prostaglandiner och är extremt effektivt mot just den inflammatoriska bensmärtan som en tumör som borrar i en benhinna skapar, och används frekvent i palliation.",
+    "varfor_ovriga_fel": "Gabapentin hjälper bäst mot nervsmärta/utstrålande. Skelettsmärta har sällan något att göra med syrebrist lokalt på det sättet.",
+    "kalla": "Onkologi Palliativ medicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ONKOLOGI_090",
+    "huvudomrade": "Medicinsk onkologi",
+    "subtopic": "Cytostatika",
+    "typ": "komplikationer",
+    "svarighetsgrad": "lätt",
+    "fraga": "Extravasering är en mardröm vid cytostatikabehandling, särskilt med s.k. vävnadsretande medel (vesikanter). Vad innebär detta, och varför lägger man därför helst en central infart (som en PICC-line)?",
+    "alternativ": {
+      "A": "Det betyder att läkemedlet fräts sönder av blodet; en central kateter skyddar vätskan i ett plaströr.",
+      "B": "Det innebär att läkemedlet oavsiktligt rinner/läcker ut i omkringliggande vävnad (ex från en sprucken PVK). För vävnadsretande preparat leder det till massiv nekros i hud och muskel.",
+      "C": "Det innebär att cytostatikan försvinner upp i hjärnan. En PICC-line tvingar ner blodet i armen.",
+      "D": "Det är en allergisk reaktion mot CVK-plasten som måste dämpas med antihistamin."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Om man injicerar vesikanter perifert (PVK) och venerna brister, rinner giftet ut i underhuden och orsakar djupa svårläkta sår. Genom att injicera via en PICC-line/port in i V. Cava Superior blandas giftet ögonblickligen ut i centrala blodvolymer med minimal risk för vävnadsskada.",
+    "varfor_ovriga_fel": "Extravasering syftar specifikt på okontrollerat läckage av iv-läkemedel utanför det intravenösa rummet till kringliggande vävnad.",
+    "kalla": "Onkologi Medicinsk onkologi.docx",
+    "needs_review": "nej"
+  }
+]

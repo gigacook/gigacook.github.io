@@ -1,0 +1,952 @@
+- area: Preop
+- entity: Fasta
+- tags:
+  - handläggning
+  - preop
+- when_to_suspect:
+  - Inför all anestesi
+- discriminators:
+  - Fasta > 6h för fast föda
+  - 2h för klara drycker
+- investigation:
+  - Anamnes
+- initial_management:
+  - Vätskedropp om lång fasta
+- definitive_management:
+- complications:
+  - Aspiration vid full mage
+- pitfalls:
+  - Att fasta från vatten mer än 2h (ger dehydrering)
+- memory_hooks: 
+---
+- area: Preop
+- entity: RSI (Rapid Sequence Induction)
+- tags:
+  - preop
+  - sövningsteknik
+  - trauma
+- when_to_suspect:
+  - Hög aspirationsrisk
+  - Ileus, trauma, graviditet
+- discriminators:
+- investigation:
+  - Bedömning preop
+- initial_management:
+  - Preoxygenering
+  - Sövning + relax direkt
+- definitive_management:
+  - Intubation
+- complications:
+  - Kräkning/aspiration
+- pitfalls:
+  - Maskventilation är förbjudet vid RSI
+- memory_hooks: 
+---
+- area: Preop
+- entity: Svår luftväg (Mallampati & Tyreomentalt)
+- tags:
+  - preop
+  - statusfynd
+- when_to_suspect:
+  - Preoperativ undersökning
+- discriminators:
+  - Mallampati >1 (gomspene döljs)
+  - Tyreomentalt avstånd <6 cm
+- investigation:
+  - Inspektion mun/haka
+- initial_management:
+  - Förbered videolaryngoskop / expertis
+- definitive_management:
+- complications:
+  - Cannot intubate, cannot ventilate
+- pitfalls:
+  - Att missa "flyende haka" vid bedömning
+- memory_hooks: 
+---
+- area: Preop
+- entity: Obesitas
+- tags:
+  - komorbiditet
+  - preop
+- when_to_suspect:
+  - Högt BMI preop
+- discriminators:
+  - Sänkt FRC (apné-buffert)
+- investigation:
+  - Riskvärdering
+- initial_management:
+  - Överväg regionalanestesi
+- definitive_management:
+- complications:
+  - Snabb desaturation
+  - Atelektaser postop
+- pitfalls:
+  - Dosering av LM efter aktuell vikt (ska vara idealvikt)
+- memory_hooks: 
+---
+- area: Preop
+- entity: Ordinarie astma/KOL-medicinering
+- tags:
+  - handläggning
+  - medicin
+  - preop
+- when_to_suspect:
+  - Patient med känd lungsjukdom
+- discriminators:
+- investigation:
+  - Anamnes
+- initial_management:
+  - Premedicinera med ordinarie inhalationer
+- definitive_management:
+- complications:
+  - Peroperativ bronkospasm
+- pitfalls:
+  - Att sätta ut inhalationerna inför operation
+- memory_hooks: 
+---
+- area: Läkemedel
+- entity: Propofol
+- tags:
+  - induktionsmedel/tiva
+  - läkemedel
+- when_to_suspect:
+  - Narkosinduktion
+  - Minska risk för PONV
+- discriminators:
+  - Sänker blodtrycket
+- investigation:
+  - BT-mätning
+- initial_management:
+  - Kombinera ofta med vasopressor
+- definitive_management:
+- complications:
+  - Cirkulatorisk kollaps vid hypovolemi
+- pitfalls:
+  - Missa kärldilatationen (sänkt SVR)
+- memory_hooks: 
+---
+- area: Läkemedel
+- entity: Ketamin (Ketalar)
+- tags:
+  - induktionsmedel
+  - läkemedel
+- when_to_suspect:
+  - Hemodynamiskt instabil / blödande pat
+- discriminators:
+  - Bibehåller blodtryck och sympatikus
+- investigation:
+- initial_management:
+  - Dosering (mg/kg)
+- definitive_management:
+- complications:
+  - ej tydligt angivet i källorna
+- pitfalls:
+  - Att använda Propofol på blödande patient
+- memory_hooks: 
+---
+- area: Läkemedel
+- entity: Suxameton (Celocurin)
+- tags:
+  - akut
+  - läkemedel
+  - muskelrelaxantia
+- when_to_suspect:
+  - RSI / akut behov av relaxation
+- discriminators:
+  - Depolariserande
+  - Initial stimulering
+- investigation:
+  - TOF-mätning
+- initial_management:
+  - Intubation
+- definitive_management:
+- complications:
+  - Saknar antidot
+- pitfalls:
+  - Att tro att Sugammadex kan reversera det
+- memory_hooks: 
+---
+- area: Läkemedel
+- entity: Rocuronium (Esmeron)
+- tags:
+  - läkemedel
+  - muskelrelaxantia
+- when_to_suspect:
+  - Rutinintubation
+- discriminators:
+  - Icke-depolariserande
+- investigation:
+  - TOF-mätning
+- initial_management:
+  - Reverseras vid väckning vb
+- definitive_management:
+- complications:
+  - Restrelax -> Ofri luftväg postop
+- pitfalls:
+  - Att extubera utan adekvat muskelkraft
+- memory_hooks: 
+---
+- area: Läkemedel
+- entity: Sugammadex / Neostigmin
+- tags:
+  - antidot
+  - läkemedel
+- when_to_suspect:
+  - Kvarvarande muskelrelax vid väckning
+- discriminators:
+  - TOF-värde lågt
+- investigation:
+  - TOF-kontroll
+- initial_management:
+  - Ge antidot iv
+- definitive_management:
+  - Extubation
+- complications:
+  - Andningsvikt om dosering är för låg
+- pitfalls:
+  - Neostigmin hämmar enzymet, Sugammadex binder LM
+- memory_hooks: 
+---
+- area: Läkemedel
+- entity: Atropin & Glykopyrrolat
+- tags:
+  - antikolinergikum
+  - läkemedel
+- when_to_suspect:
+  - Bradykardi / mycket sekretion
+- discriminators:
+  - Blockerar parasympatikus
+- investigation:
+  - EKG, Puls
+- initial_management:
+  - Dosering iv
+- definitive_management:
+- complications:
+  - Vagala reaktioner om det saknas
+- pitfalls:
+  - Att förväxla det med direkta vasopressorer
+- memory_hooks: 
+---
+- area: Hemodynamik
+- entity: Noradrenalin
+- tags:
+  - hemodynamik
+  - vasopressor
+- when_to_suspect:
+  - Lågt BT (ex vid Propofol-sövning)
+- discriminators:
+  - Höjer SVR (alfa-1) och inotropi (beta-1)
+- investigation:
+  - Kontinuerligt BT
+- initial_management:
+  - Infusion / Pump
+- definitive_management:
+- complications:
+  - Kan maskera hypovolemi bakom ett "falskt" bra BT
+- pitfalls:
+  - Att glömma beta-1 effekten
+- memory_hooks: 
+---
+- area: Hemodynamik
+- entity: Fenylefrin
+- tags:
+  - hemodynamik
+  - vasopressor
+- when_to_suspect:
+  - Vasodilatation / Lågt BT perop
+- discriminators:
+  - Ren alfa-1 (höjer SVR)
+- investigation:
+  - Blodtryck
+- initial_management:
+  - Bolus iv vid behov
+- definitive_management:
+- complications:
+  - Reflektorisk bradykardi
+- pitfalls:
+  - Att förväxla med Efedrin
+- memory_hooks: 
+---
+- area: Hemodynamik
+- entity: Efedrin
+- tags:
+  - hemodynamik
+  - vasopressor
+- when_to_suspect:
+  - Lågt BT
+- discriminators:
+  - Indirekt sympatomimetika
+- investigation:
+  - Blodtryck
+- initial_management:
+  - Bolus iv
+- definitive_management:
+- complications:
+  - Takyfylaxi (minskad effekt)
+- pitfalls:
+  - Att förväxla med direkta receptoragonister
+- memory_hooks: 
+---
+- area: Hemodynamik
+- entity: Dobutamin / Milrinon
+- tags:
+  - hemodynamik
+  - inotropi
+- when_to_suspect:
+  - Kardiogen chock / Lågt CO
+- discriminators:
+  - Positiv inotropi + Vasodilatation
+- investigation:
+  - UCG
+- initial_management:
+  - Optimera hjärtats pumpkraft
+- definitive_management:
+  - Behandla infarkt (PCI)
+- complications:
+  - Lungödem vid övervätskning
+- pitfalls:
+  - Att förväxla dem med vasokonstriktorer
+- memory_hooks: 
+---
+- area: Chock
+- entity: Hypovolem chock
+- tags:
+  - chock
+  - hemodynamisk
+  - kirurgi
+  - svikt
+- when_to_suspect:
+  - Blödning, dehydrering, ileus
+- discriminators:
+  - Lågt CO, Lågt Preload, Högt SVR
+  - Kall periferi
+- investigation:
+  - ABCDE, Laktat
+  - Passivt benlyft
+- initial_management:
+  - Balanserad kristalloid (Ringer)
+- definitive_management:
+  - Blod/Kirurgi vid blödning
+- complications:
+  - Letal triad (acidos, hypotermi, koagulopati)
+- pitfalls:
+  - Ge massiv vätska vid kardiogen chock
+- memory_hooks: 
+---
+- area: Chock
+- entity: Distributiv chock
+- tags:
+  - chock
+  - hemodynamisk
+  - svikt
+- when_to_suspect:
+  - Sepsis, Anafylaxi, Neurogen
+- discriminators:
+  - Högt/Normalt CO, Lågt SVR
+  - Varm periferi (sepsis)
+- investigation:
+  - ABCDE
+- initial_management:
+  - ALLTID vätska initialt
+- definitive_management:
+  - Adrenalin (anafylaxi)
+  - Vasopressor (sepsis)
+- complications:
+  - Multiorgansvikt
+- pitfalls:
+  - Att förvänta sig kall periferi vid sepsis
+- memory_hooks: 
+---
+- area: Chock
+- entity: Kardiogen chock
+- tags:
+  - chock
+  - hemodynamisk
+  - svikt
+- when_to_suspect:
+  - Arytmi, Infarkt, Ischemi
+- discriminators:
+  - Lågt CO, Högt Preload, Högt SVR
+  - Kall periferi
+- investigation:
+  - EKG, UCG
+- initial_management:
+  - Försiktig vätskebolus (max 200ml)
+- definitive_management:
+  - Inotropi, PCI
+- complications:
+  - Lungödem om för mycket vätska ges
+- pitfalls:
+  - Att sätta in snabb volym som vid hypovolemi
+- memory_hooks: 
+---
+- area: Chock
+- entity: Obstruktiv chock
+- tags:
+  - chock
+  - hemodynamisk
+  - svikt
+- when_to_suspect:
+  - Lungemboli, Tamponad, Övertryckspneumothorax
+- discriminators:
+  - Lågt CO, Stopp i systemet
+- investigation:
+  - Rtg pulm, UCG
+- initial_management:
+  - Behandla orsaken snabbt
+- definitive_management:
+  - Thoraxdrän / Trombolys
+- complications:
+  - Hjärtstopp vid maskventilation av pneumothorax
+- pitfalls:
+  - Att tro att vätska/vasopressor löser grundproblemet
+- memory_hooks: 
+---
+- area: Handläggning
+- entity: Permissive hypotension
+- tags:
+  - akut
+  - handläggning
+  - strategi
+  - trauma
+- when_to_suspect:
+  - Okontrollerad inre blödning (AAA, trauma)
+- discriminators:
+  - MAP/BT hålls subnormalt
+- investigation:
+  - ABCDE
+- initial_management:
+  - Acceptera lägre BT temporärt
+- definitive_management:
+  - Akut operation (Source control)
+- complications:
+  - Ischemiska skador
+- pitfalls:
+  - Att optimera BT så att koaglet sköljs bort
+- memory_hooks: 
+---
+- area: ABCDE
+- entity: Ofri luftväg (A)
+- tags:
+  - abcde
+  - fynd
+  - kliniskt
+- when_to_suspect:
+  - Postop / Medvetslös pat
+- discriminators:
+  - Snarkning, stridor, indragningar
+- investigation:
+  - Inspektion i munnen
+- initial_management:
+  - Käklyft, sug munnen
+- definitive_management:
+  - Intubation / Nödluftväg vb
+- complications:
+  - Aspiration, Hypoxi
+- pitfalls:
+  - "Fri luftväg" = "Säker luftväg" (Falskt, endast tub är säker)
+- memory_hooks: 
+---
+- area: ABCDE
+- entity: Atelektaser (B)
+- tags:
+  - abcde
+  - lungkomplikation
+- when_to_suspect:
+  - Postop, Låg POX, Ryggläge
+- discriminators:
+  - Shunt (perfusion utan ventilation)
+- investigation:
+  - Rtg pulm / Lung-UL
+- initial_management:
+  - Syrgas + PEEP / CPAP
+- definitive_management:
+  - Mobilisering, PEP-ventil
+- complications:
+  - Hypoxi trots 100% O2
+- pitfalls:
+  - Att tro att högt FiO2 fixar en ren shunt-hypoxi
+- memory_hooks: 
+---
+- area: ABCDE
+- entity: Dead space (V/Q-mismatch) (B)
+- tags:
+  - abcde
+  - akut
+  - lungkomplikation
+- when_to_suspect:
+  - Lungemboli, akut dyspné
+- discriminators:
+  - Ventilation utan perfusion
+- investigation:
+  - Blodgas (pCO2-gap)
+- initial_management:
+  - O2, ABCDE
+- definitive_management:
+  - Antikoagulation
+- complications:
+  - Högerkammarsvikt
+- pitfalls:
+  - Att förväxla det med Shunt
+- memory_hooks: 
+---
+- area: ABCDE
+- entity: Blandvenös saturation (SvO2)
+- tags:
+  - abcde
+  - fysiologi
+  - fysiologi/monitorering
+- when_to_suspect:
+  - Övervakning av syrgasbalans
+- discriminators:
+  - Normalvärde ca 75% i vila
+- investigation:
+  - Blodgas
+- initial_management:
+  - Optimera DO2 vid sänkt värde
+- definitive_management:
+  - Blod/Volym/O2 beroende på orsak
+- complications:
+  - SvO2 <50% = kritisk hypoxi
+- pitfalls:
+  - Att förväxla med arteriell mättnad (SaO2)
+- memory_hooks: 
+---
+- area: Vätska
+- entity: Basalbehov
+- tags:
+  - vätska
+  - vätsketerapi
+- when_to_suspect:
+  - Fasta > 6h
+- discriminators:
+  - Ca 30 ml/kg/dygn (vuxen)
+- investigation:
+  - Vätskebalans
+- initial_management:
+  - Glukos 2,5-5% (ca 80 ml/h)
+- definitive_management:
+- complications:
+  - Hypoglykemi/Dehydrering vid svält
+- pitfalls:
+  - Att ge Ringer som basalbehov över lång tid
+- memory_hooks: 
+---
+- area: Vätska
+- entity: Ersättning / Resuscitering
+- tags:
+  - vätska
+  - vätsketerapi
+- when_to_suspect:
+  - Blödning, perop perspiratio, chock
+- discriminators:
+  - Takykardi, oliguri, laktat
+- investigation:
+  - Timdiures (>0.5 ml/kg/h)
+- initial_management:
+  - Balanserad kristalloid (Ringer)
+- definitive_management:
+  - Blodprodukter om Hb sjunker
+- complications:
+  - Övervätskning (Lungödem)
+- pitfalls:
+  - Att ge Glukos vid hypovolemi (stannar ej intravasalt)
+- memory_hooks: 
+---
+- area: Vätska
+- entity: Febertillägg
+- tags:
+  - vätska
+  - vätsketerapi
+- when_to_suspect:
+  - Postop/IVA med feber
+- discriminators:
+  - Temp > 38°C
+- investigation:
+  - Temperaturkontroll
+- initial_management:
+  - + 200-300 ml vätska per grad över 38
+- definitive_management:
+- complications:
+  - Dehydrering
+- pitfalls:
+  - Att glömma feberns effekt på perspiratio
+- memory_hooks: 
+---
+- area: Vätska
+- entity: NaCl vid kräkning/ileus
+- tags:
+  - kirurgi
+  - vätska
+  - vätskeval
+- when_to_suspect:
+  - Massiva kräkningar, obehandlad ileus
+- discriminators:
+  - Hypokloremi
+- investigation:
+  - Elektrolyter (Klorid)
+- initial_management:
+  - NaCl kan föredras framför Ringer
+- definitive_management:
+  - Kirurgi för ileus
+- complications:
+  - Syra-bas-rubbningar
+- pitfalls:
+  - Att slentrianmässigt alltid välja Ringer
+- memory_hooks: 
+---
+- area: Neuro
+- entity: Komaskalor (GCS vs RLS)
+- tags:
+  - neuro
+  - övervakning
+- when_to_suspect:
+  - Oklar medvetslöshet, D-problem
+- discriminators:
+  - Intubation vid GCS <=8 / RLS >=4
+- investigation:
+  - Smärtstimulering (centralt)
+- initial_management:
+  - Säkra A
+- definitive_management:
+  - Behandla genes (HUSK MIDAS)
+- complications:
+  - Ofri luftväg
+- pitfalls:
+  - RLS 1 är bäst, GCS 15 är bäst
+- memory_hooks: 
+---
+- area: Neuro
+- entity: Pupiller (Miotiska)
+- tags:
+  - neuro
+  - statusfynd
+- when_to_suspect:
+  - Medvetslöshet, låg AF
+- discriminators:
+  - Likstora, extremt små
+- investigation:
+  - DEFG, Blodgas
+- initial_management:
+  - Misstänk opiatöverdos (eller pons-skada)
+- definitive_management:
+  - Titrera Naloxon försiktigt
+- complications:
+  - Apné
+  - Massiv smärta vid snabb reversering
+- pitfalls:
+  - Att missa glukos (DEFG) vid koma
+- memory_hooks: 
+---
+- area: Neuro
+- entity: Pupiller (Olikstora/Anisokori)
+- tags:
+  - akut
+  - kirurgi
+  - neuro
+  - statusfynd
+  - trauma
+- when_to_suspect:
+  - Medvetandesänkt / Trauma
+- discriminators:
+  - Olikstora / ljusstela
+- investigation:
+  - Akut CT Hjärna
+- initial_management:
+  - ABCDE, skydda luftväg
+- definitive_management:
+  - Neurokirurgi vb
+- complications:
+  - Hjärnstamsinklämning
+- pitfalls:
+  - Att tro att asymmetri beror på intox/metabolt
+- memory_hooks: 
+---
+- area: IVA
+- entity: 0-HLR vs 0-IVA
+- tags:
+  - etik/riktlinje
+  - iva
+- when_to_suspect:
+  - Multiorgansvikt, dålig prognos
+- discriminators:
+  - Kollegialt beslut
+- investigation:
+  - Genomgång av prognos
+- initial_management:
+  - 0-HLR = Endast avstå kompressioner
+- definitive_management:
+  - 0-IVA = Avstå maskinell intensivvård
+- complications:
+  - Oetisk överbendhandling
+- pitfalls:
+  - Att tro att en pat med 0-HLR inte kan få IVA-vård
+- memory_hooks: 
+---
+- area: IVA
+- entity: ECMO (VA vs VV)
+- tags:
+  - iva
+  - livsuppehållande
+- when_to_suspect:
+  - Refraktär svikt på IVA
+- discriminators:
+  - Kardiogen (VA) vs Respiratorisk (VV)
+- investigation:
+  - UCG, Blodgas
+- initial_management:
+  - Kanylering
+- definitive_management:
+  - Behandla grundorsaken
+- complications:
+  - Ischemi, blödning
+- pitfalls:
+  - Att tro att V-V ECMO stöttar hjärtat (stöttar bara lunga)
+- memory_hooks: 
+---
+- area: Transf.
+- entity: Blodtransfusion
+- tags:
+  - akut
+  - handläggning
+  - kirurgi
+  - transf.
+- when_to_suspect:
+  - Blödningschock, stor op (>50% blodvolym)
+- discriminators:
+  - Sjunkande Hb, hemodynamisk svikt
+- investigation:
+  - Hb, Laktat
+- initial_management:
+  - Beställ urakut blod
+- definitive_management:
+  - Kirurgisk hemostas
+  - 4:4:1 (Ery:Plasma:Trombocyter)
+- complications:
+  - Hypocalcemi (citrat), Hypotermi
+- pitfalls:
+  - Att späda ut koagulationsfaktorer med 10L Ringer
+- memory_hooks: 
+---
+- area: Kompl.
+- entity: LAST (Systemisk lokalanestesi toxicitet)
+- tags:
+  - biverkan/toxicitet
+  - kompl.
+- when_to_suspect:
+  - Kramp/Arytmi vid blockadläggning
+- discriminators:
+  - Toxiska symtom perop
+- investigation:
+  - EKG
+- initial_management:
+  - Avbryt administration, ABCDE
+- definitive_management:
+  - Intralipid (lipidinfusion)
+- complications:
+  - Svårbehandlat hjärtstopp
+- pitfalls:
+  - Att förväxla det med anafylaxi
+- memory_hooks: 
+---
+- area: Kompl.
+- entity: EDA-biverkan
+- tags:
+  - blockad
+  - kompl.
+  - regional
+- when_to_suspect:
+  - Blodtrycksfall perop / postop
+- discriminators:
+  - Sympatikusblockad (lågt BT, takykardi)
+- investigation:
+  - BT-monitorering
+- initial_management:
+  - Ringer / Fenylefrin vb
+- definitive_management:
+  - Sänk EDA-dos
+- complications:
+  - Urinstämma / Motorikbortfall
+- pitfalls:
+  - Att misstolka tryckfallet som enbart blödning
+- memory_hooks: 
+---
+- area: Kompl.
+- entity: PONV (Illamående/Kräkning)
+- tags:
+  - biverkan
+  - kompl.
+- when_to_suspect:
+  - Postop på UVA
+- discriminators:
+  - Kräkning, illamående
+- investigation:
+  - ABCDE
+- initial_management:
+  - Uteslut hypotension
+- definitive_management:
+  - Antiemetika (Ondansetron)
+- complications:
+  - Aspiration, Dehydrering
+- pitfalls:
+  - Att glömma att lågt blodtryck orsakar illamående
+- memory_hooks: 
+---
+- area: Kompl.
+- entity: HUSK MIDAS
+- tags:
+  - kompl.
+  - minnesregel
+- when_to_suspect:
+  - Oklar medvetslöshet
+- discriminators:
+  - D-problem utan tydlig förklaring
+- investigation:
+  - Blodgas, glukos, CT
+- initial_management:
+  - Gå igenom: Herpes, Uremi, Status ep, Korsakoff, Meningit, Intox, Diabetes, Andning, Stroke
+- definitive_management:
+  - Behandla specifik orsak
+- complications:
+  - Hjärnskada vid missad beh
+- pitfalls:
+  - Att leta strukturell skada innan ABC och Glukos är säkrat
+- memory_hooks: 
+---
+- area: Preop/Läkemedel
+- entity: Kroniska inhalationer preoperativt
+- tags:
+  - anestesi
+  - farmakologi
+  - handläggning
+  - preop
+- when_to_suspect:
+  - Astma/KOL-patient inför operation
+- discriminators:
+  - Bronkdilaterare ska fortsättas även på operationsmorgonen
+- investigation:
+- initial_management:
+  - Inhalationer ges med lite vatten på operationsdagen
+- definitive_management:
+- complications:
+  - Bronkospasm perioperativt
+- pitfalls:
+  - Att pausa inhalationer pga fasta
+- memory_hooks: 
+---
+- area: Smärtmedicin
+- entity: Riskfaktorer för svår postoperativ smärta
+- tags:
+  - anestesi
+  - postop
+  - smärtmedicin
+- when_to_suspect:
+  - Preoperativ bedömning av smärtlindringsbehov
+- discriminators:
+  - Ung ålder, kvinnligt kön, preoperativ smärta/opioidbruk, psykologisk sårbarhet
+- investigation:
+- initial_management:
+  - Multimodal preemptiv smärtlindring (regional anestesi etc)
+- definitive_management:
+- complications:
+- pitfalls:
+  - Att tro att gamla patienter får ondare än unga
+- memory_hooks: 
+---
+- area: Vätsketerapi
+- entity: Koksalt (NaCl 0.9%)
+- tags:
+  - anestesi
+  - fysiologi
+  - vätsketerapi
+- when_to_suspect:
+  - Förluster av sur magsaft
+- discriminators:
+  - Stora kräkningar eller högt ileus
+- investigation:
+- initial_management:
+  - Infusion NaCl 0.9% (som ersätter klorid och vätska)
+- definitive_management:
+- complications:
+  - Hyperkloremisk acidos (vid för stora volymer till friska)
+- pitfalls:
+  - Att ge Ringer-Acetat vid pylorusstenos/stora kräkningar
+- memory_hooks: 
+---
+- area: Vätsketerapi
+- entity: Feberns vätskebortfall
+- tags:
+  - anestesi
+  - fysiologi
+  - vätsketerapi
+- when_to_suspect:
+  - Febrig patient som behöver vätskeordination
+- discriminators:
+  - Vätskebortfallet ökar markant vid feber via perspiratio
+- investigation:
+- initial_management:
+  - Tillsätt 200-300 ml extra vätska per grad temp > 37°C
+- definitive_management:
+- complications:
+  - Dehydrering
+- pitfalls:
+  - Att enbart räkna på basalbehovet (30 ml/kg)
+- memory_hooks: 
+---
+- area: Farmakologi
+- entity: Atropin
+- tags:
+  - akut
+  - anestesi
+  - farmakologi
+- when_to_suspect:
+  - Symtomatisk bradykardi
+- discriminators:
+  - Antikolinergikum (blockerar vagusnervens effekt på hjärtat)
+- investigation:
+- initial_management:
+  - Ge Atropin 0.5 mg iv
+- definitive_management:
+- complications:
+- pitfalls:
+  - Att tro att det verkar som en katekolamin (sympatikusstimulerare)
+- memory_hooks: 
+---
+- area: Neuroanestesi
+- entity: GCS vs RLS-85
+- tags:
+  - anestesi
+  - diagnostik
+  - neurotrauma
+- when_to_suspect:
+  - Bedömning av medvetandegrad
+- discriminators:
+  - GCS: 15 är fullt vaken, 3 är djupt medvetslös (högst är bäst)
+  - RLS: 1 är fullt vaken, 8 är djupt medvetslös (lägst är bäst)
+- investigation:
+- initial_management:
+- definitive_management:
+- complications:
+- pitfalls:
+  - Blanda ihop skalorna och skicka fel information
+- memory_hooks: 
+---
+- area: Respiration
+- entity: Intrapulmonell shunt
+- tags:
+  - anestesi
+  - fysiologi
+  - respiration
+- when_to_suspect:
+  - Hypoxi som inte svarar på syrgas
+- discriminators:
+  - Stora atelektaser där blod passerar lungan utan kontakt med ventilerad alveol
+- investigation:
+- initial_management:
+  - PEEP och rekrytering (för att öppna atelektasen)
+- definitive_management:
+- complications:
+  - Refraktär hypoxi
+- pitfalls:
+  - Att bara höja FiO2 (syrgasfraktion) vid en ren shunt - blodet når ändå inte alveolen!
+- memory_hooks: 

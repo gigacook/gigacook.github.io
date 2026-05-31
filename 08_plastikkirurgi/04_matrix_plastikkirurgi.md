@@ -1,0 +1,1051 @@
+- area: Brännskador
+- entity: Epidermal brännskada (1:a grad)
+- tags:
+  - brännskada
+  - brännskador
+  - kirurgi
+- when_to_suspect:
+  - Solbränna
+  - Rodnad och smärta
+- discriminators:
+  - Bevarad kapillär återfyllnad
+  - Inga blåsor
+- investigation:
+  - Klinisk bedömning (TBSA räknas EJ för denna grad)
+- initial_management:
+  - Konservativ
+  - Analgetika
+- definitive_management:
+  - Spontanläker på ca 1 vecka
+  - Lämnar inga ärr
+- complications:
+- pitfalls:
+  - Tentafälla: Att räkna in epidermal rodnad i TBSA (ger kraftig övervätskning)
+- memory_hooks: 
+---
+- area: Brännskador
+- entity: Ytlig dermal brännskada (2:a grad)
+- tags:
+  - brännskada
+  - brännskador
+  - infektion
+  - kirurgi
+- when_to_suspect:
+  - Ljusrosa, fuktig
+  - Mkt smärtsam
+- discriminators:
+  - Blåsbildning
+  - Intakt kapillär återfyllnad
+  - Bevarad smärtsensorik (hyperalgesi)
+- investigation:
+  - Klinisk bedömning (Fingertest, Nåltest)
+- initial_management:
+  - Revidera lösa blåsor (ej på hand/fot)
+  - Tvätta, icke-vidhäftande förband
+  - I ansikte: Vaselin 4-5 ggr/dag ist. för förband
+- definitive_management:
+  - Spontanläker på ca 2v (epitelisering från hårfolliklar/körtlar)
+  - Läker ofta utan ärr
+- complications:
+  - Infektion kan fördjupa skadan (nekros)
+  - Fula pigmenteringar (kräver solskydd SPF 30 i 1-2 år)
+- pitfalls:
+  - Förväxlas med djup dermal (nåltest differentierar
+  - djup har nedsatt smärta)
+- memory_hooks: 
+---
+- area: Brännskador
+- entity: Djup dermal / Fullhudsbrännskada (3:e grad)
+- tags:
+  - brännskada
+  - brännskador
+- when_to_suspect:
+  - Spräcklig, rödbrun (djup dermal)
+  - Vitgulbrun, läderartad, svartbränd, stram (fullhud)
+- discriminators:
+  - Nåltest känns endast som trubbigt tryck, ej smärtsamt
+  - Trög/ingen kapillär återfyllnad
+- investigation:
+  - ABCDE
+  - Parklandformel: 3 ml x kg x TBSA%
+  - Nio-regeln
+- initial_management:
+  - Eskarotomi (om cirkumferent extremitet/bål)
+  - Ringer-Acetat (hälften på 8h, resten på 16h)
+  - Morfin (undvik NSAID hos IVA-patienter)
+- definitive_management:
+  - Tangentiell excision (<72h) till blödande vävnad
+  - Delhudstransplantation (ofta meshad)
+  - Kompressionsplagg dygnet runt
+- complications:
+  - Kompartmentsyndrom (tourniquet-effekt)
+  - Hypovolemi / Multiorgansvikt
+  - Ärrkontrakturer
+- pitfalls:
+  - Tentafälla: Djupa brännskador gör
+- memory_hooks: 
+---
+- area: ont lokalt än ytliga, missbedöm ej djup pga patientens brist på smärta
+- entity: Plastikkirurgi Brännskador.docx, Större brännskador.pdf
+- tags:
+  - akut
+  - brist
+  - brännskador
+  - djup
+  - ej
+  - kirurgi
+  - lokalt
+  - missbedöm
+  - ont
+  - patientens
+  - pga
+  - på
+  - smärta
+  - trauma
+  - ytliga,
+  - än
+- when_to_suspect:
+  - Elektrisk brännskada (högspänning)
+- discriminators:
+  - Trauma
+- investigation:
+  - El-olycka genom extremiteter
+- initial_management:
+  - Mörkröd urin (myoglobinuri)
+  - EKG-förändringar
+- definitive_management:
+  - Trauma-CT (leta inre skador)
+  - EKG, Hjärtenzymer
+- complications:
+  - Forcerad diures >3 ml/kg/h vid myoglobinuri
+  - Fasciotomi
+- pitfalls:
+  - Telemetriövervak i 24h vid abnormt EKG (arytmi sent i förloppet extremt sällsynt)
+  - Kirurgisk revision av död muskulatur
+- memory_hooks: 
+---
+- area: • Tentafälla: Ytliga brännsår är små vid in/utgångshål men den inre muskelnekrosen är massiv
+- entity: Större brännskador.pdf
+- tags:
+  - brännskador
+  - brännsår
+  - den
+  - in/utgångshål
+  - inre
+  - massiv
+  - men
+  - muskelnekrosen
+  - små
+  - tentafälla:
+  - trauma
+  - vid
+  - ytliga
+  - är
+  - •
+- when_to_suspect:
+  - Inhalationsskada / Cyanidintox
+- discriminators:
+  - Trauma / Intox
+- investigation:
+  - Brand i slutet rum
+  - Sot i ansikte/svalg, heshet, stridor
+- initial_management:
+  - Röd urin och hud efter Cyanokit-administrering (helt ofarlig biverkan)
+- definitive_management:
+  - Oximetri (CO-Hb)
+  - Fibroskopi (svalgödem)
+- complications:
+  - Omedelbar intubation vid heshet/stridor
+  - 100% syrgas
+  - Cyanokit (hydroxokobalamin)
+- pitfalls:
+  - Konsultation/överföring till BRIVA
+- memory_hooks: 
+---
+- area: • Tentafälla: Misstolka den röda urinen från Cyanokit som massiv hematuri/myoglobinuri
+- entity: Större brännskador.pdf
+- tags:
+  - akut
+  - cyanokit
+  - den
+  - från
+  - hematuri/myoglobinuri
+  - infektion
+  - massiv
+  - misstolka
+  - röda
+  - som
+  - sårskador
+  - tentafälla:
+  - urinen
+  - •
+- when_to_suspect:
+  - Akut sår & Suturering
+- discriminators:
+  - Akut sår
+- investigation:
+  - Skär/kross-våld
+  - Sår < 8-12 timmar
+- initial_management:
+  - Langers linjer (sprickriktning) löper 90° mot muskelns kontraktionsriktning
+- definitive_management:
+  - Distalstatus ALLTID före bedövning
+- complications:
+  - Rengöring, revision
+  - Bedövning (aspirera alltid!)
+  - Sutur (undvik dead space, evertera kanter med madrassutur)
+- pitfalls:
+  - Monofilament sutur (Ansikte 5.0, Bål/Arm 4.0, Ben/Rygg 3.0)
+  - Suturtagning: Ansikte 5-7d, Bål/Arm 10-14d, Underben 21+d
+- memory_hooks: 
+---
+- area: • Tentafälla: Att invertera sårkanterna (ger svagt/brett ärr), eller använda tjock tråd (3.0) i ansiktet
+- entity: Plastikkirurgi Sårskador.docx, Sår och sårläkning.pdf
+- tags:
+  - ,
+  - akut
+  - ansiktet
+  - använda
+  - att
+  - eller
+  - i
+  - invertera
+  - kirurgi
+  - sårkanterna
+  - sårskador
+  - tentafälla:
+  - tjock
+  - trauma
+  - tråd
+  - •
+- when_to_suspect:
+  - Ansiktstrauma / Läppskada
+- discriminators:
+  - Akut sår
+- investigation:
+  - Djupa skärsår över kind eller läpp
+- initial_management:
+  - Motorik n. facialis nedsatt?
+  - Visuell förlust av läppgräns (vermilion) efter lokalbedövning
+- definitive_management:
+  - Testa n. facialis (le, rynka panna)
+- complications:
+  - innan
+- pitfalls:
+  - bedövning
+- memory_hooks: 
+---
+- area: innan
+- entity: bedövning sprutas
+- tags:
+  - 5-7
+  - ansikte
+  - dgr
+  - i
+  - innan
+  - kirurgi
+  - lager
+  - suturtagning
+  - sy
+  - •
+- when_to_suspect:
+  - Fult "hak" i läppen om kanter sys snett pga blekande bedövning
+  - Missad facialispares
+- discriminators:
+  - Tentafälla: Att bedöva läppen först och sedan försöka sy rakt (adrenalinet bleker huden och gränsen försvinner)
+- investigation:
+  - Plastikkirurgi Seminarium sårskador.docx, Sår och sårläkning.pdf
+- initial_management:
+  - Sårskador
+- definitive_management:
+  - Deglaveringsskada
+- complications:
+  - Kross/slitskada
+- pitfalls:
+  - Hud skalas av som en stor flik (ex. handrygg)
+- memory_hooks: 
+---
+- area: • Röntgen? (ofta associerat med trauma)
+- entity: • Spola, rengör under fliken• Klipp ALDRIG bort fliken primärt!
+- tags:
+  - 50%
+  - agerar
+  - biologiskt
+  - fast.
+  - fliken
+  - fullhud
+  - förband
+  - kan
+  - kirurgi
+  - lägg
+  - och
+  - ofta
+  - röntgen?
+  - som
+  - sy/tejpa
+  - tillbaka
+  - trauma
+  - överleva
+  - •
+- when_to_suspect:
+  - Nekros (då får man revidera i andra seansen)
+- discriminators:
+  - Tentafälla: Klippa bort avskalad hud direkt "för att den ser lös ut"
+- investigation:
+  - Plastikkirurgi Seminarium sårskador.docx
+- initial_management:
+  - Sårskador
+- definitive_management:
+  - Djurbett (Katt & Hund)
+- complications:
+  - Punktionssår
+- pitfalls:
+  - Bettanamnes
+- memory_hooks: 
+---
+- area: • Odling vid symtom• Klinisk bild
+- entity: • Spola sår. LÄMNA ÖPPET!• Tetanusprofylax kontroll
+- tags:
+  - antibiotika
+  - bild
+  - infektion
+  - kirurgi
+  - klinisk
+  - odling
+  - sekundärläkning•
+  - symtom•
+  - vid
+  - •
+- when_to_suspect:
+  - Dödlig sepsis hos splenektomerad (Capnocytophaga)
+  - Purulent tendovaginit i hand
+- discriminators:
+  - Tentafälla: Primärsluta ett djurbett (extremt hög risk för abscess och massiv infektion)
+- investigation:
+  - Plastikkirurgi Sårskador.docx
+- initial_management:
+  - Sårskador
+- definitive_management:
+  - Människobett
+- complications:
+  - Kross/Bett
+- pitfalls:
+  - Slagsmål (exv. knuten näve mot tand)
+- memory_hooks: 
+---
+- area: • Odling
+- entity: • Lämna öppet. Spola rikligt.
+- tags:
+  - ,
+  - ab
+  - bred
+  - empirisk
+  - heracillin
+  - infektion
+  - kirurgi
+  - monoterapi
+  - och
+  - odling
+  - otillräckliga
+  - pcv
+  - som
+  - är
+  - •
+- when_to_suspect:
+  - Aggressiv sårinfektion
+- discriminators:
+  - Tentafälla: Att behandla människobett mildare än djurbett (människobett har oerhört farlig sårflora)
+- investigation:
+  - Plastikkirurgi Sårskador.docx
+- initial_management:
+  - Sårläkning
+- definitive_management:
+  - Keloid vs Hypertroft ärr
+- complications:
+  - Ärrbildning
+- pitfalls:
+  - Rött, kliande, upphöjt ärr långt efter skada
+- memory_hooks: 
+---
+- area: utanför
+- entity: det ursprungliga sårets gränser• Hypertroft stannar
+- tags:
+  - inom
+  - kirurgi
+  - utanför
+- when_to_suspect:
+  - sårkanten
+- discriminators:
+  - Klinisk inspektion
+- investigation:
+  - Kompression
+  - Steroidinjektion
+- initial_management:
+  - Tejp/silikonbehandling
+  - Undvik excision av keloid
+- definitive_management:
+  - Extrem recidivrisk (och förvärring) om keloid skärs bort
+- complications:
+  - Tentafälla: Kirurgisk excision är botemedel för keloid (det är starkt kontraindicerat)
+- pitfalls:
+  - Plastikkirurgi Sårskador.docx, Sår och sårläkning.pdf
+- memory_hooks: 
+---
+- area: Kroniskt bensår
+- entity: Kroniskt sår
+- tags:
+  - 6v
+  - bensår
+  - ej
+  - infektion
+  - kirurgi
+  - kroniskt
+  - läkt
+  - på
+  - sår
+  - underben/fot
+  - •
+- when_to_suspect:
+  - Venöst ödem?
+  - Ischemi (nedsatta pulsar)?
+  - Nekroser i botten?
+- discriminators:
+  - ABI/Cirkulationsutredning (perifer arteriell och venös) är viktigast
+- investigation:
+  - Sanera grundorsak (cirkulation)
+  - Sårrevision (avlägsna fibrin/nekros/hypergranulation)
+- initial_management:
+  - Kompressionsbehandling (om venöst)
+  - ev. Undertrycksbeh (VAC) eller lambå/delhud
+- definitive_management:
+  - Odiagnostiserad malignitet
+  - Obehandlad osteomyelit (skelettinfektion)
+- complications:
+  - Tentafälla: Fokusera helt på dyra sårförband istället för att först utreda och åtgärda makrocirkulationen
+- pitfalls:
+  - Plastikkirurgi Sårskador.docx
+- memory_hooks: 
+---
+- area: Delhudstransplantat (Split-thickness)
+- entity: Transplantat
+- tags:
+  - behöver
+  - delhudstransplantat
+  - infektion
+  - kirurgi
+  - stor
+  - täckas
+  - yta
+  - •
+- when_to_suspect:
+  - Sårbädden måste vara extremt välvaskulariserad och blödande (transplantat saknar egna kärl)
+- discriminators:
+- investigation:
+  - Skörd (ofta med dermatom från låret)
+  - Meshing (görs till nät 1:1,5)
+- initial_management:
+  - Tagställe sekundärläker spontant under förband.
+  - Transplantatet växer fast (inläkning via angiogenes)
+- definitive_management:
+  - Transplantatförlust pga hematom, infektion eller skjuvning/rörelse under förbandet
+- complications:
+  - Förväxlas med lambå (en lambå för med sig egen stjälkad/fri blodförsörjning)
+- pitfalls:
+  - Plastikkirurgiska tekniker.pdf
+- memory_hooks: 
+---
+- area: Fullhudstransplantat (Full-thickness)
+- entity: Transplantat
+- tags:
+  - defekter
+  - eller
+  - estetiska
+  - fullhudstransplantat
+  - höga
+  - kirurgi
+  - krav
+  - på
+  - slitytor
+  - •
+- when_to_suspect:
+  - Består av hela epidermis och dermis, rensas på underhudsfett
+- discriminators:
+- investigation:
+  - Skördas ofta från bakom öra/ljumske/buk
+  - Tagstället sys ihop primärt
+- initial_management:
+  - sys in utan tension, behöver perfekt syrebädd
+- definitive_management:
+  - Osäkrare inläkning (pga tjocklek)
+  - Mindre kontraktur än delhud
+- complications:
+  - Tentafälla: Fullhud skapar mindre ärrkontraktur än delhud och används därför över leder i handen
+- pitfalls:
+  - Plastikkirurgiska tekniker.pdf
+- memory_hooks: 
+---
+- area: Stjälkad Lambå (Transpositions/Rotations)
+- entity: Lambå
+- tags:
+  - ,
+  - benprotes
+  - blottad
+  - bröstkorg
+  - eller
+  - kirurgi
+  - lambå
+  - stjälkad
+  - stram
+  - strålad
+  - ärrsträng
+  - •
+- when_to_suspect:
+  - Tar med sig en egen blodförsörjning (stjälk) från tagstället
+- discriminators:
+  - Anatomisk bedömning av kärlträd (ex m
+  - gastrocnemius, a
+  - thoracodorsalis)
+- investigation:
+  - Z-plastik (för att förlänga och bryta upp ärr över led)
+  - Rotationslambå (m
+  - gastrocnemius för att täcka blottad knäprotes)
+- initial_management:
+  - Sys in, kräver ingen mikrokirurgi
+- definitive_management:
+  - Kärlkompromiss i pedikeln (stjälken)
+- complications:
+  - 1:3 regeln: Lambåns längd bör inte överstiga 3 ggr dess basbredd för att undvika distal nekros
+- pitfalls:
+  - Plastikkirurgi Plastikkirurgiska tekniker.docx
+- memory_hooks: 
+---
+- area: Fria lambåer (Mikrokirurgi)
+- entity: Fri Lambå
+- tags:
+  - bröst
+  - defekter,
+  - fria
+  - kirurgi
+  - lambåer
+  - rekonstruktion
+  - stora
+  - •
+- when_to_suspect:
+  - Vävnad (perforantkärl/fett/hud) lösgörs HELT från kroppen
+- discriminators:
+  - Angiografi (kärlanatomi)
+- investigation:
+  - Mikrokirurgisk anastomos (ihopsyning av blodkärl 9.0/10.0 tråd)
+- initial_management:
+  - Intensiv övervakning postop (risk för ventrombos i lambå)
+- definitive_management:
+  - Total lambånekros vid anastomoshaveri
+- complications:
+  - Förväxlas med stjälkad lambå (som inte lossas helt och inte kräver mikrokirurgi)
+- pitfalls:
+  - Plastikkirurgiska tekniker.pdf
+- memory_hooks: 
+---
+- area: Undertrycksbehandling (VAC)
+- entity: Maskinellt sårförband
+- tags:
+  - efter
+  - hantera
+  - infektion
+  - kirurgi
+  - sekundärläkning
+  - stor
+  - sårrevision•
+  - sårvätska
+  - undertrycksbehandling
+  - •
+- when_to_suspect:
+  - Undertryck krymper ödem, drar ihop kanter och tvingar fram granulationsvävnad
+- discriminators:
+  - Bedöm sårbädd (måste vara vaskulariserad och helt ren från nekros)
+- investigation:
+  - Sårrevision MÅSTE ske innan applicering
+- initial_management:
+  - Bäst effekt första 4-6 veckorna, sedan avtagande nytta
+- definitive_management:
+  - ABSOLUTA KONTRAINDIKATIONER: Maligna sår, blottade stora blodkärl/nerver (risk för dödlig ruptur), obehandlad osteomyelit i botten
+- complications:
+  - Tentafälla: Använda VAC som ensam sårbehandling för att "suga ut" en beninfektion
+- pitfalls:
+  - Plastikkirurgi Undertrycksbehandling av sår.docx
+- memory_hooks: 
+---
+- area: External Tissue Extension (ETE)
+- entity: Vävnadsexpansion
+- tags:
+  - efter
+  - extension
+  - external
+  - exv.
+  - fasciotomi
+  - kirurgi
+  - omfattande
+  - på
+  - svullnad
+  - tissue
+  - underben
+  - •
+- when_to_suspect:
+  - Huden finns kvar, men kan inte dras ihop pga kraftigt svullen underliggande muskel/ödem
+- discriminators:
+- investigation:
+  - ETE fästs i sårkanterna
+- initial_management:
+  - Drar i huden ett par millimeter per dag tills den går att sluta primärt
+- definitive_management:
+  - ej tydligt angivet i källorna
+- complications:
+  - Förväxlas med subcutan vävnadsexpander (ballong som tänjer ut intakt hud över månader, vilket förtunnar huden signifikant)
+- pitfalls:
+  - Plastikkirurgiska tekniker.pdf
+- memory_hooks: 
+---
+- area: Infantilt hemangiom (Smultronmärke)
+- entity: Kärltumör
+- tags:
+  - hemangiom
+  - infantilt
+  - initialt
+  - kirurgi
+  - nyfödd
+  - snabb
+  - tillväxt
+  - •
+- when_to_suspect:
+  - Cellulär hyperproliferation (ökad celldelning)
+  - Finns sällan vid födseln (till skillnad från missbildning)
+- discriminators:
+  - Klinisk (tillväxtkurvan är klassisk)
+- investigation:
+  - Expektans är grundbehandling (börjar tillbakabildas/regrediera runt 1-årsålder)
+- initial_management:
+  - Om tumören hotar funktion (syn/luftväg): Peroral Betablockerare (Propranolol)
+- definitive_management:
+  - Blindhet, luftvägsobstruktion
+- complications:
+  - Tentafälla: Kirurgi/laser används sällan primärt
+  - Propranolol är revolutionerande förstahandsval för problematiska
+- pitfalls:
+  - Kärlanomalier.pdf, Plastikkirurgi LKG, kraniosynostos och kärllesionerner.docx
+- memory_hooks: 
+---
+- area: Kapillära kärlmissbildningar (Eldsmärken)
+- entity: Missbildning (Lågflöde)
+- tags:
+  - fläck
+  - födsel
+  - kapillära
+  - kärlmissbildningar
+  - närvarande
+  - platt
+  - röd,
+  - vid
+  - •
+- when_to_suspect:
+  - Finns vid födsel, växer
+- discriminators:
+  - proportionerligt
+- investigation:
+  - med barnet, mörknar med åren
+- initial_management:
+  - Klinisk bedömning (Ingen hyperproliferation)
+- definitive_management:
+  - Ingen expektans på regress (den försvinner ej spontant)
+- complications:
+  - Laserbehandling för blekning
+- pitfalls:
+  - Kosmetiskt stigmatiserande
+- memory_hooks: 
+---
+- area: Kärlanomalier.pdf
+- entity: Kärlanomalier
+- tags:
+  - /
+  - infektion
+  - kirurgi
+  - kärlanomalier.pdf
+  - lymfatiska
+  - missbildningar
+  - venösa
+- when_to_suspect:
+  - Missbildning (Lågflöde)
+- discriminators:
+  - Mjuk blåaktig knöl (venös) eller cystisk svullnad (lymfatisk) som märks tidigt i livet
+- investigation:
+  - Lymfatiska cystor svullnar kraftigt i samband med systemisk inflammation/förkylning
+- initial_management:
+  - MR, Ultraljud
+- definitive_management:
+  - Injektion av skleroserande medel (sprutas in och får cystorna att skrumpna)
+- complications:
+  - Sklerosering och/eller kirurgi (Sirolimus i extrema fall)
+- pitfalls:
+  - Infektion, smärta, svullnad, trycksymtom
+- memory_hooks: 
+---
+- area: Kärlanomalier.pdf, LKG docx
+- entity: Kärlanomalier
+- tags:
+  - arteriovenös
+  - docx
+  - kirurgi
+  - kärlanomalier.pdf,
+  - lkg
+  - missbildning
+  - radiologi
+- when_to_suspect:
+  - Missbildning (Högflöde)
+- discriminators:
+  - Pulsativ hud/mjukdelsförändring, smärta, varma sår
+- investigation:
+  - AV-shuntning (artär pumpar direkt in i ven utan kapillärbädd)
+- initial_management:
+  - Angiografi (interventionsradiologi)
+- definitive_management:
+  - Embolisering via kateter (coils/lim stänger artärer)
+- complications:
+  - Kirurgisk excision efter embolisering, helst före pubertet (hormoner triggar tillväxt)
+- pitfalls:
+  - Hjärtsvikt (om hög minuts-volymshuntning)
+- memory_hooks: 
+---
+- area: Kärlanomalier.pdf
+- entity: Bröstkirurgi
+- tags:
+  - autolog
+  - bröstrekonstruktion
+  - implantat
+  - kirurgi
+  - kärlanomalier.pdf
+  - onkologi
+  - vid
+  - vs
+- when_to_suspect:
+  - Rekonstruktiv kirurgi
+- discriminators:
+  - Post-mastektomi för bröstcancer
+- investigation:
+  - Strålad vävnad = Indikation för autolog lambå
+- initial_management:
+  - Bedömning av bukhull (för DIEP) / rökstatus / BMI
+- definitive_management:
+  - Om o-strålad: Expanders och därefter silikonimplantat (tvåstegs)
+  - Om strålad: Kroppsegen lambå krävs (DIEP eller Latissimus dorsi)
+- complications:
+  - DIEP = Fri lambå (fett/hud från mage, mikrokirurgi på perforanter)
+  - LD = stjälkad ryggmuskel + implantat
+- pitfalls:
+  - Strålad hud + Silikonimplantat = Starkt ökad risk för smärtsam stenhård kapselkontraktur
+- memory_hooks: 
+---
+- area: Bröstrekonstruktion.pdf, Plastikkirurgi Rekonstruktiv och plastikkirurgi.docx
+- entity: Bröstkirurgi
+- tags:
+  - /
+  - bröstförminskning
+  - bröstrekonstruktion.pdf,
+  - fysiologi
+  - förstoring
+  - kirurgi
+  - och
+  - plastikkirurgi
+  - plastikkirurgi.docx
+  - rekonstruktiv
+- when_to_suspect:
+  - Plastikkirurgi
+- discriminators:
+  - Asymmetri, ptos, nacksmärta ELLER extremt små bröst
+- investigation:
+  - Volym (ofta <150 ml för aplasi) och hudvecks-mått (ofta ≥3cm) för reduktion
+- initial_management:
+  - Klinisk mätning (Tanner-stadium, överhäng)
+- definitive_management:
+  - Krav för offentlig op: BMI-stabilitet (helst ≤25), total rökfrihet
+- complications:
+  - Aplasi (Tanner 1 = total avsaknad av körtel/veck) opereras med implantat
+  - Ptos (häng) nekas
+- pitfalls:
+  - Nekros (om rökare)
+- memory_hooks: 
+---
+- area: Bröstavvikelser.pdf, Plastikkirurgi Quiz Canvas.docx
+- entity: Kranio
+- tags:
+  - bröstavvikelser.pdf,
+  - canvas.docx
+  - kirurgi
+  - kraniosynostoser
+  - plastikkirurgi
+  - quiz
+- when_to_suspect:
+  - Kranioavvikelse
+- discriminators:
+  - Onormal skalldeformitet under första levnadsåret
+- investigation:
+  - Sagittal stängd = Båtform (scaphocephali)
+  - Metopika stängd = Plog/triangel-panna (trigonocefali)
+- initial_management:
+  - Klinisk (skallform), CT-3D
+- definitive_management:
+  - Konsultation kraniofacialt team
+- complications:
+  - Kirurgisk öppning för att inte hämma hjärnans expansion (hjärnan dubbleras i volym 1:a året)
+- pitfalls:
+  - Inskränkt hjärntillväxt, synnedsättning
+- memory_hooks: 
+---
+- area: lägesbetingad
+- entity: plagiocefali (tryck från madrass), medan äkta
+- tags:
+  - lambdoideasynostos
+  - lägesbetingad
+- when_to_suspect:
+  - ger trapezoid (trapets)-form.
+- discriminators:
+  - Kranioavvikelser.pdf
+- investigation:
+  - LKG
+- initial_management:
+  - Läpp-Käk-Gomspalt (LKG)
+- definitive_management:
+  - Kongenital defekt
+- complications:
+  - Spalt i läpp/gom vid födsel
+- pitfalls:
+  - Gomspalt kan vara
+- memory_hooks: 
+---
+- area: (intakt slemhinna men spaltade muskler undertill)
+- entity: • ÖNH / Plastik / Logoped-bedömning
+- tags:
+  - andning
+  - bb
+  - direkt
+  - näringsintag
+  - och
+  - på
+  - säkra
+  - •
+- when_to_suspect:
+  - 6 mån: Stäng läpp, mjuk gom (m
+  - levator veli palatini sys i medellinjen)
+  - 2 år: Hård gom
+  - 8 år: Bentransplantat från tibia till tandanlaget
+- discriminators:
+  - Velopharyngeal inkompetens (läckage av tal/luft genom näsan)
+  - Återkommande otiter
+- investigation:
+  - Tentafälla: LKG är en lång process till ca 19 års ålder; gommusklerna lagas för talets och mellanörats skull
+- initial_management:
+  - Läpp-käk-gomspalt_.pdf, LKG docx
+- definitive_management:
+  - Post-bariatrisk
+- complications:
+  - Bukplastik
+- pitfalls:
+  - Vävnadsöverskott
+- memory_hooks: 
+---
+- area: • Överhäng ≥3 cm, stabilt BMI (ofta ≤25), besvär av vecket
+- entity: • Klinisk mätning över symfysen
+- tags:
+  - ,
+  - av
+  - besvär
+  - bmi
+  - cm,
+  - indikationsbedömning
+  - kirurgi
+  - stabilt
+  - vecket
+  - överhäng
+  - •
+  - ≥3
+- when_to_suspect:
+  - Traditionell (löser hud till arcus, syr magmuskel)
+  - Pannikulektomi (för jättekraftigt överskott: skär enbart av hudvecket rakt av)
+- discriminators:
+  - Serom (kräver gördel)
+  - DVT/Lungemboli (extrem risk pga immobilisering & stort buktryck)
+- investigation:
+  - Tentafälla: Fettsugning utan excision hjälper inte mot rent hudöverskott
+- initial_management:
+  - Vävnadsöverskott.pdf
+- definitive_management:
+  - Könsbekr.
+- complications:
+  - AFAB och AMAB genital-/bål-kirurgi
+- pitfalls:
+  - Könsbekräftande
+- memory_hooks: 
+---
+- area: Kongenitala anomalier
+- entity: LKG (Läpp-Käke-Gomspalt) uppföljning
+- tags:
+  - pediatrik
+  - plastikkirurgi
+- when_to_suspect:
+  - Kirurgisk korrigering under uppväxten hos barn med LKG
+- discriminators:
+  - Submukös gomspalt (en dold spalt som märks sent genom kluven uvula, blåaktig linje i gommen och talfel) är lätt att missa.
+- investigation:
+- initial_management:
+  - Gom och läpp sluts under första levnadsåret
+- definitive_management:
+  - Bentransplantation till käkspalten (alveolarutskottet) görs vid 8-10 års ålder. Ben tas från Tibia eller Crista.
+- complications:
+- pitfalls:
+- memory_hooks: 
+---
+- area: Rekonstruktion/Lambåer
+- entity: Muskellambå över knäprotes
+- tags:
+  - ortopedi
+  - plastikkirurgi
+- when_to_suspect:
+  - Djup infektion med hudnekros och blottad knäprotes efter ortopedisk operation
+- discriminators:
+  - Implantat utan mjukdelstäckning innebär katastrof och extrem infektionsrisk
+- investigation:
+- initial_management:
+- definitive_management:
+  - Bäst täckning är en stjälkad muskellambå med musculus gastrocnemius (mediala buken), ibland soleus, som roteras över defekten och sedan täcks med delhud.
+- complications:
+- pitfalls:
+- memory_hooks: 
+---
+- area: Sår och Trauma
+- entity: Akut handläggning av laceration/deglavering
+- tags:
+  - plastikkirurgi
+  - sårvård
+  - traumatologi
+- when_to_suspect:
+  - Utslitna, hängande hudflikar efter trauma (t.ex. klämskada mot bildörr)
+- discriminators:
+  - Deglavering innebär att huden och underhuden slets loss från den underliggande fascian
+- investigation:
+- initial_management:
+  - KLIPP INTE BORT hudflikarna på akuten! Skölj rent, lägg tillbaka på plats, tejpa eller sy löst med enstaka stygn som biologiskt förband.
+- definitive_management:
+  - Plastikkirurg kan ibland avfetta huden och använda den som fullhudstransplantat
+- complications:
+- pitfalls:
+  - Att akut skära bort all "tveksam" hud vilket förhindrar enkel rekonstruktion.
+- memory_hooks: 
+---
+- area: Sår och Trauma
+- entity: Ansiktstrauma och N. facialis
+- tags:
+  - neurologi
+  - plastikkirurgi
+  - traumatologi
+- when_to_suspect:
+  - Djupa skär/kross-sår i ansiktet (exv. framför örat, kinden)
+- discriminators:
+  - Nervus facialis löper ytligt genom parotis och breder ut sig över ansiktet.
+- investigation:
+  - Noggrant distalstatus INNAN bedövning och suturering: be pat rynka pannan, blunda hårt, visa tänderna, le.
+- initial_management:
+- definitive_management:
+  - Mikrokirurgisk nervsutur om gren skurits av
+- complications:
+  - Permanent ansiktsförlamning
+- pitfalls:
+- memory_hooks: 
+---
+- area: Sår och Trauma
+- entity: Suturering och trådval
+- tags:
+  - kirurgisk
+  - plastikkirurgi
+  - teknik
+- when_to_suspect:
+  - Suturering av hudsår
+- discriminators:
+  - Siffran indikerar trådtjocklek (fler nollor = tunnare tråd).
+- investigation:
+- initial_management:
+- definitive_management:
+  - Bål/Extremiteter: 3.0 eller 4.0
+  - Ansikte/Händer: 5.0 eller 6.0 (ger mindre ärrbildning)
+- complications:
+- pitfalls:
+- memory_hooks: 
+---
+- area: Kärlanomalier
+- entity: Pyogent Granulom
+- tags:
+  - dermatologi
+  - onkologi
+  - plastikkirurgi
+- when_to_suspect:
+  - Snabbt växande, extremt lättblödande röd knuta på hud/slemhinna
+- discriminators:
+  - Utlöses ofta av ett litet lokalt trauma (exv naggad nagelband). Godartad vaskulär reaktion.
+- investigation:
+- initial_management:
+- definitive_management:
+  - Skrapning/diatermi (Excision och PAD för att utesluta malignt melanom)
+- complications:
+- pitfalls:
+- memory_hooks: 
+---
+- area: Kärlanomalier
+- entity: Venösa/Lymfatiska missbildningar
+- tags:
+  - interventionell
+  - plastikkirurgi
+  - radiologi
+- when_to_suspect:
+  - Svampig, icke-pulserande resistens på barn/vuxen som ökar vid ansträngning/Valsalva
+- discriminators:
+  - "Low-flow" malformationer
+- investigation:
+  - MR
+- initial_management:
+- definitive_management:
+  - Sklerosering (injektion av retande ämne som stänger hålrummen) är förstahandsval för storcystiska lymfatiska missbildningar. Kirurgi rekommenderas ej pga recidiv och ärrbildning.
+- complications:
+- pitfalls:
+- memory_hooks: 
+---
+- area: Könsbekräftande kirurgi
+- entity: Falloplastik
+- tags:
+  - plastikkirurgi
+- when_to_suspect:
+  - Nedre kirurgi vid könsdysfori (kvinna till man)
+- discriminators:
+  - Skapar neopenis ofta från fri mikrokirurgisk lambå (ex ALT, låret eller RFFF, underarmen).
+- investigation:
+- initial_management:
+- definitive_management:
+  - Anastomosering av kännande nerv (ex. ilioinguinalis) görs för att ge erogen känsel. En erektionsstav kan i sen skede läggas in.
+- complications:
+  - Hög risk för infektion och erosion/hudperforation kring erektionsstaven. Trombos i lambån.
+- pitfalls:
+- memory_hooks: 
+---
+- area: Brännskador
+- entity: NSAID och Vaselin vid Brännskador
+- tags:
+  - brännskadevård
+  - farmakologi
+  - plastikkirurgi
+- when_to_suspect:
+  - Primär handläggning av brännskada
+- discriminators:
+- investigation:
+- initial_management:
+  - Smörj brännskador i ansiktet enbart med vitt Vaselin eller salvkompress (förhindrar uttorkning, ansiktet läker oftast mycket bra spontant).
+- definitive_management:
+  - NSAID är absolut KONTRAINDICERAT vid stor brännskada som kräver intensivvård/stora vätskemängder. Orsak: Maskerar feber (viktigt infektionstecken) och försämrar njurgenomblödningen vid en redan utsatt fysiologi (hög risk för njursvikt).
+- complications:
+- pitfalls:
+- memory_hooks: 

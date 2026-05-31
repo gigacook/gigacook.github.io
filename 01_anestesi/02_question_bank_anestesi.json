@@ -1,0 +1,3042 @@
+[
+  {
+    "id": "KIR_ANESTESI_001",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Fasta",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur lång fasta från fast föda krävs inför elektiv kirurgi?",
+    "alternativ": {
+      "A": "2 timmar",
+      "B": "4 timmar",
+      "C": "6 timmar",
+      "D": "8 timmar"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Rutin är 6h fasta för fast föda.",
+    "varför_övriga_fel": "2h gäller för klara drycker.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_002",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Fasta",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "När måste patienten senast sluta dricka klara vätskor inför operation?",
+    "alternativ": {
+      "A": "0h innan",
+      "B": "2h innan",
+      "C": "4h innan",
+      "D": "6h innan"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Klara drycker tillåts upp till 2h innan.",
+    "varför_övriga_fel": "Längre fasta ger onödig dehydrering.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_003",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Luftväg",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad kännetecknar Mallampati grad 1?",
+    "alternativ": {
+      "A": "Hela mjuka gommen och uvula ses",
+      "B": "Endast basen av uvula ses",
+      "C": "Uvula syns ej alls",
+      "D": "Endast hårda gommen ses"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Grad 1 innebär full insyn till uvula.",
+    "varför_övriga_fel": "Grad 4 innebär att uvula ej syns.",
+    "källa": "Anestesiseminarium 1.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_004",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Luftväg",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket är minimiavståndet tyreomentalt för en förväntat lätt luftväg?",
+    "alternativ": {
+      "A": "2 cm",
+      "B": "4 cm",
+      "C": "6 cm",
+      "D": "8 cm"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Över 6 cm minskar risken för svår intubation.",
+    "varför_övriga_fel": "Kortare avstånd ger sämre insyn.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_005",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "ASA",
+    "typ": "definition",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad indikerar ASA-klass 1?",
+    "alternativ": {
+      "A": "Moribund",
+      "B": "Allvarlig systemsjukdom",
+      "C": "Frisk patient",
+      "D": "Hjärndöd"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "ASA I står för helt frisk patient.",
+    "varför_övriga_fel": "Klasserna stiger med sjukdomsgrad.",
+    "källa": "Anestesi och intensivvård.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_006",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "ASA",
+    "typ": "fakta",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är den ungefärliga mortalitetsrisken för ASA V?",
+    "alternativ": {
+      "A": "0,02%",
+      "B": "5%",
+      "C": "25%",
+      "D": "50%"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "ASA V är moribund, mortalitet ca 50%.",
+    "varför_övriga_fel": "0,02% är ASA I.",
+    "källa": "Anestesi och intensivvård.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_007",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "METs",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad bedömer man med METs preoperativt?",
+    "alternativ": {
+      "A": "Fysisk funktionskapacitet",
+      "B": "Njurens GFR",
+      "C": "Luftväg",
+      "D": "Koagulation"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "METs mäter fysisk kapacitet.",
+    "varför_övriga_fel": "Ej kopplat till njurar eller blod.",
+    "källa": "Anestesiseminarium 1.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_008",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Preop",
+    "typ": "fysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur påverkas lungorna fysiologiskt av grav obesitas vid induktion?",
+    "alternativ": {
+      "A": "Ökad apnétolerans",
+      "B": "Sänkt FRC ger snabb desaturation",
+      "C": "Minskat luftvägsmotstånd",
+      "D": "Ökad saturation"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Minskad funktionell residualkapacitet (FRC) förkortar apnétolerans.",
+    "varför_övriga_fel": "De tål apné sämre.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_009",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Preop",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken anestesiform är generellt säkrast vid uttalad hjärtsvikt?",
+    "alternativ": {
+      "A": "TIVA med högdos propofol",
+      "B": "Alltid RSI",
+      "C": "Regional anestesi om möjligt",
+      "D": "Inhalation enbart"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Regional anestesi minskar den hemodynamiska stressen.",
+    "varför_övriga_fel": "Generell anestesi sänker ofta CO kraftigt.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_010",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Koncept",
+    "typ": "definition",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilka utgör de 4 A:na i generell anestesi?",
+    "alternativ": {
+      "A": "Anestesi, Analgesi, Amnesi, Areflexi",
+      "B": "Apné, Amnesi, Atropin, Arytmi",
+      "C": "Analgesi, Apné, Astma, Asystoli",
+      "D": "Andning, Analgesi, Arytmi, Amnesi"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Sömn, smärtfrihet, glömska, muskelslapphet.",
+    "varför_övriga_fel": "Apné är en biverkan, inte ett mål.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_011",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Farmakologi",
+    "typ": "farmakodynamik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken effekt har Propofol på cirkulationen?",
+    "alternativ": {
+      "A": "Höjer blodtrycket",
+      "B": "Ger vasodilatation och sänker BT",
+      "C": "Extrem takykardi",
+      "D": "Ingen påverkan"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Propofol dilaterar kärl och sänker BT.",
+    "varför_övriga_fel": "Det sänker, inte höjer.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_012",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Farmakologi",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket induktionsmedel är bäst till en hemodynamiskt instabil patient?",
+    "alternativ": {
+      "A": "Propofol",
+      "B": "Thiopental",
+      "C": "Ketamin",
+      "D": "Midazolam"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Ketamin upprätthåller BT och sympatikustonus.",
+    "varför_övriga_fel": "Propofol ger BT-fall.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_013",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "MAC",
+    "typ": "definition",
+    "svårighetsgrad": "svår",
+    "fråga": "Vad står 1 MAC för gällande inhalationsgas?",
+    "alternativ": {
+      "A": "Där 50% slutar andas",
+      "B": "Där 50% ej rör sig vid hudsnitt",
+      "C": "Där 99% saknar reflexer",
+      "D": "Maximal tillåten dos"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "MAC definierar anestesidjupet vid kirurgisk stimulans.",
+    "varför_övriga_fel": "Mäter ej andningsstopp.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_014",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "RSI",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad avstår man från vid RSI för att undvika aspiration?",
+    "alternativ": {
+      "A": "Preoxygenering",
+      "B": "Muskelrelaxantia",
+      "C": "Maskventilation innan intubation",
+      "D": "Intubation"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Man ventilerar inte för att inte fylla magen med luft.",
+    "varför_övriga_fel": "Man preoxygenerar alltid vid RSI.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_015",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "RSI",
+    "typ": "indikation",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken patient bör sövas med RSI?",
+    "alternativ": {
+      "A": "Fastande elektiv",
+      "B": "Ileus-patient",
+      "C": "Handkirurgi i blockad",
+      "D": "Astmatiker"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ileus innebär extrem aspirationsrisk (full mage).",
+    "varför_övriga_fel": "Fasta minimerar aspirationsrisken.",
+    "källa": "Anestesiseminarium 1.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_016",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Luftväg",
+    "typ": "utrustning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är en stor nackdel med Larynxmask?",
+    "alternativ": {
+      "A": "Kräver djup relax",
+      "B": "Skyddar ej mot aspiration",
+      "C": "Kan ej spontanandas i",
+      "D": "Förstör stämbanden alltid"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Sluter ej tätt under epiglottis, maginnehåll kan nå lungan.",
+    "varför_övriga_fel": "Trakealtub är den enda säkra luftvägen.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_017",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Luftväg",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Säkraste tecknet på att tuben ligger rätt i trakea?",
+    "alternativ": {
+      "A": "Liksidiga andningsljud + EtCO2",
+      "B": "Imma i tuben",
+      "C": "Höjd bröstkorg",
+      "D": "Normal puls"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Koldioxid i utandning och andningsljud bekräftar ventilation.",
+    "varför_övriga_fel": "Imma kan ses i esofagus.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_018",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Farmakologi",
+    "typ": "farmakodynamik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket påstående stämmer om Suxameton?",
+    "alternativ": {
+      "A": "Icke-depolariserande",
+      "B": "Reverseras med Sugammadex",
+      "C": "Depolariserande och saknar antidot",
+      "D": "Duration på flera timmar"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Suxameton ger initiala ryckningar och saknar reversering.",
+    "varför_övriga_fel": "Rocuronium reverseras med Sugammadex.",
+    "källa": "Anestesi och intensivvård.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_019",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Övervakning",
+    "typ": "övervakning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad mäter TOF (Train of four)?",
+    "alternativ": {
+      "A": "Sömndjup",
+      "B": "Graden av muskelblockad",
+      "C": "Lungventilation",
+      "D": "Blodtryck"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Mäter muskelryckningar via n. ulnaris.",
+    "varför_övriga_fel": "BIS mäter sömndjup.",
+    "källa": "Anestesiseminarium 1.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_020",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Farmakologi",
+    "typ": "farmakologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur verkar Sugammadex?",
+    "alternativ": {
+      "A": "Bryter ned alla muskelrelaxantia",
+      "B": "Kapslar in Rocuronium",
+      "C": "Hämmar acetylkolinesteras",
+      "D": "Blockerar receptorer"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Binder och inaktiverar steroidala relaxantia direkt i blodet.",
+    "varför_övriga_fel": "Neostigmin hämmar ACh-esteras.",
+    "källa": "Anestesi och intensivvård.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_021",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Preoxygenering",
+    "typ": "fysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Huvudsakligt fysiologiskt mål med preoxygenering?",
+    "alternativ": {
+      "A": "Pressa ut koldioxid",
+      "B": "Maximal Hb-mättnad",
+      "C": "Byta kvävgas mot syrgas i FRC",
+      "D": "Vidga kapillärer"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Fyller residualvolymen med syre för apnébuffert.",
+    "varför_övriga_fel": "Hb mättas mycket snabbt.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_022",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Preoxygenering",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Syrgasfraktion (FiO2) vid preoxygenering?",
+    "alternativ": {
+      "A": "21%",
+      "B": "50%",
+      "C": "100%",
+      "D": "Inget"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "100% syrgas används för att skölja ut kvävgas helt.",
+    "varför_övriga_fel": "Lägre fraktion ger sämre buffert.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_023",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Farmakokinetik",
+    "typ": "farmakokinetik",
+    "svårighetsgrad": "svår",
+    "fråga": "Varför vaknar man snabbast från Remifentanil?",
+    "alternativ": {
+      "A": "Utsöndras via urin",
+      "B": "Bryts ned av ospecifika esteraser",
+      "C": "Lagras i fettväv",
+      "D": "Kräver antidot"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Bryts ned i blod/vävnad helt oberoende av njurar/lever.",
+    "varför_övriga_fel": "Fentanyl lagras i fett.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_024",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "LAST",
+    "typ": "komplikationer",
+    "svårighetsgrad": "medel",
+    "fråga": "Antidot vid LAST (lokalanestesitoxicitet)?",
+    "alternativ": {
+      "A": "Intralipid",
+      "B": "Naloxon",
+      "C": "Sugammadex",
+      "D": "Furosemid"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Lipider binder fettlöslig lokalanestetika.",
+    "varför_övriga_fel": "Naloxon är för opiater.",
+    "källa": "Anestesiseminarium 1.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_025",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Blockad",
+    "typ": "definition",
+    "svårighetsgrad": "lätt",
+    "fråga": "Var läggs spinalbedövning?",
+    "alternativ": {
+      "A": "Epiduralrummet",
+      "B": "I ryggmärgsvätskan (intratekalt)",
+      "C": "Intravenöst",
+      "D": "Subkutant"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Spinal läggs innanför duran i CSF nedom L1.",
+    "varför_övriga_fel": "EDA läggs utanför duran.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_026",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "EDA",
+    "typ": "biverkningar",
+    "svårighetsgrad": "medel",
+    "fråga": "Vanlig systemisk effekt av EDA?",
+    "alternativ": {
+      "A": "Takykardi",
+      "B": "Hypotension pga sympatikusblockad",
+      "C": "Hyperventilation",
+      "D": "Kräkning"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Bedövningen blockerar sympatikus vilket vidgar kärl och sänker BT.",
+    "varför_övriga_fel": "Trycket sjunker, det ökar inte.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_027",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Luftväg",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Syftet med käklyft på sövd patient?",
+    "alternativ": {
+      "A": "Stimulera smärta",
+      "B": "Lyfta undan tungan för fri luftväg",
+      "C": "Stoppa blödning",
+      "D": "Förhindra aspiration"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Drar fram tungbasen och öppnar svalget.",
+    "varför_övriga_fel": "Skyddar inte alls mot kräkning/aspiration.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_028",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Premedicinering",
+    "typ": "farmakologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Varför ges Paracetamol i premedicinering?",
+    "alternativ": {
+      "A": "Ger amnesi",
+      "B": "Sänker BT",
+      "C": "Bas för multimodal smärtlindring",
+      "D": "Hindrar atelektas"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Minskar opiatbehovet postoperativt.",
+    "varför_övriga_fel": "Ingen effekt på amnesi eller andning.",
+    "källa": "Anestesiseminarium 1.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_029",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Hypotermi",
+    "typ": "komplikationer",
+    "svårighetsgrad": "medel",
+    "fråga": "Risk vid peroperativ hypotermi?",
+    "alternativ": {
+      "A": "Anafylaxi",
+      "B": "Försämrad koagulation och långsammare läkemedelsnedbrytning",
+      "C": "Snabbt uppvaknande",
+      "D": "Bronkospasm"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Kyla försämrar enzymfunktion, vilket ger koagulopati.",
+    "varför_övriga_fel": "Uppvaknandet blir fördröjt, inte snabbt.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_030",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Dosering",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Varför doseras iv-läkemedel ofta efter idealvikt hos obesa?",
+    "alternativ": {
+      "A": "Fettväv har dålig blodförsörjning",
+      "B": "Fett absorberar och släpper ej",
+      "C": "Lagar kräver det",
+      "D": "Drogerna förlorar effekt"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Att dosera på totalvikt ger toxisk överdos i välperfunderade organ.",
+    "varför_övriga_fel": "Det är blodflödet som styr initial distribution.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_031",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Övervakning",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad mäter BIS/Sedline under anestesi?",
+    "alternativ": {
+      "A": "BT medelvärde",
+      "B": "Muskelrelax",
+      "C": "Sömndjup (EEG)",
+      "D": "Lungcompliance"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "BIS kvantifierar anestesidjupet i hjärnan.",
+    "varför_övriga_fel": "TOF mäter muskler.",
+    "källa": "Anestesiseminarium 1.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_032",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "TIVA",
+    "typ": "definition",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad innebär TIVA?",
+    "alternativ": {
+      "A": "Trakeal intubation",
+      "B": "Total intravenös anestesi",
+      "C": "Terapeutisk ventilation",
+      "D": "Total inhalation"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Sövning helt utan narkosgas.",
+    "varför_övriga_fel": "Gaser utesluts vid TIVA.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_033",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Inhalation",
+    "typ": "fysiologi",
+    "svårighetsgrad": "svår",
+    "fråga": "Vad styr främst utvädringen av inhalationsgaser?",
+    "alternativ": {
+      "A": "Alveolär ventilation",
+      "B": "Leverenzym",
+      "C": "GFR i njurar",
+      "D": "Tarmmotilitet"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Gas andas in och ut, så andningen styr elimination.",
+    "varför_övriga_fel": "De metaboliseras nästan inte alls i lever/njurar.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_034",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Hemodynamik",
+    "typ": "mekanismer",
+    "svårighetsgrad": "medel",
+    "fråga": "Varför sjunker blodtrycket direkt vid induktion (med propofol)?",
+    "alternativ": {
+      "A": "Vätskeförlust",
+      "B": "Narkosmedlet dilaterar kärlen (sänkt SVR)",
+      "C": "Pulsen halveras alltid",
+      "D": "Syrebrist i hjärtat"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Sänkt sympatikustonus och vasodilatation ger tryckfall.",
+    "varför_övriga_fel": "Vasodilatation är mekanismen.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_035",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Luftväg",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Sista åtgärd i 'Cannot intubate, cannot ventilate'-scenario?",
+    "alternativ": {
+      "A": "Nål under thyroidea",
+      "B": "Cricothyroidotomi (nödtrakeostomi)",
+      "C": "Genom esofagus",
+      "D": "Över tonsillerna"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Skapar luftväg genom cricothyroid-membranet.",
+    "varför_övriga_fel": "Snabbaste punkten till luftvägen subglottiskt.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_036",
+    "huvudområde": "Anestesiologi",
+    "subtopic": "Luftväg",
+    "typ": "indikation",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken utrustning undviks vid skallbasfraktur?",
+    "alternativ": {
+      "A": "Tub via mun",
+      "B": "Näskantarell (nasofaryngeal)",
+      "C": "Svalgtub",
+      "D": "LMA"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Tub via näsan riskerar att gå in i hjärnan.",
+    "varför_övriga_fel": "Oro-anordningar är säkrare för skallen.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_037",
+    "huvudområde": "Chock",
+    "subtopic": "Definition",
+    "typ": "definition",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur definieras chock i IVA-sammanhang?",
+    "alternativ": {
+      "A": "Alltid BT &lt;90",
+      "B": "Psykisk reaktion",
+      "C": "Syrgasleverans (DO2) är lägre än vävnadens efterfrågan",
+      "D": "Hjärtstopp"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Chock är cellulär hypoxi.",
+    "varför_övriga_fel": "Lågt BT är ett symtom, ej definitionen.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_038",
+    "huvudområde": "Chock",
+    "subtopic": "Hypovolem",
+    "typ": "patofysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Hemodynamisk profil vid hypovolem chock?",
+    "alternativ": {
+      "A": "Högt CO, lågt SVR",
+      "B": "Lågt CO, lågt Preload, högt SVR",
+      "C": "Lågt CO, högt Preload, högt SVR",
+      "D": "Högt Preload, lågt SVR"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Brist på volym (preload) sänker CO, SVR ökar kompensatoriskt.",
+    "varför_övriga_fel": "C är kardiogen.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_039",
+    "huvudområde": "Chock",
+    "subtopic": "Distributiv",
+    "typ": "patofysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Primärt fel vid distributiv chock (sepsis)?",
+    "alternativ": {
+      "A": "Låg pumpkraft",
+      "B": "Hög vasokonstriktion",
+      "C": "Vasodilatation (kraftigt sänkt SVR)",
+      "D": "Massiv blodförlust"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Kärlen vidgas och trycket sjunker (lågt SVR).",
+    "varför_övriga_fel": "Blodet finns kvar i kroppen initialt.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_040",
+    "huvudområde": "Chock",
+    "subtopic": "Kardiogen",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad skiljer kardiogen från hypovolem chock?",
+    "alternativ": {
+      "A": "Lågt SVR",
+      "B": "Kardiogen har högt/normalt Preload",
+      "C": "Kardiogen har alltid bradykardi",
+      "D": "Tål stora vätskebolusar"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "När hjärtat sviktar stasar blodet bakåt (högt preload).",
+    "varför_övriga_fel": "Hypovolemi har lågt preload.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_041",
+    "huvudområde": "Chock",
+    "subtopic": "Obstruktiv",
+    "typ": "exempel",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad ger klassiskt en obstruktiv chock?",
+    "alternativ": {
+      "A": "Magsjuka",
+      "B": "Allergi",
+      "C": "Massiv lungemboli (LE) eller övertryckspneumothorax",
+      "D": "Infarkt"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Fysiskt stopp i cirkulationen utanför hjärtat.",
+    "varför_övriga_fel": "D är kardiogen, B distributiv.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_042",
+    "huvudområde": "Chock",
+    "subtopic": "Behandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Grundbehandling vid all distributiv chock?",
+    "alternativ": {
+      "A": "Diuretika",
+      "B": "Blod",
+      "C": "Vätska (kristalloid) för att fylla kärlen",
+      "D": "Kraniotomi"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Dilaterade kärl kräver initialt vätskevolym.",
+    "varför_övriga_fel": "Diuretika försämrar chocken.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_043",
+    "huvudområde": "Chock",
+    "subtopic": "Behandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "När testas endast en mini-bolus (200 ml) med försiktighet?",
+    "alternativ": {
+      "A": "Anafylaxi",
+      "B": "Kardiogen chock",
+      "C": "Dehydrering",
+      "D": "Blödning"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ett sviktande hjärta tål inte volym, risk för lungödem.",
+    "varför_övriga_fel": "Övriga kräver stora volymer snabbt.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_044",
+    "huvudområde": "Chock",
+    "subtopic": "Vasopressorer",
+    "typ": "farmakodynamik",
+    "svårighetsgrad": "svår",
+    "fråga": "Hur häver Noradrenalin primärt chock?",
+    "alternativ": {
+      "A": "Ren alfa-1",
+      "B": "Kombinerad alfa-1 (SVR) och beta-1 (inotropi)",
+      "C": "Vagusblockad",
+      "D": "Ren Beta-2"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "NA höjer SVR (alfa) men har även viss hjärtstöttande effekt (beta).",
+    "varför_övriga_fel": "Ren alfa-1 är fenylefrin.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_045",
+    "huvudområde": "Chock",
+    "subtopic": "Vasopressorer",
+    "typ": "farmakodynamik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken vasopressor har ren alfa-1 agonism?",
+    "alternativ": {
+      "A": "Adrenalin",
+      "B": "Dobutamin",
+      "C": "Fenylefrin",
+      "D": "Efedrin"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Ger vasokonstriktion utan direkt hjärtstimulering.",
+    "varför_övriga_fel": "Adrenalin/Efedrin är starkt beta-aktiva.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_046",
+    "huvudområde": "Chock",
+    "subtopic": "Vasopressorer",
+    "typ": "mekanismer",
+    "svårighetsgrad": "svår",
+    "fråga": "Hur verkar Efedrin till skillnad från Fenylefrin?",
+    "alternativ": {
+      "A": "Sänker SVR",
+      "B": "Frisätter indirekt endogent noradrenalin",
+      "C": "Perifert endast",
+      "D": "Slår ut andning"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Efedrin tömmer egna NA-depåer, ger takyfylaxi vid täta doser.",
+    "varför_övriga_fel": "Det är en indirekt sympatomimetika.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_047",
+    "huvudområde": "Chock",
+    "subtopic": "Test",
+    "typ": "övervakning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Syftet med passivt benlyft?",
+    "alternativ": {
+      "A": "Testa om volym höjer BT (volymresponsivitet)",
+      "B": "Avlasta diafragma",
+      "C": "Sänka pulsen",
+      "D": "Undvika DVT"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Autotransfunderar venblod och simulerar en bolusdos.",
+    "varför_övriga_fel": "Testar vätskebehov utan att ge faktisk vätska.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_048",
+    "huvudområde": "Chock",
+    "subtopic": "Blödning",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken vätska prioriteras vid massiv blödning?",
+    "alternativ": {
+      "A": "Glukosdropp",
+      "B": "Enbart Ringer-Acetat",
+      "C": "Urakuta blodprodukter",
+      "D": "Vasopressin"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Blod ersätts med blod för att behålla koagulation.",
+    "varför_övriga_fel": "Kristalloid späder ut koagulationsfaktorer.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_049",
+    "huvudområde": "Chock",
+    "subtopic": "Blödning",
+    "typ": "koncept",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är 'permissive hypotension' vid okontrollerad blödning?",
+    "alternativ": {
+      "A": "Ligga platt",
+      "B": "Acceptera lägre BT för att ej skölja bort koagel",
+      "C": "Stänga av hjärtat",
+      "D": "Ge kärlvidgande"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "För högt tryck blöder mer innan kirurgen lagat kärlet.",
+    "varför_övriga_fel": "Ett temporärt accepterande av hypoxi.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_050",
+    "huvudområde": "Chock",
+    "subtopic": "Laktat",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket akut blodprov värderar graden av vävnadshypoperfusion/chock?",
+    "alternativ": {
+      "A": "Kreatinin",
+      "B": "Troponin",
+      "C": "Laktat",
+      "D": "Natrium"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Laktat stiger vid anaerob metabolism pga O2-brist.",
+    "varför_övriga_fel": "Ospecifik men snabb generell markör.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_051",
+    "huvudområde": "Chock",
+    "subtopic": "MAP",
+    "typ": "övervakning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket MAP (Mean Arterial Pressure) siktar man normalt på vid resuscitering?",
+    "alternativ": {
+      "A": "40 mmHg",
+      "B": "65 mmHg",
+      "C": "95 mmHg",
+      "D": "120 mmHg"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "MAP &gt; 65 mmHg säkerställer ofta adekvat organperfusion.",
+    "varför_övriga_fel": "65 är standardmålet intensivvårdsmässigt.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_052",
+    "huvudområde": "Chock",
+    "subtopic": "Symptom",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Knallröda varma extremiteter, puls 125, BT 70/40. Trolig chocktyp?",
+    "alternativ": {
+      "A": "Hypovolem",
+      "B": "Kardiogen",
+      "C": "Distributiv (sepsis)",
+      "D": "Blödning"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Varm periferi betyder vasodilatation (lågt SVR).",
+    "varför_övriga_fel": "Hypovolem/Kardiogen ger kall, blek hud.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_053",
+    "huvudområde": "Chock",
+    "subtopic": "Symptom",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Tecken på hypovolem (kall) chock?",
+    "alternativ": {
+      "A": "Polyuri",
+      "B": "Vasodilatation i huden",
+      "C": "Takykardi, oliguri och perifer vasokonstriktion",
+      "D": "Bradykardi"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Kroppen centraliserar cirkulationen och sparar vätska.",
+    "varför_övriga_fel": "Detta maximerar perfusion till hjärna/hjärta.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_054",
+    "huvudområde": "Chock",
+    "subtopic": "Hemodynamik",
+    "typ": "mekanismer",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur definieras blodtrycket fysiologiskt?",
+    "alternativ": {
+      "A": "CO / SVR",
+      "B": "CO multiplicerat med SVR",
+      "C": "Sys + Dia",
+      "D": "Puls x Slagvolym"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Tryck = Flöde x Motstånd.",
+    "varför_övriga_fel": "D är formeln för CO.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_055",
+    "huvudområde": "Chock",
+    "subtopic": "Anafylaxi",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Primärt läkemedel vid anafylaktisk chock?",
+    "alternativ": {
+      "A": "Kortison",
+      "B": "Antihistamin",
+      "C": "Adrenalin",
+      "D": "Glukos"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Adrenalin häver bronkospasm och kontraherar kärl direkt.",
+    "varför_övriga_fel": "Övriga tar för lång tid att verka initialt.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_056",
+    "huvudområde": "Chock",
+    "subtopic": "Neurogen",
+    "typ": "patofysiologi",
+    "svårighetsgrad": "svår",
+    "fråga": "Varför ses ofta bradykardi vid hög neurogen chock?",
+    "alternativ": {
+      "A": "Hjärtinfarkt",
+      "B": "Sympatikus blockeras, vagus är intakt",
+      "C": "Noradrenalinfrisättning",
+      "D": "Baroreceptorblockad"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Förlust av sympatikus (gas) låter parasympatikus (broms) dominera.",
+    "varför_övriga_fel": "Klassiskt vid höga spinala skador.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_057",
+    "huvudområde": "ABCDE",
+    "subtopic": "ABCDE",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Massiv blödning och snarkande andning, vad åtgärdas först?",
+    "alternativ": {
+      "A": "Blodtransfusion",
+      "B": "Stoppa blödning",
+      "C": "Åtgärda luftväg (A)",
+      "D": "Neurologstatus"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "A går ALLTID först. Utan luft dör patienten snabbast.",
+    "varför_övriga_fel": "ABCDE är strikt sekventiell.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_058",
+    "huvudområde": "ABCDE",
+    "subtopic": "Luftväg",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket ljud tyder på A-problem (övre luftvägshinder)?",
+    "alternativ": {
+      "A": "Rassel basalt",
+      "B": "Inspiratorisk stridor / snarkning",
+      "C": "Dämpad perkussionston",
+      "D": "Ronki"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Snarkning och stridor är kardinaltecken på svalg/larynxhinder.",
+    "varför_övriga_fel": "Rassel/Ronki är B-problem.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_059",
+    "huvudområde": "ABCDE",
+    "subtopic": "B-problem",
+    "typ": "fysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Takypné och cyanos. Vad är problemet?",
+    "alternativ": {
+      "A": "Bara hyperkapni",
+      "B": "Gasutbytessvikt (hypoxi)",
+      "C": "Lågt pCO2",
+      "D": "Bradykardi"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Cyanos beror på otillräckligt syresatt Hb.",
+    "varför_övriga_fel": "Hyperkapni ger inte i sig cyanos.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_060",
+    "huvudområde": "ABCDE",
+    "subtopic": "C-problem",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Snabb bedside-test för hudperfusion?",
+    "alternativ": {
+      "A": "Blodgas",
+      "B": "Kapillär återfyllnadstid",
+      "C": "Pupiller",
+      "D": "Andningsfrekvens"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Tryck på nagel, tid &gt;2 sek = hypoperfusion.",
+    "varför_övriga_fel": "Okomplicerad utvärdering av mikrocirkulation.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_061",
+    "huvudområde": "ABCDE",
+    "subtopic": "NEWS2",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "NEWS2-poäng för akut läkar/IVA-bedömning?",
+    "alternativ": {
+      "A": "0",
+      "B": "3",
+      "C": "&gt;= 7",
+      "D": "Endast puls styr"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "&gt;=7p betyder urakut risk och IVA-kontakt rekommenderas.",
+    "varför_övriga_fel": "5p kräver åtgärd, 7 är IVA-nivå.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_062",
+    "huvudområde": "ABCDE",
+    "subtopic": "DEFG",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad står G för i DEFG vid medvetslöshet?",
+    "alternativ": {
+      "A": "Glasgow",
+      "B": "Glukos",
+      "C": "Graviditet",
+      "D": "Genetik"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Glukos tas alltid för att utesluta reversibel hypoglykemi.",
+    "varför_övriga_fel": "Viktigt tillägg till ABCDE.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_063",
+    "huvudområde": "ABCDE",
+    "subtopic": "Infart",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Dålig patient utan PVK, kärlen ihopfallna. Nästa steg?",
+    "alternativ": {
+      "A": "Oral vätska",
+      "B": "CVK",
+      "C": "Intraosseös nål (IO)",
+      "D": "Subkutant"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "IO kan sättas extremt snabbt för akut resuscitering.",
+    "varför_övriga_fel": "CVK tar för lång tid akut.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_064",
+    "huvudområde": "ABCDE",
+    "subtopic": "Flöde",
+    "typ": "fysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad påverkar flödet mest i en infart enligt Hagen-Poiseuille?",
+    "alternativ": {
+      "A": "Längd",
+      "B": "Temperatur",
+      "C": "Radien (upphöjt till 4)",
+      "D": "Trycket"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Radien har exponentiellt störst inverkan på flödet.",
+    "varför_övriga_fel": "Kort och tjock nål ger mer vätska än lång CVK.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_065",
+    "huvudområde": "Fysiologi",
+    "subtopic": "DO2",
+    "typ": "mekanismer",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilka tre huvudfaktorer bygger upp DO2 (Syrgasleverans)?",
+    "alternativ": {
+      "A": "Puls, AF, BT",
+      "B": "CO, Hb, SaO2",
+      "C": "SVR, Tidalvolym, pO2",
+      "D": "PEEP, MAC, GFR"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Hjärtminutvolym multiplicerat med artärens syreinnehåll (Hb*SaO2).",
+    "varför_övriga_fel": "Blodtryck styr perfusion men ej syreinnehåll.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_066",
+    "huvudområde": "Fysiologi",
+    "subtopic": "DO2",
+    "typ": "mekanismer",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur mycket extraherar kroppen normalt av DO2 (1000 ml/min) i vila?",
+    "alternativ": {
+      "A": "5%",
+      "B": "25%",
+      "C": "50%",
+      "D": "90%"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Bara ca 250 ml/min används i vila (O2ER 25%).",
+    "varför_övriga_fel": "Resten är fysiologisk buffert.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_067",
+    "huvudområde": "ABCDE",
+    "subtopic": "DO2 optimering",
+    "typ": "mekanismer",
+    "svårighetsgrad": "medel",
+    "fråga": "Anemisk patient med hög puls. Kroppen optimerar...?",
+    "alternativ": {
+      "A": "Andningsarbete",
+      "B": "DO2 genom att öka CO",
+      "C": "Värme",
+      "D": "Laktat"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "För lågt Hb kompenseras med högre flöde (puls) för stabil DO2.",
+    "varför_övriga_fel": "Det är en adaptiv mekanism mot anemi.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_068",
+    "huvudområde": "ABCDE",
+    "subtopic": "Syretransport",
+    "typ": "mekanismer",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur transporteras syre primärt i blodet?",
+    "alternativ": {
+      "A": "Löst i plasma",
+      "B": "Bundet till Hb",
+      "C": "Som bikarbonat",
+      "D": "I leukocyter"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ca 98% är Hb-bundet.",
+    "varför_övriga_fel": "Fysikaliskt löst syre är marginellt.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_069",
+    "huvudområde": "ABCDE",
+    "subtopic": "Mortalitet",
+    "typ": "fakta",
+    "svårighetsgrad": "svår",
+    "fråga": "Vilken parameterkombination ökar mortaliteten drastiskt akut?",
+    "alternativ": {
+      "A": "Hypertoni och temp",
+      "B": "Hypotoni och Hypoxi",
+      "C": "Tachypne och smärta",
+      "D": "Illamående och feber"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Samtidig B- och C-svikt ger extremt hög mort (ca 43%).",
+    "varför_övriga_fel": "Andra är allvarliga men ej lika livshotande akut.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_070",
+    "huvudområde": "ABCDE",
+    "subtopic": "Utvärdering",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Viktigaste åtgärden efter varje intervention i ABCDE?",
+    "alternativ": {
+      "A": "Ringa röntgen",
+      "B": "Gå tillbaka och reevaluera från A",
+      "C": "Ge antibiotika",
+      "D": "Skriva journal"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Iterativ omvärdering säkerställer att ingen ny svikt tillkommit.",
+    "varför_övriga_fel": "Det är en cirkulär process.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_071",
+    "huvudområde": "ABCDE",
+    "subtopic": "DO2/VO2",
+    "typ": "mekanismer",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad händer direkt när syrgaskonsumtionen (VO2) överstiger leveransen (DO2)?",
+    "alternativ": {
+      "A": "Apné",
+      "B": "Anaerob metabolism och laktatstegring",
+      "C": "Hb stiger omedelbart",
+      "D": "Feber"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Vävnaden tvingas producera laktat vid energibrist.",
+    "varför_övriga_fel": "Detta kallas cellulär hypoxi.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_072",
+    "huvudområde": "ABCDE",
+    "subtopic": "Andning",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad tyder ytlig, mycket snabb andning på?",
+    "alternativ": {
+      "A": "Normal gasutväxling",
+      "B": "Opiatöverdos",
+      "C": "Ökat, ohållbart andningsarbete",
+      "D": "Djup sömn"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Vädrar endast dead space och leder till utmattning.",
+    "varför_övriga_fel": "Opiater ger långsam andning.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_073",
+    "huvudområde": "ABCDE",
+    "subtopic": "Hypoxi",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Första åtgärd vid fallande saturation under anestesi?",
+    "alternativ": {
+      "A": "Diuretika",
+      "B": "Öka FiO2 (100% syrgas)",
+      "C": "Extubera",
+      "D": "Ge antibiotika"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Säkra syretillförseln först medan orsak utreds.",
+    "varför_övriga_fel": "Löser den akuta hypoxin.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_074",
+    "huvudområde": "ABCDE",
+    "subtopic": "NEWS2",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken parameter ingår INTE i NEWS2?",
+    "alternativ": {
+      "A": "Puls",
+      "B": "Blodtryck",
+      "C": "P-Glukos",
+      "D": "Medvetandegrad"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Glukos tillhör DEFG men ger inga NEWS-poäng.",
+    "varför_övriga_fel": "De andra är standard i NEWS2.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_075",
+    "huvudområde": "ABCDE",
+    "subtopic": "E-problem",
+    "typ": "övervakning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad görs i bedömningssteget 'E'?",
+    "alternativ": {
+      "A": "EKG",
+      "B": "Helkroppsinspektion och temp",
+      "C": "Blodgas",
+      "D": "Pupillkontroll"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Exposure handlar om yttre tecken, skador och temperatur.",
+    "varför_övriga_fel": "Pupiller = D.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_076",
+    "huvudområde": "ABCDE",
+    "subtopic": "C-problem",
+    "typ": "övervakning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Hur mäts urinproduktion bäst på IVA?",
+    "alternativ": {
+      "A": "Patienten får berätta",
+      "B": "KAD med timdiures",
+      "C": "Bladderscan x1/dygn",
+      "D": "Vägning"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "KAD ger kontinuerlig mätning av njurarnas perfusion.",
+    "varför_övriga_fel": "Kritisk parameter för cirkulation.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_077",
+    "huvudområde": "Postop",
+    "subtopic": "Extubation",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "När extuberas en patient?",
+    "alternativ": {
+      "A": "När gasen stängs av",
+      "B": "När patienten är vaken med skyddsreflexer och TOF &gt;0.9",
+      "C": "Alltid på IVA",
+      "D": "När BT är normalt"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Måste kunna skydda sin egen luftväg.",
+    "varför_övriga_fel": "Om pat sover faller tungan bakåt.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_078",
+    "huvudområde": "Postop",
+    "subtopic": "Oförväntat uppvak",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vanligaste orsaken till förlängd väckningsfas?",
+    "alternativ": {
+      "A": "Stroke",
+      "B": "Hypoglykemi",
+      "C": "Kvarvarande effekt av anestesiläkemedel",
+      "D": "Infarkt"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Läkemedel dröjer ibland kvar, ffa vid hypotermi/njursvikt.",
+    "varför_övriga_fel": "Övriga måste övervägas, men är ovanligare.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_079",
+    "huvudområde": "Postop",
+    "subtopic": "PONV",
+    "typ": "farmakologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket anestesimedel motverkar illamående (PONV)?",
+    "alternativ": {
+      "A": "Ketamin",
+      "B": "Sevofluran",
+      "C": "Propofol",
+      "D": "Fentanyl"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Propofol (TIVA) har uttalad antiemetisk effekt.",
+    "varför_övriga_fel": "Gaser och opiater ökar risken.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_080",
+    "huvudområde": "Postop",
+    "subtopic": "Blödning",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Takykardi och hypotension direkt postop tyder primärt på?",
+    "alternativ": {
+      "A": "Kardiogen chock",
+      "B": "Anafylaxi",
+      "C": "Kirurgisk blödning",
+      "D": "Hög ryggmärgsblockad"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Blödning från op-området måste uteslutas urakut.",
+    "varför_övriga_fel": "Det är en högfrekvent kirurgisk komplikation.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_081",
+    "huvudområde": "Postop",
+    "subtopic": "Smärtlindring",
+    "typ": "koncept",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad innebär multimodal smärtlindring?",
+    "alternativ": {
+      "A": "Bara opiater",
+      "B": "Bara EDA",
+      "C": "Kombinera preparat (ex Paracetamol + NSAID + Opiat)",
+      "D": "Smärtlindring varannan timme"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Angriper smärtan från olika håll för att minska opiatdosen.",
+    "varför_övriga_fel": "Minskar biverkningar.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_082",
+    "huvudområde": "Postop",
+    "subtopic": "PCA",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är PCA?",
+    "alternativ": {
+      "A": "Post-op Care Assessment",
+      "B": "Patient Controlled Analgesia",
+      "C": "Paracetamol Continuous",
+      "D": "Propofol Cocaine"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Patienten trycker själv fram opiat-doser vid behov.",
+    "varför_övriga_fel": "Ger jämnare smärtlindring.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_083",
+    "huvudområde": "Postop",
+    "subtopic": "EDA",
+    "typ": "biverkningar",
+    "svårighetsgrad": "medel",
+    "fråga": "En viktig hemodynamisk biverkan att vaka på vid EDA postop?",
+    "alternativ": {
+      "A": "Hypertension",
+      "B": "Lungödem",
+      "C": "Blodtrycksfall (sympatikusblockad)",
+      "D": "Atelektas"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "EDA vidgar perifera kärl och sänker BT.",
+    "varför_övriga_fel": "Viktigt att titrera rätt vätska/vasopressor.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_084",
+    "huvudområde": "Postop",
+    "subtopic": "Naloxon",
+    "typ": "komplikationer",
+    "svårighetsgrad": "svår",
+    "fråga": "Risk vid fulldos reversering med Naloxon postop?",
+    "alternativ": {
+      "A": "Vasodilatation",
+      "B": "Massivt smärtgenombrott",
+      "C": "Permanent apné",
+      "D": "Hypoglykemi"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Tar bort all smärtlindring patienten fått perop.",
+    "varför_övriga_fel": "Titreras försiktigt.",
+    "källa": "Anestesiseminarium 2.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_085",
+    "huvudområde": "Postop",
+    "subtopic": "A-problem",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Kräkning/slem hos okontaktbar postop-patient. Åtgärd?",
+    "alternativ": {
+      "A": "Vänta",
+      "B": "Käklyft, sug munnen, ev framstupa",
+      "C": "Ge antiemetika iv",
+      "D": "Ge Atropin"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Skydda luftvägen mekaniskt från aspiration direkt.",
+    "varför_övriga_fel": "ABC: Mekaniskt före farmakologiskt.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_086",
+    "huvudområde": "Postop",
+    "subtopic": "Mål",
+    "typ": "koncept",
+    "svårighetsgrad": "lätt",
+    "fråga": "Ett av huvudsyftena med UVA-vård?",
+    "alternativ": {
+      "A": "Rehabilitering",
+      "B": "Dialys",
+      "C": "Direkt upptäcka komplikationer till kirurgi/anestesi",
+      "D": "Matning"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "UVA övervakar vitalfunktioner i uppvakningsfasen.",
+    "varför_övriga_fel": "Resten görs på andra avdelningar.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_087",
+    "huvudområde": "Postop",
+    "subtopic": "Utskrivning",
+    "typ": "kriterier",
+    "svårighetsgrad": "lätt",
+    "fråga": "Typiskt krav för att lämna uppvaket?",
+    "alternativ": {
+      "A": "Sovit 4h",
+      "B": "Kissat (diuresigång)",
+      "C": "Ätit fast föda",
+      "D": "VAS 0 (helt smärtfri)"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Njurfunktion och urinblåsa måste fungera efter narkos/blockad.",
+    "varför_övriga_fel": "VAS 0 är orealistiskt.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_088",
+    "huvudområde": "Postop",
+    "subtopic": "EDA komplikation",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad kontrolleras alltid noga efter en ryggbedövning (Spinal/EDA)?",
+    "alternativ": {
+      "A": "Temperatur i munnen",
+      "B": "Blåsfunktion och motorik/sensorik",
+      "C": "Ögonreflexer",
+      "D": "Hörsel"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Risk för urinstämma och att blockaden sitter i.",
+    "varför_övriga_fel": "Viktig rutin postop.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_089",
+    "huvudområde": "Postop",
+    "subtopic": "Smärtlindring",
+    "typ": "farmakologi",
+    "svårighetsgrad": "medel",
+    "fråga": "En fördel med regional anestesi postop?",
+    "alternativ": {
+      "A": "Alltid 100% amnesi",
+      "B": "Långvarig smärtbehandling med mindre opiater",
+      "C": "Botar infektioner",
+      "D": "Höjer blodtrycket"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "EDA/nervblockader minskar opiatbehovet radikalt.",
+    "varför_övriga_fel": "Förbättrar B-funktion då pat kan hosta.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_090",
+    "huvudområde": "Postop",
+    "subtopic": "Andning",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad talar ytlig andning + AF 8 postop för?",
+    "alternativ": {
+      "A": "Smärta",
+      "B": "Opiatöverdos eller rest-narkos",
+      "C": "Lungemboli",
+      "D": "Normalt"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Låg AF (brady-pné) är kardinaltecken på opiat-tox.",
+    "varför_övriga_fel": "Smärta ger takypné.",
+    "källa": "Anestesiseminarium 2.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_091",
+    "huvudområde": "Postop",
+    "subtopic": "C-problem",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "svår",
+    "fråga": "Låg diures postop trots bra blodtryck beror oftast på?",
+    "alternativ": {
+      "A": "Hypervolemi",
+      "B": "Dehydrering (vätskedeficit) från op",
+      "C": "UVI",
+      "D": "För mycket Furosemid"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Patienter tappar vätska (perspiratio/blod) som njurarna kompenserar för.",
+    "varför_övriga_fel": "Ge vätska innan diuretika.",
+    "källa": "Vätskebalans och vätsketerapi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_092",
+    "huvudområde": "Postop",
+    "subtopic": "Oförväntat uppvak",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad måste ALLTID göras om pat inte vaknar enl plan?",
+    "alternativ": {
+      "A": "Ge adrenalin",
+      "B": "Undersök enligt ABCDE",
+      "C": "Röntgen",
+      "D": "Intubera direkt"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "En systematisk genomgång utesluter syrebrist/hypoglykemi etc.",
+    "varför_övriga_fel": "Rutinen är A-E oavsett.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_093",
+    "huvudområde": "Fysiologi",
+    "subtopic": "Atelektaser",
+    "typ": "mekanismer",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är den patofysiologiska effekten av atelektaser?",
+    "alternativ": {
+      "A": "Dead space",
+      "B": "Skapar en intrapulmonell shunt (perfusion utan ventilation)",
+      "C": "Alkalos",
+      "D": "Pneumothorax"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ihopfallna alveoler ventileras ej, men blod passerar o-syresatt.",
+    "varför_övriga_fel": "Detta späder ut artärblodets O2.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_094",
+    "huvudområde": "Fysiologi",
+    "subtopic": "Atelektaser",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Varför hjälper inte 100% syrgas helt mot atelektas-shunt?",
+    "alternativ": {
+      "A": "Syrgas vidgar kärl",
+      "B": "Blodet passerar förbi alveolen utan gasutbyte",
+      "C": "O2 skadar alveolen",
+      "D": "Hb är redan 100% mättat överallt"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Eftersom luften inte når atelektasen, kan inget syre tas upp där oavsett FiO2.",
+    "varför_övriga_fel": "Det shuntas.",
+    "källa": "Anestesiseminarium 2.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_095",
+    "huvudområde": "Fysiologi",
+    "subtopic": "Atelektaser",
+    "typ": "fakta",
+    "svårighetsgrad": "lätt",
+    "fråga": "Var uppstår oftast atelektaser vid sövning i ryggläge?",
+    "alternativ": {
+      "A": "Ventralt",
+      "B": "Dorsalt och basalt",
+      "C": "I trakea",
+      "D": "Endast i apex"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Beroende delar av lungan trycks ihop av tyngdkraft och bukorgan.",
+    "varför_övriga_fel": "Därför används ibland bukläge för att rekrytera.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_096",
+    "huvudområde": "Fysiologi",
+    "subtopic": "Atelektaser",
+    "typ": "diagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Bästa bedside-metod för att upptäcka atelektaser/pleuravätska?",
+    "alternativ": {
+      "A": "Blodgas",
+      "B": "Ultraljud lungor",
+      "C": "EKG",
+      "D": "Spirometri"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Lungultraljud ser stas, vätska och atelektaser direkt på postop.",
+    "varför_övriga_fel": "Röntgen är bra men tar längre tid.",
+    "källa": "Anestesiseminarium 2.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_097",
+    "huvudområde": "Fysiologi",
+    "subtopic": "Dead space",
+    "typ": "mekanismer",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad menas med alveolärt dead space?",
+    "alternativ": {
+      "A": "Perfusion utan ventilation",
+      "B": "Ventilation utan perfusion",
+      "C": "Ingetdera",
+      "D": "Båda"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Luft når alveolen, men inget blod finns där att syresätta (ex Lungemboli).",
+    "varför_övriga_fel": "A är Shunt.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_098",
+    "huvudområde": "Fysiologi",
+    "subtopic": "Dead space",
+    "typ": "exempel",
+    "svårighetsgrad": "medel",
+    "fråga": "Typisk orsak till stort akut dead space?",
+    "alternativ": {
+      "A": "Atelektas",
+      "B": "Lungemboli",
+      "C": "Slemplugg",
+      "D": "Pneumoni"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Proppen stoppar blodflödet, alveolerna ventileras i onödan.",
+    "varför_övriga_fel": "A och C orsakar shunt.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_099",
+    "huvudområde": "Fysiologi",
+    "subtopic": "Blodgas",
+    "typ": "tolkning",
+    "svårighetsgrad": "medel",
+    "fråga": "pH 7.25, pCO2 8.0 kPa. Vad är detta?",
+    "alternativ": {
+      "A": "Respiratorisk alkalos",
+      "B": "Metabol acidos",
+      "C": "Respiratorisk acidos",
+      "D": "Normalt"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Lågt pH + högt pCO2 visar hypoventilation (acidos).",
+    "varför_övriga_fel": "Koldioxidretention.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_100",
+    "huvudområde": "Fysiologi",
+    "subtopic": "Blodgas",
+    "typ": "tolkning",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur påverkar hyperventilation pCO2 och pH?",
+    "alternativ": {
+      "A": "Höjer pCO2, sänker pH",
+      "B": "Sänker pCO2, höjer pH (alkalos)",
+      "C": "Påverkar ej",
+      "D": "Sänker båda"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Utvädring av CO2 minskar syran i blodet, ger alkalos.",
+    "varför_övriga_fel": "CO2 är en syra.",
+    "källa": "Anestesiseminarium 2.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_101",
+    "huvudområde": "Fysiologi",
+    "subtopic": "Blodgas",
+    "typ": "tolkning",
+    "svårighetsgrad": "svår",
+    "fråga": "Metabol acidos med högt laktat tyder på?",
+    "alternativ": {
+      "A": "Chock/Hypoperfusion",
+      "B": "Hyperventilation",
+      "C": "Opiatöverdos",
+      "D": "Njursvikt enbart"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Mjölksyra ackumuleras vid syrebrist i vävnad.",
+    "varför_övriga_fel": "Opiater ger respiratorisk acidos.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_102",
+    "huvudområde": "Fysiologi",
+    "subtopic": "Blodgas",
+    "typ": "parametrar",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket blodgasvärde speglar direkt den alveolära ventilationen?",
+    "alternativ": {
+      "A": "pO2",
+      "B": "BE",
+      "C": "pCO2",
+      "D": "Laktat"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "pCO2 styrs direkt av hur mycket (volym x frekvens) patienten ventilerar.",
+    "varför_övriga_fel": "pO2 beror även på shunt, diffusion och FiO2.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_103",
+    "huvudområde": "Fysiologi",
+    "subtopic": "PEEP",
+    "typ": "mekanismer",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är syftet med PEEP?",
+    "alternativ": {
+      "A": "Minska syre",
+      "B": "Motverka atelektaser och hålla alveoler öppna",
+      "C": "Vädra CO2 snabbare",
+      "D": "Kyla patienten"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Positivt slut-expiratoriskt tryck hindrar lungkollaps.",
+    "varför_övriga_fel": "Trycket hålls uppe efter utandning.",
+    "källa": "Anestesiseminarium 2.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_104",
+    "huvudområde": "Fysiologi",
+    "subtopic": "CPAP",
+    "typ": "indikation",
+    "svårighetsgrad": "medel",
+    "fråga": "När används postoperativ CPAP med fördel?",
+    "alternativ": {
+      "A": "Hög laktat",
+      "B": "Vid atelektaser / Lungödem för att trycka tillbaka vätska och öppna lungan",
+      "C": "Vid pneumothorax",
+      "D": "Blödning"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Övertrycket trycker undan vätska och rekryterar alveoler.",
+    "varför_övriga_fel": "Kontraindicerat vid obehandlad pneumothorax.",
+    "källa": "Anestesiseminarium 2.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_105",
+    "huvudområde": "Fysiologi",
+    "subtopic": "Pneumothorax",
+    "typ": "komplikationer",
+    "svårighetsgrad": "svår",
+    "fråga": "Varför är övertrycksventilation livsfarligt vid missad pneumothorax?",
+    "alternativ": {
+      "A": "Läker spontant",
+      "B": "Skapar ventileffekt och tryckpneumothorax med hjärtstopp",
+      "C": "Botar den direkt",
+      "D": "Ökar Hb"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Maskinen pumpar in luft i pleura som ej kommer ut, stryper venernas återflöde.",
+    "varför_övriga_fel": "Kräver dränage innan tryckventilation.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_106",
+    "huvudområde": "Fysiologi",
+    "subtopic": "Syre/Koldioxid",
+    "typ": "fysiologi",
+    "svårighetsgrad": "svår",
+    "fråga": "Vad är skillnaden i hur O2 och CO2 transporteras/diffunderar?",
+    "alternativ": {
+      "A": "O2 diffunderar 20ggr snabbare",
+      "B": "CO2 är extremt lösligt och vädras ut mycket lättare vid ökad minutvolym",
+      "C": "Ingen skillnad",
+      "D": "O2 är syra"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "CO2 elimineras snabbt om ventilationen ökar, medan O2-upptag begränsas av Hb-mättnad och shunt.",
+    "varför_övriga_fel": "Detta förklarar V/Q-mismatchens effekter.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_ANESTESI_107",
+    "huvudområde": "Fysiologi",
+    "subtopic": "Bukläge",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Varför används bukläge ibland vid svår ARDS?",
+    "alternativ": {
+      "A": "Det är enklare att tvätta",
+      "B": "Ger bättre V/Q-matchning då dorsala lungavsnitt (bäst blodflöde) befrias från atelektaser",
+      "C": "Sänker blodtrycket",
+      "D": "Underlättar HLR"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Omfördelar tyngden så de blodrika delarna av lungan ventileras bättre.",
+    "varför_övriga_fel": "Optimerar shunt.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_108",
+    "huvudområde": "Fysiologi",
+    "subtopic": "P/F ratio",
+    "typ": "definition",
+    "svårighetsgrad": "svår",
+    "fråga": "Hur beräknas P/F-kvot?",
+    "alternativ": {
+      "A": "Pulse / Flow",
+      "B": "PaO2 / FiO2",
+      "C": "PaCO2 / FiO2",
+      "D": "Puls / Frekvens"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Mått på lungans gasutbytesförmåga över alveolmembranet.",
+    "varför_övriga_fel": "Används för ARDS-gradering.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_ANESTESI_109",
+    "huvudområde": "Vätska",
+    "subtopic": "Basalbehov",
+    "typ": "beräkning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Ungefärligt dygnsbehov av vätska för en vuxen?",
+    "alternativ": {
+      "A": "10 ml/kg",
+      "B": "30 ml/kg",
+      "C": "50 ml/kg",
+      "D": "80 ml/kg"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Standard är 30 ml per kg och dygn.",
+    "varför_övriga_fel": "Mindre ger dehydrering, mer riskerar övervätskning.",
+    "källa": "Vätskebalans och vätsketerapi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_110",
+    "huvudområde": "Vätska",
+    "subtopic": "Basalbehov",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur stor hastighet sätts oftast ett glukosdropp på som basalbehov (ej OP)?",
+    "alternativ": {
+      "A": "30 ml/h",
+      "B": "80 ml/h (ca 2 liter/dygn)",
+      "C": "200 ml/h",
+      "D": "500 ml/h"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "80 ml/h x 24h = ca 1920 ml, lagom för vuxen.",
+    "varför_övriga_fel": "500 är resuscitering.",
+    "källa": "Vätskebalans och vätsketerapi.pdf",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_ANESTESI_111",
+    "huvudområde": "Vätska",
+    "subtopic": "Perspiratio",
+    "typ": "fysiologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är 'perspiratio' under en operation?",
+    "alternativ": {
+      "A": "Blödning",
+      "B": "Urin",
+      "C": "Avdunstning (andning och sår/hud)",
+      "D": "Galla"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Osynliga förluster som måste ersättas peroperativt.",
+    "varför_övriga_fel": "Kompenseras ofta med 2-5 ml/kg/h Ringer.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_112",
+    "huvudområde": "Vätska",
+    "subtopic": "Vätskeval",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken vätska ges normalt för att ersätta perspiratio och blodförlust initialt på op?",
+    "alternativ": {
+      "A": "Glukos 5%",
+      "B": "Balanserad kristalloid (ex. Ringer-Acetat)",
+      "C": "Endast Albumin",
+      "D": "Koksalt 9%"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Balanserad lösning stannar ECV och stör ej elektrolyter/syra-bas.",
+    "varför_övriga_fel": "Glukos går ut i cellerna, ger ej volym.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_113",
+    "huvudområde": "Vätska",
+    "subtopic": "Glukos",
+    "typ": "fysiologi",
+    "svårighetsgrad": "svår",
+    "fråga": "Varför är Glukos 5% oanvändbart för att häva hypovolem chock?",
+    "alternativ": {
+      "A": "Skadar hjärtat",
+      "B": "Sockret metaboliseras och fritt vatten fördelas jämnt ICV/ECV (kvarstår ej intravasalt)",
+      "C": "Ger anafylaxi",
+      "D": "Koagulerar blodet"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Osmosen drar in vattnet i cellerna. Bara ~1/12 stannar i blodbanan.",
+    "varför_övriga_fel": "Kristalloid stannar ~1/3-1/4 i blodbanan.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_114",
+    "huvudområde": "Vätska",
+    "subtopic": "Fördelning",
+    "typ": "fysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur är kroppsvattnet fördelat (ICV vs ECV)?",
+    "alternativ": {
+      "A": "1/2 ICV, 1/2 ECV",
+      "B": "2/3 ICV, 1/3 ECV",
+      "C": "1/3 ICV, 2/3 ECV",
+      "D": "Allt är ECV"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Mesta delen av vätskan finns inuti cellerna (Intracellulär vätska).",
+    "varför_övriga_fel": "Viktig grundprincip för vätsketerapi.",
+    "källa": "Vätskebalans och vätsketerapi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_115",
+    "huvudområde": "Vätska",
+    "subtopic": "Dehydrering",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur ersätts ett stort vätskedeficit oftast preoperativt (tumregel)?",
+    "alternativ": {
+      "A": "Ge hela deficit på 15 min",
+      "B": "2/3 av deficit på 4h, utvärdera",
+      "C": "Bara ge oralt",
+      "D": "Ge inget alls"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Balanserad snabb men säker återfyllnad.",
+    "varför_övriga_fel": "För snabbt kan ge lungödem.",
+    "källa": "Vätskebalans och vätsketerapi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_116",
+    "huvudområde": "Vätska",
+    "subtopic": "Diuresmål",
+    "typ": "övervakning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Normalt diuresmål per timme för adekvat perfusion?",
+    "alternativ": {
+      "A": "0,1 ml/kg/h",
+      "B": "0,5 - 1,0 ml/kg/h",
+      "C": "5 ml/kg/h",
+      "D": "Spelar ingen roll"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "För en 70kg person är detta 35-70 ml/h.",
+    "varför_övriga_fel": "Under 0,5 räknas ofta som oliguri.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_117",
+    "huvudområde": "Vätska",
+    "subtopic": "Diuresmål",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Patient med låg diures på postop trots Ringer, BT ua. Vad görs oftast?",
+    "alternativ": {
+      "A": "Mer vätska, pga troligt hypovolemi från op",
+      "B": "Omedelbart maxdos diuretika",
+      "C": "Dialys direkt",
+      "D": "Ignorera"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Kroppen sparar vätska vid deficit. Ge mer Ringer.",
+    "varför_övriga_fel": "Diuretika till dehydrerad njure är skadligt.",
+    "källa": "Vätskebalans och vätsketerapi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_118",
+    "huvudområde": "Vätska",
+    "subtopic": "Furosemid",
+    "typ": "indikation",
+    "svårighetsgrad": "medel",
+    "fråga": "När testas Furosemid (diuretika) postoperativt?",
+    "alternativ": {
+      "A": "Vid all anuri",
+      "B": "När patienten uppenbart är övervätskad och diures saknas trots bra BT",
+      "C": "Vid lågt BT",
+      "D": "Vid dehydrering"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Diuretika ges bara när volymstatus bedöms som överfylld (hypervolem).",
+    "varför_övriga_fel": "Aldrig vid hypovolemi.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_119",
+    "huvudområde": "Vätska",
+    "subtopic": "Socker",
+    "typ": "fysiologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "När ges glukosdropp intraoperativt?",
+    "alternativ": {
+      "A": "Alltid",
+      "B": "Som blödningsersättning",
+      "C": "Sällan, mest vid hypoglykemi",
+      "D": "Vid anafylaxi"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Vuxna får oftast Ringer under op. Glukos kan ges om BS är farligt lågt.",
+    "varför_övriga_fel": "Ringer är standard.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_120",
+    "huvudområde": "Vätska",
+    "subtopic": "Infart",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är avgörande för massiv transfusion/vätska?",
+    "alternativ": {
+      "A": "Minst 2 grova perifera infarter (eller IO)",
+      "B": "En smal PVK duger",
+      "C": "Central venkateter (CVK) är ett absolut krav för vätska",
+      "D": "Oral vätska"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Grova korta perifera rör ger överlägset högst flöde.",
+    "varför_övriga_fel": "CVK är smalare och längre, sämre akut flöde.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_121",
+    "huvudområde": "Neurologi",
+    "subtopic": "Intubation",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vid vilket RLS/GCS anses luftvägen osäker, varvid intubation rekommenderas?",
+    "alternativ": {
+      "A": "RLS 2 (GCS 13)",
+      "B": "RLS 3 (GCS 10)",
+      "C": "RLS 4 / GCS 8",
+      "D": "Alltid vid RLS 1"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "GCS &lt;= 8 innebär att skyddsreflexerna fallerar.",
+    "varför_övriga_fel": "Vid högre vakenhet skyddas svalget ofta.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_122",
+    "huvudområde": "Neurologi",
+    "subtopic": "Intubation",
+    "typ": "koncept",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad menas med att 'Fri luftväg är inte samma som SÄKER luftväg'?",
+    "alternativ": {
+      "A": "En tub är inte säker",
+      "B": "Patient kan andas, men saknar reflexer för att hindra kräkning/aspiration från att nå lungan",
+      "C": "Maskventilation är alltid säkrast",
+      "D": "Larynxmask skyddar bäst"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Bara endotrakealtub sluter tätt i trakea (säker).",
+    "varför_övriga_fel": "Svalget kan hållas öppet men aspiration kan ske.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_123",
+    "huvudområde": "Neurologi",
+    "subtopic": "HUSK MIDAS",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är HUSK MIDAS?",
+    "alternativ": {
+      "A": "Op-procedur",
+      "B": "Minnesregel för diff-diagnoser till oklar medvetslöshet",
+      "C": "Läkemedel mot feber",
+      "D": "Bakteriestam"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Hjälper att komma ihåg orsaker som Herpes, Uremi, Meningit etc.",
+    "varför_övriga_fel": "Diagnostiskt verktyg på akuten.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_124",
+    "huvudområde": "Neurologi",
+    "subtopic": "HUSK MIDAS",
+    "typ": "fakta",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad står 'S' och 'I' för i mitten av HUSK MIDAS?",
+    "alternativ": {
+      "A": "Stroke, Infektion",
+      "B": "Status epilepticus, Intoxikation",
+      "C": "Synkope, Ischemi",
+      "D": "Sepsis, Ileus"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Intoxikation är mycket vanligt (ca 38%).",
+    "varför_övriga_fel": "Viktiga D-problem.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_125",
+    "huvudområde": "Neurologi",
+    "subtopic": "Pupiller",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Miotiska (små) pupiller hos komatös patient tyder på?",
+    "alternativ": {
+      "A": "Opiatöverdos eller pons-skada",
+      "B": "Amfetamin",
+      "C": "Strukturell hjärnblödning i cortex",
+      "D": "Hypoglykemi"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Klassiskt fynd vid heroin/morfin-intoxikation.",
+    "varför_övriga_fel": "Amfetamin ger vida (dilaterade) pupiller.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_126",
+    "huvudområde": "Neurologi",
+    "subtopic": "Pupiller",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad tyder olikstora pupiller på hos en okontaktbar patient?",
+    "alternativ": {
+      "A": "Opiat",
+      "B": "Strukturell orsak (ex tryck mot kranialnerv III)",
+      "C": "Metabol svikt",
+      "D": "Lungemboli"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ensidig inklämning / strukturell skada påverkar nerver asymmetriskt.",
+    "varför_övriga_fel": "Metabola/toxiska orsaker ger oftast likstora pupiller.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_127",
+    "huvudområde": "Neurologi",
+    "subtopic": "Smärtstimulering",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "Var appliceras central smärtstimulering bäst vid bedömning av GCS?",
+    "alternativ": {
+      "A": "Nagelbädd",
+      "B": "Bakom mandibeln (proc mastoideus) eller n. supraorbitalis",
+      "C": "Nyper i armen",
+      "D": "Nyper i magen"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Kranialnerver testar hjärnans centrala funktion tillförlitligt.",
+    "varför_övriga_fel": "Extremiteter kan uppvisa spinala reflexer.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_128",
+    "huvudområde": "Neurologi",
+    "subtopic": "D-bedömning",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad testas ALLTID rutinmässigt (DEFG) hos komatösa?",
+    "alternativ": {
+      "A": "Troponin",
+      "B": "Glukos",
+      "C": "PK",
+      "D": "Hepatit"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "B-Glukos utesluter snabbt reversibel koma.",
+    "varför_övriga_fel": "Måste alltid testas akut.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_129",
+    "huvudområde": "Neurologi",
+    "subtopic": "Medvetande",
+    "typ": "fysiologi",
+    "svårighetsgrad": "svår",
+    "fråga": "Vilka strukturer måste skadas för att orsaka äkta koma?",
+    "alternativ": {
+      "A": "Bilateral supratentoriell skada eller skada i hjärnstammen",
+      "B": "Bara lillhjärnan",
+      "C": "Ensidig cortex-skada",
+      "D": "Ryggmärgen"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "RAS-systemet i hjärnstammen eller båda hemisfärerna krävs för vakenhet.",
+    "varför_övriga_fel": "Ensidig skada ger sällan djupt koma.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_130",
+    "huvudområde": "Neurologi",
+    "subtopic": "Dödsbegrepp",
+    "typ": "fakta",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad definierar döden enligt svensk lag?",
+    "alternativ": {
+      "A": "När hjärtat stannat i 1 min",
+      "B": "När hjärnans samtliga funktioner totalt och oåterkalleligt fallit bort",
+      "C": "När andningen upphör",
+      "D": "Vid nedkylning under 32 grader"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Hjärndödhetskriteriet.",
+    "varför_övriga_fel": "Kan fastställas direkt (kliniskt) eller indirekt (hjärtstopp).",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_131",
+    "huvudområde": "IVA",
+    "subtopic": "Indikation",
+    "typ": "koncept",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är definitionen av ett tillstånd som kräver IVA-vård?",
+    "alternativ": {
+      "A": "Sjuka som behöver smärtlindring",
+      "B": "Manifest eller hotande svikt i vitala organ som är potentiellt reversibel",
+      "C": "Kroniskt sjuka med palliativ plan",
+      "D": "Elektiv kirurgi"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Måste finnas behandlingsbar svikt av organ.",
+    "varför_övriga_fel": "Palliativ / oreversibel svikt behandlas ej på IVA.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_132",
+    "huvudområde": "IVA",
+    "subtopic": "ARDS",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Typiskt röntgenfynd vid ARDS?",
+    "alternativ": {
+      "A": "Helt svart röntgen",
+      "B": "Bilaterala infiltrat (vita lungor)",
+      "C": "Högersidig lobär förtätning",
+      "D": "Inga fynd alls"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Massiv inflammation i lungorna ger vätska/infiltrat bilateralt.",
+    "varför_övriga_fel": "Orsakar svår hypoxi.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_133",
+    "huvudområde": "IVA",
+    "subtopic": "Trakeostomi",
+    "typ": "indikation",
+    "svårighetsgrad": "medel",
+    "fråga": "Varför görs trakeostomi på en långdragen IVA-patient?",
+    "alternativ": {
+      "A": "Bättre för rösten",
+      "B": "Underlättar urträning (weaning) genom minskat obehag och lägre sedering",
+      "C": "Stoppar pneumoni",
+      "D": "Sänker pulsen"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Tub i munnen är obehagligt = kräver sedering. Trakeostomi tolereras väl.",
+    "varför_övriga_fel": "Vaken patient andningstränar bättre.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_134",
+    "huvudområde": "IVA",
+    "subtopic": "Delirium",
+    "typ": "fakta",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken form av IVA-delirium missas ofta för att patienten ligger stilla?",
+    "alternativ": {
+      "A": "Hyperaktivt",
+      "B": "Hypoaktivt",
+      "C": "Blandat",
+      "D": "Opiat-delir"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Hypoaktivt delirium märks mindre än hyperaktivt (stökigt).",
+    "varför_övriga_fel": "Mycket vanligt och ger sämre prognos.",
+    "källa": "Anestesiologi och intensivvård: Guide för tentamen och klinik",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_135",
+    "huvudområde": "IVA",
+    "subtopic": "ECMO",
+    "typ": "mekanismer",
+    "svårighetsgrad": "svår",
+    "fråga": "Skillnaden mellan Veno-Venös (VV) och Veno-Arteriell (VA) ECMO?",
+    "alternativ": {
+      "A": "VV stöttar hjärta, VA lungor",
+      "B": "VV stöttar gasutbyte (lungor), VA avlastar hjärta och lungor",
+      "C": "Ingen skillnad alls",
+      "D": "VA används endast på barn"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "VA pumpar in syresatt blod i artärträdet och driver därmed cirkulationen (pumpar).",
+    "varför_övriga_fel": "VV syresätter bara blodet innan det når höger förmak.",
+    "källa": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_136",
+    "huvudområde": "IVA",
+    "subtopic": "Nutrition",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Målsättning för kaloriintag på IVA första dagarna?",
+    "alternativ": {
+      "A": "200% av behov",
+      "B": "Max 70% av beräknad förbrukning under första 72h",
+      "C": "Endast glukos",
+      "D": "Ingen mat"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Övermatning i akutskedet tolereras dåligt fysiologiskt.",
+    "varför_övriga_fel": "Efter 72h trappas det upp.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_137",
+    "huvudområde": "IVA",
+    "subtopic": "Sedering",
+    "typ": "koncept",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken sederingsstrategi föredras numera på IVA?",
+    "alternativ": {
+      "A": "Djup koma (TIVA)",
+      "B": "Lätt sedering där patienten är väckbar och kan medverka",
+      "C": "Bara muskelrelax",
+      "D": "Ketamin i högdos"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "För att undvika muskelatrofi, delirium och underlätta andningsträning.",
+    "varför_övriga_fel": "Djup koma ökar morbiditet.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_138",
+    "huvudområde": "IVA",
+    "subtopic": "Muskelsvaghet",
+    "typ": "komplikationer",
+    "svårighetsgrad": "svår",
+    "fråga": "Vad är Critical Illness Polyneuropathy (CIP)?",
+    "alternativ": {
+      "A": "Virusinfektion i nerver",
+      "B": "Förvärvad muskelsvaghet/nervdysfunktion vid långvarig IVA-vård",
+      "C": "Fraktur i ryggen",
+      "D": "Anestesiöverdos"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Generell nervskada som uppstår vid massiv inflammation/svikt på IVA.",
+    "varför_övriga_fel": "Kan drabba andningsmusklerna (frenikus).",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_139",
+    "huvudområde": "IVA",
+    "subtopic": "Transport",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Varför är transport av kritiskt sjuk patient riskfyllt?",
+    "alternativ": {
+      "A": "Infektionsrisk",
+      "B": "Sämre monitorering och begränsad tillgång till hjälp/läkemedel under färd",
+      "C": "De fryser",
+      "D": "Respiratorn slutar fungera"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Avlägsnande från den trygga miljön kräver noggrann förberedelse.",
+    "varför_övriga_fel": "Olyckor sker ofta under transport.",
+    "källa": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_140",
+    "huvudområde": "IVA",
+    "subtopic": "HLR",
+    "typ": "etik",
+    "svårighetsgrad": "medel",
+    "fråga": "Om en patient har '0-HLR', utesluter det intensivvård?",
+    "alternativ": {
+      "A": "Ja, alltid",
+      "B": "Nej, 0-HLR innebär endast att man avstår bröstkompressioner vid hjärtstopp, ej annan IVA-vård",
+      "C": "Ja, de får inte komma till sjukhus",
+      "D": "Det betyder att de inte får smärtstillande"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "0-HLR och 0-IVA är två separata ställningstaganden.",
+    "varför_övriga_fel": "Man kan få avancerad vård utan att HLR utförs vid eventuellt stopp.",
+    "källa": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_141",
+    "huvudomrade": "Preoperativ bedömning och förberedelse",
+    "subtopic": "Premedicinering",
+    "typ": "handläggning",
+    "svarighetsgrad": "lätt",
+    "fraga": "Hur hanteras en patients ordinarie inhalationsläkemedel (t.ex. vid astma eller KOL) oftast preoperativt?",
+    "alternativ": {
+      "A": "De sätts ut 24 timmar före för att undvika läkemedelsinteraktioner",
+      "B": "Patienten bör premedicinera med sina ordinarie inhalationer",
+      "C": "De ersätts alltid med högdos intravenöst kortison",
+      "D": "De ges endast om patienten har ett pågående astmaanfall"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "För patienter med grundsjukdomar i luftvägarna är det viktigt att ge ordinarie inhalationer som premedicinering för att undvika peroperativ bronkospasm.",
+    "varfor_ovriga_fel": "Att sätta ut dem ökar risken för respiratoriska komplikationer avsevärt.",
+    "kalla": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_142",
+    "huvudomrade": "Postoperativ vård och komplikationer",
+    "subtopic": "Smärtlindring",
+    "typ": "statusfynd",
+    "svarighetsgrad": "medel",
+    "fraga": "Vilken patientprofil löper störst risk att drabbas av svår postoperativ smärta?",
+    "alternativ": {
+      "A": "Äldre man utan preoperativ smärta",
+      "B": "Yngre kvinna med preoperativ smärta och oro",
+      "C": "Icke-rökare med normalt BMI",
+      "D": "Patient som genomgår ett kirurgiskt ingrepp kortare än 30 minuter"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Riskfaktorer för svår postoperativ smärta är bland annat yngre ålder, kvinna, rökare, preoperativ smärta, oro och BMI-avvikelser.",
+    "varfor_ovriga_fel": "Äldre patienter och icke-rökare skattar generellt smärtan lägre.",
+    "kalla": "Anestesiseminarium 1.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_143",
+    "huvudomrade": "Vätskebalans och vätsketerapi",
+    "subtopic": "Vätskeval",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "Vilken typ av vätska kan specifikt vara indicerad istället för Ringer-Acetat hos en dehydrerad patient med massiva kräkningar (t.ex. vid obehandlad ileus)?",
+    "alternativ": {
+      "A": "Glukos 5%",
+      "B": "NaCl (Koksalt)",
+      "C": "Endast Albumin",
+      "D": "Intralipid"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Vid stora kräkningar förloras saltsyra (klorid). NaCl används ibland specifikt för att kompensera denna hypokloremi.",
+    "varfor_ovriga_fel": "Balanserad kristalloid är oftast standard, men NaCl nämns specifikt som ett undantag vid kräkning/ileus.",
+    "kalla": "Vätskebalans och vätsketerapi.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_144",
+    "huvudomrade": "Vätskebalans och vätsketerapi",
+    "subtopic": "Feber",
+    "typ": "beräkning",
+    "svarighetsgrad": "lätt",
+    "fraga": "Hur mycket extra vätska utöver basalbehovet rekommenderas generellt för en vuxen patient med feber?",
+    "alternativ": {
+      "A": "50 ml per grad över 37°C",
+      "B": "200-300 ml extra per grad över 38°C",
+      "C": "1000 ml fast bolus oavsett feberns grad",
+      "D": "500 ml per grad över 39°C"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Feber ökar förlusterna (perspiratio). Det kompenseras genom att addera 200-300 ml vätska per grad över 38.",
+    "varfor_ovriga_fel": "Små feberstegringar kräver marginellt tillskott, men tumregeln startar vid 38 grader.",
+    "kalla": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_145",
+    "huvudomrade": "Anestesiologi, farmakologi och luftvägshantering",
+    "subtopic": "Farmakologi",
+    "typ": "definition",
+    "svarighetsgrad": "lätt",
+    "fraga": "Vilken läkemedelsklass tillhör anestesiläkemedlen Atropin och Glykopyrrolat?",
+    "alternativ": {
+      "A": "Vasopressorer",
+      "B": "Antikolinergika",
+      "C": "Antiemetika",
+      "D": "Steroider"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Båda är antikolinergika, vilka blockerar parasympatikus och används bland annat för att höja pulsen (Atropin) eller minska sekretion (Glykopyrrolat).",
+    "varfor_ovriga_fel": "De saknar direkt blodtryckshöjande eller steroid receptor-effekt.",
+    "kalla": "Anestesiseminarium 1.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_146",
+    "huvudomrade": "Akut omhändertagande (ABCDE) och syrgasleverans",
+    "subtopic": "Syrgasbehandling",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "En postoperativ patient saturerar sig dåligt trots syrgas på mask. Vilken fysiologisk princip måste man tänka på angående flöde vs fraktion (FiO2)?",
+    "alternativ": {
+      "A": "En ökad FiO2 kompenserar alltid för ett för lågt inställt gasflöde i masken.",
+      "B": "Ett högre syrgasflöde (liter/minut) kan krävas för att täcka patientens inandningsbehov, inte nödvändigtvis bara en högre FiO2.",
+      "C": "Vid syrgasbrist måste masken omedelbart bytas till en näsgrimma.",
+      "D": "En FiO2 över 40% får aldrig ges till en patient postoperativt på grund av toxicitet."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Om patienten andas kraftigt kan flödet i masken vara för lågt, varvid de suger in rumsluft som späder ut syrgasen. Då måste literflödet ökas.",
+    "varfor_ovriga_fel": "Hög FiO2 räcker inte om volymen gas (flödet) inte täcker andetaget.",
+    "kalla": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_147",
+    "huvudomrade": "Postoperativ vård och komplikationer",
+    "subtopic": "Övervakning",
+    "typ": "handläggning",
+    "svarighetsgrad": "lätt",
+    "fraga": "Vilken rutin rekommenderas för hantering av syrgas till patienter på UVA som just genomgått en generell anestesi?",
+    "alternativ": {
+      "A": "Syrgas ges endast om patientens POX sjunker under 90%.",
+      "B": "Syrgas tillförs alla patienter initialt tills de är helt vakna.",
+      "C": "Syrgas ges aldrig rutinmässigt då det kan trycka ned patientens andningsdrive.",
+      "D": "Syrgas ges enbart till patienter med känd KOL eller astma."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Rutinen är att ge syrgas till alla tills de är vakna för att bygga en marginal (buffert) mot hypoventilation och resteffekter av gas/muskelrelax.",
+    "varfor_ovriga_fel": "Avvakta till POX är 90% utsätter patienten för onödig ischemisk risk.",
+    "kalla": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_148",
+    "huvudomrade": "Postoperativ vård och komplikationer",
+    "subtopic": "Smärtlindring",
+    "typ": "koncept",
+    "svarighetsgrad": "lätt",
+    "fraga": "Vad är det primära kliniska målet med den postoperativa smärtlindringen?",
+    "alternativ": {
+      "A": "Att patienten ska uppnå smärtfrihet i vila (VAS 0).",
+      "B": "Att orsaka en total retrograd amnesi för vårdförloppet.",
+      "C": "Att uppnå en funktionsnivå där patienten kan djupandas och hosta utan ohanterlig smärta.",
+      "D": "Att helt undvika användningen av starka opioider."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Målet är inte att patienten ska ha noll ont (svårt att uppnå säkert), utan att de ska kunna utföra vitala funktioner som att hosta upp slem och ventilera atelektaser.",
+    "varfor_ovriga_fel": "Att sträva mot VAS 0 medför stor risk för andningsdepression (överdosering).",
+    "kalla": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_149",
+    "huvudomrade": "Fysiologi och blodgaser",
+    "subtopic": "DO2",
+    "typ": "fysiologi",
+    "svarighetsgrad": "medel",
+    "fraga": "Vad är ett normalt ungefärligt värde för den blandvenösa syrgassaturationen (SvO2) hos en frisk, vilande människa?",
+    "alternativ": {
+      "A": "Ca 25%",
+      "B": "Ca 50%",
+      "C": "Ca 75%",
+      "D": "Ca 98%"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "I vila är syrgasleveransen ca 1000 ml/min och kroppen konsumerar 250 ml/min (25% extraktion). Det lämnar kvar ca 75% syrgas i det venösa blodet som går tillbaka till hjärtat.",
+    "varfor_ovriga_fel": "En extraktion på 75% (SvO2 25%) skulle signalera massiv chock och vävnadshypoxi.",
+    "kalla": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_150",
+    "huvudomrade": "Chock och hemodynamik",
+    "subtopic": "Inotropi",
+    "typ": "farmakodynamik",
+    "svarighetsgrad": "svår",
+    "fraga": "Dobutamin och Milrinon syns i farmakologiska diagram för intensivvård. Vad kännetecknar i första hand deras hemodynamiska effekt?",
+    "alternativ": {
+      "A": "De orsakar kraftig vasokonstriktion (höjt SVR) och sänkt hjärtfrekvens.",
+      "B": "De ger positiv inotropi och samtidigt viss perifer vasodilatation.",
+      "C": "De fungerar som rena kronotropa hämmare (bromsar pulsen).",
+      "D": "De verkar uteslutande via ren parasympatisk stimulering."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Båda preparaten stärker hjärtats pumpkraft (inotropi) men verkar samtidigt som vasodilaterare, vilket minskar hjärtats afterload.",
+    "varfor_ovriga_fel": "De höjer inte SVR (det gör vasopressorer som Fenylefrin eller Noradrenalin).",
+    "kalla": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_151",
+    "huvudomrade": "Anestesiologi, farmakologi och luftvägshantering",
+    "subtopic": "Maskventilation",
+    "typ": "statusfynd",
+    "svarighetsgrad": "lätt",
+    "fraga": "Vilka två kliniska tecken verifierar säkrast för dig som läkare att din pågående maskventilation ger en fungerande och fri luftväg?",
+    "alternativ": {
+      "A": "Stigande blodtryck och ökad hjärtfrekvens hos patienten.",
+      "B": "Synlig höjning av bröstkorgen och cyklisk imma i masken.",
+      "C": "Cyanos som kvarstår oförändrad.",
+      "D": "Ökad resistans i andningsblåsan."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Tillsammans visar dessa två att gas flödar både in i lungorna (bröstkorgen höjs) och ut ur lungorna (varm utandningsluft skapar imma).",
+    "varfor_ovriga_fel": "Ökad resistans betyder tvärtom ofta ofri luftväg eller bronchospasm.",
+    "kalla": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_152",
+    "huvudomrade": "Preoperativ bedömning och förberedelse",
+    "subtopic": "Komorbiditeter",
+    "typ": "komplikationer",
+    "svarighetsgrad": "medel",
+    "fraga": "Vilka specifika perioperativa risker är påtagligt förhöjda hos patienter med grav obesitas?",
+    "alternativ": {
+      "A": "Risken är i stort sett begränsad till en ökad frekvens av postoperativa blödningar.",
+      "B": "De har svårare luftväg (intubation/mask), sänkt FRC vid induktion, samt en stor risk för postoperativa atelektaser.",
+      "C": "De löper extremt hög risk för en hypoton kris orsakad av ett preoperativt sänkt SVR.",
+      "D": "De saknar helt risk för aspirationspneumoni."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Bukfettet försvårar andningsmekaniken (sänkt FRC, atelektasrisk) och ökar aspirationsrisken, varför regionalanestesi föredras när det är möjligt.",
+    "varfor_ovriga_fel": "Hypotoni och blödning är inte de utmärkande specifika hoten hos just de med obesitas i detta skede, utan B-problemen.",
+    "kalla": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_153",
+    "huvudomrade": "Medvetslöshet och neurologisk övervakning",
+    "subtopic": "Komaskalor",
+    "typ": "fakta",
+    "svarighetsgrad": "medel",
+    "fraga": "På vilket avgörande sätt skiljer sig utformningen av Reaction Level Scale (RLS) från Glasgow Coma Scale (GCS) vid bedömning av vakenhet?",
+    "alternativ": {
+      "A": "Båda skalorna värderar patienter likadant numeriskt, men GCS mäter endast ögonrörelser.",
+      "B": "I RLS innebär en lägre siffra (ex. 1) en vaken patient, medan GCS är omvänd där en hög siffra (ex. 15) innebär en vaken patient.",
+      "C": "RLS går från 1-100 medan GCS går från 1-10.",
+      "D": "RLS kräver ingen smärtstimulering för att fastställa nivå 4 till 8."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "GCS graderar funktion 3-15 (högre är bättre vakenhet). RLS går från 1-8 (lägre är bättre vakenhet).",
+    "varfor_ovriga_fel": "Nivå 4-8 i RLS bygger uteslutande på motoriskt svar på smärtstimulering.",
+    "kalla": "Svikt av vitala funktioner.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_154",
+    "huvudomrade": "Postoperativ vård och komplikationer",
+    "subtopic": "Naloxon",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "En svårväckt postoperativ patient har en andningsfrekvens på 8/min och blodgasen visar pH 7,25 samt pCO2 8,0 kPa. Vilken handläggning är oftast bäst vid stark misstanke om opiatöverdosering?",
+    "alternativ": {
+      "A": "Ge en fulldos (1 mg) Naloxon intravenöst på en gång för att väcka patienten maximalt snabbt.",
+      "B": "Ge Furosemid för att minska den resulterande hjärnsvullnaden.",
+      "C": "Titrera Naloxon försiktigt (t.ex. 0,1-0,2 mg iv åt gången) under övervakning av fri luftväg (A).",
+      "D": "Tillkalla urakut kirurg för explorativ laparotomi."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Naloxon reverserar andningsdepressionen men också all smärtlindring. För att undvika chockartat smärtgenombrott titreras läkemedlet upp mycket försiktigt.",
+    "varfor_ovriga_fel": "Att ge en stor bolus på en gång ger patienten en outhärdlig smärta.",
+    "kalla": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_155",
+    "huvudomrade": "Medvetslöshet och neurologisk övervakning",
+    "subtopic": "Pupiller",
+    "typ": "differentialdiagnostik",
+    "svarighetsgrad": "medel",
+    "fraga": "En tidigare okontaktbar intensivvårdspatient utvecklar plötsligt olikstora (anisokora) pupiller, varav en slutar reagera på ljus. Vad är den mest sannolika typen av underliggande orsak?",
+    "alternativ": {
+      "A": "En diffus metabol påverkan (t.ex. svår hypoglykemi eller anoxi).",
+      "B": "En strukturell intrakraniell skada (ex. massverkan och inklämning av n. oculomotorius).",
+      "C": "Svår opioidabstinens.",
+      "D": "Systemisk infektion som påverkar ryggmärgen."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Asymmetriska neurologiska fynd (som olikstora pupiller) indikerar en fokal/strukturell process (t.ex. blödning, ischemi eller tumör).",
+    "varfor_ovriga_fel": "Toxiska och metabola orsaker ger nästan alltid liksidiga pupillfynd (t.ex. extremt stora eller små, men symmetriska).",
+    "kalla": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_156",
+    "huvudomrade": "Intensivvård (IVA)",
+    "subtopic": "Etik",
+    "typ": "etik",
+    "svarighetsgrad": "medel",
+    "fraga": "Om en medicinskt ansvarig läkare fattar ett '0-HLR'-beslut för en svårt sjuk patient, vad innebär det automatiskt för eventuell intensivvård?",
+    "alternativ": {
+      "A": "Beslutet innebär att all intensivvård upphör omedelbart (det är synonymt med '0-IVA').",
+      "B": "Inget automatiskt hinder för intensivvård finns; 0-HLR innebär enbart att man avstår bröstkompressioner vid ett faktiskt hjärtstopp.",
+      "C": "Patienten får stanna på IVA men får ej längre ges vasopressorer.",
+      "D": "Respiratorvård måste stängas av omedelbart."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Ett 0-HLR-beslut är inte detsamma som palliativ vård. Patienten kan absolut ges maximal intensivvård (t.ex. respirator, ECMO) men bedöms ej klara/ha nytta av hjärt-lungräddning om hjärtat väl stannar.",
+    "varfor_ovriga_fel": "Ett beslut om att avstå intensivvård kallas separat för '0-IVA'.",
+    "kalla": "Anestesi Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_157",
+    "huvudomrade": "Chock och hemodynamik",
+    "subtopic": "Blodtryck",
+    "typ": "övervakning",
+    "svarighetsgrad": "medel",
+    "fraga": "Under en operation ges en patient kontinuerlig Noradrenalin-infusion via pump, och blodtrycket mäter till synes helt normalt 125/75 mmHg. Vilken potentiell klinisk fälla måste narkosläkaren bevaka extra noga?",
+    "alternativ": {
+      "A": "Att det uppmätta blodtrycket alltid är ett falskt värde orsakat av fel på artärnålen.",
+      "B": "Att blodtrycket är 'farmakologiskt understött' och att det kan dölja en grav underliggande hypovolemi.",
+      "C": "Att Noradrenalin sänker blodtrycket och att det verkliga trycket därför är kritiskt högt.",
+      "D": "Att patienten omöjligen kan befinna sig i någon form av chock."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Vasopressorer (Noradrenalin) stramar åt kärlträdet vilket trycker upp blodtrycket på mätaren, även om blodvolymen i kroppen är farligt låg (t.ex. vid en pågående kirurgisk blödning).",
+    "varfor_ovriga_fel": "Det döljer perfusionen (DO2 kan vara urusel trots fint tryck). Trycket är inte 'falskt', men det speglar inte volymen.",
+    "kalla": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_158",
+    "huvudomrade": "Intensivvård (IVA)",
+    "subtopic": "Transport",
+    "typ": "handläggning",
+    "svarighetsgrad": "lätt",
+    "fraga": "Vilken basal andningsutrustning krävs absolut som ett minimum vid all intrahospital transport av en kritiskt sjuk, intuberad intensivvårdspatient?",
+    "alternativ": {
+      "A": "Endast en syrgasflaska.",
+      "B": "En portabel ultraljudsapparat för lungorna.",
+      "C": "Syrgasflaska, andningsblåsa (Rubens blåsa) och eventuell tillgång till sug.",
+      "D": "Ett komplett transport-ECMO-system."
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Om respiratorn går sönder under transport måste man kunna maskinventilera/blåsa patienten manuellt för hand, och kunna hantera slem (A och B-problem).",
+    "varfor_ovriga_fel": "Utan andningsblåsa riskerar patienten att kvävas om maskinen pajar, syrgasflaskan hjälper då inte på egen hand.",
+    "kalla": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_159",
+    "huvudomrade": "Anestesiologi, farmakologi och luftvägshantering",
+    "subtopic": "Central blockad",
+    "typ": "definition",
+    "svarighetsgrad": "lätt",
+    "fraga": "Inom regional anestesi indelar man ibland metoder i 'central' och 'perifer' nervblockad. Vilken av följande är ett exempel på en central blockad?",
+    "alternativ": {
+      "A": "Interskalenusblockad på halsen.",
+      "B": "Epiduralanestesi (EDA).",
+      "C": "Axillarisblockad i armhålan.",
+      "D": "Infiltrationsanestesi lokalt i bukväggen."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Epidural- (EDA) och spinalbedövning (intratekal) placeras centralt kring ryggmärgen och nervrötterna, och räknas därmed som centrala blockader.",
+    "varfor_ovriga_fel": "De andra är perifera eller lokala nervblockader som blockerar specifika nervplexa/grenar efter att de lämnat kotpelaren.",
+    "kalla": "Anestesiseminarium 1.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ANESTESI_160",
+    "huvudomrade": "Fysiologi och blodgaser",
+    "subtopic": "V/Q-mismatch",
+    "typ": "fysiologi",
+    "svarighetsgrad": "svår",
+    "fraga": "En intensivvårdspatient utvecklar massiva, utbredda atelektaser och blir snabbt hypoxisk. Varför kan denna hypoxi oftast INTE hävas fullständigt genom att man endast ökar inandningsluften till 100% syrgas?",
+    "alternativ": {
+      "A": "Syrgas orsakar massiv frisättning av koldioxid från erytrocyterna som tränger undan syret.",
+      "B": "Blodet passerar förbi de sammanfallna alveolerna utan någon gasutväxling (intrapulmonell shunt), så blodet lämnar lungorna osyresatt oavsett FiO2.",
+      "C": "Höga halter syrgas bryter genast ned hemoglobinets bindningsställen för syre.",
+      "D": "Syrgasmolekylerna växer i storlek i atelektaserna och kan då inte passera kärlmembranet."
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Eftersom luften inte överhuvudtaget når in i de kollapsade alveolerna (atelektaserna), kan blodet som flyter där inte syresättas. Detta osyresatta blod rinner sedan ut i vänster hjärta och späder ut det blod som faktiskt fick syre.",
+    "varfor_ovriga_fel": "Det kallas en fysiologisk/intrapulmonell shunt, och kräver PEEP eller bukläge för att rekrytera upp alveolerna, inte bara mer syrgas.",
+    "kalla": "Anestesi &amp; Intensivvård.docx",
+    "needs_review": "nej"
+  }
+]

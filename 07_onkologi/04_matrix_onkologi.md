@@ -1,0 +1,844 @@
+- area: Akut onkologi
+- entity: Neutropen feber
+- tags:
+  - /
+  - akut
+  - behandlingskomplikation
+  - infektion
+  - onkologi
+- when_to_suspect:
+  - Cytostatika för 7–14 dgr sedan (nadir)
+  - Feber >38,5 (x1) eller >38 (x2)
+- discriminators:
+  - Neutrofila < 0,5
+  - Ofta avsaknad av lokala symtom pga brist på LPK
+- investigation:
+  - Blododling x2 (centralt + perifert)
+  - Urin/Sår/Sputum-odling
+- initial_management:
+  - Akut inläggning
+  - IV-vätska
+  - Bredspektrum-AB (Pip-Taz 4gx4)
+- definitive_management:
+  - Fortsatt AB tills neutrofila >0,5
+  - Ev profylax med G-CSF vid nästa kur
+- complications:
+  - Neutropen sepsis / chock
+- pitfalls:
+  - Viros (ej neutropen)
+- memory_hooks: 
+---
+- area: Ge G-CSF akut (G-CSF ges endast profylaktiskt, förvärrar akut förlopp)
+- entity: 
+- tags:
+  - akut
+  - g-csf
+  - ge
+  - kirurgi
+  - onkologi
+- when_to_suspect:
+  - Metastasorsakad medullakompression
+- discriminators:
+  - Akut neurologi / Tumörkompression
+- investigation:
+  - Känd cancer
+  - Ny, tilltagande ryggsmärta (ofta värre nattetid)
+  - Svaghet i benen
+- initial_management:
+  - Nedsatt känsel/motorik i ben
+  - Urinretention (bladderscan >400ml)
+  - God sfinktertonus
+- definitive_management:
+  - •
+- complications:
+  - Akut MR-helrygg (<24h)
+- pitfalls:
+  - Högdos kortison (Betapred 16 mg x2 po/iv)
+  - KAD
+  - Kontakt med ryggortoped/onkolog
+- memory_hooks: 
+---
+- area: • Irreversibel paralys• Sfinkterpares
+- entity: • Cauda equina•
+- tags:
+  - akut
+  - irreversibel
+  - onkologi
+  - paralys•
+  - sfinkterpares
+  - •
+  - tentafälla:
+- when_to_suspect:
+  - Beställa endast MR Ländrygg (60% av metastaserna sitter i bröstryggen)
+- discriminators:
+- investigation:
+  - Akut onkologi
+- initial_management:
+  - Vena Cava Superior-syndrom (VCSS)
+- definitive_management:
+  - Akut venös stas / Tumörkompression
+- complications:
+  - Känd lungcancer/lymfom
+  - Dyspné i vila
+  - Svullen, cyanotisk ansikte/hals
+- pitfalls:
+  - Ytliga, vidgade venkollateraler över thorax
+  - Normala underben (ej perifera ödem)
+- memory_hooks: 
+---
+- area: • Hjärtsängläge (halvsittande)• Syrgas• Högdos kortison (Betapred 8 mg x2)• Trombosprofylax
+- entity: • Akut strålbehandling eller cytostatika• Ev. radiologisk kärlstent
+- tags:
+  - akut
+  - hjärtsängläge
+  - högdos
+  - kortison
+  - kvävning
+  - luftvägsobstruktion•
+  - onkologi
+  - radiologi
+  - syrgas•
+  - trombosprofylax
+  - •
+- when_to_suspect:
+  - Hjärtsvikt (ger rassel/bensvullnad, ej VCSS)
+- discriminators:
+  - Tentafälla:
+- investigation:
+  - Lägga patienten plant (Förvärrar stasen livshotande)
+- initial_management:
+- definitive_management:
+  - Akut onkologi
+- complications:
+  - Symptomgivande hjärnmetastaser
+- pitfalls:
+  - Akut neurologi
+- memory_hooks: 
+---
+- area: • RLS-sänkning• Fokalneurologi (ibland diskret trots stor tumör)
+- entity: •
+- tags:
+  - dt
+  - fokalneurologi
+  - hjärna
+  - kirurgi
+  - kontrast
+  - med
+  - rls-sänkning•
+  - •
+- when_to_suspect:
+  - Betapred 8 mg x2 (nedtrappningsschema)
+  - Krampbehandling (Stesolid iv)
+  - Antiepileptika (Keppra vb)
+- discriminators:
+  - Singel/Oligo: Kirurgi alt. Stereotaktisk strålning
+  - Multipla: Helhjärnsbestrålning (4 Gy x5)
+- investigation:
+  - Ökat intrakraniellt tryck
+  - Inklämning
+- initial_management:
+  - Stroke
+- definitive_management:
+  - Tentafälla:
+- complications:
+  - Beställa DT hjärna
+- pitfalls:
+  - utan
+- memory_hooks: 
+---
+- area: 
+- entity: Akut onkologi
+- tags:
+  - akut
+  - onkologi
+  - tumörlyssyndrom
+- when_to_suspect:
+  - Akut behandlingskomplikation (metabol)
+- discriminators:
+  - Dagarna efter start av kraftfull cytostatika vid kemokänsliga tumörer (ex leukemi/lymfom)
+- investigation:
+  - ej tydligt angivet i källorna (högt urat/kalium/fosfat kliniskt)
+- initial_management:
+  - Elstatus, Krea
+- definitive_management:
+  - Massiv iv-hydrering profylaktiskt inför "riskbehandling" för att skydda njurar
+- complications:
+  - ej tydligt angivet i källorna
+- pitfalls:
+  - Akut njurskada
+  - Livshotande arytmier pga elektrolytrubbning
+- memory_hooks: 
+---
+- area: 
+- entity: Akut onkologi
+- tags:
+  - akut
+  - av
+  - cytostatika
+  - extravasering
+  - onkologi
+- when_to_suspect:
+  - Akut behandlingskomplikation (lokal)
+- discriminators:
+  - Smärta/svullnad kring insticksställe (PVK) under pågående cytostatikadropp
+- investigation:
+  - Lokal vävnadsretning/svullnad
+- initial_management:
+  - Klinisk bedömning
+- definitive_management:
+  - Stoppa infusionen omedelbart
+- complications:
+- pitfalls:
+  - Svår vävnadsnekros om preparatet är en "vesikant" (vävnadsretande)
+- memory_hooks: 
+---
+- area: Tentafälla:
+- entity: Ge vesikanter i tunn PVK istället för central infart (PICC/Port-a-cath)
+- tags:
+  - medicin
+  - onkologi
+  - tentafälla:
+- when_to_suspect:
+  - Medicinsk onkologi
+- discriminators:
+  - Immunterapi-biverkningar (ex. Kolit, Pneumonit)
+- investigation:
+  - Autoimmun behandlingskomplikation ("it-er")
+- initial_management:
+  - Patient på checkpointhämmare (PD-1/CTLA-4)
+  - Frekventa slemmiga diarréer, buksmärta, hosta, dyspné
+- definitive_management:
+  - Tarmfrekvens (Grad 1-4)
+  - Uteslutande av somatisk/infektiös orsak
+- complications:
+  - Labb, Faecesodling (uteslut genes)
+  - Ev skopi
+- pitfalls:
+  - Pausa immunterapi vid grad 2+
+- memory_hooks: 
+---
+- area: (Prednisolon/Betapred högdos)
+- entity: • Långsam kortisonnedtrappning• Konsultera onkologjour ang återinsättning
+- tags:
+  - kombinationsbehandling
+  - kraftigt
+  - medicin
+  - onkologi
+  - risk
+  - sepsis•
+  - tarmperforation•
+  - vid
+  - ökad
+  - •
+- when_to_suspect:
+  - Cytostatikainducerad diarré
+- discriminators:
+  - Tentafälla:
+- investigation:
+  - Ge antibiotika mot immunterapi-kolit (Hjälper ej, är en autoimmun reaktion)
+- initial_management:
+- definitive_management:
+  - Medicinsk onkologi
+- complications:
+  - Biverkningar Endokrin terapi
+- pitfalls:
+  - Hormonell behandlingskomplikation
+- memory_hooks: 
+---
+- area: • Tamoxifen: Underlivsblödningar• Aromatashämmare: Ledvärk• GnRH: "Flare" initialt
+- entity: • Gyn-undersökning (Tamoxifen)• Bentäthetsmätning (Aromatashämmare)
+- tags:
+  - "flare"
+  - aromatashämmare:
+  - ev
+  - gnrh:
+  - initialt
+  - ledvärk•
+  - medicin
+  - onkologi
+  - osteoporosprofylax
+  - symtomlindring•
+  - tamoxifen:
+  - underlivsblödningar•
+  - •
+- when_to_suspect:
+  - Långtidsbehandling (5-10 år)
+  - Byt preparat vid outhärdliga symtom
+- discriminators:
+  - Endometriehyperplasi/cancer (Tamoxifen)
+  - Svår osteoporos (Aromatashämmare)
+- investigation:
+  - Naturligt klimakterium
+- initial_management:
+  - Tentafälla:
+- definitive_management:
+  - Ge aromatashämmare som monoterapi till premenopausala kvinnor (verkningslöst)
+- complications:
+- pitfalls:
+  - Medicinsk onkologi
+- memory_hooks: 
+---
+- area: Läkemedelsklass
+- entity: • Palliativ/metastaserad sjukdom
+- tags:
+  - analys
+  - krävs
+  - läkemedelsklass
+  - prediktiv
+  - •
+- when_to_suspect:
+  - Tumörbiopsi/Molekylär testning (NGS)
+- discriminators:
+- investigation:
+  - -mab: Intravenöst, binder extracellulärt
+  - -nib: Peroralt, små intracellulära tyrosinkinashämmare
+- initial_management:
+  - Kardiogen toxicitet (ex Trastuzumab/HER2)
+- definitive_management:
+  - •
+- complications:
+  - Tentafälla:
+- pitfalls:
+  - Skriva ut målstyrd terapi blint utan bevisat target (ex
+  - BRAF/HER2)
+- memory_hooks: 
+---
+- area: Medicinsk onkologi
+- entity: Testikelcancer (Metastaserad)
+- tags:
+  - i
+  - intention
+  - iv
+  - kirurgi
+  - kurativ
+  - medicin
+  - medicinsk
+  - onkologi
+  - stadium
+- when_to_suspect:
+  - Ung man, retroperitoneala lymfkörtlar, lungmetastaser
+- discriminators:
+  - Förhöjda tumörmarkörer (S-LD, AFP, b-HCG)
+- investigation:
+  - Tumörmarkörer
+  - DT Buk/Thorax
+- initial_management:
+  - BEP-kurer (Bleomycin, Etoposid, Cisplatin)
+- definitive_management:
+  - Cytostatika och kirurgi
+- complications:
+  - Infertilitet
+  - Sekundär malignitet (av cytostatika)
+- pitfalls:
+  - •
+- memory_hooks: 
+---
+- area: Palliativ intention (Metastaserad testikelcancer botas hos ca 97%, är extremt kemokänslig!)
+- entity: 
+- tags:
+  - intention
+  - medicin
+  - palliativ
+- when_to_suspect:
+  - Nociceptiv skelettsmärta
+- discriminators:
+  - Somatisk vävnadssmärta
+- investigation:
+  - Rörelse- eller belastningsutlöst smärta över skelettet hos tumörpatient
+- initial_management:
+  - Vällokaliserad konstant värk
+- definitive_management:
+  - Slätröntgen/DT (frakturrisk?)
+- complications:
+  - Paracetamol (1gx4) i botten
+  - Tillägg av opioider
+- pitfalls:
+  - NSAID
+- memory_hooks: 
+---
+- area: • Palliativ strålbehandling (ofta engångsdos 8 Gy, 70-80% smärtfrihet)
+- entity: • Patologisk fraktur• NSAID-biverkningar (blödning/njursvikt)
+- tags:
+  - medicin
+  - neuropatisk
+  - palliativ
+  - smärta•
+  - strålbehandling
+  - •
+- when_to_suspect:
+  - Tentafälla:
+- discriminators:
+  - Glömma att NSAID är särskilt bra mot just skelettmetastas-smärta.
+- investigation:
+- initial_management:
+  - Palliativ medicin
+- definitive_management:
+  - Neuropatisk smärta
+- complications:
+  - Nervsmärta
+- pitfalls:
+  - Brännande, stickande, ilande smärta
+  - Tumör som trycker på nervrot
+- memory_hooks: 
+---
+- area: • Klinisk/Neurologiskt status
+- entity: • Antiepileptika (Gabapentin 100-300 mg)• Tricykliska (Saroten tn)• Kortison
+- tags:
+  - av
+  - klinisk/neurologiskt
+  - medicin
+  - neuropatiska
+  - smärtläkemedel
+  - status
+  - upptitrering
+  - •
+- when_to_suspect:
+  - Övertrötthet av kombinationsläkemedel
+- discriminators:
+  - Nociceptiv smärta
+- investigation:
+  - Tentafälla:
+- initial_management:
+  - Endast öka opioid-dosen (ger bara biverkningar, dålig effekt på ren nervsmärta)
+- definitive_management:
+- complications:
+  - Palliativ medicin
+- pitfalls:
+  - Opioidhantering & Rotation
+- memory_hooks: 
+---
+- area: • Vid otillräcklig smärtlindring eller oacceptabla biverkningar (kognitiv svikt/illamående) av aktuell opioid
+- entity: • Vid-behovsdos beräknas alltid som
+- tags:
+  - 1/6
+  - aktuell
+  - av
+  - biverkningar
+  - dygnsdosen
+  - eller
+  - oacceptabla
+  - opioid
+  - otillräcklig
+  - smärtlindring
+  - totala
+  - vid
+  - •
+- when_to_suspect:
+  - Konverteringsguide
+- discriminators:
+  - Alltid
+- investigation:
+  - Obstipationsprofylax
+- initial_management:
+  - (Movicol/Laxoberal) vid start!
+- definitive_management:
+  - Vid opioidrotation:
+- complications:
+  - Minska
+- pitfalls:
+  - ekvivalent tabell-dos med 25-50%
+- memory_hooks: 
+---
+- area: •
+- entity: Tentafälla:
+- tags:
+  - avräknad
+  - dos
+  - ge
+  - medicin
+  - opioidbyte
+  - rakt
+  - vid
+  - •
+- when_to_suspect:
+- discriminators:
+  - Palliativ medicin
+- investigation:
+  - Illamående (Candida-genes)
+- initial_management:
+  - Palliativt symptom (reversibelt)
+- definitive_management:
+  - Skör patient
+  - Smärta vid sväljning, svårt att äta, illamående
+- complications:
+  - Vita beläggningar i MoS
+- pitfalls:
+  - Inspektion mun/svalg
+- memory_hooks: 
+---
+- area: • Lokal/systemisk svampbehandling
+- entity: • Malnutrition• Dehydrering
+- tags:
+  - diffust
+  - illamående•
+  - lokal/systemisk
+  - medicin
+  - svampbehandling
+  - terminalt
+  - •
+- when_to_suspect:
+  - Tentafälla:
+- discriminators:
+  - Sätta in centrala antiemetika (Haldol) utan att inspektera munhålan först
+- investigation:
+- initial_management:
+  - Palliativ medicin
+- definitive_management:
+  - Dyspné i livets slut
+- complications:
+  - Palliativt symptom
+- pitfalls:
+  - Lufthunger och ångest hos döende patient
+- memory_hooks: 
+---
+- area: • Klinisk uteslutning av akut behandlingsbar genes (ex vätska)
+- entity: • Lågdoserad opioid (Morfin) dämpar lufthunger• Midazolam mot oro/ångest
+- tags:
+  - akut
+  - av
+  - behandlingsbar
+  - genes
+  - i
+  - injektionsform
+  - klinisk
+  - medicin
+  - trygghetsordinationer
+  - uteslutning
+  - •
+- when_to_suspect:
+  - Kvävningskänsla / Ångest
+- discriminators:
+  - Hypoxi
+- investigation:
+  - Tentafälla:
+- initial_management:
+  - Strunta i Morfin för att POX är 98% (Dyspné är subjektivt och måste lindras)
+- definitive_management:
+- complications:
+  - Palliativ medicin
+- pitfalls:
+  - Akut konfusion / Hjärnsvikt
+- memory_hooks: 
+---
+- area: • Akut plockig, förvirrad, motoriskt orolig patient
+- entity: • Hitta reversibel somatisk orsak (smärta, KAD-stopp, förstoppning, hyperkalcemi)
+- tags:
+  - akut
+  - förvirrad,
+  - motoriskt
+  - orolig
+  - patient
+  - plockig,
+  - •
+- when_to_suspect:
+  - Bladderscan
+- discriminators:
+  - Smärtskattning
+  - Labb
+- investigation:
+  - Åtgärda fysiskt hinder (Sätt KAD, laxera)
+- initial_management:
+  - Haldol (Neuroleptika) i lågdos
+- definitive_management:
+  - endast
+- complications:
+  - om somatisk orsak uteslutits
+- pitfalls:
+  - Sönderfallande sjukdomsbild
+- memory_hooks: 
+---
+- area: Tentafälla:
+- entity: Ge Haldol direkt innan Bladderscan
+- tags:
+  - medicin
+  - tentafälla:
+- when_to_suspect:
+  - Palliativ medicin
+- discriminators:
+  - Dödsrosslingar (Terminalfas)
+- investigation:
+  - Sekretstagnation
+- initial_management:
+  - Sista dygnet/timmarna
+  - Grumlat medvetande, kall perifert
+  - Ljudlig, rasslande andning
+- definitive_management:
+  - Anuri
+  - Upphörd sväljreflex
+- complications:
+  - Klinisk bedömning ("Surprise question" ställd tidigare)
+- pitfalls:
+  - Lägesändring
+  - Information till anhöriga (patienten lider ej)
+  - Ev Robinul (antikolinergikum) sc
+- memory_hooks: 
+---
+- area: • Onödigt lidande vid överbehandling
+- entity: • Lungödem•
+- tags:
+  - akut
+  - lidande
+  - onödigt
+  - vid
+  - överbehandling
+  - •
+  - tentafälla:
+- when_to_suspect:
+  - Djupsugning och iv-vätska (Djupsugning plågar patienten, dropp förvärrar rosslingarna!)
+- discriminators:
+- investigation:
+  - Strålbehandling
+- initial_management:
+  - Akuta vs Sena strålbiverkningar
+- definitive_management:
+  - Toxicitet
+- complications:
+  - Akuta: Inom 3 mån (ofta 2-3 v in)
+  - Sena: Månader till år efteråt
+- pitfalls:
+  - Akut: Snabbt delande celler (Mukosit, erytem, diarré)
+  - Sen: Långsamt delande organ (Lungfibros, xerostomi)
+- memory_hooks: 
+---
+- area: • Symtomlindring akut
+- entity: • Akuta läker ofta ut helt utan men.• Sena biverkningar är irreversibla/kroniska.
+- tags:
+  - akut
+  - fibros•
+  - kognitiv
+  - malignitet•
+  - permanent
+  - sekundär
+  - svikt
+  - symtomlindring
+  - •
+- when_to_suspect:
+  - •
+- discriminators:
+  - Tentafälla:
+- investigation:
+  - Tro att sen muntorrhet (xerostomi) läker ut (det är en permanent spottkörtelsfibros)
+- initial_management:
+- definitive_management:
+  - Strålbehandling
+- complications:
+  - Palliativ vs Kurativ fraktionering
+- pitfalls:
+  - Behandlingsstrategi
+- memory_hooks: 
+---
+- area: • Kurativ: Hög totaldos, många små fraktioner (skyddar normalvävnad)• Palliativ: Låg totaldos, få men stora fraktioner (snabb lindring)
+- entity: • Dosplanerings-DT
+- tags:
+  - ej
+  - fraktioner
+  - få
+  - hög
+  - kurativ:
+  - låg
+  - men
+  - många
+  - palliativ:
+  - små
+  - stora
+  - tillämpligt
+  - totaldos,
+  - •
+- when_to_suspect:
+  - Stereotaktisk strålning (kurativ singelpunkt)
+  - Konventionell extern strålning
+- discriminators:
+  - Om palliativ dos ges kurativt överlever ej normalvävnaden på sikt
+- investigation:
+  - •
+- initial_management:
+  - Tentafälla:
+- definitive_management:
+  - Ge palliativa kurer utspridda över 5 veckor (Syftet palliativt är att minimera sjukhustid och ge snabb lindring)
+- complications:
+- pitfalls:
+  - Cancer utan känd primärtumör
+- memory_hooks: 
+---
+- area: Diagnostisk algoritm
+- entity: • Patient med misstänkt spridd cancer
+- tags:
+  - algoritm
+  - allmänpåverkad/högt
+  - aos:
+  - bildbevis
+  - crp
+  - cup:
+  - diagnostisk
+  - men
+  - metastaser
+  - oklart.•
+  - på
+  - radiologi
+  - radiologiskt
+  - ursprung
+  - •
+- when_to_suspect:
+  - inga
+- discriminators:
+  - tumörer påvisade.
+- investigation:
+  - CT Thorax/Buk
+  - Tumörmarkörer (Endast riktade: PSA/hCG/AFP)
+- initial_management:
+  - •
+- definitive_management:
+  - Mellannålsbiopsi
+- complications:
+  - av metastas för PAD (Extremt centralt!)
+- pitfalls:
+  - Cytostatikabehandling palliativt baserat på PAD
+  - God prognos vid singelmetastas
+- memory_hooks: 
+---
+- area: •
+- entity: Tentafälla:
+- tags:
+  - cup
+  - finnålscytologi
+  - med
+  - nöja
+  - sig
+  - vid
+  - •
+- when_to_suspect:
+- discriminators:
+  - Cancergenetik
+- investigation:
+  - BRCA & Lynch syndrom
+- initial_management:
+  - Hereditära cancersyndrom
+- definitive_management:
+  - BRCA: Trippelneg bröstcancer, manlig bröstcancer, debut <40 år
+  - Lynch: Kolorektal <50 år, synkrona gyncancrar
+- complications:
+  - Lynch: Högersidig kolon, MMR-genmutation
+  - BRCA: Inkomplett penetrans ("second hit")
+- pitfalls:
+  - Remiss till cancergenetisk mottagning
+- memory_hooks: 
+---
+- area: • Täta kontroller (Koloskopi var 2:a år vid Lynch)• Profylaktisk kirurgi
+- entity: • Utveckling av multipla aggressiva maligniteter ungt
+- tags:
+  - fap
+  - kirurgi
+  - kontroller
+  - onkologi
+  - profylaktisk
+  - täta
+  - •
+- when_to_suspect:
+- discriminators:
+  - Onkologi intro
+- investigation:
+  - Alarmsymtom (Dysfagi & Tyst ikterus)
+- initial_management:
+  - Röda flaggor
+- definitive_management:
+  - Äldre patient som söker på vårdcentral
+- complications:
+  - Dysfagi: Mat fastnar
+  - Tyst ikterus: Gulsot
+- pitfalls:
+  - utan
+- memory_hooks: 
+---
+- area: Samhälle och Epidemiologi
+- entity: Ekonomiska konsekvenser av cancer
+- tags:
+  - onkologi
+  - samhällsmedicin
+- when_to_suspect:
+  - Allmän kunskap kring sjukvårdsekonomi
+- discriminators:
+  - 44% av de totala kostnaderna för cancer består av produktionsbortfall för samhället, inte direkta vårdkostnader. Incidensen ökar brant på grund av en allt äldre befolkning.
+- investigation:
+- initial_management:
+- definitive_management:
+- complications:
+- pitfalls:
+- memory_hooks: 
+---
+- area: Diagnostik
+- entity: SVF CUP vs SVF AOS
+- tags:
+  - diagnostik
+  - handläggning
+  - onkologi
+- when_to_suspect:
+  - Ospecifika, allvarliga sjukdomssymtom hos vuxna
+- discriminators:
+  - SVF CUP (Cancer utan känd primärtumör): Används NÄR METASTASER ÄR PÅVISADE radiologiskt eller cytologiskt, men ingen primärtumör hittats.
+  - SVF AOS (Allvarliga ospecifika symtom som kan bero på cancer): Används vid symtom (ex. oförklarlig viktnedgång) men UTAN påvisade metastaser/tumör vid första bedömningen.
+- investigation:
+- initial_management:
+- definitive_management:
+- complications:
+- pitfalls:
+- memory_hooks: 
+---
+- area: CNS-tumörer / Metastaser
+- entity: Hjärnmetastaser (Handläggning)
+- tags:
+  - neurologi
+  - onkologi
+- when_to_suspect:
+  - Neurologiska bortfall / kramper hos patient med känd solid cancer
+- discriminators:
+  - Singelmetastas (1 st, nåbar): Behandlas i botande syfte lokalt med Kirurgi eller Stereotaktisk strålning.
+  - Multipla metastaser (ofta >3-4): Behandlas standardmässigt palliativt med Helhjärnsbestrålning (ofta 4 Gy x 5).
+- investigation:
+  - MR Hjärna med kontrast
+- initial_management:
+  - Högdos Kortison (Betapred) för hjärnödem
+- definitive_management:
+- complications:
+- pitfalls:
+- memory_hooks: 
+---
+- area: Palliativ medicin
+- entity: Palliativ övergång (Trygghetsordinationer & Surprise Question)
+- tags:
+  - etik
+  - onkologi
+  - palliation
+- when_to_suspect:
+  - Vid övergång till obotlig/palliativ vård i livets slutskede
+- discriminators:
+  - Surprise Question: "Skulle jag bli förvånad om den här patienten dog inom 1 år?". Om nej -> dags att tänka palliativt.
+  - Trygghetsordinationer vid brytpunkt: 4 mediciner som SKA ordineras vb.
+- investigation:
+- initial_management:
+  - Morfin (Smärta/Dyspné)
+  - Midazolam (Ångest)
+  - Haldol (Illamående/Konfusion)
+  - Robinul (Rosslingar)
+- definitive_management:
+- complications:
+- pitfalls:
+  - Att glömma ordinera vid-behov-mediciner vilket leder till panik och jourlarm kl 03 på natten.
+- memory_hooks: 
+---
+- area: Diagnostik
+- entity: Botbara tumörer vid CUP (Tumörmarkörer)
+- tags:
+  - diagnostik
+  - onkologi
+- when_to_suspect:
+  - Hos alla patienter, särskilt yngre män, som presenteras med spridd cancer / adenokarcinom av okänt ursprung (CUP)
+- discriminators:
+  - Vissa spridda cancertyper kan BOTA med starka cellgifter, och får absolut inte missas under svepande "palliativ CUP-diagnos".
+- investigation:
+  - Ta ALLTID tumörmarkörerna PSA (prostatacancer), hCG och AFP (testiscancer/könscellstumör) från blodet!
+- initial_management:
+- definitive_management:
+- complications:
+- pitfalls:
+  - Att skicka en 35-årig man med "lungmetastaser" till palliativ vård när det i själva verket rör sig om en fullt botbar testiscancer.
+- memory_hooks: 

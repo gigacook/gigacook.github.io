@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\User\\\\Documents\\\\Claude Cooker\\\\Engine\" -Force)",
+      "Bash(Select-Object Name, FullName)",
+      "Bash(python *)"
+    ]
+  }
+}

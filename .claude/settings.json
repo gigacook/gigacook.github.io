@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"C:/Users/User/Documents/Claude Cooker/Engine\" && python main.py 2>&1)"
+    ]
+  }
+}

@@ -1,0 +1,1427 @@
+[
+  {
+    "id": "KIR_SMR_001",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Smärtanalys",
+    "typ": "teori",
+    "svårighetsgrad": "lätt",
+    "fråga": "Konceptet 'Total pain' används för att förstå smärta utifrån ett helhetsperspektiv. Vilka fyra dimensioner ingår i denna modell?",
+    "alternativ": {
+      "A": "Akut, långvarig, nociceptiv och nociplastisk smärta",
+      "B": "Biologisk, psykisk, social och existentiell smärta",
+      "C": "Perifer, central, refererad och neuropatisk smärta",
+      "D": "Sensorisk, motorisk, autonom och kognitiv smärta"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Total pain beaktar att smärtupplevelsen påverkas av biologiska, psykiska, sociala och andliga/existentiella faktorer.",
+    "varför_övriga_fel": "Övriga alternativ beskriver fysiologiska smärtmekanismer, inte det biopsykosociala ramverket Total pain.",
+    "källa": "Smärta Cancerrelaterad smärta.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_002",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Smärtanalys",
+    "typ": "teori",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad kännetecknar nociceptiv smärta enligt definitionen i källorna?",
+    "alternativ": {
+      "A": "Smärta som beror på en skada eller sjukdom i det somatosensoriska nervsystemet",
+      "B": "Smärta med okänd bakomliggande orsak och störd smärtmodulering",
+      "C": "Smärta som beror på stimulering av perifera nociceptorer vid vävnadsskada eller hot om vävnadsskada",
+      "D": "Smärta som enbart orsakas av psykologiska faktorer"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Nociceptiv smärta är kroppens normala varningssignal för pågående eller hotande vävnadsskada.",
+    "varför_övriga_fel": "A beskriver neuropatisk smärta. B beskriver nociplastisk smärta. D stämmer inte med någon ren smärttyp.",
+    "källa": "Smärta Fysiologi vid långvarig smärta_.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_003",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Smärtanalys",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilket kliniskt fynd vid undersökning pekar starkast mot en neuropatisk smärtmekanism?",
+    "alternativ": {
+      "A": "Distinkt palpationsömhet över en specifik muskelbuk",
+      "B": "Smärtlindring av NSAID",
+      "C": "Sensorikbortfall (hypoestesi) och allodyni inom ett rimligt neuroanatomiskt område",
+      "D": "Utbredd smärta i hela kroppen som flyttar sig från dag till dag"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Neuropatisk smärta diagnosticeras bl.a. genom att påvisa känselrubbningar i det hudområde som försörjs av den drabbade nerven.",
+    "varför_övriga_fel": "A och B pekar på nociceptiv smärta. D pekar på nociplastisk smärta (t.ex. fibromyalgi).",
+    "källa": "Smärta Neuropatisk smärta.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_004",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Smärtanalys",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "En 45-årig kvinna har utbredd smärta ovan och nedom midjan, samt bilateral smärta sedan 6 månader. Utredningen visar inga tecken på inflammation eller nervskada. Vilken smärtkategori stämmer bäst?",
+    "alternativ": {
+      "A": "Akut nociceptiv smärta",
+      "B": "Långvarig neuropatisk smärta",
+      "C": "Akut existentiell smärta",
+      "D": "Nociplastisk smärta"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Utbredd smärta utan påvisbar vävnads- eller nervskada (t.ex. fibromyalgi) klassificeras som nociplastisk.",
+    "varför_övriga_fel": "A och B kräver specifik skada i vävnad respektive nerv. C är fel tidsperspektiv och kategori.",
+    "källa": "Smärta TBL - Smärta.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_005",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Smärtfysiologi",
+    "typ": "teori",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är definitionen av allodyni?",
+    "alternativ": {
+      "A": "Nedsatt känsel för smärtsamt stimuli",
+      "B": "Ett ökat smärtsvar på ett stimulus som normalt är smärtsamt",
+      "C": "Smärta som framkallas av ett stimulus som normalt inte framkallar smärta",
+      "D": "Avsaknad av smärta vid kraftig vävnadsskada"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Allodyni betyder att icke-smärtsamma stimuli, som lätt beröring, upplevs som smärta.",
+    "varför_övriga_fel": "A är hypoalgesi. B är hyperalgesi. D är analgesi.",
+    "källa": "Smärta Neuropatisk smärta.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_006",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Smärtfysiologi",
+    "typ": "teori",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken fysiologisk mekanism är mest central för utvecklingen av primär perifer sensitisering vid en akut skada?",
+    "alternativ": {
+      "A": "Minskad frisättning av endogena opioider i ryggmärgen",
+      "B": "Frisättning av inflammatoriska mediatorer (t.ex. prostaglandiner) som sänker tröskeln för nociceptorer",
+      "C": "Permanent aktivering av NMDA-receptorer i hjärnbarken",
+      "D": "Strukturell ombyggnad av A-beta-fibrer i huden"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Vid vävnadsskada frisätts bl.a. prostaglandiner via COX-enzymer som gör nociceptorerna mer lättretade.",
+    "varför_övriga_fel": "A och C berör centrala mekanismer/ryggmärg. D är en mekanism vid vissa nervskador, ej akut primär sensitisering.",
+    "källa": "Smärta Smärtfysiologi Akut smärta - kopia_STUDENTER (1).pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_007",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Smärtfysiologi",
+    "typ": "teori",
+    "svårighetsgrad": "svår",
+    "fråga": "Vilken av följande strukturer i hjärnan utgör ett viktigt centrum för kroppens nedåtgående endogena smärthämmande system?",
+    "alternativ": {
+      "A": "Cerebellum",
+      "B": "Periaqueductal gray (PAG)",
+      "C": "Basala ganglierna",
+      "D": "Pons"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "PAG i mitthjärnan samordnar smärthämning och skickar signaler ner via raphe-kärnorna för att hämma smärtinflödet.",
+    "varför_övriga_fel": "A styr koordination. C styr motorik. PAG är det primära smärthämmande centret nämnt i källorna.",
+    "källa": "Smärta Smärtfysiologi Akut smärta - kopia_STUDENTER (1).pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_008",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Smärtfysiologi",
+    "typ": "teori",
+    "svårighetsgrad": "medel",
+    "fråga": "Central sensitisering innebär att nervsystemet bibehåller en ökad känslighet efter att en skada läkt. Vilken receptor i ryggmärgens bakhorn pekas ut som en av huvudmekanismerna bakom detta?",
+    "alternativ": {
+      "A": "GABA-A-receptorn",
+      "B": "My-opioidreceptorn",
+      "C": "NMDA-receptorn",
+      "D": "Nikotinerga acetylkolinreceptorn"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Kraftigt och utdraget nociceptivt inflöde leder till aktivering av NMDA-receptorer, vilket ger en långtidspotentiering av smärtsignalen.",
+    "varför_övriga_fel": "A och B är inblandade i smärthämning. NMDA-receptorn är den primära faktorn för wind-up och sensitisering.",
+    "källa": "Smärta Smärtfysiologi Akut smärta - kopia_STUDENTER (1).pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_009",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Smärtfysiologi",
+    "typ": "teori",
+    "svårighetsgrad": "medel",
+    "fråga": "Smärta från inre organ upplevs ofta i ett bestämt hudområde (refererad smärta). Vad är den fysiologiska huvudförklaringen till detta?",
+    "alternativ": {
+      "A": "Inflammationen sprider sig fysiskt från organet till huden",
+      "B": "Viscerala och somatiska nerver konvergerar på samma projektionsneuron i ryggmärgens bakhorn",
+      "C": "Hjärnan ignorerar den viscerala signalen helt och genererar en egen signal i huden",
+      "D": "Inre organ saknar helt nociceptorer, vilket gör att huden känner av trycket istället"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Refererad smärta uppstår för att nerver från inre organ och huden delar (konvergerar) på samma neuron i ryggmärgen.",
+    "varför_övriga_fel": "Inre organ har visst nociceptorer (men få). A och C är felaktiga och hittade mekanismer.",
+    "källa": "Smärta Smärtfysiologi Akut smärta - kopia_STUDENTER (1).pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_010",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Farmakologisk behandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken är den rekommenderade dygnsmaxdosen av Paracetamol för en i övrigt frisk vuxen patient?",
+    "alternativ": {
+      "A": "2 gram",
+      "B": "3 gram",
+      "C": "4 gram",
+      "D": "5 gram"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "För friska vuxna rekommenderas högst 4 g Paracetamol per dygn (t.ex. 1g x 4).",
+    "varför_övriga_fel": "Mindre än 4g ordineras ofta till äldre/leversjuka, men för en frisk vuxen gäller max 4g.",
+    "källa": "Smärta Farmakologisk behandling.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_011",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Farmakologisk behandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "En 78-årig man med känd hjärtsvikt och lätt njursvikt inkommer med nociceptiv ryggsmärta. Vilket av följande läkemedel är olämpligt och bör i första hand undvikas?",
+    "alternativ": {
+      "A": "Paracetamol",
+      "B": "Buprenorfinplåster",
+      "C": "Ibuprofen",
+      "D": "Oxikodon"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "NSAID (som Ibuprofen) är kontraindicerade vid hjärtsvikt, njurinsufficiens och ökar risken för GI-biverkningar, särskilt hos äldre.",
+    "varför_övriga_fel": "Paracetamol är säkert. Opioider kan användas med försiktighet/dosreduktion vid akut smärta hos äldre.",
+    "källa": "Smärta Farmakologisk behandling.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_012",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Farmakologisk behandling",
+    "typ": "teori",
+    "svårighetsgrad": "medel",
+    "fråga": "En patient behandlas med en traditionell ospecifik NSAID. Varför uppstår en ökad risk för gastrointestinal blödning jämfört med vid användning av en specifik COX-2-hämmare?",
+    "alternativ": {
+      "A": "COX-2-hämmare ökar magsyrasekretionen mindre än traditionella NSAID",
+      "B": "Traditionella NSAID hämmar även COX-1, som producerar slemhinneskyddande prostaglandiner i mag-tarmkanalen",
+      "C": "Traditionella NSAID är basiska molekyler som lokalt irriterar tarmslemhinnan",
+      "D": "COX-2-hämmare innehåller protonpumpshämmare som skyddar magen"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "COX-1 enzymet skyddar normalt magslemhinnan och hjälper koagulationen. Ospecifika NSAID hämmar COX-1 och tar bort detta skydd.",
+    "varför_övriga_fel": "COX-2 är mer inflammationsspecifikt. C och D är felaktiga påståenden om farmakodynamik.",
+    "källa": "Smärta Smärtfysiologi Akut smärta - kopia_STUDENTER (1).pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_013",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Farmakologisk behandling",
+    "typ": "biverkningar",
+    "svårighetsgrad": "medel",
+    "fråga": "Vid insättning av starka opioider för postoperativ smärta, vilken biverkning är patienten mycket osannolik att utveckla tolerans emot (dvs biverkningen kvarstår under långtidsbruk)?",
+    "alternativ": {
+      "A": "Dåsighet och sedering",
+      "B": "Illamående",
+      "C": "Andningsdepression",
+      "D": "Förstoppning (obstipation)"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Tolerans utvecklas mot andningsdepression, eufori och sedering, men nästan aldrig mot förstoppning. Laxantia måste alltid övervägas.",
+    "varför_övriga_fel": "Tolerans utvecklas vanligtvis mot illamående, sedering och andningsdepression inom dagar till veckor.",
+    "källa": "Smärta Smärtfysiologi Akut smärta - kopia_STUDENTER (1).pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_014",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Farmakologisk behandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "En 65-årig kvinna behöver starka opioider p.g.a. postoperativ smärta. Hon har nedsatt njurfunktion (eGFR 25 ml/min). Vilket av följande är sant rörande preparatval och risker?",
+    "alternativ": {
+      "A": "Morfin är det säkraste valet då dess metaboliter inte utsöndras via njurarna",
+      "B": "Oxikodon bryts ner lokalt i blodet och påverkas ej av njursvikt",
+      "C": "Morfinmetaboliter (t.ex. M6G) kan ackumuleras vid njursvikt och orsaka allvarlig andningsdepression",
+      "D": "Buprenorfin är absolut kontraindicerat vid all form av njursvikt"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Morfin bryts ned till aktiva metaboliter som utsöndras via njurarna, vilket gör att det ackumuleras vid njursvikt.",
+    "varför_övriga_fel": "A är direkt fel. B är fel (Oxikodon justeras också vid njursvikt, men ackumulerar ej aktiva metaboliter i samma grad som morfin). D är fel; Buprenorfin kan användas oberoende av njurfunktion.",
+    "källa": "Smärta Farmakologisk behandling.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_015",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Farmakologisk behandling",
+    "typ": "teori",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken unik egenskap skiljer Tapentadol (Palexia) från klassiska opioider som Morfin och Oxikodon?",
+    "alternativ": {
+      "A": "Det är en ren antagonist till my-receptorn",
+      "B": "Det har en dubbel verkningsmekanism: my-receptoragonist och noradrenalinåterupptagshämmare",
+      "C": "Det verkar helt oberoende av opioidreceptorer",
+      "D": "Det ger ingen risk för andningsdepression överhuvudtaget"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Tapentadol verkar genom att både aktivera my-opioidreceptorer och hämma återupptaget av noradrenalin.",
+    "varför_övriga_fel": "A är fel (det är en agonist). C är fel. D är fel (risk finns vid höga doser, även om profilen är annorlunda).",
+    "källa": "Smärta Farmakologisk behandling.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_016",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Farmakologisk behandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "När anses transdermalt Fentanyl (plåster) i allmänhet vara OOLÄMPLIGT som förstahandsval?",
+    "alternativ": {
+      "A": "Vid stabil cancerrelaterad smärta hos patient med sväljsvårigheter",
+      "B": "Vid akut icke-malign smärta eller snabbt föränderligt smärttillstånd",
+      "C": "Vid patienter med nedsatt njurfunktion",
+      "D": "Vid palliativ vård i livets slutskede"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Fentanylplåster är opraktiskt och riskabelt vid akut eller snabbt föränderlig smärta på grund av långsam tillslagstid (depåeffekt) och risk för överdosering när smärtan minskar i vila.",
+    "varför_övriga_fel": "A och D är klassiska, korrekta indikationer. C är fel, då fentanyl till skillnad från morfin är säkrare vid nedsatt njurfunktion.",
+    "källa": "Smärta Smärtfysiologi Akut smärta - kopia_STUDENTER (1).pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_017",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Farmakologisk behandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "En 55-årig man diagnosticeras med perifer neuropatisk smärta i fötterna. Vilket peroralt läkemedel är enligt rekommendationerna ett förstahandsval?",
+    "alternativ": {
+      "A": "Oxikodon",
+      "B": "Ibuprofen",
+      "C": "Amitriptylin (eller Gabapentin)",
+      "D": "Buprenorfin"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Vid neuropatisk smärta rekommenderas i första hand TCA (t.ex. Amitriptylin) eller Gabapentinoider (t.ex. Gabapentin/Pregabalin).",
+    "varför_övriga_fel": "Opioider är linje 3 (svag rekommendation) vid neuropatisk smärta och ska undvikas i primärvård. NSAID (Ibuprofen) har ingen effekt på ren neuropatisk smärta.",
+    "källa": "Smärta Farmakologisk behandling.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_018",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Farmakologisk behandling",
+    "typ": "biverkningar",
+    "svårighetsgrad": "medel",
+    "fråga": "Du överväger att sätta in Amitriptylin mot neuropatisk smärta. Vilken biverkningsprofil eller risk gör att man startar med mycket låg dos, särskilt hos äldre?",
+    "alternativ": {
+      "A": "Stor risk för gastrointestinal blödning",
+      "B": "Antikolinerga effekter (muntorrhet, urinretention, konfusion) och kardiovaskulär påverkan",
+      "C": "Kraftigt ökad andningsfrekvens",
+      "D": "Risk för utveckling av akut njursvikt"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "TCA har uttalade antikolinerga biverkningar och kan ge arytmier, vilket särskilt äldre är känsliga för.",
+    "varför_övriga_fel": "A och D gäller NSAID. C är fel, andningsfrekvens ökar ej av TCA.",
+    "källa": "Smärta Farmakologisk behandling.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_019",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Farmakologisk behandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "En 30-årig kvinna har diagnosen Fibromyalgi (ett nociplastiskt smärtsyndrom). Vilken läkemedelsgrupp bör AKTIVT UNDVIKAS vid behandling av hennes smärta?",
+    "alternativ": {
+      "A": "SNRI (t.ex. Duloxetin)",
+      "B": "TCA (t.ex. Saroten/Amitriptylin)",
+      "C": "Gabapentinoider",
+      "D": "Starka opioider"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Opioider ska generellt undvikas vid långvarig nociplastisk smärta (som fibromyalgi) pga bristande evidens för smärtlindring och stor risk för beroende/opioid-inducerad hyperalgesi.",
+    "varför_övriga_fel": "A, B och C är just de läkemedel (sekundära analgetika) som kan ha effekt vid nociplastisk smärta.",
+    "källa": "Smärta Farmakologisk behandling.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_020",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Farmakologisk behandling",
+    "typ": "teori",
+    "svårighetsgrad": "svår",
+    "fråga": "Vid behandling med buprenorfin (partiell agonist) lyfts en särskild egenskap fram i jämförelse med fulla agonister (som fentanyl) gällande andningsdepression. Vilken egenskap?",
+    "alternativ": {
+      "A": "Buprenorfin har en 'tak-effekt' (ceiling effect), där ökad dos inte längre ökar andningsdepressionen.",
+      "B": "Buprenorfin saknar helt effekt på andningscentrum.",
+      "C": "Buprenorfin ger paradoxalt en stimulering av andningen vid höga doser.",
+      "D": "Buprenorfin har en extremt kort halveringstid, så andningsdepressionen går över på sekunder."
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "Buprenorfin uppvisar en så kallad tak-effekt, vilket innebär att andningsdepressionen planar ut efter en viss dos, till skillnad från fulla agonister där effekten ökar dosberoende.",
+    "varför_övriga_fel": "B är fel; det KAN ge andningsdepression, speciellt med benzo. C och D är farmakologiskt inkorrekta.",
+    "källa": "Smärta Smärtfysiologi Akut smärta - kopia_STUDENTER (1).pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_021",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Icke-farmakologisk behandling",
+    "typ": "teori",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är rekommendationen kring fysisk aktivitet vid långvarig icke-cancerrelaterad smärta?",
+    "alternativ": {
+      "A": "Sängläge rekommenderas tills smärtan har försvunnit helt",
+      "B": "Det är en förstahandsbehandling som aktiverar nedåtgående smärthämmande system",
+      "C": "Det ska endast användas vid nociceptiv smärta, aldrig nociplastisk",
+      "D": "Det bör undvikas eftersom det riskerar att överbelasta nerverna"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Fysisk aktivitet är en förstahandsbehandling som ger smärtlindring (genom frisättning av endogena opioider/serotonin) och motverkar samsjuklighet som depression.",
+    "varför_övriga_fel": "A och D är felaktiga och föråldrade råd. C är fel; det rekommenderas vid alla typer av långvarig smärta, även om nociplastisk smärta kan blossa upp tillfälligt vid träning.",
+    "källa": "Smärta Icke-farmakologisk behandling långvarig smärta.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_022",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Icke-farmakologisk behandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "En 60-årig man med ryggsmärta är intresserad av att testa TENS. Du kontrollerar anamnesen. Vilket av följande är en absolut kontraindikation för TENS-behandling?",
+    "alternativ": {
+      "A": "Pacemaker eller ICD",
+      "B": "Pågående NSAID-behandling",
+      "C": "Hypertoni",
+      "D": "Nedsatt njurfunktion"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "TENS innebär elektrisk nervstimulering och kan störa funktionen hos implanterbara hjärtstartare/pacemakers.",
+    "varför_övriga_fel": "B, C och D utgör inga kontraindikationer för TENS.",
+    "källa": "Smärta Icke-farmakologisk behandling långvarig smärta.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_023",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Icke-farmakologisk behandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Hur ska TENS-elektroder generellt INTE placeras för att undvika komplikationer?",
+    "alternativ": {
+      "A": "Över ett smärtande dermatom i ländryggen",
+      "B": "På halsens framsida eller lateralsida",
+      "C": "Över en smärtande led",
+      "D": "Bredvid ett nyligen läkt operationssår"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Placering på halsens fram/sida kan påverka sinus caroticus och orsaka blodtrycksfall samt svimning.",
+    "varför_övriga_fel": "A, C och D är normala och säkra elektrodplaceringar för TENS.",
+    "källa": "Smärta Icke-farmakologisk behandling långvarig smärta.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_024",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Icke-farmakologisk behandling",
+    "typ": "teori",
+    "svårighetsgrad": "svår",
+    "fråga": "Vid behandling av typ 2-diabetes och långvarig nociplastisk smärta används ofta liknande pedagogiska upplägg. Vad är det huvudsakliga MÅLET med smärtutbildning för en patient med långvarig smärta?",
+    "alternativ": {
+      "A": "Att öka patientens smärtmedicinering",
+      "B": "Att minska den fysiska belastningen permanent",
+      "C": "Att öka fysisk funktion och livskvalitet (snarare än att nolla smärtan)",
+      "D": "Att övertyga patienten om att smärtan bara är psykisk"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Syftet vid långvarig smärta är att öka funktionen och livskvaliteten samt minska konsekvenserna av inaktivitet, inte nödvändigtvis att göra patienten smärtfri.",
+    "varför_övriga_fel": "Smärtan är högst reell (inte bara psykisk). A och B är felaktiga strategier som kan försämra tillståndet.",
+    "källa": "Smärta Icke-farmakologisk behandling långvarig smärta.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_025",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Smärtsyndrom",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken diagnos kännetecknas av poäng över 5 på Beightonskalan, smärta vid ytterlägen, senfästesinflammationer och tendens till luxationer?",
+    "alternativ": {
+      "A": "Fibromyalgi",
+      "B": "Reumatoid Artrit (RA)",
+      "C": "Hypermobilitetsspektrumsstörning (HSD)",
+      "D": "Komplext regionalt smärtsyndrom (CRPS)"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Beightonskalan mäter överrörlighet (hypermobilitet). HSD/hEDS innebär utbredd smärta kopplad till ledinstabilitet och kompensatorisk felbelastning.",
+    "varför_övriga_fel": "Fibromyalgi involverar tender points utan primär överrörlighet. RA är autoimmunt, engagerar småleder. CRPS är lokaliserat efter trauma.",
+    "källa": "Smärta TBL - Smärta.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_026",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Smärtsyndrom",
+    "typ": "teori",
+    "svårighetsgrad": "lätt",
+    "fråga": "En stor undergrupp av patienter med långvarig smärta har fibromyalgi. Vilken typ av smärtmekanism är dominerande vid fibromyalgi?",
+    "alternativ": {
+      "A": "Akut nociceptiv",
+      "B": "Ischemisk",
+      "C": "Nociplastisk",
+      "D": "Egentlig neuropatisk"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Fibromyalgi är ett primärt nociplastiskt smärtsyndrom med störd/ökad smärtkänslighet i nervsystemet.",
+    "varför_övriga_fel": "Det saknas en akut vävnadsskada (nociceptiv) och tydlig nervskada (neuropatisk).",
+    "källa": "Smärta TBL - Smärta.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_027",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Smärtanalys",
+    "typ": "teori",
+    "svårighetsgrad": "medel",
+    "fråga": "Varför är det viktigt att behandla svår akut smärta, förutom för att minska patientens lidande?",
+    "alternativ": {
+      "A": "För att minska risken för gallspasm",
+      "B": "För att förhindra sympatikusaktivering som leder till takykardi, hjärtischemi, och andningskomplikationer",
+      "C": "För att smärta annars direkt orsakar anafylaktisk chock",
+      "D": "För att öka risken för trombosutveckling"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Akut smärta orsakar sympatikuspåslag vilket ökar hjärtats syrgasbehov, orsakar ytlig andning (risk för atelektaser) och immobiliserar patienten.",
+    "varför_övriga_fel": "A gäller specifikt vid opioider och gallsten. C är fysiologiskt fel. D är tvärtom, smärta och inaktivitet ökar trombosrisken, behandling minskar den.",
+    "källa": "Smärta Smärtfysiologi Akut smärta - kopia_STUDENTER (1).pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_028",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Cancerrelaterad smärta",
+    "typ": "teori",
+    "svårighetsgrad": "medel",
+    "fråga": "Varför utvecklas skelettmetastaser (som hos en patient med prostatacancer) ofta till en komplex, svårbehandlad smärta?",
+    "alternativ": {
+      "A": "Smärtan är rent psykosomatisk",
+      "B": "Tumören orsakar en kombination av nociceptiv smärta via bentryck/inflammation och till slut en neuropatisk komponent",
+      "C": "Cancer växer endast i hudens A-delta-fibrer",
+      "D": "Metastaser bedövar alltid nervsystemet, så smärtan är paradoxal"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Aktiv cancersjukdom i skelettet börjar nociceptivt men ger till slut ofta även en neuropatisk komponent pga nervengagemang.",
+    "varför_övriga_fel": "A, C och D är uppenbart felaktiga och motsäger grundläggande onkologisk smärtfysiologi.",
+    "källa": "Smärta Cancerrelaterad smärta.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_029",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Farmakologisk behandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Ett vanligt normogram för att förutsäga risken för svår postoperativ smärta inkluderar ett flertal variabler. Vilken av följande variabler ger hög risk?",
+    "alternativ": {
+      "A": "Hög ålder",
+      "B": "Manligt kön",
+      "C": "Höga poäng på preoperativ ångest/oro (t.ex. APAIS-skalan)",
+      "D": "Tidigare okomplicerad narkos"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Preoperativ ångest, kvinnligt kön, låg ålder (yngre pat) och pågående opioidbruk är starka riskfaktorer för mer postop smärta.",
+    "varför_övriga_fel": "Låg ålder och kvinnligt kön är de faktorer som ger högre risk (ej A och B). D påverkar inte smärtan nämnvärt.",
+    "källa": "Smärta Smärtfysiologi Akut smärta - kopia_STUDENTER (1).pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_030",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Icke-farmakologisk behandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken roll spelar 'coping' i multimodal smärtbehandling postoperativt?",
+    "alternativ": {
+      "A": "Det är en farmakologisk term för opioidtolerans",
+      "B": "Det avser att ge bra patientinformation, inkludera närstående och därmed minska oro för att sänka smärtupplevelsen",
+      "C": "Det innebär att tvinga patienten att ignorera smärtan och röra sig",
+      "D": "Det används för att beräkna exakt dos av smärtstillande medicin"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Att förstärka 'coping'-mekanismer innebär att hjälpa patienten mentalt att hantera situationen genom information och trygghet, vilket bevisat minskar smärta.",
+    "varför_övriga_fel": "Coping är psykologiskt/kognitivt, inte farmakologiskt, tvingande eller matematisk dosering.",
+    "källa": "Smärta Smärtfysiologi Akut smärta - kopia_STUDENTER (1).pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_031",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Farmakologisk behandling",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Du behandlar en 82-årig man för akut ryggsmärta efter fall (misstänkt kotkompression). Han kan ej medverka till röntgen pga smärta. Varför är peroralt oxikodon ofta att föredra framför intravenöst morfin hos denna patient inför röntgen?",
+    "alternativ": {
+      "A": "För att oxikodon inte metaboliseras alls i kroppen",
+      "B": "Iv opioider till äldre ökar snabbt risken för biverkningar (t.ex. konfusion och andningsdepression), p.o. ger en stabil och längre smärtlindring inför okänd väntetid",
+      "C": "Intravenöst morfin är kontraindicerat vid misstänkt skelettskada",
+      "D": "Peroralt oxikodon verkar snabbare än intravenöst morfin"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Hos äldre ökar risken för toxiska biverkningar markant vid snabba iv-injektioner. Peroralt har bättre duration för väntetid.",
+    "varför_övriga_fel": "A är fel. C är fel (morfin kan ges iv vid fraktur). D är farmakologiskt inkorrekt (iv går alltid snabbast).",
+    "källa": "Smärta TBL - Smärta.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_SMR_032",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Smärtfysiologi",
+    "typ": "teori",
+    "svårighetsgrad": "medel",
+    "fråga": "En 35-årig byggarbetare krossar fingret med en hammare. Vad kallas den process där den mekaniska energin i fingret omvandlas till en elektrisk signal i den perifera nerven?",
+    "alternativ": {
+      "A": "Modulering",
+      "B": "Transduktion (del av nociceptionen)",
+      "C": "Central sensitisering",
+      "D": "Inhibering"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Transduktion är det första steget i nociception där skadligt stimuli omvandlas till nervsignaler (aktionspotentialer).",
+    "varför_övriga_fel": "Modulering sker i CNS. Central sensitisering är sjuklig amplifiering. Inhibering minskar signalen.",
+    "källa": "Smärta Smärtfysiologi Akut smärta - kopia_STUDENTER (1).pdf",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_TRA_033",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Primärt omhändertagande (C-ABCDE & ATLS)",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Ett traumalarm anländer och patienten blöder pulserande kraftigt från låret. Vad är det allra första du åtgärdar i ATLS-algoritmen (C-ABCDE)?",
+    "alternativ": {
+      "A": "Säkra fri luftväg och stabilisera nacken",
+      "B": "Bedöma andningsfrekvens och syresättning",
+      "C": "Applicera direkt tryck/tourniquet för att stoppa den katastrofala yttre blödningen",
+      "D": "Inspektera pupiller och bedöma medvetande (GCS)"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Enligt det modifierade ATLS-konceptet C-ABCDE ska massiv, katastrofal blödning (C) åtgärdas först av allt.",
+    "varför_övriga_fel": "A, B och D är A, B och D i algoritmen. Livshotande massiv blödning tar nu prioritet över luftväg initialt.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRA_034",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Primärt omhändertagande (C-ABCDE & ATLS)",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "I A-steget vid traumamottagande säkras luftvägen. Vilken annan åtgärd görs rutinmässigt samtidigt i detta steg på grund av skademekanismen?",
+    "alternativ": {
+      "A": "Bilateral thoraxdränering",
+      "B": "Spinal rörelsebegränsning/skydda halsryggen",
+      "C": "Transfusion av akutblod",
+      "D": "Sättande av KAD (Urinkateter)"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "I 'A' ingår 'Airway maintenance with restriction of cervical spine motion'. Halsryggen skyddas alltid initialt.",
+    "varför_övriga_fel": "A hör till B (eller C vid hemothorax). C hör till C (Circulation). D hör oftast till E (Exposure/Environment).",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRA_035",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Livshotande thoraxskador (ATOMIC)",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är den kliniska presentationen av en övertryckspneumothorax (Tension pneumothorax)?",
+    "alternativ": {
+      "A": "Bilateral dämpning vid perkussion av lungorna",
+      "B": "Nedsatt andningsljud ipsilateralt, hypersonor perkussion, halsvenstas och sjunkande blodtryck",
+      "C": "Krepitationer vid bukpalpation och hypertoni",
+      "D": "Bradykardi, varm hud och smala halsvener"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Övertryck i pleuran komprimerar v. cava, ger halsvenstas och minskat venöst återflöde (chock). Lungan kollapsar vilket ger nedsatt andningsljud.",
+    "varför_övriga_fel": "A passar bättre för dubbelsidig massiv hemothorax. D är tecken på neurogen chock.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRA_036",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Livshotande thoraxskador (ATOMIC)",
+    "typ": "teori",
+    "svårighetsgrad": "medel",
+    "fråga": "Inom traumaminnesregeln ATOMIC står 'I' för 'Flail chest'. Vad definierar detta tillstånd?",
+    "alternativ": {
+      "A": "Vätska eller blod i perikardiet som hämmar hjärtats fyllnad",
+      "B": "Ett öppet hål i bröstkorgen där luft sugs in",
+      "C": "Instabil bröstkorg pga. frakturer på minst två ställen på två eller flera intilliggande revben",
+      "D": "En massiv blödning i ena lungan orsakad av lungruptur"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Flail chest (instabil bröstkorg) innebär att ett bröstkorgssegment lossnat och paradoxalt andas med undertrycket.",
+    "varför_övriga_fel": "A är Cardiac tamponade. B är Open pneumothorax. D är mer likt Massive hemothorax.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRA_037",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Livshotande thoraxskador (ATOMIC)",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "När finns det indikation för en urakut thoraxkirurgisk åtgärd (thorakotomi) för en hemothorax hos en traumapatient där drän precis lagts?",
+    "alternativ": {
+      "A": "Omedelbart tömning av > 500 ml blod",
+      "B": "När lungan inte fylls med luft inom 10 minuter",
+      "C": "Omedelbart tömning av > 1500 ml blod, eller > 200 ml/timme under 2-4 timmar",
+      "D": "Bara om patienten samtidigt har en perikardtamponad"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Vid stor, okontrollerbar blödning från thorax (>1500ml direkt eller >200ml/h) krävs kirurgi för att stoppa källan.",
+    "varför_övriga_fel": "Mindre mängder som t.ex. 500 ml hanteras i de flesta fall utan öppen kirurgi. Lungan expanderar ofta vid drän.",
+    "källa": "Simuleringsveckan Pneumothorax.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRA_038",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Livshotande thoraxskador (ATOMIC)",
+    "typ": "statusfynd",
+    "svårighetsgrad": "medel",
+    "fråga": "En instabil traumapatient är svår att auskultera. Hjärtljuden är extremt dämpade, blodtrycket är lågt och halsvenerna är stasade. Ultraljud (eFAST) visar vätska. Vilken av följande är den mest sannolika ATOMIC-skadan?",
+    "alternativ": {
+      "A": "Airway obstruction",
+      "B": "Cardiac tamponade",
+      "C": "Massive hemothorax",
+      "D": "Flail chest"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Dämpade hjärtljud, hypotoni och halsvenstas (Beck's triad) är tecken på vätska i hjärtsäcken som komprimerar hjärtat, alltså perikardtamponad.",
+    "varför_övriga_fel": "Massiv hemothorax ger i regel kollapsade, inte stasade, vener (pga hypovolemi) om det inte också skapar övertryck. FAST ser vätskan runt hjärtat.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_TRA_039",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Blödningskontroll och Cirkulationssvikt (Chock)",
+    "typ": "teori",
+    "svårighetsgrad": "lätt",
+    "fråga": "Inom traumacirkulation används minnesregeln 'Blood on the floor and four more'. Vilka är de fyra anatomiska områdena där en hel blodvolym kan förloras osynligt?",
+    "alternativ": {
+      "A": "Skalle, Thorax, Buk, Bäcken",
+      "B": "Thorax, Buk, Bäcken, Långa rörben",
+      "C": "Buk, Bäcken, Ryggrad, Mediastinum",
+      "D": "Hals, Thorax, Buk, Stora leder"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Stora volymer blod kan gömma sig i Thorax, Buk, Bäcken och Långa rörben (främst lårben).",
+    "varför_övriga_fel": "Skallen kan inte hysa en blödning stor nog att ge hypovolem chock utan inklämning först. Ryggrad, leder har begränsad volym.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRA_040",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Primärt omhändertagande (C-ABCDE & ATLS)",
+    "typ": "teori",
+    "svårighetsgrad": "lätt",
+    "fråga": "När ambulansen lämnar över en traumapatient sker ofta en s.k. MIST-rapport. Vad står 'S' i MIST för?",
+    "alternativ": {
+      "A": "Surgery",
+      "B": "Spine (halsrygg)",
+      "C": "Signs and symptoms",
+      "D": "Systematic evaluation"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "MIST står för Mechanism, Injuries, Signs and symptoms, Treatment.",
+    "varför_övriga_fel": "Övriga ord är felaktiga tolkningar av bokstaven i denna akronym.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRA_041",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Blödningskontroll och Cirkulationssvikt (Chock)",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "En 20-årig MC-förare inkommer med utbredda frakturer. Vilken typ av chock är absolut vanligast vid multitrauma och måste alltid förutsättas tills motsatsen är bevisad?",
+    "alternativ": {
+      "A": "Kardiogen chock",
+      "B": "Hypovolem chock",
+      "C": "Obstruktiv chock",
+      "D": "Distributiv (neurogen) chock"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Blödning (hypovolemi) är den i särklass vanligaste och viktigaste orsaken till chock hos traumapatienter.",
+    "varför_övriga_fel": "Neurogen (ryggmärg) och obstruktiv (pneumothorax) förekommer, men all chock behandlas primärt utifrån risk för blödning.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRA_042",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Blödningskontroll och Cirkulationssvikt (Chock)",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vid massiv blödning efter trauma rekommenderas 'permissiv hypotension'. Vilket blodtryck eftersträvas hos en patient UTAN påvisad hjärnskada under den tidiga fasen?",
+    "alternativ": {
+      "A": "Systoliskt blodtryck > 120 mmHg",
+      "B": "Systoliskt blodtryck 80-90 mmHg",
+      "C": "MAP > 80 mmHg",
+      "D": "Diastoliskt blodtryck < 40 mmHg"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "För att inte 'spola bort' levrade koagel och förvärra en pågående inre blödning hålls BT medvetet något lägre (mål systoliskt 80-90) tills blödningskällan är kirurgiskt åtgärdad.",
+    "varför_övriga_fel": "Om man pumpar upp trycket > 120 ökar blödningen. D är fel värde att rikta mot.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRA_043",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Blödningskontroll och Cirkulationssvikt (Chock)",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Om en blödande traumapatient SAMTIDIGT misstänks ha en allvarlig traumatisk hjärnskada (TBI, GCS <8), hur justeras principen för 'permissiv hypotension'?",
+    "alternativ": {
+      "A": "Blodtrycket bör sänkas ännu mer, till systoliskt 60-70 mmHg, för att skydda hjärnan",
+      "B": "Ingen hänsyn tas till blödningen, trycket maximeras med adrenalin",
+      "C": "Permissiv hypotension frångås; ett högre målblodtryck (systoliskt > 100-110 mmHg) eftersträvas för att säkerställa cerebral perfusion",
+      "D": "Konceptet förändras inte, hjärnan tolererar extremt låga tryck vid skalltrauma"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Den skadade hjärnan är mycket känslig för ischemi och kräver adekvat cerebralt perfusionstryck (CPP). Blodtrycksmålet justeras därför uppåt (ofta SBP>100).",
+    "varför_övriga_fel": "A och D är livsfarligt för hjärnan. B är överdrivet och felaktig farmakologisk prioritering.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRA_044",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Lethal Triad / The Lethal Diamond",
+    "typ": "teori",
+    "svårighetsgrad": "medel",
+    "fråga": "Lethal triad (eller Lethal diamond) beskriver en dödlig spiral hos traumapatienter. Vilka fyra komponenter utgör den dödliga diamanten?",
+    "alternativ": {
+      "A": "Hypertermi, Acidos, Leukocytos, Hyponatremi",
+      "B": "Hypotermi, Acidos, Koagulopati, Hypokalcemi",
+      "C": "Hyperkalemi, Alkalos, Anemi, Sepsis",
+      "D": "Kardiogen chock, Vasokonstriktion, Hypoxi, Trombos"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Den dödliga diamanten är en uppdatering av triaden och består av hypotermi, acidos, koagulopati samt hypokalcemi.",
+    "varför_övriga_fel": "Alla andra alternativ listar felaktiga kliniska tillstånd, t.ex. hypertermi (det är kallt som är farligt) eller alkalos.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRA_045",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Lethal Triad / The Lethal Diamond",
+    "typ": "teori",
+    "svårighetsgrad": "svår",
+    "fråga": "En komponent i traumadiamanten är hypotermi. Vad är den primära fysiologiska anledningen till att hypotermi är så extremt farligt för dessa patienter?",
+    "alternativ": {
+      "A": "Kyla bedövar nociceptorer, vilket gör att patienten ej upplever smärta",
+      "B": "Det försämrar radikalt kroppens koagulationsförmåga och enzymfunktioner, vilket förvärrar blödning",
+      "C": "Det leder till massiv vasodilatation (kärlvidgning)",
+      "D": "Det ökar kroppens metabolism omedelbart så att glukoslagren töms"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Vid 33°C är koagulationsförmågan halverad, vilket snabbt förvärrar blödningen och bidrar till 'lethal triad'.",
+    "varför_övriga_fel": "A är irrelevant för överlevnad här. C: Kyla ger vasokonstriktion. D: Kyla sänker metabolismen.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRA_046",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Kirurgiska och interventionella åtgärder",
+    "typ": "teori",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är huvudsyftet med en så kallad 'Damage Control'-operation vid multitrauma?",
+    "alternativ": {
+      "A": "Att utföra definitiva, kompletta reparationer av alla skadade organ direkt",
+      "B": "Att enbart sy igen huden och skicka patienten till IVA utan intern reparation",
+      "C": "Att urakut stoppa katastrofal blödning och hindra kontamination för att bryta The Lethal Diamond, sedan till IVA för fysiologisk stabilisering",
+      "D": "Att noggrant leta upp blödningar med endoskop istället för öppen kirurgi"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Patientens fysiologi (kyla, acidos) klarar inte långa operationer. Man packar/stampar snabbt tarm och stoppar blödning, och återkommer för definitiv kirurgi när patienten stabiliserats (second look).",
+    "varför_övriga_fel": "Definitiv kirurgi (A) undviks. Huden lämnas ofta öppen (B). D beskriver inte konceptet.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRA_047",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Kirurgiska och interventionella åtgärder",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Du larmas till ett traumafall: En 30-årig man med skottskada i buken, blodtryck 60/40 och peritonit. Vilken är den mest korrekta nästa åtgärden?",
+    "alternativ": {
+      "A": "Trauma-CT Buk för att exakt identifiera källan",
+      "B": "Observation på IVA för aggressiv vätskeresuscitering",
+      "C": "Omedelbar explorativ laparotomi (operation) direkt från akutrummet",
+      "D": "Endast insättning av V-sond och KAD innan röntgen"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "En extremt instabil patient (non-responder) med bukperitonit och penetrerande trauma ska direkt till operation (damage control). CT är för tidskrävande ('donut of death').",
+    "varför_övriga_fel": "CT och IVA är livsfarligt för en pat i svår chock som blöder inne i buken. Sonden hjälper ej blödningen.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRA_048",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Kirurgiska och interventionella åtgärder",
+    "typ": "komplikationer",
+    "svårighetsgrad": "svår",
+    "fråga": "Ett alternativ till öppen thorakotomi för att hindra massiv underkroppsblödning är REBOA. Vilken är den allvarligaste komplikationen och riskfaktorn vid denna åtgärd?",
+    "alternativ": {
+      "A": "Anafylaktisk chock",
+      "B": "Vätskeförlust ut i hjärtsäcken",
+      "C": "Djup organischemi, särskilt njurar, nedom ocklusionen pga utdragen tidsåtgång",
+      "D": "Luftemboli i lungorna"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "REBOA innebär ballongocklusion av aorta (ischemi för allt nedanför). Tidsfaktorn är avgörande, då bl.a njurar bara tål cirka 30-40 min upphävd cirkulation.",
+    "varför_övriga_fel": "A är fel. B och D har ingen direkt mekanisk koppling till REBOA i bukaorta/thorakala aorta.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRA_049",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Kirurgiska och interventionella åtgärder",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "En 25-årig kvinna drabbas av ett traumatisk hjärtstopp på väg in med ambulans (ca 10 minuter sedan). Hon knivhöggs i bröstkorgen. Vad är enligt traumaalgoritmen rätt direkt livräddande intervention på sjukhus, givet indikationerna?",
+    "alternativ": {
+      "A": "Sätt extracorporeal membranoxygenering (ECMO)",
+      "B": "Utför nödthorakotomi (anterolateralt vänster) i syfte att öppna perikard, göra inre hjärtmassage och stoppa blödningen",
+      "C": "Fortsätt maskinell HLR (LUCAS) i minst 45 minuter och ge höga doser adrenalin",
+      "D": "Bilateral halskärlsocklusion"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Kriteriet för nödthorakotomi på akuten är bl.a. penetrerande trauma med bevittnat hjärtstopp (<15 min).",
+    "varför_övriga_fel": "A är inte akut traumaprotokoll. C funkar inte då hjärtat är tomt (blödit ut eller tamponad). D existerar inte.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRA_050",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Brännskador",
+    "typ": "teori",
+    "svårighetsgrad": "lätt",
+    "fråga": "Enligt 'Rule of nines' (Nionderegeln) för vuxna, hur stor andel av den totala kroppsytan motsvarar hela framsidan av bålen/buken?",
+    "alternativ": {
+      "A": "9 %",
+      "B": "18 %",
+      "C": "27 %",
+      "D": "36 %"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Varje arm är 9%, ben är 18%, baksida bål är 18%, och framsida bål är 18%.",
+    "varför_övriga_fel": "Framsida är 18% (två 'nior').",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_TRA_051",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Brännskador",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vid omfattande brännskador beräknas patientens vätskebehov. Vilken formel används för initial resuscitering, och hur fördelas vätskan de första 24 timmarna?",
+    "alternativ": {
+      "A": "Lethal triad-formeln: Hela vätskebehovet ges första 2 timmarna",
+      "B": "Rule of tens: 10 liter oavsett kroppsvikt över 24 timmar",
+      "C": "Parklands formel: Hälften av den beräknade volymen ges första 8 timmarna, och andra hälften nästkommande 16 timmarna",
+      "D": "MIST-formeln: Kontinuerlig dropptakt på 500 ml/h under 48 timmar"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Parklands formel (2-4ml x %BSA x vikt) används för att ge 50% vätskan på 8h och 50% på de resterande 16h.",
+    "varför_övriga_fel": "A, B och D är helt påhittade formler i detta sammanhang.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRA_052",
+    "huvudområde": "Traumatologi och Akutkirurgi",
+    "subtopic": "Kirurgiska och interventionella åtgärder",
+    "typ": "statusfynd",
+    "svårighetsgrad": "svår",
+    "fråga": "Vid hotande kompartmentsyndrom i underbenet efter trauma, vilket påstående är kliniskt mest korrekt gällande handläggning?",
+    "alternativ": {
+      "A": "Man väntar med fasciotomi tills perifera pulsar är obefintliga",
+      "B": "Svår smärta som är oproportionerlig är ett tidigt varningstecken, perifera pulsar försvinner mycket sent",
+      "C": "Endast ett snitt (lateralt) krävs för att frilägga alla strukturer",
+      "D": "Tillsats av NSAID förhindrar helt utvecklingen av kompartmentsyndrom"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Ischemisk smärta är ett tidigt tecken, pulsarna kvarstår länge pga artärtrycket. Avsaknad av puls = vävnaden är i princip död. Fasciotomi kräver ofta dubbla långa snitt för 4 kompartment.",
+    "varför_övriga_fel": "A är fel, då är det försent. C är fel (ofta mediala + laterala snitt). D är helt inkorrekt.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_RAD_053",
+    "huvudområde": "Radiologi (Akut och Trauma)",
+    "subtopic": "Datortomografi (CT) enligt ABCDE",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Du granskar en traumadatortomografi enligt 'ABCDE'-systematiken. Vilken inställning (fönster) på datorskärmen ska du välja för att bäst bedöma 'A och B' (Pneumothorax och fria luftvägar)?",
+    "alternativ": {
+      "A": "Skelettfönster",
+      "B": "Mjukdelsfönster",
+      "C": "Parenkymfönster med hög kontrast",
+      "D": "Lungfönster"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "Lungfönstret optimerar de attenueringsnivåer där luft och lungvävnad framträder tydligast.",
+    "varför_övriga_fel": "I mjukdelsfönster och skelettfönster blir luften i lungorna och en eventuell pneumothorax en helt svart, odifferentierbar yta.",
+    "källa": "Radiologi Radiologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_RAD_054",
+    "huvudområde": "Radiologi (Akut och Trauma)",
+    "subtopic": "Datortomografi (CT) enligt ABCDE",
+    "typ": "bildtolkning",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är det primära syftet med att använda mjukdelsfönster vid en DT-Trauma under 'C'-bedömningen?",
+    "alternativ": {
+      "A": "Att diagnosticera skelettfrakturer i revbenen",
+      "B": "Att se fri gas och bedöma pneumoperitoneum",
+      "C": "Att identifiera vätska/blod i thorax och buk samt bedöma stora organ som mjälte och lever",
+      "D": "Att granska hjärnvävnaden för små ischemier"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Mjukdelsfönster (C) optimeras för att urskilja bl.a. blod, fri vätska och lacerationer i parenkymatösa organ.",
+    "varför_övriga_fel": "A kräver skelettfönster. B är C (ofta i lung- eller bukfönster riktat för luft). D granskas ej specifikt i kursen, men är ett neuro-fönster.",
+    "källa": "Radiologi Radiologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_RAD_055",
+    "huvudområde": "Radiologi (Akut och Trauma)",
+    "subtopic": "Hounsfield Scale (HU) & Kontrastfaser",
+    "typ": "teori",
+    "svårighetsgrad": "medel",
+    "fråga": "En röntgenläkare mäter attenueringen av en misstänkt vätskeansamling i buken på DT. Värdet är +55 Hounsfield Units (HU). Vilken substans rör det sig sannolikt om?",
+    "alternativ": {
+      "A": "Luft",
+      "B": "Rent vatten/Ascites",
+      "C": "Fett",
+      "D": "Färskt blod"
+    },
+    "rätt_svar": "D",
+    "kort_förklaring": "På Hounsfield-skalan ligger blod (hemoglobin) runt +50 till +60 HU, vilket skiljer det från ascites/vatten som ligger runt 0 HU.",
+    "varför_övriga_fel": "Luft är -1000 HU. Vatten är 0 HU. Fett är ca -70 till -150 HU.",
+    "källa": "Radiologi Radiologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_RAD_056",
+    "huvudområde": "Radiologi (Akut och Trauma)",
+    "subtopic": "Hounsfield Scale (HU) & Kontrastfaser",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "svår",
+    "fråga": "Du misstänker starkt en abscess (infektion) djupt inne i levern hos en bukpatient. Vilken kontrastfas bör DT-undersökningen tas i för att bäst besvara frågeställningen?",
+    "alternativ": {
+      "A": "CT utan kontrast (sten-CT)",
+      "B": "CT-angio, extremt tidig artärfas (ca 20s)",
+      "C": "Venfas / Parenkymfas (ca 70s)",
+      "D": "Sen utsöndringsfas (efter 10 min)"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Venfas/Parenkymfas är bäst för att diagnostisera parenkymskador, infektioner (abscess) och venös patologi.",
+    "varför_övriga_fel": "Artärfas används för kärlskador (dissektion/blödning). Utsöndringsfas för urografi. Utan kontrast syns inte abscesser lika tydligt.",
+    "källa": "Radiologi Radiologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_RAD_057",
+    "huvudområde": "Radiologi (Akut och Trauma)",
+    "subtopic": "Kontrastmedelsrisker och Strålskydd",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "När bedöms en reaktion på intravenöst jodkontrastmedel som en regelrätt 'anafylaxi' enligt gängse radiologiska riskbedömningar?",
+    "alternativ": {
+      "A": "När patienten endast får utbredd rodnad och klåda (urtikaria)",
+      "B": "När reaktionen alltid inkluderar respiratorisk, kardiovaskulär och/eller kraftig allmänpåverkan",
+      "C": "När kreatininet stiger mer än 50% 24 timmar efter undersökningen",
+      "D": "När patienten är allergisk mot skaldjur sedan barndomen"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "En anafylaxi vid kontrastmedel definieras som en potentiellt livshotande reaktion med respiratorisk (luftvägar) eller kardiovaskulär (chock) påverkan.",
+    "varför_övriga_fel": "A är en allergisk hudreaktion/förebud, men formellt inte anafylaxi om de andra parametrarna är normala. C är KMN, inte allergi. D är en myt (korsallergi skaldjur och jod existerar ej i denna form).",
+    "källa": "Radiologi Radiologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_RAD_058",
+    "huvudområde": "Radiologi (Akut och Trauma)",
+    "subtopic": "Kontrastmedelsrisker och Strålskydd",
+    "typ": "komplikationer",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken patientgrupp löper STÖRST risk för Kontrastmedelsinducerad njurskada (KMN)?",
+    "alternativ": {
+      "A": "Helt friska 30-åringar som genomgår DT-Trauma",
+      "B": "Patienter med pågående dehydrering, nedsatt njurfunktion (lågt eGFR), hjärtsvikt och samtidig NSAID-användning",
+      "C": "Patienter som tidigare haft en hudrodnad efter jodkontrast",
+      "D": "Patienter som ätit skaldjur samma dag"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "KMN är sannolikt inte nefrotoxiskt i sig självt hos friska, utan toxiciteten utlöses hos patienter med samtidiga nefrotoxiska faktorer som njursjukdom och dehydrering.",
+    "varför_övriga_fel": "A är inte riskgrupp. C är en riskfaktor för anafylaxi, inte KMN. D är nonsens.",
+    "källa": "Radiologi Radiologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_RAD_059",
+    "huvudområde": "Radiologi (Akut och Trauma)",
+    "subtopic": "Kontrastmedelsrisker och Strålskydd",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "En 65-årig man med Diabetes Typ 2 behandlas med Metformin. Han ska genomgå en elektiv CT-buk med iv kontrast. Hans eGFR är 35 ml/min. Vad är rätt handläggning angående hans Metformin?",
+    "alternativ": {
+      "A": "Ingen åtgärd krävs, Metformin är ofarligt tillsammans med kontrast",
+      "B": "Sätt ut Metformin 2 veckor före och 2 veckor efter undersökningen",
+      "C": "Sätt ut Metformin samma dag (eller dagen innan) och återinsätt tidigast efter 2 dagar (för eGFR <45 ml/min)",
+      "D": "Ge dubbel dos Metformin för att skydda njurarna från laktacidos"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Eftersom eGFR < 45 ml/min finns risk för njurpåverkan av kontrast (KMN) vilket i sin tur riskerar ackumulering av Metformin (laktacidos). Det pausas därför.",
+    "varför_övriga_fel": "A är fel, laktacidosrisk finns. B är på tok för lång tid. D är motsatsen.",
+    "källa": "Radiologi Radiologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_RAD_060",
+    "huvudområde": "Radiologi (Akut och Trauma)",
+    "subtopic": "Kontrastmedelsrisker och Strålskydd",
+    "typ": "teori",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad menas inom radiologin med principen 'Berättigande' (Justification)?",
+    "alternativ": {
+      "A": "Att radiologen alltid måste tjäna pengar på undersökningen",
+      "B": "Att en o-berättigad undersökning minskar stråldosen men ökar kostnaden",
+      "C": "Att nyttan för patienten måste överstiga strålningsrisken och svaret måste behövas för vidare handläggning",
+      "D": "Att utrustningen (DT-apparaten) är godkänd av strålsäkerhetsmyndigheten"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "För att en bestrålning av en patient ska vara laglig krävs att risken är berättigad, dvs nyttan > risken och påverkar behandlingen.",
+    "varför_övriga_fel": "A, B och D berör inte definitionen av berättigande i relation till strålskyddslagen.",
+    "källa": "Radiologi Radiologi.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_RAD_061",
+    "huvudområde": "Radiologi (Akut och Trauma)",
+    "subtopic": "Ultraljud (FAST / eFAST)",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "På akutrummet utförs eFAST på en traumapatient. Vilken är den principiella och säkraste tolkningen av en undersökning som är 'negativ' för eFAST?",
+    "alternativ": {
+      "A": "Man kan med 100% säkerhet utesluta alla intraabdominella skador",
+      "B": "Det utesluter blödning från bäckenfraktur",
+      "C": "Ett negativt svar utesluter aldrig en skada, metoden används bara för att bekräfta/stärka misstanke om fri vätska/blod",
+      "D": "Patienten kan omedelbart skickas hem om eFAST är negativt"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Ultraljud på akutrummet letar efter vätska (blod) för att konfirmera misstankar, men det är inte känsligt nog för att pålitligt utesluta alla skador.",
+    "varför_övriga_fel": "eFAST missar retroperitoneala blödningar och solid organskada som ännu inte blött ut i fri buk. A, B och D är livsfarliga slutsatser.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_RAD_062",
+    "huvudområde": "Radiologi (Akut och Trauma)",
+    "subtopic": "Ultraljud (FAST / eFAST)",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilket av följande är INTE ett primärt fynd man systematiskt letar efter med protokollet eFAST hos en instabil traumapatient?",
+    "alternativ": {
+      "A": "Pneumothorax",
+      "B": "Hemoperitoneum (blod i buken)",
+      "C": "Hjärntumör",
+      "D": "Perikardtamponad"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "eFAST görs över thorax och buk för att se pneumothorax, perikardvätska och fri vätska i buk/bäcken.",
+    "varför_övriga_fel": "A, B och D är de tre huvudorsakerna att genomföra eFAST.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRF_063",
+    "huvudområde": "Transfusionsmedicin",
+    "subtopic": "Akut och Massiv Transfusion (MTP)",
+    "typ": "teori",
+    "svårighetsgrad": "lätt",
+    "fråga": "Enligt det standardiserade protokollet för massiv transfusion (MTP) i din region (Traumapack). I vilket förhållande och antal ges blodkomponenterna i det initiala paketet?",
+    "alternativ": {
+      "A": "2 Erytrocyter, 0 Plasma, 0 Trombocyter",
+      "B": "4 Erytrocyter, 4 Plasma, 1 Trombocyt (4-4-1)",
+      "C": "1 Erytrocyt, 1 Plasma, 1 Trombocyt (1-1-1)",
+      "D": "6 Erytrocyter, 2 Plasma, 2 Trombocyter (6-2-2)"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Traumapack i MTP ges rutinmässigt som 4 erytrocyter + 4 plasma + 1 trombocytenhet i Sverige (även om andra länder kan köra 1:1:1 pga enheternas storlek).",
+    "varför_övriga_fel": "B är standard i svensk rutin enligt källmaterialet.",
+    "källa": "Simuleringsveckan Transfusionsmedicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRF_064",
+    "huvudområde": "Transfusionsmedicin",
+    "subtopic": "Akut och Massiv Transfusion (MTP)",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "En urakut storblödande patient med okänd blodgrupp inkommer. Innan blodgruppering och bastest är klart, vilket akutblod ges från blodcentralen?",
+    "alternativ": {
+      "A": "Erytrocyter AB negativ, Plasma 0",
+      "B": "Erytrocyter 0 negativ/positiv, Plasma AB, Trombocyter 0",
+      "C": "Erytrocyter B, Plasma A, Trombocyter AB",
+      "D": "Endast syntetiska blodsubstitut ges"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "0-erytrocyter (universalgivare) saknar yt-antigen (A och B) och AB-plasma saknar antikroppar mot erytrocyter, detta gör att de kan ges till alla utan att orsaka en akut hemolytisk reaktion.",
+    "varför_övriga_fel": "A är raka motsatsen (livsfarligt).",
+    "källa": "Simuleringsveckan Transfusionsmedicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRF_065",
+    "huvudområde": "Transfusionsmedicin",
+    "subtopic": "Akut och Massiv Transfusion (MTP)",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är fördelen med det 'helblod' som till exempel finns tillgängligt i ambulanshelikoptern Säve?",
+    "alternativ": {
+      "A": "Det innehåller inga som helst antikroppar eller celler",
+      "B": "Det har obegränsad hållbarhet i rumstemperatur",
+      "C": "Det tillför erytrocyter, trombocyter och plasma (minus leukocyter) i en och samma påse.",
+      "D": "Det används endast som volymexpansion och saknar syrebärande förmåga"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Helblod innehåller alla koagulationskomponenter och erytrocyter i en enhet vilket underlättar akut, massiv resuscitering prehospitalt.",
+    "varför_övriga_fel": "Helblod har kort hållbarhet och kräver kyla. Det innehåller celler och antikroppar (men ges av grupp O).",
+    "källa": "Simuleringsveckan Transfusionsmedicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRF_066",
+    "huvudområde": "Transfusionsmedicin",
+    "subtopic": "Transfusionskomplikationer",
+    "typ": "komplikationer",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är TACO (Transfusion Associated Circulatory Overload) och vilka är de primära riskpatienterna?",
+    "alternativ": {
+      "A": "En massiv hemolytisk reaktion; risk för patienter med fel blodgrupp",
+      "B": "Ett kardiogent lungödem pga vätskeöverbelastning; störst risk hos de med hjärtsvikt och njursvikt",
+      "C": "En bakteriell infektion från blodpåsen; risk för immunsuprimerade",
+      "D": "Icke-kardiogent lungödem; orelaterat till vätskebalans"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "TACO beror på en volymsöverbelastning (kardiogent lungödem) hos känsliga patienter, t.ex. de med hjärt/njursvikt.",
+    "varför_övriga_fel": "A är ABO inkompabilitet. C är bakteriell kontamination. D beskriver TRALI.",
+    "källa": "Simuleringsveckan Transfusionsmedicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRF_067",
+    "huvudområde": "Transfusionsmedicin",
+    "subtopic": "Transfusionskomplikationer",
+    "typ": "differentialdiagnostik",
+    "svårighetsgrad": "svår",
+    "fråga": "En patient utvecklar inom 6 timmar efter transfusion svår akut dyspné (hypoxemi) som kräver respiratorvård. Röntgen visar icke-kardiogent lungödem och patienten har hypotension, samt leukopeni. Vilken sällsynt transfusionskomplikation misstänks?",
+    "alternativ": {
+      "A": "TACO",
+      "B": "Akut ABO-inkompatibilitet (Hemolys)",
+      "C": "TRALI (Transfusion-Related Acute Lung Injury)",
+      "D": "Mild febril icke-hemolytisk reaktion"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "TRALI karaktäriseras av snabbt påkommande icke-kardiogent lungödem, feber och hypotoni, ofta pga antikroppar i givarplasman som attackerar mottagarens leukocyter i lungorna.",
+    "varför_övriga_fel": "TACO ger hypertension och kardiogent ödem. Hemolys ger mörk urin, flanksmärta, ej primärt lungödem. Febril reaktion är mild och ger inte respiratorvård.",
+    "källa": "Simuleringsveckan Transfusionsmedicin.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_TRF_068",
+    "huvudområde": "Transfusionsmedicin",
+    "subtopic": "Akut och Massiv Transfusion (MTP)",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Varför är det under ett akut massivt blödningsförlopp viktigt att ge blodkomponenter (MTP) och inte bara resuscitera med massiva volymer Ringer-Acetat (kristalloider)?",
+    "alternativ": {
+      "A": "För att Ringer-Acetat har en för hög temperatur och bränner blodkärlen",
+      "B": "Kristalloider riskerar att späda ut koagulationsfaktorerna och trombocyterna, vilket förvärrar blödningen",
+      "C": "Blodkomponenter ger en kraftig vasokonstriktion i de blödande kärlen",
+      "D": "Kristalloider orsakar omedelbar TRALI"
+    },
+    "rätt_svar": "B",
+    "kort_förklaring": "Att späda blodet med klara vätskor (kristalloider) urholkar blodets egen koagulationsförmåga, och försämrar the lethal diamond (koagulopati).",
+    "varför_övriga_fel": "Vätska ges ofta uppvärmd för att motverka hypotermi. Det orsakar ej TRALI.",
+    "källa": "Simuleringsveckan Trauma.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORG_069",
+    "huvudområde": "Organdonation och Dödförklaring",
+    "subtopic": "Kriterier och Förutsättningar",
+    "typ": "teori",
+    "svårighetsgrad": "medel",
+    "fråga": "En av organdonationsprocesserna i Sverige förkortas DBD. Vad står detta för och vad innebär det?",
+    "alternativ": {
+      "A": "Donation after Brain Death; donation efter att döden inträffat till följd av en primär hjärnskada",
+      "B": "Donation after Blood Disease; donation av specifikt perifera stamceller",
+      "C": "Donation after Cardiac Death; donation till följd av cirkulationsstillestånd",
+      "D": "Donation from Biological Donor; donation från en levande givare"
+    },
+    "rätt_svar": "A",
+    "kort_förklaring": "DBD betyder Donation after Brain Death, då pat avlider på IVA pga total hjärninfarkt. Den andra formen (DCD) innebär donation efter cirkulationsstillestånd.",
+    "varför_övriga_fel": "C är DCD. B och D är helt inkorrekta akronymer.",
+    "källa": "Dödförklaring och organdonation.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORG_070",
+    "huvudområde": "Organdonation och Dödförklaring",
+    "subtopic": "Kriterier och Förutsättningar",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Efter en lagändring i Sverige 2022 blev det juridiskt möjligt att utföra en specifik åtgärd på en patient som håller på att avlida, ENBART med syfte att möjliggöra organdonation. Vilken åtgärd?",
+    "alternativ": {
+      "A": "Avsluta livsuppehållande behandling mot anhörigas vilja",
+      "B": "Transplantera organ innan patienten förklarats död",
+      "C": "Intubera och förflytta patienten till IVA inte för patientens egen skull, utan för att utreda donationsviljan och bevara organen",
+      "D": "Genomföra obduktion direkt på akutrummet"
+    },
+    "rätt_svar": "C",
+    "kort_förklaring": "Numera får organkrävande patienter läggas i respirator (även om de är bortom räddning) primärt för att möjliggöra DCD och utreda förmodad donationsvilja.",
+    "varför_övriga_fel": "A, B och D strider grovt mot all medicinsk etik och dödskriterier.",
+    "källa": "Dödförklaring och organdonation.pdf",
+    "needs_review": "ja"
+  },
+  {
+    "id": "KIR_ORG_071",
+    "huvudomrade": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Smärtanalys",
+    "typ": "statusfynd",
+    "svarighetsgrad": "svår",
+    "fraga": "Vid sensibilitetsundersökning för neuropatisk smärta används ofta en metallrulle som håller 25°C för att testa kyla och allodyni. Vilken typ av nervfiber prövas i första hand med detta kalla stimuli?",
+    "alternativ": {
+      "A": "C-fibrer",
+      "B": "A-delta-fibrer",
+      "C": "A-beta-fibrer",
+      "D": "Tjocka motoriska efferenter"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Kyla bedöms primärt via A-delta-fibrer, medan värme (t.ex. 40°C) bedöms via C-fibrer.",
+    "varfor_ovriga_fel": "A-beta svarar på lätt beröring (pensel). C-fibrer förmedlar i första hand värme och molande smärta.",
+    "kalla": "Smärta Neuropatisk smärta.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORG_072",
+    "huvudomrade": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Farmakologisk behandling",
+    "typ": "handläggning",
+    "svarighetsgrad": "medel",
+    "fraga": "En patient med neuropatisk smärta sätts in på Gabapentin i primärvården. Vad är den rekommenderade startdosen och upptrappningstakten initialt enligt riktlinjerna?",
+    "alternativ": {
+      "A": "Start med 100 mg 1x3, därefter en ökning med 300 mg per dygn tills smärtfrihet uppnås",
+      "B": "Start med 300 mg 1x1 under dag 1-6, med en planerad dygnsdosökning på 300 mg var 7:e dag",
+      "C": "Start med 600 mg 1x1 till natten under 4 veckor",
+      "D": "En startdos om 50 mg 1x1 som höjs varje dag tills biverkningar uppstår"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Riktlinjen rekommenderar 'start low, go slow' för sekundära analgetika: 300 mg x1 första veckan, 300 mg x2 andra veckan, osv.",
+    "varfor_ovriga_fel": "A är för snabb upptrappning. C och D stämmer inte överens med standardregimen för gabapentin och minimerar inte biverkningsriskerna.",
+    "kalla": "Smärta Farmakologisk behandling.docx",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORG_073",
+    "huvudomrade": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Smärtanalys",
+    "typ": "teori",
+    "svarighetsgrad": "medel",
+    "fraga": "Olika variabler kan användas för att förutsäga risken för svår postoperativ smärta. Vilket av följande är en validerad och stark riskfaktor för detta (bl.a. fångat via APAIS-skalan)?",
+    "alternativ": {
+      "A": "Hög biologisk ålder",
+      "B": "Hög preoperativ ångest och oro",
+      "C": "Låg utbildningsnivå",
+      "D": "Manligt kön"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Högt APAIS (Amsterdam Preoperative Anxiety and Information Scale) indikerar hög preoperativ oro, vilket är en av de starkaste prediktorerna för hög postoperativ smärta.",
+    "varfor_ovriga_fel": "Låg ålder och kvinnligt kön är de demografiska riskfaktorer som lyfts fram, inte hög ålder och manligt kön. C nämns inte som en primär prediktor.",
+    "kalla": "Smärta Smärtfysiologi Akut smärta - kopia_STUDENTER (1).pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORG_074",
+    "huvudomrade": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Smärtanalys",
+    "typ": "handläggning",
+    "svarighetsgrad": "lätt",
+    "fraga": "Vilken är en central begränsning i användningen av VAS (Visuell Analog Skala) eller NRS i klinisk praxis?",
+    "alternativ": {
+      "A": "De kan endast användas för patienter under 65 år",
+      "B": "De mäter endast objektiv nervskada och korrelerar dåligt med patientens upplevelse",
+      "C": "De är bra för att mäta akut smärta, men är mindre användbara och missvisande vid långvariga smärttillstånd",
+      "D": "De kräver att patienten tar opioidläkemedel innan skattningen görs"
+    },
+    "ratt_svar": "C",
+    "kort_forklaring": "Vid långvarig smärta påverkas livskvalitet, sömn och funktion starkare, och den endimensionella VAS/NRS-skattningen fångar inte detta, utan är bäst anpassad för akuta förlopp.",
+    "varfor_ovriga_fel": "VAS/NRS är högst subjektiva och används oavsett ålder och läkemedel.",
+    "kalla": "Smärta Smärtanalys.pdf",
+    "needs_review": "nej"
+  },
+  {
+    "id": "KIR_ORG_075",
+    "huvudomrade": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Cancerrelaterad smärta",
+    "typ": "teori",
+    "svarighetsgrad": "medel",
+    "fraga": "Hos patienter med metastaserad cancer (ex. skelettmetastaser) är begreppet 'sklerotom' viktigt i smärtanalysen. Vad innebär refererad smärta i ett sklerotom?",
+    "alternativ": {
+      "A": "Smärta som strålar ut exakt längs en specifik perifer nervgren (ex. n. ischiadicus)",
+      "B": "Ett utstrålande smärtmönster från skelett/periost som inte nödvändigtvis följer hudens klassiska dermatom-karta",
+      "C": "Existentiell smärta som projiceras till huden",
+      "D": "Smärta som enbart känns av i sympatiska ganglier"
+    },
+    "ratt_svar": "B",
+    "kort_forklaring": "Ett sklerotom är den del av skelettet som innerveras från en viss ryggmärgsnivå, och smärta från metastaser här kan stråla ut på ett annat, djupare sätt än hudens dermatom.",
+    "varfor_ovriga_fel": "A beskriver en nervrotsskada/neurogen smärta i ett dermatom. C och D är inkorrekta definitioner.",
+    "kalla": "Smärta Cancerrelaterad smärta.pdf",
+    "needs_review": "nej"
+  }
+]

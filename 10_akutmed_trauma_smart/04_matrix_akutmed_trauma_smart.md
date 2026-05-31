@@ -1,0 +1,979 @@
+- area: Traumatologi
+- entity: Övertryckspneumothorax (Tension)
+- tags:
+  - traumatologi
+  - akut_livshotande_tillstånd
+  - trauma
+  - akut
+- when_to_suspect:
+  - Trubbigt/penetrerande trauma mot thorax
+  - Cirkulatoriskt instabil patient
+- discriminators:
+  - Nedsatt andningsljud
+  - Hypersonor perkussion
+  - Halsvenstas
+  - Trachealdeviation
+- investigation:
+  - Klinisk diagnos
+  - eFAST (vänta EJ på CT)
+- initial_management:
+  - Omedelbart thoraxdrän / dekompression
+- definitive_management:
+  - Thoraxdränage
+- complications:
+  - Obstruktiv chock
+  - Traumatiskt hjärtstopp
+- pitfalls:
+  - Massiv hemothorax (har dämpad ton och kollapsade vener)
+- memory_hooks: 
+---
+- area: Traumatologi
+- entity: Massiv hemothorax
+- tags:
+  - traumatologi
+  - akut_livshotande_tillstånd
+  - trauma
+  - akut
+- when_to_suspect:
+  - Kraftigt våld mot thorax
+  - Tecken på hypovolemi
+- discriminators:
+  - Dämpad perkussionston
+  - Nedsatt andningsljud ipsilateralt
+- investigation:
+  - eFAST
+  - Slätröntgen
+- initial_management:
+  - Thoraxdrän
+  - Blodtransfusion (MTP)
+- definitive_management:
+  - Thorakotomi (om >1500 ml direkt eller >200 ml/h)
+- complications:
+  - Hypovolem chock
+- pitfalls:
+  - Övertryckspneumothorax
+- memory_hooks: 
+---
+- area: Traumatologi
+- entity: Hjärttamponad
+- tags:
+  - traumatologi
+  - obstruktiv
+  - chock
+  - trauma
+- when_to_suspect:
+  - Penetrerande våld mot "Cardiac box" (mellan claviclar och proc xiphoideus)
+- discriminators:
+  - Dämpade hjärtljud
+  - Halsvenstas
+  - Hypotoni (Beck's triad)
+- investigation:
+  - eFAST (vätska runt hjärtat)
+- initial_management:
+  - Nödthorakotomi vid bevittnat hjärtstopp <15 min
+- definitive_management:
+  - Öppen hjärtmassage/suturering
+- complications:
+  - Hjärtstopp
+- pitfalls:
+  - Övertryckspneumothorax
+- memory_hooks: 
+---
+- area: Traumatologi
+- entity: Flail chest
+- tags:
+  - traumatologi
+  - thoraxskada
+  - trauma
+- when_to_suspect:
+  - Kraftigt trubbigt våld mot bröstkorg
+- discriminators:
+  - Paradoxal andning
+  - Minst 2 intilliggande revben frakturerade på minst 2 ställen
+- investigation:
+  - Klinisk inspektion
+  - CT Trauma (skelettfönster)
+- initial_management:
+  - Syrgas
+  - Mycket god smärtlindring
+- definitive_management:
+- complications:
+  - Atelektaser
+  - Hypoxi
+- pitfalls:
+  - Enkel revbensfraktur
+- memory_hooks: 
+---
+- area: Traumatologi
+- entity: Hypovolem chock
+- tags:
+  - traumatologi
+  - kirurgi
+  - cirkulationssvikt
+  - trauma
+- when_to_suspect:
+  - Multitraumapatient (ska alltid misstänkas först)
+- discriminators:
+  - Blödning i Thorax, Buk, Bäcken, Långa rörben ("Floor and four more")
+- investigation:
+  - C-ABCDE
+  - eFAST
+  - CT Trauma (om stabil)
+- initial_management:
+  - Stoppa yttre blödning
+  - MTP (Traumapack)
+  - Permissiv hypotension
+- definitive_management:
+  - Damage control-kirurgi (packning) eller angioembolisering
+- complications:
+  - Dödliga diamanten
+- pitfalls:
+  - Neurogen chock (ger bradykardi + varm hud)
+- memory_hooks: 
+---
+- area: Traumatologi
+- entity: Lethal Diamond
+- tags:
+  - traumatologi
+  - kirurgi
+  - fysiologi
+  - fysiologisk
+  - svikt
+  - trauma
+- when_to_suspect:
+  - Svårt skadad/blödande patient
+  - Lång ischemi/operation
+- discriminators:
+  - Hypotermi (<35°C)
+  - Acidos (pH <7,2)
+  - Koagulopati
+  - Hypokalcemi
+- investigation:
+  - Blodgaser
+  - TEG/ROTEM
+- initial_management:
+  - Varma vätskor/filtar
+  - Avbryt kirurgi ("Damage control")
+- definitive_management:
+  - Stabilisering på IVA innan "Second look"
+- complications:
+  - Irreversibel blödning och död
+- pitfalls:
+- memory_hooks: 
+---
+- area: Traumatologi
+- entity: Damage Control Kirurgi
+- tags:
+  - traumatologi
+  - kirurgisk
+  - princip
+  - kirurgi
+  - infektion
+  - fysiologi
+  - trauma
+- when_to_suspect:
+  - "Non-responder" (pat som inte svarar på resuscitering)
+  - Instabil patient med peritonit/skottskada
+- discriminators:
+  - Buken är blodfylld
+  - Pågående lethal diamond
+- investigation:
+  - Direkt till OP (ej CT - "donut of death")
+- initial_management:
+  - Laparotomi med packning
+  - "Clip and drop" på tarmar
+- definitive_management:
+  - Second look-operation efter 24-72h (när fysiologin tillåter)
+- complications:
+  - Missade skador
+  - Infektion
+- pitfalls:
+  - Definitiv kirurgi (som är livsfarligt för en instabil pat)
+- memory_hooks: 
+---
+- area: Traumatologi
+- entity: REBOA
+- tags:
+  - traumatologi
+  - kirurgi
+  - blödningskontroll
+  - trauma
+- when_to_suspect:
+  - Katastrofal blödning nedom diafragma/bäcken
+- discriminators:
+  - Ballonocklusion av aorta
+- investigation:
+- initial_management:
+  - Endovaskulär blockering
+- definitive_management:
+  - Definitiv kirurgi av blödningskälla
+- complications:
+  - Djup organischemi (njurar tål max 30-40 min)
+- pitfalls:
+- memory_hooks: 
+---
+- area: Traumatologi
+- entity: Kompartmentsyndrom
+- tags:
+  - traumatologi
+  - ischemisk
+  - skada
+  - trauma
+- when_to_suspect:
+  - Lång ischemitid
+  - Krosskador (ex. underben)
+- discriminators:
+  - Smärta som är oproportionerlig
+  - (Pulsar försvinner MYCKET SENT)
+- investigation:
+  - Klinisk misstanke (5P)
+- initial_management:
+  - Snabb diagnostik/fasciotomi
+- definitive_management:
+  - Långa dubbla snitt för alla 4 kompartment
+- complications:
+  - Vävnadsdöd
+  - Amputation
+- pitfalls:
+  - Kärlskada (där puls försvinner tidigt, tentafälla!)
+- memory_hooks: 
+---
+- area: Traumatologi
+- entity: Brännskador
+- tags:
+  - traumatologi
+  - vävnadsskada
+  - trauma
+- when_to_suspect:
+  - Värme-/eldexponering
+- discriminators:
+  - Omfattning enligt Rule of Nines
+  - Djup (Epidermis/Delhud/Fullhud)
+- investigation:
+  - Klinisk uppskattning (%BSA)
+- initial_management:
+  - Vätskeresuscitering enl Parkland (50% första 8h)
+- definitive_management:
+  - Eskarotomi vid cirkumferenta skador
+- complications:
+  - Cirkulations-/respiratorisk påverkan av stram hud
+- pitfalls:
+  - Felräkning av vätska
+- memory_hooks: 
+---
+- area: Traumatologi
+- entity: Traumatisk Hjärnskada (TBI)
+- tags:
+  - traumatologi
+  - neurotrauma
+  - trauma
+- when_to_suspect:
+  - Våld mot huvud
+  - Sänkt medvetande
+- discriminators:
+  - GCS < 8 = svår TBI
+- investigation:
+  - CT Hjärna (oftast utan kontrast)
+- initial_management:
+  - Håll systoliskt BT > 100-110 mmHg (frångå permissiv hypotension)
+- definitive_management:
+  - Kontakta neurokirurg
+- complications:
+  - Ökat ICP
+  - Inklämning
+- pitfalls:
+  - Att köra permissiv hypotension (80 mmHg) som skadar hjärnan
+- memory_hooks: 
+---
+- area: Traumatologi
+- entity: Pediatriskt trauma
+- tags:
+  - traumatologi
+  - handläggning
+  - trauma
+- when_to_suspect:
+  - Skadat barn efter trubbigt våld
+- discriminators:
+  - Barn kraschar sent men snabbt
+- investigation:
+  - CT Trauma
+- initial_management:
+  - NOM (Non operative management) är vanligare än hos vuxna
+- definitive_management:
+  - Konservativ IVA-övervakning om stabil
+- complications:
+  - Plötslig dekompensation
+- pitfalls:
+  - Att operera direkt utan anledning (NOM föredras)
+- memory_hooks: 
+---
+- area: Traumatologi
+- entity: Intoxikationer & Akuta doser
+- tags:
+  - traumatologi
+  - trauma
+  - handläggning
+  - akut
+- when_to_suspect:
+  - D i ABCDE (Disability)
+  - Misstänkt överdos / Anafylaxi
+- discriminators:
+  - Toxiska symtom (pupiller, andning)
+- investigation:
+  - Blodgas
+- initial_management:
+  - Antidoter (Naloxon)
+  - Adrenalin vid anafylaxi
+- definitive_management:
+- complications:
+  - Utebliven effekt pga underdosering
+- pitfalls:
+  - Glömma glukos vid D-bedömning
+- memory_hooks: 
+---
+- area: Smärtmedicin
+- entity: Nociceptiv smärta
+- tags:
+  - farmakologi
+  - medicin
+  - smärtmedicin
+  - smärtmekanism
+  - akut
+- when_to_suspect:
+  - Akut vävnadsskada
+  - Inflammation
+  - Ischemi
+- discriminators:
+  - Lokaliserad smärta
+  - Försämras vid rörelse/belastning
+- investigation:
+  - Smärtanalys 3x3
+- initial_management:
+  - Paracetamol
+  - NSAID/COX-2 hämmare
+- definitive_management:
+  - Opioider (endast om nytta överstiger risk)
+- complications:
+  - Överbehandling med opioider
+- pitfalls:
+  - Nociplastisk smärta
+- memory_hooks: 
+---
+- area: Smärtmedicin
+- entity: Neuropatisk smärta
+- tags:
+  - smärtmekanism
+  - medicin
+  - smärtmedicin
+- when_to_suspect:
+  - Lesion i somatosensoriska nervsystemet
+- discriminators:
+  - Utstrålande/brännande/stickande
+  - Sensorikbortfall (hypoestesi)
+  - Allodyni i specifikt dermatom
+- investigation:
+  - Smärtanalys (Pensel, nål, kyla)
+- initial_management:
+  - TCA (Amitriptylin)
+  - Gabapentinoider
+- definitive_management:
+  - TENS
+  - ev. SCS
+- complications:
+  - Biverkningar av TCA hos äldre (antikolinerga)
+- pitfalls:
+  - Refererad nociceptiv smärta
+- memory_hooks: 
+---
+- area: Smärtmedicin
+- entity: Nociplastisk smärta
+- tags:
+  - farmakologi
+  - medicin
+  - smärtmedicin
+  - smärtmekanism
+  - fysiologi
+- when_to_suspect:
+  - Utbredd smärta utan påvisbar skada
+  - >3 mån duration (ex. Fibromyalgi, HSD)
+- discriminators:
+  - Överrörlighet (HSD, Beighton >5)
+  - "Exercise induced hyperalgesia"
+  - Allodyni generellt
+- investigation:
+  - Uteslut annan skada
+  - Smärtteckning
+- initial_management:
+  - Utbildning (Coping/Retrain pain)
+  - Fysisk aktivitet (även om det initialt gör ont)
+- definitive_management:
+  - Sekundära analgetika (TCA/SNRI)
+- complications:
+  - Opioidinducerad hyperalgesi (OIH)
+- pitfalls:
+  - Nociceptiv smärta (Opioider ska AKTIVT UNDVIKAS här)
+- memory_hooks: 
+---
+- area: Smärtmedicin
+- entity: Central sensitisering
+- tags:
+  - medicin
+  - smärtmedicin
+  - smärtfysiologi
+  - fysiologi
+  - akut
+- when_to_suspect:
+  - Kvarstående smärta efter läkning
+  - Kraftigt och långvarigt smärtinflöde
+- discriminators:
+  - Wind-up via NMDA-receptorer i ryggmärgen
+- investigation:
+  - Smärtanalys
+- initial_management:
+  - Förebygg med aggressiv akut smärtlindring
+- definitive_management:
+  - Multimodal behandling
+- complications:
+  - Kronisk smärtutveckling
+- pitfalls:
+  - Perifer sensitisering (som sker via prostaglandiner i hud/vävnad)
+- memory_hooks: 
+---
+- area: Smärtmedicin
+- entity: Cancerrelaterad skelettsmärta
+- tags:
+  - radiologi
+  - medicin
+  - smärtmedicin
+  - blandad
+  - smärtmekanism
+- when_to_suspect:
+  - Skelettmetastaser (ex. prostatacancer)
+- discriminators:
+  - Börjar nociceptivt (bentryck/inflammation) -> övergår i neuropatisk komponent
+- investigation:
+  - Radiologi
+  - Smärtanalys
+- initial_management:
+  - NSAID + Opioider
+- definitive_management:
+  - Strålbehandling (riktad)
+- complications:
+  - Svårbehandlat
+- pitfalls:
+  - Att enbart se det som nociceptiv smärta
+- memory_hooks: 
+---
+- area: Smärtmedicin
+- entity: Opioidbiverkning: Obstipation
+- tags:
+  - farmakologi
+  - medicin
+  - smärtmedicin
+  - läkemedel
+  - biverkning
+  - akut
+- when_to_suspect:
+  - Vid all insättning av opioider
+- discriminators:
+  - Tolerans utvecklas nästan ALDRIG mot förstoppning
+- investigation:
+  - Anamnes
+- initial_management:
+  - Sätt ALLTID in laxantia profylaktiskt (Bulk/Osmotiskt)
+- definitive_management:
+  - Justera laxantia-dosering kontinuerligt
+- complications:
+  - Ileus
+- pitfalls:
+  - Andningsdepression (som man utvecklar tolerans emot)
+- memory_hooks: 
+---
+- area: Smärtmedicin
+- entity: Morfin vid njursvikt
+- tags:
+  - farmakologi
+  - medicin
+  - smärtmedicin
+  - farmakokinetik
+- when_to_suspect:
+  - Nedsatt njurfunktion (lågt eGFR) i kombination med smärta
+- discriminators:
+  - Morfins aktiva metabolit (M6G) ackumuleras i njurarna
+- investigation:
+  - Kontrollera Kreatinin/eGFR
+- initial_management:
+  - UNDVIK iv/po Morfin till dessa patienter
+- definitive_management:
+  - Välj dosreducerad Oxikodon eller Buprenorfin
+- complications:
+  - Livshotande och förlängd andningsdepression
+- pitfalls:
+  - Att ge fulldos morfin
+- memory_hooks: 
+---
+- area: Smärtmedicin
+- entity: Buprenorfin
+- tags:
+  - farmakologi
+  - medicin
+  - smärtmedicin
+  - akut
+- when_to_suspect:
+  - Behov av stark opioid där njurfunktion är nedsatt
+- discriminators:
+  - Partiell agonist med "ceiling effect" (tak-effekt) för andningsdepression
+- investigation:
+- initial_management:
+  - Sublingualt (Temgesic) vid fasta/sväljsvårigheter
+- definitive_management:
+  - Transdermalt plåster vid stabil långvarig smärta
+- complications:
+  - Riskfyllt vid kombo med bensodiazepiner
+- pitfalls:
+  - Fentanylplåster (som har extrem takyfylaxi och är farligt vid akut smärta)
+- memory_hooks: 
+---
+- area: Smärtmedicin
+- entity: COX-2-hämmare vs oselektiva NSAID
+- tags:
+  - farmakologi
+  - medicin
+  - smärtmedicin
+  - akut
+- when_to_suspect:
+  - Nociceptiv/inflammatorisk smärta med risk för blödning eller GI-besvär
+- discriminators:
+  - COX-2 ger mindre blödningsrisk och skyddar magen bättre (sparar COX-1)
+- investigation:
+  - Utred riskfaktorer för hjärt- och njursvikt
+- initial_management:
+  - Kan användas postoperativt för att minska opioidbehov
+- definitive_management:
+  - Korta kurer (7-14 dagar)
+- complications:
+  - Njurpåverkan (exakt samma njurrisk som oselektiva NSAID)
+- pitfalls:
+  - Att tro att COX-2 är snällare mot njurarna
+- memory_hooks: 
+---
+- area: Smärtmedicin
+- entity: TENS
+- tags:
+  - farmakologi
+  - icke-farmakologisk
+  - behandling
+  - medicin
+  - smärtmedicin
+- when_to_suspect:
+  - Som tillägg vid nociceptiv/neuropatisk/nociplastisk smärta
+- discriminators:
+  - Aktiverar endogena smärthämmande system (Gate control)
+- investigation:
+  - Kontrollera pacemaker/ICD (Absolut kontraindikation!)
+- initial_management:
+  - Patientutbildning
+- definitive_management:
+  - Egenstyrd behandling (förbättrar coping)
+- complications:
+  - Blodtrycksfall (om applicerat på hals/carotis)
+- pitfalls:
+  - Att se det som monoterapi istället för multimodal
+- memory_hooks: 
+---
+- area: Radiologi
+- entity: DT Trauma ABCDE
+- tags:
+  - bildtolkning
+  - radiologi
+  - trauma
+- when_to_suspect:
+  - Granskning av traumadatortomografi
+- discriminators:
+  - Lungfönster (A/B)
+  - Mjukdelsfönster (C - blod/organ)
+  - Skelettfönster (D - frakturer)
+- investigation:
+  - DT-Trauma med iv kontrast
+- initial_management:
+  - Systematisk granskning av fönster
+- definitive_management:
+- complications:
+  - Missa pneumothorax om man granskar i mjukdelsfönster
+- pitfalls:
+  - Att missa att byta fönster under granskningen
+- memory_hooks: 
+---
+- area: Radiologi
+- entity: Hounsfield Units (HU)
+- tags:
+  - diagnostiskt
+  - begrepp
+  - radiologi
+- when_to_suspect:
+  - Karakterisering av vätska/fokus på CT
+- discriminators:
+  - Vatten = 0 HU
+  - Färskt blod = 50-60 HU
+  - Luft = -1000 HU
+- investigation:
+  - Mät attenuering i PACS
+- initial_management:
+- definitive_management:
+- complications:
+- pitfalls:
+  - Blanda ihop ascites (0 HU) med blod (50-60 HU)
+- memory_hooks: 
+---
+- area: Radiologi
+- entity: Kontrastfaser
+- tags:
+  - diagnostiskt
+  - begrepp
+  - radiologi
+  - infektion
+- when_to_suspect:
+  - CT Buk
+- discriminators:
+  - Artärfas (ca 20s): Kärlskador/blödning
+  - Venfas (ca 70s): Infektion/abscess/tumör
+- investigation:
+  - Välj rätt protokoll på remiss
+- initial_management:
+- definitive_management:
+- complications:
+  - Missa abscess pga fel kontrastfas
+- pitfalls:
+  - Att skicka "Sten-CT" (som saknar kontrast) för att leta abscess
+- memory_hooks: 
+---
+- area: Radiologi
+- entity: Kontrastinducerad njurskada (KMN)
+- tags:
+  - radiologi
+  - akut
+  - iatrogen
+  - komplikation
+- when_to_suspect:
+  - DT med jodkontrast hos riskpatient (hjärtsvikt, dehydrering, lågt eGFR, NSAID)
+- discriminators:
+  - Toxicitet utlöses av samtida nefrotoxiska faktorer
+- investigation:
+  - Kolla P-Kreatinin (eGFR) om elektiv pat
+- initial_management:
+  - Uppvätskning
+  - Minimera kontrastdos
+- definitive_management:
+  - Pausa Metformin om eGFR <45 ml/min (Risk för laktacidos)
+- complications:
+  - Akut njursvikt
+  - Metforminackumulering
+- pitfalls:
+  - Kontrastallergi (anafylaxi är akut immunologisk, KMN är njurtoxisk)
+- memory_hooks: 
+---
+- area: Radiologi
+- entity: Kontrastanafylaxi
+- tags:
+  - akut
+  - läkemedelsreaktion
+  - radiologi
+- when_to_suspect:
+  - Vid/efter i.v. jodkontrast
+- discriminators:
+  - Inkluderar ALLTID respiratorisk, kardiovaskulär och/eller kraftig allmänpåverkan
+- investigation:
+  - Klinisk bild
+- initial_management:
+  - Adrenalin
+  - Kortison
+  - Antihistamin
+- definitive_management:
+  - Dokumentera varning i journal
+- complications:
+  - Cirkulationskollaps
+- pitfalls:
+  - Korsallergi mot skaldjur (ren myt enligt källan)
+- memory_hooks: 
+---
+- area: Radiologi
+- entity: Strålskydd (Berättigande)
+- tags:
+  - radiologi
+  - juridiskt
+  - krav
+- when_to_suspect:
+  - Vid remisskrivning för CT/Slätröntgen
+- discriminators:
+  - Nyttan överstiger risken
+  - Svaret MÅSTE behövas för vidare handläggning
+- investigation:
+  - Formell risk/nytta bedömning
+- initial_management:
+  - Välj non-strålande metod om möjligt (UL/MR)
+- definitive_management:
+- complications:
+  - Olaglig bestrålning (straffbart)
+- pitfalls:
+  - Att röntga "bara för att veta" utan konsekvens för behandling
+- memory_hooks: 
+---
+- area: Radiologi/Trauma
+- entity: eFAST
+- tags:
+  - radiologi
+  - trauma
+  - akut
+  - ultraljudsprotokoll
+- when_to_suspect:
+  - Instabil traumapatient på akutrummet
+- discriminators:
+  - Letar efter vätska i 4 buk-lokaler och 2 thorax-lokaler
+- investigation:
+  - Bedside ultraljud under C-bedömning
+- initial_management:
+  - Bekräftar/stärker misstanke om fri vätska
+- definitive_management:
+  - Operation (om instabil) eller CT (om stabil)
+- complications:
+  - Missar retroperitoneala blödningar
+- pitfalls:
+  - Att tro att en negativ eFAST utesluter blödning (det gör det aldrig!)
+- memory_hooks: 
+---
+- area: Transfusionsmedicin
+- entity: Massivt Transfusionsprotokoll (MTP)
+- tags:
+  - medicin
+  - resusciteringsprotokoll
+  - akut
+  - transfusionsmedicin
+  - trauma
+- when_to_suspect:
+  - Katastrofal/livshotande blödning (Trauma C)
+- discriminators:
+  - Administrering av Traumapack: 4 Erytrocyter + 4 Plasma + 1 Trombocyt
+- investigation:
+  - Säkra identitet
+  - Blodgruppering/BAS
+- initial_management:
+  - Urakut ges: 0-erytrocyter, AB-plasma, 0-trombocyter
+- definitive_management:
+  - Tillägg av Fibrinogen + Tranexamsyra
+- complications:
+  - Koagulopati om fel proportioner ges
+- pitfalls:
+  - Att volymsexpandera med stora mängder Ringer-Acetat (späder ut koagulationsfaktorer)
+- memory_hooks: 
+---
+- area: Transfusionsmedicin
+- entity: TACO
+- tags:
+  - medicin
+  - transfusionsmedicin
+  - komplikation
+- when_to_suspect:
+  - Dyspné under/efter transfusion hos hjärt- eller njursviktspat
+- discriminators:
+  - Kardiogent lungödem
+  - Cirkulatorisk överbelastning (Hypertension)
+- investigation:
+  - Klinisk bild
+  - Lungröntgen
+- initial_management:
+  - Stoppa/pausa transfusion
+  - Ge Diuretika
+- definitive_management:
+  - Förebygg: ge en påse i taget långsamt
+- complications:
+  - Andningssvikt
+- pitfalls:
+  - TRALI (som har normal/låg volymstatus och hypotoni)
+- memory_hooks: 
+---
+- area: Transfusionsmedicin
+- entity: TRALI
+- tags:
+  - akut
+  - medicin
+  - transfusionsmedicin
+  - komplikation
+- when_to_suspect:
+  - Akut dyspné (<6h) efter transfusion med feber
+- discriminators:
+  - Icke-kardiogent lungödem
+  - Hypotension
+  - Leukopeni
+- investigation:
+  - Lungröntgen (bilaterala infiltrat)
+  - Vitalparametrar
+- initial_management:
+  - Stoppa transfusion
+  - Synergas/Respiratorstöd
+- definitive_management:
+  - Blodcentralen spårar antikroppar i givarens plasma
+- complications:
+  - Livshotande hypoxi
+- pitfalls:
+  - TACO (som har hypertoni och kardiogent ödem)
+- memory_hooks: 
+---
+- area: Organdonation
+- entity: DBD vs DCD
+- tags:
+  - donationskriterier
+  - organdonation
+- when_to_suspect:
+  - Patient avlider på IVA i respirator
+- discriminators:
+  - DBD = Donation after Brain Death (primär hjärnskada)
+  - DCD = Donation after Cardiac Death (cirkulationsstillestånd)
+- investigation:
+  - Konstaterande av död
+- initial_management:
+  - Kolla donationsregister/anhöriga (förmodad donationsvilja gäller i Sverige)
+- definitive_management:
+  - Får intuberas/respiratorbehandlas i livets slutskede ENBART för att möjliggöra donation
+- complications:
+  - Polisveto
+- pitfalls:
+  - Att avbryta behandling för tidigt innan donationsvilja är utredd (Ny lag 2022)
+- memory_hooks: 
+---
+- area: Organdonation
+- entity: Hjärndödsdiagnostik (Kliniska kriterier)
+- tags:
+  - organdonation
+  - diagnostik
+- when_to_suspect:
+  - Misstänkt total och oåterkallelig förlust av hjärnfunktion
+- discriminators:
+  - Frånvaro av kranialnervsreflexer x2 (med minst 2h mellanrum)
+- investigation:
+  - Apnétest
+  - Fyrkärlsangiografi (om oklarheter)
+- initial_management:
+  - Fortsatt respiratorvård för organbevarande
+- definitive_management:
+  - Fastställande av dödsfall (2 legitimerade läkare, varav en specialist)
+- complications:
+  - Fördröjning av donation
+- pitfalls:
+  - Pågående hypotermi eller sedering (måste vara uteslutet innan test!)
+- memory_hooks: 
+---
+- area: Transfusionsmedicin
+- entity: ABO-inkompatibilitet (Akut hemolytisk reaktion)
+- tags:
+  - transfusionsmedicin
+  - akut
+  - livshotande
+  - tillstånd
+  - komplikation
+- when_to_suspect:
+  - Feber, frossa, flanksmärta direkt vid transfusionsstart
+- discriminators:
+  - Hemoglobinuri (mörk urin)
+  - Kraftig immunologisk reaktion pga fel blodgrupp
+- investigation:
+  - DAT (Direkt Antiglobulin Test)
+  - Fritt Hb i plasma
+- initial_management:
+  - Avbryt omedelbart transfusion!
+  - Ge NaCl och forcerad diures
+- definitive_management:
+  - Anmäl blodsmitta/transfusionskomplikation
+- complications:
+  - Akut njursvikt
+  - DIC
+- pitfalls:
+  - Att enbart ge febernedsättande och fortsätta
+- memory_hooks: 
+---
+- area: Traumatologi
+- entity: Trauma vid graviditet
+- tags:
+  - traumatologi
+  - handläggning
+- when_to_suspect:
+  - Traumapatient som är gravid
+- discriminators:
+  - Fysiologisk hemodilution (Hb är normalt lägre)
+  - Vena cava-syndrom i ryggläge
+- investigation:
+  - CT trauma (sker PÅ SAMMA INDIKATION som icke-gravid, strålning får EJ fördröja)
+  - CTG för fostret
+- initial_management:
+  - Vänster sidoläge (förhindra vena cava-kompression)
+  - Prio ALLTID på moderns ABC!
+- definitive_management:
+  - Förlösning via kejsarsnitt om indicerat
+- complications:
+  - Abruptio placentae
+- pitfalls:
+  - Avstå röntgen pga rädsla för fosterskador
+- memory_hooks: 
+---
+- area: Transfusionsmedicin
+- entity: TEG/ROTEM
+- tags:
+  - transfusionsmedicin
+  - provtagning
+  - koagulation
+- when_to_suspect:
+  - Pågående blödning där standard-MTP inte räcker
+- discriminators:
+  - Bedömer Hela koagulationsprocessen dynamiskt (tid, styrka, lys)
+- investigation:
+  - Viskoelastiska tester (TEG/ROTEM)
+- initial_management:
+  - Målriktad behandling utifrån kurvans utseende
+- definitive_management:
+  - Ge Fibrinogen (om svag koagelstyrka) eller Cyklokapron (om hyperfibrinolys)
+- complications:
+  - Felbehandling vid extrem tromboembolism
+- pitfalls:
+  - Att förlita sig enbart på PK/APT-t som är för långsamma
+- memory_hooks: 
+---
+- area: Smärtmedicin
+- entity: Nervfiberstatus (A-delta vs C-fibrer)
+- tags:
+  - smärtfysiologi
+  - diagnostik
+- when_to_suspect:
+  - Neuropatisk smärtutredning
+- discriminators:
+  - A-delta = Snabb, vällokaliserad, skarp smärta (myeliniserad)
+  - C-fibrer = Långsam, diffus, molande/brännande (omyeliniserad)
+- investigation:
+  - Känselprövning (Temperatur testar ex. C-fibrer)
+- initial_management:
+  - Differentiera från nociceptiv
+- definitive_management:
+- complications:
+  - Feldiagnostik av smärttyp
+- pitfalls:
+  - Att tro alla nerver leder smärta likadant
+- memory_hooks: 
+---
+- area: Radiologi
+- entity: Premedicinering vid kontrastallergi
+- tags:
+  - radiologi
+  - profylax
+- when_to_suspect:
+  - Patient i behov av CT med jodkontrast men har tidigare mild/moderat reaktion
+- discriminators:
+  - Riktad farmakologisk förbehandling för att dämpa immunförsvar
+- investigation:
+  - Journalgranskning (var det njursvikt eller anafylaxi?)
+- initial_management:
+  - Peroral Kortison (ex. Betapred) 12h och 2h innan us
+- definitive_management:
+  - Antihistamin strax innan undersökning
+- complications:
+  - Genombrottsreaktion trots profylax
+- pitfalls:
+  - Att ge premedicinering till patient med Kontrastinducerad njurskada (KMN) - hjälper bara mot allergi!
+- memory_hooks: 
