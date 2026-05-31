@@ -19,6 +19,13 @@
       </nav>
     </div>
     <div class="header-right">
+      <div id="score-display" style="display:flex;align-items:center;gap:.45rem;margin-right:.35rem">
+        <span id="score-level" style="font-size:.72rem;font-weight:700;color:#93c5fd">Lv 0</span>
+        <div style="width:56px;height:4px;background:rgba(255,255,255,.18);border-radius:2px;overflow:hidden">
+          <div id="score-bar" style="height:100%;width:0%;background:#60a5fa;border-radius:2px;transition:width .4s"></div>
+        </div>
+        <span id="score-pts" style="font-size:.68rem;color:#94a3b8">0 pts</span>
+      </div>
       <div class="progress-panel" id="progress-panel">
         <span>Seen <b id="s-seen">0</b></span>
         <span class="dot-sep"></span>

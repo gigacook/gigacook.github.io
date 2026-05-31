@@ -12,6 +12,8 @@ const S = {
   currentQ: null, answered: false,
   quizN: 20,
   quizSpecialty: '',
+  timerMode: 'nerd',
+  totalScore: +(localStorage.getItem('kir_score') || 0),
   quizRun: { active: false, done: false, queue: [], position: 0, originalN: 0, results: [], reinserted: null },
 
   // exam
@@ -26,6 +28,14 @@ const S = {
 
   stats: { seen: 0, correct: 0, incorrect: 0, archived: 0, accuracy: 0 },
 };
+
+const TIMER_CFG = {
+  granny: { s: 90, mult: 0.5, label: '🧓 Granny' },
+  nerd:   { s: 45, mult: 1.0, label: '🤓 Nerd'   },
+  alien:  { s: 18, mult: 5.0, label: '👽 Alien'  },
+};
+const BASE_SCORE = { 'lätt':50,'latt':50,'medel':100,'svår':200,'svar':200 };
+let _qtimer = null;
 
 // Shared lookup tables so onclick handlers can reference by index (avoids
 // embedding user strings directly in onclick attributes).
@@ -80,6 +90,87 @@ function resetRun() {
   S.quizRun = { active: false, done: false, queue: [], position: 0, originalN: 0, results: [], reinserted: null };
   S.currentQ = null;
   S.answered = false;
+}
+
+function calcScore(diff, correct) {
+  if (!correct) return 0;
+  const base = BASE_SCORE[diff] || 100;
+  const cfg  = TIMER_CFG[S.timerMode];
+  return cfg ? Math.round(base * cfg.mult) : base;
+}
+
+function levelInfo(pts) {
+  const lvl = Math.floor(Math.pow(Math.max(pts, 0) / 100, 0.6));
+  const at  = n => 100 * Math.pow(n, 5 / 3);
+  const pct = at(lvl + 1) > at(lvl)
+    ? Math.min(100, Math.round((pts - at(lvl)) / (at(lvl + 1) - at(lvl)) * 100))
+    : 100;
+  return { lvl, pct };
+}
+
+function updateScoreDisplay() {
+  const { lvl, pct } = levelInfo(S.totalScore);
+  const lv = el('score-level'); if (lv) lv.textContent = 'Lv ' + lvl;
+  const br = el('score-bar');   if (br) br.style.width  = pct + '%';
+  const pt = el('score-pts');   if (pt) pt.textContent  = S.totalScore.toLocaleString() + ' pts';
+}
+
+function buildTimerBar() {
+  const cfg = TIMER_CFG[S.timerMode];
+  if (!cfg) return '';
+  return `<div id="q-timer" style="display:flex;align-items:center;gap:.5rem;margin-bottom:.6rem">
+    <span id="timer-secs" style="font-size:.75rem;font-weight:600;color:var(--muted);min-width:24px;text-align:right">${cfg.s}s</span>
+    <div style="flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden">
+      <div id="timer-fill" style="height:100%;width:100%;background:var(--success);border-radius:2px;transition:width 1s linear,background .3s"></div>
+    </div>
+    <span style="font-size:.65rem;color:var(--muted)">${cfg.label}</span>
+  </div>`;
+}
+
+function stopQTimer() {
+  if (_qtimer) { clearInterval(_qtimer); _qtimer = null; }
+}
+
+function startQTimer(seconds, onTimeout) {
+  stopQTimer();
+  let rem = seconds;
+  _qtimer = setInterval(() => {
+    rem--;
+    const fill = el('timer-fill'), secs = el('timer-secs');
+    if (fill) {
+      const pct = Math.max(0, rem / seconds * 100);
+      fill.style.width = pct + '%';
+      fill.style.background = pct > 50 ? 'var(--success)' : pct > 25 ? 'var(--warn)' : 'var(--danger)';
+    }
+    if (secs) secs.textContent = rem + 's';
+    if (rem <= 0) { stopQTimer(); onTimeout(); }
+  }, 1000);
+}
+
+async function handleQTimeout() {
+  if (S.answered || !S.currentQ || !el('quiz-area')) { stopQTimer(); return; }
+  S.answered = true;
+  document.querySelectorAll('.option-btn').forEach(b => b.disabled = true);
+  const d = await post('/answer', { question_id: S.currentQ.id, selected: null });
+  const q = d.question;
+  updateStats(d.stats);
+  const run = S.quizRun;
+  if (run.active) run.results.push({ question: S.currentQ, selected: null, is_correct: false, score: 0, timedOut: true });
+  document.querySelectorAll('.option-btn').forEach(b => { if (b.dataset.letter === q.correct) b.classList.add('correct'); });
+  const expl = el('explanation-area');
+  if (expl) expl.innerHTML = `<div class="explanation-box" style="background:#fef2f2;border-color:#fecaca">
+    <h4 style="color:var(--danger)">⏱ Time's up! — 0 pts</h4>
+    <div>${esc(q.explanation)}</div></div>`;
+  const actions = el('quiz-actions');
+  if (actions) actions.innerHTML = `<button class="btn btn-primary" data-qa="next">Next →</button>
+    <button class="btn btn-outline btn-sm" data-qa="archive">Archive</button>
+    <button class="btn btn-ghost btn-sm" data-qa="chain">Topic chain</button>`;
+}
+
+function handleExamTimeout() {
+  stopQTimer();
+  if (!S.examActive || !el('exam-options')) return;
+  if (S.examIndex < S.examQuestions.length - 1) { S.examIndex++; renderExamQuestion(); }
 }
 
 function trackLocalAnswer(question, isCorrect) {
@@ -409,6 +500,9 @@ async function renderQuiz() {
   const nOpts = [10, 20, 30, 50].map(n =>
     `<option value="${n}"${n===S.quizN?' selected':''}>${n}</option>`).join('');
 
+  const timerOpts = [['','No timer'],['granny','🧓 Granny ×0.5'],['nerd','🤓 Nerd ×1'],['alien','👽 Alien ×5']]
+    .map(([v,l]) => `<option value="${v}"${v===S.timerMode?' selected':''}>${l}</option>`).join('');
+
   const run = S.quizRun;
   let areaHtml;
   if (run.active && S.currentQ) {
@@ -427,6 +521,7 @@ async function renderQuiz() {
           <label>Specialty<select id="quiz-spec-sel">${specOpts}</select></label>
           <label>Subject<select id="quiz-subj-sel">${opts}</select></label>
           <label>Questions<select id="quiz-n-sel">${nOpts}</select></label>
+          <label>Timer<select id="quiz-timer-sel">${timerOpts}</select></label>
           ${S.quizMode==='tag'&&S.quizTags?`<span class="badge badge-blue" style="align-self:flex-end">${esc(S.quizTags)}</span>`:''}
           <button class="btn btn-primary" id="quiz-next-btn">Next →</button>
         </div>
@@ -453,6 +548,7 @@ async function renderQuiz() {
     resetRun();
   };
   el('quiz-subj-sel').onchange = () => { S.quizSubject = el('quiz-subj-sel').value; S.quizTopic = ''; resetRun(); };
+  el('quiz-timer-sel').onchange = () => { S.timerMode = el('quiz-timer-sel').value; resetRun(); };
   if (S.currentQ && S.answered) wireAnsweredState();
   wireQuizArea();
   wireProgressPanel();
@@ -483,7 +579,8 @@ async function startQuizRun() {
     S.quizRun = { active: true, done: false, queue: d.questions, position: 0, originalN: d.questions.length, results: [], reinserted: new Set() };
     S.currentQ = d.questions[0];
     S.answered = false;
-    if (area) { area.innerHTML = buildRunHeader() + buildQuestionCard(S.currentQ); wireQuizArea(); }
+    if (area) { area.innerHTML = buildRunHeader() + buildTimerBar() + buildQuestionCard(S.currentQ); wireQuizArea(); }
+    const cfg = TIMER_CFG[S.timerMode]; if (cfg) startQTimer(cfg.s, handleQTimeout);
   } catch(e) {
     if (area) area.innerHTML = `<div class="empty">Error: ${esc(e.message)}</div>`;
   }
@@ -641,12 +738,14 @@ async function loadNextQ() {
 
   S.currentQ = run.queue[run.position];
   const area = el('quiz-area');
-  if (area) { area.innerHTML = buildRunHeader() + buildQuestionCard(S.currentQ); wireQuizArea(); }
+  if (area) { area.innerHTML = buildRunHeader() + buildTimerBar() + buildQuestionCard(S.currentQ); wireQuizArea(); }
+  const cfg = TIMER_CFG[S.timerMode]; if (cfg) startQTimer(cfg.s, handleQTimeout);
 }
 
 async function handleAnswer(letter) {
   if (S.answered || !S.currentQ) return;
   S.answered = true;
+  stopQTimer();
   document.querySelectorAll('.option-btn').forEach(b => b.disabled = true);
 
   const d = await post('/answer', { question_id: S.currentQ.id, selected: letter });
@@ -654,9 +753,12 @@ async function handleAnswer(letter) {
   trackLocalAnswer(S.currentQ, d.is_correct);
   updateStats(d.stats);
 
+  const score = calcScore(S.currentQ.difficulty, d.is_correct);
+  if (d.is_correct) { S.totalScore += score; localStorage.setItem('kir_score', S.totalScore); updateScoreDisplay(); }
+
   const run = S.quizRun;
   if (run.active) {
-    run.results.push({ question: S.currentQ, selected: letter, is_correct: d.is_correct });
+    run.results.push({ question: S.currentQ, selected: letter, is_correct: d.is_correct, score });
     if (!d.is_correct) {
       if (!run.reinserted) run.reinserted = new Set();
       if (!run.reinserted.has(S.currentQ.id)) {
@@ -676,7 +778,7 @@ async function handleAnswer(letter) {
   const expl = el('explanation-area');
   if (expl) expl.innerHTML = `
     <div class="explanation-box">
-      <h4>${d.is_correct ? '✓ Correct!' : `✗ Incorrect — correct: ${q.correct}`}</h4>
+      <h4>${d.is_correct ? `✓ Correct! <span style="font-size:.8rem;font-weight:500">+${score} pts</span>` : `✗ Incorrect — correct: ${q.correct} <span style="font-size:.8rem;font-weight:400;color:var(--muted)">0 pts</span>`}</h4>
       <div>${esc(q.explanation)}</div>
       ${q.distractors ? `<div class="distractors" style="margin-top:.4rem"><strong>Why others wrong:</strong> ${esc(q.distractors)}</div>` : ''}
       ${q.source ? `<div class="source" style="margin-top:.4rem;color:var(--muted);font-size:.75rem">Source: ${esc(q.source)}</div>` : ''}
@@ -691,6 +793,7 @@ async function handleAnswer(letter) {
 
 async function archiveCurrentQ() {
   if (!S.currentQ) return;
+  stopQTimer();
   const d = await post('/archive', { question_id: S.currentQ.id });
   updateStats(d.stats);
   loadNextQ();
@@ -724,7 +827,7 @@ function renderQuizRunResults() {
       <div style="max-width:640px;margin:0 auto">
         <div class="results-header">
           <div class="results-score" style="color:${color}">${correct} / ${total}</div>
-          <div class="results-label">${pct}% correct this run</div>
+          <div class="results-label">${pct}% correct this run &nbsp;·&nbsp; +${run.results.reduce((s,r)=>s+(r.score||0),0)} pts</div>
           <div class="btn-row" style="justify-content:center;margin-top:1rem">
             ${incorrectQs.length ? `<button class="btn btn-danger" id="retry-wrong-btn">Repeat incorrect (${incorrectQs.length})</button>` : ''}
             <button class="btn btn-primary" id="new-run-btn">New run</button>
@@ -813,6 +916,14 @@ function renderExamStart() {
           </div>
         </div>
 
+        <div style="display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:1rem">
+          <label style="font-size:.85rem;color:var(--muted);display:flex;align-items:center;gap:.5rem">Timer
+            <select id="exam-timer-sel" style="padding:.3rem .6rem;border:1px solid var(--border);border-radius:6px;font-size:.85rem">
+              ${[['','No timer'],['granny','🧓 Granny 90s ×0.5'],['nerd','🤓 Nerd 45s ×1'],['alien','👽 Alien 18s ×5']]
+                .map(([v,l]) => `<option value="${v}"${v===S.timerMode?' selected':''}>${l}</option>`).join('')}
+            </select>
+          </label>
+        </div>
         <div style="text-align:center">
           <button class="btn btn-primary" id="start-exam-btn" style="padding:.6rem 2rem;font-size:1rem">Starta tentamen</button>
         </div>
@@ -834,6 +945,8 @@ function renderExamStart() {
     };
   });
 
+  const ets = el('exam-timer-sel');
+  if (ets) ets.onchange = () => { S.timerMode = ets.value; };
   el('start-exam-btn').onclick = startExam;
 }
 
@@ -865,6 +978,7 @@ function renderExamQuestion() {
         <div class="exam-bar"><div class="exam-bar-fill" style="width:${pct}%"></div></div>
         <span class="exam-counter" style="color:var(--success)" id="exam-ans-count">${ans} answered</span>
       </div>
+      ${buildTimerBar()}
       <div class="card">
         <div class="question-meta">
           ${diffBadge(q.difficulty)}
@@ -886,6 +1000,8 @@ function renderExamQuestion() {
           : `<button class="btn btn-success" id="exam-submit">Submit Exam</button>`}
       </div>
     </div>`;
+
+  const ecfg = TIMER_CFG[S.timerMode]; if (ecfg) startQTimer(ecfg.s, handleExamTimeout);
 
   el('exam-options').onclick = e => {
     const ob = e.target.closest('.option-btn');
@@ -913,6 +1029,7 @@ function examSelect(letter) {
 }
 
 async function submitExam() {
+  stopQTimer();
   const answers = {};
   S.examQuestions.forEach((q, i) => { if (S.examAnswers[i]) answers[q.id] = S.examAnswers[i]; });
   const d = await post('/exam/submit', { answers, source: S.examSourceUsed || 'specialty' });
@@ -928,6 +1045,8 @@ async function submitExam() {
 }
 
 function renderExamResults(d) {
+  const examScore = d.results.reduce((sum, r) => sum + calcScore(r.difficulty || 'medel', r.is_correct), 0);
+  if (examScore > 0) { S.totalScore += examScore; localStorage.setItem('kir_score', S.totalScore); updateScoreDisplay(); }
   const pct   = d.percentage;
   const color = pct >= 70 ? 'var(--success)' : pct >= 50 ? 'var(--warn)' : 'var(--danger)';
   _D.questions = d.results.map(r => ({ id: r.question_id }));
@@ -948,7 +1067,7 @@ function renderExamResults(d) {
     <div class="full-width">
       <div class="results-header">
         <div class="results-score" style="color:${color}">${d.score}/${d.total}</div>
-        <div class="results-label">${pct}% correct</div>
+        <div class="results-label">${pct}% correct &nbsp;·&nbsp; +${examScore} pts</div>
         <div style="margin-top:1rem">
           <button class="btn btn-primary" id="new-exam-btn">New Exam</button>
           <button class="btn btn-outline" id="review-wrong-btn" style="margin-left:.5rem">Review incorrect</button>
@@ -1503,6 +1622,7 @@ async function init() {
     await initSession();
     S.specialties = await get('/specialties');
     S.subjects = S.specialties.flatMap(sp => sp.subjects);
+    updateScoreDisplay();
     render();
   } catch (e) {
     app().innerHTML = `<div class="full-width"><div class="empty">
