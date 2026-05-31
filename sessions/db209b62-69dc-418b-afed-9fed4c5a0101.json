@@ -1,0 +1,20 @@
+{
+  "seen_questions": [
+    "KIR_151",
+    "KIR_ANESTESI_001",
+    "KIR_ANESTESI_003",
+    "KIR_ANESTESI_004",
+    "KIR_ANESTESI_015",
+    "KIR_ANESTESI_019",
+    "KIR_ENDOKRINKIRURGI_074",
+    "KIR_ORTOPEDI_018",
+    "KIR_PLASTIKKIRURGI_018"
+  ],
+  "correct_questions": [
+    "KIR_ANESTESI_004"
+  ],
+  "incorrect_questions": [],
+  "archived_questions": [
+    "KIR_ANESTESI_004"
+  ]
+}

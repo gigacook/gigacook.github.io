@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>KIR Engine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <span class="logo">KIR</span>
+      <nav id="nav">
+        <button onclick="switchMode('study')"   id="nav-study">Study</button>
+        <button onclick="switchMode('quiz')"    id="nav-quiz">Quiz</button>
+        <button onclick="switchMode('exam')"    id="nav-exam">Exam</button>
+        <button onclick="switchMode('explore')" id="nav-explore">Explore</button>
+        <button onclick="switchMode('profile')" id="nav-profile">Profile</button>
+      </nav>
+    </div>
+    <div class="header-right">
+      <div class="progress-panel" id="progress-panel">
+        <span>Seen <b id="s-seen">0</b></span>
+        <span class="dot-sep"></span>
+        <span class="ok">&#10003; <b id="s-correct">0</b></span>
+        <span class="dot-sep"></span>
+        <span class="ng">&#10007; <b id="s-incorrect">0</b></span>
+        <span class="dot-sep"></span>
+        <span>Acc <b id="s-acc">0%</b></span>
+      </div>
+      <button class="btn-pill" onclick="openStats()">Stats</button>
+      <button class="btn-pill" onclick="openArchive()">Archived</button>
+      <button class="btn-pill" onclick="openCurriculum()">Curriculum</button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="modal" class="modal hidden" onclick="if(event.target===this)closeModal()">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal()">&#215;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
