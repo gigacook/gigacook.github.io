@@ -425,6 +425,103 @@ main { flex: 1; overflow: hidden; display: flex; }
 }
 .exam-source-card:hover { border-color: var(--primary) !important; }
 
+/* ── Difficulty selector panel ───────────────────────── */
+.diff-panel {
+  display: flex;
+  gap: .35rem;
+  align-items: center;
+}
+
+.diff-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .42rem .52rem;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  transition: transform .2s, border-color .18s, background .18s, box-shadow .18s;
+  position: relative;
+}
+.diff-btn:hover {
+  transform: scale(1.1);
+  border-color: var(--primary);
+  background: #eff6ff;
+  box-shadow: 0 2px 12px rgba(37,99,235,.2);
+  z-index: 10;
+}
+.diff-btn.active {
+  border-color: var(--primary);
+  background: #dbeafe;
+  box-shadow: 0 2px 16px rgba(37,99,235,.32);
+  transform: scale(1.14);
+  z-index: 9;
+}
+.diff-icon { font-size: 1.4rem; line-height: 1; display: block; }
+
+/* Custom tooltip */
+.diff-panel [data-tip] { position: relative; }
+
+.diff-panel [data-tip]::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: calc(100% + 9px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e293b;
+  color: #f1f5f9;
+  font-size: .7rem;
+  font-weight: 400;
+  line-height: 1.4;
+  padding: .3rem .55rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .2s ease;
+  z-index: 200;
+  border: 1px solid rgba(255,255,255,.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+}
+.diff-panel [data-tip]::before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #1e293b;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .2s ease;
+  z-index: 200;
+}
+.diff-panel [data-tip]:hover::after,
+.diff-panel [data-tip]:hover::before { opacity: 1; }
+
+.diff-off-btn {
+  font-size: .67rem;
+  color: var(--muted);
+  background: none;
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  padding: .26rem .48rem;
+  cursor: pointer;
+  transition: color .15s, border-color .15s;
+  align-self: center;
+  position: relative;
+}
+.diff-off-btn:hover { color: var(--text); border-color: #94a3b8; }
+.diff-off-btn.active { color: var(--text); border-color: #94a3b8; font-weight: 600; }
+
+.diff-mode-label {
+  font-size: .7rem;
+  color: var(--muted);
+  padding-left: .1rem;
+}
+.diff-mode-label strong { color: var(--text); }
+
 /* ── Misc ────────────────────────────────────────────── */
 .empty { text-align: center; padding: 2.5rem; color: var(--muted); font-size: .9rem; }
 .loading { text-align: center; padding: 2rem; color: var(--muted); }

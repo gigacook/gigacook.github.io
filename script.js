@@ -34,6 +34,11 @@ const TIMER_CFG = {
   nerd:   { s: 45, mult: 1.0, label: '🤓 Nerd'   },
   alien:  { s: 18, mult: 5.0, label: '👽 Alien'  },
 };
+const DIFF_OPTS = [
+  { key: 'granny', icon: '🐢', name: 'Turtle', tip: 'relaxed pace' },
+  { key: 'nerd',   icon: '🙂', name: 'Human',  tip: 'balanced' },
+  { key: 'alien',  icon: '👽', name: 'Alien',  tip: 'fast' },
+];
 const BASE_SCORE = { 'lätt':50,'latt':50,'medel':100,'svår':200,'svar':200 };
 let _qtimer = null;
 
@@ -113,6 +118,43 @@ function updateScoreDisplay() {
   const lv = el('score-level'); if (lv) lv.textContent = 'Lv ' + lvl;
   const br = el('score-bar');   if (br) br.style.width  = pct + '%';
   const pt = el('score-pts');   if (pt) pt.textContent  = S.totalScore.toLocaleString() + ' pts';
+}
+
+function buildDiffPanel(panelId) {
+  const buttons = DIFF_OPTS.map(d => {
+    const cfg = TIMER_CFG[d.key];
+    const tip = `${d.name} – ${cfg.s}s per question (${d.tip})`;
+    return `<button class="diff-btn${d.key === S.timerMode ? ' active' : ''}" data-diff="${d.key}" data-tip="${tip}">
+      <span class="diff-icon">${d.icon}</span>
+    </button>`;
+  }).join('');
+  const activeOpt = DIFF_OPTS.find(d => d.key === S.timerMode);
+  return `<div style="display:flex;flex-direction:column;gap:.25rem">
+    <div class="diff-panel" id="${panelId}">
+      ${buttons}
+      <button class="diff-off-btn${!S.timerMode ? ' active' : ''}" data-diff="" data-tip="No timer">Off</button>
+    </div>
+    <div class="diff-mode-label">Mode: <strong>${activeOpt ? activeOpt.name + ' ' + activeOpt.icon : 'Off'}</strong></div>
+  </div>`;
+}
+
+function wireDiffPanel(panelId) {
+  const panel = el(panelId);
+  if (!panel) return;
+  panel.onclick = e => {
+    const btn = e.target.closest('[data-diff]');
+    if (!btn) return;
+    S.timerMode = btn.dataset.diff;
+    resetRun();
+    document.querySelectorAll('.diff-btn').forEach(b =>
+      b.classList.toggle('active', b.dataset.diff === S.timerMode));
+    document.querySelectorAll('.diff-off-btn').forEach(b =>
+      b.classList.toggle('active', S.timerMode === ''));
+    const activeOpt = DIFF_OPTS.find(d => d.key === S.timerMode);
+    document.querySelectorAll('.diff-mode-label').forEach(lbl => {
+      lbl.innerHTML = `Mode: <strong>${activeOpt ? activeOpt.name + ' ' + activeOpt.icon : 'Off'}</strong>`;
+    });
+  };
 }
 
 function buildTimerBar() {
@@ -500,8 +542,6 @@ async function renderQuiz() {
   const nOpts = [10, 20, 30, 50].map(n =>
     `<option value="${n}"${n===S.quizN?' selected':''}>${n}</option>`).join('');
 
-  const timerOpts = [['','No timer'],['granny','🧓 Granny ×0.5'],['nerd','🤓 Nerd ×1'],['alien','👽 Alien ×5']]
-    .map(([v,l]) => `<option value="${v}"${v===S.timerMode?' selected':''}>${l}</option>`).join('');
 
   const run = S.quizRun;
   let areaHtml;
@@ -521,7 +561,7 @@ async function renderQuiz() {
           <label>Specialty<select id="quiz-spec-sel">${specOpts}</select></label>
           <label>Subject<select id="quiz-subj-sel">${opts}</select></label>
           <label>Questions<select id="quiz-n-sel">${nOpts}</select></label>
-          <label>Timer<select id="quiz-timer-sel">${timerOpts}</select></label>
+          ${buildDiffPanel('diff-panel-quiz')}
           ${S.quizMode==='tag'&&S.quizTags?`<span class="badge badge-blue" style="align-self:flex-end">${esc(S.quizTags)}</span>`:''}
           <button class="btn btn-primary" id="quiz-next-btn">Next →</button>
         </div>
@@ -548,10 +588,10 @@ async function renderQuiz() {
     resetRun();
   };
   el('quiz-subj-sel').onchange = () => { S.quizSubject = el('quiz-subj-sel').value; S.quizTopic = ''; resetRun(); };
-  el('quiz-timer-sel').onchange = () => { S.timerMode = el('quiz-timer-sel').value; resetRun(); };
   if (S.currentQ && S.answered) wireAnsweredState();
   wireQuizArea();
   wireProgressPanel();
+  wireDiffPanel('diff-panel-quiz');
 }
 
 function buildRunHeader() {
@@ -916,13 +956,8 @@ function renderExamStart() {
           </div>
         </div>
 
-        <div style="display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:1rem">
-          <label style="font-size:.85rem;color:var(--muted);display:flex;align-items:center;gap:.5rem">Timer
-            <select id="exam-timer-sel" style="padding:.3rem .6rem;border:1px solid var(--border);border-radius:6px;font-size:.85rem">
-              ${[['','No timer'],['granny','🧓 Granny 90s ×0.5'],['nerd','🤓 Nerd 45s ×1'],['alien','👽 Alien 18s ×5']]
-                .map(([v,l]) => `<option value="${v}"${v===S.timerMode?' selected':''}>${l}</option>`).join('')}
-            </select>
-          </label>
+        <div style="display:flex;justify-content:center;margin-bottom:1.25rem">
+          ${buildDiffPanel('diff-panel-exam')}
         </div>
         <div style="text-align:center">
           <button class="btn btn-primary" id="start-exam-btn" style="padding:.6rem 2rem;font-size:1rem">Starta tentamen</button>
@@ -945,8 +980,7 @@ function renderExamStart() {
     };
   });
 
-  const ets = el('exam-timer-sel');
-  if (ets) ets.onchange = () => { S.timerMode = ets.value; };
+  wireDiffPanel('diff-panel-exam');
   el('start-exam-btn').onclick = startExam;
 }
 
