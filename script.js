@@ -22,7 +22,7 @@ const S = {
   examActive: false, examDone: false, examResults: null,
 
   // study/explore
-  browseSubject: null, browseTopic: null, activeTab: 'questions',
+  browseSubject: null, browseTopic: null, browseSpecialty: null, activeTab: 'questions',
   exploreSubject: null, exploreTopic: null, activeTags: new Set(),
   openStudySpec: new Set(),   // expanded specialty slugs in study sidebar
   openExploreSpec: new Set(), // expanded specialty slugs in explore sidebar
@@ -334,7 +334,8 @@ async function renderStudy() {
       </div>
     </div>`;
   buildSpecialtySidebar('subj-list', S.specialties, 'study');
-  if (S.browseSubject) loadStudySubject(S.browseSubject);
+  if (S.browseSubject)   loadStudySubject(S.browseSubject);
+  else if (S.browseSpecialty) loadSpecialtyOverview(S.browseSpecialty);
 }
 
 // Two-level specialty tree for both study and explore sidebars.
@@ -389,9 +390,13 @@ function buildSpecialtySidebar(containerId, specialties, mode) {
         mode === 'study' ? loadStudySubject(sp.subjects[0].subject)
                          : loadExploreSubject(sp.subjects[0].subject);
       } else {
-        if (openSet.has(sp.specialty)) openSet.delete(sp.specialty);
-        else openSet.add(sp.specialty);
-        buildSpecialtySidebar(containerId, specialties, mode);
+        if (mode === 'study') {
+          loadSpecialtyOverview(sp.specialty);
+        } else {
+          if (openSet.has(sp.specialty)) openSet.delete(sp.specialty);
+          else openSet.add(sp.specialty);
+          buildSpecialtySidebar(containerId, specialties, mode);
+        }
       }
       return;
     }
@@ -406,6 +411,113 @@ function buildSpecialtySidebar(containerId, specialties, mode) {
 
 function filterStudySubjects() {
   buildSpecialtySidebar('subj-list', S.specialties, 'study');
+}
+
+function loadSpecialtyOverview(specKey) {
+  S.browseSpecialty = specKey;
+  const sp = S.specialties.find(s => s.specialty === specKey);
+  const sc = el('study-content');
+  if (!sp || !sc) return;
+
+  const bySubj = S.localStats?.by_subject || {};
+  let totalSeen = 0, totalCorrect = 0;
+  sp.subjects.forEach(s => {
+    const st = bySubj[s.subject] || {};
+    totalSeen    += st.seen    || 0;
+    totalCorrect += st.correct || 0;
+  });
+  const pctSeen = sp.question_count ? Math.round(totalSeen / sp.question_count * 100) : 0;
+  const pctAcc  = totalSeen ? Math.round(totalCorrect / totalSeen * 100) : 0;
+  const accColor = pctAcc >= 70 ? 'var(--success)' : pctAcc >= 50 ? 'var(--warn)' : 'var(--danger)';
+
+  const subjRows = sp.subjects.map(s => {
+    const st  = bySubj[s.subject] || {};
+    const seen = st.seen || 0, corr = st.correct || 0;
+    const pct  = s.question_count ? Math.round(seen / s.question_count * 100) : 0;
+    const acc  = seen ? Math.round(corr / seen * 100) : 0;
+    const aC   = acc >= 70 ? 'var(--success)' : acc >= 50 ? 'var(--warn)' : 'var(--danger)';
+    return `<div class="subj-ov-row" data-subj="${attr(s.subject)}">
+      <span class="subj-ov-name">${esc(s.subject)} <span style="font-weight:400;color:var(--muted);font-size:.75rem">(${seen}/${s.question_count})</span></span>
+      <div class="subj-ov-bar"><div class="subj-ov-fill" style="width:${pct}%"></div></div>
+      <span class="subj-ov-pct">${pct}%</span>
+      <span class="subj-ov-acc" style="color:${seen ? aC : 'var(--muted)'}">${seen ? acc+'%' : '–'}</span>
+    </div>`;
+  }).join('');
+
+  sc.innerHTML = `
+    <div class="spec-ov">
+      <div class="spec-ov-head">
+        <h2 class="spec-ov-title">${esc(sp.display_name)}</h2>
+        <div class="spec-ov-meta">
+          <span>${sp.question_count} questions</span>
+          <span class="dot-sep"></span>
+          <span>${sp.subjects.length} subject${sp.subjects.length !== 1 ? 's' : ''}</span>
+          ${totalSeen ? `<span class="dot-sep"></span><span>${totalSeen} seen &nbsp;·&nbsp; ${pctSeen}% covered</span>` : ''}
+        </div>
+      </div>
+
+      ${totalSeen ? `
+      <div class="spec-ov-progress">
+        <div class="spec-ov-stat-row">
+          <span class="spec-ov-lbl">Seen</span>
+          <div class="spec-ov-bar-wrap"><div class="spec-ov-bar-fill" style="width:${pctSeen}%;background:var(--primary)"></div></div>
+          <span class="spec-ov-val">${pctSeen}%</span>
+        </div>
+        <div class="spec-ov-stat-row">
+          <span class="spec-ov-lbl">Accuracy</span>
+          <div class="spec-ov-bar-wrap"><div class="spec-ov-bar-fill" style="width:${pctAcc}%;background:${accColor}"></div></div>
+          <span class="spec-ov-val">${pctAcc}%</span>
+        </div>
+      </div>` : ''}
+
+      <div class="spec-ov-actions">
+        <button class="btn btn-primary btn-sm" data-sq="">Quiz All</button>
+        <button class="btn btn-outline btn-sm" data-sq="high_yield">High Yield</button>
+        <button class="btn btn-outline btn-sm" data-sq="medel">Medium</button>
+        <button class="btn btn-outline btn-sm" data-sq="hard">Hard</button>
+        <button class="btn btn-ghost btn-sm"   data-sq="unseen">Unseen</button>
+      </div>
+
+      ${sp.subjects.length > 1 ? `
+      <div class="section-header" style="margin-top:1.25rem">Subjects</div>
+      <div class="subj-ov-list">${subjRows}</div>` : ''}
+    </div>`;
+
+  sc.querySelector('.spec-ov-actions').onclick = e => {
+    const btn = e.target.closest('[data-sq]');
+    if (btn) startSpecialtyQuiz(specKey, btn.dataset.sq || null);
+  };
+  sc.querySelectorAll('.subj-ov-row').forEach(row => {
+    row.onclick = () => loadStudySubject(row.dataset.subj);
+  });
+}
+
+async function startSpecialtyQuiz(specKey, mode) {
+  S.quizSpecialty = specKey;
+  S.quizSubject   = '';
+  S.quizTags      = '';
+
+  if (mode === 'medel' || mode === 'hard') {
+    const d    = await get('/quiz/batch', { n: 200, mode: 'normal', specialty: specKey });
+    const diffs = mode === 'hard' ? ['svår', 'svar'] : ['medel'];
+    const pool  = (d.questions || []).filter(q => diffs.includes(q.difficulty));
+    if (!pool.length) return;
+    S.quizMode  = 'normal';
+    S.quizRun   = { active: true, done: false, queue: pool, position: 0, originalN: pool.length, results: [], reinserted: new Set() };
+    S.quizRunId = genId();
+    S.currentQ  = pool[0];
+    S.answered  = false;
+    switchMode('quiz');
+    const area = el('quiz-area');
+    if (area) { area.innerHTML = buildRunHeader() + buildTimerBar() + buildQuestionCard(S.currentQ); wireQuizArea(); }
+    const cfg = TIMER_CFG[S.timerMode]; if (cfg) startQTimer(cfg.s, handleQTimeout);
+    return;
+  }
+
+  S.quizMode = mode || 'normal';
+  resetRun();
+  switchMode('quiz');
+  setTimeout(loadNextQ, 50);
 }
 
 async function loadStudySubject(subject) {
@@ -436,28 +548,35 @@ async function loadStudySubject(subject) {
 
   sc.innerHTML = `
     <div style="display:flex;height:100%;overflow:hidden">
-      <div style="width:220px;flex-shrink:0;border-right:1px solid var(--border);overflow-y:auto;background:white" id="study-topic-col">
+      <div style="width:220px;flex-shrink:0;border-right:1px solid var(--border);overflow-y:auto" id="study-topic-col">
         ${topicRows}
       </div>
-      <div style="flex:1;overflow-y:auto;padding:1.25rem" id="topic-detail">
+      <div style="flex:1;display:flex;flex-direction:column;overflow:hidden">
+        <div style="padding:.15rem 1.25rem .35rem;flex-shrink:0">
+          <button class="study-back-btn" id="study-back">BACK</button>
+        </div>
+        <div style="flex:1;overflow-y:auto;padding:0 1.25rem 1.25rem" id="topic-detail">
         <div class="card">
           <div class="card-title">${esc(subject)}</div>
           <div class="card-subtitle">${topics.length} topics · ${hy.questions.length} questions</div>
           <div class="section-header" style="margin-top:.75rem">High-Yield Topics</div>
-          ${hy.topics.slice(0,8).map(t => `
-            <div class="hy-row" data-hy="${attr(t.subtopic)}" style="cursor:pointer">
-              <span style="flex:1;font-size:.84rem">${esc(t.subtopic)}</span>
-              <span class="text-muted" style="font-size:.75rem">${t.count}q</span>
-              <div class="hy-bar" style="width:80px">
+          <div style="display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:.25rem">
+            ${hy.topics.slice(0,8).map(t => `
+            <div class="hy-row" data-hy="${attr(t.subtopic)}" style="display:inline-flex;align-items:center;gap:.4rem;cursor:pointer">
+              <span style="font-size:.84rem">${esc(t.subtopic)}</span>
+              <span class="text-muted" style="font-size:.75rem;flex-shrink:0">${t.count}q</span>
+              <div class="hy-bar" style="width:52px;margin-top:0">
                 <div class="hy-bar-fill" style="width:${Math.min(100,t.count/(hy.topics[0]?.count||1)*100)}%"></div>
               </div>
             </div>`).join('')}
+          </div>
           <div class="btn-row">
             <button class="btn btn-primary btn-sm" data-action="quiz-subject">Quiz this subject</button>
             <button class="btn btn-outline btn-sm" data-action="coverage">Coverage map</button>
             <button class="btn btn-outline btn-sm" data-action="matrix-full">Full matrix</button>
           </div>
         </div>
+      </div>
       </div>
     </div>`;
 
@@ -466,6 +585,15 @@ async function loadStudySubject(subject) {
   topicCol.onclick = e => {
     const item = e.target.closest('[data-ti]');
     if (item) loadStudyTopic(subject, _D.topics[+item.dataset.ti].subtopic);
+  };
+
+  // Back button
+  el('study-back').onclick = () => {
+    S.browseSubject = null;
+    S.browseTopic   = null;
+    document.querySelectorAll('#subj-list [data-si]').forEach(e => e.classList.remove('active'));
+    if (S.browseSpecialty) loadSpecialtyOverview(S.browseSpecialty);
+    else sc.innerHTML = '<div class="empty">Select a subject to begin studying</div>';
   };
 
   // Detail action buttons
