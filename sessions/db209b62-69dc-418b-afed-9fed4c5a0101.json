@@ -6,15 +6,17 @@
     "KIR_ANESTESI_004",
     "KIR_ANESTESI_015",
     "KIR_ANESTESI_019",
+    "KIR_ANESTESI_152",
     "KIR_ENDOKRINKIRURGI_074",
     "KIR_ORTOPEDI_018",
+    "KIR_ORTOPEDI_134",
     "KIR_PLASTIKKIRURGI_018"
   ],
   "correct_questions": [
-    "KIR_ANESTESI_004"
+    "KIR_ANESTESI_004",
+    "KIR_ANESTESI_152",
+    "KIR_ORTOPEDI_134"
   ],
   "incorrect_questions": [],
-  "archived_questions": [
-    "KIR_ANESTESI_004"
-  ]
+  "archived_questions": []
 }

@@ -234,6 +234,7 @@ def answer():
     q = IDX.questions.get(qid)
     if not q: return jsonify({"error": "not found"}), 404
     correct = (selected == q.correct)
+    session.seen_questions.add(qid)
     if correct:
         session.correct_questions.add(qid)
         session.incorrect_questions.discard(qid)
@@ -258,6 +259,69 @@ def restore():
     session.archived_questions.discard(data.get("question_id", ""))
     _save(sid, session)
     return jsonify({"ok": True, "stats": _stats(session)})
+
+@app.route("/quiz/batch")
+def quiz_batch():
+    try:
+        n = min(int(request.args.get("n", "20")), 200)
+    except (ValueError, TypeError):
+        n = 20
+    mode      = request.args.get("mode", "normal")
+    subject   = request.args.get("subject")   or None
+    specialty = request.args.get("specialty") or None
+    topic     = request.args.get("topic")     or None
+    tags      = request.args.get("tags")      or None
+    sid       = request.args.get("session_id", "default")
+    session   = _load(sid)
+    archived  = session.archived_questions
+    pool      = list(IDX.questions.values())
+
+    if mode == "weak":
+        ids  = session.incorrect_questions - archived
+        pool = [IDX.questions[i] for i in ids if i in IDX.questions]
+    elif mode == "review_archived":
+        pool = [IDX.questions[i] for i in archived if i in IDX.questions]
+    elif mode == "unseen":
+        exclude = session.seen_questions | archived
+        pool    = [q for q in pool if q.id not in exclude]
+    elif mode == "high_yield":
+        subj = subject or (
+            next((q.subject for q in pool if q.specialty == specialty), None)
+            if specialty else next(iter(IDX.tree), None)
+        )
+        if subj:
+            hy   = get_high_yield_questions(subj, IDX)
+            pool = [q for q in hy if q.id not in archived]
+            unseen = [q for q in pool if q.id not in session.seen_questions]
+            pool = unseen if unseen else pool
+        else:
+            pool = []
+    elif mode == "tag":
+        tag_set = set(t.strip() for t in (tags or "").split(",") if t.strip())
+        if tag_set:
+            matching = set()
+            for m in IDX.matrix_by_key.values():
+                if m.tags and tag_set.intersection(m.tags):
+                    matching.add(m.entity)
+            pool = [q for q in pool if q.subtopic in matching]
+        pool = [q for q in pool if q.id not in archived]
+    elif mode == "topic":
+        if topic: pool = [q for q in pool if q.subtopic == topic]
+        pool = [q for q in pool if q.id not in archived]
+    else:  # normal
+        pool = [q for q in pool if q.id not in archived]
+
+    # Contextual filters applied after mode-specific pool building
+    if specialty: pool = [q for q in pool if q.specialty == specialty]
+    if subject:   pool = [q for q in pool if q.subject   == subject]
+    if topic and mode == "topic": pass  # already applied above
+    elif topic:   pool = [q for q in pool if q.subtopic  == topic]
+
+    if not pool:
+        return jsonify({"questions": [], "total": 0})
+    selected = random.sample(pool, min(n, len(pool)))
+    random.shuffle(selected)
+    return jsonify({"questions": [_q(q, reveal=False) for q in selected], "total": len(selected)})
 
 # ---------------------------------------------------------------------------
 # Data browsing

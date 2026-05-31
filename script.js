@@ -10,6 +10,9 @@ const S = {
   // quiz
   quizMode: 'normal', quizSubject: '', quizTopic: '', quizTags: '',
   currentQ: null, answered: false,
+  quizN: 20,
+  quizSpecialty: '',
+  quizRun: { active: false, done: false, queue: [], position: 0, originalN: 0, results: [], reinserted: null },
 
   // exam
   examQuestions: [], examAnswers: {}, examIndex: 0,
@@ -71,6 +74,12 @@ function updateStats(st) {
   // Refresh quiz progress panel if visible
   const panel = el('quiz-progress');
   if (panel) { panel.innerHTML = buildProgressPanel(); wireProgressPanel(); }
+}
+
+function resetRun() {
+  S.quizRun = { active: false, done: false, queue: [], position: 0, originalN: 0, results: [], reinserted: null };
+  S.currentQ = null;
+  S.answered = false;
 }
 
 function trackLocalAnswer(question, isCorrect) {
@@ -151,9 +160,6 @@ function render() {
 // STUDY MODE
 // =============================================================
 async function renderStudy() {
-  // Auto-expand all specialties on first render
-  if (S.openStudySpec.size === 0)
-    S.specialties.forEach(sp => S.openStudySpec.add(sp.specialty));
 
   app().innerHTML = `
     <div class="pane-layout">
@@ -374,13 +380,24 @@ async function loadStudyTopic(subject, topic) {
 // QUIZ MODE
 // =============================================================
 async function renderQuiz() {
-  // Ensure we have full stats for the progress panel
+  if (S.quizRun.done) { renderQuizRunResults(); return; }
+
   if (!S.localStats) {
     try { S.localStats = await get('/stats'); } catch(_) { S.localStats = { by_subject: {}, specialty_total: 1095, old_exam_total: 1079 }; }
   }
 
+  const specOpts = ['<option value="">All specialties</option>',
+    ...S.specialties.map(sp => {
+      const num = (sp.specialty.match(/^(\d+)/) || [])[1] || '';
+      const label = num ? `${num} ${sp.display_name}` : sp.display_name;
+      return `<option value="${attr(sp.specialty)}"${sp.specialty===S.quizSpecialty?' selected':''}>${esc(label)}</option>`;
+    })
+  ].join('');
+
+  const activeSpec = S.specialties.find(s => s.specialty === S.quizSpecialty);
+  const subjPool = activeSpec ? activeSpec.subjects : S.subjects;
   const opts = ['<option value="">All subjects</option>',
-    ...S.subjects.map(s =>
+    ...subjPool.map(s =>
       `<option value="${attr(s.subject)}"${s.subject===S.quizSubject?' selected':''}>${esc(s.subject)}</option>`)
   ].join('');
 
@@ -389,18 +406,31 @@ async function renderQuiz() {
     ['unseen','Unseen'],['review_archived','Review archived'],['tag','By tag'],
   ].map(([v,l]) => `<option value="${v}"${v===S.quizMode?' selected':''}>${l}</option>`).join('');
 
+  const nOpts = [10, 20, 30, 50].map(n =>
+    `<option value="${n}"${n===S.quizN?' selected':''}>${n}</option>`).join('');
+
+  const run = S.quizRun;
+  let areaHtml;
+  if (run.active && S.currentQ) {
+    areaHtml = buildRunHeader() + buildQuestionCard(S.currentQ);
+  } else if (S.currentQ) {
+    areaHtml = buildQuestionCard(S.currentQ);
+  } else {
+    areaHtml = '<div class="empty" style="margin-top:2rem">Press "Next →" to start a run</div>';
+  }
+
   app().innerHTML = `
     <div style="display:grid;grid-template-columns:1fr 250px;height:100%;overflow:hidden">
       <div style="overflow-y:auto;padding:1.25rem 1rem" id="quiz-main">
         <div class="quiz-controls">
           <label>Mode<select id="quiz-mode-sel">${modeOpts}</select></label>
+          <label>Specialty<select id="quiz-spec-sel">${specOpts}</select></label>
           <label>Subject<select id="quiz-subj-sel">${opts}</select></label>
+          <label>Questions<select id="quiz-n-sel">${nOpts}</select></label>
           ${S.quizMode==='tag'&&S.quizTags?`<span class="badge badge-blue" style="align-self:flex-end">${esc(S.quizTags)}</span>`:''}
           <button class="btn btn-primary" id="quiz-next-btn">Next →</button>
         </div>
-        <div id="quiz-area">
-          ${S.currentQ ? buildQuestionCard(S.currentQ) : '<div class="empty" style="margin-top:2rem">Press "Next" to start</div>'}
-        </div>
+        <div id="quiz-area">${areaHtml}</div>
       </div>
       <div style="border-left:1px solid var(--border);overflow-y:auto;background:white" id="quiz-progress">
         ${buildProgressPanel()}
@@ -408,11 +438,55 @@ async function renderQuiz() {
     </div>`;
 
   el('quiz-next-btn').onclick = loadNextQ;
-  el('quiz-subj-sel').onchange = () => { S.quizSubject=el('quiz-subj-sel').value; S.quizTopic=''; loadNextQ(); };
-  el('quiz-mode-sel').onchange = () => { S.quizMode=el('quiz-mode-sel').value; };
+  el('quiz-n-sel').onchange = () => { S.quizN = +el('quiz-n-sel').value; };
+  el('quiz-mode-sel').onchange = () => { S.quizMode = el('quiz-mode-sel').value; resetRun(); };
+  el('quiz-spec-sel').onchange = () => {
+    S.quizSpecialty = el('quiz-spec-sel').value;
+    S.quizSubject = '';
+    const sp = S.specialties.find(s => s.specialty === S.quizSpecialty);
+    const pool = sp ? sp.subjects : S.subjects;
+    const subjSel = el('quiz-subj-sel');
+    if (subjSel) {
+      subjSel.innerHTML = '<option value="">All subjects</option>' +
+        pool.map(s => `<option value="${attr(s.subject)}">${esc(s.subject)}</option>`).join('');
+    }
+    resetRun();
+  };
+  el('quiz-subj-sel').onchange = () => { S.quizSubject = el('quiz-subj-sel').value; S.quizTopic = ''; resetRun(); };
   if (S.currentQ && S.answered) wireAnsweredState();
   wireQuizArea();
   wireProgressPanel();
+}
+
+function buildRunHeader() {
+  const run = S.quizRun;
+  const pos = run.position + 1;
+  const total = run.queue.length;
+  const pct = total ? Math.round(run.position / total * 100) : 0;
+  return `<div class="exam-header">
+    <span class="exam-counter">Q ${pos} / ${total}</span>
+    <div class="exam-bar"><div class="exam-bar-fill" style="width:${pct}%"></div></div>
+  </div>`;
+}
+
+async function startQuizRun() {
+  const area = el('quiz-area');
+  if (area) area.innerHTML = '<div class="loading">Preparing run…</div>';
+  try {
+    const params = { n: S.quizN, mode: S.quizMode, specialty: S.quizSpecialty, subject: S.quizSubject, topic: S.quizTopic };
+    if (S.quizMode === 'tag' && S.quizTags) params.tags = S.quizTags;
+    const d = await get('/quiz/batch', params);
+    if (!d.questions || !d.questions.length) {
+      if (area) area.innerHTML = '<div class="empty">No questions available for this selection.</div>';
+      return;
+    }
+    S.quizRun = { active: true, done: false, queue: d.questions, position: 0, originalN: d.questions.length, results: [], reinserted: new Set() };
+    S.currentQ = d.questions[0];
+    S.answered = false;
+    if (area) { area.innerHTML = buildRunHeader() + buildQuestionCard(S.currentQ); wireQuizArea(); }
+  } catch(e) {
+    if (area) area.innerHTML = `<div class="empty">Error: ${esc(e.message)}</div>`;
+  }
 }
 
 function buildProgressPanel() {
@@ -495,14 +569,8 @@ function wireProgressPanel() {
     if (!row) return;
     const sp = S.specialties.find(x => x.specialty === row.dataset.spec);
     if (!sp || !sp.subjects.length) return;
-    // Pick subject with most unseen questions
-    const bySubj = S.localStats?.by_subject || {};
-    let best = sp.subjects[0].subject, maxUnseen = 0;
-    sp.subjects.forEach(s => {
-      const u = s.question_count - (bySubj[s.subject]?.seen||0);
-      if (u > maxUnseen) { maxUnseen=u; best=s.subject; }
-    });
-    S.quizMode='unseen'; S.quizSubject=best; S.quizTopic=''; S.quizTags='';
+    S.quizMode = 'unseen'; S.quizSpecialty = sp.specialty; S.quizSubject = ''; S.quizTopic = ''; S.quizTags = '';
+    resetRun();
     renderQuiz().then(() => loadNextQ());
   };
 }
@@ -551,29 +619,29 @@ function wireAnsweredState() {
 }
 
 async function loadNextQ() {
-  if (el('quiz-mode-sel')) S.quizMode = el('quiz-mode-sel').value;
-  if (el('quiz-subj-sel')) S.quizSubject = el('quiz-subj-sel').value;
-  S.currentQ = null;
+  if (el('quiz-mode-sel')) S.quizMode     = el('quiz-mode-sel').value;
+  if (el('quiz-spec-sel')) S.quizSpecialty = el('quiz-spec-sel').value;
+  if (el('quiz-subj-sel')) S.quizSubject  = el('quiz-subj-sel').value;
+  if (el('quiz-n-sel'))    S.quizN        = +el('quiz-n-sel').value;
+
+  const run = S.quizRun;
+
+  if (!run.active) { await startQuizRun(); return; }
+
+  run.position++;
   S.answered = false;
 
-  const area = el('quiz-area');
-  if (area) area.innerHTML = '<div class="loading">Loading…</div>';
-
-  try {
-    const params = { mode: S.quizMode, subject: S.quizSubject, topic: S.quizTopic };
-    if (S.quizMode === 'tag' && S.quizTags) params.tags = S.quizTags;
-    const d = await get('/next', params);
-    updateStats(d.stats);
-    S.currentQ = d.question;
-    if (area) {
-      area.innerHTML = d.question
-        ? buildQuestionCard(d.question)
-        : '<div class="empty">No questions available for this selection.</div>';
-    }
-    wireQuizArea();
-  } catch (e) {
-    if (area) area.innerHTML = `<div class="empty">Error: ${esc(e.message)}</div>`;
+  if (run.position >= run.queue.length) {
+    run.active = false;
+    run.done = true;
+    S.currentQ = null;
+    renderQuizRunResults();
+    return;
   }
+
+  S.currentQ = run.queue[run.position];
+  const area = el('quiz-area');
+  if (area) { area.innerHTML = buildRunHeader() + buildQuestionCard(S.currentQ); wireQuizArea(); }
 }
 
 async function handleAnswer(letter) {
@@ -585,6 +653,20 @@ async function handleAnswer(letter) {
   const q = d.question;
   trackLocalAnswer(S.currentQ, d.is_correct);
   updateStats(d.stats);
+
+  const run = S.quizRun;
+  if (run.active) {
+    run.results.push({ question: S.currentQ, selected: letter, is_correct: d.is_correct });
+    if (!d.is_correct) {
+      if (!run.reinserted) run.reinserted = new Set();
+      if (!run.reinserted.has(S.currentQ.id)) {
+        run.reinserted.add(S.currentQ.id);
+        const delay = 3 + Math.floor(Math.random() * 3);
+        const insertAt = Math.min(run.position + 1 + delay, run.queue.length);
+        run.queue.splice(insertAt, 0, S.currentQ);
+      }
+    }
+  }
 
   document.querySelectorAll('.option-btn').forEach(b => {
     if (b.dataset.letter === q.correct)                b.classList.add('correct');
@@ -614,12 +696,68 @@ async function archiveCurrentQ() {
   loadNextQ();
 }
 
+function renderQuizRunResults() {
+  const run = S.quizRun;
+  const byId = {};
+  run.results.forEach(r => { byId[r.question.id] = r; });
+  const unique = Object.values(byId);
+  const total = unique.length;
+  const correct = unique.filter(r => r.is_correct).length;
+  const pct = total ? Math.round(correct / total * 100) : 0;
+  const incorrectQs = unique.filter(r => !r.is_correct).map(r => r.question);
+  const color = pct >= 70 ? 'var(--success)' : pct >= 50 ? 'var(--warn)' : 'var(--danger)';
+
+  const rows = unique.map(r => `
+    <div class="result-row ${r.is_correct ? 'correct' : 'incorrect'}">
+      <span class="result-icon">${r.is_correct ? '✓' : '✗'}</span>
+      <div class="result-body">
+        <div class="result-q">${esc(r.question.question.substring(0, 100))}${r.question.question.length > 100 ? '…' : ''}</div>
+        <div class="result-ans">
+          <span class="chip">${esc(r.question.subtopic)}</span>
+          ${diffBadge(r.question.difficulty)}
+        </div>
+      </div>
+    </div>`).join('');
+
+  app().innerHTML = `
+    <div class="full-width">
+      <div style="max-width:640px;margin:0 auto">
+        <div class="results-header">
+          <div class="results-score" style="color:${color}">${correct} / ${total}</div>
+          <div class="results-label">${pct}% correct this run</div>
+          <div class="btn-row" style="justify-content:center;margin-top:1rem">
+            ${incorrectQs.length ? `<button class="btn btn-danger" id="retry-wrong-btn">Repeat incorrect (${incorrectQs.length})</button>` : ''}
+            <button class="btn btn-primary" id="new-run-btn">New run</button>
+            <button class="btn btn-outline" id="back-quiz-btn">Quiz menu</button>
+          </div>
+        </div>
+        <div>${rows}</div>
+      </div>
+    </div>`;
+
+  if (incorrectQs.length) {
+    el('retry-wrong-btn').onclick = () => {
+      S.quizRun = { active: true, done: false, queue: [...incorrectQs], position: 0, originalN: incorrectQs.length, results: [], reinserted: new Set() };
+      S.currentQ = incorrectQs[0];
+      S.answered = false;
+      S.mode = 'quiz';
+      document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+      const nb = el('nav-quiz');
+      if (nb) nb.classList.add('active');
+      renderQuiz();
+    };
+  }
+  el('new-run-btn').onclick = () => { resetRun(); switchMode('quiz'); setTimeout(loadNextQ, 50); };
+  el('back-quiz-btn').onclick = () => { resetRun(); switchMode('quiz'); };
+}
+
 function switchToQuiz(subject, topic) {
-  S.quizSubject = subject || '';
-  S.quizTopic   = topic   || '';
-  S.quizMode    = 'normal';
-  S.currentQ    = null;
-  S.answered    = false;
+  S.quizSubject   = subject || '';
+  S.quizTopic     = topic   || '';
+  S.quizMode      = 'normal';
+  const sp = S.specialties.find(s => s.subjects.some(sub => sub.subject === subject));
+  S.quizSpecialty = sp ? sp.specialty : '';
+  resetRun();
   switchMode('quiz');
   setTimeout(loadNextQ, 50);
 }
@@ -820,7 +958,7 @@ function renderExamResults(d) {
     </div>`;
 
   el('new-exam-btn').onclick = () => { S.examDone=false; S.examActive=false; renderExamStart(); };
-  el('review-wrong-btn').onclick = () => { S.quizMode='weak'; switchMode('quiz'); setTimeout(loadNextQ,50); };
+  el('review-wrong-btn').onclick = () => { S.quizMode='weak'; S.quizSpecialty=''; S.quizSubject=''; resetRun(); switchMode('quiz'); setTimeout(loadNextQ,50); };
   el('results-list').onclick = e => {
     const row = e.target.closest('[data-qidx]');
     if (row) openChain(d.results[+row.dataset.qidx].question_id);
@@ -831,9 +969,6 @@ function renderExamResults(d) {
 // EXPLORE MODE
 // =============================================================
 async function renderExplore() {
-  // Auto-expand all specialties on first render
-  if (S.openExploreSpec.size === 0)
-    S.specialties.forEach(sp => S.openExploreSpec.add(sp.specialty));
 
   app().innerHTML = `
     <div class="pane-layout">
@@ -920,7 +1055,10 @@ async function loadExploreSubject(subject) {
       else if (act === 'quiz')        switchToQuiz(subject);
       else if (act === 'quiz-tag') {
         S.quizMode = 'tag'; S.quizTags = [...S.activeTags].join(',');
-        S.quizSubject = subject; switchMode('quiz'); setTimeout(loadNextQ, 50);
+        S.quizSubject = subject; S.quizSpecialty = '';
+        const spObj = S.specialties.find(s => s.subjects.some(sub => sub.subject === subject));
+        if (spObj) S.quizSpecialty = spObj.specialty;
+        resetRun(); switchMode('quiz'); setTimeout(loadNextQ, 50);
       }
       return;
     }
@@ -1195,8 +1333,8 @@ async function openStats() {
   if (arc) wireArchivedList(arc);
   const qwb = el('quiz-wrong-btn');
   if (qwb) qwb.onclick = () => {
-    S.quizMode = 'weak'; S.quizTags = '';
-    closeModal(); switchMode('quiz'); setTimeout(loadNextQ, 50);
+    S.quizMode = 'weak'; S.quizTags = ''; S.quizSpecialty = ''; S.quizSubject = '';
+    closeModal(); resetRun(); switchMode('quiz'); setTimeout(loadNextQ, 50);
   };
 }
 
@@ -1215,8 +1353,8 @@ async function openArchive() {
     </div>
     <div id="archive-list">${buildArchivedList(_D.questions)}</div>`;
   el('quiz-archived-btn').onclick = () => {
-    S.quizMode = 'review_archived'; S.quizTags = '';
-    closeModal(); switchMode('quiz'); setTimeout(loadNextQ, 50);
+    S.quizMode = 'review_archived'; S.quizTags = ''; S.quizSpecialty = ''; S.quizSubject = '';
+    closeModal(); resetRun(); switchMode('quiz'); setTimeout(loadNextQ, 50);
   };
   wireArchivedList(el('archive-list'));
 }
@@ -1277,8 +1415,8 @@ async function renderProfile() {
         </div>
         <span style="font-size:.78rem;text-align:center;color:${accColor};font-weight:600">${seen?acc+'%':'—'}</span>
         <div style="display:flex;flex-direction:column;gap:3px">
-          <button class="btn btn-primary btn-sm" style="padding:2px 6px;font-size:.7rem" data-prof-quiz="${attr(sp.subjects[0]?.subject||'')}">Quiz</button>
-          <button class="btn btn-outline btn-sm" style="padding:2px 6px;font-size:.7rem" data-prof-unseen="${attr(sp.subjects[0]?.subject||'')}">Unseen</button>
+          <button class="btn btn-primary btn-sm" style="padding:2px 6px;font-size:.7rem" data-prof-quiz="${attr(sp.specialty)}">Quiz</button>
+          <button class="btn btn-outline btn-sm" style="padding:2px 6px;font-size:.7rem" data-prof-unseen="${attr(sp.specialty)}">Unseen</button>
         </div>
       </div>`;
   }).join('');
@@ -1333,25 +1471,25 @@ async function renderProfile() {
 
   // Wire action buttons
   const wb = el('prof-weak');
-  if (wb) wb.onclick = () => { S.quizMode='weak'; S.quizTags=''; switchMode('quiz'); setTimeout(loadNextQ,50); };
+  if (wb) wb.onclick = () => { S.quizMode='weak'; S.quizTags=''; S.quizSpecialty=''; S.quizSubject=''; resetRun(); switchMode('quiz'); setTimeout(loadNextQ,50); };
   const ab = el('prof-archive');
   if (ab) ab.onclick = openArchive;
   const ub = el('prof-unseen');
-  if (ub) ub.onclick = () => { S.quizMode='unseen'; S.quizSubject=''; S.quizTags=''; switchMode('quiz'); setTimeout(loadNextQ,50); };
+  if (ub) ub.onclick = () => { S.quizMode='unseen'; S.quizSpecialty=''; S.quizSubject=''; S.quizTags=''; resetRun(); switchMode('quiz'); setTimeout(loadNextQ,50); };
 
   // Per-specialty quiz buttons
   document.querySelectorAll('[data-prof-quiz]').forEach(btn => {
     btn.onclick = e => {
       e.stopPropagation();
-      S.quizMode='normal'; S.quizSubject=btn.dataset.profQuiz; S.quizTags='';
-      switchMode('quiz'); setTimeout(loadNextQ,50);
+      S.quizMode='normal'; S.quizSpecialty=btn.dataset.profQuiz; S.quizSubject=''; S.quizTags='';
+      resetRun(); switchMode('quiz'); setTimeout(loadNextQ,50);
     };
   });
   document.querySelectorAll('[data-prof-unseen]').forEach(btn => {
     btn.onclick = e => {
       e.stopPropagation();
-      S.quizMode='unseen'; S.quizSubject=btn.dataset.profUnseen; S.quizTags='';
-      switchMode('quiz'); setTimeout(loadNextQ,50);
+      S.quizMode='unseen'; S.quizSpecialty=btn.dataset.profUnseen; S.quizSubject=''; S.quizTags='';
+      resetRun(); switchMode('quiz'); setTimeout(loadNextQ,50);
     };
   });
 }
