@@ -2,7 +2,7 @@
 pip install flask
 python app.py  ->  http://localhost:5000
 """
-import sys, json, uuid, random
+import sys, json, uuid, random, time
 from pathlib import Path
 from flask import Flask, request, jsonify, send_from_directory
 
@@ -14,6 +14,8 @@ app = Flask(__name__)
 ROOT = Path(__file__).parent
 SESSIONS_DIR = ROOT / "sessions"
 SESSIONS_DIR.mkdir(exist_ok=True)
+RUNS_DIR = ROOT / "runs"
+RUNS_DIR.mkdir(exist_ok=True)
 
 print("Loading engine...")
 IDX = load_engine()
@@ -53,6 +55,7 @@ SPECIALTY_DISPLAY = {
 # ---------------------------------------------------------------------------
 
 def _spath(sid): return SESSIONS_DIR / f"{sid}.json"
+def _rpath(rid): return RUNS_DIR     / f"{rid}.json"
 
 def _load(sid):
     p = _spath(sid)
@@ -550,6 +553,76 @@ def exam_submit():
     return jsonify({"score": score, "total": total,
                     "percentage": round(score / total * 100, 1) if total else 0,
                     "results": results, "stats": _stats(session)})
+
+# ---------------------------------------------------------------------------
+# Quiz run persistence
+# ---------------------------------------------------------------------------
+
+@app.route("/runs/save", methods=["POST"])
+def runs_save():
+    data   = request.get_json(force=True, silent=True) or {}
+    sid    = data.get("session_id", "default")
+    run_id = data.get("run_id")
+    if not run_id:
+        return jsonify({"error": "run_id required"}), 400
+    payload = {
+        "run_id":       run_id,
+        "session_id":   sid,
+        "updated_at":   time.time(),
+        "mode":         data.get("mode", "normal"),
+        "subject":      data.get("subject", ""),
+        "specialty":    data.get("specialty", ""),
+        "timer_mode":   data.get("timer_mode", ""),
+        "question_ids": data.get("question_ids", []),
+        "position":     data.get("position", 0),
+        "results":      data.get("results", []),
+        "done":         bool(data.get("done", False)),
+        "n":            data.get("n", 20),
+    }
+    _rpath(run_id).write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    return jsonify({"ok": True})
+
+@app.route("/runs/recent")
+def runs_recent():
+    sid = request.args.get("session_id", "default")
+    runs = []
+    for p in RUNS_DIR.glob("*.json"):
+        try:
+            d = json.loads(p.read_text(encoding="utf-8"))
+            if d.get("session_id") == sid:
+                runs.append(d)
+        except Exception:
+            pass
+    runs.sort(key=lambda r: r.get("updated_at", 0), reverse=True)
+    return jsonify(runs[:5])
+
+@app.route("/runs/load/<run_id>")
+def runs_load(run_id):
+    sid = request.args.get("session_id", "default")
+    p = _rpath(run_id)
+    if not p.exists():
+        return jsonify({"error": "not found"}), 404
+    d = json.loads(p.read_text(encoding="utf-8"))
+    if d.get("session_id") != sid:
+        return jsonify({"error": "forbidden"}), 403
+    return jsonify(d)
+
+@app.route("/questions/hydrate", methods=["POST"])
+def questions_hydrate():
+    data = request.get_json(force=True, silent=True) or {}
+    ids  = data.get("ids", [])
+    out  = []
+    for qid in ids:
+        if qid.startswith("exam_"):
+            try:
+                qe = IDX.exam_questions.get(int(qid[5:]))
+                if qe: out.append(_eq_norm(qe, reveal=False))
+            except (ValueError, TypeError):
+                pass
+        else:
+            q = IDX.questions.get(qid)
+            if q: out.append(_q(q, reveal=False))
+    return jsonify(out)
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000, use_reloader=False)

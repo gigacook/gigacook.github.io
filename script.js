@@ -13,6 +13,7 @@ const S = {
   quizN: 20,
   quizSpecialty: '',
   timerMode: 'nerd',
+  quizRunId: null,
   totalScore: +(localStorage.getItem('kir_score') || 0),
   quizRun: { active: false, done: false, queue: [], position: 0, originalN: 0, results: [], reinserted: null },
 
@@ -91,10 +92,35 @@ function updateStats(st) {
   if (panel) { panel.innerHTML = buildProgressPanel(); wireProgressPanel(); }
 }
 
+function genId() {
+  return 'r' + Math.random().toString(36).slice(2, 9) + Date.now().toString(36);
+}
+
 function resetRun() {
   S.quizRun = { active: false, done: false, queue: [], position: 0, originalN: 0, results: [], reinserted: null };
   S.currentQ = null;
   S.answered = false;
+  S.quizRunId = null;
+}
+
+async function saveRun() {
+  const run = S.quizRun;
+  if (!S.quizRunId || (!run.active && !run.done)) return;
+  const results = run.results
+    .filter(r => r.question)
+    .map(r => ({ id: r.question.id, correct: r.is_correct, score: r.score || 0, timedOut: r.timedOut || false }));
+  post('/runs/save', {
+    run_id:       S.quizRunId,
+    mode:         S.quizMode,
+    subject:      S.quizSubject,
+    specialty:    S.quizSpecialty,
+    timer_mode:   S.timerMode,
+    question_ids: run.queue.map(q => q.id),
+    position:     run.position,
+    results,
+    done:         run.done,
+    n:            run.originalN,
+  }).catch(() => {});
 }
 
 function calcScore(diff, correct) {
@@ -207,6 +233,7 @@ async function handleQTimeout() {
   if (actions) actions.innerHTML = `<button class="btn btn-primary" data-qa="next">Next →</button>
     <button class="btn btn-outline btn-sm" data-qa="archive">Archive</button>
     <button class="btn btn-ghost btn-sm" data-qa="chain">Topic chain</button>`;
+  saveRun();
 }
 
 function handleExamTimeout() {
@@ -510,6 +537,128 @@ async function loadStudyTopic(subject, topic) {
 }
 
 // =============================================================
+// QUIZ RUN SESSIONS
+// =============================================================
+const MODE_META = {
+  normal:          { icon: '🎯', label: 'Normal' },
+  high_yield:      { icon: '⭐', label: 'High Yield' },
+  weak:            { icon: '💪', label: 'Weak' },
+  unseen:          { icon: '🆕', label: 'Unseen' },
+  review_archived: { icon: '📁', label: 'Archived' },
+  tag:             { icon: '🏷', label: 'By tag' },
+};
+
+async function loadRecentRuns() {
+  try { return await get('/runs/recent'); } catch(_) { return []; }
+}
+
+function buildRunCard(run) {
+  const meta    = MODE_META[run.mode] || { icon: '🎯', label: run.mode };
+  const total   = (run.question_ids || []).length;
+  const pos     = run.position || 0;
+  const correct = (run.results || []).filter(r => r.correct).length;
+  const ans     = (run.results || []).length;
+  const acc     = ans ? Math.round(correct / ans * 100) : null;
+  const pct     = total ? Math.round(pos / total * 100) : 0;
+  const subj    = run.subject || '';
+  const statTxt = run.done
+    ? (acc !== null ? acc + '% acc' : 'Done')
+    : `Q ${pos} / ${total}`;
+
+  return `<div class="run-card${run.done ? ' run-card-done' : ''}" data-resume="${run.run_id}">
+    <div class="run-card-icon">${meta.icon}</div>
+    <div class="run-card-body">
+      <div class="run-card-mode">${meta.label}</div>
+      ${subj ? `<div class="run-card-subj">${esc(subj)}</div>` : ''}
+      <div class="run-card-stat">${statTxt}</div>
+      ${!run.done && total ? `<div class="run-card-bar"><div class="run-card-fill" style="width:${pct}%"></div></div>` : ''}
+    </div>
+    ${!run.done ? '<span class="run-card-resume">▶</span>' : ''}
+  </div>`;
+}
+
+function buildRecentRunsHtml(runs) {
+  if (!runs.length) return '';
+  const incompleteRun = runs.find(r => !r.done);
+  let html = '';
+
+  if (incompleteRun && !S.quizRun.active) {
+    const meta  = MODE_META[incompleteRun.mode] || { icon: '🎯', label: incompleteRun.mode };
+    const total = (incompleteRun.question_ids || []).length;
+    const pos   = incompleteRun.position || 0;
+    const subj  = incompleteRun.subject ? ' · ' + incompleteRun.subject : '';
+    html += `<div class="continue-banner" id="continue-banner">
+      <span>${meta.icon} <strong>${meta.label}${subj}</strong> — Q${pos}/${total}</span>
+      <button class="btn btn-primary btn-sm" data-resume="${incompleteRun.run_id}">Resume</button>
+      <button class="btn btn-outline btn-sm" id="dismiss-continue">Start new</button>
+    </div>`;
+  }
+
+  html += `<div class="recent-runs-wrap">
+    <div class="section-header" style="margin-top:.5rem;margin-bottom:.4rem">Recent sessions</div>
+    <div class="recent-runs-list">${runs.map(buildRunCard).join('')}</div>
+  </div>`;
+  return html;
+}
+
+function wireRecentRuns() {
+  const area = el('recent-runs-area');
+  if (!area) return;
+  area.onclick = e => {
+    const resumeBtn = e.target.closest('[data-resume]');
+    if (resumeBtn) { resumeRun(resumeBtn.dataset.resume); return; }
+    const dismiss = e.target.closest('#dismiss-continue');
+    if (dismiss) { const b = el('continue-banner'); if (b) b.remove(); }
+  };
+}
+
+async function resumeRun(runId) {
+  try {
+    const runData = await get(`/runs/load/${runId}`);
+    if (!runData?.question_ids?.length) return;
+
+    const questions = await post('/questions/hydrate', { ids: runData.question_ids });
+    if (!questions?.length) return;
+
+    const qById = {};
+    questions.forEach(q => { qById[q.id] = q; });
+
+    const fullResults = (runData.results || []).map(r => ({
+      question:   qById[r.id] || { id: r.id },
+      selected:   null,
+      is_correct: r.correct,
+      score:      r.score || 0,
+      timedOut:   r.timedOut || false,
+    }));
+
+    S.quizRunId     = runId;
+    S.quizMode      = runData.mode      || 'normal';
+    S.quizSubject   = runData.subject   || '';
+    S.quizSpecialty = runData.specialty || '';
+    S.timerMode     = runData.timer_mode || '';
+    S.quizN         = runData.n         || questions.length;
+    S.quizRun = {
+      active:    !runData.done,
+      done:      !!runData.done,
+      queue:     questions,
+      position:  runData.position || 0,
+      originalN: runData.n || questions.length,
+      results:   fullResults,
+      reinserted: new Set(),
+    };
+    S.currentQ = runData.done ? null : (questions[runData.position] || null);
+    S.answered = false;
+
+    switchMode('quiz');
+    if (!runData.done && S.currentQ) {
+      const area = el('quiz-area');
+      if (area) { area.innerHTML = buildRunHeader() + buildTimerBar() + buildQuestionCard(S.currentQ); wireQuizArea(); }
+      const cfg = TIMER_CFG[S.timerMode]; if (cfg) startQTimer(cfg.s, handleQTimeout);
+    }
+  } catch(e) { console.warn('resumeRun failed', e); }
+}
+
+// =============================================================
 // QUIZ MODE
 // =============================================================
 async function renderQuiz() {
@@ -566,6 +715,7 @@ async function renderQuiz() {
           <button class="btn btn-primary" id="quiz-next-btn">Next →</button>
         </div>
         <div id="quiz-area">${areaHtml}</div>
+        <div id="recent-runs-area" style="margin-top:.75rem"></div>
       </div>
       <div style="border-left:1px solid var(--border);overflow-y:auto;background:white" id="quiz-progress">
         ${buildProgressPanel()}
@@ -592,6 +742,12 @@ async function renderQuiz() {
   wireQuizArea();
   wireProgressPanel();
   wireDiffPanel('diff-panel-quiz');
+  if (!S.quizRun.active) {
+    loadRecentRuns().then(runs => {
+      const area = el('recent-runs-area');
+      if (area && runs.length) { area.innerHTML = buildRecentRunsHtml(runs); wireRecentRuns(); }
+    });
+  }
 }
 
 function buildRunHeader() {
@@ -617,6 +773,7 @@ async function startQuizRun() {
       return;
     }
     S.quizRun = { active: true, done: false, queue: d.questions, position: 0, originalN: d.questions.length, results: [], reinserted: new Set() };
+    S.quizRunId = genId();
     S.currentQ = d.questions[0];
     S.answered = false;
     if (area) { area.innerHTML = buildRunHeader() + buildTimerBar() + buildQuestionCard(S.currentQ); wireQuizArea(); }
@@ -772,6 +929,7 @@ async function loadNextQ() {
     run.active = false;
     run.done = true;
     S.currentQ = null;
+    saveRun();
     renderQuizRunResults();
     return;
   }
@@ -829,6 +987,7 @@ async function handleAnswer(letter) {
     <button class="btn btn-primary" data-qa="next">Next →</button>
     <button class="btn btn-outline btn-sm" data-qa="archive">Archive</button>
     <button class="btn btn-ghost btn-sm" data-qa="chain">Topic chain</button>`;
+  saveRun();
 }
 
 async function archiveCurrentQ() {
@@ -1494,22 +1653,119 @@ async function openStats() {
 async function openArchive() {
   openModal('<div class="loading">Loading archived…</div>');
   const d = await get('/stats');
+  S.localStats = d;
   _D.questions = d.archived_list || [];
+
   if (!_D.questions.length) {
     el('modal-body').innerHTML = '<div class="modal-title">Archived Questions</div><div class="empty">No archived questions</div>';
     return;
   }
-  el('modal-body').innerHTML = `
-    <div class="modal-title">Archived Questions (${_D.questions.length})</div>
-    <div class="btn-row" style="margin-bottom:1rem">
-      <button class="btn btn-primary btn-sm" id="quiz-archived-btn">Quiz archived questions</button>
-    </div>
-    <div id="archive-list">${buildArchivedList(_D.questions)}</div>`;
-  el('quiz-archived-btn').onclick = () => {
-    S.quizMode = 'review_archived'; S.quizTags = ''; S.quizSpecialty = ''; S.quizSubject = '';
-    closeModal(); resetRun(); switchMode('quiz'); setTimeout(loadNextQ, 50);
-  };
-  wireArchivedList(el('archive-list'));
+
+  // All 10 specialties always shown; add Old Exam pill only if present in archived list
+  const presentSpecKeys = [...new Set(_D.questions.map(q => q.specialty).filter(Boolean))];
+  const specDefs = [
+    ...S.specialties,
+    ...(presentSpecKeys.includes('old_exam') ? [{ specialty: 'old_exam', display_name: 'Old Exam' }] : []),
+  ];
+
+  const activeSpecs = new Set(specDefs.map(sp => sp.specialty)); // all ON by default
+  const selected    = new Set();                                  // selected question IDs
+
+  function visible() {
+    return _D.questions.filter(q => !q.specialty || activeSpecs.has(q.specialty));
+  }
+
+  async function quizSelected(qids) {
+    const qs = await post('/questions/hydrate', { ids: qids });
+    if (!qs?.length) return;
+    const shuffled = [...qs].sort(() => Math.random() - 0.5);
+    S.quizMode = 'review_archived'; S.quizSubject = ''; S.quizSpecialty = ''; S.quizTags = '';
+    S.quizRun  = { active: true, done: false, queue: shuffled, position: 0, originalN: shuffled.length, results: [], reinserted: new Set() };
+    S.quizRunId = genId();
+    S.currentQ  = shuffled[0];
+    S.answered  = false;
+    closeModal();
+    switchMode('quiz');
+    const area = el('quiz-area');
+    if (area) { area.innerHTML = buildRunHeader() + buildTimerBar() + buildQuestionCard(S.currentQ); wireQuizArea(); }
+    const cfg = TIMER_CFG[S.timerMode]; if (cfg) startQTimer(cfg.s, handleQTimeout);
+  }
+
+  function render() {
+    const vis    = visible();
+    const selVis = vis.filter(q => selected.has(q.id));
+    const total  = _D.questions.length;
+    const nVis   = vis.length;
+    const nSel   = selVis.length;
+
+    const specPills = specDefs.map(sp => {
+      const on  = activeSpecs.has(sp.specialty);
+      const has = presentSpecKeys.includes(sp.specialty);
+      return `<button class="arch-spec-pill${on ? ' on' : ''}${has ? '' : ' arch-pill-empty'}" data-arch-spec="${attr(sp.specialty)}">${esc(sp.display_name)}</button>`;
+    }).join('');
+
+    const quizLabel = nSel > 0 ? `Quiz Selected (${nSel})` : `Quiz All ${total} questions`;
+
+    const cards = vis.map((q, i) => {
+      const sel = selected.has(q.id);
+      return `<div class="arch-card${sel ? ' arch-selected' : ''}" data-arch-idx="${i}">
+        <span class="arch-check${sel ? ' on' : ''}"></span>
+        <div class="q-text" style="flex:1;font-size:.84rem;line-height:1.45;pointer-events:none">${esc((q.question||'').substring(0, 100))}…</div>
+        <button class="btn btn-outline btn-sm arch-restore" data-arch-restore="${i}">Restore</button>
+      </div>`;
+    }).join('') || '<div class="empty">No questions for selected specialties</div>';
+
+    el('modal-body').innerHTML = `
+      <div class="modal-title">Archived Questions (${total})</div>
+      ${specPills ? `<div class="arch-spec-bar">${specPills}</div>` : ''}
+      <div class="btn-row" style="margin-bottom:.75rem;flex-wrap:wrap">
+        <button class="btn btn-primary btn-sm" id="arch-quiz-btn">${quizLabel}</button>
+        <button class="btn btn-outline btn-sm" id="arch-mark-all">Mark All ${nVis}</button>
+        <button class="btn btn-ghost btn-sm"   id="arch-unmark-all">Unmark All</button>
+      </div>
+      <div id="archive-list">${cards}</div>`;
+
+    el('modal-body').querySelectorAll('[data-arch-spec]').forEach(pill => {
+      pill.onclick = () => {
+        const sp = pill.dataset.archSpec;
+        if (activeSpecs.has(sp)) activeSpecs.delete(sp); else activeSpecs.add(sp);
+        render();
+      };
+    });
+
+    el('arch-quiz-btn').onclick = () => {
+      if (nSel > 0) { quizSelected(selVis.map(q => q.id)); return; }
+      S.quizMode = 'review_archived'; S.quizTags = ''; S.quizSpecialty = ''; S.quizSubject = '';
+      closeModal(); resetRun(); switchMode('quiz'); setTimeout(loadNextQ, 50);
+    };
+    el('arch-mark-all').onclick   = () => { vis.forEach(q => selected.add(q.id)); render(); };
+    el('arch-unmark-all').onclick = () => { selected.clear(); render(); };
+
+    el('archive-list').onclick = async e => {
+      // Restore button — must check first
+      const restoreBtn = e.target.closest('.arch-restore');
+      if (restoreBtn) {
+        const q = vis[+restoreBtn.dataset.archRestore];
+        if (!q) return;
+        const d2 = await post('/restore', { question_id: q.id });
+        updateStats(d2.stats);
+        _D.questions = _D.questions.filter(qq => qq.id !== q.id);
+        selected.delete(q.id);
+        render();
+        return;
+      }
+      // Card click — toggle selection
+      const card = e.target.closest('[data-arch-idx]');
+      if (card) {
+        const q = vis[+card.dataset.archIdx];
+        if (!q) return;
+        if (selected.has(q.id)) selected.delete(q.id); else selected.add(q.id);
+        render();
+      }
+    };
+  }
+
+  render();
 }
 
 function buildArchivedList(questions) {

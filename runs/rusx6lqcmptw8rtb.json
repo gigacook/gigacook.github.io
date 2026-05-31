@@ -1,0 +1,43 @@
+{
+  "run_id": "rusx6lqcmptw8rtb",
+  "session_id": "db209b62-69dc-418b-afed-9fed4c5a0101",
+  "updated_at": 1780238857.6807086,
+  "mode": "normal",
+  "subject": "",
+  "specialty": "",
+  "timer_mode": "nerd",
+  "question_ids": [
+    "KIR_ANESTESI_143",
+    "KIR_HANDKIRURGI_031",
+    "KIR_ORTOPEDI_121",
+    "KIR_ENDOKRINKIRURGI_079",
+    "KIR_ONKOLOGI_064",
+    "KIR_ONKOLOGI_049",
+    "KIR_ANESTESI_050",
+    "KIR_PLASTIKKIRURGI_071",
+    "KIR_ORTOPEDI_085",
+    "KIR_SMR_003",
+    "KIR_HANDKIRURGI_085",
+    "KIR_019",
+    "KIR_TRF_067",
+    "KIR_SMR_017",
+    "KIR_ANESTESI_027",
+    "KIR_159",
+    "KIR_TRF_067",
+    "KIR_ANESTESI_063",
+    "KIR_ORTOPEDI_148",
+    "KIR_ORTOPEDI_160",
+    "KIR_ANESTESI_010"
+  ],
+  "position": 21,
+  "results": [
+    {
+      "id": "KIR_TRF_067",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    }
+  ],
+  "done": true,
+  "n": 20
+}
