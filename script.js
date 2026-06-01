@@ -413,12 +413,15 @@ function filterStudySubjects() {
   buildSpecialtySidebar('subj-list', S.specialties, 'study');
 }
 
-function loadSpecialtyOverview(specKey) {
+async function loadSpecialtyOverview(specKey) {
   S.browseSpecialty = specKey;
   const sp = S.specialties.find(s => s.specialty === specKey);
   const sc = el('study-content');
   if (!sp || !sc) return;
 
+  if (!S.localStats) {
+    try { S.localStats = await get('/stats'); } catch(_) { S.localStats = { by_subject: {} }; }
+  }
   const bySubj = S.localStats?.by_subject || {};
   let totalSeen = 0, totalCorrect = 0;
   sp.subjects.forEach(s => {
@@ -452,11 +455,10 @@ function loadSpecialtyOverview(specKey) {
           <span>${sp.question_count} questions</span>
           <span class="dot-sep"></span>
           <span>${sp.subjects.length} subject${sp.subjects.length !== 1 ? 's' : ''}</span>
-          ${totalSeen ? `<span class="dot-sep"></span><span>${totalSeen} seen &nbsp;·&nbsp; ${pctSeen}% covered</span>` : ''}
+          <span class="dot-sep"></span><span>${totalSeen} seen &nbsp;·&nbsp; ${pctSeen}% covered</span>
         </div>
       </div>
 
-      ${totalSeen ? `
       <div class="spec-ov-progress">
         <div class="spec-ov-stat-row">
           <span class="spec-ov-lbl">Seen</span>
@@ -468,7 +470,7 @@ function loadSpecialtyOverview(specKey) {
           <div class="spec-ov-bar-wrap"><div class="spec-ov-bar-fill" style="width:${pctAcc}%;background:${accColor}"></div></div>
           <span class="spec-ov-val">${pctAcc}%</span>
         </div>
-      </div>` : ''}
+      </div>
 
       <div class="spec-ov-actions">
         <button class="btn btn-primary btn-sm" data-sq="">Quiz All</button>

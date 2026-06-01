@@ -34,6 +34,7 @@ class MatrixEntity:
     area: str
     entity: str
     tags: list[str]
+    subtopic_links: list[str]
     when_to_suspect: list[str]
     discriminators: list[str]
     investigation: list[str]

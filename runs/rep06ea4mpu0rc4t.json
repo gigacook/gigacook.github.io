@@ -1,0 +1,42 @@
+{
+  "run_id": "rep06ea4mpu0rc4t",
+  "session_id": "db209b62-69dc-418b-afed-9fed4c5a0101",
+  "updated_at": 1780246431.3022914,
+  "mode": "normal",
+  "subject": "",
+  "specialty": "",
+  "timer_mode": "alien",
+  "question_ids": [
+    "KIR_PLASTIKKIRURGI_041",
+    "KIR_043",
+    "KIR_022",
+    "KIR_UROLOGI_016",
+    "KIR_KÄRLKIRURGI_085",
+    "KIR_ONKOLOGI_052",
+    "KIR_UROLOGI_070",
+    "KIR_ONKOLOGI_018",
+    "KIR_PLASTIKKIRURGI_077",
+    "KIR_ANESTESI_100",
+    "KIR_ANESTESI_110",
+    "KIR_109",
+    "KIR_HANDKIRURGI_030",
+    "KIR_SMR_030",
+    "KIR_ONKOLOGI_058",
+    "KIR_145",
+    "KIR_PLASTIKKIRURGI_081",
+    "KIR_SMR_028",
+    "KIR_UROLOGI_052",
+    "KIR_ENDOKRINKIRURGI_063"
+  ],
+  "position": 0,
+  "results": [
+    {
+      "id": "KIR_PLASTIKKIRURGI_041",
+      "correct": true,
+      "score": 250,
+      "timedOut": false
+    }
+  ],
+  "done": false,
+  "n": 20
+}

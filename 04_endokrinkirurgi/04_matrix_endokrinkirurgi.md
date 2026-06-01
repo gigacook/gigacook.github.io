@@ -1,700 +1,586 @@
 - area: Tyreoidea
-- entity: Radiologiskt benign knöl (TIRADS 1-2)
+- entity: TIRADS och tyreoideaknöl
+- subtopic_links:
+  - Utredning och diagnostik
 - tags:
-  - förändring
-  - godartad
   - radiologi
   - tyreoidea
 - when_to_suspect:
-  - Asymtomatisk knöl utan riskfaktorer.
+  - Ultraljud av knöl i sköldkörteln
 - discriminators:
-  - UL: TIRADS 1-2.
+  - TIRADS 1-2: Benignt mönster, ska ALDRIG punkteras med cytologi oavsett storlek
+  - TIRADS 3-5: FNA vid >1-2 cm beroende på grad
 - investigation:
-  - Ultraljud hals.
+  - Ultraljud hals enligt TIRADS
 - initial_management:
-  - Ingen cytologi krävs.
-  - Remiss åter inremitterande.
+  - TIRADS 1-2: Remiss åter inremitterande, exspektans
 - definitive_management:
-  - Exspektans/släpps.
+  - TIRADS 3-5: FNA för cytologi
 - complications:
 - pitfalls:
-  - Överdiagnostik/onödiga stick.
-- memory_hooks: 
+  - Att ta cytologi på TIRADS 2-cysta (atypi pga blödning kan leda till onödig op)
+- memory_hooks:
+  - TIRADS 1-2 = Aldrig FNA
+
 ---
 - area: Tyreoidea
 - entity: Follikulär neoplasi (Bethesda IV)
+- subtopic_links:
+  - Tyreoideacancer
+  - Utredning och diagnostik
 - tags:
   - cytologi
-  - oklar
   - tyreoidea
 - when_to_suspect:
-  - Cytologisvar efter FNA av tyreoideaknöl.
+  - Cytologisvar efter FNA av tyreoideaknöl
 - discriminators:
-  - Cytologi (enskilda celler) kan ej avgöra om kapsel/kärlinvasion föreligger.
+  - Cytologi kan ej avgöra om kapsel- eller kärlinvasion föreligger
+  - Kräver vävnadsdiagnos via operation
 - investigation:
-  - UL + FNA.
+  - UL och FNA
 - initial_management:
-  - Diagnostisk hemityreoidektomi för PAD.
+  - Diagnostisk hemityreoidektomi för PAD
 - definitive_management:
-  - Om cancer: kompletterande op + radiojod.
+  - Om cancer: kompletterande op och radiojod
 - complications:
-  - Malignitet kan ej uteslutas utan op.
+  - Malignitet kan ej uteslutas utan operation
 - pitfalls:
-  - Tentafälla: Gör ej total tx direkt, är ofta benignt adenom.
-- memory_hooks: 
+  - Att göra total tyreoideektomi direkt (är ofta benignt adenom)
+- memory_hooks:
+  - Bethesda IV = hemityreoidektomi för PAD, inte total direkt
+
 ---
 - area: Tyreoidea
 - entity: Papillär tyreoideacancer
+- subtopic_links:
+  - Tyreoideacancer
 - tags:
   - malignitet
   - tyreoidea
 - when_to_suspect:
-  - Knöl hos barn/unga (uteslut alltid!).
+  - Knöl hos barn och unga (uteslut alltid)
+  - Lymfkörtelförstoring på halsen
 - discriminators:
-  - Tyreoglobulin (Tg) som markör.
-  - Ofta spridning till lymfkörtlar hals.
+  - Tyreoglobulin (Tg) som tumörmarkör
+  - Ofta spridning till lymfkörtlar på halsen
 - investigation:
-  - SVF.
-  - UL + FNA.
+  - SVF, UL och FNA
 - initial_management:
-  - Operationsplanering (MDK).
+  - Operationsplanering via MDK
 - definitive_management:
-  - Total/hemi-tx.
-  - Adjuvant radiojod.
-  - Följs med Tg.
+  - Total eller hemityreoidektomi
+  - Adjuvant radiojod
+  - Följs med Tg-nivåer
 - complications:
-  - Pre-op heshet är alarmsymtom för inväxt i nerv.
+  - Pre-op heshet = alarmsymtom för inväxt i n. laryngeus recurrens
 - pitfalls:
-  - Follikulär cancer.
-- memory_hooks: 
+  - Att inte laryngoskopera pre-op
+- memory_hooks:
+  - Tg = tumörmarkör vid papillär cancer
+
 ---
 - area: Tyreoidea
 - entity: Anaplastisk tyreoideacancer
+- subtopic_links:
+  - Tyreoideacancer
 - tags:
-  - kirurgi
   - malignitet
   - tyreoidea
 - when_to_suspect:
-  - Äldre patient, snabbväxande hård resistens.
+  - Äldre patient med snabbväxande hård resistens på halsen
 - discriminators:
-  - Extremt låg differentiering.
+  - Extremt låg differentiering
 - investigation:
-  - UL + FNA.
+  - UL och FNA
 - initial_management:
-  - Cytostatika/strålning innan ev op.
+  - Cytostatika och strålning innan eventuell operation
 - definitive_management:
-  - Kirurgi om möjligt, annars palliation.
+  - Kirurgi om möjligt, annars palliation
 - complications:
-  - Mycket dålig prognos, överlevnad nära noll.
+  - Mycket dålig prognos, medianöverlevnad månader
 - pitfalls:
-  - Godartad knölstruma.
-- memory_hooks: 
+  - Att förväxla med godartad knölstruma
+- memory_hooks:
+
 ---
 - area: Tyreoidea
-- entity: Graves sjukdom
+- entity: Hypertyreos (Graves och Toxisk nodös struma)
+- subtopic_links:
+  - Hypertyreos
+  - Utredning och diagnostik
 - tags:
   - hypertyreos
   - tyreoidea
 - when_to_suspect:
-  - Trötthet, hjärtklappning, ögonsymtom (oftalmopati).
+  - Trötthet, hjärtklappning, viktnedgång, ögonsymtom
 - discriminators:
-  - TRAK positiv.
-  - Diffust ökat jodupptag i hela körteln.
+  - Graves: TRAK positiv, diffust ökat jodupptag
+  - Toxisk nodös struma: TRAK negativ, fokalt ökat uptake vid scint
 - investigation:
-  - TSH lågt, fT4 högt.
-  - TRAK.
+  - TSH lågt, fT4 högt
+  - TRAK och tyreoideascintigrafi
 - initial_management:
-  - Farmaka (tyreostatika).
+  - Farmaka (tyreostatika) som bromsbehandling
 - definitive_management:
-  - Op vid oftalmopati, graviditetsönskan el. recidiv.
+  - Graves: Op vid oftalmopati, graviditetsönskan eller recidiv
+  - Toxisk struma: Kirurgi är ofta primärval
 - complications:
-  - Radiojod kan förvärra oftalmopati.
+  - Radiojod kan förvärra Graves-oftalmopati
+  - Toxisk struma ger ofta arytmier och FF hos äldre
 - pitfalls:
-  - Toxisk knölstruma.
-- memory_hooks: 
+  - Att inte skilja Graves från Toxisk nodös struma (kräver scintigrafi)
+- memory_hooks:
+  - TRAK pos = Graves. Scint = fokal = toxisk nodös
+
 ---
 - area: Tyreoidea
-- entity: Toxisk nodös struma
-- tags:
-  - hypertyreos
-  - kirurgi
-  - tyreoidea
-- when_to_suspect:
-  - Äldre patient (>50) med palpabel knöl och överfunktion.
-- discriminators:
-  - TRAK negativ.
-  - Scint: Starkt upptag endast i toxisk knöl.
-- investigation:
-  - TSH lågt, fT4 högt.
-  - Tyreoideascintigrafi.
-- initial_management:
-  - Tyreoideascint för diff-diagnostik.
-- definitive_management:
-  - Kirurgi är ofta primärval.
-- complications:
-  - Ofta arytmier/flimmer hos äldre.
-- pitfalls:
-  - Graves (diffust upptag) eller Tyreoidit (släckt upptag).
-- memory_hooks: 
----
-- area: Tyreoidea
-- entity: Post-op halsblödning
+- entity: Post-op komplikationer (Halsblödning och Nervskada)
+- subtopic_links:
+  - Komplikationer
+  - Tyreoideacancer
 - tags:
   - akut
   - komplikation
   - tyreoidea
 - when_to_suspect:
-  - Timmar efter tyreoidea-op: svullnad hals, tilltagande stridor/andnöd.
+  - Timmar efter tyreoideaop med tilltagande halssvullnad och stridor
+  - Heshet post-op
 - discriminators:
-  - Klinisk tryckutveckling i halsens slutna loger.
+  - Halsblödning: Klinisk tryckutveckling i halsens slutna loger
+  - Nervskada: Laryngoskopi visar stämbandspares
 - investigation:
-  - Klinisk diagnos.
+  - Klinisk diagnos vid halsblödning
+  - Laryngoskopi pre- och post-op
 - initial_management:
-  - Urakut re-operation för hematomevakuering.
+  - Halsblödning: Urakut re-op för hematomevakuering
+  - Nervskada: Övervaka luftväg vid bilateral skada
 - definitive_management:
-  - Uppföljning efter evakuering.
 - complications:
-  - Akut luftvägshinder/asfyxi.
+  - Halsblödning: Akut luftvägshinder och asfyxi
+  - Bilateral nervskada täpper till luftvägen
 - pitfalls:
-  - Tentafälla: Avvakta ej vid andningspåverkan!.
-- memory_hooks: 
----
-- area: Tyreoidea
-- entity: Skada på n. laryngeus recurrens
-- tags:
-  - komplikation
-  - tyreoidea
-- when_to_suspect:
-  - Heshet post-op.
-  - Vid bilateral skada: andningshinder.
-- discriminators:
-  - Laryngoskopi: stämbandspares/asymmetri.
-- investigation:
-  - Laryngoskopi pre- och postop.
-- initial_management:
-  - Övervaka luftväg vid misstänkt bilateral skada.
-- definitive_management:
-  - Ofta övergående om nerven endast sträckts.
-- complications:
-  - Bilateral skada täpper till luftvägen.
-- pitfalls:
-  - Intubationsödem (släpper snabbt, rörliga stämband).
-- memory_hooks: 
+  - Att avvakta vid andningspåverkan
+  - Intubationsödem kan förväxlas med nervskada (släpper snabbt)
+- memory_hooks:
+  - Tilltagande stridor post-op = akut re-op
+
 ---
 - area: Paratyreoidea
-- entity: Primär HPT (Adenom)
+- entity: Primär hyperparatyreoidism (pHPT)
+- subtopic_links:
+  - Primär Hyperparatyreoidism (pHPT)
+  - Symtom vid pHPT
+  - Utredning och diagnostik
 - tags:
   - paratyreoidea
   - överfunktion
 - when_to_suspect:
-  - Ofta äldre, ospecifika symtom: trötthet, osteoporos, njursten.
+  - Ospecifika symtom: trötthet, osteoporos, njursten (bones, stones, groans)
 - discriminators:
-  - S-Ca/jon-Ca förhöjt SAMTIDIGT som PTH är förhöjt (>6.9).
+  - S-Ca förhöjt SAMTIDIGT som PTH förhöjt (>6.9) = diagnostiskt
+  - Adenom: En körtel. Hyperplasi: Alla 4 körtlar drabbade
 - investigation:
-  - P-Ca, PTH.
-  - UL + Sestamibi-scint.
+  - P-Ca, PTH
+  - UL och Sestamibi-scint
 - initial_management:
-  - MDK/Kirurg-remiss.
+  - MDK och kirurgremiss
 - definitive_management:
-  - Extirpation av det enda sjuka adenomet botar pat.
+  - Adenom: Extirpation av enda sjuka körteln
+  - Hyperplasi: Subtotal extirpation (3.5 körtlar)
 - complications:
-  - Svår hyperkalcemi (>3.0) ger risk för arytmier/asystoli.
+  - Svår hyperkalcemi >3.0 ger risk för arytmier
+  - Fatal hypokalcemi om all vävnad tas utan autotransplantat
 - pitfalls:
-  - Tentafälla: Sekundär HPT (lågt Ca).
-- memory_hooks: 
+  - Sekundär HPT ger lågt Ca (inte högt) och förväxlas ibland
+- memory_hooks:
+  - Högt Ca + högt PTH = pHPT (inte sekundär)
+
 ---
 - area: Paratyreoidea
-- entity: Primär HPT (Hyperplasi)
+- entity: Sekundär och tertiär HPT
+- subtopic_links:
+  - Sekundär och Tertiär HPT
+  - Utredning och diagnostik
 - tags:
   - paratyreoidea
-  - överfunktion
+  - njursvikt
 - when_to_suspect:
-  - Samma symtombild som adenom.
+  - Patient med känd kronisk njursvikt
 - discriminators:
-  - Alla 4 körtlar är drabbade och förstorade.
+  - Sekundär: Lågt eller normalt Ca, högt PTH (reaktivt)
+  - Tertiär: Högt Ca, högt PTH (autonom överkompensation)
 - investigation:
-  - UL + Scint.
+  - Ca, PTH, njurprover
 - initial_management:
-  - Operation planeras.
+  - Medicinsk och njurfokuserad behandling vid sekundär
 - definitive_management:
-  - Subtotal extirpation (3,5 körtlar tas, halv lämnas kvar).
+  - Kirurgi krävs vid tertiär HPT
 - complications:
-  - Fatal hypokalcemi om all vävnad tas utan autotransplantat.
+  - Benresorption och urkalkning av skelett
 - pitfalls:
-  - Adenom (bara en körtel).
-- memory_hooks: 
+  - Att förväxla med primär HPT
+- memory_hooks:
+  - Sekundär = lågt Ca. Tertiär = högt Ca autonom
+
 ---
 - area: Paratyreoidea
-- entity: Sekundär & Tertiär HPT
-- tags:
-  - fysiologi
-  - fysiologisk
-  - kirurgi
-  - medicin
-  - paratyreoidea
-  - svarsrubbning
-- when_to_suspect:
-  - Pat med känd kronisk njursvikt.
-- discriminators:
-  - Sekundär: Lågt/normalt Ca, högt PTH.
-  - Tertiär: Högt Ca, högt PTH (autonom).
-- investigation:
-  - Ca, PTH, njurprover.
-- initial_management:
-  - Medicinsk/njur-fokus vid sekundär.
-- definitive_management:
-  - Kirurgi krävs vid tertiär HPT.
-- complications:
-  - Benresorption / urkalkning av skelett.
-- pitfalls:
-  - Primär HPT.
-- memory_hooks: 
----
-- area: Paratyreoidea
-- entity: Reoperation av pHPT
+- entity: Reoperation och halsvenkateterisering
+- subtopic_links:
+  - Operationsindikationer
+  - Utredning och diagnostik
 - tags:
   - paratyreoidea
-  - recidiverande
-  - sjukdom
+  - reoperation
 - when_to_suspect:
-  - Persisterande högt Ca/PTH efter tidigare operation.
+  - Persisterande högt Ca och PTH efter tidigare operation
 - discriminators:
-  - Svår anatomisk lokalisering av kvarvarande sjuk körtel.
+  - Svår anatomisk lokalisering av kvarvarande sjuk körtel
 - investigation:
-  - Selektiv halsvenkateterisering (PTH-mätning).
-- initial_management:
-  - Invasiv mätning av PTH-gradienter via ljumsken.
-- definitive_management:
-  - Reoperation riktad efter kateterfynd.
-- complications:
-  - Ökad operationskomplikationsrisk på halsen.
-- pitfalls:
-  - Tentafälla: Halsvenkateterisering görs ALDRIG primärt!.
-- memory_hooks: 
----
-- area: Binjurar
-- entity: Incidentalom (Benignt inaktivt)
-- tags:
-  - bifynd
-  - binjurar
-  - kirurgi
-- when_to_suspect:
-  - Slumpupptäckt tumör vid CT för annat besvär.
-- discriminators:
-  - CT u. kontrast: Låg, homogen attenuering (<10 HU).
-  - Tumör <4 cm.
-- investigation:
-  - CT u. kontrast.
-  - Hormonscreening.
-- initial_management:
-  - Kan "släppas" (exspektans) vid benign bild.
-- definitive_management:
-  - Ingen kirurgi.
-- complications:
-  - Storlek >4cm = ökad malignitetsrisk.
-- pitfalls:
-  - Hormonproducerande tumör.
-- memory_hooks: 
----
-- area: Binjurar
-- entity: Feokromocytom
-- tags:
-  - binjurar
-  - katekolamintumör
-  - medicin
-- when_to_suspect:
-  - Attacker av huvudvärk, palpitationer, svettningar, blekhet, hypertoni.
-- discriminators:
-  - P-Metoxikatekolaminer kraftigt förhöjda.
-- investigation:
-  - P-Metoxikatekolaminer.
-  - CT/MR.
-- initial_management:
-  - MÅSTE premedicineras med alfa-blockerare!.
-- definitive_management:
-  - Adrenalektomi.
-  - Genanalys för hereditet.
-- complications:
-  - Obehandlat ger hög strokerisk / dödliga arytmier.
-- pitfalls:
-  - Panikångest / Essentiell hypertoni.
-- memory_hooks: 
----
-- area: Binjurar
-- entity: Primär aldosteronism (Conns)
-- tags:
-  - aldosterontumör
-  - binjurar
-- when_to_suspect:
-  - Terapiresistent hypertoni + svaghet/hypokalemi.
-- discriminators:
-  - Aldosteron/renin-kvot förhöjd.
-  - Saltbelastning hämmar ej aldosteron.
-- investigation:
-  - Aldo/renin-kvot.
-  - Korrigera hypokalemi först!.
-- initial_management:
-  - BVK vid oklar CT/bilateral misstanke.
-- definitive_management:
-  - Unilateral op (adenom).
-  - Eplerenon (MRA) vid bilateral hyperplasi.
-- complications:
-  - Ökad kardiovaskulär dödlighet och strokerisk.
-- pitfalls:
-  - Tentafälla: Lågt K+ ger falskt lågt aldo/renin-värde.
-- memory_hooks: 
----
-- area: Binjurar
-- entity: Cushings syndrom (Binjure)
-- tags:
-  - binjurar
-  - kortisoltumör
-- when_to_suspect:
-  - Bålfetma, tunn hud, hypertoni, diabetes.
-- discriminators:
-  - 1mg Dexametason-hämning uteblir.
-  - Utplanad dygnskurva kortisol, Lågt ACTH.
-- investigation:
-  - Dexametason-hämningstest.
-- initial_management:
-  - CT binjurar.
-- definitive_management:
-  - Ensidig adrenalektomi.
-  - Långtidsuppföljning.
-- complications:
-  - Livslång kvarstående risk för hjärtkärlsjukdom.
-- pitfalls:
-  - Hypofys-Cushing (Högt ACTH).
-- memory_hooks: 
----
-- area: Binjurar
-- entity: Binjurebarkscancer
-- tags:
-  - binjurar
-  - kirurgi
-  - malign
-  - tumör
-- when_to_suspect:
-  - Stor bukresistens (>10 cm), snabb progress, ev
-  - virilisering (kvinnor)
-- discriminators:
-  - CT: Hög/ojämn attenuering, tillväxt.
-- investigation:
-  - CT buk.
-  - Hormonutredning.
-- initial_management:
-  - Op-planering multidisciplinärt.
-- definitive_management:
-  - Kirurgi + Mitotane.
-  - Ev cytostatika.
-- complications:
-  - Tumörtromb i vena cava inferior.
-- pitfalls:
-  - Godartat incidentalom.
-- memory_hooks: 
----
-- area: Endokrin Buk
-- entity: Tunntarms-NET (Carcinoid)
-- tags:
-  - buk
-  - endokrin
-  - farmakologi
-  - gep-net
-  - kirurgi
-- when_to_suspect:
-  - Diffus buksmärta, ileus, "flush" och diarréer.
-- discriminators:
-  - tU-5HIAA förhöjt.
-  - CgA förhöjt.
-  - CT: "Hjuleker"-metastas i mesenterium.
-- investigation:
-  - CT/UL.
-  - Somatostatinreceptor-PET.
-- initial_management:
-  - Farmakologisk symtomlindring (SSA).
-- definitive_management:
-  - Kirurgi (bot/lindring).
-- complications:
-  - Serotonin ger desmoplasi/fibros = tarmvred.
-  - Högersidig hjärtklaffsjukdom.
-- pitfalls:
-  - IBS / Crohns sjukdom (pga oklar diarré).
-- memory_hooks: 
----
-- area: Endokrin Buk
-- entity: Gastrinom (Zollinger-Ellison)
-- tags:
-  - buk
-  - endokrin
-  - kirurgi
-  - pankreas/duodenum-net
-- when_to_suspect:
-  - Multipla, refraktära ulcus i duodenum + diarré.
-- discriminators:
-  - Gastrin förhöjt.
-  - CgA förhöjt.
-- investigation:
-  - Gastrin/CgA.
-  - CT/MR/EUS.
-- initial_management:
-  - Uteslut falska källor till högt gastrin!.
-- definitive_management:
-  - Kirurgi + PPI.
-- complications:
-  - Hälften är maligna med metastasrisk.
-- pitfalls:
-  - Tentafälla: Atrofisk gastrit + PPI ger falskt högt gastrin/CgA!.
-- memory_hooks: 
----
-- area: Endokrin Buk
-- entity: Insulinom
-- tags:
-  - buk
-  - endokrin
-  - kirurgi
-  - pankreas-net
-- when_to_suspect:
-  - Hypoglykemi vid fasta/ansträngning, lindras av mat -> viktuppgång.
-- discriminators:
-  - Högt insulin, proinsulin, c-peptid trots lågt P-Glukos.
-- investigation:
-  - 72-timmars svälttest.
-- initial_management:
-  - CT/MR/EUS för lokalisering (ofta små!).
-- definitive_management:
-  - Kirurgi är botande.
-- complications:
-  - Svår hypoglykemi / koma.
-- pitfalls:
-  - Läkemedelsorsakad hypoglykemi.
-- memory_hooks: 
----
-- area: Endokrin Buk
-- entity: Appendix-NET
-- tags:
-  - buk
-  - endokrin
-  - gep-net
-- when_to_suspect:
-  - Bifynd vid op för misstänkt appendicit (sitter i spetsen).
-- discriminators:
-  - PAD: >1cm, djup infiltration, eller Ki67 > 2% är alarmsignaler.
-- investigation:
-  - Rutin-PAD av appendix.
-- initial_management:
-  - Om beskedlig (<1cm): Färdigbehandlat.
-- definitive_management:
-  - Om riskfaktorer: Högersidig hemikolektomi + lgll-utrymning.
-- complications:
-  - Lymfkörtelspridning.
-- pitfalls:
-  - Enbart appendicit.
-- memory_hooks: 
----
-- area: Endokrin Buk
-- entity: Rektal-NET / Ventrikel-NET
-- tags:
-  - buk
-  - endokrin
-  - gep-net
-- when_to_suspect:
-  - Bifynd som små polyper vid koloskopi / gastroskopi.
-- discriminators:
-  - Oftast benigna, hypergastrinemi-drivna (vid ventrikel).
-- investigation:
-  - Endoskopi + Biopsi.
-- initial_management:
-  - Lokal excision via endoskop oftast nog.
-- definitive_management:
-  - Endoskopisk uppföljning.
-- complications:
-  - Metastaser (ovanligt).
-- pitfalls:
-  - Adenocarcinom i tarm/ventrikel.
-- memory_hooks: 
----
-- area: Endokrin Buk
-- entity: Icke-funktionell Pankreas-NET
-- tags:
-  - buk
-  - endokrin
-  - kirurgi
-  - pankreas-net
-- when_to_suspect:
-  - Stora tumörer hos relativt välmående patient (trycksymtom/ikterus).
-- discriminators:
-  - CgA förhöjt.
-  - PP (Pankreaspolypeptid) förhöjt.
-- investigation:
-  - CT buk.
-  - Somatostatin-PET.
-- initial_management:
-  - Kirurg-remiss.
-- definitive_management:
-  - Kirurgi.
-- complications:
-  - Risk för blandsyndrom / byte av hormonprofil med tiden.
-- pitfalls:
-  - Adenocarcinom (ofta sämre allmäntillstånd/prognos).
-- memory_hooks: 
----
-- area: Sarkom Buk
-- entity: Liposarkom
-- tags:
-  - buk
-  - retroperitonealt
-  - sarkom
-- when_to_suspect:
-  - Gigantisk bukresistens (kan väga flera kilo).
-- discriminators:
-  - Växer expansivt, ej infiltrativt på CT.
-- investigation:
-  - CT buk.
-- initial_management:
-  - Op-planering.
-- definitive_management:
-  - Extirpation (kan kräva att njure/tarm tas med).
-- complications:
-  - Kemo-/radioterapi fungerar ofta dåligt, hög recidivrisk.
-- pitfalls:
-  - Benign fetma / annan tumör.
-- memory_hooks: 
----
-- area: Sarkom Buk
-- entity: GIST (GI Stromacellstumör)
-- tags:
-  - buk
-  - intraabdominellt
-  - kirurgi
-  - medicin
-  - onkologi
-  - sarkom
-- when_to_suspect:
-  - Blödning/tumör i ventrikel eller tunntarm.
-- discriminators:
-  - C-kit mutation / tyrosinkinas-känslighet.
-- investigation:
-  - CT / Endoskopi.
-- initial_management:
-  - Medicinsk onkologisk bedömning.
-- definitive_management:
-  - Kirurgi + Tyrosinkinashämmare (Imatinib).
-- complications:
-  - ej tydligt angivet i källorna
-- pitfalls:
-  - GEP-NET i tarm.
-- memory_hooks: 
----
-- area: Neuroendokrina tumörer
-- entity: Falskt Gastrinom
-- tags:
-  - diagnostik
-  - endokrinkirurgi
-  - farmakologi
-- when_to_suspect:
-  - Höga P-Gastrin och P-Chromogranin A nivåer vid utredning av magsår
-- discriminators:
-  - Patienter med Atrofisk gastrit ELLER pågående PPI-behandling (Omeprazol) har minskad syraproduktion vilket fysiologiskt leder till mycket kraftig frisättning av Gastrin
-- investigation:
-  - Sätt ut PPI minst 1 vecka inför blodprovtagning!
-- initial_management:
-- definitive_management:
-- complications:
-  - Omfattande och onödig tumörutredning för något som är en normal fysiologisk reaktion på medicin
-- pitfalls:
-  - Att direkt diagnostisera Zollinger-Ellison på ett prov taget medan pat äter PPI
-- memory_hooks: 
----
-- area: Binjurar
-- entity: Feokromocytom & Genetik
-- tags:
-  - endokrinkirurgi
-  - ärftlighet
-- when_to_suspect:
-  - Diagnostiserat Feokromocytom eller Paragangliom
-- discriminators:
-  - Upp till 40% är ärftliga (MEN2, VHL, NF1, SDHx-mutationer).
-- investigation:
-  - Klinisk genetikremiss för ALLA patienter med feo/paragangliom oavsett ålder
-- initial_management:
-- definitive_management:
-- complications:
-- pitfalls:
-  - Att missa screening av familjemedlemmar
-- memory_hooks: 
----
-- area: Binjurar
-- entity: Operationsindikation Incidentalom
-- tags:
-  - endokrinkirurgi
-  - onkologi
-- when_to_suspect:
-  - Uppföljning av litet, icke-hormonproducerande incidentalom i binjuren
-- discriminators:
-  - Majoriteten är benigna adenom. Men TILLVÄXT (>1 cm under uppföljningstiden) innebär stor malignitetsrisk!
-- investigation:
-  - Årlig röntgen/uppföljning under 1-2 år.
-- initial_management:
-- definitive_management:
-  - Adrenalektomi om tillväxt ses, även om den ursprungligen klassades som godartad på CT (låg attenuering)
-- complications:
-- pitfalls:
-- memory_hooks: 
----
-- area: Binjurar
-- entity: Saltbelastning vid Conn
-- tags:
-  - diagnostik
-  - endokrinkirurgi
-  - fysiologi
-- when_to_suspect:
-  - Högt Aldosteron och lågt Renin hos hypertensiv pat
-- discriminators:
-  - Fysiologiskt bekräftande av Primär Aldosteronism: Normalt ska aldosteron hämmas av mycket salt. Om aldosteron förblir högt vid saltbelastning är det en autonom överproduktion (Conn).
-- investigation:
-  - Saltvattensdropp i 4 timmar, därefter mätning av P-Aldosteron (ska normalt tryckas ned <140 pmol/L)
-- initial_management:
-- definitive_management:
-- complications:
-  - Risk för akut hjärtsvikt/hypertensiv kris hos känsliga under droppet
-- pitfalls:
-- memory_hooks: 
----
-- area: Paratyreoidea
-- entity: Selektiv halsvenkateterisering
-- tags:
-  - diagnostik
-  - endokrinkirurgi
-  - radiologi
-- when_to_suspect:
-  - Recidiv av primär hyperparatyreoidism eller misslyckad första operation
-- discriminators:
-  - Skiljer sig från binjurekateterisering (som görs standardmässigt vid bilateral conn). Görs enbart i komplicerade reoperationsfall för att extremt precist lokalisera körteln via venöst PTH.
-- investigation:
+  - Selektiv halsvenkateterisering (PTH-mätning via gradienter)
   - Interventionell radiologi
 - initial_management:
 - definitive_management:
+  - Reoperation riktad efter kateterfynd
+- complications:
+  - Ökad komplikationsrisk vid reoperation på halsen
+- pitfalls:
+  - Halsvenkateterisering görs ALDRIG primärt (bara vid reoperation)
+- memory_hooks:
+  - Halsvenkat = enbart reoperationsfall
+
+---
+- area: Binjurar
+- entity: Incidentalom i binjuren
+- subtopic_links:
+  - Incidentalom i binjuren
+  - Operationsindikationer
+- tags:
+  - binjurar
+  - bifynd
+- when_to_suspect:
+  - Slumpupptäckt tumör vid CT för annat besvär
+- discriminators:
+  - CT utan kontrast: <10 HU, homogen = benign bild
+  - >4 cm eller tillväxt = ökad malignitetsrisk
+- investigation:
+  - CT utan kontrast
+  - Hormonscreening (uteslut feo, Conn, Cushing)
+- initial_management:
+  - Kan exspekteras vid benign bild och inaktiv
+- definitive_management:
+  - Adrenalektomi vid tillväxt >1 cm under uppföljning
 - complications:
 - pitfalls:
-- memory_hooks: 
+  - Att inte screena för hormonproduktion
+- memory_hooks:
+  - <10 HU + inaktiv + <4 cm = exspektans
+
 ---
-- area: Tyreoidea
-- entity: TIRADS (Thyroid Imaging Reporting and Data System)
+- area: Binjurar
+- entity: Feokromocytom
+- subtopic_links:
+  - Feokromocytom
+  - Utredning och diagnostik
 - tags:
-  - diagnostik
-  - endokrinkirurgi
-  - radiologi
+  - binjurar
+  - katekolamintumör
 - when_to_suspect:
-  - Ultraljud av knöl i sköldkörteln
+  - Attacker av huvudvärk, palpitationer, svettningar, blekhet och hypertoni
 - discriminators:
-  - Ett filter för att undvika överdiagnostik och onödiga punktationer.
-  - TIRADS 1-2 = Benignt mönster. Ska ALDRIG punkteras med cytologi (FNA) oavsett storlek!
+  - P-Metoxikatekolaminer kraftigt förhöjda
+  - Upp till 40% är ärftliga (MEN2, VHL, NF1, SDHx)
 - investigation:
-  - Ultraljud utförs enligt systemet
+  - P-Metoxikatekolaminer
+  - CT och MR
+  - Klinisk genetikremiss för alla patienter
+- initial_management:
+  - MÅSTE premedicineras med alfa-blockerare inför op
+- definitive_management:
+  - Adrenalektomi
+  - Genanalys för hereditet
+- complications:
+  - Obehandlat ger hög strokerisk och dödliga arytmier
+- pitfalls:
+  - Att förväxla med panikångest eller essentiell hypertoni
+  - Att operera utan alfa-blockad (kan ge hypertensiv kris)
+- memory_hooks:
+  - Alfa-blockerare INNAN op alltid
+
+---
+- area: Binjurar
+- entity: Primär aldosteronism (Conns syndrom)
+- subtopic_links:
+  - Primär aldosteronism (Conns syndrom)
+  - Utredning och diagnostik
+- tags:
+  - binjurar
+  - aldosteron
+- when_to_suspect:
+  - Terapiresistent hypertoni med svaghet och hypokalemi
+- discriminators:
+  - Aldosteron/renin-kvot förhöjd
+  - Saltbelastning hämmar ej aldosteron (bekräftande test)
+- investigation:
+  - Aldo/renin-kvot (korrigera hypokalemi först)
+  - Binjurevenkateterisering (BVK) vid oklar CT
+- initial_management:
+  - BVK vid bilateral misstanke
+- definitive_management:
+  - Unilateral op vid adenom
+  - Eplerenon (MRA) vid bilateral hyperplasi
+- complications:
+  - Ökad kardiovaskulär dödlighet och strokerisk
+- pitfalls:
+  - Lågt K+ ger falskt lågt aldo/renin-värde (korrigera hypokalemi innan provtagning)
+- memory_hooks:
+  - Korrigera K+ INNAN provtagning
+
+---
+- area: Binjurar
+- entity: Cushings syndrom (Binjureorsak)
+- subtopic_links:
+  - Cushings syndrom (Binjureorsakad)
+  - Utredning och diagnostik
+- tags:
+  - binjurar
+  - kortisol
+- when_to_suspect:
+  - Bålfetma, tunn hud, hypertoni, diabetes och osteoporos
+- discriminators:
+  - 1 mg Dexametason-hämningstest: Kortisol hämmas ej
+  - Lågt ACTH (binjureorsak) vs högt ACTH (hypofysorsak)
+- investigation:
+  - Dexametason-hämningstest
+  - CT binjurar
+- initial_management:
+  - CT binjurar
+- definitive_management:
+  - Ensidig adrenalektomi
+  - Långtidsuppföljning
+- complications:
+  - Livslång ökad kardiovaskulär risk
+- pitfalls:
+  - Att inte skilja binjure-Cushing (lågt ACTH) från hypofys-Cushing (högt ACTH)
+- memory_hooks:
+  - Lågt ACTH = binjure, Högt ACTH = hypofys
+
+---
+- area: Binjurar
+- entity: Binjurebarkscancer
+- subtopic_links:
+  - Binjurebarkscancer
+  - Operationsindikationer
+- tags:
+  - binjurar
+  - malignitet
+- when_to_suspect:
+  - Stor bukresistens >10 cm, snabb progress
+  - Virilisering hos kvinna
+- discriminators:
+  - CT: Hög och ojämn attenuering med tillväxt
+- investigation:
+  - CT buk
+  - Hormonutredning
+- initial_management:
+  - Op-planering multidisciplinärt
+- definitive_management:
+  - Kirurgi och Mitotane
+  - Ev cytostatika
+- complications:
+  - Tumörtromb i vena cava inferior
+- pitfalls:
+  - Att förväxla med godartat incidentalom
+- memory_hooks:
+
+---
+- area: Endokrin Buk
+- entity: Tunntarms-NET (Carcinoid)
+- subtopic_links:
+  - Tunntarms-NET (Carcinoid)
+  - Diagnostik av NETs
+- tags:
+  - net
+  - buk
+- when_to_suspect:
+  - Diffus buksmärta, ileus, flush och diarréer
+- discriminators:
+  - tU-5HIAA förhöjt
+  - CgA förhöjt
+  - CT: Hjuleker-metastas i mesenterium
+- investigation:
+  - CT och UL
+  - Somatostatinreceptor-PET
+- initial_management:
+  - Farmakologisk symtomlindring (SSA somatostatinanaloger)
+- definitive_management:
+  - Kirurgi (bot eller lindring)
+- complications:
+  - Serotonin ger desmoplasi och fibros som orsakar tarmvred
+  - Högersidig hjärtklaffsjukdom (karcinoid hjärtsjukdom)
+- pitfalls:
+  - Att förväxla med IBS eller Crohns sjukdom pga oklar diarré
+- memory_hooks:
+  - 5HIAA + CgA + hjuleker på CT = Carcinoid
+
+---
+- area: Endokrin Buk
+- entity: Gastrinom (Zollinger-Ellison)
+- subtopic_links:
+  - Pankreas-NET (Insulinom & Gastrinom)
+  - Diagnostik av NETs
+- tags:
+  - net
+  - pankreas
+- when_to_suspect:
+  - Multipla refraktära ulcus i duodenum med diarré
+- discriminators:
+  - Gastrin förhöjt, CgA förhöjt
+- investigation:
+  - Gastrin och CgA
+  - CT, MR och EUS
+  - Sätt ut PPI minst 1 vecka inför provtagning
+- initial_management:
+  - PPI och uteslut falskt högt gastrin
+- definitive_management:
+  - Kirurgi och PPI
+- complications:
+  - Hälften är maligna med metastasrisk
+- pitfalls:
+  - Atrofisk gastrit och PPI ger falskt högt gastrin och CgA (ta prov utan PPI)
+- memory_hooks:
+  - Sätt ut PPI 1 vecka INNAN provtagning
+
+---
+- area: Endokrin Buk
+- entity: Insulinom
+- subtopic_links:
+  - Pankreas-NET (Insulinom & Gastrinom)
+  - Diagnostik av NETs
+- tags:
+  - net
+  - pankreas
+- when_to_suspect:
+  - Hypoglykemi vid fasta eller ansträngning som lindras av mat
+  - Viktuppgång
+- discriminators:
+  - Högt insulin, proinsulin och C-peptid trots lågt P-Glukos
+- investigation:
+  - 72-timmars svälttest
+  - CT, MR och EUS för lokalisering (ofta små)
 - initial_management:
 - definitive_management:
-  - Endast TIRADS 3-5 ska gå vidare till FNA beroende på storlek (>1-2 cm).
+  - Kirurgi är botande
+- complications:
+  - Svår hypoglykemi och koma
+- pitfalls:
+  - Att förväxla med läkemedelsorsakad hypoglykemi
+- memory_hooks:
+  - Högt insulin + lågt glukos = Insulinom
+
+---
+- area: Endokrin Buk
+- entity: Diagnostik av NETs (CgA och bilddiagnostik)
+- subtopic_links:
+  - Diagnostik av NETs
+  - Utredning och diagnostik
+- tags:
+  - net
+  - diagnostik
+- when_to_suspect:
+  - Misstänkt neuroendokrin tumör
+- discriminators:
+  - CgA (Chromogranin A): Generell NET-markör
+  - Somatostatinreceptor-PET: Bästa funktionella bilddiagnostik
+- investigation:
+  - CgA, specifika hormonmarkörer
+  - CT och Somatostatin-PET
+- initial_management:
+- definitive_management:
+  - Kirurgremiss
 - complications:
 - pitfalls:
-  - Att ta cytologi på en TIRADS 2-cysta som sedan råkar visa atypi pga blödning, vilket leder till onödig operation
-- memory_hooks: 
+  - Falskt högt CgA vid PPI-bruk och atrofisk gastrit
+- memory_hooks:
+  - CgA = generell NET-markör
+
+---
+- area: Endokrin Buk
+- entity: Appendix-NET och rektal-NET
+- subtopic_links:
+  - Diagnostik av NETs
+- tags:
+  - net
+  - buk
+- when_to_suspect:
+  - Bifynd vid op för appendicit (sitter i spetsen)
+  - Bifynd som små polyper vid koloskopi
+- discriminators:
+  - Appendix-NET: >1 cm, djup infiltration eller Ki67 >2% = riskfaktorer
+  - Rektal-NET: Oftast benigna, lokal excision räcker
+- investigation:
+  - Rutin-PAD av appendix
+  - Endoskopi och biopsi
+- initial_management:
+  - <1 cm appendix-NET: Färdigbehandlat
+- definitive_management:
+  - Riskfaktorer: Högersidig hemikolektomi och lymfkörtelutrymning
+  - Rektal-NET: Lokal endoskopisk excision
+- complications:
+  - Lymfkörtelspridning
+- pitfalls:
+  - Att inte ta PAD på appendix rutinmässigt vid op
+- memory_hooks:
+
+---
+- area: Endokrin Buk
+- entity: Icke-funktionell pankreas-NET
+- subtopic_links:
+  - Pankreas-NET (Insulinom & Gastrinom)
+  - Diagnostik av NETs
+- tags:
+  - net
+  - pankreas
+- when_to_suspect:
+  - Stora tumörer hos relativt välmående patient med trycksymtom eller ikterus
+- discriminators:
+  - CgA förhöjt, PP (pankreaspolypeptid) förhöjt
+- investigation:
+  - CT buk, Somatostatin-PET
+- initial_management:
+  - Kirurgremiss
+- definitive_management:
+  - Kirurgi
+- complications:
+  - Risk för blandsyndrom och byte av hormonprofil med tiden
+- pitfalls:
+  - Att förväxla med adenocarcinom (sämre allmäntillstånd och prognos)
+- memory_hooks:
+
+---
+- area: Sarkom Buk
+- entity: Abdominella Sarkom (Liposarkom och GIST)
+- subtopic_links:
+  - Abdominella Sarkom (Liposarkom, GIST)
+- tags:
+  - sarkom
+  - buk
+- when_to_suspect:
+  - Liposarkom: Gigantisk retroperitoneal bukresistens
+  - GIST: Blödning eller tumör i ventrikel eller tunntarm
+- discriminators:
+  - Liposarkom: Växer expansivt, ej infiltrativt på CT
+  - GIST: C-kit mutation, tyrosinkinas-känslighet
+- investigation:
+  - CT buk och endoskopi
+- initial_management:
+  - Multidisciplinär onkologisk bedömning
+- definitive_management:
+  - Liposarkom: Extirpation (kan kräva njure eller tarm)
+  - GIST: Kirurgi och Tyrosinkinashämmare (Imatinib)
+- complications:
+  - Liposarkom: Kemo- och radioterapi fungerar ofta dåligt, hög recidivrisk
+- pitfalls:
+  - Att förväxla liposarkom med benign fetma eller annan tumör
+  - Att förväxla GIST med GEP-NET
+- memory_hooks:
+  - GIST = Imatinib

@@ -1,0 +1,43 @@
+{
+  "run_id": "r50r8399mpugvjx8",
+  "session_id": "db209b62-69dc-418b-afed-9fed4c5a0101",
+  "updated_at": 1780273513.8907442,
+  "mode": "high_yield",
+  "subject": "",
+  "specialty": "10_akutmed_trauma_smart",
+  "timer_mode": "alien",
+  "question_ids": [
+    "KIR_SMR_024",
+    "KIR_SMR_016",
+    "KIR_SMR_009",
+    "KIR_ORG_074",
+    "KIR_ORG_071",
+    "KIR_SMR_015",
+    "KIR_SMR_024",
+    "KIR_SMR_023",
+    "KIR_SMR_026",
+    "KIR_SMR_020",
+    "KIR_SMR_021",
+    "KIR_SMR_007",
+    "KIR_SMR_012",
+    "KIR_SMR_018",
+    "KIR_SMR_027",
+    "KIR_SMR_022",
+    "KIR_SMR_002",
+    "KIR_ORG_072",
+    "KIR_SMR_004",
+    "KIR_SMR_011",
+    "KIR_SMR_008"
+  ],
+  "position": 0,
+  "results": [
+    {
+      "id": "KIR_SMR_024",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    }
+  ],
+  "done": false,
+  "n": 20
+}

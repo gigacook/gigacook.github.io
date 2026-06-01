@@ -1,14 +1,16 @@
-- area: Akut
+- area: Akuta tillstånd
 - entity: Cauda Equina-syndrom
+- subtopic_links:
+  - Cauda Equina
+  - Ryggortopedi
 - tags:
   - akut
-  - rotinklämning
-  - sakral
+  - neurologi
 - when_to_suspect:
-  - Akut ryggsmärta med blåstömnings/tarm/känsel-påverkan i underliv
+  - Akut ryggsmärta med blåstömnings- eller tarm- eller känselpåverkan i underliv
 - discriminators:
   - Ridbyxeanestesi
-  - Nedsatt sfinktertonus (PR)
+  - Nedsatt sfinktertonus vid PR
   - Urinretention på bladderscan
 - investigation:
   - Akut MR
@@ -18,582 +20,498 @@
 - definitive_management:
   - Akut dekompression <24h (helst <6h)
 - complications:
-  - Irreversibel blås/tarm-pares och sexuell dysfunktion
+  - Irreversibel blås- och tarmpares och sexuell dysfunktion
 - pitfalls:
-  - Fälla:
-- memory_hooks: 
+  - Att diagnostisera som okomplicerad lumbago och skicka hem
+- memory_hooks:
+  - Ridbyxeanestesi = Cauda Equina tills bevisat
+
 ---
-- area: 
-- entity: Akut
+- area: Akuta tillstånd
+- entity: Kompartmentsyndrom
+- subtopic_links:
+  - Kompartmentsyndrom
+  - Akuta tillstånd
 - tags:
   - akut
-  - kompartmentsyndrom
   - trauma
 - when_to_suspect:
-  - Tryckstegring i loge
+  - Extrema smärtor efter underbensfraktur, trauma eller gynläge
+  - Pain out of proportion
 - discriminators:
-  - Extrema smärtor, ofta underbensfraktur/trauma/gynläge
-- investigation:
-  - "Pain out of proportion"
   - Smärta vid passiv extension av tår
   - Maskeras dåligt av morfin
+  - Klinisk diagnos (ev tryckmätning >30 mmHg)
+- investigation:
+  - Klinisk bedömning
 - initial_management:
-  - Klinisk diagnos (+ ev. tryckmätning >30 mmHg)
-- definitive_management:
-  - Planläge (ALDRIG högläge!)
+  - Planläge (ALDRIG högläge)
   - Klipp upp förband
   - Kontakta ortoped akut
-- complications:
+- definitive_management:
   - Akut fasciotomi <8h
-- pitfalls:
+- complications:
   - Irreversibel muskelnekros
   - Volkmanns kontraktur (underarm)
-- memory_hooks: 
+- pitfalls:
+  - Att avvakta tills distala pulsar försvinner (mycket sent tecken)
+- memory_hooks:
+  - Pain out of proportion = kompartmentsyndrom tills bevisat
+
 ---
-- area: Avvakta tills distala pulsar försvinner (mycket sent tecken).
-- entity: 
-- tags:
-  - .
-  - akut
-  - avvakta
-  - distala
-  - försvinner
-  - infektion
-  - kirurgi
-  - pulsar
-  - tills
-- when_to_suspect:
+- area: Akuta tillstånd
+- entity: Nekrotiserande fasciit
+- subtopic_links:
   - Nekrotiserande fasciit
-- discriminators:
-  - Mjukdelsinfektion
-- investigation:
+  - Akuta tillstånd
+- tags:
+  - akut
+  - infektion
+- when_to_suspect:
   - Snabbt sepsisinsjuknande med diskret rodnad
-- initial_management:
   - Oproportionerlig smärta relativt hudfynden
   - Mycket högt CRP
-- definitive_management:
-  - Klinisk (fördröj ej för MR!)
-- complications:
+- discriminators:
+  - Klinisk diagnos (fördröj ej för MR)
+- investigation:
+  - Klinisk bedömning
+- initial_management:
   - Akut livräddande kirurgisk debridering
+- definitive_management:
+  - Upprepade revisioner + iv Bensyl-PC och Klindamycin
+- complications:
+  - Sepsis och dödsfall
 - pitfalls:
-  - Upprepade revisioner + iv Bensyl-PC/Klindamycin
-- memory_hooks: 
+  - Förväxla med Erysipelas (som ej ger oproportionerlig smärta)
+- memory_hooks:
+  - Oproportionerlig smärta = NF tills bevisat
+
 ---
-- area: Fälla:
-- entity: Förväxlas med Erysipelas (som ej ger oproportionerlig smärta).
+- area: Septisk artrit
+- entity: Septisk artrit
+- subtopic_links:
+  - Septisk artrit
+  - Akuta tillstånd
 - tags:
   - akut
   - infektion
-  - fälla:
 - when_to_suspect:
-  - Akut
-- discriminators:
-  - Septisk artrit
-- investigation:
-  - Ledinfektion
-- initial_management:
   - Rött, svullet, varmt knä med vilovärk och feber
-- definitive_management:
-  - Sänkt glukoskvot jämfört med plasma
-  - Förhöjt LPK i led
-- complications:
-  - Steril ledpunktion
-- pitfalls:
-  - innan
-- memory_hooks: 
----
-- area: Empirisk iv antibiotika (t.ex. Kloxacillin) efter punktion
-- entity: Artroskopisk urspolning (ofta flera)
-- tags:
-  - antibiotika
-  - efter
-  - empirisk
-  - iv
-  - leddestruktion
-  - punktion
-  - total
-  - trauma
-- when_to_suspect:
-  - Fälla:
 - discriminators:
-  - Puntera en protesled på VC (görs ENDAST av ortoped)
-  - Diff: Giktartrit
+  - Steril ledpunktion: Sänkt glukoskvot, förhöjt LPK i led
+  - Puntera ALDRIG protesled på VC (görs av ortoped)
 - investigation:
+  - Steril ledpunktion och odling
 - initial_management:
-  - Trauma
+  - Empirisk iv antibiotika (Kloxacillin) efter punktion
 - definitive_management:
-  - "Open book" bäckenfraktur
+  - Artroskopisk urspolning (ofta flera sessioner)
 - complications:
+  - Total leddestruktion
+- pitfalls:
+  - Att ge Ab före steril ledpunktion (saboterar odlingen)
+  - Förväxla med giktartrit
+- memory_hooks:
+  - Punktion INNAN antibiotika
+
+---
+- area: Septisk artrit
+- entity: Protesinfektion
+- subtopic_links:
+  - Protesinfektion
+  - Septisk artrit
+- tags:
+  - infektion
+  - protes
+- when_to_suspect:
+  - Lågvirulent infektion (ofta S. epidermidis)
+  - CRP lätt förhöjt (6-15), röntgen normal initialt
+- discriminators:
+  - Blododling och steril punktion av protesled
+- investigation:
+  - Blododling, ortopedledd steril punktion
+- initial_management:
+  - Remiss till ortoped, sätt inte in Ab
+- definitive_management:
+  - 2-seans utbytesoperation (Spacer → ny protes)
+  - Ta 5-10 odlingar per-op
+- complications:
+  - Implantathaveri, svår sepsis
+- pitfalls:
+  - Att primärvårdsläkare sätter in peroral Ab och saboterar per-op odlingar
+- memory_hooks:
+  - Lågt CRP + protes = tänk lågvirulent infektion
+
+---
+- area: ATLS
+- entity: Bäckenfraktur (Öppen bok)
+- subtopic_links:
+  - ATLS
+  - Trauma
+- tags:
+  - trauma
+  - bäcken
+- when_to_suspect:
+  - Högenergivåld med instabilt bäcken
+- discriminators:
   - B-skada (instabil)
-- pitfalls:
-  - Högenergivåld, cirkulatorisk chock
-- memory_hooks: 
----
-- area: Trauma-CT
-- entity: Applicera bäckengördel över trochanter major!
-- tags:
-  - extern
-  - fixation
-  - trauma
-  - trauma-ct
-- when_to_suspect:
+  - Cirkulatorisk chock
+- investigation:
+  - Trauma-CT
+- initial_management:
+  - Applicera bäckengördel HÅRT över trochanter major
+- definitive_management:
+  - Extern fixation och angioembolisering
+- complications:
   - Livshotande blödning från presakrala venösa plexa
-- discriminators:
-  - Fälla:
-- investigation:
-  - Placera gördeln fel (över crista iliaca)
-  - Provocera inte bäckenet kliniskt
-- initial_management:
-- definitive_management:
-  - Trauma
-- complications:
-  - Femurfraktur (sluten)
 - pitfalls:
-  - Lång rörbensfraktur
-- memory_hooks: 
+  - Att placera gördeln över crista iliaca (öppnar bäckenet mer)
+  - Att provocera bäckenet kliniskt (ökar blödning)
+- memory_hooks:
+  - Bäckengördel = över trochanter major, inte crista
+
 ---
-- area: • Grov felställning• Svullnad (kan dölja >2 liter blod)
-- entity: Slätröntgen / Trauma-CT
+- area: ATLS
+- entity: Femurfraktur (Sluten)
+- subtopic_links:
+  - ATLS
+  - Frakturlära
 - tags:
-  - distalstatus
-  - felställning•
-  - grov
-  - grovreponering•
-  - sträckbehandling•
-  - svullnad
   - trauma
-  - •
+  - fraktur
 - when_to_suspect:
-  - Oftast märgspikning
+  - Lång rörbensfraktur efter högenergitrauma
 - discriminators:
-  - Blödningschock, fettemboli
+  - Grov felställning, svullnad (kan dölja >2 liter blod)
 - investigation:
-  - Fälla:
+  - Slätröntgen och Trauma-CT
 - initial_management:
-  - Skicka o-reponerad fraktur till rtg (leder till ischemi och hudhot).
+  - Grovreponering och sträckbehandling
 - definitive_management:
+  - Oftast märgspikning
 - complications:
-  - Trauma
+  - Blödningschock och fettemboli
 - pitfalls:
-  - Knäluxation
-- memory_hooks: 
+  - Att skicka o-reponerad fraktur till rtg (leder till ischemi och hudhot)
+- memory_hooks:
+
 ---
-- area: Högenergi. Groteskt instabilt knä (ofta redan spontanreponerat)
-- entity: • Påverkat distalstatus (ischemi)• Positiv i alla instabilitetstester
+- area: ATLS
+- entity: Knäluxation
+- subtopic_links:
+  - ATLS
+  - Knäligament
 - tags:
+  - trauma
   - akut
-  - dt-angio
-  - groteskt
-  - högenergi.
-  - instabilt
-  - kirurgi
-  - knä
 - when_to_suspect:
+  - Högenergitrauma, groteskt instabilt knä (ofta redan spontanreponerat)
+- discriminators:
+  - Påverkat distalstatus (ischemi)
+  - Positivt i alla instabilitetstester
+- investigation:
+  - Rtg (frontal + sida)
+  - CT-angio om kärlskada misstänks
+- initial_management:
   - Grovreponera om felställd
   - Kontakta kärlkirurg vid ischemi
-- discriminators:
-  - Kärlkirurgi (intimarift)
+- definitive_management:
+  - Kärlkirurgi vid intimarift
   - Ligamentrekonstruktion i seanser
-- investigation:
-  - 20-25% skadar A. poplitea -> Amputation!
-- initial_management:
-  - Fälla:
-- definitive_management:
-  - Nöja sig med blank slätröntgen
-  - Kärlskadan sker i luxationsögonblicket
 - complications:
+  - 20-25% skadar A. poplitea → amputationsrisk
 - pitfalls:
-  - Fraktur
-- memory_hooks: 
+  - Att nöja sig med blank slätröntgen utan kärlbedömning
+- memory_hooks:
+  - Knäluxation = uteslut kärlskada alltid
+
 ---
-- area: Handledsfraktur
-- entity: FOOSH (fall mot utsträckt hand), ofta osteoporos
-- tags:
-  - bockning
-  - dorsal
-  - gaffeldeformitet/bajonettställning•
-  - handledsfraktur
-  - på
-  - sidobild
-  - •
-- when_to_suspect:
-  - Slätröntgen (minst 2 projektioner)
-- discriminators:
-  - Lokalbedövning i frakturspalt
-  - Grovreponering -> gipsskena
-- investigation:
-  - Op om: dorsalvinkel >10°, volar >15°, ledhak >2mm
-  - Annars gips 4 v
-- initial_management:
-  - N
-  - medianus-påverkan (karpaltunnelsyndrom)
-  - Extensorseneruptur
-- definitive_management:
-  - Fälla:
-- complications:
-  - Missa sensorikbortfall i de tre radiala fingrarna (distalstatus!).
-- pitfalls:
-- memory_hooks: 
----
-- area: Höftfraktur (Cervikal)
-- entity: Femurhalsfraktur (Garden I-IV)
-- tags:
-  - fall
-  - hos
-  - höftfraktur
-  - ljumsksmärta
-  - äldre,
-- when_to_suspect:
-  - Förkortat och utåtroterat ben i status
-- discriminators:
-  - Slätröntgen
-- investigation:
-  - Smärtlindring (femoralisblockad)
-- initial_management:
-  - Osteosyntes (Garden I-II)
-  - Hel/halv-protes (Garden III-IV)
-- definitive_management:
-  - Caputnekros pga bruten blodförsörjning vid dislocerad fraktur
-- complications:
-  - Fälla:
-- pitfalls:
-  - Förväxla med höftluxation (som ofta ger förkortat och inåtroterat ben).
-- memory_hooks: 
----
-- area: Fraktur
-- entity: Fotledsfraktur
+- area: Frakturlära
+- entity: Radiusfraktur (Distal)
+- subtopic_links:
+  - Radiusfraktur
+  - Frakturlära
 - tags:
   - fraktur
-  - malleolfraktur
+  - handled
 - when_to_suspect:
-  - Vridvåld, smärta vid belastning
+  - FOOSH (fall mot utsträckt hand), ofta osteoporos
+  - Gaffeldeformitet eller bajonettställning
 - discriminators:
-  - Palpömhet över malleoler/syndesmos
-  - Instabilitet (Weber B/C)
+  - Op-kriterier: Dorsalvinkel >10°, volar >15°, ledhak >2 mm, förkortning >2 mm
 - investigation:
-  - Slätröntgen (styrd av Ottawa-kriterier)
+  - Slätröntgen minst 2 projektioner
 - initial_management:
-  - Grovreponering vid felställning + gips
+  - Lokalbedövning i frakturspalt, grovreponering, gipsskena
+- definitive_management:
+  - Op med platta om kriterier uppfyllda, annars gips 4 v
+- complications:
+  - N. medianus-påverkan (karpaltunnelsyndrom)
+  - Extensorseneruptur
+- pitfalls:
+  - Att missa sensorikbortfall i de tre radiala fingrarna (distalstatus obligat)
+- memory_hooks:
+
+---
+- area: Frakturlära
+- entity: Fotledsfraktur
+- subtopic_links:
+  - Fotledsfraktur
+  - Frakturlära
+- tags:
+  - fraktur
+  - fotled
+- when_to_suspect:
+  - Vridvåld, smärta vid belastning, palpömhet över malleoler
+- discriminators:
+  - Weber A: Stabil, konservativ
+  - Weber B/C: Instabilitet, op indikerat
+  - Ottawa-kriterier styr röntgenindikation
+- investigation:
+  - Slätröntgen
+- initial_management:
+  - Grovreponering vid felställning och gips
 - definitive_management:
   - Op med platta vid Weber B/C
-  - Konservativt vid Weber A
 - complications:
   - Hudnekros om o-reponerad fraktur trycker
   - DVT i gips (kräver Fragmin)
 - pitfalls:
-  - Fälla:
-- memory_hooks: 
+  - Att missa syndesmosskada (Weber C)
+- memory_hooks:
+  - Weber A = konservativ, B/C = op
+
 ---
-- area: 
-- entity: Rygg
+- area: Frakturlära
+- entity: Höftfraktur (Cervikal, Garden I-IV)
+- subtopic_links:
+  - Höftfraktur
+  - Frakturlära
 - tags:
-  - /
-  - ankyloserande
-  - dish-fraktur
-  - pelvospondylit
-  - trauma
+  - fraktur
+  - äldre
 - when_to_suspect:
-  - Instabil ryggradsfraktur
+  - Fall hos äldre med ljumsksmärta
+  - Förkortat och utåtroterat ben
 - discriminators:
-  - Lågenergifall hos patient med Mb Bechterew/stel rygg
+  - Garden I-II: Odislocerad, osteosyntes
+  - Garden III-IV: Dislocerad, protes
 - investigation:
-  - Ryggraden bryts som ett rörben
-  - Slätröntgen kan visa glapp
+  - Slätröntgen
 - initial_management:
-  - Trauma-CT
+  - Smärtlindring (femoralisblockad)
 - definitive_management:
-  - Strikt planläge (Traumatransfer)
-  - Behandlas som högenergiskada
+  - Osteosyntes (Garden I-II)
+  - Hel- eller halvprotes (Garden III-IV)
 - complications:
-  - Lång bakre fixation (skruv/stag)
+  - Caputnekros pga bruten blodförsörjning vid dislocerad fraktur
 - pitfalls:
-  - Extrem instabilitet leder lätt till ryggmärgstransektion och död
-- memory_hooks: 
+  - Att förväxla med höftluxation (som ger förkortat och inåtroterat ben)
+- memory_hooks:
+  - I-II = skruv, III-IV = protes
+
 ---
-- area: Diagnostisera som okomplicerad lumbago och skicka hem med Alvedon.
-- entity: 
-- tags:
-  - alvedon.
-  - diagnostisera
-  - hem
-  - lumbago
-  - med
-  - och
-  - okomplicerad
-  - rygg
-  - skicka
-  - som
-- when_to_suspect:
+- area: Ryggortopedi
+- entity: Spinal stenos
+- subtopic_links:
   - Spinal stenos
+  - Ryggortopedi
+- tags:
+  - rygg
+  - neurologi
+- when_to_suspect:
+  - Äldre med bencaudicatio (neurogen)
+  - Symtom lindras i sittande och vid flexion
 - discriminators:
-  - Förträngning i ländryggens spinalkanal
+  - Normala fotpulsar och ABI
+  - Neurogen claudicatio lindras vid flexion (ej vaskulär)
 - investigation:
-  - Äldre. Bencaudicatio.
-- initial_management:
-  - Neurogen claudicatio lindras i sittande/flexion
-  - Normala fotpulsar/ABI
-- definitive_management:
   - MR ländrygg
-- complications:
-  - Fysioterapi, cykling, gång i flexion (rullator)
-- pitfalls:
+- initial_management:
+  - Fysioterapi, cykling, gång med rullator i flexion
+- definitive_management:
   - Dekompression (laminektomi) vid gånghinder
-- memory_hooks: 
----
-- area: Fälla:
-- entity: Blanda ihop med vaskulär claudicatio (som lindras av vila oavsett flexion).
-- tags:
-  - akut
-  - fälla:
-- when_to_suspect:
-  - Rygg
-- discriminators:
-  - Cervikal myelopati
-- investigation:
-  - Central ryggmärgspåverkan i nacken
-- initial_management:
-  - Fumliga händer, ataxi, gångsvårigheter hos äldre
-- definitive_management:
-  - Lhermittes tecken (stötar vid nackflexion)
-  - Hyperreflexi, klonus
 - complications:
-  - MR halsrygg
 - pitfalls:
-  - Mjuk halskrage, smärtlindring
-- memory_hooks: 
+  - Att förväxla med vaskulär claudicatio (som lindras av stå stilla, ej av flexion)
+- memory_hooks:
+  - Kundvagnstecknet = spinal stenos
+
 ---
-- area: Irreversibel tetrapares/plegi
-- entity: Fälla:
+- area: Ryggortopedi
+- entity: Neurogen vs Vaskulär claudicatio
+- subtopic_links:
+  - Spinal stenos
+  - Ryggortopedi
 - tags:
-  - ataxi
-  - eller
-  - hyperreflexi
-  - irreversibel
-  - naturligt
-  - nervskada.
-  - och
-  - perifer
-  - som
-  - tetrapares/plegi
-  - tolka
-  - åldrande
+  - differentialdiagnostik
+  - rygg
 - when_to_suspect:
+  - Smärta eller tyngdkänsla i benen vid gång
 - discriminators:
-  - Rygg
+  - Neurogen: Lindras vid cykling och framåtböjning. Palpabla fotpulsar. ABI normalt.
+  - Vaskulär: Lindras av att stå stilla. Svaga eller frånvarande fotpulsar. ABI <0.9.
 - investigation:
+  - Palpera pulsar, ABI, MR ländrygg
+- initial_management:
+- definitive_management:
+- complications:
+- pitfalls:
+  - Att operera ryggen på en patient som egentligen har nedsatt cirkulation
+- memory_hooks:
+  - Neurogen = böj dig framåt. Vaskulär = stå stilla.
+
+---
+- area: Ryggortopedi
+- entity: Diskbråck (Lumbal)
+- subtopic_links:
   - Diskbråck
-- initial_management:
-  - Lumbosakral nervrotsinklämning
-- definitive_management:
+  - Ryggortopedi
+- tags:
+  - rygg
+  - neurologi
+- when_to_suspect:
   - Ischiassmärta, utstrålning nedanför knät
-- complications:
-  - L5-rot: Svag hälgång (droppfot)
+- discriminators:
+  - L5-rot: Svag hälgång, droppfot
   - S1-rot: Svag tågång, saknad akillesreflex
-  - Positiv Lasegue (SLR)
-- pitfalls:
-  - MR (om op övervägs 6-8v senare)
-- memory_hooks: 
----
-- area: Kirurgi vid svår smärta/pares efter 6-8v
-- entity: Progress till cauda equina syndrom (vid massivt centralt bråck)
-- tags:
-  - kirurgi
-  - fälla:
-  - kirurgi_vid_svår_smärta/pares_efter_6-8v
-- when_to_suspect:
-  - Trod att ett L4-L5 diskbråck påverkar L4 (det komprimerar L5-roten).
-- discriminators:
+  - Positivt Lasegue (SLR)
+  - OBS: L4-L5 bråck komprimerar L5-roten (inte L4)
 - investigation:
-  - Artros
+  - MR om op övervägs efter 6-8 v
 - initial_management:
-  - Höftartros
+  - Konservativ (smärtlindring, fysioterapi)
 - definitive_management:
-  - Broskdestruktion i coxaled
+  - Kirurgi vid svår smärta eller pares efter 6-8 v
 - complications:
-  - Äldre, stelhet, ljumsksmärta
+  - Progress till Cauda Equina-syndrom vid massivt centralt bråck
 - pitfalls:
-  - Patricks test (FABER) utlöser smärta
-  - Trendelenburghälta
-- memory_hooks: 
+  - Att tro att L4-L5 bråck påverkar L4 (det komprimerar L5-roten)
+- memory_hooks:
+  - Bråcket komprimerar roten en nivå lägre
+
 ---
-- area: Artrosskola, fysio, viktnedgång, NSAID
-- entity: Total höftplastik (protes) vid svårt lidande
+- area: Ryggortopedi
+- entity: Cervikal myelopati
+- subtopic_links:
+  - Cervikal myelopati
+  - Ryggortopedi
 - tags:
-  - artrosskola,
-  - fysio,
-  - nsaid
-  - post-op
-  - proteslossning/luxation
-  - viktnedgång,
+  - rygg
+  - neurologi
 - when_to_suspect:
-  - Fälla:
+  - Domningar, svaghet i händer och gångsvårigheter hos äldre
 - discriminators:
-  - Missa att knäsmärta mycket ofta är refererad smärta från höftartros!
+  - Lhermittes tecken (elektrisk stöt vid halsflexion)
+  - Hyperreflexi i benen, klonus, positiv Babinski
 - investigation:
+  - MR halsrygg
 - initial_management:
-  - Artros
+  - Mjuk halskrage och smärtlindring
 - definitive_management:
-  - FAI (Femoro-acetabulär inklämning)
+  - Dekompression (främre eller bakre approach)
 - complications:
-  - Formförändring ledkula/panna
+  - Irreversibel ryggmärgsskada
 - pitfalls:
-  - Yngre idrottare (ex. ishockey) med ljumsksmärta
-- memory_hooks: 
+  - Att blanda ihop med perifer nervinklämning (KTS har svaga reflexer, inte hyperreflexi)
+- memory_hooks:
+  - Hyperreflexi + fumliga händer = cervikal myelopati
+
 ---
-- area: Slätröntgen
-- entity: Fysioterapi, aktivitetsanpassning
+- area: Ryggortopedi
+- entity: DISH och ankyloserad ryggfraktur
+- subtopic_links:
+  - Ryggortopedi
+  - ATLS
 - tags:
-  - artroskopisk
-  - av
-  - hyvling
-  - infektion
-  - osteofyter
-  - slätröntgen
-- when_to_suspect:
-  - Kan leda till tidig utveckling av äkta höftartros
-- discriminators:
-  - Fälla:
-- investigation:
-  - Diagnostiseras felaktigt som "ljumsksträckning" eller primär artros hos ung.
-- initial_management:
-- definitive_management:
-  - Artros
-- complications:
-  - Kronisk protesinfektion
-- pitfalls:
-  - Lågvirulent infektion (ofta S. epidermidis)
-- memory_hooks: 
----
-- area: • CRP lätt förhöjt (6-15)• Röntgen normal initialt
-- entity: Blododling. Ortoperledd steril punktion
-- tags:
-  - akut
-  - antibiotika!
-  - crp
-  - förhöjt
-  - in
-  - initialt
-  - inte
-  - lätt
-  - normal
-  - ortoped.
-  - remiss
-  - röntgen
-  - sätt
-  - till
-  - •
-- when_to_suspect:
-  - 2-seans utbytesoperation (Spacer -> ny protes)
-  - Ta 5-10 odlingar per-op
-- discriminators:
-  - Implantathaveri, svår sepsis
-- investigation:
-  - Fälla:
-- initial_management:
-  - Primärvårdsläkare sätter in peroral AB och saboterar ortopedens per-op odlingar.
-- definitive_management:
-- complications:
-  - Knä
-- pitfalls:
-  - Främre korsbandsruptur (ACL)
-- memory_hooks: 
----
-- area: Vridvåld i idrott. Knät "ger vika"
-- entity: • Snabb svullnad (<12h) = Hemartros• Positivt Lachmans test
-- tags:
-  - "ger
-  - .
-  - akut
-  - i
-  - idrott.
-  - knät
-  - mr
-  - polikliniskt.
-  - rtg
   - trauma
-  - vika"
-  - vridvåld
+  - rygg
 - when_to_suspect:
-  - Elastisk linda, fysio i 3 månader
+  - Patient med Mb Bechterew (AS) eller DISH som ramlat från stående
 - discriminators:
-  - Oftast fysio
-  - Artroskopisk sen-rekonstruktion vid instabilitet/idrottskrav
+  - Den förstela kotpelaren bryts som ett rörben vid lågenergitrauma
+  - Hyperextensionsskada, extremt instabil
 - investigation:
-  - &gt;50% får sekundär knäartros inom 15 år
+  - CT helrygg obligat (även vid beskedligt trauma)
 - initial_management:
-  - Fälla:
+  - Absolut planläge och log-roll
 - definitive_management:
-  - Att försöka "sy" korsbandet akut (det rekonstrueras med graft mycket senare).
+  - Ofta lång instrumenterad spinal fusion
 - complications:
+  - Hög risk för ryggmärgsskada och paraplegi om skadan missas
 - pitfalls:
-  - Knä
-- memory_hooks: 
+  - Att avskriva ryggsmärta hos Bechterew som vanligt skov efter ett fall
+- memory_hooks:
+  - Stel ryggrad + fall = alltid CT
+
 ---
-- area: Broskskada
-- entity: Hakningar, låsningar i leden, ledspringesmärta
+- area: Knäligament
+- entity: ACL-ruptur (Främre korsband)
+- subtopic_links:
+  - Knäligament
+  - Trauma
 - tags:
-  - apleys
-  - broskskada
-  - mcmurrays
-  - positivt
-  - test
-  - test•
-  - •
-- when_to_suspect:
-  - MR (endast om operation övervägs)
-- discriminators:
-  - Fysioterapi (förstahandsval för degenerativa)
-- investigation:
-  - Artroskopisk sutur (om ung/skada i röd zon)
-  - Partiell resektion vid inklämning
-- initial_management:
-  - Ökad risk för snabb knäartros efter partiell meniskresektion
-- definitive_management:
-  - Fälla:
-- complications:
-  - Remittera degenerativa artrosmenisker för artroskopi "bara för att" städa (fungerar ej).
-- pitfalls:
-- memory_hooks: 
----
-- area: Osteokondritis dissekans (OCD)
-- entity: Fokal subkondral nekros
-- tags:
-  - barn/unga
-  - belastningssmärta
-  - dissekans
-  - hos
-  - mekaniska
-  - och
-  - osteokondritis
-  - symtom
-- when_to_suspect:
-  - Lös ben/brosk-bit ("lös mus") lossnar ofta från mediala femurkondylen
-- discriminators:
-  - Slätröntgen + MR
-- investigation:
-  - Avlastning, ortos
-- initial_management:
-  - Artroskopisk borrning (stimulerar broskbildning via stamceller)
-- definitive_management:
-  - Bensekvestern kan skapa stora skador på intakt ledbrosk
-- complications:
-  - Fälla:
-- pitfalls:
-  - Förväxla med Mb Osgood-Schlatter (som sitter extraartikulärt på tuberositas tibiae).
-- memory_hooks: 
----
-- area: Knä
-- entity: Patellaluxation
-- tags:
-  - akut
   - knä
-  - knäskål
-  - led
-  - ur
+  - idrottsskada
 - when_to_suspect:
-  - Vridvåld / patella luxerar oftast lateralt
+  - Vridvåld i idrott, knät ger vika
+  - Snabb svullnad <12h (hemartros)
 - discriminators:
-  - Positivt apprehension test för patella
+  - Positivt Lachmans test
+  - Hemartros på punktion
+- investigation:
+  - Rtg (uteslut fraktur), MR polikliniskt
+- initial_management:
+  - Elastisk linda, fysio i 3 månader
+- definitive_management:
+  - Artroskopisk sen-rekonstruktion vid instabilitet eller idrottskrav
+- complications:
+  - >50% får sekundär knäartros inom 15 år
+- pitfalls:
+  - Att försöka sy korsbandet akut (rekonstrueras med graft, ej sutur)
+- memory_hooks:
+  - Hemartros + Lachmans = ACL
+
+---
+- area: Knäligament
+- entity: Meniskskada
+- subtopic_links:
+  - Knäligament
+  - Behandling
+- tags:
+  - knä
+  - broskskada
+- when_to_suspect:
+  - Hakningar, låsningar i leden, ledspringesmärta
+- discriminators:
+  - Positivt Apley och McMurrays test
+- investigation:
+  - MR (endast om operation övervägs)
+- initial_management:
+  - Fysioterapi (förstahandsval vid degenerativa)
+- definitive_management:
+  - Artroskopisk sutur (ung patient, skada i röd zon)
+  - Partiell resektion vid inklämning
+- complications:
+  - Ökad risk för snabb knäartros efter partiell meniskresektion
+- pitfalls:
+  - Att remittera degenerativa artrosmenisker för artroskopi (fungerar inte)
+- memory_hooks:
+
+---
+- area: Knäligament
+- entity: Patellaluxation
+- subtopic_links:
+  - Knäligament
+  - Frakturlära
+- tags:
+  - knä
+  - akut
+- when_to_suspect:
+  - Vridvåld, patella luxerar lateralt
+  - Positivt apprehension test
+- discriminators:
+  - Slätröntgen
 - investigation:
   - Slätröntgen
 - initial_management:
@@ -605,427 +523,134 @@
 - complications:
   - Kvarstående instabilitet
 - pitfalls:
-  - Fälla:
-- memory_hooks: 
+  - Att inte fånga underliggande dysplasi
+- memory_hooks:
+
 ---
-- area: 
-- entity: Fot
+- area: Artros
+- entity: Höftartros
+- subtopic_links:
+  - Höftartros
+  - Artros
 - tags:
-  - akut
-  - hälseneruptur
-  - kirurgi
-- when_to_suspect:
-  - Total senruptur
-- discriminators:
-  - Akut smäll i vaden (ex. badminton), svårt att gå
-- investigation:
-  - Palpabel grop
-  - Positivt Thompsons test
-  - Positivt Matles test
-- initial_management:
-  - KLINISK DIAGNOS! (Ev ultraljud)
-- definitive_management:
-  - 8 v i gips/ortos i spetsfot
-- complications:
-  - Icke-kirurgisk / kirurgisk. Båda ger 8v ortos.
-- pitfalls:
-  - Reruptur
-  - DVT i gips (kräver profylax med Fragmin)
-- memory_hooks: 
----
-- area: Beställa MR för att säkerställa (diagnosen är klinisk, MR fördröjer bara).
-- entity: 
-- tags:
-  - .
-  - att
-  - beställa
-  - fot
-  - för
-  - mr
-  - säkerställa
-- when_to_suspect:
-  - Charcotfot
-- discriminators:
-  - Neuropatisk destruktiv osteopati
-- investigation:
-  - Diabetiker med smärtfri, svullen, röd fot efter bagatellartat våld
-- initial_management:
-  - Röd, varm fot
-  - Lågt/normalt CRP (ej septisk!)
-  - Bendestruktion på rtg
-- definitive_management:
-  - Slätröntgen
-- complications:
-  - TOTAL avlastning direkt! Remiss ortoped
-- pitfalls:
-  - Långvarig gipsning, total avlastning
-- memory_hooks: 
----
-- area: Fälla:
-- entity: Feldiagnostiseras ofta som Erysipelas (rosfeber) pga rodnaden, men saknar feber/CRP.
-- tags:
-  - fälla:
-- when_to_suspect:
-  - Fot
-- discriminators:
-  - Främre impingement / Fotbollsvrist
-- investigation:
-  - Osteofyter på fotledens framsida
-- initial_management:
-  - Elitfotbollsspelare, smärta vid avstamp
-- definitive_management:
-  - Smärta vid maximal dorsalflexion
-  - Synliga pålagringar framtill på rtg
-- complications:
-  - Slätröntgen
-- pitfalls:
-  - Aktivitetsanpassning
-- memory_hooks: 
----
-- area: Kronisk smärta vid fotbollsspel
-- entity: Fälla:
-- tags:
-  - .
-  - fotbollsspel
-  - förväxla
-  - kronisk
-  - med
-  - os
-  - smärta
-  - trigonum
-  - vid
-- when_to_suspect:
-- discriminators:
-  - Fot
-- investigation:
-  - Bakre impingement / Os trigonum
-- initial_management:
-  - Accessoriskt extraben bakom talus
-- definitive_management:
-  - Balettdansare/gymnast, smärta i bakfoten
-- complications:
-  - Smärta utlöses vid maximal plantarflexion (ex stå på tå)
-- pitfalls:
-  - Slätröntgen
-- memory_hooks: 
----
-- area: Artroskopisk excision av Os trigonum via bakre portaler
-- entity: Smärta, försämrad prestationsförmåga
-- tags:
-  - artroskopisk
-  - av
-  - bakre
-  - excision
-  - os
-  - portaler
-  - trigonum
-  - via
-  - fälla:
-- when_to_suspect:
-  - Förväxla med Främre impingement/fotbollsvrist.
-- discriminators:
-- investigation:
-  - Fot
-- initial_management:
-  - Klotå
-- definitive_management:
-  - Deformitet av PIP-led (flexion)
-- complications:
-  - Smärta ovanpå/framtill på tån vid skogång
-- pitfalls:
-  - Är deformiteten flexibel eller rigid?
-- memory_hooks: 
----
-- area: Rymliga skor
-- entity: Böjseneavskärning (om flexibel). PIP-ledsartrodes (om rigid).
-- tags:
-  - diabetiker
-  - fotsår
-  - hos
-  - rymliga
-  - skavsår,
-  - skor
-- when_to_suspect:
-  - Fälla:
-- discriminators:
-  - Utföra enbart sena-avskärning på en rigid klotå (leden har redan stelnat).
-- investigation:
-- initial_management:
-  - Axel
-- definitive_management:
-  - Subakromialt Impingement
-- complications:
-  - Inklämning av supraspinatus
-- pitfalls:
-  - Värk i överarm, nattvärk, ont vid armlyft
-- memory_hooks: 
----
-- area: Slätröntgen. Ev UL
-- entity: Fysioterapi 6 månader! (Kortison)
-- tags:
-  - akromioplastik
-  - behandlingssvikt
-  - ev
-  - slätröntgen.
-  - ul
-  - vid
-- when_to_suspect:
-  - Sekundär Rotatorcuffruptur pga långvarigt slitage
-- discriminators:
-  - Fälla:
-- investigation:
-  - Förväxla med "Frozen shoulder" (som har nedsatt
-- initial_management:
-  - passiv
-- definitive_management:
-  - rörlighet, ej impingement).
-- complications:
-- pitfalls:
-  - Axel
-- memory_hooks: 
----
-- area: Artros i akromioklavikularleden
-- entity: Smärta högst upp på axeln
-- tags:
-  - akromioklavikularleden
   - artros
-  - cross-body
-  - i
-  - positivt
-  - test
-  - •
+  - höft
 - when_to_suspect:
+  - Äldre med stelhet och ljumsksmärta
+  - Patricks test (FABER) utlöser smärta
+  - Trendelenburghälta
+- discriminators:
+  - Broskdestruktion i coxaled
+- investigation:
   - Slätröntgen
-- discriminators:
-  - Fysioterapi, smärtlindring
-- investigation:
-  - Lateral klavikelresektion (ta bort yttre änden av nyckelbenet)
 - initial_management:
-  - Kronisk värk
+  - Artrosskola, fysio, viktnedgång, NSAID
 - definitive_management:
-  - Fälla:
+  - Total höftplastik (protes) vid svårt lidande
 - complications:
-  - Förväxla med impingement (AC-leden gör mest ont över 120° och vid extrem adduktion).
+  - Proteslossning, luxation
 - pitfalls:
-- memory_hooks: 
+  - Knäsmärta kan vara refererad smärta från höftartros
+- memory_hooks:
+
 ---
-- area: Främre axelluxation
-- entity: Caput humeri hoppar ur led framåt
-- tags:
-  - armen
-  - axelkontur.
-  - axelluxation
-  - fixerad.
-  - främre
-  - hålls
-  - kirurgi
-  - kraftigt
-  - trauma
-  - trauma,
-  - utslätad
-- when_to_suspect:
-  - Caput palperas framtill (95% är anteriora)
-  - Påverkad N. axillaris
-- discriminators:
-  - Rtg (Alltid frontal + SIDA)
-- investigation:
-  - Grovreponering -> Nytt distalstatus -> Kontrollrtg
-- initial_management:
-  - Slynga 1-2 v
-  - Kirurgi (Bankart-reparation) för unga/idrottare
-- definitive_management:
-  - Recidiverande luxation, Bankartskada, Hill-Sachs lesion
-- complications:
-  - Fälla:
-- pitfalls:
-  - Missa en bakre luxation som bara ger ett "Light bulb sign" på frontalbild (kräver sidobild!).
-- memory_hooks: 
----
-- area: Tumör
-- entity: Skelettsarkom (Barn/Unga)
-- tags:
-  - akut
-  - kirurgi
-  - malign
-  - primär
-  - skelettumör
-  - tumör
-- when_to_suspect:
-  - Barn med tilltagande oklar skelettsmärta
-- discriminators:
-  - Djup VILOVÄRK och nattlig smärta i skelett
-  - Palpabel skelettresistens
-- investigation:
-  - Konventionell Rtg -> MR via SVF Sarkom
-- initial_management:
-  - AKUT remiss
-  - Omedelbart omhändertagande på Sarkomcentrum
-- definitive_management:
-  - Cytostatika -> Radikal kirurgi (med vida marginaler) -> Cytostatika
-- complications:
-  - Lokalrecidiv, lungmetastaser. Hög dödlighet
-- pitfalls:
-  - Fälla:
-- memory_hooks: 
----
-- area: 
-- entity: Tumör
-- tags:
-  - kirurgi
-  - mjukdelssarkom
-- when_to_suspect:
-  - Malign mjukdelstumör
-- discriminators:
-  - Knöl hos vuxen som växer
-- investigation:
-  - Knöl >5 cm stor
-  - Sitter djupt (under fascian)
-  - Tillväxer snabbt
-- initial_management:
-  - MR via SVF (Kräver exakt anatomisk remissbeskrivning!)
-- definitive_management:
-  - SVF Sarkom direkt. Rör ej resistensen kirurgiskt!
-- complications:
-  - Radikal excision med vid marginal på Sarkomcentrum
-- pitfalls:
-  - Spridning om felaktig biopsi genomförts på VC (seeding)
-- memory_hooks: 
----
-- area: Remittera "Knöl på armen" (Fördröjer MR enormt. Skriv: "Dorsalt Vä underarm 5cm distalt om olecranon").
-- entity: 
-- tags:
-  - "knöl
-  - .
-  - armen"
-  - på
-  - radio
-  - remittera
-- when_to_suspect:
-  - T2-viktad MRT
-- discriminators:
-  - MR-fysik för diagnostik
-- investigation:
-  - Standardsekvens för att hitta vätska, cystor, ödem, ryggmärg
-- initial_management:
-  - Vätska/Vatten lyser VITT (ljust) på T2
-  - Fett lyser också
-- definitive_management:
-- complications:
-- pitfalls:
-- memory_hooks: 
----
-- area: Trauma
-- entity: Placering av bäckengördel
-- tags:
-  - handläggning
-  - ortopedi
-  - traumatologi
-- when_to_suspect:
-  - Instabilt bäcken efter högenergivåld (öppen bok)
-- discriminators:
-  - Mekanisk stabilisering och tamponad av det venösa blödningsutrymmet
-- investigation:
-- initial_management:
-  - Anlägg bäckenbälte / draglakan
-- definitive_management:
-- complications:
-- pitfalls:
-  - Att placera den över crista iliaca (vingarna) - gör saken sämre! Ska placeras HÅRT över trochanter major.
-- memory_hooks: 
----
-- area: Rygg
-- entity: DISH / Ankyloserad ryggfraktur
-- tags:
-  - ortopedi
-  - ryggkirurgi
-  - traumatologi
-- when_to_suspect:
-  - Patient med Mb Bechterew (AS) eller DISH som ramlat från stående
-- discriminators:
-  - Den "förstela" kotpelaren fungerar som ett långt rör; en fraktur blir extremt instabil likt ett rörbräck (hyperextensionsskada)
-- investigation:
-  - Alltid CT helrygg (även vid beskedligt trauma!)
-- initial_management:
-  - Absolut planläge och log-roll
-- definitive_management:
-  - Ofta lång instrumenterad spinal fusion (skruvning)
-- complications:
-  - Hög risk för ryggmärgsskada/paraplegi om skadan missas
-- pitfalls:
-  - Att avskriva ryggsmärta hos Bechterew som "vanligt skov" efter ett fall
-- memory_hooks: 
----
-- area: Rygg
-- entity: Neurogen vs Vaskulär claudicatio
-- tags:
-  - diagnostik
-  - kärlkirurgi
-  - ortopedi
-- when_to_suspect:
-  - Smärta/tyngdkänsla i benen vid gång
-- discriminators:
-  - Neurogen: Spinal stenos. Symtomen lindras av cykling / böja ryggen framåt (kundvagnstecknet). Fotpulsar är PALPABLA.
-  - Vaskulär: Fönstertittarsjuka. Symtomen lindras av att STÅ STILLA. Fotpulsar är SAKNAS/Svaga, ABI < 0.9.
-- investigation:
-  - Palpera pulsar, ABI, MR Ländrygg
-- initial_management:
-- definitive_management:
-- complications:
-- pitfalls:
-  - Att operera ryggen på en patient som egentligen har nedsatt cirkulation
-- memory_hooks: 
----
-- area: Rygg
-- entity: Cervikal myelopati
-- tags:
-  - neurologi
-  - ortopedi
-  - ryggkirurgi
-- when_to_suspect:
-  - Domningar, svaghet i händer och gångsvårigheter
-- discriminators:
-  - Lhermittes tecken (elektrisk stöt ner i rygg/armar vid halsflexion)
-  - Hyperreflexi i benen (klonus, positiv Babinski)
-- investigation:
-  - MR Halsrygg (visar trång spinalkanal/ryggmärgsödem)
-- initial_management:
-- definitive_management:
-  - Dekompression (främre eller bakre)
-- complications:
-  - Irreversibel ryggmärgsskada
-- pitfalls:
-  - Att blanda ihop med perifer nervinklämning (Karpaltunnelsyndrom har svaga reflexer, inte hyperreflexi!)
-- memory_hooks: 
----
-- area: Handled
-- entity: Operationskriterier Distal Radiusfraktur
-- tags:
-  - frakturkirurgi
-  - handkirurgi
-  - ortopedi
-- when_to_suspect:
-  - FOOSH (Fall On OutStretched Hand) med felställning
-- discriminators:
-  - Exakt radiologisk felställning avgör om operation (platta) behövs
-- investigation:
-  - Röntgen efter sluten reposition
-- initial_management:
-- definitive_management:
-  - OP-kriterier hos vuxna: Dorsalvinkling >10 grader, Volarvinkling >20 grader, Förkortning >2 mm, Ledhak >1-2 mm
-- complications:
-  - Nedsatt rörelseomfång, CRPS
-- pitfalls:
-- memory_hooks: 
----
-- area: Fot/Fotled
-- entity: Os Trigonum / Bakre impingement
+- area: Artros
+- entity: Femoroacetabulär inklämning (FAI)
+- subtopic_links:
+  - Artros
+  - Höftartros
 - tags:
   - idrottsmedicin
-  - ortopedi
+  - höft
 - when_to_suspect:
-  - Djup bakre fotledssmärta vid plantarflexion (balettdansöser, fotbollspelare)
+  - Ljumsksmärta hos unga vuxna och idrottare
+  - Smärta vid inåtrotation och flexion
 - discriminators:
-  - Kompression av extra benkärna (os trigonum) eller kapselvävnad bakom talus
+  - CAM: Pålagring på lårbenshalsen
+  - PINCER: Övergrepp av acetabulum
+  - FADIR-test positivt
+- investigation:
+  - Röntgen bäcken och Lauenstein, MR
+- initial_management:
+  - Fysioterapi
+- definitive_management:
+  - Höftartroskopisk resektion av osteofyter
+- complications:
+  - Sekundär artros om obehandlat länge
+- pitfalls:
+  - Diagnostiseras felaktigt som ljumsksträckning eller primär artros hos ung
+- memory_hooks:
+
+---
+- area: Hälsena
+- entity: Hälseneruptur
+- subtopic_links:
+  - Hälsena
+  - Fotortopedi
+- tags:
+  - akut
+  - senruptur
+- when_to_suspect:
+  - Akut smäll i vaden (ex badminton), svårt att gå
+- discriminators:
+  - Palpabel grop i sena
+  - Positivt Thompsons test (ingen plantarflexion vid vadkompression)
+  - Positivt Matles test
+- investigation:
+  - Klinisk diagnos (ev ultraljud)
+- initial_management:
+  - Icke-kirurgisk eller kirurgisk, båda ger 8 v ortos i spetsfot
+- definitive_management:
+  - 8 v i gips eller ortos i spetsfot
+- complications:
+  - Reruptur
+  - DVT i gips (kräver Fragmin)
+- pitfalls:
+  - Att beställa MR för att säkerställa (diagnosen är klinisk, MR fördröjer bara)
+- memory_hooks:
+  - Thompsons test = klinisk diagnos
+
+---
+- area: Fotortopedi
+- entity: Charcotfot
+- subtopic_links:
+  - Fotortopedi
+  - Akuta tillstånd
+- tags:
+  - diabetes
+  - fot
+- when_to_suspect:
+  - Diabetiker med smärtfri, svullen, röd fot efter bagatellartat våld
+- discriminators:
+  - Röd, varm fot med lågt eller normalt CRP (ej septisk)
+  - Bendestruktion på röntgen
+- investigation:
+  - Slätröntgen
+- initial_management:
+  - TOTAL avlastning direkt, remiss ortoped
+- definitive_management:
+  - Långvarig gipsning och total avlastning
+- complications:
+  - Svår fotdeformitet och sår
+- pitfalls:
+  - Feldiagnostiseras ofta som Erysipelas pga rodnaden (men saknar feber och högt CRP)
+- memory_hooks:
+  - Smärtfri röd fot hos diabetiker = Charcot tills bevisat
+
+---
+- area: Fotortopedi
+- entity: Os Trigonum och bakre impingement
+- subtopic_links:
+  - Fotortopedi
+- tags:
+  - fot
+  - idrottsmedicin
+- when_to_suspect:
+  - Djup bakre fotledssmärta vid plantarflexion
+  - Balettdansöser och fotbollsspelare
+- discriminators:
+  - Kompression av os trigonum bakom talus
+  - Smärta vid maximal plantarflexion
 - investigation:
   - Slätröntgen, lokalanestesi i bakre leden
 - initial_management:
@@ -1034,62 +659,210 @@
   - Artroskopisk excision om terapiresistent
 - complications:
 - pitfalls:
-  - Blanda ihop med akillestendinit
-- memory_hooks: 
+  - Att förväxla med främre impingement (fotbollsvrist)
+- memory_hooks:
+
 ---
-- area: Fot/Fotled
-- entity: Främre fotledsimpingement (Fotbollsvrist)
+- area: Fotortopedi
+- entity: Klotå
+- subtopic_links:
+  - Fotortopedi
 - tags:
-  - idrottsmedicin
-  - ortopedi
+  - fot
 - when_to_suspect:
-  - Främre smärta vid maximal dorsalflexion i fotleden
+  - Deformitet av PIP-led (flexion), smärta vid skogång
 - discriminators:
-  - Osteofyter på framkanten av tibia och talus som krockar
+  - Flexibel vs rigid deformitet avgör behandling
 - investigation:
-  - Röntgen
 - initial_management:
+  - Rymliga skor
 - definitive_management:
-  - Artroskopisk abration ("cheilectomi")
+  - Böjseneavskärning om flexibel
+  - PIP-ledsartrodes om rigid
 - complications:
 - pitfalls:
-- memory_hooks: 
+  - Att utföra enbart sena-avskärning på en rigid klotå
+- memory_hooks:
+
 ---
-- area: Höft
-- entity: Femoroacetabulär inklämning (FAI)
+- area: Axel och armbåge
+- entity: Subakromialt impingement och rotatorcuffruptur
+- subtopic_links:
+  - Axel och armbåge
 - tags:
-  - idrottsmedicin
-  - ortopedi
+  - axel
+  - idrottsskada
 - when_to_suspect:
-  - Ljumsksmärta hos unga vuxna/idrottare (särskilt vid inåtrotation + flexion)
+  - Värk i överarm, nattvärk, smärta vid armlyft
 - discriminators:
-  - CAM-impingement (Pålagring på lårbenshalsen) eller PINCER (Övergrepp av acetabulum). Kan leda till labrumskada. Viktigaste diff till tidig artros!
+  - Impingement: Positiv Neers och Hawkins
+  - Rotatorcuffruptur: Smärta och svaghet
 - investigation:
-  - FADIR-test i status. Röntgen Bäcken/Lauenstein. MR.
+  - Slätröntgen, ev ultraljud
 - initial_management:
-  - Fysioterapi
+  - Fysioterapi 6 månader (kortison vid behov)
 - definitive_management:
-  - Höftartroskopisk resektion av osteofyter
+  - Akromioplastik vid behandlingssvikt
+  - Senreparation vid rupturer
 - complications:
-  - Sekundär artros om obehandlat länge
+  - Sekundär rotatorcuffruptur pga långvarigt slitage
 - pitfalls:
-- memory_hooks: 
+  - Förväxla med Frozen shoulder (nedsatt passiv rörlighet, ej impingement)
+- memory_hooks:
+
+---
+- area: Axel och armbåge
+- entity: AC-ledsartros
+- subtopic_links:
+  - Axel och armbåge
+- tags:
+  - axel
+  - artros
+- when_to_suspect:
+  - Kronisk värk högst upp på axeln
+  - Positivt cross-body test
+- discriminators:
+  - Smärta värst vid >120° och extrem adduktion
+- investigation:
+  - Slätröntgen
+- initial_management:
+  - Fysioterapi och smärtlindring
+- definitive_management:
+  - Lateral klavikelresektion (yttre änden av nyckelbenet)
+- complications:
+- pitfalls:
+  - Förväxla med impingement
+- memory_hooks:
+
+---
+- area: Axel och armbåge
+- entity: Främre axelluxation
+- subtopic_links:
+  - Axel och armbåge
+  - Trauma
+- tags:
+  - axel
+  - akut
+- when_to_suspect:
+  - Caput humeri hoppar ur led framåt (95% är anteriora)
+  - Utslätad axelkontur, armen fixerad i lätt abduktion
+- discriminators:
+  - Caput palperas framtill
+  - Påverkad N. axillaris (deltoideus)
+- investigation:
+  - Rtg alltid: Frontal + sida
+- initial_management:
+  - Grovreponering, nytt distalstatus, kontrollrtg
+  - Slynga 1-2 v
+- definitive_management:
+  - Kirurgi (Bankart-reparation) för unga och idrottare
+- complications:
+  - Recidiverande luxation, Bankartskada, Hill-Sachs lesion
+- pitfalls:
+  - Missa bakre luxation (ger bara Light bulb sign på frontal, kräver sidobild)
+- memory_hooks:
+  - Alltid sidobild vid axeltrauma
+
+---
+- area: SVF Sarkom
+- entity: Skelettsarkom
+- subtopic_links:
+  - SVF Sarkom
+  - Behandling
+- tags:
+  - malignitet
+  - tumör
+- when_to_suspect:
+  - Barn med tilltagande oklar skelettsmärta
+  - Djup vilovärk och nattlig smärta
+  - Palpabel skelettresistens
+- discriminators:
+  - Vilovärk och nattlig smärta är alarmsymtom
+- investigation:
+  - Konventionell rtg, sedan MR via SVF Sarkom
+- initial_management:
+  - Akut remiss till Sarkomcentrum
+  - Exakt anatomisk remissbeskrivning obligat
+- definitive_management:
+  - Cytostatika → Radikal kirurgi → Cytostatika
+- complications:
+  - Lokalrecidiv, lungmetastaser, hög dödlighet
+- pitfalls:
+  - Att remittera som Knöl på armen (fördröjer enorm tid, skriv exakt lokalisation)
+- memory_hooks:
+  - Vilovärk + nattlig smärta i skelett = SVF Sarkom
+
+---
+- area: SVF Sarkom
+- entity: Mjukdelssarkom
+- subtopic_links:
+  - SVF Sarkom
+  - Behandling
+- tags:
+  - malignitet
+  - mjukdelar
+- when_to_suspect:
+  - Knöl hos vuxen som växer
+  - Knöl >5 cm, djupt sittande (under fascian), snabb tillväxt
+- discriminators:
+  - MR via SVF (kräver exakt anatomisk remissbeskrivning)
+- investigation:
+  - MR
+- initial_management:
+  - SVF Sarkom direkt, rör INTE resistensen kirurgiskt
+- definitive_management:
+  - Radikal excision med vid marginal på Sarkomcentrum
+- complications:
+  - Spridning om felaktig biopsi genomförs på VC (seeding)
+- pitfalls:
+  - Att excidera lokalt på VC
+- memory_hooks:
+  - >5 cm + djupt = SVF Sarkom
+
 ---
 - area: Radiologi
 - entity: MR T1 vs T2
+- subtopic_links:
+  - Radiologi
+  - Terminologi
 - tags:
-  - diagnostik
-  - ortopedi
   - radiologi
+  - diagnostik
 - when_to_suspect:
   - Tolkning av muskuloskeletal MR
 - discriminators:
-  - T2-viktad bild: Vatten/Vätska lyser VITT (ödem, inflammation, CSF).
-  - T1-viktad bild: Fett lyser vitt. Bra för anatomi.
+  - T2: Vatten och vätska lyser vitt (ödem, inflammation, CSF)
+  - T1: Fett lyser vitt, bra för anatomi
 - investigation:
 - initial_management:
 - definitive_management:
 - complications:
 - pitfalls:
   - Att leta tumörödem på en okontrasterad T1-sekvens
-- memory_hooks: 
+- memory_hooks:
+  - T2 = Tänk Vätska (Ljust)
+
+---
+- area: Behandling
+- entity: Artros (Generell handläggning)
+- subtopic_links:
+  - Artros
+  - Behandling
+- tags:
+  - artros
+  - handläggning
+- when_to_suspect:
+  - Ledvärk, stelhet och krepitationer hos äldre
+- discriminators:
+  - Röntgen visar ledspaltsminskning, osteofyter, subkondral skleros
+- investigation:
+  - Slätröntgen
+- initial_management:
+  - Artrosskola, viktnedgång, fysioterapi, NSAID
+- definitive_management:
+  - Ledprotes vid svårt lidande
+- complications:
+  - Protesinfektion och luxation
+- pitfalls:
+  - Att operera utan adekvat konservativ behandling
+- memory_hooks:

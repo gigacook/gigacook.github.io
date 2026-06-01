@@ -5,7 +5,7 @@ from .models import MatrixEntity
 
 _SCALAR = {'area', 'entity'}
 _LIST = {
-    'tags', 'when_to_suspect', 'discriminators',
+    'tags', 'subtopic_links', 'when_to_suspect', 'discriminators',
     'investigation', 'initial_management', 'definitive_management',
     'complications', 'pitfalls', 'memory_hooks',
 }
@@ -48,6 +48,7 @@ def _parse_block(block: str, specialty: str) -> MatrixEntity | None:
         area=scalars['area'],
         entity=scalars['entity'],
         tags=lists['tags'],
+        subtopic_links=lists['subtopic_links'],
         when_to_suspect=lists['when_to_suspect'],
         discriminators=lists['discriminators'],
         investigation=lists['investigation'],

@@ -23,6 +23,7 @@
     "KIR_ONKOLOGI_044",
     "KIR_ONKOLOGI_056",
     "KIR_ONKOLOGI_063",
+    "KIR_ORG_075",
     "KIR_ORTOPEDI_018",
     "KIR_ORTOPEDI_134",
     "KIR_ORTOPEDI_155",
@@ -30,7 +31,13 @@
     "KIR_PLASTIKKIRURGI_018",
     "KIR_PLASTIKKIRURGI_034",
     "KIR_PLASTIKKIRURGI_040",
-    "KIR_TRF_067"
+    "KIR_PLASTIKKIRURGI_041",
+    "KIR_SMR_019",
+    "KIR_SMR_024",
+    "KIR_SMR_030",
+    "KIR_TRF_067",
+    "exam_237",
+    "exam_707"
   ],
   "correct_questions": [
     "KIR_013",
@@ -44,10 +51,13 @@
     "KIR_HANDKIRURGI_084",
     "KIR_KÄRLKIRURGI_068",
     "KIR_ONKOLOGI_044",
+    "KIR_ORG_075",
     "KIR_ORTOPEDI_134",
     "KIR_ORTOPEDI_155",
     "KIR_PLASTIKKIRURGI_007",
-    "KIR_PLASTIKKIRURGI_040"
+    "KIR_PLASTIKKIRURGI_040",
+    "KIR_PLASTIKKIRURGI_041",
+    "KIR_SMR_030"
   ],
   "incorrect_questions": [
     "KIR_079",
@@ -57,7 +67,11 @@
     "KIR_ONKOLOGI_056",
     "KIR_ONKOLOGI_063",
     "KIR_PLASTIKKIRURGI_034",
-    "KIR_TRF_067"
+    "KIR_SMR_019",
+    "KIR_SMR_024",
+    "KIR_TRF_067",
+    "exam_237",
+    "exam_707"
   ],
   "archived_questions": [
     "KIR_019",

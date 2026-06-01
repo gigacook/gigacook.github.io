@@ -21,8 +21,8 @@
   {
     "id": "KIR_UROLOGI_002",
     "huvudområde": "Akut urologi",
-    "subtopic": "Urinretention komplikationer",
-    "typ": "Handläggning",
+    "subtopic": "Akut urinretention",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "Vilken fysiologisk riskfas uppstår oftast hos patienten efter tappning av en voluminös kronisk urinretention?",
     "alternativ": {
@@ -40,8 +40,8 @@
   {
     "id": "KIR_UROLOGI_003",
     "huvudområde": "Akut urologi",
-    "subtopic": "Urinretention prover",
-    "typ": "Handläggning",
+    "subtopic": "Akut urinretention",
+    "typ": "handläggning",
     "svårighetsgrad": "lätt",
     "fråga": "Vilka blodprover måste alltid kontrolleras vid misstanke om kronisk urinretention på akuten?",
     "alternativ": {
@@ -59,8 +59,8 @@
   {
     "id": "KIR_UROLOGI_004",
     "huvudområde": "Akut urologi",
-    "subtopic": "Post-distensionshematuri",
-    "typ": "Komplikationer",
+    "subtopic": "Akut urinretention",
+    "typ": "komplikationer",
     "svårighetsgrad": "medel",
     "fråga": "Vad är mekanismen bakom post-distensionshematuri efter att man har kateteriserat en uttalad urinretention?",
     "alternativ": {
@@ -78,8 +78,8 @@
   {
     "id": "KIR_UROLOGI_005",
     "huvudområde": "Akut urologi",
-    "subtopic": "Urinretention och infektion",
-    "typ": "Handläggning",
+    "subtopic": "Akut urinretention",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "En patient inkommer med hög feber och en akut urinretention som avlastas utan problem. Vilken åtgärd är nu mest korrekt?",
     "alternativ": {
@@ -98,7 +98,7 @@
     "id": "KIR_UROLOGI_006",
     "huvudområde": "Akut urologi",
     "subtopic": "Avstängd pyelit",
-    "typ": "Handläggning",
+    "typ": "handläggning",
     "svårighetsgrad": "lätt",
     "fråga": "Vilken intervention är urakut viktigast för att hindra uremi/sepsis och rädda njuren vid avstängd pyelit?",
     "alternativ": {
@@ -116,8 +116,8 @@
   {
     "id": "KIR_UROLOGI_007",
     "huvudområde": "Akut urologi",
-    "subtopic": "Avstängd pyelit antibiotika",
-    "typ": "Handläggning",
+    "subtopic": "Avstängd pyelit",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "Vilket intravenöst antibiotikum rekommenderas i första hand akut vid avstängd pyelit?",
     "alternativ": {
@@ -135,8 +135,8 @@
   {
     "id": "KIR_UROLOGI_008",
     "huvudområde": "Akut urologi",
-    "subtopic": "Testistorsion tid",
-    "typ": "Handläggning",
+    "subtopic": "Testistorsion",
+    "typ": "handläggning",
     "svårighetsgrad": "lätt",
     "fråga": "Inom vilken tidsram från symtomdebut bör orkidopexi och detorkvering utföras för god prognos vid testistorsion?",
     "alternativ": {
@@ -154,8 +154,8 @@
   {
     "id": "KIR_UROLOGI_009",
     "huvudområde": "Akut urologi",
-    "subtopic": "Testistorsion status",
-    "typ": "Statusfynd",
+    "subtopic": "Testistorsion",
+    "typ": "statusfynd",
     "svårighetsgrad": "medel",
     "fråga": "Vilket objektivt fynd vid status stödjer starkast diagnosen testistorsion framför epididymit?",
     "alternativ": {
@@ -173,8 +173,8 @@
   {
     "id": "KIR_UROLOGI_010",
     "huvudområde": "Akut urologi",
-    "subtopic": "Testistorsion radiologi",
-    "typ": "Bildtolkning",
+    "subtopic": "Testistorsion",
+    "typ": "diagnostik",
     "svårighetsgrad": "lätt",
     "fråga": "Vad är det primära ultraljudsfyndet med doppler som verifierar en fullständig testistorsion?",
     "alternativ": {
@@ -192,8 +192,8 @@
   {
     "id": "KIR_UROLOGI_011",
     "huvudområde": "Akut urologi",
-    "subtopic": "Epididymit etiologi",
-    "typ": "Mekanismer",
+    "subtopic": "Epididymit",
+    "typ": "mekanismer",
     "svårighetsgrad": "medel",
     "fråga": "Vilken bakterie orsakar oftast epididymit hos äldre män, framförallt hos de med KAD?",
     "alternativ": {
@@ -211,8 +211,8 @@
   {
     "id": "KIR_UROLOGI_012",
     "huvudområde": "Akut urologi",
-    "subtopic": "Epididymit uppföljning",
-    "typ": "Handläggning",
+    "subtopic": "Epididymit",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "Varför skall patienter med genomgången epididymit följas upp med kontrollpalpation och ultraljud efter 4-6 veckor?",
     "alternativ": {
@@ -230,8 +230,8 @@
   {
     "id": "KIR_UROLOGI_013",
     "huvudområde": "Akut urologi",
-    "subtopic": "Orkit orsak",
-    "typ": "Differentialdiagnostik",
+    "subtopic": "Epididymit",
+    "typ": "differentialdiagnostik",
     "svårighetsgrad": "lätt",
     "fråga": "Vilken virussjukdom utgör en känd klassisk orsak till orkit?",
     "alternativ": {
@@ -249,8 +249,8 @@
   {
     "id": "KIR_UROLOGI_014",
     "huvudområde": "Akut urologi",
-    "subtopic": "Penisfraktur anatomi",
-    "typ": "Mekanismer",
+    "subtopic": "Akut andrologi",
+    "typ": "mekanismer",
     "svårighetsgrad": "medel",
     "fråga": "Vilken anatomisk struktur rupturerar vid en så kallad penisfraktur?",
     "alternativ": {
@@ -268,8 +268,8 @@
   {
     "id": "KIR_UROLOGI_015",
     "huvudområde": "Akut urologi",
-    "subtopic": "Priapism diagnostik",
-    "typ": "Differentialdiagnostik",
+    "subtopic": "Akut andrologi",
+    "typ": "differentialdiagnostik",
     "svårighetsgrad": "svår",
     "fråga": "Hur differentieras ischemisk (lågflödes) från icke-ischemisk priapism via blodgasanalys från corpus cavernosum?",
     "alternativ": {
@@ -287,8 +287,8 @@
   {
     "id": "KIR_UROLOGI_016",
     "huvudområde": "Akut urologi",
-    "subtopic": "Priapism läkemedel",
-    "typ": "Handläggning",
+    "subtopic": "Akut andrologi",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "Vilket läkemedel injiceras intrakavernöst som farmakologisk behandling vid lågflödespriapism (efter aspiration och spolning)?",
     "alternativ": {
@@ -306,8 +306,8 @@
   {
     "id": "KIR_UROLOGI_017",
     "huvudområde": "Akut urologi",
-    "subtopic": "Högflödespriapism etiologi",
-    "typ": "Mekanismer",
+    "subtopic": "Akut andrologi",
+    "typ": "mekanismer",
     "svårighetsgrad": "medel",
     "fråga": "Vad är en typisk orsak till non-ischemisk (högflödes) priapism?",
     "alternativ": {
@@ -325,7 +325,7 @@
   {
     "id": "KIR_UROLOGI_018",
     "huvudområde": "Akut urologi",
-    "subtopic": "Parafimosis definition",
+    "subtopic": "Akut andrologi",
     "typ": "Definition",
     "svårighetsgrad": "lätt",
     "fråga": "Vad innebär diagnosen parafimosis?",
@@ -344,8 +344,8 @@
   {
     "id": "KIR_UROLOGI_019",
     "huvudområde": "Akut urologi",
-    "subtopic": "Makrohematuri initial",
-    "typ": "Handläggning",
+    "subtopic": "Hematuri",
+    "typ": "handläggning",
     "svårighetsgrad": "lätt",
     "fråga": "Vilken första åtgärd vidtas på akuten om en patient inkommer med kraftig makrohematuri och blåstamponad (koagler i blåsan)?",
     "alternativ": {
@@ -363,8 +363,8 @@
   {
     "id": "KIR_UROLOGI_020",
     "huvudområde": "Akut urologi",
-    "subtopic": "Makrohematuri SVF",
-    "typ": "Handläggning",
+    "subtopic": "Hematuri",
+    "typ": "handläggning",
     "svårighetsgrad": "lätt",
     "fråga": "En 55-årig patient söker akut för en episod av smärtfri, makroskopisk hematuri. Vad ska remissen till det standardiserade vårdförloppet (SVF) innehålla för bild- och instrumentell diagnostik?",
     "alternativ": {
@@ -382,8 +382,8 @@
   {
     "id": "KIR_UROLOGI_021",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Prostatacancer anatomi",
-    "typ": "Förståelse",
+    "subtopic": "Prostatacancer",
+    "typ": "koncept",
     "svårighetsgrad": "lätt",
     "fråga": "I vilken anatomisk zon i prostatakörteln uppstår majoriteten av all prostatacancer?",
     "alternativ": {
@@ -401,8 +401,8 @@
   {
     "id": "KIR_UROLOGI_022",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "PSA biologisk funktion",
-    "typ": "Förståelse",
+    "subtopic": "Prostatacancer",
+    "typ": "koncept",
     "svårighetsgrad": "lätt",
     "fråga": "Vad har Prostataspecifikt antigen (PSA) för primär normalfysiologisk funktion?",
     "alternativ": {
@@ -420,8 +420,8 @@
   {
     "id": "KIR_UROLOGI_023",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Prostatacancer diagnostik",
-    "typ": "Handläggning",
+    "subtopic": "Prostatacancer",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "Vilken bilddiagnostisk undersökning görs idag rutinmässigt INNAN prostatabiopsier tas hos en man med förhöjt PSA?",
     "alternativ": {
@@ -439,7 +439,7 @@
   {
     "id": "KIR_UROLOGI_024",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Gleason/ISUP definition",
+    "subtopic": "Prostatacancer",
     "typ": "Definition",
     "svårighetsgrad": "medel",
     "fråga": "Vad är det man bedömer när man fastställer ett Gleason-score eller ISUP-grad för prostatacancer?",
@@ -458,8 +458,8 @@
   {
     "id": "KIR_UROLOGI_025",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Lågrisk prostatacancer",
-    "typ": "Handläggning",
+    "subtopic": "Prostatacancer",
+    "typ": "handläggning",
     "svårighetsgrad": "lätt",
     "fråga": "Vad är det rekommenderade förstahandsvalet vid handläggning av lågrisk-prostatacancer (t.ex. ISUP 1, lågt PSA) hos en äldre man?",
     "alternativ": {
@@ -477,8 +477,8 @@
   {
     "id": "KIR_UROLOGI_026",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Kurativ behandling PC",
-    "typ": "Behandling",
+    "subtopic": "Prostatacancer",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "Vilka är de två likvärdiga kurativa primärbehandlingarna som erbjuds till män med lokaliserad mellanrisk- eller högrisk-prostatacancer?",
     "alternativ": {
@@ -496,7 +496,7 @@
   {
     "id": "KIR_UROLOGI_027",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Blåscancer symtom",
+    "subtopic": "Blåscancer",
     "typ": "Klinisk bild",
     "svårighetsgrad": "lätt",
     "fråga": "Vilket symtom föreligger hos ca 80% av de patienter som diagnostiseras med blåscancer?",
@@ -515,8 +515,8 @@
   {
     "id": "KIR_UROLOGI_028",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Blåscancer riskfaktorer",
-    "typ": "Mekanismer",
+    "subtopic": "Blåscancer",
+    "typ": "mekanismer",
     "svårighetsgrad": "lätt",
     "fråga": "Vilken livsstilsfaktor utgör den allra största risken för att utveckla urotelial blåscancer i Sverige?",
     "alternativ": {
@@ -534,7 +534,7 @@
   {
     "id": "KIR_UROLOGI_029",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Blåscancer TNM",
+    "subtopic": "Blåscancer",
     "typ": "Definition",
     "svårighetsgrad": "medel",
     "fråga": "Vid vilket T-stadium övergår urotelial blåscancer till att räknas som muskelinvasiv, vilket dramatiskt försämrar prognosen?",
@@ -553,8 +553,8 @@
   {
     "id": "KIR_UROLOGI_030",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Blåscancer ytlig behandling",
-    "typ": "Behandling",
+    "subtopic": "Blåscancer",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "Vilken adjuvansbehandling instilleras i urinblåsan efter TUR-B för att minska recidivrisken vid vissa högriskvarianter av icke-muskelinvasiv blåscancer?",
     "alternativ": {
@@ -572,8 +572,8 @@
   {
     "id": "KIR_UROLOGI_031",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Blåscancer muskelinvasiv behandling",
-    "typ": "Behandling",
+    "subtopic": "Blåscancer",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "Vad är standardbehandlingen med kurativ intention vid diagnostiserad muskelinvasiv blåscancer hos en för övrigt frisk patient?",
     "alternativ": {
@@ -591,7 +591,7 @@
   {
     "id": "KIR_UROLOGI_032",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Bricker-deviation",
+    "subtopic": "Blåscancer",
     "typ": "Definition",
     "svårighetsgrad": "medel",
     "fråga": "Vad innebär en Bricker-deviation efter en cystektomi?",
@@ -610,8 +610,8 @@
   {
     "id": "KIR_UROLOGI_033",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Testikelcancer ålder",
-    "typ": "Epidemiologi",
+    "subtopic": "Testikelcancer",
+    "typ": "fakta",
     "svårighetsgrad": "lätt",
     "fråga": "Vilken åldersgrupp har högst incidens för testikelcancer?",
     "alternativ": {
@@ -629,7 +629,7 @@
   {
     "id": "KIR_UROLOGI_034",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Testikelcancer status",
+    "subtopic": "Testikelcancer",
     "typ": "Klinisk bild",
     "svårighetsgrad": "lätt",
     "fråga": "Vilket är det absolut vanligaste debutsymtomet vid testikelcancer?",
@@ -648,8 +648,8 @@
   {
     "id": "KIR_UROLOGI_035",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Testikelcancer tumörmarkörer",
-    "typ": "Diagnostik",
+    "subtopic": "Testikelcancer",
+    "typ": "diagnostik",
     "svårighetsgrad": "medel",
     "fråga": "Vilka tre tumörmarkörer ska analyseras i blod innan orkidektomi vid misstänkt testikelcancer?",
     "alternativ": {
@@ -667,8 +667,8 @@
   {
     "id": "KIR_UROLOGI_036",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Testikelcancer handläggning",
-    "typ": "Handläggning",
+    "subtopic": "Testikelcancer",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "Vilken kirurgisk metod används som kurativ behandling och diagnostik för en tumör i testikeln?",
     "alternativ": {
@@ -686,8 +686,8 @@
   {
     "id": "KIR_UROLOGI_037",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Njurcancer upptäckt",
-    "typ": "Epidemiologi",
+    "subtopic": "Njurcancer",
+    "typ": "fakta",
     "svårighetsgrad": "lätt",
     "fråga": "Hur diagnostiseras njurcancer vanligast i dagens sjukvård?",
     "alternativ": {
@@ -705,7 +705,7 @@
   {
     "id": "KIR_UROLOGI_038",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Njurcancer spridning",
+    "subtopic": "Njurcancer",
     "typ": "Klinisk bild",
     "svårighetsgrad": "medel",
     "fråga": "På vilket specifikt anatomiskt sätt kan en avancerad njurcancer sprida sig och orsaka ett snabbt insättande varicocele hos en man?",
@@ -724,8 +724,8 @@
   {
     "id": "KIR_UROLOGI_039",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Njurcancer kirurgi",
-    "typ": "Behandling",
+    "subtopic": "Njurcancer",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "Vilken kirurgisk metod föredras oftast idag för en perifer njurcancer som är 3 cm stor hos en i övrigt frisk patient?",
     "alternativ": {
@@ -743,8 +743,8 @@
   {
     "id": "KIR_UROLOGI_040",
     "huvudområde": "Urologisk onkologi",
-    "subtopic": "Peniscancer etiologi",
-    "typ": "Mekanismer",
+    "subtopic": "Peniscancer",
+    "typ": "mekanismer",
     "svårighetsgrad": "lätt",
     "fråga": "Vilka två faktorer är de starkast associerade orsakerna/riskfaktorerna till att utveckla peniscancer?",
     "alternativ": {
@@ -762,7 +762,7 @@
   {
     "id": "KIR_UROLOGI_041",
     "huvudområde": "Stensjukdom i övre urinvägar",
-    "subtopic": "Njursten klinik",
+    "subtopic": "Njursten",
     "typ": "Klinisk bild",
     "svårighetsgrad": "lätt",
     "fråga": "Hur ser smärtbilden ut och hur agerar typiskt en patient under ett akut njurstensanfall?",
@@ -781,8 +781,8 @@
   {
     "id": "KIR_UROLOGI_042",
     "huvudområde": "Stensjukdom i övre urinvägar",
-    "subtopic": "Diagnostik akut",
-    "typ": "Bildtolkning",
+    "subtopic": "Njursten",
+    "typ": "diagnostik",
     "svårighetsgrad": "lätt",
     "fråga": "Vilken röntgenmodalitet anses idag vara förstahandsval (gold standard) på en vuxen patient med misstänkt uretärsten på akuten?",
     "alternativ": {
@@ -800,8 +800,8 @@
   {
     "id": "KIR_UROLOGI_043",
     "huvudområde": "Stensjukdom i övre urinvägar",
-    "subtopic": "Diagnostik gravid",
-    "typ": "Handläggning",
+    "subtopic": "Njursten",
+    "typ": "handläggning",
     "svårighetsgrad": "lätt",
     "fråga": "Vilken bilddiagnostisk undersökning används i första hand för att utreda en misstänkt uretärsten hos en gravid kvinna?",
     "alternativ": {
@@ -819,8 +819,8 @@
   {
     "id": "KIR_UROLOGI_044",
     "huvudområde": "Stensjukdom i övre urinvägar",
-    "subtopic": "Akut behandling",
-    "typ": "Behandling",
+    "subtopic": "Njursten",
+    "typ": "handläggning",
     "svårighetsgrad": "lätt",
     "fråga": "Vilket är det rekommenderade förstahandsläkemedlet (vid avsaknad av kontraindikationer) på akuten vid svårt uretärstensanfall?",
     "alternativ": {
@@ -838,8 +838,8 @@
   {
     "id": "KIR_UROLOGI_045",
     "huvudområde": "Stensjukdom i övre urinvägar",
-    "subtopic": "NSAID verkningsmekanism",
-    "typ": "Mekanismer",
+    "subtopic": "Njursten",
+    "typ": "mekanismer",
     "svårighetsgrad": "medel",
     "fråga": "Varför är COX-hämmare (NSAID) särskilt effektiva vid akut uretärstensmärta?",
     "alternativ": {
@@ -857,8 +857,8 @@
   {
     "id": "KIR_UROLOGI_046",
     "huvudområde": "Stensjukdom i övre urinvägar",
-    "subtopic": "Diklofenak kontraindikation",
-    "typ": "Handläggning",
+    "subtopic": "Njursten",
+    "typ": "handläggning",
     "svårighetsgrad": "lätt",
     "fråga": "Under vilken period av graviditeten är behandling med NSAID (ex. Diklofenak) absolut kontraindicerat?",
     "alternativ": {
@@ -876,8 +876,8 @@
   {
     "id": "KIR_UROLOGI_047",
     "huvudområde": "Stensjukdom i övre urinvägar",
-    "subtopic": "Inläggningsindikation",
-    "typ": "Handläggning",
+    "subtopic": "Njursten",
+    "typ": "handläggning",
     "svårighetsgrad": "lätt",
     "fråga": "En patient med en nydiagnostiserad 4 mm uretärsten behandlas med smärtlindring. Vilket tillkommande fynd kräver urakut inläggning istället för hemgång?",
     "alternativ": {
@@ -895,8 +895,8 @@
   {
     "id": "KIR_UROLOGI_048",
     "huvudområde": "Stensjukdom i övre urinvägar",
-    "subtopic": "Sten storlek",
-    "typ": "Handläggning",
+    "subtopic": "Njursten",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "Vad är rekommendationen om åtgärd för en smärtlindrad patient vars CT visar en 4 mm stor distal uretärsten och f.ö. normala prover?",
     "alternativ": {
@@ -914,8 +914,8 @@
   {
     "id": "KIR_UROLOGI_049",
     "huvudområde": "Stensjukdom i övre urinvägar",
-    "subtopic": "ESVL",
-    "typ": "Behandling",
+    "subtopic": "Njursten",
+    "typ": "handläggning",
     "svårighetsgrad": "lätt",
     "fråga": "Vad är principen för ESVL (Extrakorporeal stötvågslitotripsi)?",
     "alternativ": {
@@ -933,8 +933,8 @@
   {
     "id": "KIR_UROLOGI_050",
     "huvudområde": "Stensjukdom i övre urinvägar",
-    "subtopic": "Uppföljning sten",
-    "typ": "Handläggning",
+    "subtopic": "Njursten",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "En patient med en ofarlig och spontanavgående 4mm uretärsten skickas hem från akuten smärtfri. Behövs uppföljning?",
     "alternativ": {
@@ -952,8 +952,8 @@
   {
     "id": "KIR_UROLOGI_051",
     "huvudområde": "Nedre urinvägar, LUTS & BPH",
-    "subtopic": "Anatomi BPH",
-    "typ": "Förståelse",
+    "subtopic": "BPH och LUTS",
+    "typ": "koncept",
     "svårighetsgrad": "lätt",
     "fråga": "Vilken zon i prostatakörteln är utgångspunkten för den vävnadsökning som ligger bakom benign prostatahyperplasi (BPH)?",
     "alternativ": {
@@ -971,7 +971,7 @@
   {
     "id": "KIR_UROLOGI_052",
     "huvudområde": "Nedre urinvägar, LUTS & BPH",
-    "subtopic": "LUTS symtombild",
+    "subtopic": "BPH och LUTS",
     "typ": "Klinisk bild",
     "svårighetsgrad": "lätt",
     "fråga": "Nedre urinvägssymtom (LUTS) delas in i lagrings- och tömningssymtom. Vilket av nedanstående är ett typiskt TÖMNINGSSYMTOM?",
@@ -990,8 +990,8 @@
   {
     "id": "KIR_UROLOGI_053",
     "huvudområde": "Nedre urinvägar, LUTS & BPH",
-    "subtopic": "LUTS utredning",
-    "typ": "Diagnostik",
+    "subtopic": "BPH och LUTS",
+    "typ": "diagnostik",
     "svårighetsgrad": "lätt",
     "fråga": "Vilket standardiserat frågeformulär används obligatoriskt vid utredning och utvärdering av prostatabesvär/LUTS?",
     "alternativ": {
@@ -1009,8 +1009,8 @@
   {
     "id": "KIR_UROLOGI_054",
     "huvudområde": "Nedre urinvägar, LUTS & BPH",
-    "subtopic": "Miktionslista",
-    "typ": "Handläggning",
+    "subtopic": "BPH och LUTS",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "Varför är det viktigt att patienter med vattenkastningsbesvär fyller i en miktions- och vätskelista?",
     "alternativ": {
@@ -1028,8 +1028,8 @@
   {
     "id": "KIR_UROLOGI_055",
     "huvudområde": "Nedre urinvägar, LUTS & BPH",
-    "subtopic": "Alfablockerare mekanism",
-    "typ": "Behandling",
+    "subtopic": "BPH och LUTS",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "Hur utövar Alfareceptorblockerare (t.ex. Alfuzosin) sin positiva effekt på symtomen vid BPH?",
     "alternativ": {
@@ -1047,8 +1047,8 @@
   {
     "id": "KIR_UROLOGI_056",
     "huvudområde": "Nedre urinvägar, LUTS & BPH",
-    "subtopic": "5ARI och PSA",
-    "typ": "Behandling",
+    "subtopic": "BPH och LUTS",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "Vad händer med en patients PSA-värde (prostataspecifikt antigen) om han kontinuerligt behandlas med en 5-alfareduktashämmare (t.ex. Finasterid) i över 6 månader?",
     "alternativ": {
@@ -1066,8 +1066,8 @@
   {
     "id": "KIR_UROLOGI_057",
     "huvudområde": "Nedre urinvägar, LUTS & BPH",
-    "subtopic": "TUR-P",
-    "typ": "Behandling",
+    "subtopic": "BPH och LUTS",
+    "typ": "handläggning",
     "svårighetsgrad": "lätt",
     "fråga": "Vilket är det vanligaste kirurgiska ingreppet i Sverige för att åtgärda ett kraftigt mekaniskt avflödeshinder till följd av en benign förstorad prostata?",
     "alternativ": {
@@ -1085,8 +1085,8 @@
   {
     "id": "KIR_UROLOGI_058",
     "huvudområde": "Nedre urinvägar, LUTS & BPH",
-    "subtopic": "Överaktiv blåsa lkm",
-    "typ": "Behandling",
+    "subtopic": "Inkontinens och överaktiv blåsa",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "En patient med överaktiv blåsa klagar på svår muntorrhet av sitt muskarinreceptorhämmande läkemedel. Vilket annat läkemedel med en helt annan mekanism (men likvärdig effekt på urinträngningar) kan förskrivas?",
     "alternativ": {
@@ -1104,8 +1104,8 @@
   {
     "id": "KIR_UROLOGI_059",
     "huvudområde": "Nedre urinvägar, LUTS & BPH",
-    "subtopic": "Nokturi lkm biverkan",
-    "typ": "Komplikationer",
+    "subtopic": "Inkontinens och överaktiv blåsa",
+    "typ": "komplikationer",
     "svårighetsgrad": "svår",
     "fråga": "Vilken allvarlig potentiell risk måste man vara medveten om när man förskriver Desmopressin (ADH-analog) till äldre patienter för nokturi?",
     "alternativ": {
@@ -1123,8 +1123,8 @@
   {
     "id": "KIR_UROLOGI_060",
     "huvudområde": "Nedre urinvägar, LUTS & BPH",
-    "subtopic": "Inkontinenstyp",
-    "typ": "Differentialdiagnostik",
+    "subtopic": "Inkontinens och överaktiv blåsa",
+    "typ": "differentialdiagnostik",
     "svårighetsgrad": "lätt",
     "fråga": "En kvinna som har fött flera barn söker för att hon ofta upplever urinläckage i samband med nysningar, hosta eller hopp. Vilken specifik diagnos är mest trolig?",
     "alternativ": {
@@ -1142,7 +1142,7 @@
   {
     "id": "KIR_UROLOGI_061",
     "huvudområde": "Andrologi",
-    "subtopic": "Erektil dysfunktion risk",
+    "subtopic": "Andrologi",
     "typ": "Klinisk bild",
     "svårighetsgrad": "lätt",
     "fråga": "Erektil dysfunktion (ED) hos en i övrigt till synes frisk medelålders man är en känd och viktig tidig varningssignal för framförallt vilken allvarlig sjukdomsprocess?",
@@ -1161,8 +1161,8 @@
   {
     "id": "KIR_UROLOGI_062",
     "huvudområde": "Andrologi",
-    "subtopic": "PDE5 kontraindikation",
-    "typ": "Handläggning",
+    "subtopic": "Andrologi",
+    "typ": "handläggning",
     "svårighetsgrad": "lätt",
     "fråga": "Vilket läkemedel utgör en absolut och potentiellt livshotande kontraindikation tillsammans med PDE5-hämmare (Sildenafil/Viagra)?",
     "alternativ": {
@@ -1180,8 +1180,8 @@
   {
     "id": "KIR_UROLOGI_063",
     "huvudområde": "Andrologi",
-    "subtopic": "PDE5 verkningsmekanism",
-    "typ": "Mekanismer",
+    "subtopic": "Andrologi",
+    "typ": "mekanismer",
     "svårighetsgrad": "medel",
     "fråga": "Vilken fysiologisk mekanism ligger bakom att PDE5-hämmare fungerar vid erektil dysfunktion?",
     "alternativ": {
@@ -1199,8 +1199,8 @@
   {
     "id": "KIR_UROLOGI_064",
     "huvudområde": "Andrologi",
-    "subtopic": "Hypogonadism prov",
-    "typ": "Handläggning",
+    "subtopic": "Andrologi",
+    "typ": "handläggning",
     "svårighetsgrad": "lätt",
     "fråga": "Under vilka fysiologiska premisser ska ett S-Testosteron rutinmässigt dras vid en primär utredning av misstänkt hypogonadism?",
     "alternativ": {
@@ -1218,8 +1218,8 @@
   {
     "id": "KIR_UROLOGI_065",
     "huvudområde": "Andrologi",
-    "subtopic": "Primär hypogonadism",
-    "typ": "Diagnostik",
+    "subtopic": "Andrologi",
+    "typ": "diagnostik",
     "svårighetsgrad": "medel",
     "fråga": "En man med konstaterat sänkt S-Testosteron genomgår vidare utredning. Vilket provsvar tyder på primär (testikulär) hypogonadism?",
     "alternativ": {
@@ -1237,8 +1237,8 @@
   {
     "id": "KIR_UROLOGI_066",
     "huvudområde": "Kateterteknik & Radiologi",
-    "subtopic": "Tiemann kateter",
-    "typ": "Handläggning",
+    "subtopic": "Kateterteknik",
+    "typ": "handläggning",
     "svårighetsgrad": "lätt",
     "fråga": "Vid vilket av följande tillfällen har urologen framförallt nytta av en s.k. Tiemann-kateter istället för en vanlig rak kateter?",
     "alternativ": {
@@ -1256,8 +1256,8 @@
   {
     "id": "KIR_UROLOGI_067",
     "huvudområde": "Kateterteknik & Radiologi",
-    "subtopic": "KAD storlek",
-    "typ": "Handläggning",
+    "subtopic": "Kateterteknik",
+    "typ": "handläggning",
     "svårighetsgrad": "lätt",
     "fråga": "Vilken Ch (Charrière)-storlek är oftast den rekommenderade standardstorleken för en ny uretrakateter till en vanlig man utan blödningsproblematik?",
     "alternativ": {
@@ -1275,8 +1275,8 @@
   {
     "id": "KIR_UROLOGI_068",
     "huvudområde": "Kateterteknik & Radiologi",
-    "subtopic": "Hematurikateter",
-    "typ": "Handläggning",
+    "subtopic": "Kateterteknik",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "Vilka egenskaper måste en kateter uppfylla för att effektivt klassificeras som en bra \"Hematurikateter\" för manuell handspolning?",
     "alternativ": {
@@ -1294,8 +1294,8 @@
   {
     "id": "KIR_UROLOGI_069",
     "huvudområde": "Kateterteknik & Radiologi",
-    "subtopic": "SPK kontraindikation",
-    "typ": "Handläggning",
+    "subtopic": "Kateterteknik",
+    "typ": "handläggning",
     "svårighetsgrad": "medel",
     "fråga": "I vilken av nedanstående kliniska situationer är blind perkutan inläggning av Suprapubisk Kateter (SPK) uttryckligen olämpligt (kontraindicerat)?",
     "alternativ": {
@@ -1313,8 +1313,8 @@
   {
     "id": "KIR_UROLOGI_070",
     "huvudområde": "Kateterteknik & Radiologi",
-    "subtopic": "CT Bosniak",
-    "typ": "Bildtolkning",
+    "subtopic": "Njurcancer",
+    "typ": "diagnostik",
     "svårighetsgrad": "medel",
     "fråga": "Vad gör att man radiologiskt klassar en upptäckt njurcysta som komplicerad (enligt Bosniak-klassifikationen) snarare än enkel?",
     "alternativ": {
@@ -1331,382 +1331,382 @@
   },
   {
     "id": "KIR_UROLOGI_071",
-    "huvudomrade": "Kateterteknik &amp; Radiologi",
-    "subtopic": "Trauma och kateter",
-    "typ": "Handläggning",
-    "svarighetsgrad": "lätt",
-    "fraga": "En 22-årig man inkommer med misstänkt bäckenfraktur efter en trafikolycka. Han är urinretinerad och palpabelt fylld över symfysen. Du noterar en sipprande blödning från urinrörets meatus. Vilken åtgärd är direkt KONTRAINDICERAD?",
+    "huvudområde": "Kateterteknik & Radiologi",
+    "subtopic": "Kateterteknik",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "En 22-årig man inkommer med misstänkt bäckenfraktur efter en trafikolycka. Han är urinretinerad och palpabelt fylld över symfysen. Du noterar en sipprande blödning från urinrörets meatus. Vilken åtgärd är direkt KONTRAINDICERAD?",
     "alternativ": {
       "A": "Att beställa ett akut ultraljud över blåsan.",
       "B": "Att försöka sätta en standard Tiemann-kateter via urinröret.",
       "C": "Att avlasta blåsan via en suprapubisk kateter (SPK).",
       "D": "Att rektalpalpera patienten."
     },
-    "ratt_svar": "B",
-    "kort_forklaring": "Blod ur uretramynningen vid ett bäckentrauma väcker stark misstanke om uretraavslitning/perforation. Att sätta en uretrakateter blint kan förvärra skadan kraftigt.",
-    "varfor_ovriga_fel": "Rektalpalpation och SPK är säkra och indicerade (SPK säkrar avflödet utan att passera uretra).",
-    "kalla": "Urologi TBL - Urologi.docx",
+    "rätt_svar": "B",
+    "kort_förklaring": "Blod ur uretramynningen vid ett bäckentrauma väcker stark misstanke om uretraavslitning/perforation. Att sätta en uretrakateter blint kan förvärra skadan kraftigt.",
+    "varför_övriga_fel": "Rektalpalpation och SPK är säkra och indicerade (SPK säkrar avflödet utan att passera uretra).",
+    "källa": "Urologi TBL - Urologi.docx",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_072",
-    "huvudomrade": "Nedre urinvägar, LUTS &amp; BPH",
-    "subtopic": "Ischuria paradoxa",
+    "huvudområde": "Nedre urinvägar, LUTS & BPH",
+    "subtopic": "Akut urinretention",
     "typ": "Klinisk bild",
-    "svarighetsgrad": "medel",
-    "fraga": "Vad är den klassiska presentationen vid så kallad 'Ischuria paradoxa' (överrinningsinkontinens)?",
+    "svårighetsgrad": "medel",
+    "fråga": "Vad är den klassiska presentationen vid så kallad 'Ischuria paradoxa' (överrinningsinkontinens)?",
     "alternativ": {
       "A": "Patienten läcker enbart urin vid kraftig ansträngning eller hosta, med en helt tom blåsa däremellan.",
       "B": "Patienten har en underaktiv blåsa som fylls med över en liter urin utan smärta, vilket leder till att urinen slutligen rinner över och läcker ut kontinuerligt.",
       "C": "Patienten drabbas av plötsliga, extrema och smärtsamma blåskramper som tvingar ut urinen.",
       "D": "Patienten kissar extremt stora mängder klart urin på natten på grund av hjärtsvikt."
     },
-    "ratt_svar": "B",
-    "kort_forklaring": "Tillståndet utvecklas långsamt (ofta pga BPH). Blåsan tänjs ut kraftigt, tappar sin sensibilitet och urinen rinner passivt över sfinktern när blåsan är full.",
-    "varfor_ovriga_fel": "A beskriver ansträngningsinkontinens. C beskriver svår urgency/trängningsinkontinens. D beskriver nattlig polyuri.",
-    "kalla": "Urologi Benign prostatahyperplasi (BPH).docx",
+    "rätt_svar": "B",
+    "kort_förklaring": "Tillståndet utvecklas långsamt (ofta pga BPH). Blåsan tänjs ut kraftigt, tappar sin sensibilitet och urinen rinner passivt över sfinktern när blåsan är full.",
+    "varför_övriga_fel": "A beskriver ansträngningsinkontinens. C beskriver svår urgency/trängningsinkontinens. D beskriver nattlig polyuri.",
+    "källa": "Urologi Benign prostatahyperplasi (BPH).docx",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_073",
-    "huvudomrade": "Nedre urinvägar, LUTS &amp; BPH",
-    "subtopic": "Tidsmiktion",
-    "typ": "Diagnostik",
-    "svarighetsgrad": "medel",
-    "fraga": "Tidsmiktion är ett enkelt sätt för primärvården att objektivt gradera ett misstänkt avflödeshinder. Vid vilken tidsgräns för att kissa de första 100 ml indikerar resultatet ett betydande avflödeshinder?",
+    "huvudområde": "Nedre urinvägar, LUTS & BPH",
+    "subtopic": "Inkontinens och överaktiv blåsa",
+    "typ": "diagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Tidsmiktion är ett enkelt sätt för primärvården att objektivt gradera ett misstänkt avflödeshinder. Vid vilken tidsgräns för att kissa de första 100 ml indikerar resultatet ett betydande avflödeshinder?",
     "alternativ": {
       "A": "Över 5 sekunder",
       "B": "Över 8 sekunder",
       "C": "Över 12 sekunder (men &lt;16 är gråzon, &gt;16 är tydligt patologiskt)",
       "D": "Över 30 sekunder"
     },
-    "ratt_svar": "C",
-    "kort_forklaring": "Tiden för att kissa första decilitern: &lt;12 sek är normalt, 12-16 sekunder är gråzon, och över 16 sekunder indikerar betydande avflödeshinder eller svag detrusor.",
-    "varfor_ovriga_fel": "Snabba tider (&lt;12s) är normala och friska flöden.",
-    "kalla": "Urologi Nedre urinvägar.docx",
+    "rätt_svar": "C",
+    "kort_förklaring": "Tiden för att kissa första decilitern: &lt;12 sek är normalt, 12-16 sekunder är gråzon, och över 16 sekunder indikerar betydande avflödeshinder eller svag detrusor.",
+    "varför_övriga_fel": "Snabba tider (&lt;12s) är normala och friska flöden.",
+    "källa": "Urologi Nedre urinvägar.docx",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_074",
-    "huvudomrade": "Nedre urinvägar, LUTS &amp; BPH",
-    "subtopic": "Op-indikation BPH",
-    "typ": "Handläggning",
-    "svarighetsgrad": "medel",
-    "fraga": "Många patienter med BPH behandlas farmakologiskt, men i vissa fall finns en absolut (direkt) indikation för kirurgi. Vilket av nedanstående utgör en sådan direkt operationsindikation?",
+    "huvudområde": "Nedre urinvägar, LUTS & BPH",
+    "subtopic": "BPH och LUTS",
+    "typ": "handläggning",
+    "svårighetsgrad": "medel",
+    "fråga": "Många patienter med BPH behandlas farmakologiskt, men i vissa fall finns en absolut (direkt) indikation för kirurgi. Vilket av nedanstående utgör en sådan direkt operationsindikation?",
     "alternativ": {
       "A": "Ett IPSS-score på över 15 poäng.",
       "B": "Nytillkommen erektil dysfunktion.",
       "C": "Upprepade urinvägsinfektioner eller blåsstenar.",
       "D": "Ett PSA-värde som stiger över 3 µg/l."
     },
-    "ratt_svar": "C",
-    "kort_forklaring": "Återkommande UVI, blåssten, BPH-orsakad hematuri, urinretention eller njursvikt är alla direkta medicinska indikationer för att avlägsna avflödeshindret kirurgiskt (t.ex. TUR-P).",
-    "varfor_ovriga_fel": "Högt IPSS behandlas initialt medicinskt. PSA-stegring kräver cancerutredning, inte TUR-P. ED är en separat andrologisk fråga.",
-    "kalla": "Urologi Benign prostatahyperplasi (BPH).docx",
+    "rätt_svar": "C",
+    "kort_förklaring": "Återkommande UVI, blåssten, BPH-orsakad hematuri, urinretention eller njursvikt är alla direkta medicinska indikationer för att avlägsna avflödeshindret kirurgiskt (t.ex. TUR-P).",
+    "varför_övriga_fel": "Högt IPSS behandlas initialt medicinskt. PSA-stegring kräver cancerutredning, inte TUR-P. ED är en separat andrologisk fråga.",
+    "källa": "Urologi Benign prostatahyperplasi (BPH).docx",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_075",
-    "huvudomrade": "Urologisk onkologi",
-    "subtopic": "Njurcancer paramaligna symtom",
+    "huvudområde": "Urologisk onkologi",
+    "subtopic": "Njurcancer",
     "typ": "Klinisk bild",
-    "svarighetsgrad": "medel",
-    "fraga": "Njurcancer kallas ibland 'internmedicinarens tumör' på grund av sina paramaligna (paraneoplastiska) fenomen. Vilken typisk konstellation av labbsvar ses vid avancerad njurcancer?",
+    "svårighetsgrad": "medel",
+    "fråga": "Njurcancer kallas ibland 'internmedicinarens tumör' på grund av sina paramaligna (paraneoplastiska) fenomen. Vilken typisk konstellation av labbsvar ses vid avancerad njurcancer?",
     "alternativ": {
       "A": "Mikrocytär anemi, lågt P-Kalcium och högt P-Kalium.",
       "B": "Treställig sänka (huvudsakligen förhöjd SR), anemi och hyperkalcemi.",
       "C": "Leukopeni, trombocytopeni och kraftigt sänkt TSH.",
       "D": "Isolerad oklar hyponatremi."
     },
-    "ratt_svar": "B",
-    "kort_forklaring": "Njurcancer producerar ofta cytokiner och ektopiska hormonliknande peptider som ger hög SR (ofta tresiffrig), hyperkalcemi, leverpåverkan och anemi/polycytemi.",
-    "varfor_ovriga_fel": "Hyperkalemi och TSH-påverkan är inte typiska paramaligna fynd vid njurcancer.",
-    "kalla": "Njurcancer_.pdf",
+    "rätt_svar": "B",
+    "kort_förklaring": "Njurcancer producerar ofta cytokiner och ektopiska hormonliknande peptider som ger hög SR (ofta tresiffrig), hyperkalcemi, leverpåverkan och anemi/polycytemi.",
+    "varför_övriga_fel": "Hyperkalemi och TSH-påverkan är inte typiska paramaligna fynd vid njurcancer.",
+    "källa": "Njurcancer_.pdf",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_076",
-    "huvudomrade": "Urologisk onkologi",
-    "subtopic": "Blåscancer yrkesexponering",
-    "typ": "Etiologi",
-    "svarighetsgrad": "lätt",
-    "fraga": "Rökning är den största riskfaktorn för urotelial blåscancer, men även historisk yrkesexponering för vissa ämnen innebär en kraftigt ökad risk. Vilket ämne är mest känt för detta?",
+    "huvudområde": "Urologisk onkologi",
+    "subtopic": "Blåscancer",
+    "typ": "etiologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Rökning är den största riskfaktorn för urotelial blåscancer, men även historisk yrkesexponering för vissa ämnen innebär en kraftigt ökad risk. Vilket ämne är mest känt för detta?",
     "alternativ": {
       "A": "Asbestfibrer från byggindustrin",
       "B": "Bly och kvicksilver i batteritillverkning",
       "C": "Aromatiska aminer (t.ex. anilin och naftylamin) i färg- och gummiindustrin",
       "D": "Kisel-damm i gruvindustrin"
     },
-    "ratt_svar": "C",
-    "kort_forklaring": "Anilin, naftylamin och dieselpartiklar (inom färg-, plast- och gummiindustri) utsöndras via njurarna och deponeras i blåsan, vilket med lång latenstid orsakar urotelial cancer.",
-    "varfor_ovriga_fel": "Asbest orsakar mesoteliom, kisel ger silikos.",
-    "kalla": "Urologi Urinblåsecancer.docx",
+    "rätt_svar": "C",
+    "kort_förklaring": "Anilin, naftylamin och dieselpartiklar (inom färg-, plast- och gummiindustri) utsöndras via njurarna och deponeras i blåsan, vilket med lång latenstid orsakar urotelial cancer.",
+    "varför_övriga_fel": "Asbest orsakar mesoteliom, kisel ger silikos.",
+    "källa": "Urologi Urinblåsecancer.docx",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_077",
-    "huvudomrade": "Urologisk onkologi",
-    "subtopic": "Prostatapalpation",
-    "typ": "Statusfynd",
-    "svarighetsgrad": "lätt",
-    "fraga": "Vad är det primära palpatoriska fyndet (per rektum) som skiljer en potentiell prostatacancer från enbart benign prostatahyperplasi (BPH)?",
+    "huvudområde": "Urologisk onkologi",
+    "subtopic": "Prostatacancer",
+    "typ": "statusfynd",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vad är det primära palpatoriska fyndet (per rektum) som skiljer en potentiell prostatacancer från enbart benign prostatahyperplasi (BPH)?",
     "alternativ": {
       "A": "Prostatan är kraftigt förstorad, mjuk och helt symmetrisk.",
       "B": "Mittfåran saknas helt, men körteln är mjuk och oöm.",
       "C": "Körteln palperas mycket oöm, degig och extremt ömmande vid beröring.",
       "D": "Närvaro av hårda, ofta asymmetriska, oregelbundna knölar i den perifera zonen."
     },
-    "ratt_svar": "D",
-    "kort_forklaring": "Cancer känns typiskt som stenhårda, asymmetriska partier/knölar (som knogen på tummen), medan BPH ofta ger en symmetriskt förstorad, fast elastisk körtel (ibland med utslätad mittfåra).",
-    "varfor_ovriga_fel": "Smärta/ömhet talar framförallt för prostatit. Symmetrisk och mjuk tyder på benign hyperplasi.",
-    "kalla": "Urologi Nedre urinvägar.docx",
+    "rätt_svar": "D",
+    "kort_förklaring": "Cancer känns typiskt som stenhårda, asymmetriska partier/knölar (som knogen på tummen), medan BPH ofta ger en symmetriskt förstorad, fast elastisk körtel (ibland med utslätad mittfåra).",
+    "varför_övriga_fel": "Smärta/ömhet talar framförallt för prostatit. Symmetrisk och mjuk tyder på benign hyperplasi.",
+    "källa": "Urologi Nedre urinvägar.docx",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_078",
-    "huvudomrade": "Stensjukdom i övre urinvägar",
-    "subtopic": "Infektionsstenar",
-    "typ": "Etiologi",
-    "svarighetsgrad": "medel",
-    "fraga": "Infektionsstenar utgör ca 10% av njurstenarna och är nära förknippade med ureas-producerande bakterier (t.ex. Proteus). Vad består dessa stenar oftast av?",
+    "huvudområde": "Stensjukdom i övre urinvägar",
+    "subtopic": "Njursten",
+    "typ": "etiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Infektionsstenar utgör ca 10% av njurstenarna och är nära förknippade med ureas-producerande bakterier (t.ex. Proteus). Vad består dessa stenar oftast av?",
     "alternativ": {
       "A": "Ren urinsyra (Urat)",
       "B": "Magnesiumammoniumfosfat",
       "C": "Cystin",
       "D": "Rent kolesterol"
     },
-    "ratt_svar": "B",
-    "kort_forklaring": "Bakterier som producerar ureas spjälkar urea vilket höjer pH i urinen, detta fäller ut magnesium, ammonium och fosfat som bildar infektionsstenar (ofta korallstenar).",
-    "varfor_ovriga_fel": "Uratstenar gynnas av sur urin (lågt pH). Cystinstenar är genetiska.",
-    "kalla": "Urologi Stensjukdom i övre urinvägar.docx",
+    "rätt_svar": "B",
+    "kort_förklaring": "Bakterier som producerar ureas spjälkar urea vilket höjer pH i urinen, detta fäller ut magnesium, ammonium och fosfat som bildar infektionsstenar (ofta korallstenar).",
+    "varför_övriga_fel": "Uratstenar gynnas av sur urin (lågt pH). Cystinstenar är genetiska.",
+    "källa": "Urologi Stensjukdom i övre urinvägar.docx",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_079",
-    "huvudomrade": "Stensjukdom i övre urinvägar",
-    "subtopic": "555-regeln",
-    "typ": "Handläggning",
-    "svarighetsgrad": "lätt",
-    "fraga": "Inom urologin talar man om '555-regeln' för exspektans av uretärstenar hos smärtlindrade patienter. Vad innebär detta tidsmässigt?",
+    "huvudområde": "Stensjukdom i övre urinvägar",
+    "subtopic": "Njursten",
+    "typ": "handläggning",
+    "svårighetsgrad": "lätt",
+    "fråga": "Inom urologin talar man om '555-regeln' för exspektans av uretärstenar hos smärtlindrade patienter. Vad innebär detta tidsmässigt?",
     "alternativ": {
       "A": "En sten som är 5 mm eller mindre kan exspekteras i upp till 5 veckor för spontan avgång.",
       "B": "Patienten får vänta max 5 dagar innan akut operation görs.",
       "C": "Man kallar patienten till återbesök var 5:e månad.",
       "D": "En sten måste sitta minst 5 cm ovan ostiet för att exspekteras i 5 dagar."
     },
-    "ratt_svar": "A",
-    "kort_forklaring": "555-regeln: En okomplicerad uretärsten under 5 mm, distalt (&lt;5 cm från ostiet), exspekteras då den i de allra flesta fall (95% vid &lt;4mm) avgår spontant inom 5 veckor.",
-    "varfor_ovriga_fel": "Operation är obefogat tidigt för en så liten sten, och att vänta 5 månader riskerar permant njurskada.",
-    "kalla": "Urologi Stensjukdom i övre urinvägar.docx",
+    "rätt_svar": "A",
+    "kort_förklaring": "555-regeln: En okomplicerad uretärsten under 5 mm, distalt (&lt;5 cm från ostiet), exspekteras då den i de allra flesta fall (95% vid &lt;4mm) avgår spontant inom 5 veckor.",
+    "varför_övriga_fel": "Operation är obefogat tidigt för en så liten sten, och att vänta 5 månader riskerar permant njurskada.",
+    "källa": "Urologi Stensjukdom i övre urinvägar.docx",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_080",
-    "huvudomrade": "Urologisk onkologi",
-    "subtopic": "Testikelcancer adjuvant",
-    "typ": "Behandling",
-    "svarighetsgrad": "svår",
-    "fraga": "En 35-årig man opereras med orkidektomi för ett seminom i testikeln (stadium I). PAD visar att tumören är över 4 cm stor. Vilken adjuvant behandling rekommenderas oftast för att minska recidivrisken?",
+    "huvudområde": "Urologisk onkologi",
+    "subtopic": "Testikelcancer",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "En 35-årig man opereras med orkidektomi för ett seminom i testikeln (stadium I). PAD visar att tumören är över 4 cm stor. Vilken adjuvant behandling rekommenderas oftast för att minska recidivrisken?",
     "alternativ": {
       "A": "Enstaka kur med Carboplatin (cytostatika).",
       "B": "Adjuvant lokal strålbehandling mot skrotum.",
       "C": "Retroperitoneal lymfkörtelutrymning (RPLND).",
       "D": "Lifslång testosteronsuppression."
     },
-    "ratt_svar": "A",
-    "kort_forklaring": "För seminom i kliniskt stadium I med riskfaktorer (&gt;4 cm eller inväxt i rete testis) rekommenderas tilläggsbehandling med en singeldos Carboplatin.",
-    "varfor_ovriga_fel": "Män med non-seminom får andra typer (BEP) vid spridning. RPLND är ej standard vid seminom stadium I, och strålning har i stort sett ersatts av cyto.",
-    "kalla": "Testikelcancer.pdf",
+    "rätt_svar": "A",
+    "kort_förklaring": "För seminom i kliniskt stadium I med riskfaktorer (&gt;4 cm eller inväxt i rete testis) rekommenderas tilläggsbehandling med en singeldos Carboplatin.",
+    "varför_övriga_fel": "Män med non-seminom får andra typer (BEP) vid spridning. RPLND är ej standard vid seminom stadium I, och strålning har i stort sett ersatts av cyto.",
+    "källa": "Testikelcancer.pdf",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_081",
-    "huvudomrade": "Kateterteknik &amp; Radiologi",
-    "subtopic": "Renogram",
-    "typ": "Bildtolkning",
-    "svarighetsgrad": "medel",
-    "fraga": "Vilken information bidrar undersökningen 'Renogram' framförallt med vid utredning av urologiska sjukdomar (ex. långvarigt stenhinder)?",
+    "huvudområde": "Kateterteknik & Radiologi",
+    "subtopic": "Radiologi",
+    "typ": "diagnostik",
+    "svårighetsgrad": "medel",
+    "fråga": "Vilken information bidrar undersökningen 'Renogram' framförallt med vid utredning av urologiska sjukdomar (ex. långvarigt stenhinder)?",
     "alternativ": {
       "A": "Den ger en extremt detaljerad anatomisk 3D-bild av små stenar i njurkalkarna.",
       "B": "Den avslöjar exakt kärlanatomi och avvikelser i njurartären.",
       "C": "Den visar njurarnas funktionella sidofördelning och bekräftar om ett avflödeshinder är fysiologiskt betydande.",
       "D": "Den utesluter förekomst av uroteliala små tumörer i njurbäckenet."
     },
-    "ratt_svar": "C",
-    "kort_forklaring": "Ett (isotop)renogram används för att dynamiskt mäta hur stor procent av den totala njurfunktionen varje njure står för (t.ex. 40/60) och hur fort njurarna kan göra sig av med urinen (avflöde).",
-    "varfor_ovriga_fel": "CT är bäst på stenar, CT/MR angiografi bäst på kärlanatomi, och CT-urografi bäst på urotelial cancer.",
-    "kalla": "Urologi Njurcancer.docx",
+    "rätt_svar": "C",
+    "kort_förklaring": "Ett (isotop)renogram används för att dynamiskt mäta hur stor procent av den totala njurfunktionen varje njure står för (t.ex. 40/60) och hur fort njurarna kan göra sig av med urinen (avflöde).",
+    "varför_övriga_fel": "CT är bäst på stenar, CT/MR angiografi bäst på kärlanatomi, och CT-urografi bäst på urotelial cancer.",
+    "källa": "Urologi Njurcancer.docx",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_082",
-    "huvudomrade": "Andrologi",
-    "subtopic": "Hypogonadism tolkning",
-    "typ": "Förståelse",
-    "svarighetsgrad": "medel",
-    "fraga": "En man presenteras med testosteronvärdet 9 nmol/L (gråzon). Laboratoriet visar även ett kraftigt förhöjt SHBG (Sexualhormonbindande globulin). Hur påverkar SHBG-värdet tillgången på testosteron?",
+    "huvudområde": "Andrologi",
+    "subtopic": "Andrologi",
+    "typ": "koncept",
+    "svårighetsgrad": "medel",
+    "fråga": "En man presenteras med testosteronvärdet 9 nmol/L (gråzon). Laboratoriet visar även ett kraftigt förhöjt SHBG (Sexualhormonbindande globulin). Hur påverkar SHBG-värdet tillgången på testosteron?",
     "alternativ": {
       "A": "Ett högt SHBG stimulerar testiklarna att producera extremt mycket mer testosteron.",
       "B": "Ett högt SHBG bryter ned testosteron direkt i levern.",
       "C": "Ett högt SHBG binder upp en stor del av testosteronet i blodet, vilket sänker andelen fritt, biologiskt aktivt testosteron i vävnaden.",
       "D": "SHBG fungerar som ett intracellulärt testosteron, och ersätter funktionen vid låga nivåer."
     },
-    "ratt_svar": "C",
-    "kort_forklaring": "SHBG är transportproteinet för testosteron. Höga nivåer betyder att hormonerna binds hårdare, vilket minskar mängden fritt och aktivt testosteron, och patienten kan ha brist-symtom trots okej total-testosteron.",
-    "varfor_ovriga_fel": "SHBG verkar inte nedbrytande i levern och fungerar inte självt som ett hormon.",
-    "kalla": "Urologiseminarium ”Tematimmar”.pdf",
+    "rätt_svar": "C",
+    "kort_förklaring": "SHBG är transportproteinet för testosteron. Höga nivåer betyder att hormonerna binds hårdare, vilket minskar mängden fritt och aktivt testosteron, och patienten kan ha brist-symtom trots okej total-testosteron.",
+    "varför_övriga_fel": "SHBG verkar inte nedbrytande i levern och fungerar inte självt som ett hormon.",
+    "källa": "Urologiseminarium ”Tematimmar”.pdf",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_083",
-    "huvudomrade": "Akut urologi",
-    "subtopic": "Penisfraktur utredning",
-    "typ": "Diagnostik",
-    "svarighetsgrad": "svår",
-    "fraga": "Vid penisfraktur brister tunica albuginea. Inom hur lång tid rekommenderas i regel operation, och vilken undersökning kan ibland vägleda kirurgen till vart rupturen sitter?",
+    "huvudområde": "Akut urologi",
+    "subtopic": "Akut andrologi",
+    "typ": "diagnostik",
+    "svårighetsgrad": "svår",
+    "fråga": "Vid penisfraktur brister tunica albuginea. Inom hur lång tid rekommenderas i regel operation, och vilken undersökning kan ibland vägleda kirurgen till vart rupturen sitter?",
     "alternativ": {
       "A": "Operation inom 6 timmar, CT-angiografi över lilla bäckenet.",
       "B": "Operation inom 72 timmar, MR (Magnetkamera) av penis.",
       "C": "Operation inom 2 veckor, Ultraljud med färgdoppler.",
       "D": "Operation omedelbart, Uretrocystoskopi."
     },
-    "ratt_svar": "B",
-    "kort_forklaring": "Penisfraktur bör opereras (tunica sys ihop) inom ca 72 timmar för att undvika erektil dysfunktion och krökning. MR används ibland framgångsrikt för att lokalisera exakt var kapseln är trasig.",
-    "varfor_ovriga_fel": "Det är inte extremt tidsberoende som en testistorsion (6h).",
-    "kalla": "Urologi Skrotala sjukdomstillstånd.docx",
+    "rätt_svar": "B",
+    "kort_förklaring": "Penisfraktur bör opereras (tunica sys ihop) inom ca 72 timmar för att undvika erektil dysfunktion och krökning. MR används ibland framgångsrikt för att lokalisera exakt var kapseln är trasig.",
+    "varför_övriga_fel": "Det är inte extremt tidsberoende som en testistorsion (6h).",
+    "källa": "Urologi Skrotala sjukdomstillstånd.docx",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_084",
-    "huvudomrade": "Nedre urinvägar, LUTS &amp; BPH",
-    "subtopic": "Hypoton blåsa",
-    "typ": "Mekanismer",
-    "svarighetsgrad": "medel",
-    "fraga": "Efter en omfattande rektalcanceroperation eller radikal hysterektomi utvecklar patienten stora svårigheter att tömma blåsan och riskerar överfyllnadsinkontinens. Vad kallas detta och vad är den vanligaste mekanismen?",
+    "huvudområde": "Nedre urinvägar, LUTS & BPH",
+    "subtopic": "BPH och LUTS",
+    "typ": "mekanismer",
+    "svårighetsgrad": "medel",
+    "fråga": "Efter en omfattande rektalcanceroperation eller radikal hysterektomi utvecklar patienten stora svårigheter att tömma blåsan och riskerar överfyllnadsinkontinens. Vad kallas detta och vad är den vanligaste mekanismen?",
     "alternativ": {
       "A": "Hyperton blåsa, på grund av lokal strålning som gör muskeln hård och spastisk.",
       "B": "Hypoton blåsa, på grund av iatrogen skada på nerverna (plexus hypogastricus/pelvicus) i lilla bäckenet som försörjer detrusorn.",
       "C": "Ischuria paradoxa orsakat av att tumörmassa växer i uretra.",
       "D": "Autonom dysreflexi, på grund av plötslig frisättning av katekolaminer från binjurarna."
     },
-    "ratt_svar": "B",
-    "kort_forklaring": "Extensiv bäckenkirurgi skadar ofta det autonoma nervnätverket som får detrusorn att dra ihop sig (pelvic splanchnic nerves), vilket leder till en slapp, hypoton (neurogen) blåsa.",
-    "varfor_ovriga_fel": "Strålning ger oftast små skrumpna blås-volymer, inte slappa hypotoniska.",
-    "kalla": "Urologi Nedre urinvägar.docx",
+    "rätt_svar": "B",
+    "kort_förklaring": "Extensiv bäckenkirurgi skadar ofta det autonoma nervnätverket som får detrusorn att dra ihop sig (pelvic splanchnic nerves), vilket leder till en slapp, hypoton (neurogen) blåsa.",
+    "varför_övriga_fel": "Strålning ger oftast små skrumpna blås-volymer, inte slappa hypotoniska.",
+    "källa": "Urologi Nedre urinvägar.docx",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_085",
-    "huvudomrade": "Urologisk onkologi",
-    "subtopic": "Prostatacancer T-stadium",
+    "huvudområde": "Urologisk onkologi",
+    "subtopic": "Prostatacancer",
     "typ": "Definition",
-    "svarighetsgrad": "medel",
-    "fraga": "En patient får diagnosen prostatacancer. Den palpatoriska fyndet anger stadiet till T3. Vad betyder stadium T3 rent anatomiskt för tumörens utbredning?",
+    "svårighetsgrad": "medel",
+    "fråga": "En patient får diagnosen prostatacancer. Den palpatoriska fyndet anger stadiet till T3. Vad betyder stadium T3 rent anatomiskt för tumörens utbredning?",
     "alternativ": {
       "A": "Tumören är så liten att den inte ens kan kännas vid palpation.",
       "B": "Tumören utgör en knöl som dock är strikt begränsad inom prostatakapseln.",
       "C": "Tumören växer igenom och utanför prostatakapseln, eventuellt in i sädesblåsorna.",
       "D": "Tumören växer direkt in i intilliggande vitala bäckenorgan såsom rektum eller bäckenvägg."
     },
-    "ratt_svar": "C",
-    "kort_forklaring": "T3 innebär extraprostatisk växt (bryter genom kapseln eller in i vesicula seminalis).",
-    "varfor_ovriga_fel": "T1 är icke palpabel. T2 är begränsad inom körteln. T4 betyder inväxt i intilliggande strukturer (rektum/sfinkter).",
-    "kalla": "Prostatacancer.pdf",
+    "rätt_svar": "C",
+    "kort_förklaring": "T3 innebär extraprostatisk växt (bryter genom kapseln eller in i vesicula seminalis).",
+    "varför_övriga_fel": "T1 är icke palpabel. T2 är begränsad inom körteln. T4 betyder inväxt i intilliggande strukturer (rektum/sfinkter).",
+    "källa": "Prostatacancer.pdf",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_086",
-    "huvudomrade": "Akut urologi",
-    "subtopic": "Urinretention hos unga kvinnor",
-    "typ": "Etiologi",
-    "svarighetsgrad": "lätt",
-    "fraga": "Akut urinretention hos män beror oftast på prostataproblem. Vad är en av de absolut vanligaste precipiterande (utlösande) orsakerna till urinretention hos i övrigt unga, friska kvinnor?",
+    "huvudområde": "Akut urologi",
+    "subtopic": "Akut urinretention",
+    "typ": "etiologi",
+    "svårighetsgrad": "lätt",
+    "fråga": "Akut urinretention hos män beror oftast på prostataproblem. Vad är en av de absolut vanligaste precipiterande (utlösande) orsakerna till urinretention hos i övrigt unga, friska kvinnor?",
     "alternativ": {
       "A": "Kraftig förstoppning i tarmen.",
       "B": "Blåscancer som obstruerar trigonum.",
       "C": "Avstängd pyelit i ena njuren.",
       "D": "Akut testistorsion i ovariet."
     },
-    "ratt_svar": "A",
-    "kort_forklaring": "Hos unga kvinnor är anatomin annorlunda och förstoppning (kraftigt dilaterad rektum) är en mycket vanlig reversibel orsak till mekaniskt kläm på urinröret och blåshalsen bakifrån.",
-    "varfor_ovriga_fel": "Cancer är ovanligt hos unga. Pyelit ger sepsis/flanksmärta, men oftast inte ren distal urinretention.",
-    "kalla": "Urologi Akut urologi.docx",
+    "rätt_svar": "A",
+    "kort_förklaring": "Hos unga kvinnor är anatomin annorlunda och förstoppning (kraftigt dilaterad rektum) är en mycket vanlig reversibel orsak till mekaniskt kläm på urinröret och blåshalsen bakifrån.",
+    "varför_övriga_fel": "Cancer är ovanligt hos unga. Pyelit ger sepsis/flanksmärta, men oftast inte ren distal urinretention.",
+    "källa": "Urologi Akut urologi.docx",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_087",
-    "huvudomrade": "Nedre urinvägar, LUTS &amp; BPH",
-    "subtopic": "Överaktiv blåsa lkm kontraindikation",
-    "typ": "Handläggning",
-    "svarighetsgrad": "svår",
-    "fraga": "Antikolinerga läkemedel (t.ex. Tolterodin) förskrivs flitigt för överaktiv blåsa och trängningsinkontinens. Vilket av följande medicinska tillstånd utgör en viktig kontraindikation mot dessa preparat?",
+    "huvudområde": "Nedre urinvägar, LUTS & BPH",
+    "subtopic": "Inkontinens och överaktiv blåsa",
+    "typ": "handläggning",
+    "svårighetsgrad": "svår",
+    "fråga": "Antikolinerga läkemedel (t.ex. Tolterodin) förskrivs flitigt för överaktiv blåsa och trängningsinkontinens. Vilket av följande medicinska tillstånd utgör en viktig kontraindikation mot dessa preparat?",
     "alternativ": {
       "A": "Ökad risk för njursten (Hyperoxaluri).",
       "B": "Myastenia gravis eller trångkammarvinkelglaukom.",
       "C": "Okontrollerad hypotyreos.",
       "D": "Psoriasis."
     },
-    "ratt_svar": "B",
-    "kort_forklaring": "Antikolinergika sänker kolinerg neurotransmission och kan utlösa glaukom-anfall (pga pupilldilatation) och dramatiskt försämra myastenia gravis.",
-    "varfor_ovriga_fel": "Hud- och sköldkörtelsjukdomar samt njursten är ej kontraindikationer för antikolinergika.",
-    "kalla": "Urologi Nedre urinvägar.docx",
+    "rätt_svar": "B",
+    "kort_förklaring": "Antikolinergika sänker kolinerg neurotransmission och kan utlösa glaukom-anfall (pga pupilldilatation) och dramatiskt försämra myastenia gravis.",
+    "varför_övriga_fel": "Hud- och sköldkörtelsjukdomar samt njursten är ej kontraindikationer för antikolinergika.",
+    "källa": "Urologi Nedre urinvägar.docx",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_088",
-    "huvudomrade": "Kateterteknik &amp; Radiologi",
-    "subtopic": "CT indikation njursten",
-    "typ": "Bildtolkning",
-    "svarighetsgrad": "lätt",
-    "fraga": "I vilken situation föredrar urologen/radiologen att beställa en CT buk MED kontrast istället för standard 'CT-njursten utan kontrast' vid buksmärta?",
+    "huvudområde": "Kateterteknik & Radiologi",
+    "subtopic": "Njursten",
+    "typ": "diagnostik",
+    "svårighetsgrad": "lätt",
+    "fråga": "I vilken situation föredrar urologen/radiologen att beställa en CT buk MED kontrast istället för standard 'CT-njursten utan kontrast' vid buksmärta?",
     "alternativ": {
       "A": "När man letar efter helt okomplicerade distala uretärstenar.",
       "B": "När man vill se om en prostatahyperplasi föreligger.",
       "C": "När patienten har svår diff-diagnostik som otydlig inflammation i buken, feber, och eventuell misstanke om tumör eller blödande njure.",
       "D": "När patienten är en känd stenbildare som ska på uppföljning efter 3 veckor."
     },
-    "ratt_svar": "C",
-    "kort_forklaring": "CT utan kontrast (sten-CT) är suveränt på just kalk (stenar), men missar många mjukdelspatologier och funktionella njurproblem. Vid oklar akut buk med feber behövs kontrast för att avbilda abscesser, ischemi, blindtarm och malignitet.",
-    "varfor_ovriga_fel": "Stenar döljs ofta av kontrast (eftersom kontrast blir vitt i uretären, precis som stenen). Uppföljning görs med lågdos utan kontrast.",
-    "kalla": "Radiologi Urologisk radiologi.docx",
+    "rätt_svar": "C",
+    "kort_förklaring": "CT utan kontrast (sten-CT) är suveränt på just kalk (stenar), men missar många mjukdelspatologier och funktionella njurproblem. Vid oklar akut buk med feber behövs kontrast för att avbilda abscesser, ischemi, blindtarm och malignitet.",
+    "varför_övriga_fel": "Stenar döljs ofta av kontrast (eftersom kontrast blir vitt i uretären, precis som stenen). Uppföljning görs med lågdos utan kontrast.",
+    "källa": "Radiologi Urologisk radiologi.docx",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_089",
-    "huvudomrade": "Urologisk onkologi",
-    "subtopic": "Fältcancerisering",
-    "typ": "Mekanismer",
-    "svarighetsgrad": "medel",
-    "fraga": "Inom urotelial blåscancer talar man ofta om 'fältcancerisering' (field cancerization). Vad innebär detta begrepp kliniskt?",
+    "huvudområde": "Urologisk onkologi",
+    "subtopic": "Blåscancer",
+    "typ": "mekanismer",
+    "svårighetsgrad": "medel",
+    "fråga": "Inom urotelial blåscancer talar man ofta om 'fältcancerisering' (field cancerization). Vad innebär detta begrepp kliniskt?",
     "alternativ": {
       "A": "Att cancern enbart kan uppstå på trigonum-fältet i blåsan.",
       "B": "Att tumören växer som ett paraply utanpå blåsan och sprider sig till tjocktarmen.",
       "C": "Att hela urotelet varit exponerat för karcinogener, och att det ofta finns multipla onormala/premaligna celler som inte ses med blotta ögat vilket ger stor risk för nya tumörer över tid.",
       "D": "Att cytostatikabehandlingen måste strålas över ett specifikt strålfält för att fungera."
     },
-    "ratt_svar": "C",
-    "kort_forklaring": "Fältcancerisering innebär att slemhinnan i urinvägarna badat i karcinogener (t.ex. rökning), varvid genetiska förändringar skett diffust över ett stort fält, vilket förklarar varför patienter får ständiga recidiv trots att primärtumören hyvlats bort.",
-    "varfor_ovriga_fel": "Detta förklarar den höga recidivfrekvensen vid ytlig blåscancer, ej strålbehandling eller isolering till en viss fläck.",
-    "kalla": "Urologi Urinblåsecancer.docx",
+    "rätt_svar": "C",
+    "kort_förklaring": "Fältcancerisering innebär att slemhinnan i urinvägarna badat i karcinogener (t.ex. rökning), varvid genetiska förändringar skett diffust över ett stort fält, vilket förklarar varför patienter får ständiga recidiv trots att primärtumören hyvlats bort.",
+    "varför_övriga_fel": "Detta förklarar den höga recidivfrekvensen vid ytlig blåscancer, ej strålbehandling eller isolering till en viss fläck.",
+    "källa": "Urologi Urinblåsecancer.docx",
     "needs_review": "nej"
   },
   {
     "id": "KIR_UROLOGI_090",
-    "huvudomrade": "Urologisk onkologi",
-    "subtopic": "Strålbehandling prostata biverkning",
-    "typ": "Komplikationer",
-    "svarighetsgrad": "lätt",
-    "fraga": "En vanlig biverkning och kvarstående problem efter radikal STRÅLBEHANDLING mot prostatacancer rör tarmfunktionen. Vilken är den typiska risken?",
+    "huvudområde": "Urologisk onkologi",
+    "subtopic": "Prostatacancer",
+    "typ": "komplikationer",
+    "svårighetsgrad": "lätt",
+    "fråga": "En vanlig biverkning och kvarstående problem efter radikal STRÅLBEHANDLING mot prostatacancer rör tarmfunktionen. Vilken är den typiska risken?",
     "alternativ": {
       "A": "Livslång mekanisk ileus.",
       "B": "Strålproktit, vilket medför slemhinneblödning från ändtarmen och lös avföring.",
       "C": "Malabsorption av B12-vitamin.",
       "D": "Akut ischemisk nekros i ventrikeln."
     },
-    "ratt_svar": "B",
-    "kort_forklaring": "Eftersom rektum ligger kloss an mot prostatan bakåt skadas ofta tarmslemhinnan av stråldosen, vilket orsakar sen strålproktit med diarré och rektala blödningar.",
-    "varfor_ovriga_fel": "Tjocktarm/mage/tunntarm (A, C, D) får generellt inte den primära dosbelastningen på det sättet rektum får i lilla bäckenet.",
-    "kalla": "Prostatacancer.pdf",
+    "rätt_svar": "B",
+    "kort_förklaring": "Eftersom rektum ligger kloss an mot prostatan bakåt skadas ofta tarmslemhinnan av stråldosen, vilket orsakar sen strålproktit med diarré och rektala blödningar.",
+    "varför_övriga_fel": "Tjocktarm/mage/tunntarm (A, C, D) får generellt inte den primära dosbelastningen på det sättet rektum får i lilla bäckenet.",
+    "källa": "Prostatacancer.pdf",
     "needs_review": "nej"
   }
 ]

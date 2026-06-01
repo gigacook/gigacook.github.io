@@ -1,823 +1,555 @@
 - area: Akut extremitetsischemi
 - entity: Artäremboli
-- memory_hooks: 
+- subtopic_links:
+  - Symtom och ischemigrad
+  - Behandling
 - tags:
-  - 5p
   - akut
-  - ankeltryck
-  - artärtrombos
-  - complications:
-  - ct-/mr-angio
-  - definitive
-  - discriminators:
-  - doppler
-  - extremitetsischemi
-  - fot i lågläge
-  - initial
-  - investigation:
-  - kompartmentsyndrom
-  - lågmolekylärt heparin
-  - management:
-  - muskelskada
-  - nervskada
-  - normala pulsar/abi i kontralaterala benet
-  - pitfalls:
-  - sadelemboli
-  - suspect:
-  - tidigare friskt kärl
-  - to
-  - urakut embolektomi
-  - urakut insjuknande
-  - when
+  - ischemi
+- when_to_suspect:
+  - Urakut insjuknande av 6P (Pain, Pallor, Pulselessness, Paraesthesia, Paralysis, Prostration)
+  - Känd FF eller hjärtkärlsjukdom
+- discriminators:
+  - Normala pulsar och ABI i kontralaterala benet (friskt kärl)
+  - Sadelemboli (bilateralt)
+- investigation:
+  - Klinisk bedömning
+  - CT- eller MR-angio
+  - Doppler
+- initial_management:
+  - Lågmolekylärt heparin
+  - Fot i lågläge
+- definitive_management:
+  - Urakut embolektomi
+- complications:
+  - Kompartmentsyndrom efter reperfusion
+  - Muskel- och nervskada
+- pitfalls:
+  - Att förväxla med artärtrombos (kräver annan handläggning)
+- memory_hooks:
+  - Emboli = friskt kärl, akut insjuknande, normalt kontralateralt
+
 ---
 - area: Akut extremitetsischemi
 - entity: Artärtrombos
-- memory_hooks: 
+- subtopic_links:
+  - Symtom och ischemigrad
+  - Behandling
 - tags:
   - akut
-  - akut gangrän vid fördröjning
-  - avsaknad av pulsar/lågt abi även i kontralaterala benet
-  - blödning
-  - complications:
-  - ct-angio / dsa
-  - definitive
-  - discriminators:
-  - emboli i friskt kärl
-  - extremitetsischemi
-  - initial
-  - investigation:
-  - ischemi i ben med känd claudicatio/arterioskleros
-  - kateterledd trombolys
-  - kronisk
-  - lågmolekylärt heparin
-  - management:
-  - något mer smygande än emboli
-  - pitfalls:
-  - pta/bypass
-  - på
-  - snabb bedömning
-  - suspect:
-  - to
-  - when
+  - ischemi
+- when_to_suspect:
+  - Ischemi i ben med känd claudicatio eller aterioskleros
+  - Något mer smygande insjuknande än emboli
+- discriminators:
+  - Avsaknad av pulsar och lågt ABI även i kontralaterala benet
+  - Patient med kronisk kärlsjukdom
+- investigation:
+  - CT-angio eller DSA
+- initial_management:
+  - Snabb bedömning
+  - Lågmolekylärt heparin
+- definitive_management:
+  - Kateterledd trombolys
+  - PTA eller bypass
+- complications:
+  - Akut gangrän vid fördröjning
+  - Blödning vid trombolys
+- pitfalls:
+  - Att förväxla med emboli i friskt kärl
+- memory_hooks:
+  - Trombos = känd kärlsjukdom, smygande, bilat lågt ABI
+
 ---
 - area: Akut extremitetsischemi
 - entity: Irreversibel ischemi
-- memory_hooks: 
+- subtopic_links:
+  - Symtom och ischemigrad
+  - Behandling
 - tags:
   - akut
-  - avsaknad av venljud
-  - complications:
-  - definitive
-  - discriminators:
-  - djupt marmorerat ben
-  - doppler
-  - extremitetsischemi
-  - initial
-  - investigation:
-  - klinisk bild
-  - livshotande kalium/toxin-frisättning om man försöker reperfundera
-  - lång ischemitid
-  - management:
-  - pitfalls:
-  - primär amputation
-  - slutstadium
-  - suspect:
-  - to
-  - uteslut möjlighet till reperfusion
-  - uttalad muskelrigiditet
-  - viabel men urakut hotad extremitet
-  - when
----
-- area: Kronisk benartärsjukdom
-- entity: Claudicatio intermittens
-- memory_hooks: 
-- tags:
-  - abi
-  - abi 0,5–0,8
-  - benartärsjukdom
-  - bypass
-  - cilostazol
-  - complications:
-  - definitive
-  - discriminators:
-  - endast vid refraktära fall
-  - gångmattetest
-  - initial
-  - insufficiens
-  - investigation:
-  - kronisk
-  - management:
-  - pitfalls:
-  - pta
-  - restenos
-  - rökstopp, submaximal gångträning
-  - släpper efter kort vila
-  - spinal stenos
-  - suspect:
-  - to
-  - trombyl + statin
-  - vadsmärta/kramp vid gång
-  - when
----
-- area: Kronisk benartärsjukdom
-- entity: Kritisk extremitetshotande ischemi
-- memory_hooks: 
-- tags:
-  - "låglägesrodnad"
-  - abi / tåtryck
-  - abi < 0,5
-  - amputation om obehandlad
-  - benartärsjukdom
-  - complications:
-  - ct-/mr-angio
-  - definitive
-  - diabetesneuropati
-  - discriminators:
-  - graftinfektion
-  - infektion
-  - initial
-  - insufficiens
-  - investigation:
-  - ischemiska sår/gangrän
-  - kronisk
-  - lågläge
-  - management:
-  - optimera riskfaktorer
-  - pitfalls:
-  - revaskularisering
-  - smärtlindring
-  - suspect:
-  - to
-  - vilovärk nattetid
-  - when
----
-- area: Diagnostik
-- entity: Mediaskleros (Falskt högt ABI)
-- memory_hooks: 
-- tags:
-  - abi > 1,3
-  - ankeltryck
-  - complications:
-  - definitive
-  - diagnostik
-  - discriminators:
-  - frita diabetiker från arteriell sjukdom pga "fina tryck"
-  - initial
-  - investigation:
-  - komplettera med tåtrycksmätning
-  - kritisk ischemi missas om man blint litar på abi
-  - kärlen är för stela för att komprimeras av manschett
-  - management:
-  - mätartefakt
-  - patient med diabetes/njursvikt, klinisk ischemi men högt mätvärde
-  - pitfalls:
-  - suspect:
-  - to
-  - when
----
-- area: Aorta/Perifera Aneurysm
-- entity: Abdominellt aortaaneurysm (AAA)
-- memory_hooks: 
-- tags:
-  - >30 mm i diameter
-  - aneurysm
-  - aorta/perifera
-  - asymtomatisk/elektiva
-  - blodtryck <130 mmhg
-  - complications:
-  - definitive
-  - discriminators:
-  - evar
-  - initial
-  - investigation:
-  - management:
-  - missa att undersöka poplitea
-  - op-indikation: >5,5 cm , >5,0 cm
-  - pitfalls:
-  - rupturrisk korrelerar m storlek
-  - rökstopp
-  - screening män 65 år
-  - suspect:
-  - to
-  - ultraljud
-  - when
-  - öppen
----
-- area: Aorta/Perifera Aneurysm
-- entity: Rupturerat AAA (RAAA)
-- memory_hooks: 
-- tags:
-  - akut
-  - akut ct-angio
-  - aneurysm
-  - aorta/perifera
-  - complications:
-  - ct: retroperitonealt hematom, draperad aorta, högattenuerande crescent
-  - definitive
-  - discriminators:
-  - extremt restriktiv vätska
-  - fevar/bevar om nära njurkärl
-  - initial
-  - investigation:
-  - kirurgi
-  - klassisk triad: akut buksmärta t rygg + pulserande resistens + hypotoni
-  - management:
-  - njursten, akut pankreatit, lumbago
-  - om bt <60 + medvetslös = fri ruptur -> ge massivt med blod!
-  - permissiv hypotoni
-  - pitfalls:
-  - suspect:
-  - tillstånd
-  - to
-  - urakut
-  - urakut op
-  - when
----
-- area: Aorta/Perifera Aneurysm
-- entity: Popliteaaneurysm
-- memory_hooks: 
-- tags:
-  - akut
-  - aneurysm
-  - aorta/perifera
-  - complications:
-  - ct-angio
-  - definitive
-  - discriminators:
-  - elektiv bypass
-  - initial
-  - investigation:
-  - känd aaa
-  - management:
-  - pitfalls:
-  - pulserande resistens knäveck
-  - suspect:
-  - to
-  - trombos/emboli ner i underben ger urakut ischemi
-  - tron att aneurysmet ofta rupturerar
-  - ultraljud
-  - uteslut aaa
-  - vidgning av a. poplitea
-  - when
----
-- area: Aortadissektion
-- entity: Stanford Typ A
-- memory_hooks: 
-- tags:
-  - akut
-  - akut blodtryckssänkning
-  - akut hjärtinfarkt
-  - aorta ascendens engagerad
-  - aortadissektion
-  - complications:
-  - ct-angio
-  - definitive
-  - discriminators:
-  - dissektion
-  - initial
-  - investigation:
-  - iva-vård
-  - kirurgi
-  - management:
-  - nytillkomna neuro/hjärtsymtom
-  - pitfalls:
-  - ruptur in i perikard -> dödlig hjärttamponad
-  - suspect:
-  - to
-  - urakut
-  - urakut "yxhugg" i bröstet
-  - urakut öppen hjärt/thorax-kirurgi
-  - when
----
-- area: Aortadissektion
-- entity: Stanford Typ B
-- memory_hooks: 
-- tags:
-  - akut
-  - akut kraftig blodtryckssänkning
-  - aortadissektion
-  - complications:
-  - ct-angio
-  - definitive
-  - discriminators:
-  - dissektion
-  - dissektion nedom a. subclavia sinister
-  - falskt lumen  vs äkta lumen
-  - initial
-  - investigation:
-  - iva-vård
-  - komplicerad: tevar
-  - kraftig hypertoni
-  - malperfusion
-  - management:
-  - medicin
-  - missa hotande organischemi, därmed felbedöma som okomplicerad
-  - okomplicerad: medicinsk trycksänkning
-  - pitfalls:
-  - suspect:
-  - to
-  - urakut "yxhugg" i rygg
-  - when
----
-- area: Karotisstenos
-- entity: Symtomatisk stenos
-- memory_hooks: 
-- tags:
-  - 10% risk för ny stor stroke redan vecka 1
-  - >50% stenosgrad
-  - att operera asymtomatiska
-  - complications:
-  - ct-hjärna vid stroke
-  - definitive
-  - discriminators:
-  - dubbel trombocythämning
-  - duplex  inom 24h
-  - hyperperfusionssyndrom post-op
-  - initial
-  - investigation:
-  - karotisstenos
-  - management:
-  - nylig tia, minor stroke eller amaurosis fugax
-  - pitfalls:
-  - plackruptur/emboli
-  - statiner
-  - suspect:
-  - tea  helst inom 48h–7 dagar
-  - to
-  - when
----
-- area: Mesenteriell ischemi
-- entity: Akut SMA-emboli
-- memory_hooks: 
-- tags:
-  - "pain out of proportion"
-  - "second look"-op inom 24h
-  - akut
-  - akut sma-trombos
-  - complications:
-  - ct-angio
-  - definitive
-  - discriminators:
-  - flimmerpatient
-  - hög mortalitet
-  - initial
-  - investigation:
   - ischemi
-  - kraftigt förhöjt lpk tidigt
-  - laktat stiger sent
-  - management:
-  - mesenteriell
-  - pitfalls:
-  - smärtlindring
-  - sparar ofta de första 80 cm av tunntarmen
-  - suspect:
-  - to
-  - trefas-förlopp
-  - urakut
-  - urakut öppen embolektomi + tarmresektion
-  - vätska
-  - when
----
-- area: Mesenteriell ischemi
-- entity: Akut SMA-trombos
-- memory_hooks: 
-- tags:
-  - akut
-  - complications:
-  - ct-angio
-  - definitive
-  - discriminators:
-  - hela tunntarmen ischemisk
-  - initial
-  - investigation:
-  - ischemi
-  - kronisk
-  - långvarig claudicatio i buken
-  - management:
-  - mesenteriell
-  - ocklusionen sitter högst upp
-  - patient med tidigare "food fear"
-  - pitfalls:
-  - på
-  - sma-emboli
-  - smärtlindring
-  - suspect:
-  - to
-  - trombektomi + ev. bypass/kärlplastik
-  - utbredd transmural nekros ofta värre än vid emboli
-  - vätska
-  - when
----
-- area: Mesenteriell ischemi
-- entity: Kronisk tarmischemi
-- memory_hooks: 
-- tags:
-  - akut
-  - akut remiss om smärtan börjar komma vid fasta
-  - akutisering till livshotande ischemi
-  - complications:
-  - ct-angio
-  - definitive
-  - discriminators:
-  - dsa
-  - initial
-  - investigation:
-  - ischemi
-  - kronisk
-  - management:
-  - mesenteriell
-  - ofrivillig viktnedgång
-  - omfattande cancerutredningar
-  - omfattande stenoser i visceralkärl
-  - pitfalls:
-  - postprandiell smärta
-  - suspect:
-  - to
-  - when
-  - yngre: öppen bypass
-  - äldre/svaga: pta/stent
----
-- area: Vensjukdomar
-- entity: Varicer & Venös insufficiens
-- memory_hooks: 
-- tags:
-  - c4-c6 erbjuds kateterburen laser/rf/skum i offentlig vård
-  - c4: pigment/skleros
-  - ceap c1  till c6
-  - complications:
-  - definitive
-  - discriminators:
-  - duplex
-  - eksem, hyperpigmentering distalt
-  - initial
-  - investigation:
-  - klaffdysfunktion
-  - kompressionsstrumpa
-  - management:
-  - obehandlad ger kroniska venösa bensår
-  - operation i landstingets regi vid c1
-  - pitfalls:
-  - suspect:
-  - to
-  - tyngdkänsla, bensvullnad
-  - vadmuskelaktivering
-  - vensjukdomar
-  - when
----
-- area: Sårdifferentialdiagnostik
-- entity: Arteriellt vs Venöst bensår
-- memory_hooks: 
-- tags:
-  - abi
-  - art: absolut ej kompression!
-  - art: revaskularisering
-  - art: tå/häl, utstansat, torrt
-  - att sätta kompressionslinda på ett ischemiskt arteriellt sår
-  - complications:
-  - ddx
-  - definitive
-  - discriminators:
-  - duplex
-  - initial
-  - investigation:
-  - management:
-  - obehandlat arteriellt sår leder till amputation
-  - pitfalls:
-  - suspect:
-  - svårläkta sår i nedre extremitet
-  - sårdifferentialdiagnostik
-  - to
-  - ven: ablation, sårvård
-  - ven: medial malleol, grunt, vätskande, c4-tecken
-  - venöst: kompression
-  - when
----
-- area: Kärlskador (Trauma)
-- entity: Extremitetstrauma
-- memory_hooks: 
-- tags:
-  - "hard signs": aktiv blödning, pulsbortfall, expanderande hematom
-  - abi görs alltid rutinmässigt
-  - användning av syntetgraft
-  - bypass/interpositionsgraft med autolog ven
-  - complications:
-  - ct-angio
-  - damage control: vaskulär shuntning
-  - definitive
-  - discriminators:
-  - infektion
-  - initial
-  - investigation:
-  - ischemi
-  - knäluxation
-  - kompartmentsyndrom  -> fasciotomi direkt
-  - kraftigt trubbigt våld / frakturer
-  - kärlskador
-  - management:
-  - pitfalls:
-  - suspect:
-  - to
-  - trauma
-  - traumatisk
-  - when
----
-- area: Kärlskador (Trauma)
-- entity: Hals- och Båltrauma
-- memory_hooks: 
-- tags:
-  - akut
-  - att applicera tourniquet runt halsen
-  - blödningschock
-  - buk: reboa
-  - båltrauma med svår hypovolemi
-  - complications:
-  - ct-angio
-  - definitive
-  - discriminators:
-  - exsanguination
-  - fast / akut kirurgi
-  - hals: kad-ballong införd i såret för lokal tamponad
-  - initial
-  - instabil cirkulation
-  - investigation:
-  - kirurgi
-  - kärlskador
-  - ligatur, bypass eller tevar
-  - management:
-  - penetrerande halsvåld
-  - pitfalls:
-  - suspect:
-  - to
-  - trauma
-  - trauma-associerad koagulopati
-  - when
----
-- area: Kärlkirurgisk radiologi
-- entity: Lungemboli (LE)
-- memory_hooks: 
-- tags:
-  - akut
-  - complications:
-  - ct thorax utförs v/s le
-  - ct-angio
-  - definitive
-  - discriminators:
-  - ej tydligt angivet i källorna
-  - högerkammare framstår patologiskt större än vänster
-  - initial
-  - investigation:
-  - kirurgi
-  - kärlkirurgisk
-  - management:
-  - massiv högerkammarbelastning / svikt
-  - pitfalls:
-  - radiologi
-  - suspect:
-  - to
-  - when
----
-- area: Perifer Arteriell Sjukdom
-- entity: Tåtryck vid ABI > 1.3
-- memory_hooks: 
-- tags:
-  - att avskriva ischemi hos en diabetiker med fotsår bara för att abi är "bra"
-  - complications:
-  - definitive
-  - diagnostik
-  - discriminators:
-  - högt ankel-brakial-index  tyder på stela, inkompressibla kärl pga mediaskleros. värdet är falskt högt och opålitligt.
-  - initial
-  - investigation:
-  - kärlkirurgi
-  - management:
-  - pitfalls:
-  - suspect:
-  - to
-  - tåtrycksmätning ska utföras eftersom tåartärerna sällan drabbas av mediaskleros. tryck <30 mmhg innebär kritisk ischemi.
-  - utredning av perifer arteriell insufficiens hos diabetiker eller njursvikts-patient
-  - when
----
-- area: Akut Ischemi
-- entity: Ischemitider (Vävnadstolerans)
-- memory_hooks: 
-- tags:
-  - akut
-  - artäremboli eller akut extremitetsischemi
-  - complications:
-  - definitive
-  - discriminators:
-  - fysiologi
-  - initial
-  - investigation:
-  - kärlkirurgi
-  - management:
-  - muskelvävnad dör/skadas irreversibelt efter ca 6 timmar.
-  - nervvävnad dör/skadas irreversibelt efter ca 4 timmar.
-  - pitfalls:
-  - reperfusionsbehandling måste ske innan tidsfönstret stänger
-  - rhabdomyolys och hyperkalemi  om kärlet öppnas för sent
-  - suspect:
-  - to
-  - when
----
-- area: Aortasjukdom
-- entity: Uppföljning EVAR vs Öppen AAA-kirurgi
-- memory_hooks: 
-- tags:
-  - complications:
-  - definitive
-  - discriminators:
-  - evar  innebär insättande av stentgraft = kräver livslång årlig uppföljning med ultraljud/ct pga risk för endoläckage.
-  - initial
-  - investigation:
-  - kärlkirurgi
-  - management:
-  - pitfalls:
-  - postoperativ planering för abdominellt aortaaneurysm
-  - suspect:
-  - to
-  - uppföljning
-  - when
-  - öppen kirurgi = "sömlös" och robust, skrivs oftast ut/avskrivs efter 4 veckor utan bild-uppföljning.
----
-- area: Tarmischemi
-- entity: SMA-trombos vs SMA-emboli
-- memory_hooks: 
-- tags:
-  - akut
-  - akut tarmischemi "pain out of proportion"
-  - complications:
-  - ct-angio buk
-  - definitive
-  - diagnostik
-  - discriminators:
-  - emboli: kilar ofta fast sig lite längre ut . första 40-80 cm av jejunum skonas ofta!
-  - initial
-  - investigation:
-  - kärlkirurgi
-  - management:
-  - pitfalls:
-  - suspect:
-  - to
-  - trombos: ofta akut på kronisk plackbildning alldeles vid avgången från aorta . hela tunntarmen från treitz ligament och framåt blir ischemisk.
-  - when
----
-- area: Tarmischemi
-- entity: Second Look Laparotomi
-- memory_hooks: 
-- tags:
-  - akut
-  - akut ischemi i tarmen som just reperfunderats eller resekerats
-  - allmänkirurgi
-  - att chansa och sy en anastomos i gråzonstarm vid första operationen, som sedan läcker
-  - complications:
-  - definitive
-  - discriminators:
-  - initial
-  - investigation:
-  - kirurgisk princip där man lämnar tveksam tarm, stänger buken temporärt och tittar in igen efter 24-48 timmar för att definitivt bedöma gränserna för tarmviabilitet.
-  - klipp tarmändar , lämna kvar, stäng provisoriskt
-  - kärlkirurgi
-  - management:
-  - pitfalls:
-  - suspect:
-  - to
-  - when
-  - öppna igen och sy anastomos  i frisk tarm
----
-- area: Carotis / Stroke
-- entity: Farmakologisk behandling inför Carotiskirurgi
-- memory_hooks: 
-- tags:
-  - akut
-  - complications:
-  - definitive
-  - discriminators:
-  - dubbel trombocythämning
-  - farmakologi
-  - för att förhindra ny infarkt i väntan på operation  måste aggressiv medicinering påbörjas omedelbart
-  - högdos statin
-  - initial
-  - investigation:
-  - kärlkirurgi
-  - management:
-  - patient med tia / minor stroke och 70-99% symtomatisk carotisstenos
-  - pitfalls:
-  - suspect:
-  - to
-  - trombendartärektomi
-  - when
----
-- area: Perifer Arteriell Sjukdom
-- entity: Tåtryck vid ABI > 1.3
-- tags:
-  - diagnostik
-  - kärlkirurgi
 - when_to_suspect:
-  - Utredning av perifer arteriell insufficiens hos diabetiker eller njursvikts-patient
+  - Lång ischemitid med djupt marmorerat ben och uttalad muskelrigiditet
 - discriminators:
-  - Högt ankel-brakial-index (>1.3) tyder på stela, inkompressibla kärl pga mediaskleros. Värdet är falskt högt och opålitligt.
+  - Avsaknad av venljud på doppler
+  - Uttalad muskelrigiditet
 - investigation:
-  - Tåtrycksmätning ska utföras eftersom tåartärerna sällan drabbas av mediaskleros. Tryck <30 mmHg innebär kritisk ischemi.
+  - Klinisk bild
+  - Doppler
 - initial_management:
+  - Uteslut möjlighet till reperfusion
 - definitive_management:
+  - Primär amputation
 - complications:
+  - Livshotande kalium- och toxinfrisättning om reperfusion försöks
 - pitfalls:
-  - Att avskriva ischemi hos en diabetiker med fotsår bara för att ABI är "bra" (t.ex. 1.4)
-- memory_hooks: 
+  - Att försöka reperfundera vid irreversibel ischemi
+- memory_hooks:
+  - Rigor + marmorerat + avsaknad venljud = amputera
+
 ---
-- area: Akut Ischemi
-- entity: Ischemitider (Vävnadstolerans)
+- area: Akut extremitetsischemi
+- entity: Ischemitider och vävnadstolerans
+- subtopic_links:
+  - Symtom och ischemigrad
+  - Diagnostik
 - tags:
-  - akut
   - fysiologi
-  - kärlkirurgi
+  - ischemi
 - when_to_suspect:
   - Artäremboli eller akut extremitetsischemi
 - discriminators:
-  - Nervvävnad dör/skadas irreversibelt efter ca 4 timmar.
-  - Muskelvävnad dör/skadas irreversibelt efter ca 6 timmar.
+  - Nervvävnad: Irreversibel skada efter ca 4 timmar
+  - Muskelvävnad: Irreversibel skada efter ca 6 timmar
 - investigation:
 - initial_management:
 - definitive_management:
-  - Reperfusionsbehandling MÅSTE ske innan tidsfönstret stänger
+  - Reperfusion MÅSTE ske innan tidsfönstret stänger
 - complications:
-  - Rhabdomyolys och hyperkalemi (reperfusion syndrom) om kärlet öppnas för sent
+  - Rhabdomyolys och hyperkalemi vid reperfusion efter lång ischemitid
 - pitfalls:
-- memory_hooks: 
+  - Att inte inse hur snabbt skadan progredierar
+- memory_hooks:
+  - Nerv 4h, Muskel 6h
+
 ---
-- area: Aortasjukdom
-- entity: Uppföljning EVAR vs Öppen AAA-kirurgi
+- area: Kronisk benartärsjukdom
+- entity: Claudicatio intermittens
+- subtopic_links:
+  - Claudicatio intermittens
+  - Symtom och ischemigrad
+  - ABI (Ankel-Brachial Index)
 - tags:
-  - kärlkirurgi
-  - uppföljning
+  - kronisk
+  - ischemi
 - when_to_suspect:
-  - Postoperativ planering för abdominellt aortaaneurysm
+  - Vadsmärta eller kramp vid gång som släpper efter kort vila
 - discriminators:
-  - EVAR (Endovascular Aneurysm Repair) innebär insättande av stentgraft = kräver LIVSLÅNG årlig uppföljning med Ultraljud/CT pga risk för endoläckage.
-  - Öppen kirurgi = "sömlös" och robust, skrivs oftast ut/avskrivs efter 4 veckor utan bild-uppföljning.
+  - ABI 0.5-0.8
+  - Gångmattetest bekräftar
 - investigation:
+  - ABI
+  - Gångmattetest
 - initial_management:
+  - Rökstopp, submaximal gångträning
+  - Trombyl och statin
+  - Cilostazol
 - definitive_management:
+  - PTA eller bypass endast vid refraktära fall
 - complications:
+  - Restenos
 - pitfalls:
-- memory_hooks: 
+  - Att förväxla med spinal stenos (neurogen claudicatio)
+- memory_hooks:
+  - Claudicatio = 5 år = 5% amputation. Gångträning är behandling.
+
 ---
-- area: Tarmischemi
-- entity: SMA-trombos vs SMA-emboli
+- area: Kronisk benartärsjukdom
+- entity: Kritisk extremitetshotande ischemi
+- subtopic_links:
+  - Symtom och ischemigrad
+  - Behandling
+  - Operationsindikation
 - tags:
-  - akut
+  - kronisk
+  - ischemi
+- when_to_suspect:
+  - Vilovärk nattetid och ischemiska sår eller gangrän
+  - Låglägesrodnad
+- discriminators:
+  - ABI <0.5
+  - Tåtryck <30 mmHg
+- investigation:
+  - ABI och tåtryck
+  - CT- eller MR-angio
+- initial_management:
+  - Smärtlindring, lågläge
+  - Optimera riskfaktorer
+- definitive_management:
+  - Revaskularisering (PTA eller bypass)
+  - Amputation om obehandlad
+- complications:
+  - Graftinfektion
+  - Infektion i ischemiskt sår
+- pitfalls:
+  - Att förväxla med diabetesneuropati
+- memory_hooks:
+  - Vilovärk + sår = kritisk ischemi = revaskularisering
+
+---
+- area: Diagnostik
+- entity: ABI och Mediaskleros (Falskt högt ABI)
+- subtopic_links:
+  - ABI (Ankel-Brachial Index)
+  - Diagnostik
+- tags:
   - diagnostik
-  - kärlkirurgi
 - when_to_suspect:
-  - Akut tarmischemi "Pain out of proportion"
+  - Utredning av perifer arteriell sjukdom hos diabetiker eller njursviktspatient
 - discriminators:
-  - Trombos: Ofta akut på kronisk plackbildning alldeles vid avgången från aorta (ostialt). Hela tunntarmen från Treitz ligament och framåt blir ischemisk.
-  - Emboli: Kilar ofta fast sig lite längre ut (nedom a. colica media). Första 40-80 cm av jejunum skonas ofta!
+  - ABI >1.3 = falskt högt pga stela inkompressibla kärl (mediaskleros)
+  - Tåartärerna drabbas sällan av mediaskleros
 - investigation:
-  - CT-Angio Buk
+  - Tåtrycksmätning: <30 mmHg = kritisk ischemi
 - initial_management:
 - definitive_management:
 - complications:
 - pitfalls:
-- memory_hooks: 
+  - Att avskriva ischemi hos diabetiker med högt ABI utan att mäta tåtryck
+- memory_hooks:
+  - ABI >1.3 hos diabetiker = ta tåtryck istället
+
 ---
-- area: Tarmischemi
-- entity: Second Look Laparotomi
+- area: Aorta och perifera aneurysm
+- entity: Abdominellt aortaaneurysm (AAA)
+- subtopic_links:
+  - Klassifikation
+  - Operationsindikation
+  - Diagnostik
+- tags:
+  - aneurysm
+  - aorta
+- when_to_suspect:
+  - Screening: Alla män 65 år
+  - Asymtomatisk pulsation i buken
+- discriminators:
+  - >30 mm i diameter vid screening
+  - Op-indikation: >5.5 cm (män) eller >5.0 cm (kvinnor)
+  - Rupturrisk korrelerar med storlek
+- investigation:
+  - Ultraljud (screening och uppföljning)
+  - CT-angio preoperativt
+- initial_management:
+  - Rökstopp, blodtryck <130 mmHg
+  - Uppföljning med ultraljud
+- definitive_management:
+  - EVAR (endovaskulär) eller öppen op vid indikation
+- complications:
+  - EVAR: Kräver livslång uppföljning pga risk för endoläckage
+  - Öppen: Sömlös, avskrivs efter 4 veckor
+- pitfalls:
+  - Att missa att undersöka poplitea (popliteaaneurysm associerat med AAA)
+- memory_hooks:
+  - >5.5 cm = op. EVAR = livslång uppföljning. Öppen = avskriv efter 4v.
+
+---
+- area: Aorta och perifera aneurysm
+- entity: Rupturerat AAA (RAAA)
+- subtopic_links:
+  - Rupturerat AAA
+  - Behandling
 - tags:
   - akut
-  - allmänkirurgi
-  - kärlkirurgi
+  - aneurysm
 - when_to_suspect:
-  - Akut ischemi i tarmen som just reperfunderats eller resekerats
+  - Klassisk triad: Akut buksmärta mot rygg + pulserande resistens + hypotoni
 - discriminators:
-  - Kirurgisk princip där man lämnar tveksam tarm, stänger buken temporärt och tittar in igen efter 24-48 timmar för att definitivt bedöma gränserna för tarmviabilitet.
+  - CT: Retroperitonealt hematom, draperad aorta, högattenuerande crescent
+  - Om BT <60 och medvetslös = fri ruptur → ge massivt med blod direkt
 - investigation:
+  - Akut CT-angio om stabil
+  - Direkt till op om instabil
 - initial_management:
-  - Klipp tarmändar ("Clip and drop"), lämna kvar, stäng provisoriskt
+  - Extremt restriktiv vätska (permissiv hypotoni)
+  - Massiv transfusion
 - definitive_management:
-  - Öppna igen och sy anastomos (eller stomi) i frisk tarm
+  - Urakut EVAR eller öppen op
 - complications:
+  - Förblödning och dödsfall
 - pitfalls:
-  - Att chansa och sy en anastomos i gråzonstarm vid första operationen, som sedan läcker
-- memory_hooks: 
+  - Att ta CT på hemodynamiskt instabil patient
+  - Att förväxla med njursten, akut pankreatit eller lumbago
+- memory_hooks:
+  - Ryggsmärta + pulserande resistens + hypotoni = RAAA
+
 ---
-- area: Carotis / Stroke
-- entity: Farmakologisk behandling inför Carotiskirurgi
+- area: Aorta och perifera aneurysm
+- entity: Popliteaaneurysm
+- subtopic_links:
+  - Popliteaaneurysm
+  - Komplikationer
+- tags:
+  - aneurysm
+  - perifer
+- when_to_suspect:
+  - Pulserande resistens i knäveck
+  - Känd AAA (uteslut alltid popliteaaneurysm)
+- discriminators:
+  - Vidgning av a. poplitea
+  - Trombos och emboli ner i underbenet ger urakut ischemi
+- investigation:
+  - Ultraljud
+  - CT-angio
+- initial_management:
+- definitive_management:
+  - Elektiv bypass vid asymtomatiskt aneurysm
+- complications:
+  - Trombos eller emboli ner i underben med akut ischemi
+- pitfalls:
+  - Att tro att aneurysmet ofta rupturerar (det gör det sällan, problemet är trombos/emboli)
+- memory_hooks:
+  - Poplitea-aneurysm = emboli-risk, inte ruptur
+
+---
+- area: Aortadissektion
+- entity: Stanford Typ A och Typ B
+- subtopic_links:
+  - Klassifikation
+  - Behandling
+  - Diagnostik
+- tags:
+  - aortadissektion
+  - akut
+- when_to_suspect:
+  - Urakut yxhugg i bröstet (Typ A) eller rygg (Typ B)
+  - Nytillkomna neuro- eller hjärtsymtom
+- discriminators:
+  - Typ A: Aorta ascendens engagerad (urakut kirurgi)
+  - Typ B: Nedom a. subclavia sinister (medicinsk trycksänkning om okomplicerad)
+- investigation:
+  - CT-angio
+- initial_management:
+  - Akut blodtryckssänkning
+  - IVA-vård
+- definitive_management:
+  - Typ A: Urakut öppen hjärt-/thoraxkirurgi
+  - Typ B komplicerad: TEVAR
+  - Typ B okomplicerad: Medicinsk trycksänkning
+- complications:
+  - Typ A: Ruptur in i perikard = dödlig hjärttamponad
+  - Typ B: Malperfusion av organ
+- pitfalls:
+  - Att förväxla Typ B med okomplicerad och missa hotande organischemi
+  - Att förväxla med akut hjärtinfarkt
+- memory_hooks:
+  - A = Ascending = Always surgery. B = Below subclavian = Blodtryckssänkning
+
+---
+- area: Karotisstenos
+- entity: Symtomatisk karotisstenos
+- subtopic_links:
+  - Behandling
+  - Operationsindikation
+- tags:
+  - stroke
+  - karotisstenos
+- when_to_suspect:
+  - Nylig TIA, minor stroke eller amaurosis fugax
+- discriminators:
+  - >50% stenosgrad på symtomatisk sida
+  - 10% risk för ny stor stroke redan vecka 1
+- investigation:
+  - Duplex inom 24h
+  - CT hjärna vid stroke
+- initial_management:
+  - Dubbel trombocythämning (Trombyl + Klopidogrel)
+  - Högdos statin (även vid fina lipider)
+- definitive_management:
+  - TEA (Trombendartärektomi) helst inom 48h-7 dagar
+- complications:
+  - Hyperperfusionssyndrom post-op
+- pitfalls:
+  - Att operera asymtomatiska stenoser med lika hög urgency (de opereras elektiv)
+- memory_hooks:
+  - TIA + stenos = dubbel trombocythämning + TEA inom 14 dygn
+
+---
+- area: Akut mesenteriell ischemi
+- entity: Akut SMA-emboli och SMA-trombos
+- subtopic_links:
+  - Akut mesenteriell ischemi
+  - Behandling
+  - Diagnostik
 - tags:
   - akut
-  - farmakologi
-  - kärlkirurgi
+  - tarmischemi
 - when_to_suspect:
-  - Patient med TIA / Minor stroke och 70-99% symtomatisk carotisstenos
+  - Pain out of proportion hos FF-patient eller patient med kärlsjukdom
 - discriminators:
-  - För att förhindra ny infarkt i väntan på operation (inom 14 dgr) måste aggressiv medicinering påbörjas omedelbart
+  - Emboli (FF): Kilar fast nedom a. colica media, första 40-80 cm jejunum skonas
+  - Trombos: Sitter vid avgången från aorta (ostial), hela tunntarmen ischemisk
+  - Trefas-förlopp: Initial smärta → skenlindring → peritonit
+- investigation:
+  - CT-angio buk (trefas)
+- initial_management:
+  - Smärtlindring, vätska
+  - Urakut kirurgbedömning
+- definitive_management:
+  - Emboli: Urakut öppen embolektomi och ev tarmresektion
+  - Trombos: Trombektomi och ev bypass
+  - Second look-laparotomi inom 24h (lämna tveksam tarm, sy ej anastomos direkt)
+- complications:
+  - Irreversibel tarmnekros inom timmar
+  - Hög mortalitet
+- pitfalls:
+  - Laktat stiger sent (normalt laktat utesluter inte)
+  - Att sy anastomos vid tveksam tarm utan second look
+- memory_hooks:
+  - Pain out of proportion + FF = SMA-emboli tills bevisat
+
+---
+- area: Akut mesenteriell ischemi
+- entity: Kronisk tarmischemi
+- subtopic_links:
+  - Akut mesenteriell ischemi
+  - Klassifikation
+- tags:
+  - kronisk
+  - tarmischemi
+- when_to_suspect:
+  - Postprandiell smärta med ofrivillig viktnedgång (food fear)
+- discriminators:
+  - Omfattande stenoser i visceralkärl
+  - Akutisering till livshotande ischemi vid fasta
+- investigation:
+  - CT-angio
+  - DSA
+- initial_management:
+  - Akut remiss om smärtan börjar komma vid fasta
+- definitive_management:
+  - Yngre patient: Öppen bypass
+  - Äldre eller svag patient: PTA och stent
+- complications:
+  - Akutisering till fullständig tarmischemi
+- pitfalls:
+  - Att genomföra omfattande cancerutredningar utan att tänka på tarmischemi
+- memory_hooks:
+  - Food fear + viktnedgång = kronisk tarmischemi
+
+---
+- area: Vensjukdomar
+- entity: Varicer och venös insufficiens
+- subtopic_links:
+  - Komplikationer
+  - Behandling
+- tags:
+  - vensjukdom
+- when_to_suspect:
+  - Tyngdkänsla och bensvullnad
+  - CEAP C1-C6
+- discriminators:
+  - Klaffdysfunktion
+  - C4: Pigmentering och skleros. C6: Aktivt bensår
+- investigation:
+  - Duplex
+- initial_management:
+  - Kompressionsstrumpa
+  - Vadmuskelaktivering
+- definitive_management:
+  - C4-C6 erbjuds kateterburen laser, RF eller skum i offentlig vård
+- complications:
+  - Kroniska venösa bensår om obehandlad
+- pitfalls:
+  - Att förbise underliggande DVT
+- memory_hooks:
+  - CEAP C4-C6 = offentlig behandling
+
+---
+- area: Diagnostik
+- entity: Arteriellt vs Venöst bensår
+- subtopic_links:
+  - Diagnostik
+  - Radiologi
+- tags:
+  - diagnostik
+  - sår
+- when_to_suspect:
+  - Svårläkta sår i nedre extremitet
+- discriminators:
+  - Arteriellt: Tå eller häl, utstansat, torrt, smärtsamt
+  - Venöst: Mediala malleolen, grunt, vätskande, C4-tecken
+- investigation:
+  - ABI
+  - Duplex
+- initial_management:
+  - Arteriellt: Absolut INTE kompression
+  - Venöst: Kompression
+- definitive_management:
+  - Arteriellt: Revaskularisering
+  - Venöst: Ablation och sårvård
+- complications:
+  - Obehandlat arteriellt sår leder till amputation
+- pitfalls:
+  - Att sätta kompressionslinda på ett ischemiskt arteriellt sår
+- memory_hooks:
+  - Arteriellt = Ingen kompression. Venöst = Kompression.
+
+---
+- area: Kärlskador
+- entity: Extremitetstrauma med kärlskada
+- subtopic_links:
+  - Behandling
+  - Komplikationer
+- tags:
+  - trauma
+  - kärlskada
+- when_to_suspect:
+  - Hard signs: Aktiv blödning, pulsbortfall, expanderande hematom
+  - Kraftigt trubbigt våld eller frakturer
+- discriminators:
+  - ABI görs alltid rutinmässigt vid extremitetstrauma
+  - Knäluxation: 20-25% kärlskada
+- investigation:
+  - CT-angio
+- initial_management:
+  - Damage control: Vaskulär shuntning
+- definitive_management:
+  - Bypass eller interpositionsgraft med autolog ven
+- complications:
+  - Kompartmentsyndrom = fasciotomi direkt
+  - Infektion
+- pitfalls:
+  - Att missa kärlskada vid knäluxation
+- memory_hooks:
+  - Hard signs = kärlskada tills bevisat
+
+---
+- area: Radiologi
+- entity: Radiologisk modalitetsval (CT-angio, Duplex, DSA)
+- subtopic_links:
+  - Radiologi
+  - Diagnostik
+- tags:
+  - radiologi
+  - diagnostik
+- when_to_suspect:
+  - Val av bilddiagnostik vid kärlsjukdom
+- discriminators:
+  - CT-angio: Snabb, bred överblick, används vid akuta tillstånd
+  - Duplex (UL): Screening, uppföljning av stengrad och aneurysm
+  - DSA (Digital subtraktionsangiografi): Invasiv, kombineras med intervention
 - investigation:
 - initial_management:
-  - DUBBEL trombocythämning (ex. Trombyl + Clopidogrel)
-  - Högdos Statin (även om pat har fina lipider!)
 - definitive_management:
-  - Trombendartärektomi (TEA)
 - complications:
+  - Kontrastmedelsnefropati vid CT-angio
 - pitfalls:
-- memory_hooks: 
+  - Att välja DSA primärt när CT-angio räcker
+- memory_hooks:
+  - Akut = CT-angio. Uppföljning = Duplex. Intervention = DSA.
+
+---
+- area: Radiologi
+- entity: Lungemboli på CT
+- subtopic_links:
+  - Radiologi
+  - Komplikationer
+- tags:
+  - radiologi
+  - lungemboli
+- when_to_suspect:
+  - Akut andnöd, takykardi, hypotension
+- discriminators:
+  - CT thorax: Höger kammare framstår patologiskt större än vänster (D-tecken)
+  - Massiv högerkammarbelastning eller svikt
+- investigation:
+  - CT-angio thorax
+- initial_management:
+- definitive_management:
+- complications:
+  - Massiv LE med hemodynamisk instabilitet
+- pitfalls:
+  - Att missa högerbelastning som tecken på allvar
+- memory_hooks:
+  - D-tecken på CT = LE med högerbelastning

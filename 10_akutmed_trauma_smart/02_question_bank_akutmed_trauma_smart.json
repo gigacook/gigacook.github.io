@@ -3,7 +3,7 @@
     "id": "KIR_SMR_001",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Smärtanalys",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "lätt",
     "fråga": "Konceptet 'Total pain' används för att förstå smärta utifrån ett helhetsperspektiv. Vilka fyra dimensioner ingår i denna modell?",
     "alternativ": {
@@ -22,7 +22,7 @@
     "id": "KIR_SMR_002",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Smärtanalys",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "lätt",
     "fråga": "Vad kännetecknar nociceptiv smärta enligt definitionen i källorna?",
     "alternativ": {
@@ -79,7 +79,7 @@
     "id": "KIR_SMR_005",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Smärtfysiologi",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "lätt",
     "fråga": "Vad är definitionen av allodyni?",
     "alternativ": {
@@ -98,7 +98,7 @@
     "id": "KIR_SMR_006",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Smärtfysiologi",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "medel",
     "fråga": "Vilken fysiologisk mekanism är mest central för utvecklingen av primär perifer sensitisering vid en akut skada?",
     "alternativ": {
@@ -117,7 +117,7 @@
     "id": "KIR_SMR_007",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Smärtfysiologi",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "svår",
     "fråga": "Vilken av följande strukturer i hjärnan utgör ett viktigt centrum för kroppens nedåtgående endogena smärthämmande system?",
     "alternativ": {
@@ -136,7 +136,7 @@
     "id": "KIR_SMR_008",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Smärtfysiologi",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "medel",
     "fråga": "Central sensitisering innebär att nervsystemet bibehåller en ökad känslighet efter att en skada läkt. Vilken receptor i ryggmärgens bakhorn pekas ut som en av huvudmekanismerna bakom detta?",
     "alternativ": {
@@ -155,7 +155,7 @@
     "id": "KIR_SMR_009",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Smärtfysiologi",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "medel",
     "fråga": "Smärta från inre organ upplevs ofta i ett bestämt hudområde (refererad smärta). Vad är den fysiologiska huvudförklaringen till detta?",
     "alternativ": {
@@ -212,7 +212,7 @@
     "id": "KIR_SMR_012",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Farmakologisk behandling",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "medel",
     "fråga": "En patient behandlas med en traditionell ospecifik NSAID. Varför uppstår en ökad risk för gastrointestinal blödning jämfört med vid användning av en specifik COX-2-hämmare?",
     "alternativ": {
@@ -231,7 +231,7 @@
     "id": "KIR_SMR_013",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Farmakologisk behandling",
-    "typ": "biverkningar",
+    "typ": "komplikationer",
     "svårighetsgrad": "medel",
     "fråga": "Vid insättning av starka opioider för postoperativ smärta, vilken biverkning är patienten mycket osannolik att utveckla tolerans emot (dvs biverkningen kvarstår under långtidsbruk)?",
     "alternativ": {
@@ -269,7 +269,7 @@
     "id": "KIR_SMR_015",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Farmakologisk behandling",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "medel",
     "fråga": "Vilken unik egenskap skiljer Tapentadol (Palexia) från klassiska opioider som Morfin och Oxikodon?",
     "alternativ": {
@@ -326,7 +326,7 @@
     "id": "KIR_SMR_018",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Farmakologisk behandling",
-    "typ": "biverkningar",
+    "typ": "komplikationer",
     "svårighetsgrad": "medel",
     "fråga": "Du överväger att sätta in Amitriptylin mot neuropatisk smärta. Vilken biverkningsprofil eller risk gör att man startar med mycket låg dos, särskilt hos äldre?",
     "alternativ": {
@@ -364,7 +364,7 @@
     "id": "KIR_SMR_020",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Farmakologisk behandling",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "svår",
     "fråga": "Vid behandling med buprenorfin (partiell agonist) lyfts en särskild egenskap fram i jämförelse med fulla agonister (som fentanyl) gällande andningsdepression. Vilken egenskap?",
     "alternativ": {
@@ -383,7 +383,7 @@
     "id": "KIR_SMR_021",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Icke-farmakologisk behandling",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "lätt",
     "fråga": "Vad är rekommendationen kring fysisk aktivitet vid långvarig icke-cancerrelaterad smärta?",
     "alternativ": {
@@ -440,7 +440,7 @@
     "id": "KIR_SMR_024",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Icke-farmakologisk behandling",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "svår",
     "fråga": "Vid behandling av typ 2-diabetes och långvarig nociplastisk smärta används ofta liknande pedagogiska upplägg. Vad är det huvudsakliga MÅLET med smärtutbildning för en patient med långvarig smärta?",
     "alternativ": {
@@ -478,7 +478,7 @@
     "id": "KIR_SMR_026",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Smärtsyndrom",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "lätt",
     "fråga": "En stor undergrupp av patienter med långvarig smärta har fibromyalgi. Vilken typ av smärtmekanism är dominerande vid fibromyalgi?",
     "alternativ": {
@@ -497,7 +497,7 @@
     "id": "KIR_SMR_027",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Smärtanalys",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "medel",
     "fråga": "Varför är det viktigt att behandla svår akut smärta, förutom för att minska patientens lidande?",
     "alternativ": {
@@ -515,8 +515,8 @@
   {
     "id": "KIR_SMR_028",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
-    "subtopic": "Cancerrelaterad smärta",
-    "typ": "teori",
+    "subtopic": "Smärtsyndrom",
+    "typ": "fysiologi",
     "svårighetsgrad": "medel",
     "fråga": "Varför utvecklas skelettmetastaser (som hos en patient med prostatacancer) ofta till en komplex, svårbehandlad smärta?",
     "alternativ": {
@@ -592,7 +592,7 @@
     "id": "KIR_SMR_032",
     "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Smärtfysiologi",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "medel",
     "fråga": "En 35-årig byggarbetare krossar fingret med en hammare. Vad kallas den process där den mekaniska energin i fingret omvandlas till en elektrisk signal i den perifera nerven?",
     "alternativ": {
@@ -668,7 +668,7 @@
     "id": "KIR_TRA_036",
     "huvudområde": "Traumatologi och Akutkirurgi",
     "subtopic": "Livshotande thoraxskador (ATOMIC)",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "medel",
     "fråga": "Inom traumaminnesregeln ATOMIC står 'I' för 'Flail chest'. Vad definierar detta tillstånd?",
     "alternativ": {
@@ -725,7 +725,7 @@
     "id": "KIR_TRA_039",
     "huvudområde": "Traumatologi och Akutkirurgi",
     "subtopic": "Blödningskontroll och Cirkulationssvikt (Chock)",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "lätt",
     "fråga": "Inom traumacirkulation används minnesregeln 'Blood on the floor and four more'. Vilka är de fyra anatomiska områdena där en hel blodvolym kan förloras osynligt?",
     "alternativ": {
@@ -744,7 +744,7 @@
     "id": "KIR_TRA_040",
     "huvudområde": "Traumatologi och Akutkirurgi",
     "subtopic": "Primärt omhändertagande (C-ABCDE & ATLS)",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "lätt",
     "fråga": "När ambulansen lämnar över en traumapatient sker ofta en s.k. MIST-rapport. Vad står 'S' i MIST för?",
     "alternativ": {
@@ -819,8 +819,8 @@
   {
     "id": "KIR_TRA_044",
     "huvudområde": "Traumatologi och Akutkirurgi",
-    "subtopic": "Lethal Triad / The Lethal Diamond",
-    "typ": "teori",
+    "subtopic": "Blödningskontroll och Cirkulationssvikt (Chock)",
+    "typ": "fysiologi",
     "svårighetsgrad": "medel",
     "fråga": "Lethal triad (eller Lethal diamond) beskriver en dödlig spiral hos traumapatienter. Vilka fyra komponenter utgör den dödliga diamanten?",
     "alternativ": {
@@ -838,8 +838,8 @@
   {
     "id": "KIR_TRA_045",
     "huvudområde": "Traumatologi och Akutkirurgi",
-    "subtopic": "Lethal Triad / The Lethal Diamond",
-    "typ": "teori",
+    "subtopic": "Blödningskontroll och Cirkulationssvikt (Chock)",
+    "typ": "fysiologi",
     "svårighetsgrad": "svår",
     "fråga": "En komponent i traumadiamanten är hypotermi. Vad är den primära fysiologiska anledningen till att hypotermi är så extremt farligt för dessa patienter?",
     "alternativ": {
@@ -858,7 +858,7 @@
     "id": "KIR_TRA_046",
     "huvudområde": "Traumatologi och Akutkirurgi",
     "subtopic": "Kirurgiska och interventionella åtgärder",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "medel",
     "fråga": "Vad är huvudsyftet med en så kallad 'Damage Control'-operation vid multitrauma?",
     "alternativ": {
@@ -934,7 +934,7 @@
     "id": "KIR_TRA_050",
     "huvudområde": "Traumatologi och Akutkirurgi",
     "subtopic": "Brännskador",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "lätt",
     "fråga": "Enligt 'Rule of nines' (Nionderegeln) för vuxna, hur stor andel av den totala kroppsytan motsvarar hela framsidan av bålen/buken?",
     "alternativ": {
@@ -991,7 +991,7 @@
     "id": "KIR_RAD_053",
     "huvudområde": "Radiologi (Akut och Trauma)",
     "subtopic": "Datortomografi (CT) enligt ABCDE",
-    "typ": "bildtolkning",
+    "typ": "diagnostik",
     "svårighetsgrad": "lätt",
     "fråga": "Du granskar en traumadatortomografi enligt 'ABCDE'-systematiken. Vilken inställning (fönster) på datorskärmen ska du välja för att bäst bedöma 'A och B' (Pneumothorax och fria luftvägar)?",
     "alternativ": {
@@ -1010,7 +1010,7 @@
     "id": "KIR_RAD_054",
     "huvudområde": "Radiologi (Akut och Trauma)",
     "subtopic": "Datortomografi (CT) enligt ABCDE",
-    "typ": "bildtolkning",
+    "typ": "diagnostik",
     "svårighetsgrad": "medel",
     "fråga": "Vad är det primära syftet med att använda mjukdelsfönster vid en DT-Trauma under 'C'-bedömningen?",
     "alternativ": {
@@ -1029,7 +1029,7 @@
     "id": "KIR_RAD_055",
     "huvudområde": "Radiologi (Akut och Trauma)",
     "subtopic": "Hounsfield Scale (HU) & Kontrastfaser",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "medel",
     "fråga": "En röntgenläkare mäter attenueringen av en misstänkt vätskeansamling i buken på DT. Värdet är +55 Hounsfield Units (HU). Vilken substans rör det sig sannolikt om?",
     "alternativ": {
@@ -1124,7 +1124,7 @@
     "id": "KIR_RAD_060",
     "huvudområde": "Radiologi (Akut och Trauma)",
     "subtopic": "Kontrastmedelsrisker och Strålskydd",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "lätt",
     "fråga": "Vad menas inom radiologin med principen 'Berättigande' (Justification)?",
     "alternativ": {
@@ -1181,7 +1181,7 @@
     "id": "KIR_TRF_063",
     "huvudområde": "Transfusionsmedicin",
     "subtopic": "Akut och Massiv Transfusion (MTP)",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "lätt",
     "fråga": "Enligt det standardiserade protokollet för massiv transfusion (MTP) i din region (Traumapack). I vilket förhållande och antal ges blodkomponenterna i det initiala paketet?",
     "alternativ": {
@@ -1295,7 +1295,7 @@
     "id": "KIR_ORG_069",
     "huvudområde": "Organdonation och Dödförklaring",
     "subtopic": "Kriterier och Förutsättningar",
-    "typ": "teori",
+    "typ": "fysiologi",
     "svårighetsgrad": "medel",
     "fråga": "En av organdonationsprocesserna i Sverige förkortas DBD. Vad står detta för och vad innebär det?",
     "alternativ": {
@@ -1331,97 +1331,97 @@
   },
   {
     "id": "KIR_ORG_071",
-    "huvudomrade": "Smärtmedicin och Smärtfysiologi",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Smärtanalys",
     "typ": "statusfynd",
-    "svarighetsgrad": "svår",
-    "fraga": "Vid sensibilitetsundersökning för neuropatisk smärta används ofta en metallrulle som håller 25°C för att testa kyla och allodyni. Vilken typ av nervfiber prövas i första hand med detta kalla stimuli?",
+    "svårighetsgrad": "svår",
+    "fråga": "Vid sensibilitetsundersökning för neuropatisk smärta används ofta en metallrulle som håller 25°C för att testa kyla och allodyni. Vilken typ av nervfiber prövas i första hand med detta kalla stimuli?",
     "alternativ": {
       "A": "C-fibrer",
       "B": "A-delta-fibrer",
       "C": "A-beta-fibrer",
       "D": "Tjocka motoriska efferenter"
     },
-    "ratt_svar": "B",
-    "kort_forklaring": "Kyla bedöms primärt via A-delta-fibrer, medan värme (t.ex. 40°C) bedöms via C-fibrer.",
-    "varfor_ovriga_fel": "A-beta svarar på lätt beröring (pensel). C-fibrer förmedlar i första hand värme och molande smärta.",
-    "kalla": "Smärta Neuropatisk smärta.pdf",
+    "rätt_svar": "B",
+    "kort_förklaring": "Kyla bedöms primärt via A-delta-fibrer, medan värme (t.ex. 40°C) bedöms via C-fibrer.",
+    "varför_övriga_fel": "A-beta svarar på lätt beröring (pensel). C-fibrer förmedlar i första hand värme och molande smärta.",
+    "källa": "Smärta Neuropatisk smärta.pdf",
     "needs_review": "nej"
   },
   {
     "id": "KIR_ORG_072",
-    "huvudomrade": "Smärtmedicin och Smärtfysiologi",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Farmakologisk behandling",
     "typ": "handläggning",
-    "svarighetsgrad": "medel",
-    "fraga": "En patient med neuropatisk smärta sätts in på Gabapentin i primärvården. Vad är den rekommenderade startdosen och upptrappningstakten initialt enligt riktlinjerna?",
+    "svårighetsgrad": "medel",
+    "fråga": "En patient med neuropatisk smärta sätts in på Gabapentin i primärvården. Vad är den rekommenderade startdosen och upptrappningstakten initialt enligt riktlinjerna?",
     "alternativ": {
       "A": "Start med 100 mg 1x3, därefter en ökning med 300 mg per dygn tills smärtfrihet uppnås",
       "B": "Start med 300 mg 1x1 under dag 1-6, med en planerad dygnsdosökning på 300 mg var 7:e dag",
       "C": "Start med 600 mg 1x1 till natten under 4 veckor",
       "D": "En startdos om 50 mg 1x1 som höjs varje dag tills biverkningar uppstår"
     },
-    "ratt_svar": "B",
-    "kort_forklaring": "Riktlinjen rekommenderar 'start low, go slow' för sekundära analgetika: 300 mg x1 första veckan, 300 mg x2 andra veckan, osv.",
-    "varfor_ovriga_fel": "A är för snabb upptrappning. C och D stämmer inte överens med standardregimen för gabapentin och minimerar inte biverkningsriskerna.",
-    "kalla": "Smärta Farmakologisk behandling.docx",
+    "rätt_svar": "B",
+    "kort_förklaring": "Riktlinjen rekommenderar 'start low, go slow' för sekundära analgetika: 300 mg x1 första veckan, 300 mg x2 andra veckan, osv.",
+    "varför_övriga_fel": "A är för snabb upptrappning. C och D stämmer inte överens med standardregimen för gabapentin och minimerar inte biverkningsriskerna.",
+    "källa": "Smärta Farmakologisk behandling.docx",
     "needs_review": "nej"
   },
   {
     "id": "KIR_ORG_073",
-    "huvudomrade": "Smärtmedicin och Smärtfysiologi",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Smärtanalys",
-    "typ": "teori",
-    "svarighetsgrad": "medel",
-    "fraga": "Olika variabler kan användas för att förutsäga risken för svår postoperativ smärta. Vilket av följande är en validerad och stark riskfaktor för detta (bl.a. fångat via APAIS-skalan)?",
+    "typ": "fysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Olika variabler kan användas för att förutsäga risken för svår postoperativ smärta. Vilket av följande är en validerad och stark riskfaktor för detta (bl.a. fångat via APAIS-skalan)?",
     "alternativ": {
       "A": "Hög biologisk ålder",
       "B": "Hög preoperativ ångest och oro",
       "C": "Låg utbildningsnivå",
       "D": "Manligt kön"
     },
-    "ratt_svar": "B",
-    "kort_forklaring": "Högt APAIS (Amsterdam Preoperative Anxiety and Information Scale) indikerar hög preoperativ oro, vilket är en av de starkaste prediktorerna för hög postoperativ smärta.",
-    "varfor_ovriga_fel": "Låg ålder och kvinnligt kön är de demografiska riskfaktorer som lyfts fram, inte hög ålder och manligt kön. C nämns inte som en primär prediktor.",
-    "kalla": "Smärta Smärtfysiologi Akut smärta - kopia_STUDENTER (1).pdf",
+    "rätt_svar": "B",
+    "kort_förklaring": "Högt APAIS (Amsterdam Preoperative Anxiety and Information Scale) indikerar hög preoperativ oro, vilket är en av de starkaste prediktorerna för hög postoperativ smärta.",
+    "varför_övriga_fel": "Låg ålder och kvinnligt kön är de demografiska riskfaktorer som lyfts fram, inte hög ålder och manligt kön. C nämns inte som en primär prediktor.",
+    "källa": "Smärta Smärtfysiologi Akut smärta - kopia_STUDENTER (1).pdf",
     "needs_review": "nej"
   },
   {
     "id": "KIR_ORG_074",
-    "huvudomrade": "Smärtmedicin och Smärtfysiologi",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
     "subtopic": "Smärtanalys",
     "typ": "handläggning",
-    "svarighetsgrad": "lätt",
-    "fraga": "Vilken är en central begränsning i användningen av VAS (Visuell Analog Skala) eller NRS i klinisk praxis?",
+    "svårighetsgrad": "lätt",
+    "fråga": "Vilken är en central begränsning i användningen av VAS (Visuell Analog Skala) eller NRS i klinisk praxis?",
     "alternativ": {
       "A": "De kan endast användas för patienter under 65 år",
       "B": "De mäter endast objektiv nervskada och korrelerar dåligt med patientens upplevelse",
       "C": "De är bra för att mäta akut smärta, men är mindre användbara och missvisande vid långvariga smärttillstånd",
       "D": "De kräver att patienten tar opioidläkemedel innan skattningen görs"
     },
-    "ratt_svar": "C",
-    "kort_forklaring": "Vid långvarig smärta påverkas livskvalitet, sömn och funktion starkare, och den endimensionella VAS/NRS-skattningen fångar inte detta, utan är bäst anpassad för akuta förlopp.",
-    "varfor_ovriga_fel": "VAS/NRS är högst subjektiva och används oavsett ålder och läkemedel.",
-    "kalla": "Smärta Smärtanalys.pdf",
+    "rätt_svar": "C",
+    "kort_förklaring": "Vid långvarig smärta påverkas livskvalitet, sömn och funktion starkare, och den endimensionella VAS/NRS-skattningen fångar inte detta, utan är bäst anpassad för akuta förlopp.",
+    "varför_övriga_fel": "VAS/NRS är högst subjektiva och används oavsett ålder och läkemedel.",
+    "källa": "Smärta Smärtanalys.pdf",
     "needs_review": "nej"
   },
   {
     "id": "KIR_ORG_075",
-    "huvudomrade": "Smärtmedicin och Smärtfysiologi",
-    "subtopic": "Cancerrelaterad smärta",
-    "typ": "teori",
-    "svarighetsgrad": "medel",
-    "fraga": "Hos patienter med metastaserad cancer (ex. skelettmetastaser) är begreppet 'sklerotom' viktigt i smärtanalysen. Vad innebär refererad smärta i ett sklerotom?",
+    "huvudområde": "Smärtmedicin och Smärtfysiologi",
+    "subtopic": "Smärtsyndrom",
+    "typ": "fysiologi",
+    "svårighetsgrad": "medel",
+    "fråga": "Hos patienter med metastaserad cancer (ex. skelettmetastaser) är begreppet 'sklerotom' viktigt i smärtanalysen. Vad innebär refererad smärta i ett sklerotom?",
     "alternativ": {
       "A": "Smärta som strålar ut exakt längs en specifik perifer nervgren (ex. n. ischiadicus)",
       "B": "Ett utstrålande smärtmönster från skelett/periost som inte nödvändigtvis följer hudens klassiska dermatom-karta",
       "C": "Existentiell smärta som projiceras till huden",
       "D": "Smärta som enbart känns av i sympatiska ganglier"
     },
-    "ratt_svar": "B",
-    "kort_forklaring": "Ett sklerotom är den del av skelettet som innerveras från en viss ryggmärgsnivå, och smärta från metastaser här kan stråla ut på ett annat, djupare sätt än hudens dermatom.",
-    "varfor_ovriga_fel": "A beskriver en nervrotsskada/neurogen smärta i ett dermatom. C och D är inkorrekta definitioner.",
-    "kalla": "Smärta Cancerrelaterad smärta.pdf",
+    "rätt_svar": "B",
+    "kort_förklaring": "Ett sklerotom är den del av skelettet som innerveras från en viss ryggmärgsnivå, och smärta från metastaser här kan stråla ut på ett annat, djupare sätt än hudens dermatom.",
+    "varför_övriga_fel": "A beskriver en nervrotsskada/neurogen smärta i ett dermatom. C och D är inkorrekta definitioner.",
+    "källa": "Smärta Cancerrelaterad smärta.pdf",
     "needs_review": "nej"
   }
 ]
