@@ -32,7 +32,7 @@ Engine3/
 └── [backend files]
 *IN DEVELOPMENT
 *Working files sit next to engine3 root
-*See 03_std_current_work_simcases.md
+*See 03_std_current_work_simcases.md for full development structure & file manifest
 ```
 
 ---

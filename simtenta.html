@@ -1,4 +1,113 @@
-{
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simtenta — fallspel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Albert+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d1418; --panel:#121c21; --panel2:#17242a; --raise:#1d2d34;
+  --ink:#e2edf0; --muted:#85999f; --faint:#5d7177; --line:#243237;
+  --teal:#46c7b8; --teal-d:#2c8e83; --amber:#e6ad4d; --red:#e0796a; --green:#7fc89c;
+  --display:"Bricolage Grotesque",serif; --body:"Albert Sans",system-ui,sans-serif; --mono:"JetBrains Mono",monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased}
+body{
+  background:
+    radial-gradient(1100px 520px at 82% -8%, rgba(70,199,184,.07), transparent 60%),
+    radial-gradient(900px 600px at -5% 110%, rgba(230,173,77,.05), transparent 55%),
+    var(--bg);
+  min-height:100vh; line-height:1.5;
+}
+a{color:var(--teal)}
+.wrap{max-width:880px;margin:0 auto;padding:28px 20px 90px}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);font-weight:500}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(30px,5vw,46px);line-height:1.02;margin:.25em 0 .15em;letter-spacing:-.02em}
+h2{font-family:var(--display);font-weight:700;font-size:22px;margin:0 0 4px;letter-spacing:-.01em}
+.lede{color:var(--muted);max-width:60ch;margin:6px 0 0}
+.hr{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:26px 0}
+
+/* ---- home ---- */
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:18px 0 10px}
+.btn{font-family:var(--body);font-weight:600;font-size:14px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);
+  padding:9px 14px;border-radius:10px;cursor:pointer;transition:.15s;white-space:nowrap}
+.btn:hover{border-color:var(--teal-d);background:var(--raise)}
+.btn.primary{background:var(--teal);color:#06201d;border-color:var(--teal)}
+.btn.primary:hover{background:#5ad6c6}
+.btn.ghost{background:transparent}
+.btn.sm{padding:6px 11px;font-size:13px;border-radius:8px}
+.chip{font-family:var(--mono);font-size:11px;padding:3px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);cursor:pointer;user-select:none}
+.chip.on{color:#06201d;background:var(--teal);border-color:var(--teal)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:8px}
+.card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:14px;padding:16px;cursor:pointer;transition:.16s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-2px);border-color:var(--teal-d);box-shadow:0 10px 30px -18px rgba(0,0,0,.8)}
+.card .sub{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.card .ttl{font-family:var(--display);font-weight:700;font-size:16.5px;margin:6px 0 6px;line-height:1.12}
+.card .fr{color:var(--muted);font-size:12.5px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.ytag{position:absolute;top:12px;right:12px;font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.1em;padding:2px 7px;border-radius:6px}
+.ytag.HIGH{background:rgba(224,121,106,.16);color:var(--red);border:1px solid rgba(224,121,106,.3)}
+.ytag.MED{background:rgba(230,173,77,.14);color:var(--amber);border:1px solid rgba(230,173,77,.28)}
+
+/* ---- player ---- */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.rail{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 18px}
+.step{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);
+  padding:5px 9px;border-radius:7px;border:1px solid transparent;background:var(--panel);white-space:nowrap}
+.step.done{color:var(--teal);border-color:var(--line)}
+.step.cur{color:#06201d;background:var(--amber);font-weight:700}
+.frame{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:6px}
+.frame .who{font-family:var(--mono);font-size:11px;color:var(--teal);letter-spacing:.08em;text-transform:uppercase}
+.frame .ft{margin-top:6px;color:var(--ink)}
+.meta{font-family:var(--mono);font-size:11px;color:var(--faint);margin-top:8px;display:flex;gap:14px;flex-wrap:wrap}
+.phase{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:16px;padding:20px 20px 18px;margin-top:16px;animation:rise .28s ease}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.phase .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);font-weight:500}
+.phase .goal{font-family:var(--display);font-weight:600;font-size:19px;line-height:1.25;margin:6px 0 14px}
+textarea{width:100%;min-height:84px;resize:vertical;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:11px;
+  padding:12px 13px;font-family:var(--body);font-size:14.5px;line-height:1.5;outline:none}
+textarea:focus{border-color:var(--teal-d)}
+.hint{font-size:12px;color:var(--faint);margin-top:7px}
+.reveal{margin-top:14px;animation:rise .24s ease}
+.reveal .rh{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:8px}
+ul.facit{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+ul.facit li{position:relative;padding:9px 12px 9px 30px;background:var(--bg);border:1px solid var(--line);border-radius:10px;font-size:14px}
+ul.facit li:before{content:"›";position:absolute;left:12px;top:8px;color:var(--teal);font-family:var(--mono);font-weight:700}
+.pit{margin-top:12px}
+.pit .ph{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:7px}
+ul.pitfalls{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+ul.pitfalls li{position:relative;padding:8px 12px 8px 30px;background:rgba(224,121,106,.07);border:1px solid rgba(224,121,106,.22);border-radius:10px;font-size:13.5px}
+ul.pitfalls li:before{content:"✕";position:absolute;left:12px;top:8px;color:var(--red);font-size:11px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;align-items:center}
+.score{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.score .s{flex:1;min-width:120px;text-align:center;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--bg);cursor:pointer;font-weight:600;font-size:13.5px;transition:.14s}
+.score .s small{display:block;font-family:var(--mono);font-size:10px;color:var(--faint);margin-top:2px;font-weight:400}
+.s.pass:hover{border-color:var(--green);color:var(--green)}
+.s.partial:hover{border-color:var(--amber);color:var(--amber)}
+.s.miss:hover{border-color:var(--red);color:var(--red)}
+
+/* foljdfragor */
+.qprog{font-family:var(--mono);font-size:11px;color:var(--faint);margin-bottom:8px}
+.qbox{font-family:var(--display);font-weight:600;font-size:18px;line-height:1.3;margin-bottom:12px}
+.abox{margin-top:12px;padding:12px 14px;background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:0 10px 10px 0;font-size:14.5px;animation:rise .22s ease}
+
+/* feedback + tail */
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+.pchip{font-family:var(--mono);font-size:10.5px;padding:4px 9px;border-radius:7px;border:1px solid var(--line);display:flex;gap:6px;align-items:center}
+.dot{width:7px;height:7px;border-radius:50%}
+.dot.pass{background:var(--green)} .dot.partial{background:var(--amber)} .dot.miss{background:var(--red)} .dot.none{background:var(--faint)}
+.tail{margin-top:18px;border:1px dashed var(--amber);background:rgba(230,173,77,.05);border-radius:14px;padding:18px}
+.tail .th{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);font-weight:600}
+.tail .esc{font-family:var(--display);font-weight:600;font-size:18px;margin:10px 0;line-height:1.3}
+.foot{margin-top:26px;color:var(--faint);font-size:12px;text-align:center}
+.hide{display:none!important}
+@media(max-width:560px){.score .s{min-width:0;flex:1 1 30%}}
+</style>
+
+<div class="wrap" id="app"></div>
+
+<script>
+const DATA = {
   "engine": "simtenta",
   "version": "2.0",
   "language": "sv",
@@ -3126,4 +3235,286 @@
       }
     }
   ]
+};
+
+// phase labels (sv) in canonical order
+const PLAB = {anamnes:"Anamnes",status:"Status",prover:"Prover",handlaggning:"Handläggning",
+  utredning:"Utredning",patientinfo:"Patientinfo",sbar:"SBAR",foljdfragor:"Följdfrågor",feedback:"Feedback"};
+const PVERB = {
+  anamnes:"Ställ dina anamnesfrågor. Vad vill du veta — och varför?",
+  status:"Beskriv vad du undersöker och hur. Tänk högt.",
+  prover:"Vilka prover/undersökningar beställer du?",
+  handlaggning:"Vad gör du nu, och i vilken ordning?",
+  utredning:"Vidare utredning — och hur skyndsamt?",
+  patientinfo:"Vad säger du till patienten?",
+  sbar:"Ge din SBAR. Vad är ditt R?",
+  foljdfragor:"Examinatorn frågar ut dig.",
+  feedback:"Hur gick det?"
+};
+
+let S = {}; // session state
+
+const el = (h)=>{const t=document.createElement('template');t.innerHTML=h.trim();return t.content.firstChild;};
+const app = document.getElementById('app');
+function esc(s){return (s||"").replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+
+/* ---------------- HOME ---------------- */
+let filterSub = "ALL";
+function home(){
+  S = {};
+  const subs = [...new Set(DATA.cases.map(c=>c.subject))];
+  const cases = DATA.cases.filter(c=>filterSub==="ALL"||c.subject===filterSub);
+  app.innerHTML = "";
+  app.append(el(`<div>
+    <div class="kicker">T7 · klinisk simuleringstenta</div>
+    <h1>Simtenta — fallspel</h1>
+    <p class="lede">Tryck igenom riktiga rapporterade fall, fas för fas, precis som på tentan:
+    anamnes → status → prover → handläggning → utredning → patientinfo → SBAR → följdfrågor.
+    Skriv eller tänk högt, vänd på facit, bedöm dig själv. Fallet slutar aldrig vid diagnosen.</p>
+  </div>`));
+  const tb = el(`<div class="toolbar"></div>`);
+  tb.append(el(`<button class="btn primary" id="rand">⚡ Slumpa HIGH-yield</button>`));
+  tb.append(el(`<span class="chip ${filterSub==='ALL'?'on':''}" data-s="ALL">Alla (${DATA.cases.length})</span>`));
+  subs.forEach(s=>tb.append(el(`<span class="chip ${filterSub===s?'on':''}" data-s="${esc(s)}">${esc(s)}</span>`)));
+  app.append(tb);
+  tb.querySelector('#rand').onclick=()=>{const h=DATA.cases.filter(c=>c.yield==='HIGH');start(h[Math.floor(Math.random()*h.length)]);};
+  tb.querySelectorAll('.chip').forEach(ch=>ch.onclick=()=>{filterSub=ch.dataset.s;home();});
+
+  const grid = el(`<div class="grid"></div>`);
+  cases.forEach(c=>{
+    const card = el(`<div class="card">
+      <span class="ytag ${c.yield}">${c.yield}</span>
+      <div class="sub">${esc(c.subject)}</div>
+      <div class="ttl">${esc(c.frame.split('.')[0])}.</div>
+      <div class="fr">${esc(c.role)} · ${esc(c.facit)}</div>
+    </div>`);
+    card.onclick=()=>start(c);
+    grid.append(card);
+  });
+  app.append(grid);
+  app.append(el(`<div class="foot">Grundat i era egna sammanställningar + Engine3-matriser. Framsteg sparas inte mellan omladdningar.</div>`));
+  window.scrollTo(0,0);
 }
+
+/* ---------------- START CASE ---------------- */
+function start(c){
+  S = {c, pi:0, qi:0, revealed:false, scores:{}, tail:-1};
+  renderPhase();
+}
+
+function railHTML(){
+  const ph = S.c.phases;
+  return `<div class="rail">`+ph.map((p,i)=>{
+    const cls = i<S.pi?'done':(i===S.pi?'cur':'');
+    return `<span class="step ${cls}">${PLAB[p.type]||p.type}</span>`;
+  }).join('')+`</div>`;
+}
+function frameHTML(){
+  const c=S.c;
+  return `<div class="frame"><div class="who">${esc(c.role)} · ${esc(c.subject)} · ${esc(c.site)}</div>
+    <div class="ft">${esc(c.frame)}</div>
+    <div class="meta"><span>👤 ${esc(c.mode)}</span><span>yield: ${c.yield}</span></div></div>`;
+}
+function topHTML(){
+  return `<div class="top">
+    <button class="btn ghost sm" id="back">← Fall</button>
+    <div style="font-family:var(--mono);font-size:11px;color:var(--faint)">Fas ${Math.min(S.pi+1,S.c.phases.length)}/${S.c.phases.length}</div>
+  </div>`;
+}
+
+/* ---------------- RENDER A PHASE ---------------- */
+function renderPhase(){
+  const c=S.c; 
+  if(S.pi>=c.phases.length){return renderEnd();}
+  const p=c.phases[S.pi];
+  if(p.type==='feedback'){return renderEnd();}
+  if(p.type==='foljdfragor'){return renderFoljd();}
+
+  app.innerHTML="";
+  app.append(el(topHTML()));
+  app.append(el(railHTML()));
+  app.append(el(frameHTML()));
+  
+  const isInteractive = (p.type === 'anamnes' || p.type === 'status');
+  const displayGoal = isInteractive ? (PVERB[p.type] || "") : (p.goal || PVERB[p.type] || "");
+  
+  const ph=el(`<div class="phase">
+    <div class="lbl">${PLAB[p.type]||p.type}</div>
+    <div class="goal">${esc(displayGoal)}</div>
+    ${isInteractive ? `<div id="chatlog" style="margin-bottom:12px;font-size:14.5px;"></div>` : ''}
+    <textarea id="ans" placeholder="${esc(PVERB[p.type]||'Skriv eller tänk högt…')}"></textarea>
+    <div class="hint">Skriv ditt svar, eller bara tänk det. Tryck <b>Visa facit</b> (eller Cmd/Ctrl+Enter) när du är klar.</div>
+    <div class="actions">
+      ${isInteractive ? `<button class="btn ghost" id="ask">${p.type==='anamnes' ? 'Fråga patienten' : 'Utför undersökning'}</button>` : ''}
+      <button class="btn primary" id="show">Visa facit</button>
+    </div>
+    <div id="rev"></div>
+  </div>`);
+  app.append(ph);
+  wireBack();
+  const ta=ph.querySelector('#ans');
+  ta.focus();
+  
+  if (isInteractive) {
+    ph.querySelector('#ask').onclick = () => {
+      const text = ta.value.trim().toLowerCase();
+      if (!text) return;
+      const words = text.split(/\\W+/).filter(w => w.length > 2);
+      let matched = [];
+      p.reveal.forEach(r => {
+        const rLower = r.toLowerCase();
+        if (words.some(w => rLower.includes(w))) {
+          matched.push(r);
+        }
+      });
+      const chatlog = ph.querySelector('#chatlog');
+      chatlog.innerHTML += `<div style="margin-bottom:8px;color:var(--faint)"><b>Du:</b> ${esc(ta.value)}</div>`;
+      if (matched.length > 0) {
+        matched.forEach(m => chatlog.innerHTML += `<div style="margin-bottom:10px;color:var(--teal)"><b>Svar:</b> ${esc(m)}</div>`);
+      } else {
+        chatlog.innerHTML += `<div style="margin-bottom:10px;color:var(--amber)"><b>Svar:</b> (Inget uppenbart fynd/svar. Formulera om eller gå vidare.)</div>`;
+      }
+      ta.value = '';
+    };
+  }
+
+  const show=()=>revealPhase(p);
+  ph.querySelector('#show').onclick=show;
+  ta.addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.metaKey||e.ctrlKey)){e.preventDefault();show();}});
+  window.scrollTo(0,0);
+}
+function revealPhase(p){
+  if(S.revealed)return; S.revealed=true;
+  const rev=document.getElementById('rev');
+  document.getElementById('show').classList.add('hide');
+  let h=`<div class="reveal">`;
+  
+  const isInteractive = (p.type === 'anamnes' || p.type === 'status');
+  if (isInteractive && p.goal) {
+    h += `<div class="goal-reveal" style="margin-bottom:12px;color:var(--faint);"><strong>Mål:</strong> ${esc(p.goal)}</div>`;
+  }
+  
+  h += `<div class="rh">Facit / fynd</div><ul class="facit">`+
+    (p.reveal.length?p.reveal:["(inga punkter)"]).map(r=>`<li>${esc(r)}</li>`).join('')+`</ul>`;
+  if(p.pitfalls&&p.pitfalls.length){
+    h+=`<div class="pit"><div class="ph">Fallgropar — undvik dessa</div><ul class="pitfalls">`+
+      p.pitfalls.map(x=>`<li>${esc(x)}</li>`).join('')+`</ul></div>`;
+  }
+  h+=`<div class="score">
+      <div class="s pass" data-v="pass">Träffade<small>1</small></div>
+      <div class="s partial" data-v="partial">Delvis<small>2</small></div>
+      <div class="s miss" data-v="miss">Missade<small>3</small></div>
+    </div></div>`;
+  rev.append(el(h));
+  rev.querySelectorAll('.s').forEach(b=>b.onclick=()=>scorePhase(p.type,b.dataset.v));
+}
+function scorePhase(type,v){ S.scores[S.pi]={type,v}; S.pi++; S.revealed=false; renderPhase(); }
+document.addEventListener('keydown',e=>{
+  if(S.revealed && ['1','2','3'].includes(e.key)){
+    const m={'1':'pass','2':'partial','3':'miss'}[e.key];
+    const b=document.querySelector('.s.'+m); if(b)b.click();
+  }
+});
+
+/* ---------------- FÖLJDFRÅGOR ---------------- */
+function renderFoljd(){
+  const c=S.c,p=c.phases[S.pi];
+  const qa=p.qa;
+  if(S.qi>=qa.length){ S.scores[S.pi]={type:'foljdfragor',v:S.fjmiss?'partial':'pass'}; S.pi++; S.qi=0; S.revealed=false; return renderPhase(); }
+  app.innerHTML="";
+  app.append(el(topHTML()));
+  app.append(el(railHTML()));
+  app.append(el(frameHTML()));
+  const q=qa[S.qi];
+  const ph=el(`<div class="phase">
+    <div class="lbl">${PLAB.foljdfragor}</div>
+    <div class="qprog">Fråga ${S.qi+1} / ${qa.length}</div>
+    <div class="qbox">${esc(q.q)}</div>
+    <textarea id="ans" placeholder="Ditt svar…"></textarea>
+    <div class="actions"><button class="btn primary" id="show">Visa svar</button></div>
+    <div id="rev"></div>
+  </div>`);
+  app.append(ph); wireBack();
+  const ta=ph.querySelector('#ans'); ta.focus();
+  const show=()=>{
+    if(S.revealed)return; S.revealed=true;
+    document.getElementById('show').classList.add('hide');
+    const rev=document.getElementById('rev');
+    rev.append(el(`<div class="abox">${esc(q.a)}</div>`));
+    rev.append(el(`<div class="actions">
+        <button class="btn sm" id="m">Missade den</button>
+        <button class="btn primary sm" id="n">${S.qi+1<qa.length?'Nästa fråga →':'Klar →'}</button></div>`));
+    rev.querySelector('#m').onclick=()=>{S.fjmiss=true;next();};
+    rev.querySelector('#n').onclick=next;
+  };
+  const next=()=>{S.qi++;S.revealed=false;renderFoljd();};
+  ph.querySelector('#show').onclick=show;
+  ta.addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.metaKey||e.ctrlKey)){e.preventDefault();show();}});
+  window.scrollTo(0,0);
+}
+
+/* ---------------- FEEDBACK + TAIL ---------------- */
+function renderEnd(){
+  const c=S.c;
+  const fb=c.phases.find(p=>p.type==='feedback');
+  app.innerHTML="";
+  app.append(el(topHTML()));
+  app.append(el(railHTML()));
+  const box=el(`<div class="phase"><div class="lbl">Feedback</div>
+    <div class="goal">Återkoppling</div></div>`);
+  // per-phase score chips
+  const chips=el(`<div class="chips"></div>`);
+  c.phases.forEach((p,i)=>{
+    if(p.type==='feedback')return;
+    const sc=S.scores[i]; const v=sc?sc.v:'none';
+    chips.append(el(`<span class="pchip"><span class="dot ${v}"></span>${PLAB[p.type]||p.type}</span>`));
+  });
+  box.append(chips);
+  if(fb){
+    box.append(el(`<div class="reveal"><div class="rh">Bedömning</div><ul class="facit">`+
+      fb.reveal.map(r=>`<li>${esc(r)}</li>`).join('')+`</ul></div>`));
+  }
+  app.append(box);
+
+  // tail
+  const t=c.tail||{};
+  const escs=t.escalations||[];
+  const tail=el(`<div class="tail">
+    <div class="th">⟳ Fallet är inte slut — tail</div>
+    <div id="tailbody"></div>
+  </div>`);
+  app.append(tail);
+  renderTail(tail.querySelector('#tailbody'),t,escs);
+
+  const nav=el(`<div class="actions" style="margin-top:22px; display:none;" id="endnav">
+    <button class="btn primary" id="rand">⚡ Nästa HIGH-yield</button>
+    <button class="btn" id="home">Alla fall</button>
+  </div>`);
+  app.append(nav);
+  nav.querySelector('#home').onclick=home;
+  nav.querySelector('#rand').onclick=()=>{const h=DATA.cases.filter(x=>x.yield==='HIGH');start(h[Math.floor(Math.random()*h.length)]);};
+  wireBack();
+  window.scrollTo(0,0);
+}
+function renderTail(node,t,escs){
+  S.tail++;
+  if(S.tail>=escs.length){
+    node.innerHTML="";
+    node.append(el(`<div class="esc" style="color:var(--muted);font-size:15px;font-weight:500">
+      Fallet är slut. Nästa fall?</div>`));
+    const nav = document.getElementById('endnav');
+    if (nav) nav.style.display = 'flex';
+    return;
+  }
+  node.innerHTML="";
+  node.append(el(`<div class="esc">${esc(escs[S.tail])}</div>`));
+  node.append(el(`<textarea id="tans" placeholder="Hur handlägger du? Tänk högt…"></textarea>`));
+  const a=el(`<div class="actions"><button class="btn sm" id="tn">${S.tail+1<escs.length?'Nästa eskalering →':'Avsluta fall →'}</button></div>`);
+  node.append(a);
+  a.querySelector('#tn').onclick=()=>renderTail(node,t,escs);
+}
+
+function wireBack(){const b=document.getElementById('back');if(b)b.onclick=home;}
+
+home();
+</script>

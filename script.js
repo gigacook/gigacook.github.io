@@ -313,7 +313,15 @@ function render() {
     case 'exam':    renderExam();    break;
     case 'explore': renderExplore(); break;
     case 'profile': renderProfile(); break;
+    case 'simtenta': renderSimtenta(); break;
   }
+}
+
+// Sim exam lives in its own self-contained page (simtenta.html); embed it so
+// the main header/nav persists around it.
+function renderSimtenta() {
+  app().innerHTML = `<iframe src="simtenta.html" title="Simtenta — fallspel"
+    style="flex:1;width:100%;height:100%;border:0;background:var(--bg)"></iframe>`;
 }
 
 // =============================================================

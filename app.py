@@ -201,6 +201,9 @@ def js(): return send_from_directory(ROOT, "script.js")
 @app.route("/style.css")
 def css(): return send_from_directory(ROOT, "style.css")
 
+@app.route("/simtenta.html")
+def simtenta(): return send_from_directory(ROOT, "simtenta.html")
+
 # ---------------------------------------------------------------------------
 # Session
 # ---------------------------------------------------------------------------
