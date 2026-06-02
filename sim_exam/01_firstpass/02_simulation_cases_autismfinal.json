@@ -1,0 +1,2030 @@
+{
+  "engine": "autismfinal",
+  "version": "1.0",
+  "language": "sv",
+  "format": "STATE -> QUESTION -> FOLLOWUP(if weak/wrong) -> NEXT -> TAIL (never-ending)",
+  "grounding": "Alla kliniska fakta härrör fran 04_matrix_*.md (kliniska beslutsmatriser) och 12_curriculum i Engine3 BETA.",
+  "how_to_grade": "Jamfor anvandarens svar mot 'gold' + 'must_include'. Saknas nyckelord -> followup_if_weak. Traffar 'fail_triggers' -> markera FAIL (se 03). Ratt -> ga till 'next'. Vid 'next':'open' -> generera ny tail enligt tail_directive.",
+  "cases": [
+    {
+      "id": "SIM_KARL_001",
+      "subject": "06_karlkirurgi",
+      "yield": "HIGH",
+      "entity": "Akut extremitetsischemi",
+      "title": "Det kalla benet kl 03:14",
+      "differentials": [
+        "Artäremboli",
+        "Artärtrombos",
+        "Irreversibel ischemi",
+        "Djup ventrombos (varmt ben - skiljer)"
+      ],
+      "pearls": [
+        "Emboli = friskt kärl, akut, normalt kontralateralt ben",
+        "Trombos = känd kärlsjukdom, smygande, bilat lågt ABI",
+        "Rigor + marmorerat + inget venljud = amputera, reperfundera inte"
+      ],
+      "opening_state": "Akuten, natt. 74-årig kvinna, vaknade för 2 h sedan av plötslig, intensiv smärta i hö ben. Benet är blekt och kallt. Känd förmaksflimmer, slutade ta sin Waran själv 'för den var jobbig'. Du är jouren som kallas.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Patienten ligger framför dig. Hö ben blekt, kallt, hon ömmar.",
+          "question": "Vad letar du efter direkt, och vad är din arbetsdiagnos?",
+          "gold": "6P: Pain, Pallor, Pulselessness, Paraesthesia, Paralysis, Prostration/Perishing cold. Palpera pulsar bilateralt. Arbetsdiagnos: akut artäremboli (urakut insjuknande + FF). Jämför ALLTID med friska benet.",
+          "must_include": [
+            "6P",
+            "puls",
+            "emboli",
+            "kontralateralt"
+          ],
+          "fail_triggers": [
+            "Skickar på ULJ ven först / utreder DVT",
+            "Ordinerar enbart smärtlindring och inväntar morgonronden"
+          ],
+          "followup_if_weak": "Du säger 'kollar benet' - vilka 6 fynd specifikt? Räkna upp dem.",
+          "followup_if_wrong": "Detta är urakut. Ben blekt+kallt+plötsligt hos FF-patient = arteriell ocklusion tills motsatsen bevisad, inte DVT (DVT ger varmt, svullet ben). Börja om: 6P.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Hö ben: ingen femoralis-/popliteapuls palpabel, inget dopplersignal distalt. Vä ben: normala pulsar, normalt ABI. Sensibilitet hö nedsatt, kan röra tårna lätt.",
+          "question": "Emboli eller trombos? Motivera på fynden - och vad gör du på en gång (innan kärlkirurg)?",
+          "gold": "Emboli: friskt kontralateralt kärl (normala pulsar + normalt ABI vä), urakut, FF. Trombos hade gett bilat lågt ABI/känd claudicatio. Direkt: lågmolekylärt heparin (fulldos), fot i lågläge, ring kärljour AKUT. CT-angio om tid finns.",
+          "must_include": [
+            "emboli",
+            "heparin",
+            "kärljour",
+            "lågläge"
+          ],
+          "fail_triggers": [
+            "Startar trombolys på egen hand",
+            "Lägger benet i högläge"
+          ],
+          "followup_if_weak": "Vilket fynd skiljer emboli från trombos hos just henne? (Tänk på det friska benet.)",
+          "followup_if_wrong": "Friskt kontralateralt ben + FF + urakut = emboli, inte trombos. Och du måste ge heparin NU + larma kärljour - inte vänta på CT. Ta om beslutet.",
+          "next": "b3"
+        },
+        {
+          "id": "b3",
+          "is_tail": false,
+          "state": "Kärljour på väg. Du har gett heparin. 30 min senare: hon kan inte längre röra tårna alls, vaden hård att palpera, fortfarande inget dopplerflöde.",
+          "question": "Vad signalerar det här fyndet, och hur ändrar det handläggningen?",
+          "gold": "Motorbortfall + muskelrigiditet = övergång mot irreversibel ischemi (Rutherford IIb->III). Detta är kirurgisk URAKUT indikation: embolektomi NU. Om totalt rigor + inget venljud + komplett anestesi = irreversibel -> primär amputation, reperfundera EJ (dödlig kalium-/toxinfrisättning).",
+          "must_include": [
+            "motorbortfall",
+            "rigiditet",
+            "embolektomi",
+            "irreversibel",
+            "amputation"
+          ],
+          "fail_triggers": [
+            "Avvaktar ytterligare för att se om heparinet hjälper"
+          ],
+          "followup_if_weak": "Paralys + hård vad - är det här bättre eller sämre? Vad är tidsfönstret?",
+          "followup_if_wrong": "Paralys och rigiditet är ALARMERANDE - muskeln dör. Detta gör fallet ännu mer akut (embolektomi nu), inte mindre. Om benet vore stenhårt med komplett bortfall och inget venljud vore reperfusion livsfarlig. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Embolektomi utförd, benet rosa och varmt, pulsar åter. 6 h postop: hon klagar på SVÅR smärta i vaden, värre än före op. Vaden spänd och hård. Tårna går knappt att sträcka passivt utan att hon skriker.",
+          "question": "Vad har hänt och vad gör du - exakt, i ordning?",
+          "gold": "Reperfusions-kompartmentsyndrom. Pain out of proportion + smärta vid passiv tåextension = kompartmentsyndrom tills motsatsen bevisad. Planläge (ALDRIG högläge), klipp alla förband, ring ortoped/kärl akut -> akut fasciotomi <8 h. Pulsar kan finnas kvar (sent tecken - vänta INTE på pulsbortfall). Kolla även myoglobin/CK/kalium (rhabdomyolys).",
+          "must_include": [
+            "kompartment",
+            "fasciotomi",
+            "passiv extension",
+            "planläge",
+            "kalium"
+          ],
+          "fail_triggers": [
+            "Höjer benet för att minska svullnaden",
+            "Ger mer morfin och avvaktar"
+          ],
+          "followup_if_weak": "Smärta vid passiv tojning av tårna efter reperfusion - vilken komplikation skriker det?",
+          "followup_if_wrong": "Detta är reperfusions-kompartmentsyndrom, inte 'normal postop-smärta'. Högläge är direkt fel (minskar perfusionstryck). Det ska vara planläge + fasciotomi akut. Ta om.",
+          "next": "t2"
+        },
+        {
+          "id": "t2",
+          "is_tail": true,
+          "state": "TAIL forts. Fasciotomi gjord. Labb: K+ 6,4, kreatinin stigande, mörk urin.",
+          "question": "Nästa hot - vad behandlar du och hur skyddar du njurarna?",
+          "gold": "Rhabdomyolys + hyperkalemi efter reperfusion. Hyperkalemi: EKG, ge kalciumglukonat (membranstabiliserande), insulin-glukos, ev natriumbikarbonat/dialys. Rhabdomyolys: rikligt iv vätska för diures, övervaka njurfunktion. Detta är 'letal' delen av reperfusion.",
+          "must_include": [
+            "hyperkalemi",
+            "kalcium",
+            "insulin-glukos",
+            "vätska",
+            "rhabdomyolys"
+          ],
+          "fail_triggers": [
+            "Behandlar bara med vätska",
+            "Ignorerar EKG"
+          ],
+          "followup_if_weak": "K+ 6,4 efter muskelreperfusion - vad ger du FÖRST för att skydda hjärtat?",
+          "followup_if_wrong": "Kalciumglukonat först (skyddar myokardiet) - sedan insulin-glukos för att flytta in kaliumet. Vätska för njurarna. Ta om prioriteringen.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_KARL_002",
+      "subject": "06_karlkirurgi",
+      "yield": "HIGH",
+      "entity": "Rupturerat AAA",
+      "title": "Ryggsmärtan som inte är lumbago",
+      "differentials": [
+        "RAAA",
+        "Njursten",
+        "Akut pankreatit",
+        "Lumbago",
+        "Mesenteriell ischemi"
+      ],
+      "pearls": [
+        "Ryggsmärta + pulserande resistens + hypotoni = RAAA",
+        "Instabil patient -> rakt till op, INGEN CT",
+        "Förväxla ej med njursten (stabil cirkulation)"
+      ],
+      "opening_state": "70-årig man, plötslig svår buk-/ryggsmärta, blek och svettig. BT 95/60, puls 110. Tidigare frisk-ish, rökare. Triagesköterskan tänker njursten.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Han kallsvettas, smärtan strålar mot ryggen.",
+          "question": "Vad gör du i undersökningen och vad fruktar du mest?",
+          "gold": "ABCDE. Palpera buken - pulserande expansiv resistens. Klassisk triad: akut buk-/ryggsmärta + pulserande resistens + hypotoni = RAAA tills motsatsen bevisad. Två grova nålar, blodgruppera/bastesta, larma kärljour.",
+          "must_include": [
+            "pulserande",
+            "RAAA",
+            "hypotoni",
+            "kärljour",
+            "grova nålar"
+          ],
+          "fail_triggers": [
+            "Beställer CT-urinvägar för njurstensfrågan",
+            "Ger full dos opioid och morfin-vätska och avvaktar"
+          ],
+          "followup_if_weak": "Han är hypoton, blek, äldre, ryggsmärta - vad MÅSTE du palpera efter i buken?",
+          "followup_if_wrong": "Njursten ger inte hypotoni/chock. En blek, hypoton äldre med ryggsmärta = RAAA tills motsatsen bevisad. Palpera efter pulserande resistens. Ta om.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Pulserande resistens i buken. BT sjunker till 78 systoliskt under att du undersöker.",
+          "question": "Han blir instabil. CT eller direkt till operation? Och hur kör du vätskan?",
+          "gold": "Hemodynamiskt instabil RAAA -> DIREKT till op (öppen eller EVAR), INGEN tid för CT. Permissiv hypotoni (sikta lågt systoliskt, ~70-90 / palpabel radialispuls) - pumpa inte upp trycket, det spräcker tamponaden. Massiv transfusion (blod, inte kristalloid). Larma op-sal + kärlkirurg + narkos.",
+          "must_include": [
+            "instabil",
+            "direkt op",
+            "permissiv hypotoni",
+            "massiv transfusion",
+            "ingen CT"
+          ],
+          "fail_triggers": [
+            "Skickar instabil patient till CT-angio först",
+            "Ger 3 liter Ringer för att höja trycket"
+          ],
+          "followup_if_weak": "Han faller i tryck - har du tid för CT? Och vad händer om du pumpar upp BT till 130?",
+          "followup_if_wrong": "Instabil RAAA tål INGEN CT - rakt till op. Och aggressiv vätska/högt BT spräcker den temporära tamponaden -> fri förblödning. Permissiv hypotoni + blod. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Op pågår, aortan klampad, graft inlagd. Anestesin släpper klampen (deklampning).",
+          "question": "Vad väntar du dig hemodynamiskt vid deklampning och hur förbereder ni?",
+          "gold": "Deklampningssvikt: blodtrycksfall + acidos + hyperkalemi när ischemiska underkroppen reperfunderas (tvätt av laktat/kalium/toxiner). Förbered: fyll volym före deklampning, ha noradrenalin/kalcium/bikarbonat redo, deklampa långsamt i samråd med kirurg.",
+          "must_include": [
+            "deklampning",
+            "blodtrycksfall",
+            "acidos",
+            "hyperkalemi",
+            "fyll före"
+          ],
+          "fail_triggers": [
+            "Förväntar sig inget och deklampar snabbt"
+          ],
+          "followup_if_weak": "När klampen släpps - vad sköljs ut i cirkulationen och vad gör det med BT och K+?",
+          "followup_if_wrong": "Reperfusion av underkroppen sköljer ut laktat och kalium -> blodtrycksfall + acidos + hyperkalemi. Man fyller volym FÖRE och deklampar långsamt. Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_KARL_003",
+      "subject": "06_karlkirurgi",
+      "yield": "HIGH",
+      "entity": "Claudicatio vs spinal stenos",
+      "title": "Benet som värker vid gång",
+      "differentials": [
+        "Claudicatio intermittens",
+        "Spinal stenos (neurogen claudicatio)",
+        "Kritisk ischemi",
+        "Mediaskleros (falskt högt ABI)"
+      ],
+      "pearls": [
+        "Claudicatio: släpper vid STILLASTÅENDE vila",
+        "Spinal stenos: lindras av FRAMÅTBÖJNING (cykel går bra)",
+        "ABI >1.3 hos diabetiker = falskt, ta tåtryck"
+      ],
+      "opening_state": "Mottagning. 68-årig man, diabetes typ 2, rökare. Vadsmärta efter ca 200 m gång, måste stanna. Husläkaren undrar om det är 'ryggen eller benen'.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Han beskriver kramp i vaden vid gång.",
+          "question": "Vilka anamnesfrågor skiljer arteriell claudicatio från neurogen (spinal stenos)?",
+          "gold": "Claudicatio: smärta släpper vid att STÅ STILLA, samma gångsträcka varje gång, ej lägesberoende. Spinal stenos: lindras av framåtböjning/sitta/cykla, värre i nedförsbacke/upprätt, mer diffus/utstrålande. Fråga om vilovärk/sår (kritisk ischemi).",
+          "must_include": [
+            "stå still",
+            "framåtböjning",
+            "cykel",
+            "gångsträcka"
+          ],
+          "fail_triggers": [
+            "Beställer MR rygg direkt utan anamnes"
+          ],
+          "followup_if_weak": "Vad gör patienten med claudicatio för att smärtan ska släppa - och vad gör patienten med spinal stenos?",
+          "followup_if_wrong": "Claudicatio släpper genom att STÅ STILLA; spinal stenos kräver att BÖJA FRAM (sitta/luta sig). Det är diskriminatorn. Ta om frågorna.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Smärtan släpper när han står still, samma sträcka varje gång. Du misstänker claudicatio. Du mäter ABI: 1,4.",
+          "question": "ABI 1,4 hos en diabetiker - vad betyder det och vad gör du?",
+          "gold": "ABI >1,3 = falskt högt pga mediaskleros (stela inkompressibla kärl, vanligt vid diabetes/njursvikt). Du kan INTE avskriva ischemi. Mät TÅTRYCK (tåartärer skonas av mediaskleros): <30 mmHg = kritisk ischemi. Ev gångmattetest.",
+          "must_include": [
+            "falskt högt",
+            "mediaskleros",
+            "tåtryck"
+          ],
+          "fail_triggers": [
+            "Tolkar ABI 1,4 som normalt/friskt och avskriver ischemi"
+          ],
+          "followup_if_weak": "Är ett högt ABI hos en diabetiker betryggande? Vilket kärlbädd är opåverkat av mediaskleros?",
+          "followup_if_wrong": "ABI >1,3 hos diabetiker är ett FALSKT HÖGT värde (stela kärl), inte ett friskt ben. Tåartärerna är opåverkade -> mät tåtryck. Att avskriva ischemi här är fällan. Ta om.",
+          "next": "b3"
+        },
+        {
+          "id": "b3",
+          "is_tail": false,
+          "state": "Tåtryck 55 mmHg. Diagnos: claudicatio intermittens (ej kritisk ischemi). Han vill ha 'en operation som fixar det'.",
+          "question": "Vad är förstahandsbehandlingen - och varför inte kirurgi direkt?",
+          "gold": "Förstahand = konservativt: ROKSTOPP, strukturerad/submaximal gångträning, Trombyl + statin, ev cilostazol. Riskfaktorbehandling. PTA/bypass endast vid refraktära/invalidiserande besvär eller kritisk ischemi - inte vid stabil claudicatio (rörstenosrisk, gångträning ger bra effekt). Claudicatio: ~5 % amputation på 5 år, men prognosen styrs av riskfaktorer.",
+          "must_include": [
+            "rökstopp",
+            "gångträning",
+            "statin",
+            "trombyl"
+          ],
+          "fail_triggers": [
+            "Remitterar direkt till PTA/bypass för stabil claudicatio"
+          ],
+          "followup_if_weak": "Vad är den enskilt viktigaste åtgärden för hans ben OCH hans överlevnad?",
+          "followup_if_wrong": "Rökstopp + gångträning + statin/Trombyl är förstahand. Kirurgi på stabil claudicatio är inte indicerat först. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. 8 månader senare söker han akut: hö stortå svart, vilovärk nattetid som lindras när han hänger benet utanför sängkanten.",
+          "question": "Vad har hänt och hur akut är det nu?",
+          "gold": "Progress till kritisk extremitetshotande ischemi (vilovärk + vävnadsförlust/gangrän). Vilovärk som lindras av att hänga benet = klassiskt. Detta är AKUT: ABI/tåtryck, CT-angio, akut kärlkirurgisk bedömning för revaskularisering (PTA/bypass) - nu är kärlöppning indicerad, annars amputation.",
+          "must_include": [
+            "kritisk ischemi",
+            "vilovärk",
+            "revaskularisering",
+            "CT-angio"
+          ],
+          "fail_triggers": [
+            "Bokar återbesök om några veckor",
+            "Fortsätter bara med gångträning"
+          ],
+          "followup_if_weak": "Vilovärk + svart tå - har spelplanen ändrats jämfört med stabil claudicatio?",
+          "followup_if_wrong": "Detta är inte längre stabil claudicatio - det är kritisk ischemi (hotat ben). Nu ÄR revaskularisering indicerad och det är akut. Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_KARL_004",
+      "subject": "06_karlkirurgi",
+      "yield": "HIGH",
+      "entity": "Akut mesenteriell ischemi",
+      "title": "Buksmärtan som inte syns",
+      "differentials": [
+        "SMA-emboli",
+        "SMA-trombos",
+        "Akut pankreatit",
+        "Ileus",
+        "RAAA"
+      ],
+      "pearls": [
+        "Pain out of proportion + FF = SMA-emboli tills bevisat",
+        "Normalt laktat utesluter INTE tidig mesenteriell ischemi",
+        "Trefas: smärta -> skenlindring -> peritonit"
+      ],
+      "opening_state": "Akuten. 78-årig kvinna, förmaksflimmer, plötslig svår diffus buksmärta sedan 3 h. Buken mjuk och föga öm vid palpation. Hon är smärtpåverkad men 'buken känns konstigt normal'.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Hennes smärta är intensiv men palpationsfynden är knappa.",
+          "question": "Vad heter det fenomenet och vad tänker du?",
+          "gold": "Pain out of proportion (intensiv smärta, fattiga bukfynd) hos FF-patient = akut mesenteriell ischemi (SMA-emboli) tills motsatsen bevisad. FF ger emboli. Ta laktat men lita inte på normalt värde tidigt.",
+          "must_include": [
+            "pain out of proportion",
+            "mesenteriell",
+            "SMA",
+            "emboli",
+            "förmaksflimmer"
+          ],
+          "fail_triggers": [
+            "Avskriver allvarlig sjukdom pga mjuk buk",
+            "Skickar hem med 'gastroenterit'"
+          ],
+          "followup_if_weak": "Intensiv smärta MEN nästan inga bukfynd hos en FF-patient - vilken diagnos passar exakt det mönstret?",
+          "followup_if_wrong": "Diskrepansen smärta>>fynd hos FF-patient ÄR mesenteriell ischemi-mönstret. Mjuk buk är inte betryggande tidigt. Ta om.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Laktat 1,8 (normalt). Kollegan säger 'laktat är normalt, kan inte vara tarmischemi'.",
+          "question": "Håller du med? Vilken undersökning bekräftar?",
+          "gold": "Nej. Laktat stiger SENT - normalt laktat utesluter inte tidig mesenteriell ischemi. CT-angio buk (trefas) är diagnostisk. Emboli (FF) kilar fast nedom a. colica media (skonar första 40-80 cm jejunum); trombos sitter ostialt vid avgången.",
+          "must_include": [
+            "laktat stiger sent",
+            "CT-angio",
+            "trefas"
+          ],
+          "fail_triggers": [
+            "Litar på normalt laktat och avvaktar"
+          ],
+          "followup_if_weak": "När i förloppet stiger laktatet - tidigt eller sent? Vad beställer du oavsett?",
+          "followup_if_wrong": "Laktat stiger SENT; normalt värde utesluter inte. CT-angio buk i trefas är svaret. Ta om.",
+          "next": "b3"
+        },
+        {
+          "id": "b3",
+          "is_tail": false,
+          "state": "CT-angio: SMA-emboli, ischemisk men ej uppenbart nekrotisk tunntarm. Kärl- och bukjour på väg.",
+          "question": "Vad är behandlingen och vad är 'second look'-principen?",
+          "gold": "Urakut öppen embolektomi (+ ev tarmresektion av säkert nekrotisk tarm). Lämna tarm av tveksam vitalitet - sy INTE anastomos direkt. Planerad second look-laparotomi inom 24 h för att omvärdera tarmens vitalitet. Vätska, smärtlindring, bredspektrum-Ab.",
+          "must_include": [
+            "embolektomi",
+            "second look",
+            "tveksam tarm",
+            "ingen anastomos direkt"
+          ],
+          "fail_triggers": [
+            "Reseccerar allt på en gång och syr anastomos direkt"
+          ],
+          "followup_if_weak": "Tarm som ser tveksam ut intraoperativt - syr du ihop direkt eller väntar? Varför?",
+          "followup_if_wrong": "Tveksam tarm lämnas och man gör second look <24 h - att anastomosera tveksam tarm direkt ger läckage. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Second look efter 18 h: ytterligare 30 cm tarm nekrotisk, resekteras. Postop dag 2: feber, stigande CRP, buksmärta, fri vätska.",
+          "question": "Vad misstänker du och hur agerar du?",
+          "gold": "Anastomosinsufficiens/fortsatt tarmischemi -> bukabscess/peritonit. CT-buk, bredspektrum-Ab, sepsishandläggning (ABCDE, vätska, odlingar, laktat), kontakta kirurg för re-op/dränage. Hög mortalitet - låg tröskel för relaparotomi.",
+          "must_include": [
+            "anastomosinsufficiens",
+            "peritonit",
+            "re-op",
+            "CT-buk",
+            "sepsis"
+          ],
+          "fail_triggers": [
+            "Avvaktar med antibiotika och ny CT"
+          ],
+          "followup_if_weak": "Feber + stigande CRP + fri vätska efter tarmkirurgi - vilken postop-komplikation?",
+          "followup_if_wrong": "Detta är anastomosläckage/peritonit tills motsatsen bevisad - akut CT + re-op/dränage + Ab, inte avvakta. Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_ANE_001",
+      "subject": "01_anestesi",
+      "yield": "HIGH",
+      "entity": "ABCDE / Postoperativ andningssvikt",
+      "title": "Den svårväckta patienten på UVA",
+      "differentials": [
+        "Restrelaxation",
+        "Opioidöverdos",
+        "Atelektaser",
+        "Aspiration"
+      ],
+      "pearls": [
+        "ABCDE i ordning - åtgärda innan du går vidare",
+        "Sugammadex vid restrelax, Naloxon vid opiatöverdos",
+        "Käklyft + sug innan avancerat"
+      ],
+      "opening_state": "UVA, 30 min efter laparoskopisk op. 62-årig man, SpO2 84 %, andningsfrekvens 6, svårväckt. Sköterskan larmar dig.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Han är slö, ytlig andning, SpO2 sjunker.",
+          "question": "Hur strukturerar du omhändertagandet - första steget konkret?",
+          "gold": "ABCDE. A: fri luftväg? Käklyft, rensug, titta/lyssna/känn. Ge syrgas. Larma. Gå inte vidare till B förrän A är säkrad.",
+          "must_include": [
+            "ABCDE",
+            "luftväg",
+            "käklyft",
+            "syrgas"
+          ],
+          "fail_triggers": [
+            "Ger naloxon direkt utan att säkra luftväg",
+            "Hoppar till röntgen/blodgas före A och B"
+          ],
+          "followup_if_weak": "Innan du letar orsak - vad gör du med luftvägen och syret just nu?",
+          "followup_if_wrong": "Börja med A: fri luftväg (käklyft/sug) + syrgas + larma, INNAN orsaksjakt. Ta om i ABCDE-ordning.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "A: käklyft ger fri luftväg, du maskventilerar, SpO2 stiger till 95 %. B: ytlig andning. Du misstänker antingen kvarvarande muskelrelaxantia eller opioid.",
+          "question": "Hur skiljer du restrelaxation från opioidöverdos - och vilken behandling till vilken?",
+          "gold": "Restrelax: svag, 'flummig' muskelkraft, TOF visar fade/kvot <0,9 -> Sugammadex (vid rokuronium/vekuronium). Opioidöverdos: liten pupill, låg andningsfrekvens, väckbar av smärta -> Naloxon (titrera). TOF + pupiller + klinik avgör.",
+          "must_include": [
+            "TOF",
+            "sugammadex",
+            "naloxon",
+            "pupill"
+          ],
+          "fail_triggers": [
+            "Ger både naloxon och sugammadex på måfå utan att skilja orsak"
+          ],
+          "followup_if_weak": "Vilket bedside-test skiljer kvarvarande relaxantia från opioideffekt?",
+          "followup_if_wrong": "TOF (train-of-four) för relaxation; pupiller + andningsfrekvens för opioid. Behandling: Sugammadex resp Naloxon. Identifiera orsaken först. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. TOF visar uttalad fade -> restrelax. Du ger sugammadex, andningen normaliseras. 10 min senare kräks han, och du ser maginnehåll i svalget medan han fortfarande är slö.",
+          "question": "Vad är hotet och vad gör du omedelbart?",
+          "gold": "Aspirationsrisk/aspiration. Vänd huvudet/sidoläge, kraftig sug av svalget, syrgas, sänk huvudändan vid behov, var beredd på intubation om medvetandesänkt och inte skyddar luftväg. Lyssna lungor, blodgas, ev rtg pulm. Aspiration kan ge kemisk pneumonit/ARDS.",
+          "must_include": [
+            "aspiration",
+            "sug",
+            "sidoläge",
+            "intubation",
+            "luftvägsskydd"
+          ],
+          "fail_triggers": [
+            "Fortsätter ge syrgas på mask utan att rensuga eller skydda luftvägen"
+          ],
+          "followup_if_weak": "Maginnehåll i svalget på en slö patient - vad måste skyddas och hur?",
+          "followup_if_wrong": "Luftvägen: sidoläge + sug + beredskap att intubera om han inte skyddar luftvägen. Att bara ge syrgas räcker inte. Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_ANE_002",
+      "subject": "01_anestesi",
+      "yield": "HIGH",
+      "entity": "Hypovolem/hemorragisk chock",
+      "title": "Blödningschocken på akuten",
+      "differentials": [
+        "Hypovolem (hemorragisk) chock",
+        "Distributiv (septisk) chock",
+        "Kardiogen chock",
+        "Obstruktiv chock"
+      ],
+      "pearls": [
+        "Letal triad: acidos + hypotermi + koagulopati",
+        "Massiv transfusion 4:4:1 (Ery:Plasma:Trc)",
+        "Citrat -> hypokalcemi vid massiv transfusion"
+      ],
+      "opening_state": "Akuten. 24-årig man, trafikolycka. Blek, kall, takykard 130, BT 80/50, oroad/agiterad. Synlig femurdeformitet, buken öm.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Han är kallsvettig, perifert kall.",
+          "question": "Vilken chocktyp och hur bekräftar du den kliniskt?",
+          "gold": "Hypovolem/hemorragisk chock (trauma): kall periferi, takykardi, smalt pulstryck, agitation = tidig chock. Lågt CO, lågt preload, högt SVR. ABCDE, laktat, ev passivt benlyft. Leta blödningskälla (buk/bäcken/femur/thorax).",
+          "must_include": [
+            "hypovolem",
+            "hemorragisk",
+            "ABCDE",
+            "blödningskälla",
+            "laktat"
+          ],
+          "fail_triggers": [
+            "Antar septisk chock utan trauma-logik",
+            "Ger inotropi direkt"
+          ],
+          "followup_if_weak": "Trauma + kall blek takykard hypoton - tom eller full tank? Vilken chocktyp?",
+          "followup_if_wrong": "Trauma med kall periferi = hypovolem/hemorragisk chock (tom tank), inte distributiv. Bekräfta med ABCDE + blödningskälla + laktat. Ta om.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Du har gett en bolus balanserad kristalloid men han svarar dåligt och fortsätter blöda från buken.",
+          "question": "Hur fortsätter du - och vad är faran med att fortsätta hälla in kristalloid?",
+          "gold": "Aktivera massivt transfusionsprotokoll (MTP) 4:4:1 (erytrocyter:plasma:trombocyter). Stora kristalloidvolymer späder ut koagulationsfaktorer och förvärrar koagulopati + driver letal triad (acidos, hypotermi, koagulopati). Blödningskontroll (op/angio) + permissiv hypotension tills hemostas. Håll patienten varm, ge kalcium.",
+          "must_include": [
+            "massiv transfusion",
+            "4:4:1",
+            "koagulopati",
+            "letal triad",
+            "blödningskontroll"
+          ],
+          "fail_triggers": [
+            "Fortsätter med liter på liter kristalloid",
+            "Värmer inte / ignorerar koagulation"
+          ],
+          "followup_if_weak": "Vad händer med koagulationsfaktorerna om du ger 4 liter Ringer? Vad ger du istället?",
+          "followup_if_wrong": "Stora kristalloidvolymer späder ut faktorer -> koagulopati + letal triad. Gå till blodprodukter 4:4:1 + blödningskontroll. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. MTP igång, han fått 8 enheter blod. Plötsligt: muskelryckningar, QT-förlängning på monitorn, BT svajar.",
+          "question": "Vilken metabol komplikation av massiv transfusion ser du och hur åtgärdar du?",
+          "gold": "Citrat i blodprodukter binder kalcium -> hypokalcemi (QT-förlängning, ryckningar, hemodynamisk svikt). Ge iv kalcium (kalciumglukonat/kalciumklorid), kontrollera joniserat Ca. Var även vaksam på hypotermi och hyperkalemi vid stora volymer.",
+          "must_include": [
+            "hypokalcemi",
+            "citrat",
+            "kalcium",
+            "massiv transfusion"
+          ],
+          "fail_triggers": [
+            "Tror det är hyperkalemi och ger insulin-glukos utan att mäta Ca"
+          ],
+          "followup_if_weak": "Vad binder citratet i blodpåsarna och vilken elektrolyt faller? Vad ger du?",
+          "followup_if_wrong": "Citrat binder kalcium -> hypokalcemi -> ge iv kalcium. Mät joniserat Ca. Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_ANE_003",
+      "subject": "01_anestesi",
+      "yield": "HIGH",
+      "entity": "RSI / aspirationsrisk",
+      "title": "Full mage på akutsalen",
+      "differentials": [
+        "RSI-indikation (full mage)",
+        "Svår luftväg",
+        "Aspiration"
+      ],
+      "pearls": [
+        "Maskventilation undviks vid klassisk RSI",
+        "Preoxygenering FÖRE allt",
+        "Suxameton/rokuronium direkt efter sömnmedel"
+      ],
+      "opening_state": "Akutsal. 55-årig kvinna med tarmvred (ileus), kräks, ska sövas akut för laparotomi. Hon åt frukost för 1,5 h sedan.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Hon ska sövas nu, ileus + nyligen ätit + kräkningar.",
+          "question": "Vilken induktionsteknik väljer du och varför?",
+          "gold": "RSI (rapid sequence induction) pga hög aspirationsrisk (ileus/full mage/kräkning). Preoxygenering, snabbt sömnmedel + snabbverkande relaxantia (suxameton eller rokuronium) i snabb sekvens, krikoidtryck (omdiskuterat), intubation med kuffad tub - UTAN mellanliggande maskventilation.",
+          "must_include": [
+            "RSI",
+            "aspirationsrisk",
+            "preoxygenering",
+            "kuffad tub"
+          ],
+          "fail_triggers": [
+            "Väljer vanlig induktion med maskventilation",
+            "Lugn inhalationsinduktion"
+          ],
+          "followup_if_weak": "Vad är den stora risken vid sövning av en ileuspatient - och vilken teknik minimerar den?",
+          "followup_if_wrong": "Hög aspirationsrisk -> RSI (ej vanlig maskventilation). Ta om valet och motivera.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Du planerar RSI. Kollegan vill 'maskventilera lite mellan för säkerhets skull'.",
+          "question": "Är det rätt? Vad gör du istället innan tuben är på plats?",
+          "gold": "Nej - maskventilation undviks vid klassisk RSI (blåser ner luft i magsäcken -> ökad regurgitation/aspirationsrisk). Istället: ordentlig PREOXYGENERING (denitrogenering) ger apnétolerans så man kan gå direkt sömn -> relaxantia -> tub. Ha sug + svår-luftvägsutrustning framme.",
+          "must_include": [
+            "maskventilation undviks",
+            "preoxygenering",
+            "sug",
+            "svår luftväg"
+          ],
+          "fail_triggers": [
+            "Godkänner maskventilation mellan induktion och intubation vid RSI"
+          ],
+          "followup_if_weak": "Varför undviker man just maskventilation vid RSI? Vad ger dig apnétolerans istället?",
+          "followup_if_wrong": "Maskventilation pressar luft i magen -> regurgitation. Preoxygenering ger dig marginalen istället. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Efter induktion: du ser och hör inte luftvägen, kan inte intubera, SpO2 faller, och nu kan du inte heller ventilera bra.",
+          "question": "Vilket scenario är detta och hur agerar du enligt algoritm?",
+          "gold": "'Cannot intubate, cannot oxygenate' (CICO) - svår luftväg. Tillkalla hjälp, optimera mask-/larynxmaskventilation, begränsa intubationsförsök, gå vidare i svår-luftvägsalgoritm (larynxmask som räddning) och som sista utväg front-of-neck-access (nödkoniotomi). Prioritet = OXYGENERING, inte snygg intubation.",
+          "must_include": [
+            "CICO",
+            "svår luftväg",
+            "larynxmask",
+            "koniotomi",
+            "oxygenering"
+          ],
+          "fail_triggers": [
+            "Fortsätter göra upprepade intubationsförsök medan SpO2 rasar"
+          ],
+          "followup_if_weak": "Du kan varken intubera eller ventilera väl och SpO2 rasar - vad är målet och vad är sista utvägen?",
+          "followup_if_wrong": "Målet är OXYGENERING (larynxmask som räddning, koniotomi som sista utväg) - inte fler intubationsförsök. Ta om enligt algoritm.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_KIR_001",
+      "subject": "02_kirurgi",
+      "yield": "HIGH",
+      "entity": "Perforerat ulcus",
+      "title": "Brädhård buk",
+      "differentials": [
+        "Perforerat ulcus",
+        "Akut pankreatit",
+        "Mesenteriell ischemi",
+        "RAAA"
+      ],
+      "pearls": [
+        "Fri gas + brädhård buk = perforation tills bevisat",
+        "CT-buk i lungfönster för fri gas",
+        "Okomplicerat ulcus läcker inte gas"
+      ],
+      "opening_state": "Akuten. 58-årig man, plötslig maximal buksmärta för 1 h sedan, ligger blixt stilla. NSAID mot ryggont senaste veckan.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Han ligger helt stilla, vill inte röra sig. Buken hård.",
+          "question": "Vad i status stärker din misstanke och vad är arbetsdiagnosen?",
+          "gold": "Brädhård buk (generell peritonit), patienten ligger stilla (rörelse = ont vid peritonit), plötslig maxad smärta + NSAID = perforerat ulcus. Leta défense/släppömhet. ABCDE, fasta.",
+          "must_include": [
+            "brädhård",
+            "peritonit",
+            "perforerat ulcus",
+            "NSAID"
+          ],
+          "fail_triggers": [
+            "Skickar hem med 'gastrit' och PPI",
+            "Beställer bara ULJ buk"
+          ],
+          "followup_if_weak": "Varför ligger en peritonitpatient blixt stilla, och vad säger den brädhårda buken?",
+          "followup_if_wrong": "Stillaliggande + brädhård buk = generell peritonit. Plötslig maxsmärta + NSAID -> perforerat ulcus. Ta om statustolkningen.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Du misstänker perforation.",
+          "question": "Vilken undersökning bekräftar och hur handlägger du initialt (innan op)?",
+          "gold": "CT-buk (titta i LUNGFÖNSTER efter fri gas). Initialt: fasta, iv vätska, bredspektrum-Ab iv, smärtlindring, V-sond, larma kirurg. Definitivt: akut op (översy/oment-plastik eller resektion); kontrollskopi senare för att utesluta malign genes.",
+          "must_include": [
+            "CT",
+            "lungfönster",
+            "fri gas",
+            "bredspektrum-Ab",
+            "akut op"
+          ],
+          "fail_triggers": [
+            "Ger oralt kontrastmedel och avvaktar",
+            "Avstår antibiotika"
+          ],
+          "followup_if_weak": "Hur ser du fri gas bäst på CT, och vilka tre saker ger du innan op?",
+          "followup_if_wrong": "Fri gas ses i lungfönster på CT. Innan op: fasta, iv vätska, bredspektrum-Ab (+ V-sond, smärtlindring). Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Op gjord (översydd perforation). Postop dag 5: feber 38,9, takykardi, lokaliserad buksmärta, stigande CRP, men buken inte generellt peritonitisk.",
+          "question": "Vad misstänker du och hur utreder/behandlar du?",
+          "gold": "Postoperativ intraabdominell (bukvägs-/bäcken-)abscess - eller anastomos-/suturinsufficiens. CT-buk, bredspektrum-Ab, sepsisbedömning (vätska, odlingar, laktat). Behandling: oftast CT-ledd perkutan dränering av abscess; re-op vid läckage/källkontrollbehov.",
+          "must_include": [
+            "bukabscess",
+            "CT-buk",
+            "dränage",
+            "antibiotika",
+            "insufficiens"
+          ],
+          "fail_triggers": [
+            "Avvaktar febern utan bilddiagnostik"
+          ],
+          "followup_if_weak": "Feber + lokal smärta + stigande CRP dag 5 efter bukop - vad letar du efter på CT?",
+          "followup_if_wrong": "Du letar efter postoperativ abscess/läckage på CT -> dränage/re-op + Ab, inte exspektans. Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_KIR_002",
+      "subject": "02_kirurgi",
+      "yield": "HIGH",
+      "entity": "Mekaniskt tunntarmsileus",
+      "title": "Intervallsmärtan med ärret",
+      "differentials": [
+        "Mekaniskt tunntarmsileus (brid)",
+        "Paralytisk ileus",
+        "Inklämt bråck",
+        "Kolonileus"
+      ],
+      "pearls": [
+        "Brid + ärr + intervallsmärta = mekaniskt ileus",
+        "V-sond avlastar, op vid strangulation",
+        "Tyst buk = misstänk paralytisk/ischemi"
+      ],
+      "opening_state": "Akuten. 67-årig kvinna, krampartad intervallsmärta, kräkningar, ingen gas/avföring sedan igår. Tidigare opererad för livmoder (medellinjesnitt).",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Buken uppspänd, högklingande tarmljud i intervall, gammalt bukärr.",
+          "question": "Sannolik diagnos och vanligaste orsaken?",
+          "gold": "Mekaniskt tunntarmsileus. Vanligaste orsaken i västvärlden = brid/adherens (tidigare bukkirurgi -> ärret). Intervallsmärta + kräkning + utebliven gas/feces + uppspänd buk passar mekaniskt hinder.",
+          "must_include": [
+            "mekaniskt ileus",
+            "brid",
+            "adherens",
+            "tidigare op"
+          ],
+          "fail_triggers": [
+            "Kallar det 'gastroenterit'",
+            "Ger laxantia"
+          ],
+          "followup_if_weak": "Vad i hennes historia pekar på orsaken till hindret?",
+          "followup_if_wrong": "Tidigare bukkirurgi -> bridileus (vanligaste orsaken). Ta om.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Du misstänker bridileus.",
+          "question": "Vilken undersökning och vilken initial handläggning - opererar du direkt?",
+          "gold": "CT-buk (BÖS som översikt). Initialt KONSERVATIVT vid okomplicerad brid: V-sond (avlasta), iv vätska, elektrolytkorrektion, aktiv observation - många bridileus löser sig spontant. Op INTE direkt om inga strangulationstecken.",
+          "must_include": [
+            "CT",
+            "V-sond",
+            "vätska",
+            "konservativ",
+            "observation"
+          ],
+          "fail_triggers": [
+            "Opererar all bridileus direkt",
+            "Ger laxantia / mat per os"
+          ],
+          "followup_if_weak": "Är operation förstahandsval vid okomplicerad bridileus? Vad gör V-sonden?",
+          "followup_if_wrong": "Okomplicerad brid handläggs först konservativt (V-sond avlastar + vätska + observation). Op endast vid strangulation. Ta om.",
+          "next": "b3"
+        },
+        {
+          "id": "b3",
+          "is_tail": false,
+          "state": "Under observation: smärtan blir konstant (inte längre intervall), feber, stigande laktat, palpationsöm med peritonitretning.",
+          "question": "Vad har hänt och vad gör du nu?",
+          "gold": "Strangulation med tarmischemi (briden stryper blodkärlen). Konstant smärta + feber + stigande laktat + peritonit = byt strategi: AKUT OP. Detta är pitfallen - att inte operera vid strangulationstecken.",
+          "must_include": [
+            "strangulation",
+            "ischemi",
+            "akut op",
+            "laktat"
+          ],
+          "fail_triggers": [
+            "Fortsätter avvakta konservativt trots peritonit/laktatstegring"
+          ],
+          "followup_if_weak": "Smärtan gick från intervall till konstant + feber + laktat - vad signalerar det och ändrar planen?",
+          "followup_if_wrong": "Konstant smärta + feber + laktat = strangulation/ischemi -> akut op, inte fortsatt exspektans. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Vid op: 20 cm nekrotisk tunntarm resekteras, anastomos. Postop dag 4: hon får ingen gång i magen, uppspänd, kräks, men nu TYST buk.",
+          "question": "Mekaniskt återfall eller något annat? Hur skiljer du?",
+          "gold": "Tyst buk + uppspänd postop talar för PARALYTISK ileus (postoperativ tarmpares) snarare än nytt mekaniskt hinder (som ger högklingande ljud). Men måste utesluta anastomosläckage/ny brid: status, labb (CRP, laktat), CT vid misstanke. Paralytisk: konservativt (V-sond, vätska/elektrolyter, mobilisering, undvik opioidöverskott).",
+          "must_include": [
+            "paralytisk ileus",
+            "tyst buk",
+            "utesluta läckage",
+            "konservativt"
+          ],
+          "fail_triggers": [
+            "Opererar direkt om vid tyst buk utan att utesluta paralytisk ileus"
+          ],
+          "followup_if_weak": "Tarmljuden: högklingande vid mekaniskt - vad hör du vid paralytisk ileus?",
+          "followup_if_wrong": "Tyst buk -> paralytisk ileus (postop pares), behandlas konservativt - men uteslut läckage först. Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_KIR_003",
+      "subject": "02_kirurgi",
+      "yield": "HIGH",
+      "entity": "Appendicit",
+      "title": "Smärtvandringen - och fällan",
+      "differentials": [
+        "Appendicit",
+        "Extrauterin graviditet (EUG)",
+        "Ovarialtorsion",
+        "Divertikulit",
+        "Körtelbuk"
+      ],
+      "pearls": [
+        "AIR 9-12 = direkt op, <5 = hemgång",
+        "Uteslut ALLTID EUG hos fertil kvinna (U-hCG)",
+        "Perforation -> generell peritonit"
+      ],
+      "opening_state": "Akuten. 24-årig kvinna, central buksmärta som vandrat till höger fossa, feber 38,2, matleda, illamående.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Smärtan började runt naveln och sitter nu i hö fossa.",
+          "question": "Vad är arbetsdiagnos och vilket prov får du INTE missa hos henne?",
+          "gold": "Akut appendicit (smärtvandring navel->hö fossa + feber + matleda). Hos fertil kvinna: ta ALLTID U-hCG för att utesluta extrauterin graviditet (EUG) - en missad EUG kan rupturera och förblöda. AIR-score för risken.",
+          "must_include": [
+            "appendicit",
+            "U-hCG",
+            "EUG",
+            "AIR-score"
+          ],
+          "fail_triggers": [
+            "Glömmer graviditetstest hos fertil kvinna",
+            "Skickar direkt till op utan hCG"
+          ],
+          "followup_if_weak": "Hon är fertil kvinna med hö fossa-smärta - vilket prov måste tas före allt annat och varför?",
+          "followup_if_wrong": "U-hCG måste tas (utesluta EUG som kan förblöda). Ta om - EUG är den klassiska fällan här.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "U-hCG negativ. AIR-score beräknas högt (10).",
+          "question": "Vad innebär AIR 10 för handläggningen, och vad ger du preop?",
+          "gold": "AIR 9-12 = hög sannolikhet -> direkt till op (lap appendektomi), bilddiagnostik behövs ofta inte. (AIR <5 = låg, kan gå hem; intermediär = observera/avbilda.) Antibiotikaprofylax preoperativt. CT främst >40 år, ULJ hos unga vid oklarhet.",
+          "must_include": [
+            "AIR 9-12",
+            "direkt op",
+            "appendektomi",
+            "antibiotikaprofylax"
+          ],
+          "fail_triggers": [
+            "Avvaktar trots AIR 10",
+            "Skickar hem"
+          ],
+          "followup_if_weak": "AIR 10 - vart hör hon enligt scoren och behövs CT?",
+          "followup_if_wrong": "AIR 9-12 = direkt op, CT behövs oftast inte. Ge antibiotikaprofylax preop. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Hon kom egentligen in sent: vid op finns perforerad appendix med var i hela buken (generell peritonit).",
+          "question": "Hur ändrar perforationen handläggningen per- och postoperativt?",
+          "gold": "Perforation med peritonit: noggrann buksköljning, appendektomi, terapeutiska iv bredspektrum-Ab (inte bara profylax) flera dygn, sepsisövervakning. Postop vaksamhet på intraabdominell abscess (feber, stigande CRP dag 4-7 -> CT + dränage).",
+          "must_include": [
+            "peritonit",
+            "buksköljning",
+            "terapeutisk antibiotika",
+            "abscess"
+          ],
+          "fail_triggers": [
+            "Behandlar perforerad peritonit som okomplicerad med enbprofylaxdos Ab"
+          ],
+          "followup_if_weak": "Perforerad appendicit med var i buken - räcker engångs-profylax eller behövs terapeutisk Ab?",
+          "followup_if_wrong": "Perforation = terapeutisk antibiotikakur + buksköljning + abscessvaksamhet, inte bara profylax. Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_KIR_004",
+      "subject": "02_kirurgi",
+      "yield": "HIGH",
+      "entity": "Akut kolangit",
+      "title": "Charcots triad - klockan tickar",
+      "differentials": [
+        "Akut kolangit",
+        "Akut kolecystit",
+        "Pankreascancer (tyst ikterus)",
+        "Akut pankreatit"
+      ],
+      "pearls": [
+        "Charcots triad = kolangit tills bevisat",
+        "Avlasta via ERCP/PTC akut",
+        "Ge antibiotika OMEDELBART"
+      ],
+      "opening_state": "Akuten. 72-årig kvinna, frossa + feber 39, gulfärgad i ögonvitorna, smärta övre högra buken. BT 100/60, puls 110.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Feber/frossa + ikterus + smärta övre hö buk.",
+          "question": "Vilken triad och vilken diagnos?",
+          "gold": "Charcots triad (feber/frossa + ikterus + smärta övre hö kvadrant) = akut kolangit tills motsatsen bevisad (infekterad obstruktion av gallvägar, oftast koledokussten). Reynolds pentad (+ hypotoni + konfusion) = septisk kolangit.",
+          "must_include": [
+            "Charcots triad",
+            "kolangit",
+            "ikterus",
+            "feber"
+          ],
+          "fail_triggers": [
+            "Kallar det vanlig gallsten utan att uppfatta infektion/sepsis"
+          ],
+          "followup_if_weak": "Tre fynd hos henne bildar en klassisk triad - vilken, och vad betyder den?",
+          "followup_if_wrong": "Feber + ikterus + smärta = Charcots triad = akut kolangit. Ta om.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Hon är febril, lätt hypoton. Du tänker sepsis.",
+          "question": "Initial handläggning - och vad är den definitiva åtgärden?",
+          "gold": "Sepsis-handläggning: ABCDE, blododlingar, iv vätska, laktat, OMEDELBART iv bredspektrum-Ab (vänta inte!), fasta. ULJ lever/gallvägar (vidgade gallgångar). DEFINITIVT: akut avlastning av gallvägarna via ERCP (eller PTC). Kolecystektomi senare när infektionen lugnat.",
+          "must_include": [
+            "antibiotika omedelbart",
+            "blododling",
+            "ERCP",
+            "avlastning",
+            "ULJ"
+          ],
+          "fail_triggers": [
+            "Skjuter upp antibiotika i väntan på odlingssvar/röntgen",
+            "Planerar enbart elektiv gallop"
+          ],
+          "followup_if_weak": "Vad är den enskilt viktigaste tidiga åtgärden, och hur löser man själva obstruktionen?",
+          "followup_if_wrong": "Antibiotika OMEDELBART (efter odling) + akut ERCP-avlastning. Att vänta med Ab är fällan. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Trots Ab blir hon konfusorisk, BT 80, puls 125, oliguri.",
+          "question": "Vad har utvecklats och hur agerar du?",
+          "gold": "Septisk chock (Reynolds pentad fullbordad). Behandla septisk/distributiv chock: aggressiv vätska, om refraktär -> noradrenalin (förstahandsvasopressor) med MAP-mål >65, högre vårdnivå (IVA), källkontroll = SKYNDA på ERCP-avlastningen (källan måste bort). Fortsatt Ab, laktatstyrning.",
+          "must_include": [
+            "septisk chock",
+            "noradrenalin",
+            "MAP >65",
+            "källkontroll",
+            "IVA"
+          ],
+          "fail_triggers": [
+            "Fortsätter bara med vätska utan vasopressor eller källkontroll"
+          ],
+          "followup_if_weak": "Hon är nu hypoton trots vätska och Ab - vilken vasopressor och vad är källkontrollen?",
+          "followup_if_wrong": "Noradrenalin vid vätskerefraktär distributiv chock (MAP >65) + skynda på ERCP-avlastningen (källkontroll). Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_KIR_005",
+      "subject": "02_kirurgi",
+      "yield": "HIGH",
+      "entity": "Övre GI-blödning",
+      "title": "Hematemesen mitt i natten",
+      "differentials": [
+        "Övre GI-blödning (ulcus)",
+        "Esofagusvaricer",
+        "Mallory-Weiss",
+        "Nedre GI-blödning (skiljs av melena)"
+      ],
+      "pearls": [
+        "Melena = blödning ovan Treitz",
+        "PPI + Erytromycin + skopi",
+        "Övertransfusion ökar portatryck -> mer varixblödning"
+      ],
+      "opening_state": "Akuten. 61-årig man, kräkts blod + svart illaluktande avföring. ASA dagligen. BT 95/65, puls 115, blek.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Hematemes + melena, cirkulationspåverkad.",
+          "question": "Var sitter blödningen och hur startar du?",
+          "gold": "Melena (svart, tjärlik) + hematemes = ÖVRE GI-blödning (ovan Treitz ligament), inte nedre. ABCDE, två grova nålar, blodgruppera/bastesta, Hb/koag, iv vätska, fasta. Högdos PPI iv. Erytromycin iv (tömmer ventrikeln inför skopi).",
+          "must_include": [
+            "övre GI",
+            "melena",
+            "PPI",
+            "grova nålar",
+            "erytromycin"
+          ],
+          "fail_triggers": [
+            "Tror melena = nedre GI-blödning",
+            "Ger inget PPI"
+          ],
+          "followup_if_weak": "Svart tjäravföring (melena) - ovanför eller nedanför Treitz? Vad ger du iv?",
+          "followup_if_wrong": "Melena = blödning ovan Treitz (övre GI). Högdos PPI iv + erytromycin + ABCDE. Ta om.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Du beställer skopi. Sköterskan frågar: 'Hur högt ska vi transfundera honom?'",
+          "question": "Vilket Hb-mål och varför inte högre?",
+          "gold": "Restriktiv transfusion: mål Hb 70-90 g/L hos hjärtfrisk (90-110 vid hjärtsjukdom/instabil). Övertransfusion ökar portatrycket och kan ge MER blödning (särskilt vid varicer) + sämre utfall. Gastroskopi: akut vid högrisk/instabil, annars inom 24 h. Endoskopisk hemostas (clips/adrenalin/diatermi); Forrest-klassificering styr.",
+          "must_include": [
+            "Hb 70-90",
+            "restriktiv",
+            "skopi inom 24h",
+            "Forrest"
+          ],
+          "fail_triggers": [
+            "Sätter transfusionsmål Hb >120 'för säkerhets skull'"
+          ],
+          "followup_if_weak": "Är högt Hb-mål bra eller dåligt vid GI-blödning? Vad händer med portatrycket?",
+          "followup_if_wrong": "Restriktivt mål (70-90) - övertransfusion höjer portatrycket och ger mer blödning. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Skopi: ulcus med synligt kärl (Forrest IIa), endoskopiskt behandlat. 18 h senare: ny hematemes, BT rasar, puls 130.",
+          "question": "Vad har hänt och hur agerar du?",
+          "gold": "Re-blödning (vanligaste komplikationen, högre risk vid Forrest Ia-IIa). ABCDE + resuscitera, fortsatt högdos PPI, AKUT re-skopi för förnyad hemostas. Vid teknisk misslyckande: angiografisk embolisering eller kirurgi. Korrigera koagulation, håll varm.",
+          "must_include": [
+            "re-blödning",
+            "re-skopi",
+            "embolisering",
+            "kirurgi",
+            "PPI"
+          ],
+          "fail_triggers": [
+            "Avvaktar och hoppas det ger med sig"
+          ],
+          "followup_if_weak": "Ny hematemes + tryckfall efter åtgärdat ulcus - vad är detta och vad är nästa steg?",
+          "followup_if_wrong": "Re-blödning -> akut re-skopi (sedan embolisering/kirurgi vid svikt), inte avvakta. Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_KIR_006",
+      "subject": "02_kirurgi",
+      "yield": "HIGH",
+      "entity": "Inklämt ljumskbråck",
+      "title": "Bråcket man aldrig får trycka tillbaka",
+      "differentials": [
+        "Inklämt/strangulerat ljumskbråck",
+        "Femoralbråck",
+        "Lymfadenit",
+        "Mekaniskt ileus"
+      ],
+      "pearls": [
+        "Rodnad + smärta = strangulation = akut op",
+        "Reponera ALDRIG ett misstänkt strangulerat bråck",
+        "Inklämt bråck kan ge mekaniskt ileus"
+      ],
+      "opening_state": "Akuten. 70-årig man, smärtsam irreponibel utbuktning i hö ljumske sedan i morse, illamående, kräkningar, uppspänd buk.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Hård, öm, irreponibel resistens i ljumsken, rodnad hud över. Kräkning + uppspänd buk.",
+          "question": "Vad ser du och vad får du absolut INTE göra?",
+          "gold": "Inklämt ljumskbråck med tecken på strangulation (rodnad + förhårdnad + smärta = ischemi) + sekundärt mekaniskt ileus. Försök ALDRIG reponera ett misstänkt strangulerat bråck (kan trycka in nekrotisk tarm i buken). Akut kirurg.",
+          "must_include": [
+            "inklämt",
+            "strangulation",
+            "reponera aldrig",
+            "ileus"
+          ],
+          "fail_triggers": [
+            "Försöker trycka tillbaka bråcket",
+            "Skickar hem efter 'reposition'"
+          ],
+          "followup_if_weak": "Får du försöka reponera detta bråck? Vad talar för strangulation?",
+          "followup_if_wrong": "Rodnad + smärta + förhårdnad = strangulation -> reponera ALDRIG, akut op. Ta om.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Du larmar kirurg.",
+          "question": "Vad är den definitiva behandlingen och vad ger du i väntan?",
+          "gold": "Akut op: explorera, bedöm tarmens vitalitet (resektion vid nekros), åtgärda bråcket (Lichtenstein/nät om ej kontaminerat). I väntan: fasta, iv vätska, V-sond vid ileus, smärtlindring, Ab vid misstänkt nekros. INTE elektiv handläggning.",
+          "must_include": [
+            "akut op",
+            "tarmvitalitet",
+            "resektion",
+            "fasta",
+            "V-sond"
+          ],
+          "fail_triggers": [
+            "Bokar elektiv bråckop om några veckor"
+          ],
+          "followup_if_weak": "Är detta ett elektivt eller akut ingrepp? Vad bedöms intraoperativt?",
+          "followup_if_wrong": "Strangulerat bråck = akut op med bedömning av tarmens vitalitet, inte elektivt. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Vid op: 15 cm ischemisk men möjligen viabel tarm efter att inklämningen släppts.",
+          "question": "Hur avgör du om tarmen ska behållas eller resekeras?",
+          "gold": "Bedöm vitalitet efter att ha släppt strypningen + varmt omslag: färg, peristaltik, mesenteriell pulsation/blödning vid snitt. Tveksam tarm -> resekera eller planera second look hellre än att lämna nekros. Hellre resektion än att riskera nekros/läckage postop.",
+          "must_include": [
+            "vitalitet",
+            "peristaltik",
+            "resektion",
+            "second look"
+          ],
+          "fail_triggers": [
+            "Lämnar uppenbart svart tarm kvar"
+          ],
+          "followup_if_weak": "Vad tittar du på för att avgöra om tarmen lever - och vad gör du vid tveksamhet?",
+          "followup_if_wrong": "Färg/peristaltik/blödning avgör; tveksam tarm reseceras eller second look. Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_ONK_001",
+      "subject": "07_onkologi",
+      "yield": "HIGH",
+      "entity": "Neutropen feber",
+      "title": "Febern 10 dagar efter cytostatika",
+      "differentials": [
+        "Neutropen feber/sepsis",
+        "Viral infektion",
+        "Tumörfeber"
+      ],
+      "pearls": [
+        "Nadir + feber = inläggning + blododling + Ab",
+        "Pip-Taz inom 1 h, vänta inte på odlingssvar",
+        "G-CSF ges ENDAST profylaktiskt, inte akut"
+      ],
+      "opening_state": "Akuten. 56-årig kvinna, bröstcancer, fick cytostatika för 10 dagar sedan. Feber 38,7, frusen. Inga tydliga lokalsymtom.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Hon är febril, 10 dagar efter kur, inga lokalsymtom.",
+          "question": "Vad misstänker du och varför saknas lokalsymtom?",
+          "gold": "Neutropen feber (nadir 7-14 dagar efter cytostatika). Feber >38,5 x1 eller >38 x2 + neutrofila <0,5. Lokala infektionstecken saknas ofta pga brist på vita (ingen inflammatorisk respons). Detta är en ONKOLOGISK AKUT.",
+          "must_include": [
+            "neutropen feber",
+            "nadir",
+            "neutrofila <0,5",
+            "onkologisk akut"
+          ],
+          "fail_triggers": [
+            "Avfärdar som 'förkylning' och skickar hem",
+            "Avvaktar utan prover"
+          ],
+          "followup_if_weak": "Var i cytostatikacykeln är hon, och varför kan en svår infektion sakna lokalsymtom?",
+          "followup_if_wrong": "Nadir 7-14 dagar -> neutropeni -> få lokalsymtom trots allvarlig infektion. Detta är akut. Ta om.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Neutrofila 0,3. Du bekräftar neutropen feber.",
+          "question": "Vad gör du - i vilken ordning - och hur snabbt?",
+          "gold": "Akut inläggning. Blododling x2 (centralt + perifert) + urin-/sår-/sputumodling. Sedan OMEDELBART iv bredspektrum-Ab (Pip-Taz 4 g x4) inom 1 h - vänta INTE på odlingssvar. iv vätska, ABCDE, laktat. Tidig antibiotika räddar liv.",
+          "must_include": [
+            "blododling x2",
+            "Pip-Taz",
+            "inom 1 timme",
+            "inläggning"
+          ],
+          "fail_triggers": [
+            "Väntar på odlingssvar innan antibiotika",
+            "Skickar hem med peroral Ab"
+          ],
+          "followup_if_weak": "Tar du odling och Ab - i vilken ordning, och hur länge får du vänta med Ab?",
+          "followup_if_wrong": "Odling FÖRST (om snabbt), sedan Ab inom 1 h - vänta aldrig på svar. Ta om tidsordningen.",
+          "next": "b3"
+        },
+        {
+          "id": "b3",
+          "is_tail": false,
+          "state": "Kollegan föreslår: 'Ge G-CSF nu så hon får upp sina vita snabbare.'",
+          "question": "Rätt eller fel? Motivera.",
+          "gold": "Fel i akutläget. G-CSF ges ENDAST profylaktiskt (mellan kurer / nästa cykel), inte akut vid pågående neutropen feber (kan förvärra/komplicera akutförloppet). Akut behandling = Ab + understödjande vård. Profylax planeras till kommande kurer.",
+          "must_include": [
+            "G-CSF profylaktiskt",
+            "inte akut",
+            "antibiotika"
+          ],
+          "fail_triggers": [
+            "Ger G-CSF akut"
+          ],
+          "followup_if_weak": "När i förhållande till kuren ges G-CSF - akut eller profylaktiskt?",
+          "followup_if_wrong": "G-CSF är profylaktiskt mellan kurer, inte akut behandling. Akut = Ab. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Trots Ab: BT 82/50, puls 130, laktat 4,2, oliguri.",
+          "question": "Vad har utvecklats och hur eskalerar du?",
+          "gold": "Neutropen sepsis/septisk (distributiv) chock. Eskalera: aggressiv iv vätska, vätskerefraktär -> noradrenalin (MAP >65), högre vårdnivå (IVA), bredda/omvärdera Ab efter odling, källsök (CVK?). Laktatstyrd resuscitering.",
+          "must_include": [
+            "septisk chock",
+            "noradrenalin",
+            "IVA",
+            "vätska",
+            "MAP >65"
+          ],
+          "fail_triggers": [
+            "Fortsätter enbart med vätska"
+          ],
+          "followup_if_weak": "Hon är hypoton trots Ab och vätska - vilken vasopressor och vilken vårdnivå?",
+          "followup_if_wrong": "Noradrenalin (MAP >65) + IVA vid vätskerefraktär septisk chock. Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_ONK_002",
+      "subject": "07_onkologi",
+      "yield": "HIGH",
+      "entity": "Medullakompression",
+      "title": "Ryggont hos cancerpatienten - hela ryggen",
+      "differentials": [
+        "Metastasorsakad medullakompression",
+        "Cauda equina",
+        "Skelettmetastas utan kompression",
+        "Diskbråck"
+      ],
+      "pearls": [
+        "MR HELA ryggen (60% i bröstryggen)",
+        "Högdos kortison direkt + KAD",
+        "Skicka inte hem 'lumbago' hos cancerpatient"
+      ],
+      "opening_state": "Akuten. 64-årig man, prostatacancer, tilltagande ryggsmärta (värst på natten) + tyngdkänsla i benen senaste dygnet. Idag svårt att kissa.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Cancerpatient, nattlig ryggsmärta, bensvaghet, miktionsbesvär.",
+          "question": "Vad fruktar du och vad undersöker du?",
+          "gold": "Metastasorsakad medullakompression - onkologisk akut. Känd cancer + ny/tilltagande ryggsmärta (värre nattetid) + bensvaghet + urinretention. Undersök: neurologi i ben (kraft/känsel/reflexer), känselnivå, PR (sfinktertonus), bladderscan (urinretention).",
+          "must_include": [
+            "medullakompression",
+            "neurologi",
+            "bladderscan",
+            "sfinktertonus"
+          ],
+          "fail_triggers": [
+            "Avfärdar som vanlig ryggvärk hos äldre",
+            "Skickar hem med analgetika"
+          ],
+          "followup_if_weak": "Cancer + nattlig ryggsmärta + svaga ben + miktionsbesvär - vilken akut diagnos och vad mäter du i blåsan?",
+          "followup_if_wrong": "Medullakompression; bladderscan för urinretention + neurologstatus. Ta om.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Bensvaghet bilateralt, känselnivå på bröstkorgen, residualurin 600 ml. Du beställer MR.",
+          "question": "Vad är fällan i din MR-beställning och vad ger du direkt?",
+          "gold": "Fällan: beställa bara MR ländrygg. Beställ MR HELA ryggen <24 h (~60 % av metastaserna sitter i BRÖSTRYGGEN). DIREKT (innan svar): högdos kortison (Betapred/betametason 16 mg x2), KAD (urinretention), kontakta ryggortoped + onkolog. Definitivt: akut strålbehandling eller kirurgi.",
+          "must_include": [
+            "MR hela ryggen",
+            "högdos kortison",
+            "KAD",
+            "ryggortoped/onkolog"
+          ],
+          "fail_triggers": [
+            "Beställer bara MR ländrygg",
+            "Avvaktar kortison till efter MR"
+          ],
+          "followup_if_weak": "Var sitter de flesta medullakompressionerna - och täcker en MR ländrygg det? Vad ger du innan svar?",
+          "followup_if_wrong": "MR HELA ryggen (60% i bröstrygg) + kortison direkt + KAD. Bara länd-MR är fällan. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. MR: kompression Th7. Innan strålstart blir benen helt kraftlösa, ingen sfinkterkontroll.",
+          "question": "Vad betyder progressen och hur brådskande är behandlingen nu?",
+          "gold": "Snabb neurologisk försämring mot komplett pares + sfinkterpares -> överhängande risk för IRREVERSIBEL paraplegi. Behandlingsfönstret krymper: akut kontakt neurokirurg/ryggortoped för ev dekompression + akut strålbehandling NU. Funktion före behandling avgör prognos - varje timme räknas.",
+          "must_include": [
+            "irreversibel",
+            "akut dekompression",
+            "akut strålbehandling",
+            "tidskritiskt"
+          ],
+          "fail_triggers": [
+            "Inväntar ordinarie strålschema nästa dag"
+          ],
+          "followup_if_weak": "Snabbt tilltagande pares + sfinkterbortfall - blir prognosen bättre eller sämre ju längre du väntar?",
+          "followup_if_wrong": "Risk för irreversibel paraplegi - akut dekompression/strålning nu, inte vänta på ordinarie schema. Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_ONK_003",
+      "subject": "07_onkologi",
+      "yield": "HIGH",
+      "entity": "Bröstcancer - neoadjuvant/adjuvant",
+      "title": "Sekvenseringen vid bröstcancer",
+      "differentials": [
+        "Bröstcancer (operabel)",
+        "Lokalt avancerad bröstcancer",
+        "Benign bröstförändring"
+      ],
+      "pearls": [
+        "Neoadjuvant = FÖRE op (krymper tumören)",
+        "Adjuvant = EFTER op (minskar recidiv)",
+        "Bröstbevarande + strålning = likvärdig överlevnad som mastektomi"
+      ],
+      "opening_state": "Mottagning. 52-årig kvinna, ny diagnos invasiv bröstcancer, stor tumör i förhållande till bröstet. Vill förstå 'i vilken ordning allt görs'.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Hon undrar varför man ibland ger cytostatika före och ibland efter operationen.",
+          "question": "Förklara begreppen neoadjuvant, adjuvant och konkomitant.",
+          "gold": "Neoadjuvant = behandling (oftast cytostatika) FÖRE kirurgi, för att krympa tumören (möjliggör bröstbevarande/mindre op, testar tumörens känslighet). Adjuvant = EFTER kirurgi, för att minska återfallsrisk (cytostatika/endokrin/strålning). Konkomitant = samtidigt (t.ex. cytostatika + strålning).",
+          "must_include": [
+            "neoadjuvant före",
+            "adjuvant efter",
+            "krympa tumören",
+            "minska recidiv"
+          ],
+          "fail_triggers": [
+            "Blandar ihop neoadjuvant och adjuvant"
+          ],
+          "followup_if_weak": "Vilken ges FÖRE kirurgi och varför - vilken ges EFTER och varför?",
+          "followup_if_wrong": "Neoadjuvant = före (krympa); adjuvant = efter (minska recidiv). Ta om definitionerna.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Hennes tumör är stor i förhållande till bröstet.",
+          "question": "Hur kan neoadjuvant behandling påverka det kirurgiska valet, och vad vet vi om bröstbevarande vs mastektomi för överlevnaden?",
+          "gold": "Neoadjuvant cytostatika kan krympa tumören så att BROSTBEVARANDE kirurgi (sektorresektion) blir möjlig istället för mastektomi. Bröstbevarande op + postoperativ strålbehandling ger LIKVÄRDIG överlevnad jämfört med mastektomi vid lämpliga tumörer - valet handlar om tumör/bröst-relation och patientönskemål, inte sämre prognos.",
+          "must_include": [
+            "bröstbevarande",
+            "strålning",
+            "likvärdig överlevnad",
+            "mastektomi"
+          ],
+          "fail_triggers": [
+            "Säger att mastektomi alltid ger bättre överlevnad"
+          ],
+          "followup_if_weak": "Ger mastektomi bättre överlevnad än bröstbevarande+strålning? Vad gör neoadjuvant för operationsvalet?",
+          "followup_if_wrong": "Bröstbevarande + strålning = likvärdig överlevnad; neoadjuvant kan möjliggöra bröstbevarande. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Hon får neoadjuvant cytostatika, opereras bröstbevarande. PAD: ER-positiv tumör. Onkologen sätter in tamoxifen/aromatashämmare.",
+          "question": "Vad är syftet med den endokrina behandlingen och en nyckelbiverkan att informera om?",
+          "gold": "Adjuvant endokrin terapi vid ER-positiv (hormonkänslig) tumör minskar recidivrisken (ofta 5-10 år). Tamoxifen (premenopausalt): risk för tromboembolism + endometriecancer. Aromatashämmare (postmenopausalt): ledvärk + osteoporos. Compliance över lång tid är avgörande.",
+          "must_include": [
+            "endokrin terapi",
+            "ER-positiv",
+            "recidiv",
+            "tamoxifen/aromatashämmare",
+            "biverkan"
+          ],
+          "fail_triggers": [
+            "Kan inte ange syfte eller någon biverkan"
+          ],
+          "followup_if_weak": "Varför endokrin behandling vid ER-positiv tumör, och vilken biverkan varnar du för?",
+          "followup_if_wrong": "ER-positiv -> adjuvant endokrin terapi minskar recidiv; varna för trombos/endometrium (tamoxifen) eller ledvärk/osteoporos (aromatashämmare). Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_ORT_001",
+      "subject": "03_ortopedi",
+      "yield": "HIGH",
+      "entity": "Cauda equina-syndrom",
+      "title": "Ryggsmärtan som inte får vänta",
+      "differentials": [
+        "Cauda equina-syndrom",
+        "Diskbråck utan cauda",
+        "Medullakompression",
+        "Lumbago"
+      ],
+      "pearls": [
+        "Ridbyxeanestesi + urinretention + slapp sfinkter = cauda",
+        "Akut MR + KAD + ryggortoped",
+        "Skicka aldrig hem som lumbago"
+      ],
+      "opening_state": "Akuten. 44-årig man, akut svår ländryggsmärta + utstrålning båda benen. Idag svårt att kissa och 'domnar i grenen'.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Bilateral bensmärta + miktionsbesvär + domningskänsla i underlivet.",
+          "question": "Vilka röda flaggor letar du efter och vilken diagnos?",
+          "gold": "Cauda equina-syndrom. Röda flaggor: ridbyxeanestesi (sadelområde), urinretention/överrinning, nedsatt sfinktertonus vid PR, bilaterala bensymtom. Undersök sadelkänsel, PR, bladderscan.",
+          "must_include": [
+            "cauda equina",
+            "ridbyxeanestesi",
+            "urinretention",
+            "sfinktertonus",
+            "PR"
+          ],
+          "fail_triggers": [
+            "Skickar hem med analgetika som lumbago",
+            "Hoppar över PR/bladderscan"
+          ],
+          "followup_if_weak": "Vilka tre fynd måste du leta efter (sadel, blåsa, ändtarm) för att inte missa cauda?",
+          "followup_if_wrong": "Ridbyxeanestesi + urinretention + slapp sfinktertonus -> cauda. PR + bladderscan + sadelkänsel. Ta om.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Ridbyxeanestesi, residualurin 700 ml, slapp sfinktertonus.",
+          "question": "Hur akut är detta och vad gör du nu?",
+          "gold": "Akut! Sätt KAD (avlasta blåsan), akut MR, AKUTKONTAKT ryggortoped. Definitivt: akut kirurgisk dekompression <24 h (helst <6 h). Tidsfönstret avgör om blås-/tarm-/sexualfunktion blir bestående.",
+          "must_include": [
+            "KAD",
+            "akut MR",
+            "ryggortoped",
+            "dekompression <24h"
+          ],
+          "fail_triggers": [
+            "Bokar MR i nästa vecka",
+            "Avvaktar"
+          ],
+          "followup_if_weak": "Hur snabbt måste detta dekomprimeras och vad gör du med blåsan medan du väntar?",
+          "followup_if_wrong": "Akut MR + akut dekompression <24 h (helst <6 h) + KAD nu. Inte elektivt. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Opererad inom 8 h. Postop: benkraft förbättras, men han har kvarstående urinretention och frågar om han 'blir frisk'.",
+          "question": "Hur hanterar du den kvarstående blåsfunktionen och informationen?",
+          "gold": "Blåsfunktion kan återhämta sig långsamt/ofullständigt även efter snabb op - prognosen för blåsa/sfinkter är sämre än för motorik. Fortsatt blåsträning/RIK vid behov, uppföljning urolog/uroterapeut, ärlig info om att återhämtning tar tid och kan bli partiell. Undvik falska löften.",
+          "must_include": [
+            "blåsfunktion",
+            "RIK",
+            "uppföljning",
+            "ärlig prognos"
+          ],
+          "fail_triggers": [
+            "Lovar full återhämtning"
+          ],
+          "followup_if_weak": "Återhämtar sig blåsfunktionen lika säkert som benstyrkan? Vad erbjuder du under tiden?",
+          "followup_if_wrong": "Blåsfunktionen återhämtar sig långsammare/osäkrare; erbjud blåsträning/RIK + uppföljning, ge ärlig prognos. Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_ORT_002",
+      "subject": "03_ortopedi",
+      "yield": "HIGH",
+      "entity": "Kompartmentsyndrom",
+      "title": "Smärtan som morfinet inte biter på",
+      "differentials": [
+        "Kompartmentsyndrom",
+        "Enkel fraktursmärta",
+        "Djup ventrombos",
+        "Artärskada"
+      ],
+      "pearls": [
+        "Pain out of proportion = kompartment tills bevisat",
+        "Planläge, ALDRIG högläge",
+        "Vänta inte på pulsbortfall (sent tecken)"
+      ],
+      "opening_state": "Avdelning. 22-årig man, underbensfraktur i gips sedan 6 h. Eskalerande smärta trots upprepade morfindoser. Smärtan känns 'inte normal'.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Smärtan ökar trots morfin, oproportionerligt stor.",
+          "question": "Vad misstänker du och vilket kliniskt test är mest specifikt?",
+          "gold": "Kompartmentsyndrom. Pain out of proportion (maskeras dåligt av morfin) = kompartmentsyndrom tills motsatsen bevisad. Mest specifikt tidigt tecken: SMÄRTA VID PASSIV EXTENSION/töjning av tårna. Klinisk diagnos (ev tryckmätning >30 mmHg).",
+          "must_include": [
+            "kompartmentsyndrom",
+            "pain out of proportion",
+            "passiv extension",
+            "klinisk diagnos"
+          ],
+          "fail_triggers": [
+            "Tolkar det som vanlig fraktursmärta och ger mer morfin",
+            "Väntar på att pulsen försvinner"
+          ],
+          "followup_if_weak": "Smärta som morfin inte dämpar efter en underbensfraktur - vilket passivt rörelsetest provocerar fram diagnosen?",
+          "followup_if_wrong": "Pain out of proportion -> kompartmentsyndrom; smärta vid passiv tåextension är nyckeltestet. Ta om.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Kraftig smärta vid passiv tåextension. Distala pulsar känns fortfarande.",
+          "question": "Lugnar de kvarvarande pulsarna dig? Vad gör du - exakt?",
+          "gold": "Nej - pulsbortfall är ett SENT tecken (vänta inte på det). Åtgärda nu: PLANLÄGE (aldrig högläge - högläge sänker perfusionstrycket), KLIPP UPP gips/förband ner till hud, kontakta ortoped AKUT. Definitivt: akut FASCIOTOMI <8 h.",
+          "must_include": [
+            "planläge",
+            "klipp gips",
+            "fasciotomi",
+            "sent tecken",
+            "ortoped akut"
+          ],
+          "fail_triggers": [
+            "Höjer benet för att minska svullnad",
+            "Avvaktar eftersom pulsarna finns kvar"
+          ],
+          "followup_if_weak": "Är bevarade pulsar betryggande? Hur ska benet ligga och vad gör du med gipset?",
+          "followup_if_wrong": "Pulsar = sent tecken (ej betryggande). Planläge + klipp gipset + fasciotomi akut. Högläge är direkt fel. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Fasciotomi gjord. Dag 2: mörk urin, CK kraftigt förhöjt, K+ 6,0.",
+          "question": "Vilken systemisk komplikation och hur behandlar du?",
+          "gold": "Rhabdomyolys med myoglobinuri + hyperkalemi (muskelsönderfall). Behandling: rikligt iv vätska för att skydda njurarna/öka diures, behandla hyperkalemi (kalcium först som membranstabilisering vid EKG-påverkan, sedan insulin-glukos), övervaka njurfunktion, ev dialys. Volkmanns kontraktur är sen risk vid missad/sen fasciotomi.",
+          "must_include": [
+            "rhabdomyolys",
+            "myoglobin",
+            "hyperkalemi",
+            "vätska",
+            "kalcium"
+          ],
+          "fail_triggers": [
+            "Ignorerar K+ 6,0",
+            "Ger bara smärtlindring"
+          ],
+          "followup_if_weak": "Mörk urin + högt CK + K+ 6,0 efter muskelskada - vad heter det och vad skyddar njuren/hjärtat?",
+          "followup_if_wrong": "Rhabdomyolys + hyperkalemi -> iv vätska + behandla K+ (kalcium/insulin-glukos). Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_ORT_003",
+      "subject": "03_ortopedi",
+      "yield": "HIGH",
+      "entity": "Septisk artrit",
+      "title": "Det heta knät",
+      "differentials": [
+        "Septisk artrit",
+        "Giktartrit",
+        "Reaktiv artrit",
+        "Hemartros"
+      ],
+      "pearls": [
+        "Punktion INNAN antibiotika",
+        "Punktera ALDRIG protesled på VC",
+        "Leddestruktion inom 24 h"
+      ],
+      "opening_state": "Akuten. 58-årig man, sedan 2 dygn rött, svullet, varmt vä knä med vilovärk, kan knappt belasta. Feber 38,5.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Monoartrit: rött, varmt, svullet knä + feber + vilovärk.",
+          "question": "Vad måste uteslutas först och hur?",
+          "gold": "Septisk artrit (akut, hotar leden). Måste uteslutas akut via STERIL LEDPUNKTION (artrocentes) med odling + celler (LPK i ledvätska), glukos (sänkt kvot), kristaller (skilja från gikt). Inspektera, palpera, feber/CRP/SR. Tidsfaktorn är kritisk.",
+          "must_include": [
+            "septisk artrit",
+            "steril ledpunktion",
+            "odling",
+            "ledvätska"
+          ],
+          "fail_triggers": [
+            "Behandlar som gikt utan punktion",
+            "Avvaktar"
+          ],
+          "followup_if_weak": "Hett svullet knä + feber - vilken diagnos hotar leden och vilken undersökning ger svaret?",
+          "followup_if_wrong": "Septisk artrit -> steril ledpunktion (odling/celler/kristaller) är avgörande. Ta om.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Du förbereder punktion. Kollegan vill 'starta antibiotika direkt så vi inte missar något'.",
+          "question": "Rätt ordning? Och vad gäller om det vore en knäprotes?",
+          "gold": "Punktera FÖRE antibiotika - Ab före punktion saboterar odlingen (negativ odling -> kan inte styra behandling). Efter punktion: empirisk iv antibiotika (Kloxacillin, staf vanligast). VIKTIGT: punktera ALDRIG en protesled på vårdcentral/akut - det görs av ortoped (infektionsrisk/diagnostik). Definitivt: artroskopisk urspolning (ofta flera gånger).",
+          "must_include": [
+            "punktion före antibiotika",
+            "Kloxacillin",
+            "protes punkteras av ortoped",
+            "urspolning"
+          ],
+          "fail_triggers": [
+            "Ger antibiotika före punktion",
+            "Punkterar en protesled själv"
+          ],
+          "followup_if_weak": "Antibiotika före eller efter ledpunktion - varför? Och om det är en protes?",
+          "followup_if_wrong": "Punktion FÖRE Ab (annars förstörd odling); protesled punkteras endast av ortoped. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Ledvätska: grumlig, LPK kraftigt förhöjt, inga kristaller. Odling växer S. aureus. Trots urspolning + Ab kvarstår feber och CRP stiger dag 3.",
+          "question": "Vad gör du - och vilken bredare risk måste du tänka på?",
+          "gold": "Otillräcklig källkontroll -> förnyad artroskopisk urspolning (ofta krävs flera sessioner) + omvärdera/optimera Ab efter resistensbesked + uteslut spridning (sepsis, endokardit vid S. aureus-bakteriemi -> ekokardiografi, upprepade blododlingar). Ortoped + infektion.",
+          "must_include": [
+            "ny urspolning",
+            "optimera antibiotika",
+            "S. aureus",
+            "endokardit",
+            "blododling"
+          ],
+          "fail_triggers": [
+            "Fortsätter oförändrat utan ny åtgärd"
+          ],
+          "followup_if_weak": "Kvarstående feber trots spolning + Ab vid S. aureus - vad gör du med leden och vad utesluter du systemiskt?",
+          "followup_if_wrong": "Ny urspolning + optimera Ab + uteslut S. aureus-spridning (endokardit/sepsis). Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_ORT_004",
+      "subject": "03_ortopedi",
+      "yield": "MEDIUM",
+      "entity": "Höftfraktur",
+      "title": "Det utåtroterade benet",
+      "differentials": [
+        "Cervikal höftfraktur",
+        "Pertrokantär fraktur",
+        "Höftluxation (inåtroterat)",
+        "Bäckenfraktur"
+      ],
+      "pearls": [
+        "Förkortat + utåtroterat ben = höftfraktur",
+        "Garden I-II = skruv, III-IV = protes",
+        "Op inom 24 h"
+      ],
+      "opening_state": "Akuten. 82-årig kvinna, fall i hemmet, svår ljumsksmärta, kan inte belasta. Hö ben förkortat och utåtroterat.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Förkortat + utåtroterat ben, ljumsksmärta efter fall.",
+          "question": "Sannolik diagnos och vad skiljer den från höftluxation?",
+          "gold": "Cervikal/proximal femurfraktur (höftfraktur): förkortat + UTÅTROTERAT ben. HöftLUXATION ger förkortat + INÅTROTERAT ben (motsatt). Slätröntgen bekräftar. Smärtlindring (t.ex. femoralisblockad).",
+          "must_include": [
+            "höftfraktur",
+            "utåtroterat",
+            "förkortat",
+            "röntgen",
+            "femoralisblockad"
+          ],
+          "fail_triggers": [
+            "Förväxlar med höftluxation",
+            "Belastar/mobiliserar utan röntgen"
+          ],
+          "followup_if_weak": "Är benet inåt- eller utåtroterat vid höftfraktur respektive luxation?",
+          "followup_if_wrong": "Fraktur = utåtroterat; luxation = inåtroterat. Slätröntgen + smärtlindring. Ta om.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Röntgen: dislocerad cervikal fraktur (Garden III).",
+          "question": "Vilken operation och varför inte osteosyntes?",
+          "gold": "Garden III-IV (dislocerad) = HEL- eller HALVPROTES, inte osteosyntes. Skälet: dislokationen bryter blodförsörjningen till caput -> hög risk för caputnekros/läkningssvikt med skruv. Garden I-II (odislocerad) = osteosyntes (skruv/spik). Op inom ~24 h.",
+          "must_include": [
+            "protes",
+            "Garden III-IV",
+            "caputnekros",
+            "osteosyntes I-II",
+            "op inom 24h"
+          ],
+          "fail_triggers": [
+            "Väljer skruvosteosyntes på dislocerad cervikal fraktur"
+          ],
+          "followup_if_weak": "Varför inte skruva en dislocerad cervikal fraktur - vad händer med caputs blodförsörjning?",
+          "followup_if_wrong": "Dislokation skadar caputs cirkulation -> caputnekros; därför protes vid Garden III-IV. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Protes inopererad. Postop dag 1: hon är förvirrad, plockig, växlande, men afebril.",
+          "question": "Vad misstänker du och hur handlägger du?",
+          "gold": "Postoperativt delirium (vanligt hos äldre höftfrakturpatienter - multifaktoriellt). Uteslut/åtgärda utlösande faktorer: smärta, hypoxi, infektion (urin/pneumoni), urinretention, elektrolytrubbning, läkemedel (opioider/antikolinergika), sömn. Icke-farmakologiskt först (orientering, mobilisering, syn/hörhjälpmedel, dygnsrytm). Tidig mobilisering minskar komplikationer.",
+          "must_include": [
+            "postoperativt delirium",
+            "utlösande faktorer",
+            "mobilisering",
+            "icke-farmakologiskt"
+          ],
+          "fail_triggers": [
+            "Sederar med bensodiazepin som förstahand"
+          ],
+          "followup_if_weak": "Förvirring dag 1 postop hos en äldre - vad letar du efter som orsak innan du sederar?",
+          "followup_if_wrong": "Postop delirium -> sök orsak (smärta/hypoxi/infektion/urinretention/läkemedel), icke-farmakologiskt först - inte bensodiazepin direkt. Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_END_001",
+      "subject": "04_endokrinkirurgi",
+      "yield": "HIGH",
+      "entity": "Postop tyreoidektomi",
+      "title": "Halsen som svullnar - och kalken som faller",
+      "differentials": [
+        "Postoperativ halsblödning",
+        "Hypokalcemi (paratyreoideaskada)",
+        "Recurrenspares",
+        "Intubationsödem"
+      ],
+      "pearls": [
+        "Tilltagande stridor postop = akut re-op",
+        "Halsblödning kvävs i sluten loge -> öppna nu",
+        "Hypokalcemi: Chvostek/Trousseau, ge kalcium"
+      ],
+      "opening_state": "UVA, några timmar efter total tyreoidektomi. 49-årig kvinna, tilltagande halssvullnad, börjar låta ansträngd vid andning (stridor), orolig.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Halsen svullnar, hon utvecklar stridor.",
+          "question": "Vad är detta och hur agerar du - omedelbart?",
+          "gold": "Postoperativ halsblödning (hematom i halsens slutna loger -> trycker ihop luftvägen -> asfyxi). Detta är en LUFTVÄGSNÖDSITUATION: larma, syrgas, kalla kirurg/narkos akut, och vid hotande luftväg ÖPPNA SÅRET vid sängkanten för att evakuera hematomet (avlasta trycket) - vänta INTE på op-sal. Sedan urakut re-op.",
+          "must_include": [
+            "halsblödning",
+            "stridor",
+            "öppna såret",
+            "akut re-op",
+            "luftväg"
+          ],
+          "fail_triggers": [
+            "Avvaktar och beställer DT hals",
+            "Väntar på ledig operationssal medan hon kvävs"
+          ],
+          "followup_if_weak": "Stridor + svullnande hals efter tyreoideaop - vad gör du om luftvägen hotar INNAN op-salen är ledig?",
+          "followup_if_wrong": "Öppna såret vid sängkanten för att evakuera hematomet (avlasta trycket) + larma - avvakta inte. Ta om.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Hematom evakuerat, luftväg säkrad, hon förs till re-op. Nästa morgon: stickningar runt munnen, kramp i händerna.",
+          "question": "Vilken komplikation nu och hur bekräftar/behandlar du?",
+          "gold": "Hypokalcemi pga paratyreoideaskada/-devaskularisering vid tyreoidektomi. Tecken: perioral parestesi, Chvosteks tecken (ansiktsryckning), Trousseaus tecken (karpalspasm vid BT-manschett). Mät joniserat/totalt Ca + PTH. Behandla med kalcium (iv vid symtom/svår, annars peroralt) + aktivt D-vitamin (alfakalcidol).",
+          "must_include": [
+            "hypokalcemi",
+            "Chvostek",
+            "Trousseau",
+            "kalcium",
+            "PTH"
+          ],
+          "fail_triggers": [
+            "Tror stickningarna är ångest",
+            "Avstår kalcium"
+          ],
+          "followup_if_weak": "Stickningar + handkramp efter tyreoidektomi - vilken elektrolyt, vilka två kliniska tecken, vad ger du?",
+          "followup_if_wrong": "Hypokalcemi (paratyreoideaskada): Chvostek/Trousseau -> ge kalcium (+ aktivt D-vitamin). Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Hon stabiliseras på kalcium + alfakalcidol. Du noterar att hon är hes sedan op.",
+          "question": "Vad kan heshet bero på och hur skiljer du orsakerna?",
+          "gold": "Heshet kan bero på recurrenspares (skada på n. laryngeus recurrens -> stämbandspares) ELLER övergående intubationsödem. Skilj: laryngoskopi (pares syns; intubationsödem släpper snabbt på dagar). Unilateral pares -> oftast heshet; BILATERAL pares -> luftvägshot (kan kräva åtgärd/trakeostomi). Pre- och postop laryngoskopi.",
+          "must_include": [
+            "recurrenspares",
+            "laryngoskopi",
+            "intubationsödem",
+            "bilateral = luftvägshot"
+          ],
+          "fail_triggers": [
+            "Avfärdar heshet utan att tänka på recurrenspares/bilateral risk"
+          ],
+          "followup_if_weak": "Heshet postop - recurrenspares eller intubationsödem, och hur avgör du? Varför är bilateral pares farligt?",
+          "followup_if_wrong": "Laryngoskopi skiljer pares (kvarstår) från ödem (släpper); bilateral pares hotar luftvägen. Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_END_002",
+      "subject": "04_endokrinkirurgi",
+      "yield": "MEDIUM",
+      "entity": "Primär hyperparatyreoidism",
+      "title": "Högt kalcium - högt PTH",
+      "differentials": [
+        "Primär hyperparatyreoidism (adenom)",
+        "Sekundär HPT (lågt Ca)",
+        "Malignitetshyperkalcemi",
+        "Familjär hypokalciurisk hyperkalcemi"
+      ],
+      "pearls": [
+        "Högt Ca + högt PTH = pHPT (inte sekundär)",
+        "Adenom = en körtel, hyperplasi = alla fyra",
+        "Ta ALL vävnad utan autotransplantat -> fatal hypokalcemi"
+      ],
+      "opening_state": "Mottagning. 60-årig kvinna, trötthet, njursten, lätt nedstämd. Slumpvis högt S-Ca på rutinprov.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Trötthet + njursten + hyperkalcemi.",
+          "question": "Vilka prover ställer diagnosen och hur tolkar du dem?",
+          "gold": "P-Ca + PTH. Diagnostiskt: förhöjt S-Ca SAMTIDIGT som förhöjt/inadekvat icke-supprimerat PTH = primär hyperparatyreoidism (pHPT). 'Bones, stones, abdominal groans, psychic moans'. (Vid malignitetshyperkalcemi är PTH lågt/supprimerat; vid sekundär HPT är Ca lågt.)",
+          "must_include": [
+            "S-Ca",
+            "PTH",
+            "högt Ca + högt PTH",
+            "pHPT"
+          ],
+          "fail_triggers": [
+            "Tolkar högt Ca utan att kolla PTH",
+            "Förväxlar med sekundär HPT"
+          ],
+          "followup_if_weak": "Vilket prov utöver kalcium avgör om det är primär HPT, och hur ska det vara?",
+          "followup_if_wrong": "Högt Ca + samtidigt högt/icke-supprimerat PTH = pHPT. Ta om tolkningen.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "S-Ca högt, PTH högt -> pHPT. Lokalisering (UL + Sestamibi) talar för ett adenom.",
+          "question": "Vilken operation vid adenom kontra hyperplasi, och vad är den stora fällan?",
+          "gold": "Adenom (en sjuk körtel): extirpation av enbart den sjuka körteln. Hyperplasi (alla fyra): subtotal paratyreoidektomi (~3,5 körtlar) ELLER total + autotransplantation. Fällan: att ta ALL paratyreoideavävnad utan autotransplantat -> permanent/fatal hypokalcemi. MDK + kirurgremiss.",
+          "must_include": [
+            "adenom extirpation",
+            "hyperplasi subtotal",
+            "autotransplantat",
+            "hypokalcemi"
+          ],
+          "fail_triggers": [
+            "Tar bort alla fyra körtlarna utan autotransplantat"
+          ],
+          "followup_if_weak": "Tar du en eller alla körtlar vid adenom? Vad händer om du tar all vävnad utan autotransplantat?",
+          "followup_if_wrong": "Adenom = ta den enda sjuka; ta aldrig all vävnad utan autotransplantat (fatal hypokalcemi). Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Före planerad op kommer hon in akut: S-Ca 3,3, illamående, slö, EKG med kort QT.",
+          "question": "Vad är detta och hur behandlar du den akuta hyperkalcemin?",
+          "gold": "Hyperkalcemisk kris (svår hyperkalcemi >3,0 -> arytmirisk). Akut: rikligt iv NaCl (rehydrering är hörnstenen, ökar kalciumutsöndring), sedan bisfosfonat (zoledronsyra) för längre effekt, ev kalcitonin för snabb men kortvarig effekt; övervaka EKG/elektrolyter. Loop-diuretika endast efter adekvat rehydrering. Definitiv behandling = parathyreoidektomi.",
+          "must_include": [
+            "hyperkalcemisk kris",
+            "iv NaCl",
+            "bisfosfonat",
+            "EKG",
+            "rehydrering"
+          ],
+          "fail_triggers": [
+            "Ger loopdiuretika på en uttorkad patient som förstahand"
+          ],
+          "followup_if_weak": "S-Ca 3,3 med EKG-påverkan - vad är hörnstenen i akutbehandlingen innan diuretika?",
+          "followup_if_wrong": "Rehydrering med iv NaCl är hörnstenen, sedan bisfosfonat; diuretika först efter rehydrering. Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    },
+    {
+      "id": "SIM_HAND_001",
+      "subject": "05_handkirurgi",
+      "yield": "HIGH",
+      "entity": "Akut handskada - strikt ordning",
+      "title": "Skärsåret i handen - i RÄTT ordning",
+      "differentials": [
+        "Böjseneskada",
+        "Digitalnervsskada",
+        "Enkelt hudsår"
+      ],
+      "pearls": [
+        "Ta distalstatus FÖRE lokalbedövning (bedövning förstör undersökningen)",
+        "Strikt ordning: hygien -> rengöring -> anestesi -> debridering -> suturering",
+        "Utsträckt finger i vila = böjsenan skadad"
+      ],
+      "opening_state": "Akutmottagning, handkirurgi. 28-årig man, skar sig volart på hö pekfinger med kniv. Blöder, gör ont, vill 'bara bli sydd'.",
+      "beats": [
+        {
+          "id": "b1",
+          "is_tail": false,
+          "state": "Han pressar en handduk mot det blödande volara såret och ber dig sy fort.",
+          "question": "Vad gör du FÖRST - innan du ens bedövar?",
+          "gold": "Ta DISTALSTATUS FÖRE lokalbedövning. Lokalanestesi släcker sensibilitet och kan dölja nerv-/senskada. Undersök: sensibilitet (2-punktsdiskrimination, instrument i fingrets LÄNGDriktning - tvärs över stimulerar 2 digitalnerver och maskerar skada), motorik (aktiv flexion FDS/FDP), flexionskaskad i vila, cirkulation (kapillär återfyllnad).",
+          "must_include": [
+            "distalstatus före bedövning",
+            "2-PD",
+            "sensibilitet",
+            "motorik",
+            "cirkulation"
+          ],
+          "fail_triggers": [
+            "Bedövar direkt för att kunna undersöka/sy",
+            "Syr såret omgående"
+          ],
+          "followup_if_weak": "Om du bedövar först - vad förlorar du förmågan att testa? Vad gör du innan?",
+          "followup_if_wrong": "Bedövning släcker sensibiliteten -> ta distalstatus (2-PD, motorik, kärl) FÖRE bedövning. Ta om.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "is_tail": false,
+          "state": "Distalstatus: pekfingret ligger UTSTRÄCKT i vila (bruten flexionskaskad), han kan inte aktivt böja i ytterleden. Sensibilitet något nedsatt radialt.",
+          "question": "Vad betyder fynden och vad är nu den korrekta handläggningsordningen?",
+          "gold": "Utsträckt finger i vila + oförmåga att aktivt flektera = BÖJSENESKADA (FDP/FDS); nedsatt sensibilitet -> misstänk digitalnervsskada. Detta ska INTE bara sys på akuten - planera för operativ exploration/sensutur. Korrekt ordning vid handsår: 1) HYGIEN (handhygien/sterilt), 2) RENGÖRING/rikligt spolning av såret, 3) ANESTESI (korrekt dos lokalbedövning - utan adrenalin i finger enligt lokal rutin), 4) DEBRIDERING (revidera devitaliserad vävnad), 5) SUTURERING/täckning. Sensutur inom 3 dygn.",
+          "must_include": [
+            "böjseneskada",
+            "flexionskaskad",
+            "ordning: hygien-rengöring-anestesi-debridering-suturering",
+            "sensutur inom 3 dygn"
+          ],
+          "fail_triggers": [
+            "Bara syr huden och skickar hem trots senskada",
+            "Hoppar över rengöring/debridering"
+          ],
+          "followup_if_weak": "Räcker det att sy huden? Och vilka fem steg i vilken ordning gäller vid handsår?",
+          "followup_if_wrong": "Senskada kräver planerad sensutur, inte bara hudsutur. Ordning: hygien -> rengöring -> anestesi -> debridering -> suturering. Ta om.",
+          "next": "b3"
+        },
+        {
+          "id": "b3",
+          "is_tail": false,
+          "state": "Du planerar enligt ordningen. Kollegan vill spruta bedövning rakt i sårkanten 'så det går fortare'.",
+          "question": "Är det rätt teknik, och hur säkerställer du adekvat anestesi och rengöring innan suturering?",
+          "gold": "Föredra LEDNINGSANESTESI (digitalnervsblockad) framför injektion rakt i det kontaminerade/inflammerade såret (sämre effekt + sprider ev bakterier). Rikligt spola/rengör, debridera devitaliserat, kontrollera att du kan arbeta blodtomt/överskådligt. Suturera/täck först när rent och adekvat bedövat. Korrekt DOS lokalanestetika (max-dos efter vikt) för att undvika LAST.",
+          "must_include": [
+            "digitalnervsblockad",
+            "rengöring",
+            "debridering",
+            "korrekt dos",
+            "LAST"
+          ],
+          "fail_triggers": [
+            "Injicerar i sårkanten",
+            "Struntar i maxdos"
+          ],
+          "followup_if_weak": "Ledningsblockad eller injektion i såret - vilket ger bäst och säkrast anestesi, och varför tänka på maxdos?",
+          "followup_if_wrong": "Digitalnervsblockad är bättre än injektion i såret; håll maxdos för att undvika LAST. Ta om.",
+          "next": "t1"
+        },
+        {
+          "id": "t1",
+          "is_tail": true,
+          "state": "TAIL. Sensutur gjord. Vid kontroll på dag 3 efter en pulserande nattsmärta: fingret står halvböjt i vila, extremt ömt, och rör sig han skriker vid PASSIV sträckning. Lätt svullet, kommer från ett tidigare litet stick.",
+          "question": "Vad fruktar du nu och hur akut är det?",
+          "gold": "Purulent tendovaginit (infektion i senskidan) - Kanavels tecken: (1) halvböjt finger i vila, (2) fusiform svullnad, (3) ömhet längs senskidan, (4) extrem smärta vid PASSIV extension. Detta är URAKUT: incision + spolning av senskidan + iv antibiotika (stafylokocker vanligast), vänta INTE på blodprover. Broskdestruktion/spridning (hästskoabscess) inom ett dygn.",
+          "must_include": [
+            "purulent tendovaginit",
+            "Kanavels tecken",
+            "passiv extension",
+            "urakut op",
+            "antibiotika"
+          ],
+          "fail_triggers": [
+            "Avvaktar med antibiotika och bokar återbesök",
+            "Tror det är normal postop-smärta"
+          ],
+          "followup_if_weak": "Halvböjt finger + smärta vid passiv sträckning + svullnad - vad heter tecknen och hur bråttom är det?",
+          "followup_if_wrong": "Kanavels tecken = purulent tendovaginit -> urakut incision/spolning + iv Ab, inte avvakta. Ta om.",
+          "next": "open"
+        }
+      ],
+      "tail_directive": "Avsluta ALDRIG vid diagnos. Efter sista beat: generera ny komplikation, försämring eller nytt beslut och fortsätt pressa."
+    }
+  ]
+}

@@ -1,0 +1,3129 @@
+{
+  "engine": "simtenta",
+  "version": "2.0",
+  "language": "sv",
+  "format": "ROLL -> ANAMNES -> STATUS -> PROVER -> HANDLAGGNING -> UTREDNING -> PATIENTINFO -> SBAR -> FOLJDFRAGOR -> FEEDBACK -> (TAIL)",
+  "grounding": "Grundat i studentsammanstallningarna (Simtenta_T7_HT25, Muntasammanstallning_VT25, Simtenta-prep) + Engine3-matriser.",
+  "how_to_play": "Spela en fas i taget. Skriv ditt svar, tryck 'Visa facit', sjalvbedom (Traffade/Delvis/Missade), ga vidare. Foljdfragor en i taget. Avsluta aldrig vid diagnos - kor tail.",
+  "cases": [
+    {
+      "id": "karl_akut_ischemi",
+      "subject": "Karlkirurgi",
+      "site": "Molndal/Ostra",
+      "yield": "HIGH",
+      "mode": "docka",
+      "role": "Underlakare pa akutmottagningen",
+      "frame": "77-arig man, plotslig svaghet/smarta i hoger ben sedan 1,5h. Tidigare EVAR for aneurysm. Ex-rokare 50 paketar.",
+      "facit": "Akut extremitetsischemi pa basen av popliteaaneurysm (emboli/trombos).",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Kort riktad anamnes - smartlindra FORST (5mg morfin iv). Debut, emboli vs trombos, kardiell kalla, claudicatio.",
+          "reveal": [
+            "Debut: plotslig/akut, smarta + motoriskt bortfall i benet.",
+            "Tidigare: EVAR for aneurysm, slutat ta medicin senaste aret.",
+            "Ej kant formaksflimmer. Ex-rokare 50 pky, aktiv, ingen hemtjanst."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Smartlindra fore/under anamnes - pat ar svart smartpaverkad."
+          ]
+        },
+        {
+          "type": "status",
+          "goal": "Komplett karlstatus = 6P + ABI, jamfor sidor, palpera ALLA pulsar inkl poplitea.",
+          "reveal": [
+            "6P: Pain, Pallor, Pulselessness, Paraesthesia, Paralysis, Perishing cold.",
+            "Hoger ben blekt, kallt, nedsatt sensorik. Avsaknad puls tibialis+poplitea, femoralis ok.",
+            "Palpabel knol i poplitea = popliteaaneurysm. ABI 0,2 hoger / normalt vanster. EKG ua (ej FF)."
+          ],
+          "qa": [
+            {
+              "q": "Hur tar och raknar du ABI?",
+              "a": "Doppler: systoliskt ankeltryck / hogsta armtryck. <0,9 patologiskt, <0,4 kritisk ischemi."
+            },
+            {
+              "q": "Emboli vs trombos?",
+              "a": "Emboli: plotsligt, kardiell kalla/FF, frisk kontralateral sida. Trombos: pa aterosklerotisk botten, tidigare claudicatio."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "prover",
+          "goal": "Vilka prover/undersokningar?",
+          "reveal": [
+            "EKG. Hb, krea, elstatus, koagulation, laktat. Blodgruppering + BAS-test.",
+            "EKG sinus (ej FF). Laktat latt stegrat."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Urakut handlaggning - prioritera.",
+          "reveal": [
+            "IV smartlindring (morfin).",
+            "Heparin iv bolus (forhindra propagering).",
+            "Halt benet platt, varmt - ej hogt.",
+            "Ring karlkirurgbakjour - SBAR.",
+            "CT-angio (folj med pat om instabil/tar tid)."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Skicka pa ULJ-ven / utreda DVT = FAIL (kallt blekt ben = arteriellt, ej DVT).",
+            "Vanta till morgonronden = FAIL. Tidsfonster ~6h innan irreversibel skada."
+          ]
+        },
+        {
+          "type": "utredning",
+          "goal": "Vidare utredning + hur skyndsamt?",
+          "reveal": [
+            "CT-angio ben. URAKUT - klockan tickar mot irreversibel ischemi (rigor, fixerad missfargning) och reperfusion/kompartment/rhabdo."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Allvarlig akut cirkulationsstorning i benet, maste atgardas snabbt for att radda benet, operation/trombolys aktuellt.",
+            "Bemotande: lugn, argumentera skyndsamhet utifran funktionsniva (amputation forodande for aktiv man)."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "Ring karlkirurgbakjour - SBAR (R = skyndsamhet + diagnos + atgard).",
+          "reveal": [
+            "S: 77-arig man, akut iskemiskt hoger ben sedan 1,5h.",
+            "B: EVAR-opererad, ex-rokare 50 pky, slutat med medicin.",
+            "A: 6P positiva hoger, avsaknad poplitea/tibialispuls, palpabelt popliteaaneurysm, ABI 0,2.",
+            "R: Akut extremitetsischemi pga popliteaaneurysm. Heparin givet. Begar urakut CT-angio + atgard (embolektomi/trombolys, ev bypass)."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor fran examinator.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Behandling vid emboli?",
+              "a": "Embolektomi (Fogarty)."
+            },
+            {
+              "q": "Behandling vid popliteaaneurysm?",
+              "a": "Bypass."
+            },
+            {
+              "q": "Vad hander om du missar tidsfonstret?",
+              "a": "Irreversibel ischemi -> amputation; reperfusion -> kompartmentsyndrom, rhabdomyolys, hyperkalemi."
+            },
+            {
+              "q": "Andra stallen att palpera puls?",
+              "a": "Femoralis, poplitea, dorsalis pedis, tibialis posterior."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: tankte arteriellt direkt, komplett 6P+ABI bilateralt, heparin + skyndsam karlkontakt.",
+            "Vanliga fall: utredde DVT, glomde palpera poplitea (missade aneurysmet), for langsam."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Aldrig slut vid diagnos. Eskalera: postop reperfusion -> spand vad + smarta vid passiv strackning -> kompartmentsyndrom (matt tryck, fasciotomi). Sedan morkfargad urin -> rhabdomyolys -> hyperkalemi pa EKG.",
+        "escalations": [
+          "Benet ar reperfunderat men vaden ar spand och gor ont vid passiv strackning - vad nu?",
+          "Urinen ar morkrod, K 6,2, EKG med toppiga T-vagor - handlagg."
+        ]
+      }
+    },
+    {
+      "id": "karl_arm_stroke",
+      "subject": "Karlkirurgi",
+      "site": "Molndal/Ostra",
+      "yield": "HIGH",
+      "mode": "docka",
+      "role": "Underlakare pa akutmottagningen",
+      "frame": "81-arig (alt 77) rokare, akut svaghet i arm sedan ca 2h.",
+      "facit": "TIA/stroke orsakad av carotisstenos - INTE ett ben-fall. Ring NEUROLOG/strokejour, ej karlkirurg.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Plotslig fokal neurologi -> tank cerebrovaskulart.",
+          "reveal": [
+            "Plotslig armsvaghet for ~2h sedan.",
+            "FAST: efterfraga tal/syn/ansikte/ben.",
+            "Roker 1,5 paket/dag, hypertoni, far statiner men tar dem ej. Ev tidigare bypass/Trombyl."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Forvaxla med perifer ischemi och ringa karlkirurg = fel mottagare."
+          ]
+        },
+        {
+          "type": "status",
+          "goal": "Neurologstatus + karlstatus - AUSKULTERA CAROTIS.",
+          "reveal": [
+            "Kraft/sensorik/reflexer. Auskultera carotis (blasljud!). Hjarta (FF?), lungor, buk (aorta). BT, pox, telemetri.",
+            "Motoriskt bortfall i armen. Diskreta carotisblasljud. Ej FF. Ben ua."
+          ],
+          "qa": [
+            {
+              "q": "Vem ringer du?",
+              "a": "Neurolog/strokejour - INTE karlkirurg primart."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "prover",
+          "goal": "Prover?",
+          "reveal": [
+            "Glukos (uteslut hypoglykemi). Hb, krea, elstatus, koag. EKG (FF?).",
+            "Glukos normalt, EKG sinus."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning pa akuten.",
+          "reveal": [
+            "Dra strokelarm.",
+            "Nativ CT-hjarna + CT-angio halskarl/hjarna.",
+            "Ring strokejour/neurolog.",
+            "Bedom trombolysfonster."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Ringa karlkirurgen forst = poangforlust. Karotiskirurgi kommer senare."
+          ]
+        },
+        {
+          "type": "utredning",
+          "goal": "Utredning + skyndsamhet.",
+          "reveal": [
+            "CT-hjarna nativ + CT-angio hals/hjarna med kontrast. Akut strokefonster (trombolys/trombektomi)."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Misstanke stroke/TIA, snabb rontgen pagar, inlaggning + utredning av halskarl.",
+            "Bemotande: lugn trygghet utan att skramma."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till neurolog/strokejour.",
+          "reveal": [
+            "S: 81-arig rokare, akut armsvaghet 2h.",
+            "B: Obehandlad hypertoni/hyperlipidemi, tar ej statiner.",
+            "A: Fokal pares, carotisblasljud, ej FF, glukos normalt.",
+            "R: Misstanke stroke/TIA pga carotisstenos. Drar strokelarm, begar CT-hjarna + CT-angio halskarl; neurolog for trombolys; karlkirurgi for stenosen senare."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Varfor inte karlkirurgen forst?",
+              "a": "Akut cerebral ischemi handlaggs av stroke/neuro. Karotis-endarterektomi/stentning sker sekundart for att forhindra recidiv."
+            },
+            {
+              "q": "Fynd pa CT-angio?",
+              "a": "Ischemi + signifikant carotisstenos."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: auskulterade carotis, drog strokelarm, ringde neurolog.",
+            "Vanliga fall: ringde karlkirurg, missade carotisblasljud."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Fortsatt: trombolys ges -> plotslig huvudvark + sjunkande medvetande -> misstanke blodning, akut CT. Eller senare recidiv-TIA -> tidpunkt for karotiskirurgi.",
+        "escalations": [
+          "Patienten fick trombolys och blir nu plotsligt mer somnolent med huvudvark - vad gor du?"
+        ]
+      }
+    },
+    {
+      "id": "anestesi_postop_abcde",
+      "subject": "Anestesi",
+      "site": "Molndal/Ostra",
+      "yield": "HIGH",
+      "mode": "docka+ssk",
+      "role": "Underlakare anestesi/IVA, kallas till UVA",
+      "frame": "60-70-arig man, ~40 min postop efter kolonkirurgi (mycket blod givet, CVK/EDA). Borjar fa svart att andas. Ssk ringer.",
+      "facit": "B-problem postop. Diffar: atelektas (vanligast), pneumothorax (CVK!), hemothorax, lungemboli, vatskeoverlast. Strukturerad ABCDE avgor.",
+      "phases": [
+        {
+          "type": "status",
+          "goal": "ABCDE i ordning, atgarda innan du gar vidare, REEVALUERA.",
+          "reveal": [
+            "A: fri luftvag?",
+            "B: AF, pox, auskultera + PERKUTERA, kanna over CVK (knaster=luft?).",
+            "C: BT, puls, pulsar, 2 grova infarter, blodgas.",
+            "D: pupiller, RLS, glukos. E: temp, hudkostym, logroll.",
+            "Fynd: pox 90 fallande, AF ~30, dampat basalt/apikalt. Perkussion dampat (vatska/atelektas) ELLER tympanistiskt (luft = pneumothorax via CVK). Blodgas lagt pO2/hogt laktat. D/E ua."
+          ],
+          "qa": [
+            {
+              "q": "Skilj atelektas/pneumothorax/hemothorax kliniskt?",
+              "a": "Atelektas: dampat, sjunkande pox, vanligast. Pneumothorax: tympanistiskt, ev knaster vid CVK. Hemothorax: dampat + cirkulationspaverkan."
+            },
+            {
+              "q": "Bekrafta pneumothorax utan att flytta instabil pat?",
+              "a": "Klinik + ev naldekompression; lungrtg endast om stabil."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Atgarda B fysiologiskt forst.",
+          "reveal": [
+            "15 L syrgas pa traumamask. Hoj huvudanda, PEP/CPAP vid atelektas.",
+            "Naldekompression vid overtryckspneumothorax / thoraxdran.",
+            "Ringer-bolus + grova infarter vid hypotoni.",
+            "Reevaluera A->B->C efter atgard."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Hoppa over ordningen / inte reevaluera = FAIL.",
+            "Behandla 'hemothorax' utan rimlighet (ovanligt efter kolonkirurgi)."
+          ]
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till bakjour - kort, koncis, bara det avvikande.",
+          "reveal": [
+            "S: 60-arig man, ~40 min postop hemikolektomi, akut respiratorisk svikt.",
+            "B: Stor blodning peroperativt, CVK, EDA.",
+            "A: B-problem: pox 90 fallande, AF 30, dampat/tympanistiskt apikalt. Misstanke atelektas vs pneumothorax (CVK).",
+            "R: Syrgas + hojd huvudanda + PEP. Vill bekrafta pneumothorax och ev naldekompression/dran. Begar narkosbedomning."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Differentialdiagnoser postop dyspne?",
+              "a": "Atelektas, pneumothorax, hemothorax, lungemboli, vatskeoverlast, blodning/hypovolemi, anafylaxi pa lakemedel."
+            },
+            {
+              "q": "Tre chocktyper att resonera kring?",
+              "a": "Obstruktiv (LE/pneumothorax), hypovolem (blodning), distributiv (sepsis/anafylaxi)."
+            },
+            {
+              "q": "Varfor blodgas?",
+              "a": "pO2, pCO2, laktat, BE - graderar svikt och vavnadshypoxi."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: strukturerad ABCDE med reevaluering, atgardade B fore C, rimliga diffar utan att fastna.",
+            "Vanliga fall: hoppade i ordningen, glomde perkutera/reevaluera."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Patienten sviktar i vagor - tvinga reevaluering. Eskalera till otillracklig effekt -> IVA-beslut, ev intubation (RSI), ev ny blodning -> tillbaka till C.",
+        "escalations": [
+          "Trots syrgas + dran ar pox 88% och AF 32 - nasta steg?",
+          "Patienten blir nu hypotensiv 80/45 igen - vad har du missat?"
+        ]
+      }
+    },
+    {
+      "id": "anestesi_trauma_blodning",
+      "subject": "Anestesi",
+      "site": "Molndal/Ostra",
+      "yield": "HIGH",
+      "mode": "docka+ssk",
+      "role": "Underlakare, traumalarm/ambulans",
+      "frame": "40-arig man skjuten i benet, kraftig blodning, medvetslos. (Alt 17-arig moped-trauma.) Pox 82%, BT 85/70, puls 150, 1 PVK.",
+      "facit": "Hemorragisk chock. Stoppa blodning (tourniquet), massiv transfusion 4:4:1, traneksamsyra, kalcium, undvik dodliga triaden.",
+      "phases": [
+        {
+          "type": "status",
+          "goal": "ABCDE - katastrofblodning far atgardas mellan A och B (<C>ABC).",
+          "reveal": [
+            "Stoppa yttre blodning: tourniquet/kompress (ev fore A vid katastrof).",
+            "A: rensa munhala, naskantarell vid snarkning.",
+            "B: 15 L syrgas traumamask, uteslut pneumo/hemothorax.",
+            "C: 2 grova PVK; gar ej -> intraossos (tuberositas tibiae/caput humeri); BAS-test, blodgrupp, blodgas.",
+            "D: RLS, pupiller. E: TEMP! varma patienten.",
+            "Fynd: kraftig benblodning, pox 82->stiger, BT lagt, puls hog, acidos pa blodgas, RLS 3-4 -> battre nar BT stiger."
+          ],
+          "qa": [
+            {
+              "q": "Var satter du intraossos nal?",
+              "a": "Tuberositas tibiae, caput humeri, distala femur."
+            },
+            {
+              "q": "Massiv transfusion - forhallande?",
+              "a": "Erytrocyter:plasma:trombocyter = 4:4:1."
+            },
+            {
+              "q": "Vilka lakemedel mer?",
+              "a": "Traneksamsyra (cyklokapron) 1g, fibrinogen, KALCIUM (vid massiv transfusion)."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Damage control - prioritera.",
+          "reveal": [
+            "Tourniquet/kompress.",
+            "4:4:1 (E:P:TPK).",
+            "Traneksamsyra 1g.",
+            "Kalcium.",
+            "Varma patienten, undvik acidos/koagulopati.",
+            "Bedom responder-status."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Stora mangder kristalloid ger utspadningskoagulopati.",
+            "Glomma temp/kalcium."
+          ]
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till anestesi bakjour.",
+          "reveal": [
+            "S: 40-arig man, skottskada ben, hemorragisk chock.",
+            "B: Medvetslos initialt, 1 PVK, ambulanskompress.",
+            "A: Tourniquet satt, intraossos infart, BT stiger efter 2 enheter, acidos, hypotermi.",
+            "R: Massiv transfusion 4:4:1 + traneksamsyra + kalcium pagar. Transient responder -> IVA vs akut OP."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Dodliga triaden?",
+              "a": "Acidos, hypotermi, koagulopati."
+            },
+            {
+              "q": "Responder/transient/non-responder?",
+              "a": "Responder -> CT/utredning. Transient -> IVA. Non-responder -> akut OP."
+            },
+            {
+              "q": "Varfor temp viktigt?",
+              "a": "Hypotermi forsamrar koagulation; del av triaden; viktigt infor OP."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: stoppade blodning tidigt, 4:4:1 + traneksamsyra + kalcium, tankte pa temp/triaden.",
+            "Vanliga fall: bara kristalloid, glomde kalcium/temp, strukturlost ABCDE."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: blodet svarar daligt -> non-responder -> akut OP. Pa op/IVA: koagulopati, hyperkalemi fran transfusion, hypokalcemi.",
+        "escalations": [
+          "Patienten ar non-responder trots 6 enheter - beslut?",
+          "Efter massiv transfusion: K 6,0 och pat kramper (hypokalcemi) - handlagg."
+        ]
+      }
+    },
+    {
+      "id": "anestesi_preop",
+      "subject": "Anestesi",
+      "site": "Molndal/Ostra",
+      "yield": "HIGH",
+      "mode": "skadespelare",
+      "role": "Underlakare anestesi, preop-mottagning",
+      "frame": "70-arig patient infor elektiv hoftprotes. BMI 40, BT 180/105, pox 94. Tidigare koloncancerop. Dagligt alkoholbruk, eliquis, vill bli sovd.",
+      "facit": "Ej optimerad for elektiv kirurgi: okontrollerad hypertoni, misstankt hjartsvikt/aortastenos, alkoholberoende (abstinens/kramprisk), antikoagulantia. Skjut upp + optimera.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Funktionsstatus, kardiopulmonellt, alkohol, lakemedel, allergi, tidigare anestesiproblem, reflux, tandstatus, oro/illamaende.",
+          "reveal": [
+            "Funktionsniva: andfadd efter ~1 trappa / 400 m.",
+            "Alkohol: dagligen, ej nykter dag pa 2 ar, kant abstinens.",
+            "Eliquis. Penicillinanafylaxi. Mycket illamaende + radsla for ryggstick (EDA) tidigare.",
+            "Efterfraga reflux, tandstatus, nackrorlighet (luftvag)."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Glomma alkoholanamnes (abstinens/krampberedskap).",
+            "Orealistiska forvantningar pa op-resultat - hantera."
+          ]
+        },
+        {
+          "type": "status",
+          "goal": "Luftvags- + kardiopulmonell bedomning.",
+          "reveal": [
+            "Mallampati, thyromentalt avstand, gapformaga, nackrorlighet, tandstatus.",
+            "Hjarta (blasljud=aortastenos?), lungor (rassel?), underben (odem), halsvenstas.",
+            "Fynd: Mallampati 2, normal luftvag. Systoliskt aortablasljud. Basala rassel, pitting odem, halsvenstas (dekompensation)."
+          ],
+          "qa": [
+            {
+              "q": "Anestesimetod + for/nackdelar?",
+              "a": "Spinal vid hoftkirurgi men instabil/aortastenos komplicerar; generell anestesi riskfylld vid svikt/overvikt."
+            },
+            {
+              "q": "Hur paverkar aortastenos?",
+              "a": "Fixerad cardiac output - daligt pa kraftiga BT-fall vid spinal/induktion."
+            },
+            {
+              "q": "Vilka LM kvar/ut?",
+              "a": "Betablock kvar; NOAK (eliquis) ut 2 dygn fore; ACE-hammare ut op-dagen; statin kvar."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "prover",
+          "goal": "Prover/undersokningar?",
+          "reveal": [
+            "EKG (>65 ar + ej frisk).",
+            "UCG (frageställning EF + klaffar).",
+            "Hb, elstatus, koag (infor spinal), BAS-test, blodgruppering."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning.",
+          "reveal": [
+            "Skjut upp operationen.",
+            "Medicinkonsult: optimera blodtryck.",
+            "UCG infor ev hjartsvikt/aortastenos.",
+            "Abstinensprofylax (bensodiazepin) om op nara.",
+            "Satt ut eliquis 2d fore EDA/spinal.",
+            "Premedicinering: paracetamol, betapred + ondansetron (illamaende), stesolid (oro/abstinens)."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Gora op direkt utan optimering = oacceptabel risk."
+          ]
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Operationen behover skjutas upp; vi maste kolla hjartat och fa ner blodtrycket.",
+            "Bekrafta att du forstar onskan om snabb op - forklara varfor optimering ger battre resultat.",
+            "Bemotande: empatiskt, hantera orealistiska forvantningar varsamt."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till bakjour (mer diskussion an formell SBAR i praktiken).",
+          "reveal": [
+            "S: 70-arig patient infor elektiv hoftprotes.",
+            "B: BMI 40, dagligt alkoholbruk, eliquis, penicillinanafylaxi, tidigare illamaende/EDA-radsla.",
+            "A: BT 180/105, systoliskt aortablasljud, basala rassel + odem (dekompensation).",
+            "R: Ej optimerad. Foreslar uppskjuten op, medicinkonsult for BT, UCG, abstinensberedskap, eliquis ut 2d fore. Spinal forstahandsval men aortastenos maste bedomas."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Vad behover du infor spinal?",
+              "a": "Koagulationsprover; NOAK utsatt."
+            },
+            {
+              "q": "Premedicinering?",
+              "a": "Paracetamol; betapred + ondansetron (illamaende); stesolid (abstinens/oro)."
+            },
+            {
+              "q": "Hur optimera battre?",
+              "a": "Fa ordning pa blodtryck och ev hjartsvikt fore op."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: fangade alkohol + dekompensation, skot upp op + optimering, korrekt LM-hantering.",
+            "Vanliga fall: missade alkohol, gick vidare med op, fel pa LM-utsattning."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: anta att op anda gors -> peroperativ hypotoni vid spinal pga aortastenos; eller postop alkoholabstinens/delirium; eller blodning pga eliquis ej utsatt.",
+        "escalations": [
+          "Op gjordes anda. Dag 2 postop ar pat konfusorisk, takykard, svettig, hallucinerar - vad ar detta och hur handlagger du?"
+        ]
+      }
+    },
+    {
+      "id": "kir_nedre_gi",
+      "subject": "Kirurgi",
+      "site": "Molndal",
+      "yield": "HIGH",
+      "mode": "skadespelare+papper",
+      "role": "Underlakare/jour pa akuten",
+      "frame": "90-arig man, hittad hemma i sang full med blod. Forandrade tarmvanor sista manaderna, nu blod i avforing, diffus oroskansla i magen, mycket trott. Tidigare ulcusop. Oregelbunden rytm.",
+      "facit": "Nedre GI-blodning hos skor patient. Mesenteriell ischemi MASTE uteslutas. Diffar: koloncancer, ulcus/ovre GI.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Blodningskaraktar, tarmvanor, B-symtom, lakemedel (antikoag), karlrisk.",
+          "reveal": [
+            "Forandrade tarmvanor sista manaderna, farskt/morkt blod nu i natt.",
+            "Buksmarta: diffus 'oroskansla', ej skarp.",
+            "Ulcusop for lange sedan, omeprazol + alvedon, ex-rokare med paketar.",
+            "Oregelbunden hjartrytm (embolikalla -> mesenteriell ischemi)."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "status",
+          "goal": "Vitalparametrar, bukstatus, PR, hjarta (FF, blasljud).",
+          "reveal": [
+            "VP: BT, puls, pox.",
+            "Bukpalpation (mjuk? smarta ur proportion?).",
+            "PR (blod/melena). Hjarta - oregelbunden, aortablasljud?",
+            "Fynd: trott, blek. Hyfsat BT. Oregelbunden rytm, systoliskt aortablasljud. Buk utan tydlig omhet. Blod i ampullen."
+          ],
+          "qa": [
+            {
+              "q": "Varfor maste mesenteriell ischemi uteslutas?",
+              "a": "Smarta ur proportion + FF/embolikalla + laktat; obehandlat -> tarmnekros, hog mortalitet."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "prover",
+          "goal": "Prover?",
+          "reveal": [
+            "Hb/blodstatus, laktat + blodgas, krea/elstatus/koag, CRP/LPK, BAS-test + blodgruppering.",
+            "Lagt Hb. Laktatstegring talar for ischemi."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning - stabilisera + utred.",
+          "reveal": [
+            "2 grova infarter + vatska, ev blod.",
+            "Blodprover + BAS-test.",
+            "CT-buk med kontrast (angio-fas) for mesenteriell ischemi.",
+            "Inlaggning. Kontakta kirurgbakjour."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Bara fokusera pa cancer och missa ischemin.",
+            "Glomma laktat."
+          ]
+        },
+        {
+          "type": "utredning",
+          "goal": "Utredning + skyndsamhet.",
+          "reveal": [
+            "CT-buk med kontrast (CT-angio mesenterialkarl) - akut vid ischemimisstanke. Koloskopi + PAD nar stabil."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera (skor patient + anhoriga).",
+          "reveal": [
+            "Blodning fran tarmen, behover utredas akut med rontgen, inlaggning.",
+            "Bemotande: lugn, tydlig."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till bakjour.",
+          "reveal": [
+            "S: 90-arig man, nedre GI-blodning, paverkad.",
+            "B: Tidigare ulcusop, oregelbunden rytm, ex-rokare.",
+            "A: Blek, oregelbunden rytm, aortablasljud, blod PR, ev laktatstegring.",
+            "R: Vill utesluta mesenteriell ischemi (FF + smarta) med akut CT-buk kontrast. Stabiliserar med vatska + blod, lagger in. Diffar koloncancer, ulcus."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Diffar nedre GI-blodning?",
+              "a": "Mesenteriell ischemi, koloncancer, divertikelblodning, angiodysplasi, ulcus (ovre)."
+            },
+            {
+              "q": "Vad styr ischemimisstanken?",
+              "a": "FF/embolikalla, smarta ur proportion, laktat/acidos."
+            },
+            {
+              "q": "Atgard mesenteriell ischemi?",
+              "a": "CT-angio; revaskularisering/tarmresektion akut."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: uteslot mesenteriell ischemi aktivt, CT kontrast + laktat, stabiliserade forst.",
+            "Vanliga fall: bara cancerspar, glomde laktat/BAS-test."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: CT visar mesenteriell ischemi -> akut karl/tarm-atgard; eller fortsatt blodning -> instabilitet -> massiv transfusion.",
+        "escalations": [
+          "CT visar ocklusion a. mesenterica superior med tarmpaverkan - vad nu?"
+        ]
+      }
+    },
+    {
+      "id": "kir_ileus",
+      "subject": "Kirurgi",
+      "site": "Molndal/Ostra",
+      "yield": "HIGH",
+      "mode": "skadespelare+papper",
+      "role": "Underlakare pa akuten",
+      "frame": "78-arig man, forstoppning en vecka, laxantia utan effekt, nu 2 dygn totalt stopp + buksmarta. (Alt: kvinna post-gastric bypass med buksmarta+krakning -> inre herniering.)",
+      "facit": "Ileus. Aldre + andrade tarmvanor + blod -> kolorektalcancer (kolonileus). Post-bypass -> inre herniering. Diffar: tunntarmsileus, fekalom, paralytisk ileus.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Tarmvanor, gas/avforing, blod, B-symtom, tidigare op, SOCRATES.",
+          "reveal": [
+            "2 dygn inget alls, andrade vanor sista manaderna.",
+            "Lite farskt rott blod; ev viktnedgang.",
+            "Tidigare bukop: (cancer-fall) nej; (bypass-fall) gastric bypass.",
+            "Smarta molande/intervall, central; krakning vid hogt stopp."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "status",
+          "goal": "Bukstatus (uppspand, tarmljud, omhet, brack), PR, VP.",
+          "reveal": [
+            "Inspektion uppspand buk, auskultation tarmljud, palpation omhet/resistens, ljumskar (brack!), PR, VP.",
+            "Fynd: tympanistisk uppspand buk, omhet centralt, tarmljud. PR tom ampull. Inget ljumskbrack."
+          ],
+          "qa": [
+            {
+              "q": "Typer av ileus?",
+              "a": "Mekanisk (tunntarm/tjocktarm) vs paralytisk; partiell vs total."
+            },
+            {
+              "q": "Vad gor man vid kolonileus?",
+              "a": "Loser sig ej sjalv - maste atgardas (avlasta/op)."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "prover",
+          "goal": "Prover?",
+          "reveal": [
+            "Hb/blodstatus, CRP/LPK, elstatus/krea/glukos, LAKTAT (strangulation/ischemi).",
+            "Latt lagt Hb (anemi -> cancermisstanke)."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning.",
+          "reveal": [
+            "Inlaggning.",
+            "V-sond (avlasta).",
+            "Vatska + elektrolytkorrektion.",
+            "Smartlindra.",
+            "CT-buk med kontrast (niva + orsak, utesluta tumor).",
+            "Fasta + urinmatning."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Skicka hem efter 2 dygns totalt stopp.",
+            "Glomma fasta infor op."
+          ]
+        },
+        {
+          "type": "utredning",
+          "goal": "Utredning + skyndsamhet.",
+          "reveal": [
+            "CT-buk (med kontrast). Koloskopi + PAD vid tumor. SVF kolorektalcancer vid tumorfynd."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Stopp i tarmen, inlaggning + rontgen, kan behova kirurgi beroende pa orsak."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till bakjour (R i fokus).",
+          "reveal": [
+            "S: 78-arig man, 2 dygns totalt avforingsstopp + buksmarta.",
+            "B: Andrade tarmvanor manader, lite blod, hypertoni/diabetes.",
+            "A: Uppspand tympanistisk buk, central omhet, tom ampull, latt anemi.",
+            "R: Misstankt kolonileus, troligen kolorektalcancer. Lagger in, V-sond, vatska, smartlindring, akut CT-buk kontrast; SVF vid tumor."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "CT bos vs kontrast?",
+              "a": "CT bos for stenniva; kontrast for att utesluta tumor/annan orsak."
+            },
+            {
+              "q": "Behandling olika ileus?",
+              "a": "Tunntarm ofta konservativt (V-sond/vatska); kolonileus maste atgardas; fekalom -> laxering inneliggande."
+            },
+            {
+              "q": "Inre herniering - hur uppkommer slits?",
+              "a": "Tunntarm slipper genom mesenteriell slits efter Roux-en-Y bypass."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: korrekt ileus-handlaggning (V-sond/vatska/CT), tankte cancer hos aldre, la in - skickade ej hem.",
+            "Vanliga fall: skickade hem, glomde fasta/CT-typ."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: CT visar strangulation/ischemi -> akut op; eller komplett kolonileus med hotande perforation (cekum >9-12 cm) -> akut op.",
+        "escalations": [
+          "CT visar dilaterat cekum 11 cm och fri vatska - vad nu?"
+        ]
+      }
+    },
+    {
+      "id": "kir_kolangit",
+      "subject": "Kirurgi",
+      "site": "Ostra",
+      "yield": "HIGH",
+      "mode": "skadespelare+papper",
+      "role": "Underlakare pa akuten",
+      "frame": "Kvinna med buksmarta sedan en vecka, borjade efter stor maltid, nu feber. Smarta under hoger arcus/epigastriet. Mork urin, ljus avforing. Tidigare liknande smarta efter maltider.",
+      "facit": "Kolangit/kolecystit med gallstas. Charcots triad: feber + ikterus + hogersidig buksmarta.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Gallsmarta, feber, ikterus-tecken (urin/avforing), tidigare attacker.",
+          "reveal": [
+            "Postprandial smarta under hoger arcus, tidigare liknande.",
+            "Feber tillkommit.",
+            "Mork urin, ljus avforing (gallstas).",
+            "Hypertoni + blodfettsankande, inga B-symtom."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "status",
+          "goal": "Bukstatus (Murphy), VP, ikterus, hjarta/lungor.",
+          "reveal": [
+            "Bukpalpation hoger arcus (Murphys tecken), VP, inspektion ikterus (sklera).",
+            "Fynd: palpomhet hoger arcus. BT 90/60, temp 38,9 (septisk paverkan). Ej tydligt ikterisk."
+          ],
+          "qa": [
+            {
+              "q": "Charcots triad?",
+              "a": "Feber + ikterus + hoger ovre buksmarta. Reynolds pentad = + hypotoni + konfusion."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "prover",
+          "goal": "Prover?",
+          "reveal": [
+            "Bilirubin, ALP, ASAT/ALAT; pankreasamylas; Hb/CRP/LPK; elstatus; blododling.",
+            "Bilirubin + ALP stegrade, transaminaser latt stegrade, LPK + CRP hoga. Stasbild."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning - sepsis + avlastning.",
+          "reveal": [
+            "Vatska, syrgas.",
+            "Blododling + brett antibiotika.",
+            "Smartlindra.",
+            "Inlaggning.",
+            "ULJ buk + MRCP.",
+            "ERCP for avlastning vid kolangit.",
+            "Laparoskopisk kolecystektomi (senare)."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Glomma odling fore antibiotika; missa avlastningsbehovet."
+          ]
+        },
+        {
+          "type": "utredning",
+          "goal": "Utredning + skyndsamhet.",
+          "reveal": [
+            "ULJ buk, MRCP (diagnostik), ERCP (terapeutisk avlastning). Akut vid septisk kolangit."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Infektion i gallvagarna, antibiotika + ev avlastning, inlaggning, senare gallstensop."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till bakjour.",
+          "reveal": [
+            "S: Kvinna med Charcots triad, septiskt paverkad.",
+            "B: Tidigare postprandiala smartor, gallstensmisstanke.",
+            "A: Hoger arcus-omhet, temp 38,9, BT 90/60, stasprover, hog LPK/CRP.",
+            "R: Kolangit. Vatska + odling + antibiotika. Begar ULJ/MRCP + akut ERCP for avlastning; laparoskopisk kolecystektomi senare."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "MRCP vs ERCP?",
+              "a": "MRCP diagnostiskt (icke-invasivt); ERCP terapeutiskt (avlastar, tar sten)."
+            },
+            {
+              "q": "Orsaker till stas?",
+              "a": "Konkrement (vanligast), malignitet, striktur."
+            },
+            {
+              "q": "Kolangit vs kolecystit?",
+              "a": "Kolangit: gallgangarna (stas + feber + ikterus). Kolecystit: inflammation i gallblasan."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: kande igen Charcots triad, odling + antibiotika + avlastning, ratt bilddiagnostik.",
+            "Vanliga fall: missade septisk allvarlighet, glomde avlastning/ERCP."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: trots antibiotika kvarstar sepsis -> akut ERCP; om ej tillgang -> perkutan drant (PTC). Sedan postop gallstensop-komplikationer.",
+        "escalations": [
+          "Patienten blir konfusorisk och hypotensiv trots antibiotika (Reynolds pentad) - nasta steg?"
+        ]
+      }
+    },
+    {
+      "id": "kir_inklamt_brack",
+      "subject": "Kirurgi",
+      "site": "Ostra",
+      "yield": "HIGH",
+      "mode": "skadespelare+papper",
+      "role": "Underlakare pa akuten",
+      "frame": "45-arig byggnadsarbetare, kant ljumskbrack + fundoplikatio for 2 ar sedan. Buksmarta, mest vanster ljumske. Illamaende, ej krakts, ej tomt tarmen idag.",
+      "facit": "Inklamt ljumskbrack (inguinalt) med begynnande ileus. Forsok reponera pa akuten, annars akut op.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Bracksymtom, reponerbarhet, ileussymtom, tidigare op.",
+          "reveal": [
+            "Vanster ljumske, kant brack tidigare.",
+            "Illamaende, ej krakts, ej tomt tarm idag.",
+            "Tidigare op: ljumskbrack + fundoplikatio (svarare att krakas)."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "status",
+          "goal": "Bukstatus + ljumske, PR.",
+          "reveal": [
+            "Inspektion/palpation ljumske (omt, irreponibelt?), bukstatus (uppspand?), PR.",
+            "Fynd: adipos uppspand buk, omt irreponibelt brack vanster ljumske, PR tom ampull."
+          ],
+          "qa": [
+            {
+              "q": "Troligaste brack?",
+              "a": "Inguinalt (indirekt/direkt)."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning - reponera pa akuten!",
+          "reveal": [
+            "Smartlindra (iv/im, EJ per os).",
+            "V-sond.",
+            "Vatska.",
+            "FORSOK reponera bracket pa akuten.",
+            "Op om ej reponibelt eller ischemitecken."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Glomma reponeringsforsoket pa akuten.",
+            "Per os smartlindring vid ileusmisstanke."
+          ]
+        },
+        {
+          "type": "utredning",
+          "goal": "Utredning + skyndsamhet.",
+          "reveal": [
+            "Klinik styr; CT vid oklarhet. Akut op vid inklamning/ischemi."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Brack som klamts, forsoker trycka tillbaka annars operation.",
+            "Efter op: blodning/infektion/recidiv-risk, undvik tunga lyft."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till bakjour.",
+          "reveal": [
+            "S: 45-arig man, smartande irreponibelt ljumskbrack + ileussymtom.",
+            "B: Kant ljumskbrack, fundoplikatio.",
+            "A: Uppspand buk, omt irreponibelt brack vanster, tom ampull.",
+            "R: Inklamt ljumskbrack. Smartlindring + V-sond + reponeringsforsok pa akuten; akut op om ej reponibelt/ischemi."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Op-metoder?",
+              "a": "TEP, TAPP, oppen framre."
+            },
+            {
+              "q": "Information efter op?",
+              "a": "Blodning, infektion, recidiv, undvik tunga lyft."
+            },
+            {
+              "q": "Fundoplikatios relevans?",
+              "a": "Svarare att krakas -> kan dolja/forandra ileusbild."
+            },
+            {
+              "q": "Sjukskrivning?",
+              "a": "~6 veckor (tungt arbete)."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: reponeringsforsok pa akuten, ratt smartlindringsvag, akut op vid ischemi.",
+            "Vanliga fall: glomde reponera, per os analgetika."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: reponering misslyckas eller tarmen ser ischemisk ut peroperativt -> tarmresektion; eller postop ileus/recidiv.",
+        "escalations": [
+          "Reponering misslyckas och tarmen i bracksacken ar morkfargad - vad gor du?"
+        ]
+      }
+    },
+    {
+      "id": "kir_ovre_gi_iva",
+      "subject": "Kirurgi",
+      "site": "Ostra",
+      "yield": "HIGH",
+      "mode": "anhorig+lakare",
+      "role": "Lakare pa IVA",
+      "frame": "90-arig multisjuk man, hittad hemma med blodig krakning + melena. Stroke, dubbel hoftprotes, Eliquis for FF. Forvirrad. Far sjatte pasen blod. Hb ~70, BT 80/60, puls 110.",
+      "facit": "Ovre GI-blodning (ulcus/esofagusvaricer) hos skor antikoagulerad patient. Reversera, stabilisera, akut gastroskopi.",
+      "phases": [
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning - reversera, stoppa blodning, akut skopi.",
+          "reveal": [
+            "Satt ut Eliquis.",
+            "PPI iv + traneksamsyra (blodande magsar).",
+            "Terlipressin vid esofagusvaricer.",
+            "Akut gastroskopi (diagnos + atgard).",
+            "Massiv blodning: lagg till PLASMA + TROMBOCYTER (ej bara erytrocyter)."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Bara erytrocyter vid massiv blodning - lagg till plasma/TPK.",
+            "Glomma reversering."
+          ]
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Anhorigsamtal (orolig dotter).",
+          "reveal": [
+            "Allvarlig magblodning, vad vi gor, arlig prognos hos skor patient.",
+            "Bemotande: lugnt, empatiskt med orolig anhorig fran annan stad."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till bakjour - mycket fokus pa R.",
+          "reveal": [
+            "S: 90-arig man, massiv ovre GI-blodning.",
+            "B: Stroke, dubbelhoftprotes, Eliquis-FF, multisjuk.",
+            "A: Hb 70, BT 80/60, puls 110, forvirrad, far sjatte blodpasen.",
+            "R: Reverserar Eliquis, PPI + traneksamsyra + ev terlipressin, AKUT gastroskopi. Massiv blodning -> lagg till plasma + TPK. Diskutera vardniva/palliation hos skor pat."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Antidot Eliquis?",
+              "a": "Ingen specifik som for warfarin; protrombinkomplexkoncentrat (Ocplex) kan anvandas i praktiken."
+            },
+            {
+              "q": "Utsattning antikoag vid tidigare stroke?",
+              "a": "Avvag blodning vs tromboemboli - akut blodning prioriteras, reversera tillfalligt."
+            },
+            {
+              "q": "Gastroskopi - sedering?",
+              "a": "Bedom luftvag/aspirationsrisk; ev sovning vid instabil/blodig."
+            },
+            {
+              "q": "Om blodning ej stoppas?",
+              "a": "Angiografisk embolisering; sedan ev kirurgi; annars palliativ vard."
+            },
+            {
+              "q": "Erytrocyter ensamt eller +plasma/TPK?",
+              "a": "Vid massiv blodning ge balanserat (plasma + TPK)."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: reverserade antikoag, balanserad transfusion, akut gastroskopi + plan vid svikt, bra anhorigsamtal.",
+            "Vanliga fall: bara erytrocyter, glomde reversering, daligt anhorigbemotande."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: gastroskopi + embolisering misslyckas -> diskutera vardniva/palliation hos skor multisjuk patient (symtomlindring, anhorigsamtal).",
+        "escalations": [
+          "Gastroskopi och embolisering stoppar inte blodningen hos denna 90-aring - hur tanker du nu?"
+        ]
+      }
+    },
+    {
+      "id": "kir_aortadissektion",
+      "subject": "Kirurgi",
+      "site": "Ostra",
+      "yield": "HIGH",
+      "mode": "docka+papper",
+      "role": "BT-lakare pa akuten",
+      "frame": "Patient med svar buksmarta, konstant, stralande mot vanster ben + rygg, aven brostsmarta. BT >200 systoliskt. Plotslig debut.",
+      "facit": "Aortadissektion (typ B) med malperfusion (ocklusion a. mesenterica superior, iliaca communis-paverkan). Konstant + plotslig + hypertoni = karlkatastrof.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "OPQRST/SAMPLE smartanamnes, plotslighet, utstralning, karlrisk.",
+          "reveal": [
+            "Plotslig, konstant smarta mot rygg + vanster ben + brost.",
+            "Hypertoni; efterfraga kand buk-/aortasjukdom (missades i fallet!).",
+            "VAS 8."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Glom inte fraga om kand buk-/aortasjukdom.",
+            "Distalstatus med doppler pa det smartande benet (malperfusion)."
+          ]
+        },
+        {
+          "type": "status",
+          "goal": "Fullt bukstatus + VP + perifer cirkulation (sidoskillnad!).",
+          "reveal": [
+            "VP: BT BILATERALT (sidoskillnad), puls, pox.",
+            "Bukpalpation (pulserande resistens?), PR, distalstatus/pulsar i benen + doppler.",
+            "Fynd: BT >200 syst. Generell bukomhet UTAN muskelforsvar (ej peritonit). Illa-perfunderat vanster ben (missades). Ingen palpabel pulserande resistens."
+          ],
+          "qa": [
+            {
+              "q": "Varfor inte generell peritonit?",
+              "a": "Inget muskelforsvar trots utbredd omhet - tank karl/ischemi, ej peritonit."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "prover",
+          "goal": "Prover?",
+          "reveal": [
+            "Hb/blodgas/laktat, elstatus/amylas/lipas/leverstatus, CRP/LPK, koag, BAS-test.",
+            "LPK 18, ovrigt normalt - normala prover utesluter inte karlkatastrof."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning.",
+          "reveal": [
+            "IV analgesi.",
+            "Kontrollerad BT-sankning (forhindra propagering/ruptur).",
+            "Akut CT-buk/thorax med kontrast (angio).",
+            "Distalstatus benen.",
+            "Kontakta kirurg + karl."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Lamna BT >200 (okar rupturrisk).",
+            "Ignorera det ischemiska benet."
+          ]
+        },
+        {
+          "type": "utredning",
+          "goal": "Utredning + skyndsamhet.",
+          "reveal": [
+            "CT-angio thorax/buk - URAKUT."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Allvarlig karlskada i stora kroppspulsadern, akut rontgen + ev operation.",
+            "Bemotande: lugn trots tidspress."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till bakjour.",
+          "reveal": [
+            "S: Patient med plotslig konstant buk-/ryggsmarta + ischemiskt ben, BT >200.",
+            "B: Hypertoni.",
+            "A: Generell omhet utan muskelforsvar, BT-sidoskillnad, malperfunderat ben, LPK 18.",
+            "R: Misstanke aortadissektion med malperfusion. Smartlindrar, sanker BT kontrollerat, begar urakut CT-angio; kontaktar kirurg + karl."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Typ A vs B?",
+              "a": "Typ A: aorta ascendens (kirurgi). Typ B: distalt om a. subclavia (ofta medicinsk/endovaskular)."
+            },
+            {
+              "q": "Varfor sanka BT?",
+              "a": "Hogt tryck okar dissektionspropagering/rupturrisk."
+            },
+            {
+              "q": "Atgard vid mesenteriell malperfusion?",
+              "a": "Tarmresektion + karlatgard."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: tankte karlkatastrof trots normala prover, sankte BT, glomde ej benets perfusion.",
+            "Vanliga fall: kallade omheten peritonit, lamnade BT hogt, ignorerade benet."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: CT visar typ B + SMA-ocklusion + iliacaskada -> oppen tarmresektion + karlatgard; eller dissektionen propagerar/rupturerar -> hemodynamisk kollaps.",
+        "escalations": [
+          "CT: typ B-dissektion, ockluderad SMA, tarmpaverkan - primar handlaggning?"
+        ]
+      }
+    },
+    {
+      "id": "ort_fotled",
+      "subject": "Ortopedi",
+      "site": "Molndal",
+      "yield": "HIGH",
+      "mode": "skadespelare",
+      "role": "Underlakare pa akuten",
+      "frame": "40-arig tidigare frisk man, spelade fotboll, vred fotleden (supinationsvald). Lindade direkt, kunde belasta. Tog av lindan, vaknade med smarta + svullnad.",
+      "facit": "Fotledsdistorsion -> ev fotledsfraktur (Weber). Ottawa-kriterierna styr rontgen. Weber A = stabil (ortos), Weber B/C eller medial paverkan = instabil.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Skademekanism (supination/pronation), belastning, tidigare distorsioner, SOCRATES.",
+          "reveal": [
+            "Supinationsvald, knak.",
+            "Kunde belasta direkt, nu svart.",
+            "Brukar stuka foten. Frisk i ovrigt."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "status",
+          "goal": "Komplett fotstatus - BORJA med distalstatus. Ottawa. Palpera BADA malleolerna + proximala fibula.",
+          "reveal": [
+            "Distalstatus FORST (cirkulation, sensorik, motorik).",
+            "Palpation laterala+mediala malleol, PROXIMALA FIBULA (Maisonneuve), bas metatarsale V, navikulare.",
+            "Bedom belastningsformaga (Ottawa). Undersok knat ovan.",
+            "Fynd: svullen fotled, palpomhet enligt fynd, distalstatus ua."
+          ],
+          "qa": [
+            {
+              "q": "Varfor undersoka mediala malleolen vid unimalleolar fraktur?",
+              "a": "Lig. deltoideum - medial paverkan kan gora en annars stabil fraktur instabil."
+            },
+            {
+              "q": "Viktiga ligament?",
+              "a": "FTA (ant talofibulart), FTP (post), CF (calcaneofibulart), deltoideum (medialt)."
+            },
+            {
+              "q": "Draglada vid frakturmisstanke?",
+              "a": "Gor INTE draglada/instabilitetstest akut vid frakturmisstanke."
+            },
+            {
+              "q": "Halseneruptur-tester?",
+              "a": "Thompson + Matles."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "utredning",
+          "goal": "Utredning + skyndsamhet.",
+          "reveal": [
+            "Rontgen fotled vid uppfyllt Ottawa. Diktera rontgenremiss. Akut rtg vid Ottawa-positiv."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning - klassificera (Weber), behandla efter stabilitet.",
+          "reveal": [
+            "Weber A (stabil): ortos + belastning efter formaga, ingen kontrollrontgen.",
+            "Weber B/C eller medial paverkan: instabil -> ortopedbedomning, ev op.",
+            "Felstalld: reponera -> gips -> kontrollrontgen."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Draglada vid frakturmisstanke = fel.",
+            "Missa Maisonneuve (proximala fibula)."
+          ]
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Stukning/ev stabil fraktur, ortos + belasta efter formaga, lakningstid ~1 manad, sjukintyg beroende pa yrke."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till erfaren kollega.",
+          "reveal": [
+            "S: 40-arig man, fotledsdistorsion efter supinationsvald.",
+            "B: Tidigare frisk, brukar stuka foten.",
+            "A: Svullen fotled, palpomhet, distalstatus ua, Ottawa-positiv.",
+            "R: Misstankt fotledsfraktur. Rontgen begard. Weber A -> ortos + belastning; instabilitet/medial paverkan -> ortopedbedomning."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Op-indikationer fotledsfraktur?",
+              "a": "Instabilitet, felstallning, ledengagemang, medial paverkan."
+            },
+            {
+              "q": "Senor i omradet?",
+              "a": "Halsenan, peroneussenorna (kan disloceras framom laterala malleolen)."
+            },
+            {
+              "q": "Lakningstid?",
+              "a": "~6 veckor for fraktur; distorsion kortare."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: borjade med distalstatus, tillampade Ottawa, avstod draglada, tankte Weber/medial paverkan.",
+            "Vanliga fall: glomde distalstatus, gjorde draglada vid frakturmisstanke, missade Maisonneuve."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: rontgen visar Weber B med medial vidgning -> instabil -> op-anmal; eller okande svullnad + smarta ur proportion -> kompartmentsyndrom.",
+        "escalations": [
+          "Rontgen visar Weber B-fraktur med vidgad medial ledspalt - vad innebar det och vad gor du?"
+        ]
+      }
+    },
+    {
+      "id": "ort_diskbrack",
+      "subject": "Ortopedi",
+      "site": "Molndal",
+      "yield": "HIGH",
+      "mode": "skadespelare",
+      "role": "BT-lakare pa akuten",
+      "frame": "43-53-arig man, lyfte/bar tungt, det small till i ryggen, nu sa ont att han ej kan resa sig, ringer ambulans. Tidigare ryggskott som gatt over.",
+      "facit": "Diskbrack med ischias (L5-S1). MASTE utesluta roda flaggor: cauda equina, medullakompression, cancer, fraktur/infektion.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "SOCRATES, utstralning, RODA FLAGGOR (ridbyxanestesi, urinretention/inkontinens, sfinktertonus, B-symtom, feber, trauma), rokning.",
+          "reveal": [
+            "Landrygg med utstralning till foten.",
+            "Roda flaggor: inga blas-/tarm-symtom, ingen ridbyxanestesi.",
+            "Feber/viktnedgang/cancer/trauma: nej.",
+            "Rokning: efterfraga - ger poang."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Glomma roda flaggor = farligt."
+          ]
+        },
+        {
+          "type": "status",
+          "goal": "Ryggstatus + neurologi nedre extremitet (L4/L5/S1), reflexer, SLR.",
+          "reveal": [
+            "Inspektion/rorlighet rygg.",
+            "Motorik: tastrack (S1), hallextension (L5), quadriceps (L4).",
+            "Sensorik dermatom. Reflexer (patellar L4, achilles S1). SLR (Lasegue). Sfinktertonus vid misstanke.",
+            "Fynd: nedsatt plantarflexion + nedsatt achillesreflex + nedsatt sensorik S1 + positiv SLR vanster. Inga cauda-tecken."
+          ],
+          "qa": [
+            {
+              "q": "Tre cauda-symtom?",
+              "a": "Ridbyxanestesi, urinretention, nedsatt sfinktertonus."
+            },
+            {
+              "q": "Nar akut MR?",
+              "a": "Cauda equina, medullakompression, cancermisstanke, neurologiskt bortfall."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning - utan roda flaggor: konservativt.",
+          "reveal": [
+            "Smartlindra: paracetamol + NSAID, ev gabapentin (nervsmarta).",
+            "Fysioterapi.",
+            "Hemgang utan roda flaggor.",
+            "Sok akut vid cauda-symtom.",
+            "MR vid utebliven forbattring efter ~1 manad."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Skicka pa akut MR utan indikation; eller missa roda flaggor."
+          ]
+        },
+        {
+          "type": "utredning",
+          "goal": "Utredning + skyndsamhet.",
+          "reveal": [
+            "Ingen akut bild utan roda flaggor. MR vid utebliven forbattring/roda flaggor. Akut MR endast vid roda flaggor."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Troligt diskbrack med nervpaverkan, god prognos (majoriteten battre inom veckor), smartlindring + fysio, sok akut vid blas-/tarm-symtom."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till overlakare.",
+          "reveal": [
+            "S: 43-arig man, akut landryggsmarta med ischias.",
+            "B: Tidigare ryggskott, tungt lyft.",
+            "A: Nedsatt S1 (plantarflexion/achillesreflex/sensorik), positiv SLR vanster, INGA cauda-tecken.",
+            "R: Diskbrack L5-S1. Konservativt: analgesi + fysio, hemgang. MR vid utebliven forbattring 1 man eller roda flaggor."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Akuta ryggtillstand att ej missa?",
+              "a": "Cauda equina, medullakompression (tumor), spondylodiskit, fraktur/trauma."
+            },
+            {
+              "q": "Prognos diskbrack?",
+              "a": "~90% battre inom veckor-manader; inflammationen lagger sig."
+            },
+            {
+              "q": "Behandling om ej battre efter 1 manad?",
+              "a": "MR; vid kvarstaende/progress -> ev operation."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: screenade roda flaggor, korrekt L4/L5/S1 + reflexer + SLR, konservativ plan + sakerhetsnat.",
+            "Vanliga fall: glomde roda flaggor, onodig akut MR."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: patienten aterkommer med ridbyxanestesi + urinretention -> cauda equina -> AKUT MR + ryggkirurg (op inom timmar).",
+        "escalations": [
+          "Patienten kommer tillbaka, kan nu inte kissa och ar domnad i grenen - vad ar detta och hur akut?"
+        ]
+      }
+    },
+    {
+      "id": "ort_kna",
+      "subject": "Ortopedi",
+      "site": "Molndal",
+      "yield": "MED",
+      "mode": "skadespelare",
+      "role": "Lakare pa ortopedmottagning / akuten",
+      "frame": "40-64-arig patient med knaproblem. (Artros:) elitidrottare, korsband/menisk-op 80-tal, belastningssmarta medialt. (Instabilitet:) vred knat for 2 man sen, kanns ostabilt.",
+      "facit": "Artros: gonartros -> konservativt (vikt, fysio, analgetika) fore protes. Instabilitet: ligament/menisk-skada (unhappy triad) -> MR.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Skademekanism/duration, tidigare skador, vad provats (fysio?), funktion, socialt.",
+          "reveal": [
+            "Artros: arig belastningssmarta. Instabilitet: vridvald, kanns ostabilt.",
+            "Artros: korsband+menisk-op 80-tal. Instabilitet: daligt undersokt pa akuten.",
+            "Provat fysio? Artros: kort tid. Instabilitet: nej.",
+            "Boende/yrke (sjukskrivning) - missas ofta."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "status",
+          "goal": "Komplett knastatus.",
+          "reveal": [
+            "Inspektion/gang, palpation ledspringa medialt/lateralt + patella, rorelseomfang.",
+            "Sidovackling (MCL/LCL), Lachman + framre/bakre draglada (ACL/PCL), McMurray/Apley (menisk), distalstatus.",
+            "Fynd artros: medial palpomhet, minskad ledspringa + osteofyter pa rtg, positiv McMurray. Instabilitet: smarta vid sidovackling (MCL), ev positiv Lachman."
+          ],
+          "qa": [
+            {
+              "q": "Unhappy triad?",
+              "a": "ACL + MCL + medial menisk."
+            },
+            {
+              "q": "Hur fixas ACL-skada?",
+              "a": "Rekonstruktion med autograft (hamstring/patellarsena) eller graft."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "utredning",
+          "goal": "Utredning.",
+          "reveal": [
+            "Artros: slatrontgen (ledspringa, osteofyter). Instabilitet: MR (ligament/menisk). Elektivt."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning.",
+          "reveal": [
+            "Artros: viktnedgang, fysioterapi, optimera analgetika; protes vid uttalad artros + dalig gangstracka; rokstopp infor ev op.",
+            "Instabilitet: MR, fysio, ev ligamentkirurgi.",
+            "Sjukskrivning efter behov (kontorsarbete -> kryckor istallet)."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Hoppa till protes utan fullgod konservativ behandling.",
+            "Slentrian-sjukskriva kontorsarbetare."
+          ]
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Trolig diagnos + plan, realistiska forvantningar, konservativt forst (artros)."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till erfaren kollega.",
+          "reveal": [
+            "S: 40-64-arig patient med knabesvar.",
+            "B: Artros: tidigare korsband/menisk-op. Instabilitet: nyligt vridvald.",
+            "A: Artros: medial artros pa rtg, McMurray+. Instabilitet: MCL-omhet/Lachman+.",
+            "R: Artros: konservativ trappa fore ev protes. Instabilitet: MR + fysio, ev kirurgi."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Protestyp vid bilateral menisk/artros?",
+              "a": "Total knaprotes."
+            },
+            {
+              "q": "Vad ser man pa MR?",
+              "a": "Ligament-/menisk-skador, brosk."
+            },
+            {
+              "q": "Sjukskrivning kontorsarbetare?",
+              "a": "Nej - kan ta sig till jobbet, ev kryckor."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: konservativt fore protes, komplett knastatus + ratt tester, MR vid instabilitet, klok sjukskrivning.",
+            "Vanliga fall: hoppade till op, glomde fraga socialt, onodig sjukskrivning."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera (artros): protes gors -> postop DVT/infektion/luxation; (instabilitet): MR visar unhappy triad -> kirurgiplanering + rehab.",
+        "escalations": [
+          "Knaprotes gjord, dag 3 svullet varmt rott kna + feber - vad misstanker du och hur handlagger du?"
+        ]
+      }
+    },
+    {
+      "id": "onk_medullakompression",
+      "subject": "Onkologi",
+      "site": "Molndal/Ostra",
+      "yield": "HIGH",
+      "mode": "skadespelare",
+      "role": "Jourlakare (kirurg/onkolog)",
+      "frame": "Patient med kand cancer (brostca-metastas / prostataca) + ryggsmarta dagar -> nu benssvaghet, kan knappt ga, ej kissat pa timmar, nedsatt sensorik. PSA 38 / multipla kotmetastaser.",
+      "facit": "Malign medullakompression - ONKOLOGISK AKUT. Hogdos kortison + akut MR helrygg + ryggjour/onkolog. Tidig behandling avgor neurologisk prognos.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Smartmonster, neurologi (kraft/sensorik), blas-/tarmfunktion, cancerbakgrund.",
+          "reveal": [
+            "Ryggsmarta dagar, thorakalt, tilltagande.",
+            "Kan knappt ga.",
+            "Ej kissat pa timmar; nedsatt sensorik medialt om laren / nedom naveln.",
+            "Kand cancer: brostca-metastas / spridd prostataca pa kastrationsbehandling."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "status",
+          "goal": "Neurologi: kraft, sensoriksniva, reflexer, Babinski, blasscan; hjarta/lungor/buk infor ev op.",
+          "reveal": [
+            "Kraft ben (kan ej lyfta), sensoriksniva, reflexer (hyperreflexi), Babinski, blasscan (urinretention), hjarta/lungor/buk.",
+            "Fynd: bensvaghet, sensoriksniva, hyperreflexi + positiv Babinski bilat (UMN), urinretention (1 L)."
+          ],
+          "qa": [
+            {
+              "q": "Vilka urinbesvar forvantas?",
+              "a": "Urinretention -> overflow."
+            },
+            {
+              "q": "Varfor nya besvar fran prostatacancern?",
+              "a": "Skelettmetastas med medullakompression."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning - kortison NU.",
+          "reveal": [
+            "Hogdos kortison (betametason/dexametason) OMEDELBART.",
+            "Akut MR HELRYGG.",
+            "KAD (urinretention).",
+            "Smartlindra.",
+            "Kontakta ryggjour + onkolog.",
+            "Akut stralning/dekompression."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Vanta med kortison till MR-svar.",
+            "Glomma KAD."
+          ]
+        },
+        {
+          "type": "utredning",
+          "goal": "Utredning + skyndsamhet.",
+          "reveal": [
+            "Akut MR helrygg. Utredning av primartumor om okand. URAKUT - timmar avgor gangformaga."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera + trosta patienten.",
+          "reveal": [
+            "Tumor trycker pa ryggmargen, akut behandling pagar - behover ej bli permanent.",
+            "Bemotande: trosta, sag att det inte nodvandigtvis blir bestaende, utstrala trygghet."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till ryggjour.",
+          "reveal": [
+            "S: Patient med kand cancer + akut para-/pares + urinretention.",
+            "B: Brostca-metastas / spridd prostataca.",
+            "A: Bensvaghet, sensoriksniva, hyperreflexi/Babinski, urinretention.",
+            "R: Malign medullakompression. Hogdos kortison givet, KAD satt, begar AKUT MR helrygg + ryggjour/onkolog for dekompression/stralning."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Hur vet vi var vi ska strala, vad gors innan?",
+              "a": "MR-kartlaggning + dosplanering (CT-dosplan)."
+            },
+            {
+              "q": "Akut stralbehandling - dos?",
+              "a": "Fraktionerad palliativ stralning mot kompressionsnivan."
+            },
+            {
+              "q": "Kurativ eller palliativ vid metastaserad sjukdom?",
+              "a": "Oftast palliativ; kan leva lange med god symtomkontroll."
+            },
+            {
+              "q": "Vem om ryggortoped ej vill operera?",
+              "a": "Onkolog for akut stralbehandling."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: kortison direkt, akut MR helrygg + KAD, trostande bemotande.",
+            "Vanliga fall: vantade med kortison, glomde KAD, underskattade akutgraden."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: MR visar kompression flera nivaer -> akut stralning vs dekompressiv kirurgi-beslut; eller progredierande pares trots behandling -> prognossamtal.",
+        "escalations": [
+          "MR visar metastaser i flera kotor med kompression - stralning eller kirurgi, hur resonerar du?"
+        ]
+      }
+    },
+    {
+      "id": "onk_behandling",
+      "subject": "Onkologi",
+      "site": "Ostra",
+      "yield": "MED",
+      "mode": "skadespelare",
+      "role": "Lakare pa onkologmottagning",
+      "frame": "(Brost:) kvinna efter sektorresektion, far PAD + behandlingsval. (Prostata:) hogrisk, neoadjuvant GnRH+antiandrogen infor stralning, adjuvant 2 ar. (Melanom:) kombinationsimmunterapi, nu los avforing 3 dagar.",
+      "facit": "Onkologiska principer: neoadjuvant (krymp fore lokalbehandling) vs adjuvant (efter, minska recidiv). Stralning: fraktionering + biverkningar. Immunterapi-kolit = immunrelaterad biverkan (kortison).",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "(Melanom) biverkningsanamnes; (brost/prostata) forklara behandling, fanga oro.",
+          "reveal": [
+            "(Melanom) los avforing + trotthet 3 dagar pa immunterapi - frekvens, blod, andra symtom.",
+            "(Brost/prostata) fragor om stralning, resor, biverkningar."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "status",
+          "goal": "(Melanom) fundera ut status att fraga om; VP.",
+          "reveal": [
+            "Buk, VP. (Brost) inspektera op-omrade/lgll vid behov.",
+            "VP/prover upplases - LPK/CRP, elstatus, ev avforingsprov."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning.",
+          "reveal": [
+            "Immunkolit: uteslut infektion, kortison, ev paus av immunterapi.",
+            "Brost: adjuvant beroende pa PAD (kirurgi +/- stralning +/- endokrin +/- cytostatika +/- anti-HER2).",
+            "Prostata: neoadjuvant hormon + stralning, adjuvant hormon."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Missa immunrelaterad biverkan (behandla som vanlig gastroenterit)."
+          ]
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Patientpedagogik.",
+          "reveal": [
+            "Hur stralning fungerar (lokal DNA-skada, fraktionerad, ej radioaktiv efterat).",
+            "Varfor uppdelat i fraktioner (frisk vavnad aterhamtar sig).",
+            "Biverkningar (lokala + hormonella). Resa under behandling - praktiskt."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR / konsultation.",
+          "reveal": [
+            "S: Onkologpatient (brost/prostata/melanom).",
+            "B: Aktuell tumor + pagaende behandling.",
+            "A: (Melanom) immunkolit-misstanke; (ovr) behandlingsfragor.",
+            "R: (Melanom) uteslut infektion + kortison. (Brost/prostata) forklara neo-/adjuvant upplagg."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Hur fungerar stralning?",
+              "a": "Joniserande stralning skadar tumor-DNA; fraktionering skonar frisk vavnad."
+            },
+            {
+              "q": "Neoadjuvant vs adjuvant?",
+              "a": "Neoadjuvant = fore (krymper); adjuvant = efter (minskar recidiv)."
+            },
+            {
+              "q": "Varfor immunterapi-biverkningar som kolit?",
+              "a": "Immunsystemet aktiveras brett -> autoimmun inflammation; behandlas med kortison."
+            },
+            {
+              "q": "Kurativ vs palliativ?",
+              "a": "Beror pa stadium - viktig forklaring till patienten."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: kunde stralprinciper + neo/adjuvant, kande igen immunkolit, tydlig patientinformation.",
+            "Vanliga fall: forvaxlade neo/adjuvant, missade immunbiverkan."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: (melanom) svar kolit trots kortison -> infliximab/inlaggning; (brost/prostata) recidiv/progress -> nasta behandlingslinje.",
+        "escalations": [
+          "Melanompatientens kolit svarar inte pa kortison efter 3 dagar - vad nu?"
+        ]
+      }
+    },
+    {
+      "id": "endo_tyreoideaknol",
+      "subject": "Endokrinkirurgi",
+      "site": "Molndal/Ostra",
+      "yield": "HIGH",
+      "mode": "skadespelare(endokrinkirurg)",
+      "role": "Underlakare hos endokrinkirurg",
+      "frame": "72-76-arig patient remitterad for knol i tyreoidea (tyreoideaprover ua), ev trycksymtom (svalj/andning).",
+      "facit": "Tyreoideaknol-utredning. Visa thyroideastatus + namn landmarken. ULJ + cytologi. TIRADS (radiologi) + Bethesda (cytologi). Op vid trycksymtom/malignitet/hypertyreos.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Knolanamnes for endokrinkirurg: duration/tillvaxt, trycksymtom, B-symtom, hereditet, stralning, op-onskan.",
+          "reveal": [
+            "Knol sedan en tid, ev tillvaxt.",
+            "Trycksymtom (svalj/andning/obehag).",
+            "Efterfraga stralning mot halsen, hereditet for tyreoideacancer.",
+            "Efterfraga lakemedel/allergi, socialt, op-onskan."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "status",
+          "goal": "DEMONSTRERA thyroideastatus + namnge landmarken (examineras hart!).",
+          "reveal": [
+            "Inspektion: asymmetri/svullnad; titta nar pat SVALJER vatten.",
+            "Palpation BAKIFRAN; landmarken: larynx, tyreoidea-/cricoidbrosk, isthmus, trachea. Fixera ena sidan, palpera andra; kanna rorelse vid sväljning.",
+            "Beskriv knol: lokalisation, storlek, konsistens, yta, rorlighet, omhet. Lymfkortlar: cervikalt (lateralt om SCM), supra-/infraclavikulart, submandibulart. Namn: BT, hjarta, lungor.",
+            "Fynd: knol i ena loben; lymfkortlar ua; ej hypertyreos kliniskt."
+          ],
+          "qa": [
+            {
+              "q": "Varfor be patienten svalja?",
+              "a": "Tyreoidea foljer larynx vid sväljning -> avgor om forandringen sitter pa tyreoidea."
+            },
+            {
+              "q": "Landmarken larynx?",
+              "a": "Tyreoideabrosk + cricoidbrosk tillhor larynx; isthmus nedanfor; tyreoidea kring trachea."
+            },
+            {
+              "q": "Tyreoideas lage?",
+              "a": "Kring trachea, nedanfor larynx."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "utredning",
+          "goal": "Utredning + skyndsamhet.",
+          "reveal": [
+            "ULJ med beredskap for cytologi. SVF-remiss (hog prioritet) med beredskap cytologi. CT hals/thorax UTAN kontrast vid intratorakal struma. SVF vid malignitetsmisstanke."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning - tolka TIRADS/Bethesda, bedom op-indikation.",
+          "reveal": [
+            "Forklara TIRADS (radiologisk risk) + Bethesda (cytologisk kategori).",
+            "Op-indikation: trycksymtom + onskan, malignitet/misstanke, hypertyreos.",
+            "Hemi- vs total tyreoidektomi."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Operera benign asymtomatisk knol utan indikation."
+          ]
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Knolutredning med ULJ + cellprov. Op endast vid trycksymtom/malignitet/hypertyreos.",
+            "Op-komplikationer: blodning (ANDNINGSHINDER!), recurrens-pares (heshet), hypokalcemi."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR - rapportera viktigaste fynd.",
+          "reveal": [
+            "S: 72-arig patient med tyreoideaknol + trycksymtom.",
+            "B: Tyreoideaprover ua.",
+            "A: Knol ena loben, ej avgransbar kaudalt (intratorakal?), lymfkortlar ua, ej hypertyreos.",
+            "R: ULJ + cytologi (SVF), CT hals/thorax utan kontrast vid intratorakal struma. Op vid trycksymtom/malignitet."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "TIRADS vs Bethesda?",
+              "a": "TIRADS = ULJ-baserad malignitetsrisk; Bethesda = cytologisk kategori. (Ex TIRADS III / Bethesda II = nodos kolloidstruma.)"
+            },
+            {
+              "q": "Op-metod + komplikationer?",
+              "a": "Hemi vs total tyreoidektomi; blodning (andningshinder), recurrens-skada, hypoparathyreoidism/hypokalcemi."
+            },
+            {
+              "q": "Akut postop halssvullnad - atgard?",
+              "a": "Oppna sutureringen direkt for att avlasta hematomet."
+            },
+            {
+              "q": "Intratorakal struma - op?",
+              "a": "Ev sternotomi."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: korrekt thyroideastatus + landmarken, ULJ + cytologi + SVF, op-indikationer + komplikationer.",
+            "Vanliga fall: osaker pa landmarken, glomde svalj-manovern/varfor, missade hematom-atgard."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: postop halsblodning -> snabbt vaxande svullnad + andningshinder -> oppna saret direkt pa sangkanten + larynxberedskap; eller postop hypokalcemi (stickningar/Chvostek).",
+        "escalations": [
+          "Nagra timmar efter tyreoidektomi sväller halsen snabbt och patienten far andningssvarigheter - vad gor du NU?"
+        ]
+      }
+    },
+    {
+      "id": "endo_phpt",
+      "subject": "Endokrinkirurgi",
+      "site": "Molndal",
+      "yield": "HIGH",
+      "mode": "skadespelare(endokrinkirurg)",
+      "role": "Underlakare hos endokrinkirurg",
+      "frame": "62-arig kvinna, 2 ar tilltagande orkeslos/trott. Hogt PTH, hogt Ca, normalt krea, lagt fosfat, thyroideastatus normalt.",
+      "facit": "Primar hyperparathyreoidism (hogt Ca + hogt PTH). 90% adenom, 10% hyperplasi. Op-indikation vid symtom/njursten/osteoporos.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Hyperkalcemisymtom: trotthet, polyuri/torst, njursten, skelettsmarta, psyk, obstipation.",
+          "reveal": [
+            "2 ars tilltagande orkesloshet/trotthet.",
+            "Efterfraga njursten, skelettbesvar (op-indikationer).",
+            "Efterfraga lakemedel (tiazid/litium)."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "status",
+          "goal": "Demonstrera thyroideastatus / halspalpation.",
+          "reveal": [
+            "Thyroideastatus (inspektion/palpation bakifran, svalj, lymfkortlar). Namn landmarken larynx/cricoid/tyreoideabrosk.",
+            "Fynd: halsstatus ua (paratyreoidea palperas normalt ej)."
+          ],
+          "qa": [
+            {
+              "q": "Cricoid/tyreoideabrosk - vad tillhor de?",
+              "a": "Larynx."
+            },
+            {
+              "q": "Tyreoidea i forhallande till larynx/trachea?",
+              "a": "Ligger kring trachea nedanfor larynx."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "prover",
+          "goal": "Prover?",
+          "reveal": [
+            "Ca (joniserat) + PTH, krea + fosfat, DXA (osteoporos), dygnsmangd Ca i urin.",
+            "Hogt Ca, hogt PTH, normalt krea, lagt fosfat -> primar HPT. Ev osteoporos pa DXA."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning.",
+          "reveal": [
+            "Op-indikation: njursten, osteoporos, uttalade symtom, hog Ca/ung.",
+            "Lokalisation infor op: sestamibiscint + ULJ.",
+            "Recidiv -> venkateterisering.",
+            "Medicinsk: cinacalcet (sanker PTH) om ej op-kandidat."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Missa op-indikationerna; forvaxla primar/sekundar."
+          ]
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Overaktiv biskoldkortel hojer kalk, operation botar oftast, utredning infor op."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR.",
+          "reveal": [
+            "S: 62-arig kvinna, 2 ars trotthet.",
+            "B: Hogt PTH + Ca, lagt fosfat, normalt krea.",
+            "A: Primar hyperparathyreoidism, uttalade symtom, ev osteoporos.",
+            "R: Op-kandidat. Lokalisera med sestamibiscint + ULJ; fokal vs explorativ paratyreoidektomi."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Primar vs sekundar/tertiar HPT?",
+              "a": "Primar: fel i paratyreoidea. Sekundar: kompensatoriskt vid njursvikt. Tertiar: autonomi efter langvarig sekundar."
+            },
+            {
+              "q": "Adenom vs hyperplasi?",
+              "a": "90% adenom (fokal paratyreoidektomi), 10% hyperplasi (explorativ)."
+            },
+            {
+              "q": "Medicinsk behandling?",
+              "a": "Cinacalcet sanker PTH/Ca om ej op."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: ratt diagnos (primar HPT), op-indikationer, lokalisationsutredning + adenom/hyperplasi.",
+            "Vanliga fall: forvaxlade primar/sekundar, missade op-indikationer."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: hyperkalcemisk kris (Ca mkt hogt, konfusion, dehydrering, arytmi) -> iv vatska + ev bisfosfonat/kalcitonin, akut. Eller postop hypokalcemi.",
+        "escalations": [
+          "Patienten kommer in konfusorisk och dehydrerad med Ca kraftigt forhojt - handlagg hyperkalcemisk kris."
+        ]
+      }
+    },
+    {
+      "id": "hand_flexorsenskada",
+      "subject": "Handkirurgi",
+      "site": "Molndal",
+      "yield": "HIGH",
+      "mode": "skadespelare(handkirurg, kan vara hetsig)",
+      "role": "Lakare pa VC/akuten",
+      "frame": "Patient (kock/snickare) skurit sig pa fingret/handleden (kniv/cykelkedja). Fingret 'kanns konstigt'. Blott mycket, avstannat. Ev domningar.",
+      "facit": "Senskada (FDP/FDS) +/- nervskada. Riktat handstatus FORE bedovning. Akut/subakut atgard. Nervskada: vaxer proximalt, dor distalt.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Snabb riktad: skademekanism, blodning, domning/svaghet, yrke, tidigare skador, tetanus.",
+          "reveal": [
+            "Kniv/cykelkedja, sneddande snitt.",
+            "Domningskansla, svart att boja.",
+            "Kock/snickare; ev tidigare skarskador; ev diabetesneuropati.",
+            "Efterfraga tetanus."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Lat dig inte stressas av en hetsig examinator - kor ditt eget race, var saklig."
+          ]
+        },
+        {
+          "type": "status",
+          "goal": "RIKTAT handstatus, distalstatus FORST, fore ev bedovning. Testa FDP/FDS + nerver korrekt.",
+          "reveal": [
+            "Distalstatus: kapillar aterfyllnad, farg, temp, radialis/ulnarispuls, Allen-test.",
+            "Sensorik: 2PD (OKA avstandet om 5-10 mm ej kanns - kan tala for partiell nervskada/battre prognos).",
+            "Motorik: FDP (boj DIP med PIP fixerad), FDS (boj PIP med ovriga fingrar strackta), extensorer. Specifika: FCR (handledsflexion radialt), tummens FPL. Jamfor med frisk hand.",
+            "Fynd: nedsatt tonus i drabbat finger; kan ej flektera FDP dig 2-4; nedsatt sensorik radialt; ev nedsatt FCR-kraft."
+          ],
+          "qa": [
+            {
+              "q": "Hur testar du FDP vs FDS?",
+              "a": "FDP: fixera PIP, be boja DIP. FDS: hall ovriga fingrar i extension, be boja PIP."
+            },
+            {
+              "q": "Handledsflexorn radialt?",
+              "a": "Flexor carpi radialis."
+            },
+            {
+              "q": "Tummens flexor?",
+              "a": "Flexor pollicis longus."
+            },
+            {
+              "q": "Hur vaxer en skadad nerv?",
+              "a": "Aterbyggs proximalt, dor distalt; ~1 mm/dygn."
+            },
+            {
+              "q": "Kollateralforsorjning?",
+              "a": "Vid bra kollateral behover ena karlet ej lagas."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning - prioritering.",
+          "reveal": [
+            "Identifiera sen-/nervskada.",
+            "Kontakta handkirurg.",
+            "Akut/subakut operativ exploration + reparation.",
+            "Tetanusprofylax vid behov."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Bedova fore distalstatus = fel ordning.",
+            "Forsoka suturera djup senskada pa VC."
+          ]
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Misstankt sen-/nervskada under huden, behover atgardas av handkirurg (relativt akut), realistisk funktionsprognos + rehabbehov.",
+            "Bemotande: lugn, saklig aven om examinator/patient ar svar. Var inkannande."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till handkirurg (R i fokus).",
+          "reveal": [
+            "S: Patient med skarsar + misstankt FDP-/nervskada.",
+            "B: Yrke kock/snickare, ev tidigare skarskador.",
+            "A: Kan ej flektera FDP dig 2-4, nedsatt sensorik radialt, ev nedsatt FCR.",
+            "R: Misstankt flexorsen- + nervskada. Akut/subakut handkirurgisk exploration + reparation; tetanusprofylax."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Hur bratt?",
+              "a": "Akut/subakut - bast funktion vid tidig reparation."
+            },
+            {
+              "q": "Funktionsprognos efter nervskada?",
+              "a": "Variabel; partiell skada (kanner storre 2PD) battre prognos."
+            },
+            {
+              "q": "Rehab efter flexorsenskada?",
+              "a": "Tidig kontrollerad mobilisering, langvarig (veckor-manader), arbetsater beroende pa yrke."
+            },
+            {
+              "q": "Andra orsaker till nervpaverkan?",
+              "a": "Diabetesneuropati, tidigare skarskador."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: distalstatus FORE bedovning, korrekt FDP/FDS-teknik, holl lugnet vid svar examinator, akut handkirurgkontakt.",
+            "Vanliga fall: bedovade fore status, fel FDP/FDS-teknik, lat sig stressas ur fattning."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: peroperativt visar sig flera senor + nerv avskurna -> reparationsstrategi + langre rehab; eller infektion i saret postop.",
+        "escalations": [
+          "Peroperativt ser man att bade FDP, FDS och en digitalnerv ar av - hur paverkar det plan och prognos?"
+        ]
+      }
+    },
+    {
+      "id": "hand_infektion",
+      "subject": "Handkirurgi",
+      "site": "Molndal",
+      "yield": "HIGH",
+      "mode": "skadespelare(handkirurg)",
+      "role": "Lakare pa VC/akuten",
+      "frame": "Patient biten av katt/hund eller stuckit sig, nu tilltagande svullnad/rodnad + smarta i finger. (Katt:) rodnad over PIP, CRP 38. (Korv:) jamnt svullet finger.",
+      "facit": "Djurbett/stick -> septisk artrit (led) ELLER septisk tendovaginit (senskida, Kanavels tecken). Spola pa op + iv antibiotika. Behover EJ vara allmanpaverkad.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Skademekanism (bett/stick), tidsforlopp, feber, rorlighet, tetanus, immunstatus.",
+          "reveal": [
+            "Katt-/hundbett eller stick igar/idag.",
+            "Tilltagande lokalt; ev ingen feber.",
+            "Kan ej boja fingret fullt; semiflekterat (tendovaginit).",
+            "Efterfraga tetanus, diabetes/immunsuppression."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "status",
+          "goal": "Riktat finger-/handstatus. Skilj led (artrit) fran senskida (tendovaginit, Kanavel).",
+          "reveal": [
+            "Inspektion rodnad/svullnad/varme; jamnt svullet 'korv' = senskida.",
+            "Palpation: omhet over LEDEN (artrit) vs langs FLEXORSENAN ut till handleden (tendovaginit).",
+            "Kanavels fyra tecken: 1) semiflekterat finger 2) jamn svullnad 3) omhet langs senskidan 4) smarta vid passiv extension. Distalstatus.",
+            "Fynd artrit: ledomhet/svullnad, smarta vid rorelse, CRP 38, ev ej feber. Tendovaginit: jamnt svullet semiflekterat finger, omhet langs senskidan, smarta vid passiv extension."
+          ],
+          "qa": [
+            {
+              "q": "Maste man vara allmanpaverkad for septisk artrit?",
+              "a": "Nej."
+            },
+            {
+              "q": "Kanavels tecken?",
+              "a": "Semiflexion, jamn svullnad, omhet langs senskidan, smarta vid passiv extension."
+            },
+            {
+              "q": "Hur undersoker du vid tendovaginit?",
+              "a": "Palpera langs flexorsenorna anda ut till handleden."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "prover",
+          "goal": "Prover?",
+          "reveal": [
+            "CRP/LPK, temp, odling (helst pre-antibiotika/peroperativt).",
+            "CRP forhojt (t.ex. 38), ev normal temp."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning.",
+          "reveal": [
+            "Inlaggning.",
+            "Odling.",
+            "Spola leden/senskidan pa OPERATION.",
+            "IV antibiotika.",
+            "Immobilisering.",
+            "Ev ny spolning efter ~24h.",
+            "Rontgen vid frakturmisstanke."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Skicka hem; vanta pa allmanpaverkan; ge bara peroral antibiotika."
+          ]
+        },
+        {
+          "type": "utredning",
+          "goal": "Utredning + skyndsamhet.",
+          "reveal": [
+            "Klinik + CRP/odling. Subakut - spolning inom ~6h."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Infektion i led/senskida, behover spolas pa operation + antibiotika, inlaggning."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till handkirurg.",
+          "reveal": [
+            "S: Patient med djurbett/stick + infektionstecken i finger.",
+            "B: Bett/stick, ev tetanusstatus oklar.",
+            "A: (Artrit) ledomhet + CRP 38; (tendovaginit) Kanavels tecken positiva.",
+            "R: Misstankt septisk artrit/tendovaginit. Spolning pa op + odling + iv antibiotika + inlaggning, subakut (inom ~6h)."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Hur akut spolas leden?",
+              "a": "Subakut, inom ~6h."
+            },
+            {
+              "q": "Om hela fingret svullet (ej bara led)?",
+              "a": "Misstanke septisk tendovaginit."
+            },
+            {
+              "q": "Vad hander obehandlat?",
+              "a": "Spridning -> V-flegmone, sendestruktion, funktionsforlust."
+            },
+            {
+              "q": "Vanligaste agens + antibiotika?",
+              "a": "Hud/munflora (stafylokocker/streptokocker; vid kattbett Pasteurella) - tackande iv antibiotika."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: skilde led vs senskida (Kanavel), spolning + odling + iv antibiotika, forstod att allmanpaverkan ej kravs.",
+            "Vanliga fall: skickade hem, vantade pa feber, endast peroral antibiotika."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: trots spolning + antibiotika progress -> V-flegmone/spridning -> ny op; eller sendestruktion -> funktionsforlust + rehab.",
+        "escalations": [
+          "Trots spolning sprider sig svullnaden upp i handflatan - vad misstanker du och hur handlagger du?"
+        ]
+      }
+    },
+    {
+      "id": "plastik_sarskada",
+      "subject": "Plastikkirurgi",
+      "site": "Molndal/Ostra",
+      "yield": "HIGH",
+      "mode": "skadespelare+ssk",
+      "role": "Lakare pa akuten",
+      "frame": "Patient med sarskada pa under-/overarm (skog/buske/svamp). Lindade direkt. Uppgift: anamnes + sutura.",
+      "facit": "Sarskada: distalstatus FORE bedovning. Ordning: anamnes (inkl tetanus) -> distalstatus -> rengoring -> bedovning -> exploration/debridering -> sutur -> info.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Skademekanism, smutsigt sar?, nedsatt kansel/kraft, lakemedel, allergi, TETANUS, rokning, yrke.",
+          "reveal": [
+            "Fall i skog/buske; ev jord (tetanusrisk).",
+            "Efterfraga nedsatt kansel/kraft/rorlighet (utesluter djup skada).",
+            "TETANUSprofylax (senaste)? Ej fatt pa 30 ar -> ge.",
+            "Roker - paverkar lakning. Lakemedel/allergi/yrke."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Glomma tetanus."
+          ]
+        },
+        {
+          "type": "status",
+          "goal": "Distalstatus FORST (fore bedovning), sedan inspektera saret.",
+          "reveal": [
+            "Distalstatus: farg, temp, felstallning, tonus.",
+            "Pulsar radialis/ulnaris, kapillar aterfyllnad.",
+            "Motorik: fingerabduktion (ulnaris), palmarabduktion tumme (medianus), handledsextension (radialis), greppstyrka. Sensorik per nervomrade, jamfor andra handen.",
+            "Fynd: distalstatus ua. Saret ytligt med ev frammande kropp (traflisa)."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "RATT ORDNING: rengoring -> bedovning -> exploration/debridering -> sutur.",
+          "reveal": [
+            "Ren (ej nodvandigtvis steril) miljo, handskar.",
+            "Tvatta sarkanter med klorhexidin.",
+            "Lokalbedovning (Carbocain; med adrenalin OK pa armen, EJ pa fingrar/andartarer) - aspirera, stick vid sidan.",
+            "Explorera, ta bort frammande kropp, spola med NaCl, mekanisk rengoring.",
+            "Suturera (t.ex. 4-0 icke-resorberbar, enkla suturer).",
+            "Tetanusprofylax."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Bedova fore distalstatus = FAIL.",
+            "Adrenalin i fingrar/andartarer.",
+            "Glomma tetanus."
+          ]
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Suturer kvar ~10 dagar, borttagning pa VC. Sarkontroll 4-5 dagar (infektioner uppstar 3-5 dagar). Tetanusprofylax given. Sok vid infektionstecken.",
+            "Bemotande: forklara hela tiden vad du gor och varfor (examineras)."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till erfaren kollega.",
+          "reveal": [
+            "S: Patient med sarskada pa arm.",
+            "B: Skog/buske, tetanusstatus oklar/gammal.",
+            "A: Distalstatus ua, ytligt sar med frammande kropp avlagsnad.",
+            "R: Rengjort + suturerat. Tetanusprofylax given. Sarkontroll 4-5 dagar, suturer 10 dagar."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Bedovning med/utan adrenalin?",
+              "a": "Adrenalin OK pa arm (mindre blodning, langre effekt); UNDVIK pa fingrar/andartarer."
+            },
+            {
+              "q": "Nar uppstar sarinfektioner?",
+              "a": "Vanligen 3-5 dagar -> sarkontroll da."
+            },
+            {
+              "q": "Antibiotika?",
+              "a": "Behovs oftast ej vid rent sar; sok vid infektionstecken."
+            },
+            {
+              "q": "Sjukskrivning?",
+              "a": "Beror pa yrke."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: distalstatus FORE bedovning, fragade tetanus, ratt ordning + adrenalinsakerhet, forklarade vad/varfor.",
+            "Vanliga fall: bedovade fore status, glomde tetanus, adrenalin i finger."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: vid exploration uppdagas djupare struktur (sena/nerv) -> handkirurgkontakt; eller patienten aterkommer dag 4 med infekterat sar.",
+        "escalations": [
+          "Patienten aterkommer dag 4 med rott, varmt, varbildande sar och feber - hur handlagger du?"
+        ]
+      }
+    },
+    {
+      "id": "uro_njursten",
+      "subject": "Urologi",
+      "site": "Molndal/Ostra",
+      "yield": "HIGH",
+      "mode": "skadespelare+ssk",
+      "role": "Lakare pa akuten",
+      "frame": "38-arig kvinna, akut svar hogersidig flanksmarta, mycket smartpaverkad (skriker).",
+      "facit": "Njursten (uretarsten). Smartlindra FORST (diklofenak). Uteslut graviditet + avstangd pyelit (feber!). Sten-CT. OBS: drick MINDRE vatten medan stenen sitter.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Smartkaraktar (intervall, utstralning), feber, hematuri, graviditet, allergi - smartlindra forst!",
+          "reveal": [
+            "(Efter smartlindring) intervallartad flanksmarta, ev utstralning.",
+            "Feber/frossa? Efterfraga - avstangd pyelit ar farligt.",
+            "Senaste mens / graviditetsmojlighet? Bestall GRAV-TEST (latt att glomma!).",
+            "Lakemedelsallergi fore NSAID."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Glomma smartlindra fore anamnes/status.",
+            "Glomma graviditetstest.",
+            "Glomma vitalparametrar."
+          ]
+        },
+        {
+          "type": "status",
+          "goal": "Smartlindra forst (morfin 5mg / diklofenak), sedan hjarta/lunga/buk + dunkomhet flank + VP.",
+          "reveal": [
+            "Smartlindra direkt.",
+            "Bukstatus. Dunkomhet over flanken (njurloge). VP: BT, puls, pox, TEMP.",
+            "Fynd: mycket smartpaverkad; efter smartlindring lugnare. Positiv dunkomhet hoger flank. Ovrigt ua."
+          ],
+          "qa": [
+            {
+              "q": "Administreringssatt diklofenak?",
+              "a": "Supp (kraks ofta) eller im - snabbare effekt; ej per os vid illamaende."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "prover",
+          "goal": "Prover?",
+          "reveal": [
+            "Urinsticka (hematuri), GRAVIDITETSTEST, CRP/LPK (uteslut infektion), krea/elstatus.",
+            "Blod i urinsticka. Grav-test negativt. Inga infektionstecken (okomplicerad sten)."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning.",
+          "reveal": [
+            "Smartlindra (diklofenak supp/im + paracetamol).",
+            "Uteslut feber/avstangd pyelit (AKUT avlastning om infektion!).",
+            "Hem vid okomplicerat med recept + uppfoljning.",
+            "Sten-CT (uppfoljande, ~4 veckor)."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Missa avstangd pyelit (feber + obstruktion = akut avlastning).",
+            "Rad om att dricka MYCKET vatten medan stenen sitter (kan ge hydronefros/oka smarta) - drick MINDRE nu, mer efter avgang."
+          ]
+        },
+        {
+          "type": "utredning",
+          "goal": "Utredning + skyndsamhet.",
+          "reveal": [
+            "Sten-CT (uppfoljande ~4 veckor vid okomplicerat). Akut CT vid feber/infektionsmisstanke."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Troligen njursten, diklofenak supp hemma.",
+            "Drick MINDRE vatten medan stenen sitter, mer efter den avgatt.",
+            "Sok AKUT vid feber/krakning (avstangd pyelit)."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till overlakare (AT far ej skriva ut utan tillatelse).",
+          "reveal": [
+            "S: 38-arig kvinna, akut hoger flanksmarta.",
+            "B: Tidigare frisk.",
+            "A: Mycket smartpaverkad, positiv dunkomhet hoger flank, hematuri pa sticka, grav-test neg, ingen feber.",
+            "R: Misstankt njursten. Smartlindrad. Hem med diklofenak + uppfoljande sten-CT; ater akut vid feber (avstangd pyelit)."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Diffar hoger flanksmarta?",
+              "a": "Njursten, avstangd pyelit/pyelonefrit, appendicit, gallvagssjukdom, gynekologiskt (X-graviditet), aortaaneurysm."
+            },
+            {
+              "q": "Varfor diklofenak supp/im?",
+              "a": "Snabb effekt, kringgar krakning."
+            },
+            {
+              "q": "Vattenintag?",
+              "a": "MINDRE medan stenen sitter (undvik hydronefros/smarta); mer efter avgang (forhindra nya stenar)."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: smartlindrade forst, graviditetstest, uteslot avstangd pyelit, ratt vattenrad.",
+            "Vanliga fall: glomde grav-test/vitalparametrar, fel vattenrad (sa drick mer)."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: patienten aterkommer med feber + frossa + obstruktion -> AVSTANGD PYELIT -> akut avlastning (nefrostomi/JJ-stent) + antibiotika, urosepsisrisk.",
+        "escalations": [
+          "Patienten kommer tillbaka med 39,5 i feber och frossa, fortfarande flanksmarta - vad ar detta och hur akut?"
+        ]
+      }
+    },
+    {
+      "id": "uro_makrohematuri",
+      "subject": "Urologi",
+      "site": "Molndal",
+      "yield": "HIGH",
+      "mode": "skadespelare+ssk",
+      "role": "Lakare pa akuten",
+      "frame": "63-arig man, akut makrohematuri (morkrott med koagler, smartsamt att pressa ut urin). Rokare. Inga infektionstecken, ingen viktnedgang.",
+      "facit": "Akut makrohematuri med koagel/tamponad. Hematuri-KAD + SPOLNING. Rokare -> utred urotelial cancer. CT-urografi + cystoskopi.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Hematurikaraktar, koagler, smarta, infektion/viktnedgang, rokning, lakemedel (antikoag).",
+          "reveal": [
+            "Morkrott med koagler, smartsamt att pressa ut.",
+            "Inga infektionssymtom/feber/viktnedgang.",
+            "Rokare; efterfraga yrke (kemikalier), antikoagulantia."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "status",
+          "goal": "Bukstatus/blasa, VP.",
+          "reveal": [
+            "Bukpalpation (om over blasan?), hjarta/lungor, VP.",
+            "Fynd: lite om over fylld blasa. Ovrigt ua."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "prover",
+          "goal": "Prover?",
+          "reveal": [
+            "Hb/krea/elstatus, koagulation, urinsticka/odling (uteslut infektion).",
+            "Ev anemi vid stor blodning."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Handlaggning - KAD + SPOLA.",
+          "reveal": [
+            "Satt grov hematuri-KAD.",
+            "SPOLA (manuell + ev kontinuerlig spoldropp) - koagler kan tappa KAD.",
+            "Vatska, Hb-koll.",
+            "Inlaggning vid fortsatt blodning / op-anmalan.",
+            "Om ljusrott + avstannar -> hem i vantan pa utredning."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Glomma spola nar koagler fastnar.",
+            "Skicka hem vid pagaende kraftig blodning."
+          ]
+        },
+        {
+          "type": "utredning",
+          "goal": "Utredning + skyndsamhet.",
+          "reveal": [
+            "CT-urografi + cystoskopi. Utredning inom ~10 dagar (SVF vid malignitetsmisstanke)."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Blod i urinen utreds for att utesluta tumor, KAD + spolning nu, rontgen + titthal i blasan."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR till bakjour.",
+          "reveal": [
+            "S: 63-arig rokande man, akut makrohematuri med koagler.",
+            "B: Rokare, inga infektionstecken.",
+            "A: Koagelhematuri, fylld blasa, ev anemi.",
+            "R: Hematuri-KAD + spolning. Vid fortsatt blodning inlaggning. Utredning CT-urografi + cystoskopi inom ~10 dagar."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Orsaker till hematuri?",
+              "a": "Urotelial/blascancer, sten, infektion, BPH, njurcancer, trauma, antikoagulantia."
+            },
+            {
+              "q": "Hur skyndsam utredning?",
+              "a": "Inom ~10 dagar; SVF vid malignitetsmisstanke."
+            },
+            {
+              "q": "Vad om fortsatt blodning?",
+              "a": "Inlaggning, fortsatt spolning, ev op."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: KAD + spolning, cancerutredning (CT-urografi + cystoskopi), ratt hemgangskriterier.",
+            "Vanliga fall: glomde spola, skickade hem vid pagaende blodning, missade cancerutredning."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: trots spolning kvarstaende koageltamponad -> op (cystoskopi/koagelevakuering); eller stor blodning -> transfusion.",
+        "escalations": [
+          "Trots spolning fastnar koagler och blasan tamponeras igen - nasta steg?"
+        ]
+      }
+    },
+    {
+      "id": "rad_trauma_ct",
+      "subject": "Radiologi",
+      "site": "Molndal",
+      "yield": "HIGH",
+      "mode": "bildgranskning",
+      "role": "Underlakare som granskar trauma-CT (5 min) + svarar pa riktade fragor",
+      "frame": "Ung trauma-patient (cykel/krock/skottskada). Granska bilderna systematiskt, presentera fynd, forklara hur man granskar + skriver remiss.",
+      "facit": "Systematisk trauma-CT-granskning enligt ABCD(E). Anvand alla vyer + ROI/HU. Vanliga fynd: backenfraktur, mjaltruptur, lever-/njurskada, pneumothorax, kotkompression.",
+      "phases": [
+        {
+          "type": "status",
+          "goal": "Granska CT systematiskt - ABCD, alla vyer, ROI/HU. Presentera fynd.",
+          "reveal": [
+            "A (airway/luftvag), B (thorax: pneumothorax, hemothorax, costafrakturer), C (cirkulation: blod/extravasering, kärl), D (skelett: backen, kotor, extremiteter), E (mjukdelar).",
+            "Anvand flera vyer (axial/koronal/sagittal) + ROI/HU: blod ~50 HU, cysta ~10 HU, fri gas mycket lag HU.",
+            "Vanliga fynd: backenfraktur (os ilium/ischii, acetabulum, ramus sup/inf), collum femoris, mjaltruptur, leverblodning + extravasering, kotkompression (T12/L1), pneumothorax, costafrakturer, njurskada."
+          ],
+          "qa": [
+            {
+              "q": "Vad menas med HU?",
+              "a": "Hounsfield-enheter - densitetsskala; vatten 0, blod ~50, fett negativt, ben hogt, luft mycket negativt."
+            },
+            {
+              "q": "Vad innebar extravasering, hur ser det ut?",
+              "a": "Aktiv blodning - kontraststrimmor utanfor karlet."
+            },
+            {
+              "q": "Hur vet du att det ar blod?",
+              "a": "ROI/HU ~50."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Vad gor man med patienten + om CT ej finns?",
+          "reveal": [
+            "Akut blodning/extravasering -> kontakta kirurg, ev akut operation.",
+            "Om CT ej tillganglig: FAST-ULJ, slatrontgen.",
+            "Multitrauma -> ej MR akut (ej tillgangligt/for langsamt)."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Bli stressad och ostrukturerad nar fynden ar atypiska - lita pa systematiken (ABCD)."
+          ]
+        },
+        {
+          "type": "utredning",
+          "goal": "Remiss - hur skrivs en bra rontgenremiss?",
+          "reveal": [
+            "SBAR-struktur: frageställning, hur pat mar nu, stabil/instabil, ankomstsatt, relevanta lakemedel (blodfortunnande/njurtoxiska), njurfunktion, vitalparametrar, onskad undersokning + berattigande (risk vs nytta)."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor (radiologer ofta stoneface - tappa ej modet).",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Hur granskar man en trauma-CT?",
+              "a": "Systematiskt ABCD, alla vyer, olika fonstersattningar, HU/ROI."
+            },
+            {
+              "q": "Olika fonster?",
+              "a": "Mjukdels-, lung- och benfonster for olika strukturer."
+            },
+            {
+              "q": "Varfor inte MR vid multitrauma?",
+              "a": "Ej tillgangligt akut / for langsamt."
+            },
+            {
+              "q": "Peka ut anatomi (pankreas, stora karlavgangar, njurartar)?",
+              "a": "Folj aorta i flera vyer; namnge avgangar ner till njurartarerna."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: systematisk ABCD-granskning, ROI/HU-anvandning, kunde resonera handlaggning + remiss.",
+            "Vanliga fall: ostrukturerad granskning, missade systematiken nar fynden var atypiska."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: radiologen pekar pa en struktur du missade ('vad ar detta?') - peka ut den i flera vyer; eller ny bild med ytterligare skada att tolka. Fortsatt tills STOPP.",
+        "escalations": [
+          "Examinatorn pekar pa gallblasan/njuren och fragar 'vad ar detta?' - tolka och peka ut i tre vyer.",
+          "Ny bild: fri gas i buken hos en stickskada - vad gor du och vem ringer du?"
+        ]
+      }
+    },
+    {
+      "id": "hand_kts_artros",
+      "subject": "Handkirurgi",
+      "site": "Molndal",
+      "yield": "MED",
+      "mode": "skadespelare",
+      "role": "BT/AT-lakare pa vardcentral",
+      "frame": "(KTS:) domningar dig 1-3, varst nattetid, tappar saker, nedsatt tumkraft. (Tumbasartros:) radial handledssmarta vid belastning, svart oppna burkar, positiv grinding, negativ Finkelstein.",
+      "facit": "Karpaltunnelsyndrom (medianuskompression) eller tumbasartros (CMC1-artros). Skilj med riktat handstatus. Konservativt forst.",
+      "phases": [
+        {
+          "type": "anamnes",
+          "goal": "Symtomlokal + monster, belastning/yrke, nattlighet, vad provats.",
+          "reveal": [
+            "KTS: dig 1-3 (+halva 4), vaknar av domningar, tappar saker, svag tumme. Artros: radialt vid tumbasen, belastningsutlost.",
+            "Belastning/yrke (forskola/baring/repetitivt).",
+            "Provat Alvedon/NSAID - otillracklig effekt."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "status",
+          "goal": "Riktat handstatus (fraga om riktat racker).",
+          "reveal": [
+            "Medianus: sensorik dig 1-3, abductor pollicis brevis-kraft, Phalen, Tinel.",
+            "Ulnaris (dig 5) + radialis for jamforelse.",
+            "Tumbas: palpomhet CMC1, grinding test, Finkelstein.",
+            "Fynd KTS: nedsatt sensorik dig 1-3, positiv Phalen/Tinel, ev tenar-atrofi. Artros: palpomhet tumbas, positiv grinding, NEGATIV Finkelstein."
+          ],
+          "qa": [
+            {
+              "q": "Vilken nerv vid KTS?",
+              "a": "Medianus."
+            },
+            {
+              "q": "Grinding vs Finkelstein?",
+              "a": "Grinding positiv vid CMC1-artros; Finkelstein positiv vid de Quervains tendovaginit."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "handlaggning",
+          "goal": "Konservativt forst, sedan eskalera.",
+          "reveal": [
+            "KTS: nattlig ortos, arbetsterapi, ev steroidinjektion; remiss handkirurg (klyv flexorretinaklet) vid uttalat/atrofi.",
+            "Tumbasartros: fortsatt paracetamol+NSAID, fysioterapi; kortisoninjektion; op vid utebliven effekt."
+          ],
+          "qa": [],
+          "pitfalls": [
+            "Hoppa direkt till kirurgi."
+          ]
+        },
+        {
+          "type": "patientinfo",
+          "goal": "Informera patienten.",
+          "reveal": [
+            "Trolig diagnos, konservativ behandling forst.",
+            "Bemotande: var inkannande - patienter blir latt radda for operation."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "sbar",
+          "goal": "SBAR.",
+          "reveal": [
+            "S: Patient med hand-/handledsbesvar.",
+            "B: Belastande yrke / nattliga besvar.",
+            "A: KTS: medianus-fynd + positiv Phalen/Tinel. Artros: grinding+, Finkelstein-.",
+            "R: KTS: ortos + arbetsterapi, remiss handkirurg vid behov. Artros: analgesi + fysio, kortisoninjektion, ev op."
+          ],
+          "qa": [],
+          "pitfalls": []
+        },
+        {
+          "type": "foljdfragor",
+          "goal": "Foljdfragor.",
+          "reveal": [],
+          "qa": [
+            {
+              "q": "Operation KTS?",
+              "a": "Klyvning av flexorretinaklet (karpaltunnelklyvning)."
+            },
+            {
+              "q": "Op tumbasartros?",
+              "a": "T.ex. trapeziektomi vid utebliven konservativ effekt."
+            },
+            {
+              "q": "Kommer jag kunna anvanda handen igen?",
+              "a": "Oftast god prognos efter behandling."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "type": "feedback",
+          "goal": "Sjalvbedomning.",
+          "reveal": [
+            "PASS om: ratt diagnos via riktat status, konservativt forst, inkannande besked.",
+            "Vanliga fall: forvaxlade KTS/de Quervain/artros, hoppade till op."
+          ],
+          "qa": [],
+          "pitfalls": []
+        }
+      ],
+      "tail": {
+        "directive": "Eskalera: konservativ behandling utan effekt -> kirurgi + rehab; eller progress (tenar-atrofi vid KTS) -> mer skyndsam op.",
+        "escalations": [
+          "Patienten aterkommer med tilltagande tenar-atrofi och kvarstaende domningar - vad nu?"
+        ]
+      }
+    }
+  ]
+}
