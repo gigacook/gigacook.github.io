@@ -499,7 +499,27 @@ def exam_generate():
 
     if source == "old_exam":
         pool = list(IDX.exam_questions.values())
-        exam = random.sample(pool, min(60, len(pool)))
+        session = _load(sid)
+        seen = session.seen_questions
+        
+        # Fast lookup for subjects to specialties
+        spec_map = {q.subject: q.specialty for q in IDX.questions.values()}
+        
+        # Sort highest ID first (newest)
+        pool = sorted(pool, key=lambda q: int(q.id), reverse=True)
+        # Filter unseen
+        unseen = [q for q in pool if f"exam_{q.id}" not in seen]
+        
+        exam = []
+        # Pull exact amounts for the core specialties
+        for spec, n in EXAM_SPECS:
+            spec_qs = [q for q in unseen if spec_map.get(q.subject) == spec]
+            exam += spec_qs[:n]
+            
+        # Pull 15 for the rest
+        rest_qs = [q for q in unseen if spec_map.get(q.subject) in EXAM_REST]
+        exam += rest_qs[:15]
+        
         random.shuffle(exam)
         return jsonify({"questions": [_eq_norm(q, reveal=False) for q in exam],
                         "total": len(exam), "source": "old_exam"})

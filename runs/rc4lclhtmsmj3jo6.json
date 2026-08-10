@@ -1,0 +1,228 @@
+{
+  "run_id": "rc4lclhtmsmj3jo6",
+  "session_id": "9715c7f8-a6d4-4670-a481-c79b3ce1db69",
+  "updated_at": 1786323906.2884738,
+  "mode": "normal",
+  "subject": "",
+  "specialty": "",
+  "timer_mode": "nerd",
+  "question_ids": [
+    "KIR_147",
+    "KIR_ANESTESI_101",
+    "KIR_PLASTIKKIRURGI_015",
+    "KIR_UROLOGI_029",
+    "KIR_ORTOPEDI_105",
+    "KIR_ANESTESI_101",
+    "KIR_147",
+    "KIR_PLASTIKKIRURGI_015",
+    "KIR_ORTOPEDI_105",
+    "KIR_UROLOGI_029",
+    "KIR_ENDOKRINKIRURGI_011",
+    "KIR_UROLOGI_003",
+    "KIR_TRA_041",
+    "KIR_ANESTESI_109",
+    "KIR_ENDOKRINKIRURGI_022",
+    "KIR_KÄRLKIRURGI_085",
+    "KIR_UROLOGI_089",
+    "KIR_ANESTESI_109",
+    "KIR_113",
+    "KIR_TRA_041",
+    "KIR_UROLOGI_008",
+    "KIR_146",
+    "KIR_UROLOGI_089",
+    "KIR_ORTOPEDI_012",
+    "KIR_113",
+    "KIR_093",
+    "KIR_138",
+    "KIR_ANESTESI_061",
+    "KIR_UROLOGI_068",
+    "KIR_ORTOPEDI_012",
+    "KIR_138",
+    "KIR_ANESTESI_061"
+  ],
+  "position": 32,
+  "results": [
+    {
+      "id": "KIR_147",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_ANESTESI_101",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_PLASTIKKIRURGI_015",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_UROLOGI_029",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_ORTOPEDI_105",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_ANESTESI_101",
+      "correct": true,
+      "score": 200,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_ORTOPEDI_105",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_UROLOGI_029",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_ENDOKRINKIRURGI_011",
+      "correct": true,
+      "score": 100,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_UROLOGI_003",
+      "correct": true,
+      "score": 50,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_TRA_041",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_ANESTESI_109",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_ENDOKRINKIRURGI_022",
+      "correct": true,
+      "score": 100,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_KÄRLKIRURGI_085",
+      "correct": true,
+      "score": 100,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_UROLOGI_089",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_ANESTESI_109",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_113",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_TRA_041",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_UROLOGI_008",
+      "correct": true,
+      "score": 50,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_146",
+      "correct": true,
+      "score": 200,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_UROLOGI_089",
+      "correct": true,
+      "score": 100,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_ORTOPEDI_012",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_113",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_093",
+      "correct": true,
+      "score": 200,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_138",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_ANESTESI_061",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_UROLOGI_068",
+      "correct": true,
+      "score": 100,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_ORTOPEDI_012",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_138",
+      "correct": true,
+      "score": 200,
+      "timedOut": false
+    },
+    {
+      "id": "KIR_ANESTESI_061",
+      "correct": false,
+      "score": 0,
+      "timedOut": false
+    }
+  ],
+  "done": true,
+  "n": 20
+}
