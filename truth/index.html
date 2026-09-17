@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Truth of the Day</title>
+<meta name="description" content="One line a day from eleven dead philosophers. The web version of zeroCortisol.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👁</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #07080f;
+    --fg: #e9e4d6;
+    --dim: #8a8599;
+    --gold: #d9b45a;
+    --line: #25233a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    background: var(--bg);
+    background-image:
+      radial-gradient(1px 1px at 12% 18%, #fff8, transparent), radial-gradient(1px 1px at 78% 12%, #fff6, transparent),
+      radial-gradient(1.5px 1.5px at 62% 72%, #fff5, transparent), radial-gradient(1px 1px at 28% 84%, #fff6, transparent),
+      radial-gradient(1px 1px at 90% 48%, #fff5, transparent), radial-gradient(1px 1px at 44% 38%, #fff4, transparent),
+      radial-gradient(ellipse at 50% 120%, #1c1740 0, transparent 60%);
+    color: var(--fg);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    min-height: 100vh; padding: 32px 16px; text-align: center;
+  }
+  button.eye {
+    background: none; border: 0; padding: 12px; cursor: pointer; border-radius: 50%;
+    color: var(--gold); transition: transform .3s;
+  }
+  button.eye:hover { transform: scale(1.06); }
+  button.eye:focus-visible { outline: 1px solid var(--gold); outline-offset: 4px; }
+  .lid { transition: d .5s ease, transform .5s ease; transform-origin: 50px 50px; }
+  .pupil { transition: transform .5s ease, opacity .4s; transform-origin: 50px 52px; transform: scaleY(0); opacity: 0; }
+  .open .pupil { transform: scaleY(1); opacity: 1; }
+  .open .lid-top { transform: translateY(-9px); }
+  .open .lid-bottom { transform: translateY(9px); }
+  .hint { font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--dim); letter-spacing: .12em; text-transform: uppercase; margin-top: 8px; }
+  .date { font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--dim); letter-spacing: .2em; margin: 28px 0 10px; }
+  figure { margin: 0; max-width: 680px; opacity: 0; transform: translateY(8px); transition: opacity .8s ease .2s, transform .8s ease .2s; }
+  .revealed figure { opacity: 1; transform: none; }
+  blockquote { margin: 0; font-size: clamp(22px, 4.2vw, 34px); line-height: 1.35; font-style: italic; font-weight: 500; }
+  figcaption { margin-top: 18px; font-size: 20px; color: var(--gold); }
+  figcaption cite { color: var(--dim); }
+  .actions { margin-top: 28px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; opacity: 0; transition: opacity .6s ease .6s; }
+  .revealed .actions { opacity: 1; }
+  .actions button, .actions a {
+    font: 13px "JetBrains Mono", monospace; color: var(--fg); background: transparent;
+    border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; cursor: pointer; text-decoration: none;
+  }
+  .actions button:hover, .actions a:hover, .actions button:focus-visible, .actions a:focus-visible { border-color: var(--gold); color: var(--gold); outline: none; }
+  .foot { position: fixed; bottom: 12px; left: 0; right: 0; font: 11px "JetBrains Mono", monospace; color: var(--dim); }
+  .foot a { color: var(--dim); }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<button class="eye" id="eye" aria-label="Open the eye to reveal today's truth" aria-expanded="false">
+  <svg width="140" height="140" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <path d="M50 8 L94 88 L6 88 Z" opacity=".5"/>
+    <path class="lid lid-top" d="M22 58 Q50 44 78 58"/>
+    <path class="lid lid-bottom" d="M22 58 Q50 72 78 58"/>
+    <g class="pupil">
+      <ellipse cx="50" cy="58" rx="28" ry="12" stroke-width="1.5"/>
+      <circle cx="50" cy="58" r="7" fill="currentColor"/>
+    </g>
+  </svg>
+</button>
+<div class="hint" id="hint">click the eye</div>
+
+<div class="date" id="date"></div>
+<figure id="fig" aria-live="polite">
+  <blockquote id="quote"></blockquote>
+  <figcaption><span id="author"></span><br><cite id="work"></cite></figcaption>
+</figure>
+<div class="actions">
+  <button id="another">another truth</button>
+  <button id="copy">copy</button>
+  <a href="https://github.com/gigacook/zeroCortisol" target="_blank" rel="noopener">get the menu bar app</a>
+  <a href="../">← terminal</a>
+</div>
+
+<div class="foot">407 verbatim passages · public-domain translations · <a href="https://ko-fi.com/gigacook" target="_blank" rel="noopener">buy me a coffee</a></div>
+
+<script src="../shared.js"></script>
+<script src="../egg.js"></script>
+<script>
+const eye = document.getElementById("eye");
+let current = null;
+
+function show(q, label) {
+  current = q;
+  document.getElementById("quote").textContent = `“${q.quote}”`;
+  document.getElementById("author").textContent = `— ${q.author}`;
+  document.getElementById("work").textContent = q.work;
+  document.getElementById("date").textContent = label;
+}
+
+async function open() {
+  if (document.body.classList.contains("revealed")) return;
+  eye.classList.add("open");
+  eye.setAttribute("aria-expanded", "true");
+  const hint = document.getElementById("hint");
+  hint.textContent = "…";
+  try {
+    const quotes = await loadQuotes();
+    show(pickTruth(quotes), new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }).toUpperCase());
+    hint.textContent = "";
+    document.body.classList.add("revealed");
+  } catch (e) {
+    hint.textContent = "the philosophers are not answering. try again.";
+    eye.classList.remove("open");
+    eye.setAttribute("aria-expanded", "false");
+  }
+}
+eye.addEventListener("click", open);
+
+document.getElementById("another").addEventListener("click", async () => {
+  const quotes = await loadQuotes();
+  let q;
+  do { q = quotes[Math.floor(Math.random() * quotes.length)]; } while (q === current && quotes.length > 1);
+  const fig = document.getElementById("fig");
+  fig.style.opacity = 0;
+  setTimeout(() => { show(q, "A RANDOM TRUTH"); fig.style.opacity = ""; }, 250);
+});
+
+document.getElementById("copy").addEventListener("click", async e => {
+  if (!current) return;
+  try {
+    await navigator.clipboard.writeText(`“${current.quote}” — ${current.author}, ${current.work}`);
+    e.target.textContent = "copied";
+  } catch (err) {
+    e.target.textContent = "couldn't copy";
+  }
+  setTimeout(() => { e.target.textContent = "copy"; }, 1500);
+});
+
+addEventListener("keydown", e => { if ((e.key === "Enter" || e.key === " ") && document.activeElement === document.body) open(); });
+</script>
+</body>
+</html>

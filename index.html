@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gigacook terminal</title>
+<meta name="description" content="gigacook: tiny Mac tools, questionable games and a surgery exam engine. Type help.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍🍳</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0c0d14;
+    --panel: #12131d;
+    --line: #23253a;
+    --fg: #d7dae8;
+    --dim: #7c819e;
+    --green: #7ee08a;
+    --yellow: #ffe066;
+    --pink: #ff6ad5;
+    --blue: #8fb3ff;
+    --red: #ff7a7a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--bg);
+    background-image: radial-gradient(circle at 20% -10%, #1d1740 0, transparent 45%),
+                      radial-gradient(circle at 110% 110%, #10283a 0, transparent 40%);
+    color: var(--fg);
+    font: 14px/1.55 "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 24px 16px;
+  }
+  .window {
+    width: 100%; max-width: 860px; flex: 1; min-height: 0;
+    display: flex; flex-direction: column;
+    background: color-mix(in srgb, var(--panel) 92%, transparent);
+    border: 1px solid var(--line); border-radius: 12px;
+    box-shadow: 0 30px 80px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.03);
+    overflow: hidden;
+  }
+  .bar {
+    display: flex; align-items: center; gap: 8px; padding: 10px 14px;
+    border-bottom: 1px solid var(--line); background: #0f1018; user-select: none;
+  }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .bar .title { flex: 1; text-align: center; color: var(--dim); font-size: 12px; margin-right: 52px; cursor: default; }
+  #screen { flex: 1; overflow-y: auto; padding: 16px 18px 8px; overscroll-behavior: contain; }
+  #screen:focus { outline: none; }
+  .line { white-space: pre-wrap; word-break: break-word; min-height: 1.55em; }
+  pre.banner { margin: 0 0 6px; color: var(--yellow); font: inherit; font-size: clamp(6px, 1.9vw, 13px); line-height: 1.15;
+    text-shadow: 2px 2px 0 #7a2a66; overflow: hidden; }
+  .dim { color: var(--dim); } .g { color: var(--green); } .y { color: var(--yellow); }
+  .p { color: var(--pink); } .b { color: var(--blue); } .r { color: var(--red); } .bold { font-weight: 700; }
+  a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+  a:hover, a:focus-visible { color: var(--yellow); }
+  .prompt-user { color: var(--green); } .prompt-path { color: var(--blue); }
+  .inputrow { display: flex; gap: 8px; align-items: baseline; }
+  #cmd {
+    flex: 1; min-width: 0; background: transparent; border: 0; outline: 0; padding: 0;
+    color: var(--fg); font: inherit; caret-color: var(--yellow);
+  }
+  .grid { display: grid; grid-template-columns: max-content 1fr; column-gap: 18px; }
+  .grid > :nth-child(odd) { color: var(--yellow); }
+  .quote { border-left: 2px solid var(--pink); padding-left: 12px; margin: 4px 0; }
+  .chips { width: 100%; max-width: 860px; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .chips button {
+    font: inherit; font-size: 12px; color: var(--fg); background: var(--panel);
+    border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; cursor: pointer;
+  }
+  .chips button:hover, .chips button:focus-visible { border-color: var(--yellow); color: var(--yellow); outline: none; }
+  .foot { color: var(--dim); font-size: 11px; margin-top: 10px; text-align: center; }
+  @media (max-width: 560px) {
+    body { padding: 12px 16px; font-size: 13px; }
+    .grid { grid-template-columns: 1fr; }
+    .grid > :nth-child(even) { margin-bottom: 6px; }
+    .bar .title { margin-right: 0; }
+  }
+</style>
+</head>
+<body>
+<main class="window" aria-label="gigacook terminal">
+  <div class="bar">
+    <span class="dot" style="background:#ff5f57"></span>
+    <span class="dot" style="background:#febc2e"></span>
+    <span class="dot" style="background:#28c840"></span>
+    <span class="title" onclick="eggTap()">guest@gigacook: ~</span>
+  </div>
+  <div id="screen" tabindex="-1" aria-live="polite">
+    <div id="out"></div>
+    <div class="inputrow">
+      <span aria-hidden="true"><span class="prompt-user">guest@gigacook</span>:<span class="prompt-path">~</span>$</span>
+      <input id="cmd" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Type a command" autofocus>
+    </div>
+  </div>
+</main>
+<nav class="chips" aria-label="Quick commands">
+  <button data-cmd="help">help</button>
+  <button data-cmd="ls">ls</button>
+  <button data-cmd="truth">truth</button>
+  <button data-cmd="kirurgi">kirurgi</button>
+  <button data-cmd="play">play</button>
+  <button data-cmd="memcheck">memcheck</button>
+  <button data-cmd="mp3">mp3</button>
+  <button data-cmd="dex">dex</button>
+  <button data-cmd="coffee">coffee ☕</button>
+</nav>
+<div class="foot">no cookies, no tracking, no framework. just vibes and vanilla js.</div>
+
+<script src="shared.js"></script>
+<script src="egg.js"></script>
+<script>
+const out = document.getElementById("out");
+const input = document.getElementById("cmd");
+const screenEl = document.getElementById("screen");
+const cmdHistory = [];
+let histPos = 0;
+const finePointer = matchMedia("(pointer: fine)").matches; // don't pop phone keyboards
+let pending = null; // a function waiting for the next input line (e.g. a quiz answer)
+
+// ---- output helpers (never innerHTML with fetched data) ------------------
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text != null) e.textContent = text;
+  return e;
+}
+function link(text, href) {
+  const a = el("a", null, text);
+  a.href = href;
+  if (/^https?:/.test(href)) { a.target = "_blank"; a.rel = "noopener"; }
+  return a;
+}
+// print("plain", ["y", "yellow"], link(...)) → one line
+function print(...parts) {
+  const line = el("div", "line");
+  for (const p of parts) {
+    if (p instanceof Node) line.appendChild(p);
+    else if (Array.isArray(p)) line.appendChild(el("span", p[0], p[1]));
+    else line.appendChild(document.createTextNode(p));
+  }
+  out.appendChild(line);
+  return line;
+}
+function block(node) { out.appendChild(node); return node; }
+function grid(rows) {
+  const g = el("div", "grid");
+  for (const [k, v] of rows) {
+    g.appendChild(el("span", null, k));
+    const cell = el("span");
+    [].concat(v).forEach(x => cell.appendChild(x instanceof Node ? x : document.createTextNode(x)));
+    g.appendChild(cell);
+  }
+  return block(g);
+}
+function scrollDown() { screenEl.scrollTop = screenEl.scrollHeight; }
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+// ---- commands ------------------------------------------------------------
+const PROJECTS = [
+  ["dex", "keeps your Mac awake with the lid closed", "https://github.com/gigacook/dex"],
+  ["zc", "eleven dead philosophers in your menu bar", "https://github.com/gigacook/zeroCortisol"],
+  ["play", "goonyjump: co-op Icy Tower on questionable fuel", "https://github.com/gigacook/goonyjump"],
+  ["kirurgi", "2,000+ Swedish surgery exam questions", "https://kirurgi.xyz"],
+  ["memcheck", "finds whatever ate your RAM", "https://github.com/gigacook/memcheck-ram-cli"],
+  ["mp3", "paste a link, get an mp3", "https://github.com/gigacook/mp3-url-cli"],
+];
+
+const COMMANDS = {
+  help() {
+    print(["y bold", "commands"]);
+    grid([
+      ["ls", "list the projects"],
+      ["whoami", "who runs this place"],
+      ["truth", "today's line from a dead philosopher (zeroCortisol)"],
+      ["kirurgi", "question of the day. answer with a-e. `kirurgi random` for another"],
+      ["play", "goonyjump in your browser"],
+      ["memcheck", "scan this tab's RAM (scientifically)"],
+      ["mp3 <url>", "convert anything to mp3 (emotionally)"],
+      ["dex", "keep this page awake"],
+      ["coffee", "support the cook ☕"],
+      ["github", "the source of it all"],
+      ["clear", "wipe the screen"],
+    ]);
+    print(["dim", "tab completes, ↑/↓ scroll history. there may be a secret."]);
+  },
+  ls() {
+    for (const [cmd, desc, href] of PROJECTS) {
+      print(["b bold", cmd.padEnd(10)], ["dim", desc + "  "], link("↗", href));
+    }
+  },
+  projects() { COMMANDS.ls(); },
+  whoami() {
+    print("you're ", ["g", "guest"], ". I'm ", ["y", "gigacook"], ".");
+    print("I build tiny Mac tools, questionable games and a surgery exam engine.");
+    print(["dim", "sometimes on purpose."]);
+  },
+  async truth() {
+    const status = print(["dim", "opening the eye…"]);
+    try {
+      const quotes = await loadQuotes();
+      const q = pickTruth(quotes);
+      status.remove();
+      const box = el("div", "quote");
+      box.appendChild(el("div", "line", `"${q.quote}"`));
+      box.appendChild(el("div", "line p", `— ${q.author}, ${q.work}`));
+      block(box);
+      print(["dim", "full-screen version: "], link("/truth", "truth/"),
+        ["dim", "  ·  the menu bar app: "], link("zeroCortisol", "https://github.com/gigacook/zeroCortisol"));
+    } catch (e) {
+      status.remove();
+      print(["r", "the philosophers aren't answering (network). try again in a moment."]);
+    }
+  },
+  zc() { return COMMANDS.truth(); },
+  zerocortisol() { return COMMANDS.truth(); },
+  async kirurgi(args) {
+    const status = print(["dim", "scrubbing in…"]);
+    let bank;
+    try { bank = await loadExam(); }
+    catch (e) { status.remove(); print(["r", "OR is closed (network). try again in a moment."]); return; }
+    status.remove();
+    const random = args[0] === "random";
+    const q = bank[random ? Math.floor(Math.random() * bank.length) : dayNumber() % bank.length];
+    print(["y bold", random ? "🩺 random question" : "🩺 question of the day"], ["dim", `  (#${q.id}, ${q.subject})`]);
+    print(q.question);
+    for (const opt of q.options) print(["b", "  " + opt]);
+    const letters = q.options.map(o => o.trim()[0].toLowerCase());
+    print(["dim", `answer with ${letters.join(" / ")}  ·  anything else skips`]);
+    pending = answer => {
+      const a = answer.trim().toLowerCase();
+      if (!letters.includes(a)) { print(["dim", `skipped. it was ${q.correct}.`]); return false; }
+      if (a === q.correct.toLowerCase()) print(["g bold", "✓ correct. "], ["dim", "the attending nods slightly."]);
+      else print(["r bold", `✗ it was ${q.correct}. `], ["dim", "the attending sighs audibly."]);
+      print(["dim", "the full engine lives at "], link("kirurgi.xyz", "https://kirurgi.xyz"),
+        ["dim", "  ·  another: "], ["b", "kirurgi random"]);
+      return true;
+    };
+  },
+  play() {
+    print("💦 ", ["y bold", "JUMPY GOONERS"], ["dim", ": solo browser edition"]);
+    print(["dim", "run, jump, jet. the goon juice rises. co-op needs the real server."]);
+    print("launching… if nothing happens: ", link("gigacook.github.io/play", "play/"));
+    setTimeout(() => { location.href = "play/"; }, 900);
+  },
+  goonyjump() { COMMANDS.play(); },
+  async memcheck() {
+    const mem = performance.memory;
+    const used = mem ? mem.usedJSHeapSize / 1048576 : 3.1 + Math.random();
+    print(["dim", "Processes using >= 1.0% of your attention:"]);
+    print("");
+    print(["bold", "PID      %MEM    RSS(MB)  COMMAND"]);
+    const rows = [
+      [4242, 41.7, 2048.0, "the 47 other tabs you have open"],
+      [1337, 22.3, 1101.5, "that email you haven't answered"],
+      [666, 9.8, 482.2, "slack (it's thinking)"],
+      [69, 0.1, used, "gigacook.github.io (innocent)"],
+    ];
+    for (const [pid, pct, rss, cmd] of rows) {
+      await sleep(120);
+      print(String(pid).padEnd(9) + pct.toFixed(1).padStart(4) + rss.toFixed(1).padStart(11) + "  ", [pid === 69 ? "g" : "y", cmd]);
+      scrollDown();
+    }
+    print("");
+    print(["dim", "To kill a process: close your laptop and go outside."]);
+    print(["dim", "the real one: "], link("memcheck-ram-cli", "https://github.com/gigacook/memcheck-ram-cli"));
+  },
+  async mp3(args) {
+    const url = args[0] || location.href;
+    print(["b", "»"], ` 1 link → ~/Music`);
+    print(["dim", "[1/1] "], url);
+    const title = args[0] ? "Mystery Track (Extended Goon Mix)" : "This Website (Lo-Fi Beats to Refresh To)";
+    let bar = print("");
+    for (let i = 0; i <= 20; i++) {
+      bar.textContent = `[download] ${"█".repeat(i)}${"░".repeat(20 - i)} ${i * 5}%`;
+      scrollDown();
+      await sleep(45);
+    }
+    const d = new Date().toISOString().slice(0, 10);
+    print(["g", "✓"], " saved");
+    print(["dim", `  ~/Music/${d} ${title}.mp3`]);
+    print(["dim", "(nothing was downloaded. this is a website. the real tool: "],
+      link("mp3-url-cli", "https://github.com/gigacook/mp3-url-cli"), ["dim", ")"]);
+  },
+  ytmp3(args) { return COMMANDS.mp3(args); },
+  async dex() {
+    let lock = null;
+    try { if (navigator.wakeLock) lock = await navigator.wakeLock.request("screen"); } catch (e) {}
+    if (lock) {
+      print(["g", "☕ dex engaged."], " this screen will stay awake while the tab is open.");
+      lock.addEventListener("release", () => print(["dim", "dex released. the screen may sleep now. goodnight."]));
+    } else {
+      print(["y", "☕ dex tried."], ["dim", " your browser won't let a website keep it awake. rude."]);
+    }
+    print(["dim", "the real one keeps your Mac awake with the lid closed: "], link("dex", "https://github.com/gigacook/dex"));
+  },
+  coffee() {
+    block(el("pre", "y", "     ( (\n      ) )\n   ........\n   |      |]\n   \\      /\n    `----'"));
+    print("everything here is free. coffee keeps it that way.");
+    print("☕ ", link("ko-fi.com/gigacook", "https://ko-fi.com/gigacook"));
+  },
+  kofi() { COMMANDS.coffee(); },
+  github() { print(link("github.com/gigacook", "https://github.com/gigacook")); },
+  clear() { out.replaceChildren(); },
+  date() { print(new Date().toString()); },
+  echo(args) { print(args.join(" ")); },
+  history() { cmdHistory.forEach((h, i) => print(["dim", String(i + 1).padStart(3) + "  "], h)); },
+  hint() { print(["dim", "↑ ↑ ↓ ↓ ← → ← → B A. on a phone, tap the window title 7 times."]); },
+  sudo() { print(["r", "guest is not in the sudoers file. this incident will be reported to the goon council."]); },
+  rm(args) {
+    if (args.join(" ").includes("-rf")) print(["p", "💦 the goon juice rises. nothing was deleted. nice try."]);
+    else print(["dim", "rm: permission denied (this is a website)"]);
+  },
+  exit() { print(["dim", "there is no exit. only "], ["y", "clear"], ["dim", "."]); },
+  vim() { print(["dim", "you are now trapped in vim. just kidding. type "], ["y", ":q"], ["dim", " anyway, for tradition."]); },
+  ":q"() { print(["g", "freedom."]); },
+};
+const COMPLETE = Object.keys(COMMANDS).filter(c => /^[a-z]/.test(c)).sort();
+
+async function run(line) {
+  const text = line.trim();
+  const echo = print(["prompt-user", "guest@gigacook"], ":", ["prompt-path", "~"], "$ ", text);
+  echo.setAttribute("aria-hidden", "true");
+  if (pending) {
+    const fn = pending; pending = null;
+    if (fn(text)) { scrollDown(); return; }  // answered; otherwise treat the line as a command
+  }
+  if (!text) return;
+  cmdHistory.push(text); histPos = cmdHistory.length;
+  const [name, ...args] = text.split(/\s+/);
+  const cmd = Object.prototype.hasOwnProperty.call(COMMANDS, name.toLowerCase()) && COMMANDS[name.toLowerCase()];
+  if (cmd) {
+    input.disabled = true;
+    try { await cmd(args); } finally { input.disabled = false; if (finePointer) input.focus(); }
+  } else {
+    print(["r", `command not found: ${name}`], ["dim", ". type "], ["y", "help"], ["dim", "."]);
+  }
+  scrollDown();
+}
+
+input.addEventListener("keydown", e => {
+  if (e.key === "Enter") {
+    const v = input.value; input.value = "";
+    run(v).then(scrollDown);
+  } else if (e.key === "ArrowUp" && !pending) {
+    if (histPos > 0) { histPos--; input.value = cmdHistory[histPos]; }
+    e.preventDefault();
+  } else if (e.key === "ArrowDown" && !pending) {
+    if (histPos < cmdHistory.length - 1) { histPos++; input.value = cmdHistory[histPos]; }
+    else { histPos = cmdHistory.length; input.value = ""; }
+    e.preventDefault();
+  } else if (e.key === "Tab") {
+    e.preventDefault();
+    const matches = COMPLETE.filter(c => c.startsWith(input.value.toLowerCase()));
+    if (matches.length === 1) input.value = matches[0] + " ";
+    else if (matches.length > 1 && input.value) print(["dim", matches.join("  ")]), scrollDown();
+  } else if (e.key === "l" && e.ctrlKey) {
+    e.preventDefault(); COMMANDS.clear();
+  }
+});
+screenEl.addEventListener("click", e => { if (!getSelection().toString() && !e.target.closest("a")) input.focus(); });
+document.querySelectorAll(".chips button").forEach(b =>
+  b.addEventListener("click", () => { run(b.dataset.cmd).then(scrollDown); }));
+window.onGoonJet = () => {
+  input.value = ""; // the code's trailing "b a" landed in the prompt
+  print(["p", "💦 goon jet unlocked. you found the secret."]); scrollDown();
+};
+
+// ---- boot ----------------------------------------------------------------
+(async function boot() {
+  block(el("pre", "banner",
+` ██████  ██  ██████   █████   ██████  ██████   ██████  ██   ██
+██       ██ ██       ██   ██ ██      ██    ██ ██    ██ ██  ██
+██   ███ ██ ██   ███ ███████ ██      ██    ██ ██    ██ █████
+██    ██ ██ ██    ██ ██   ██ ██      ██    ██ ██    ██ ██  ██
+ ██████  ██  ██████  ██   ██  ██████  ██████   ██████  ██   ██`)).setAttribute("aria-label", "gigacook");
+  print(["dim", `last login: ${new Date().toDateString()} from somewhere on the internet`]);
+  print("tiny Mac tools, questionable games and a surgery exam engine.");
+  print("type ", ["y", "help"], " or tap a command below.");
+  print("");
+})();
+</script>
+</body>
+</html>
