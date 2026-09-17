@@ -57,5 +57,14 @@
     if (info) new MutationObserver(fix).observe(info, { childList: true });
     if (active) new MutationObserver(fix).observe(active, { childList: true });
     fix();
+
+    // ?go (used by the terminal) skips the lobby and drops straight into a run.
+    // Your saved name/look/stats are used; ESC still brings the lobby back.
+    const params = new URLSearchParams(location.search);
+    if (params.has("go")) {
+      history.replaceState(null, "", location.pathname);
+      const btn = document.getElementById("playBtn");
+      if (btn) setTimeout(() => btn.click(), 0);
+    }
   });
 })();
