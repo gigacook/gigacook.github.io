@@ -4,8 +4,8 @@ const QUOTES_URL = `${RAW}/zeroCortisol/main/data/quotes.json`;
 const EXAM_URL = `${RAW}/kirurgi.xyz/kirxyz/11_exams/normalized_exam_question_bank.json`;
 
 function dayNumber(date = new Date()) {
-  // UTC day, so the site and the profile README agree on "today".
-  return Math.floor(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()) / 86400000);
+  // The visitor's calendar day, counted like zeroCortisol's DayKey.dayNumber.
+  return Math.floor(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) / 86400000);
 }
 
 let quotesPromise = null;
@@ -16,9 +16,14 @@ function loadQuotes() {
   }).catch(e => { quotesPromise = null; throw e; }));
 }
 
-// Must match truth_of_the_day() in gigacook/gigacook scripts/update_readme.py.
+// Same pick as the zeroCortisol app (TruthOfDay.index in Scoring.swift) and the
+// profile README: a scrambled walk through the whole corpus, one quote per day.
 function pickTruth(quotes, day = dayNumber()) {
-  return quotes[(day * 97) % quotes.length];
+  const n = quotes.length;
+  const gcd = (a, b) => (b ? gcd(b, a % b) : a);
+  let stride = 1;
+  if (n > 2) { stride = Math.max(1, Math.floor(n * 0.618)); while (gcd(stride, n) !== 1) stride++; }
+  return quotes[(((day % n) * stride + 17) % n + n) % n];
 }
 
 let examPromise = null;
