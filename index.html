@@ -101,7 +101,7 @@
   <button data-cmd="ls">ls</button>
   <button data-cmd="truth">truth</button>
   <button data-cmd="kirurgi">kirurgi</button>
-  <button data-cmd="play">play</button>
+  <button data-cmd="play">play 🕹</button>
   <button data-cmd="memcheck">memcheck</button>
   <button data-cmd="mp3">mp3</button>
   <button data-cmd="dex">dex</button>
@@ -162,11 +162,28 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 const PROJECTS = [
   ["dex", "keeps your Mac awake with the lid closed", "https://github.com/gigacook/dex"],
   ["zc", "eleven dead philosophers in your menu bar", "https://github.com/gigacook/zeroCortisol"],
-  ["play", "goonyjump: co-op Icy Tower on questionable fuel", "https://github.com/gigacook/goonyjump"],
+  ["play", "3 games you can play right here in the browser", "#play"],
   ["kirurgi", "2,000+ Swedish surgery exam questions", "https://kirurgi.xyz"],
   ["memcheck", "finds whatever ate your RAM", "https://github.com/gigacook/memcheck-ram-cli"],
   ["mp3", "paste a link, get an mp3", "https://github.com/gigacook/mp3-url-cli"],
 ];
+
+const GAMES = [
+  { name: "JUMPY GOONERS", path: "play/", aliases: ["goonyjump", "goon", "jump"],
+    desc: "Icy Tower on questionable fuel. run, jump, jet.",
+    how: "arrows/WASD run · space jump · shift goon jet" },
+  { name: "SUPER RUNNER", path: "runner/", aliases: ["runner", "super", "run"],
+    desc: "NES desert race. 2 players, 1 keyboard, no respawns.",
+    how: "P1 WASD+space · P2 arrows · R restart" },
+  { name: "GOON BRAWL", path: "brawl/", aliases: ["brawl", "fight", "slopbrawl"],
+    desc: "8-bit fighter vs a CPU. secret moves included.",
+    how: "A/D move · W jump · J/K/L attack · T taunt · try typing 420" },
+];
+function launch(game) {
+  print("🕹  ", ["y bold", game.name], ["dim", "  " + game.how]);
+  print("loading… if nothing happens: ", link(game.path, game.path));
+  setTimeout(() => { location.href = game.path; }, 1100);
+}
 
 const COMMANDS = {
   help() {
@@ -176,7 +193,7 @@ const COMMANDS = {
       ["whoami", "who runs this place"],
       ["truth", "today's line from a dead philosopher (zeroCortisol)"],
       ["kirurgi", "question of the day. answer with a-e. `kirurgi random` for another"],
-      ["play", "goonyjump in your browser"],
+      ["play", "pick a game: goonyjump, super runner, goon brawl"],
       ["memcheck", "scan this tab's RAM (scientifically)"],
       ["mp3 <url>", "convert anything to mp3 (emotionally)"],
       ["dex", "keep this page awake"],
@@ -188,7 +205,7 @@ const COMMANDS = {
   },
   ls() {
     for (const [cmd, desc, href] of PROJECTS) {
-      print(["b bold", cmd.padEnd(10)], ["dim", desc + "  "], link("↗", href));
+      print(["b bold", cmd.padEnd(10)], ["dim", desc + "  "], href.startsWith("#") ? ["y", "→ type " + cmd] : link("↗", href));
     }
   },
   projects() { COMMANDS.ls(); },
@@ -239,13 +256,28 @@ const COMMANDS = {
       return true;
     };
   },
-  play() {
-    print("💦 ", ["y bold", "JUMPY GOONERS"], ["dim", ": solo browser edition"]);
-    print(["dim", "run, jump, jet. the goon juice rises. co-op needs the real server."]);
-    print("launching… if nothing happens: ", link("gigacook.github.io/play", "play/"));
-    setTimeout(() => { location.href = "play/"; }, 900);
+  play(args) {
+    const pick = (args[0] || "").toLowerCase();
+    const game = GAMES.find((g, i) => pick === String(i + 1) || g.aliases.includes(pick));
+    if (game) return launch(game);
+    if (pick) print(["r", `no game called ${pick}. `], ["dim", "pick one:"]);
+    print(["y bold", "🕹  arcade"]);
+    GAMES.forEach((g, i) => {
+      print(["b bold", `  ${i + 1}  `], ["bold", g.name.padEnd(15)], ["dim", g.desc]);
+    });
+    print(["dim", "type a number (or "], ["y", "play brawl"], ["dim", " etc.)"]);
+    pending = answer => {
+      const g = GAMES[Number(answer.trim()) - 1];
+      if (!g) return false;
+      launch(g);
+      return true;
+    };
   },
-  goonyjump() { COMMANDS.play(); },
+  goonyjump() { launch(GAMES[0]); },
+  runner() { launch(GAMES[1]); },
+  brawl() { launch(GAMES[2]); },
+  games() { COMMANDS.play([]); },
+  arcade() { COMMANDS.play([]); },
   async memcheck() {
     const mem = performance.memory;
     const used = mem ? mem.usedJSHeapSize / 1048576 : 3.1 + Math.random();

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goon Brawl</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍆</text></svg>">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>GOON BRAWL</h1>
+
+    <div id="waitingScreen" class="screen">
+      <p>Who are you fighting tonight?</p>
+      <div id="shareLinks"></div>
+      <p class="hint">Browser edition. LAN play with a friend on another device needs the
+        <a href="https://github.com/gigacook" target="_blank" rel="noopener">Node server version</a>.
+        &nbsp;·&nbsp; <a href="../">← back to the terminal</a></p>
+    </div>
+
+    <div id="disconnectedScreen" class="screen hidden">
+      <p>Your opponent disconnected.</p>
+      <button id="backToLobbyBtn">Back to the start</button>
+    </div>
+
+    <div id="selectScreen" class="screen hidden">
+      <p>Choose your fighter</p>
+      <div id="characterGrid"></div>
+      <p>Choose a stage</p>
+      <div id="stageGrid"></div>
+      <p id="selectStatus" class="hint"></p>
+    </div>
+
+    <div id="gameScreen" class="screen hidden">
+      <div id="hud">
+        <div class="healthWrap">
+          <div class="name" id="p1Name"></div>
+          <div class="healthBar"><div id="p1Health" class="healthFill"></div></div>
+          <div class="manaBar"><div id="p1Mana" class="manaFill"></div></div>
+          <div class="chargeBar"><div id="p1Charge" class="chargeFill"></div></div>
+          <div class="scoreRow"><span id="p1Score">0</span><span id="p1Combo" class="comboTag hidden"></span></div>
+        </div>
+        <div class="centerHud">
+          <div id="timer">90</div>
+          <button id="muteBtn" title="Mute">&#128266;</button>
+        </div>
+        <div class="healthWrap right">
+          <div class="name" id="p2Name"></div>
+          <div class="healthBar"><div id="p2Health" class="healthFill"></div></div>
+          <div class="manaBar"><div id="p2Mana" class="manaFill"></div></div>
+          <div class="chargeBar"><div id="p2Charge" class="chargeFill"></div></div>
+          <div class="scoreRow"><span id="p2Combo" class="comboTag hidden"></span><span id="p2Score">0</span></div>
+        </div>
+      </div>
+      <div id="arenaWrap">
+        <canvas id="arena" width="1100" height="600"></canvas>
+        <div id="overOverlay" class="hidden">
+          <p id="resultText"></p>
+          <button id="rematchBtn">Rematch</button>
+          <p id="rematchStatus" class="hint"></p>
+        </div>
+      </div>
+      <div id="controlsHint" class="hint">
+        Move: A / D &nbsp;&bull;&nbsp; Jump: W &nbsp;&bull;&nbsp; Duck: S &nbsp;&bull;&nbsp; Sprint: Shift &nbsp;&bull;&nbsp;
+        Short: J &nbsp;&bull;&nbsp; Long: K &nbsp;&bull;&nbsp; Special: L &nbsp;&bull;&nbsp; Taunt: T<br />
+        Ground Smash: Duck + J (air) &nbsp;&bull;&nbsp; Spin Kick: Sprint + J (ground) &nbsp;&bull;&nbsp;
+        Throw: Duck + K (ground, close) &nbsp;&bull;&nbsp; Launcher Kick: L (air)<br />
+        Landing hits charges your Special (gold bar) — a full charge (or a 4-hit combo) makes it hit much harder
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
