@@ -101,6 +101,7 @@
   <button data-cmd="ls">ls</button>
   <button data-cmd="truth">truth</button>
   <button data-cmd="kirurgi">kirurgi</button>
+  <button data-cmd="cnc">cnc ⚙</button>
   <button data-cmd="play">play 🕹</button>
   <button data-cmd="memcheck">memcheck</button>
   <button data-cmd="mp3">mp3</button>
@@ -162,6 +163,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 const PROJECTS = [
   ["dex", "keeps your Mac awake with the lid closed", "https://github.com/gigacook/dex"],
   ["zc", "eleven dead philosophers in your menu bar", "https://github.com/gigacook/zeroCortisol"],
+  ["cnc", "HEIDENHAIN TNC 426 CNC simulator, live material removal", "#cnc"],
   ["play", "3 games you can play right here in the browser", "#play"],
   ["kirurgi", "2,000+ Swedish surgery exam questions", "https://kirurgi.xyz"],
   ["memcheck", "finds whatever ate your RAM", "https://github.com/gigacook/memcheck-ram-cli"],
@@ -193,6 +195,7 @@ const COMMANDS = {
       ["whoami", "who runs this place"],
       ["truth", "today's line from a dead philosopher (zeroCortisol)"],
       ["kirurgi", "question of the day. answer with a-e. `kirurgi random` for another"],
+      ["cnc", "fire up the TNC 426 CNC simulator"],
       ["play", "pick a game: goonyjump, super runner, goon brawl"],
       ["memcheck", "scan this tab's RAM (scientifically)"],
       ["mp3 <url>", "convert anything to mp3 (emotionally)"],
@@ -328,6 +331,13 @@ const COMMANDS = {
     }
     print(["dim", "the real one keeps your Mac awake with the lid closed: "], link("dex", "https://github.com/gigacook/dex"));
   },
+  cnc() {
+    print("⚙  ", ["y bold", "TNC 426 SIMULATOR"], ["dim", "  HEIDENHAIN Klartext, live material removal"]);
+    print("loading… if nothing happens: ", link("/tnc426-simulator", "/tnc426-simulator/"),
+      ["dim", "  ·  source: "], link("github", "https://github.com/gigacook/tnc426-simulator"));
+    setTimeout(() => { location.href = "/tnc426-simulator/"; }, 1100);
+  },
+  tnc() { return COMMANDS.cnc(); },
   coffee() {
     block(el("pre", "y", "     ( (\n      ) )\n   ........\n   |      |]\n   \\      /\n    `----'"));
     print("everything here is free. coffee keeps it that way.");
