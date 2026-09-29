@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Kattsjukhuset</title>
+<meta name="description" content="Ett gulligt 3D-kattsjukhus. Alla är läkarstudenter. Bjud in dina vänner som katter!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#5a4a6a;--pink:#ff9fb8;--pinkd:#e9789a;--cream:#fff8f0;--mint:#b8f2c9;--sky:#a8e0ff;--lav:#c9b6ff}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;background:#fbe7ef;font-family:Fredoka,system-ui,sans-serif;color:var(--ink);touch-action:none;user-select:none;-webkit-user-select:none}
+canvas{display:block}
+.hud{position:fixed;left:12px;top:12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;right:12px;pointer-events:none}
+.hud>*{pointer-events:auto}
+.logo{font-weight:700;font-size:22px;background:#fff;border:4px solid var(--ink);border-radius:18px;padding:4px 14px;box-shadow:0 4px 0 var(--ink);letter-spacing:.5px}
+.logo span{color:var(--pinkd)}
+.btn{font:inherit;font-weight:600;font-size:16px;color:var(--ink);background:var(--mint);border:4px solid var(--ink);border-radius:16px;padding:6px 14px;box-shadow:0 4px 0 var(--ink);cursor:pointer;transition:transform .08s}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--ink)}
+.btn.pink{background:var(--pink)}.btn.sky{background:var(--sky)}.btn.lav{background:var(--lav)}
+.pill{background:#fff;border:3px solid var(--ink);border-radius:999px;padding:4px 12px;font-weight:600;font-size:14px}
+.help{position:fixed;left:50%;bottom:12px;transform:translateX(-50%);background:rgba(255,255,255,.85);border:3px solid var(--ink);border-radius:14px;padding:6px 12px;font-size:13px;text-align:center;max-width:calc(100% - 32px)}
+.modal{position:fixed;inset:0;background:rgba(90,74,106,.35);display:flex;align-items:center;justify-content:center;padding:16px;z-index:20}
+.modal.hide{display:none}
+.card{background:var(--cream);border:5px solid var(--ink);border-radius:26px;box-shadow:0 8px 0 var(--ink);padding:20px;width:min(420px,100%);max-height:calc(100vh - 32px);overflow:auto}
+.card h2{margin:0 0 6px;font-size:26px}
+.card p{margin:0 0 12px;font-size:15px}
+label{display:block;font-weight:600;margin:10px 0 4px}
+input[type=text]{width:100%;font:inherit;font-size:18px;padding:8px 12px;border:3px solid var(--ink);border-radius:14px;background:#fff;color:var(--ink)}
+input[type=range]{width:100%;accent-color:var(--pinkd)}
+select{width:100%;font:inherit;font-size:16px;padding:8px;border:3px solid var(--ink);border-radius:14px;background:#fff;color:var(--ink)}
+.sw{display:flex;flex-wrap:wrap;gap:8px}
+.sw button{width:34px;height:34px;border-radius:50%;border:3px solid var(--ink);cursor:pointer;padding:0}
+.sw button.on{outline:4px solid var(--pinkd);outline-offset:2px}
+.sw input[type=color]{width:34px;height:34px;border:3px solid var(--ink);border-radius:50%;padding:0;background:none;cursor:pointer}
+.row{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+.row .btn{flex:1}
+.link{word-break:break-all;background:#fff;border:3px dashed var(--ink);border-radius:12px;padding:8px;font-size:13px;margin:8px 0;user-select:all;-webkit-user-select:all}
+.toast{position:fixed;left:50%;top:70px;transform:translateX(-50%);background:#fff;border:4px solid var(--ink);border-radius:16px;padding:8px 16px;font-weight:600;box-shadow:0 4px 0 var(--ink);z-index:30;transition:opacity .3s;max-width:calc(100% - 32px);text-align:center}
+.chat{position:fixed;left:50%;bottom:60px;transform:translateX(-50%);width:min(420px,calc(100% - 32px));z-index:10}
+.chat.hide{display:none}
+.log{position:fixed;left:12px;bottom:60px;width:min(300px,calc(100% - 24px));font-size:13px;pointer-events:none}
+.log div{background:rgba(255,255,255,.8);border-radius:10px;padding:3px 8px;margin-top:4px;width:fit-content;max-width:100%}
+#loading{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700;background:#fbe7ef;z-index:40}
+@media (max-width:600px){.logo{font-size:17px}.btn{font-size:14px;padding:5px 10px}.help{font-size:11px}}
+</style>
+<script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+<script type="importmap">
+{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}
+</script>
+</head>
+<body>
+<div id="loading">🐱 Laddar kattsjukhuset…</div>
+
+<div class="hud">
+  <div class="logo">🐾 Katt<span>sjukhuset</span></div>
+  <button class="btn" id="bMe">🐱 Min katt</button>
+  <button class="btn pink" id="bInvite">💌 Bjud in katt</button>
+  <button class="btn sky" id="bChat">💬</button>
+  <div class="pill" id="online">🟢 1 online</div>
+</div>
+<div class="log" id="log"></div>
+<div class="help">WASD / pilar eller klicka för att gå · Mellanslag = hoppa · Enter = chatta · M = mjau · scroll = zoom</div>
+<div class="chat hide" id="chatBox"><input type="text" id="chatIn" maxlength="80" placeholder="Säg något och tryck Enter…"></div>
+
+<div class="modal" id="mMe">
+  <div class="card">
+    <h2 id="meTitle">Skapa din katt 🐱</h2>
+    <p id="meSub">Alla här är läkarstudenter. Välj hur du ser ut!</p>
+    <label>Namn</label>
+    <input type="text" id="fName" maxlength="16" placeholder="t.ex. Dr. Morris">
+    <label>Färg</label>
+    <div class="sw" id="fSw"></div>
+    <label>Storlek: <span id="fSizeV">1.0</span></label>
+    <input type="range" id="fSize" min="0.6" max="1.7" step="0.05" value="1">
+    <label>Klädsel</label>
+    <select id="fOutfit">
+      <option value="student">🥼 Läkarstudent i rock</option>
+      <option value="doctor">🩺 Läkare med stetoskop</option>
+      <option value="nurse">💉 Sjuksköterska</option>
+      <option value="office">🎧 Kontorskatt med headset</option>
+      <option value="patient">🛏️ Patient i sjukhusrock</option>
+    </select>
+    <div class="row"><button class="btn pink" id="fGo">Spela! 🐾</button></div>
+  </div>
+</div>
+
+<div class="modal hide" id="mInvite">
+  <div class="card">
+    <h2>Bjud in en riktig katt 💌</h2>
+    <p>Skicka länken till en vän. De väljer eget namn, storlek och färg och dyker upp här bredvid dig i realtid.</p>
+    <div class="link" id="invLink">Ansluter…</div>
+    <div class="row">
+      <button class="btn pink" id="invCopy">📋 Kopiera</button>
+      <button class="btn sky" id="invShare">📤 Dela</button>
+      <button class="btn" id="invClose">Stäng</button>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+import * as THREE from 'three';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+
+const $ = s => document.querySelector(s);
+const rand = (a, b) => a + Math.random() * (b - a);
+const pick = a => a[Math.floor(Math.random() * a.length)];
+const PASTELS = ['#ffb3c7', '#ffd59e', '#fff3a0', '#b8f2c9', '#a8e0ff', '#c9b6ff', '#f7f3f0', '#e0c3a8', '#a9adc2', '#ffcfa8', '#ffc2e8', '#9fe3d9'];
+const NAMES = ['Morris', 'Misse', 'Findus', 'Doris', 'Sigge', 'Nisse', 'Tussan', 'Gösta', 'Pelle', 'Smulan', 'Majken', 'Totte', 'Bamse', 'Kurre', 'Lillis', 'Ebbe', 'Svea', 'Mysan', 'Bosse', 'Ninni', 'Kattis', 'Pixel', 'Nougat', 'Kanel', 'Sessan', 'Fnatte', 'Mjölner', 'Leffe'];
+
+try { await Promise.race([document.fonts.ready, new Promise(r => setTimeout(r, 1500))]); } catch (e) {}
+
+// ---------- renderer / scene ----------
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+document.body.prepend(renderer.domElement);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color('#fbe7ef');
+scene.fog = new THREE.Fog('#fbe7ef', 45, 95);
+const camera = new THREE.PerspectiveCamera(42, innerWidth / innerHeight, 0.1, 200);
+scene.add(new THREE.HemisphereLight('#ffffff', '#f3c4d4', 1.7));
+const sun = new THREE.DirectionalLight('#fff4e6', 1.5);
+sun.position.set(14, 32, 22);
+sun.castShadow = true;
+sun.shadow.mapSize.set(2048, 2048);
+Object.assign(sun.shadow.camera, { left: -40, right: 40, top: 40, bottom: -40, far: 100 });
+sun.shadow.bias = -0.0006;
+sun.shadow.radius = 4;
+scene.add(sun);
+addEventListener('resize', () => { camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); });
+
+// ---------- helpers ----------
+const matCache = {};
+const M = (c, o = {}) => { const k = c + JSON.stringify(o); return matCache[k] || (matCache[k] = new THREE.MeshStandardMaterial({ color: c, roughness: 0.75, ...o })); };
+function mesh(geo, mat, x = 0, y = 0, z = 0, parent = scene) {
+  const m = new THREE.Mesh(geo, typeof mat === 'string' ? M(mat) : mat);
+  m.position.set(x, y, z); m.castShadow = true; m.receiveShadow = true; parent.add(m); return m;
+}
+const rbox = (w, h, d, r = 0.15) => new RoundedBoxGeometry(w, h, d, 3, Math.min(r, w / 2 - 0.001, h / 2 - 0.001, d / 2 - 0.001));
+const cyl = (r, h, s = 12) => new THREE.CylinderGeometry(r, r, h, s);
+function shade(hex, a) { const c = new THREE.Color(hex), h = {}; c.getHSL(h); c.setHSL(h.h, h.s, Math.max(0, Math.min(1, h.l + (a > 0 ? a * (1 - h.l) : a * h.l)))); return '#' + c.getHexString(); }
+function canvasTex(w, h) { const c = document.createElement('canvas'); c.width = w; c.height = h; const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4; return { c, x: c.getContext('2d'), t }; }
+function screen(tex, w, h, x, y, z, parent = scene, ry = 0) { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshBasicMaterial({ map: tex, toneMapped: false })); m.position.set(x, y, z); m.rotation.y = ry; parent.add(m); return m; }
+function tube(pts, color, r = 0.045, parent = scene) { const m = new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts.map(p => new THREE.Vector3(...p))), 24, r, 6), M(color)); m.castShadow = true; parent.add(m); return m; }
+function textSprite(text, { bg = 'rgba(255,255,255,.92)', fg = '#5a4a6a', w = 2.6, font = 30 } = {}) {
+  const { c, x, t } = canvasTex(320, 72);
+  x.font = `700 ${font}px Fredoka, sans-serif`;
+  const tw = Math.min(312, x.measureText(text).width + 30);
+  x.fillStyle = bg; x.strokeStyle = '#5a4a6a'; x.lineWidth = 4;
+  x.beginPath(); x.roundRect((320 - tw) / 2, 8, tw, 56, 28); x.fill(); x.stroke();
+  x.fillStyle = fg; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText(text, 160, 37);
+  const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: t, depthTest: false, transparent: true }));
+  s.scale.set(w, w * 72 / 320, 1); s.renderOrder = 10; return s;
+}
+function signPlane(text, w, h, bg, x, y, z, ry = 0) {
+  const { c, x: g, t } = canvasTex(512, Math.round(512 * h / w));
+  g.fillStyle = bg; g.strokeStyle = '#5a4a6a'; g.lineWidth = 12;
+  g.beginPath(); g.roundRect(8, 8, c.width - 16, c.height - 16, 40); g.fill(); g.stroke();
+  g.fillStyle = '#5a4a6a'; g.font = `700 ${Math.round(c.height * 0.5)}px Fredoka, sans-serif`; g.textAlign = 'center'; g.textBaseline = 'middle';
+  g.fillText(text, c.width / 2, c.height / 2 + 4);
+  return screen(t, w, h, x, y, z, scene, ry);
+}
+const anims = [];
+const obstacles = [];
+const block = (x1, z1, x2, z2) => obstacles.push({ x1: Math.min(x1, x2), z1: Math.min(z1, z2), x2: Math.max(x1, x2), z2: Math.max(z1, z2) });
+const ROOM = { x1: -31, x2: 31, z1: -21, z2: 21 };
+function blocked(x, z, r = 0.45) {
+  if (x < ROOM.x1 + r || x > ROOM.x2 - r || z < ROOM.z1 + r || z > ROOM.z2 - r) return true;
+  for (const o of obstacles) if (x > o.x1 - r && x < o.x2 + r && z > o.z1 - r && z < o.z2 + r) return true;
+  return false;
+}
+
+// ---------- shared animated textures ----------
+const ecg = canvasTex(256, 128); const ecgVals = new Array(128).fill(64); let ecgPhase = 0;
+function drawEcg(dt) {
+  ecgPhase += dt * 1.6;
+  const p = ecgPhase % 1; let v = 64 + Math.sin(ecgPhase * 9) * 2;
+  if (p > 0.18 && p < 0.22) v = 40; else if (p > 0.22 && p < 0.26) v = 18; else if (p > 0.26 && p < 0.3) v = 96; else if (p > 0.45 && p < 0.55) v = 56;
+  ecgVals.push(v); ecgVals.shift();
+  const x = ecg.x; x.fillStyle = '#2f3354'; x.fillRect(0, 0, 256, 128);
+  x.strokeStyle = '#8affc1'; x.lineWidth = 4; x.beginPath();
+  ecgVals.forEach((y, i) => i ? x.lineTo(i * 2, y) : x.moveTo(0, y)); x.stroke();
+  x.fillStyle = '#ffb3c7'; x.font = '700 26px Fredoka, sans-serif'; x.fillText('♥ ' + (118 + Math.round(Math.sin(ecgPhase) * 6)), 150, 30);
+  ecg.t.needsUpdate = true;
+}
+const crm = canvasTex(256, 160);
+function drawCrm(t) {
+  const x = crm.x; x.fillStyle = '#f4f0ff'; x.fillRect(0, 0, 256, 160);
+  x.fillStyle = '#c9b6ff'; x.fillRect(0, 0, 256, 26);
+  x.fillStyle = '#5a4a6a'; x.font = '700 16px Fredoka, sans-serif'; x.fillText('KattCRM ☎ ärende #' + (4200 + Math.floor(t)), 8, 18);
+  for (let i = 0; i < 6; i++) { x.fillStyle = ['#ffb3c7', '#b8f2c9', '#a8e0ff'][i % 3]; x.fillRect(10, 36 + i * 20, 60 + ((i * 53 + Math.floor(t * 3)) % 170), 12); }
+  crm.t.needsUpdate = true;
+}
+
+// ---------- cats ----------
+const G = {
+  body: new THREE.CapsuleGeometry(0.45, 0.5, 6, 14), head: new THREE.SphereGeometry(0.5, 22, 16),
+  ear: new THREE.ConeGeometry(0.17, 0.34, 12), earIn: new THREE.ConeGeometry(0.1, 0.2, 10),
+  eye: new THREE.SphereGeometry(0.075, 10, 8), shine: new THREE.SphereGeometry(0.026, 6, 6),
+  nose: new THREE.SphereGeometry(0.055, 8, 6), muzzle: new THREE.SphereGeometry(0.18, 12, 10), cheek: new THREE.CircleGeometry(0.075, 12),
+  leg: new THREE.CapsuleGeometry(0.13, 0.42, 4, 10), arm: new THREE.CapsuleGeometry(0.11, 0.4, 4, 10), tail: new THREE.CapsuleGeometry(0.085, 0.75, 4, 8),
+  coat: new THREE.CylinderGeometry(0.5, 0.63, 0.9, 18, 1, true), steth: new THREE.TorusGeometry(0.28, 0.03, 6, 20, Math.PI * 1.3),
+  disc: cyl(0.08, 0.04), band: new THREE.TorusGeometry(0.54, 0.045, 6, 20, Math.PI), cup: new THREE.SphereGeometry(0.14, 10, 8),
+  hat: new THREE.CylinderGeometry(0.26, 0.3, 0.2, 14), mask: new THREE.SphereGeometry(0.17, 12, 8, 0, Math.PI * 2, 0, Math.PI / 2),
+  badge: rbox(0.2, 0.14, 0.04, 0.02), tie: rbox(0.1, 0.35, 0.04, 0.02), mic: cyl(0.02, 0.4, 6),
+};
+function makeCat(o) {
+  const root = new THREE.Group(), cat = new THREE.Group(); root.add(cat);
+  const fur = M(o.color), pink = M('#ff9fb8'), blk = M('#3a2e3f', { roughness: 0.3 }), wht = M('#ffffff');
+  const body = mesh(G.body, fur, 0, 1.15, 0, cat);
+  const head = new THREE.Group(); head.position.y = 2.05; cat.add(head);
+  mesh(G.head, fur, 0, 0, 0, head);
+  for (const s of [-1, 1]) {
+    mesh(G.ear, fur, s * 0.28, 0.42, 0, head).rotation.z = -s * 0.35;
+    mesh(G.earIn, pink, s * 0.28, 0.4, 0.07, head).rotation.z = -s * 0.35;
+    mesh(G.eye, blk, s * 0.18, 0.07, 0.44, head); mesh(G.shine, wht, s * 0.18 + 0.025, 0.1, 0.51, head);
+    const ch = mesh(G.cheek, M('#ffb3c7', { transparent: true, opacity: 0.8 }), s * 0.3, -0.1, 0.42, head); ch.rotation.y = s * 0.55; ch.castShadow = false;
+  }
+  mesh(G.muzzle, shade(o.color, 0.45), 0, -0.13, 0.37, head).scale.set(1.25, 0.8, 0.8);
+  mesh(G.nose, pink, 0, -0.05, 0.52, head);
+  const legs = [], arms = [];
+  for (const s of [-1, 1]) {
+    const lp = new THREE.Group(); lp.position.set(s * 0.2, 0.72, 0); cat.add(lp); mesh(G.leg, fur, 0, -0.3, 0, lp); legs.push(lp);
+    const ap = new THREE.Group(); ap.position.set(s * 0.52, 1.5, 0); ap.rotation.z = s * 0.25; cat.add(ap); mesh(G.arm, fur, 0, -0.28, 0, ap); arms.push(ap);
+  }
+  const tail = new THREE.Group(); tail.position.set(0, 0.8, -0.38); tail.rotation.x = -0.7; cat.add(tail);
+  mesh(G.tail, shade(o.color, -0.15), 0, 0.45, 0, tail);
+  const cloth = (c) => mesh(G.coat, M(c, { side: THREE.DoubleSide }), 0, 1.02, 0, cat);
+  const of = o.outfit;
+  if (of === 'student' || of === 'doctor') cloth('#ffffff');
+  if (of === 'student') mesh(G.badge, '#a8e0ff', 0.22, 1.35, 0.53, cat);
+  if (of === 'doctor') {
+    const st = mesh(G.steth, '#7c8db5', 0, 1.5, 0.47, cat); st.rotation.z = -Math.PI * 1.15;
+    mesh(G.disc, '#c0c8dd', 0, 1.22, 0.52, cat).rotation.x = Math.PI / 2;
+  }
+  if (of === 'nurse') { cloth('#9ad7e8'); mesh(G.hat, '#ffffff', 0, 0.5, 0, head); }
+  if (of === 'office') {
+    cloth(o.shirt || '#c9b6ff'); mesh(G.tie, '#ff9fb8', 0, 1.3, 0.54, cat);
+    mesh(G.band, '#5a4a6a', 0, 0, 0, head);
+    for (const s of [-1, 1]) mesh(G.cup, '#5a4a6a', s * 0.52, 0, 0, head).scale.set(0.6, 1, 1);
+    const mic = mesh(G.mic, '#5a4a6a', -0.4, -0.2, 0.28, head); mic.rotation.set(1.1, 0, 0.5);
+    mesh(G.eye, '#ff9fb8', -0.26, -0.3, 0.44, head);
+  }
+  if (of === 'patient') cloth('#bfe8c9');
+  if (o.mask) mesh(G.mask, M('#dff6ff', { transparent: true, opacity: 0.85 }), 0, -0.13, 0.46, head).rotation.x = Math.PI / 2;
+  root.scale.setScalar(o.size || 1);
+  return { root, cat, body, head, legs, arms, tail, amt: 0, phase: Math.random() * 10 };
+}
+function animWalk(c, t, dt, moving) {
+  c.amt += ((moving ? 1 : 0) - c.amt) * Math.min(1, dt * 10);
+  const s = Math.sin(t * 11 + c.phase) * 0.85 * c.amt;
+  c.legs[0].rotation.x = s; c.legs[1].rotation.x = -s;
+  c.arms[0].rotation.x = -s * 0.8; c.arms[1].rotation.x = s * 0.8;
+  c.cat.position.y = Math.abs(Math.sin(t * 11 + c.phase)) * 0.14 * c.amt;
+  c.tail.rotation.z = Math.sin(t * 3 + c.phase) * 0.45;
+  c.head.rotation.z = Math.sin(t * 1.7 + c.phase) * 0.06;
+}
+
+// ---------- room ----------
+mesh(rbox(64, 1, 44, 0.4), '#fff4e6', 0, -0.5, 0).castShadow = false;
+mesh(rbox(21, 0.06, 36, 0.03), '#dff1ff', -20, 0.02, 2);
+mesh(rbox(22, 0.06, 36, 0.03), '#e3fbe8', 20.5, 0.02, 2);
+mesh(rbox(18, 0.06, 15, 0.03), '#ffe3ea', 0, 0.02, -13.5);
+mesh(rbox(64, 11, 1, 0.3), '#ffd6e0', 0, 5.5, -22);
+mesh(rbox(1, 11, 44, 0.3), '#e4dcff', -32, 5.5, 0);
+mesh(rbox(1, 11, 44, 0.3), '#d6f3ff', 32, 5.5, 0);
+// low partitions (office | hall | ward), with openings
+for (const px of [-9, 9]) {
+  for (const [z1, z2] of [[-6, 4], [10, 21]]) { mesh(rbox(0.5, 1.5, z2 - z1, 0.2), '#f6d3ff', px, 0.75, (z1 + z2) / 2); block(px - 0.25, z1, px + 0.25, z2); }
+}
+// ICU glass
+const glass = M('#bfe6ff', { transparent: true, opacity: 0.35, roughness: 0.1 });
+for (const [x1, x2] of [[-9, -2.8], [2.8, 9]]) { mesh(rbox(x2 - x1, 2.6, 0.3, 0.1), glass, (x1 + x2) / 2, 1.3, -6).castShadow = false; block(x1, -6.15, x2, -5.85); }
+for (const px of [-9, 9]) { mesh(rbox(0.3, 2.6, 15.5, 0.1), glass, px, 1.3, -13.8).castShadow = false; block(px - 0.15, -21.5, px + 0.15, -6); }
+signPlane('🚨 IVA', 4, 1.2, '#ffb3c7', 0, 3.3, -5.8);
+signPlane('🎧 KONTORET', 9, 1.8, '#a8e0ff', -21, 8.6, -21.45);
+signPlane('🩺 AVDELNING 7', 9, 1.8, '#b8f2c9', 21, 8.6, -21.45);
+// plants
+for (const [x, z] of [[-30, 20], [30, 20], [-10.5, 19], [10.5, 19], [-30, -20], [30, -20]]) {
+  mesh(cyl(0.6, 1, 14), '#ffcfa8', x, 0.5, z); mesh(new THREE.SphereGeometry(1.1, 14, 10), '#9fe3b0', x, 1.9, z); mesh(new THREE.SphereGeometry(0.7, 12, 8), '#b8f2c9', x + 0.4, 2.7, z + 0.2);
+  block(x - 0.7, z - 0.7, x + 0.7, z + 0.7);
+}
+
+// ---------- big wall dashboards ----------
+const npcs = [];
+const dash = canvasTex(1024, 512), dashL = canvasTex(512, 320), dashR = canvasTex(512, 320);
+mesh(rbox(21, 7.4, 0.4, 0.3), '#5a4a6a', 0, 6.4, -21.4);
+screen(dash.t, 20, 6.6, 0, 6.4, -21.18);
+mesh(rbox(0.4, 5.4, 8.4, 0.25), '#5a4a6a', -31.4, 5.2, -2);
+screen(dashL.t, 8, 5, -31.18, 5.2, -2, scene, Math.PI / 2);
+mesh(rbox(0.4, 5.4, 8.4, 0.25), '#5a4a6a', 31.4, 5.2, -2);
+screen(dashR.t, 8, 5, 31.18, 5.2, -2, scene, -Math.PI / 2);
+const history = Array.from({ length: 24 }, () => rand(3, 10));
+let queue = 7, coffee = 83;
+function tile(x, X, Y, W, H, bg, label, val) {
+  x.fillStyle = bg; x.beginPath(); x.roundRect(X, Y, W, H, 26); x.fill();
+  x.strokeStyle = '#5a4a6a'; x.lineWidth = 5; x.stroke();
+  x.fillStyle = '#5a4a6a'; x.textAlign = 'left'; x.font = '600 24px Fredoka, sans-serif'; x.fillText(label, X + 18, Y + 38);
+  x.font = '700 64px Fredoka, sans-serif'; x.fillText(val, X + 18, Y + H - 22);
+}
+function drawDashboards() {
+  const all = [...npcs.map(n => n.role), me.outfit, ...[...remotes.values()].map(r => r.d.outfit)];
+  const cnt = r => all.filter(a => a === r).length;
+  queue = Math.max(0, Math.min(40, queue + Math.round(rand(-2, 2.4)))); coffee = coffee <= 3 ? 100 : coffee - rand(0, 1.2);
+  history.push(rand(3, 12)); history.shift();
+  let x = dash.x; x.fillStyle = '#fff8f0'; x.fillRect(0, 0, 1024, 512);
+  x.fillStyle = '#5a4a6a'; x.font = '700 40px Fredoka, sans-serif'; x.textAlign = 'left'; x.fillText('🐾 KATTSJUKHUSET · LIVE', 28, 54);
+  x.textAlign = 'right'; x.font = '600 28px Fredoka, sans-serif'; x.fillText(new Date().toLocaleTimeString('sv-SE'), 996, 52);
+  const T = [['🐱 Katter totalt', all.length, '#ffd6e0'], ['🩺 Läkare', cnt('doctor'), '#dff1ff'], ['💉 Sjuksköterskor', cnt('nurse'), '#e3fbe8'], ['🎓 Läkarstudenter', all.length, '#fff3a0'],
+    ['🛏️ Patienter', cnt('patient'), '#ffe3ea'], ['🚨 IVA-platser', '3/3', '#ffcfa8'], ['🎧 Kontorskatter', cnt('office'), '#e4dcff'], ['🟢 Spelare online', 1 + remotes.size, '#b8f2c9']];
+  T.forEach(([l, v, c], i) => tile(x, 24 + (i % 4) * 246, 78 + Math.floor(i / 4) * 150, 230, 136, c, l, String(v)));
+  x.fillStyle = '#5a4a6a'; x.textAlign = 'left'; x.font = '600 22px Fredoka, sans-serif'; x.fillText('Mjau per minut', 28, 410);
+  history.forEach((v, i) => { x.fillStyle = PASTELS[i % PASTELS.length]; x.beginPath(); x.roundRect(210 + i * 32, 490 - v * 7, 24, v * 7, 8); x.fill(); x.stroke(); });
+  dash.t.needsUpdate = true;
+  x = dashL.x; x.fillStyle = '#eef6ff'; x.fillRect(0, 0, 512, 320);
+  x.fillStyle = '#5a4a6a'; x.textAlign = 'left'; x.font = '700 34px Fredoka, sans-serif'; x.fillText('🎧 KATTSUPPORT', 24, 50);
+  x.font = '600 30px Fredoka, sans-serif'; x.fillText('Samtal i kö: ' + queue, 24, 115); x.fillText('Snitt väntetid: ' + (queue * 0.7).toFixed(1) + ' min', 24, 165);
+  x.fillText('Nöjda katter: ' + (92 + (queue % 7)) + '%', 24, 215); x.fillText('☕ Kaffe kvar: ' + Math.round(coffee) + '%', 24, 265);
+  x.fillStyle = queue > 20 ? '#ff9fb8' : '#b8f2c9'; x.fillRect(24, 285, Math.min(464, queue * 12), 16);
+  dashL.t.needsUpdate = true;
+  x = dashR.x; x.fillStyle = '#effff3'; x.fillRect(0, 0, 512, 320);
+  x.fillStyle = '#5a4a6a'; x.font = '700 34px Fredoka, sans-serif'; x.fillText('🩺 AVDELNING 7', 24, 50);
+  x.font = '600 30px Fredoka, sans-serif'; x.fillText('Belagda bäddar: 5/6', 24, 115); x.fillText('Dropp igång: 8', 24, 165);
+  x.fillText('Larm senaste timmen: ' + Math.floor(rand(0, 4)), 24, 215); x.fillText('Snitt-puls: ' + Math.round(rand(112, 128)) + ' ♥', 24, 265);
+  dashR.t.needsUpdate = true;
+}
+
+// ---------- office ----------
+function makeDesk(x, z, occupied) {
+  mesh(rbox(3, 0.22, 1.6, 0.1), '#ffe7c7', x, 1.3, z);
+  for (const sx of [-1.35, 1.35]) for (const sz of [-0.65, 0.65]) mesh(rbox(0.14, 1.2, 0.14, 0.05), '#d9c2a8', x + sx, 0.6, z + sz);
+  mesh(rbox(1.5, 0.95, 0.12, 0.06), '#6b6f8a', x, 2.15, z - 0.45); mesh(rbox(0.15, 0.4, 0.15, 0.05), '#6b6f8a', x, 1.6, z - 0.45);
+  screen(crm.t, 1.36, 0.82, x, 2.15, z - 0.385);
+  mesh(rbox(1, 0.06, 0.35, 0.03), '#f3f3f3', x, 1.44, z + 0.15);
+  mesh(cyl(0.12, 0.25), pick(PASTELS), x + 1.1, 1.53, z + 0.2);
+  mesh(rbox(1.1, 0.2, 1.1, 0.1), '#c9b6ff', x, 0.85, z + 1.3); mesh(rbox(1.1, 1.1, 0.2, 0.1), '#c9b6ff', x, 1.5, z + 1.9); mesh(cyl(0.08, 0.75), '#9aa3b8', x, 0.38, z + 1.3);
+  block(x - 1.5, z - 0.8, x + 1.5, z + 0.8); block(x - 0.55, z + 0.8, x + 0.55, z + 2);
+  if (!occupied) return;
+  const s = rand(0.85, 1.05);
+  const c = makeCat({ color: pick(PASTELS), size: s, outfit: 'office', shirt: pick(['#c9b6ff', '#a8e0ff', '#ffd59e', '#b8f2c9']) });
+  c.root.position.set(x, 0.95 - 0.5 * s, z + 1.3); c.root.rotation.y = Math.PI; scene.add(c.root);
+  c.legs.forEach(l => l.rotation.x = -Math.PI / 2);
+  const name = pick(NAMES); const lb = textSprite(name); lb.position.y = 3.2; c.root.add(lb);
+  npcs.push({ role: 'office', name });
+  anims.push(t => {
+    c.arms[0].rotation.x = -1.25 + Math.sin(t * 17 + c.phase) * 0.18; c.arms[1].rotation.x = -1.25 + Math.sin(t * 17 + c.phase + 1.5) * 0.18;
+    c.head.rotation.x = 0.12 + Math.sin(t * 0.8 + c.phase) * 0.05; c.head.rotation.y = Math.sin(t * 0.5 + c.phase) * 0.15;
+    c.tail.rotation.z = Math.sin(t * 2 + c.phase) * 0.5;
+  });
+}
+let deskN = 0;
+for (const z of [-15, -8, -1, 6, 13]) for (const x of [-26.5, -20, -13.5]) makeDesk(x, z, deskN++ % 5 !== 3);
+// coffee machine + water cooler
+mesh(rbox(1.6, 2.4, 1.2, 0.2), '#ffb3c7', -29.5, 1.2, 19); mesh(rbox(0.9, 0.5, 0.1, 0.05), '#5a4a6a', -29.5, 1.8, 19.62); mesh(cyl(0.15, 0.3), '#ffffff', -29.5, 0.95, 19.4);
+block(-30.3, 18.4, -28.7, 19.6);
+mesh(rbox(0.9, 1.6, 0.9, 0.2), '#ffffff', -27, 0.8, 19.8); mesh(cyl(0.4, 0.9, 16), M('#a8e0ff', { transparent: true, opacity: 0.7 }), -27, 2.05, 19.8);
+block(-27.5, 19.3, -26.5, 20.3);
+
+// ---------- beds ----------
+function makeBed(x, z, icu, color) {
+  const g = new THREE.Group(); g.position.set(x, 0, z); g.rotation.y = icu ? Math.PI / 2 : 0; scene.add(g);
+  mesh(rbox(4, 0.45, 2.1, 0.15), icu ? '#ffd6e0' : '#c9d6ea', 0, 0.75, 0, g);
+  for (const sx of [-1.7, 1.7]) for (const sz of [-0.85, 0.85]) mesh(cyl(0.08, 0.6), '#9aa3b8', sx, 0.3, sz, g);
+  mesh(rbox(3.8, 0.35, 1.9, 0.15), '#ffffff', 0, 1.15, 0, g);
+  mesh(rbox(0.3, 1.5, 2.1, 0.12), icu ? '#ffd6e0' : '#c9d6ea', 2.05, 1.25, 0, g);
+  mesh(rbox(0.8, 0.3, 1.3, 0.14), '#fff8fb', 1.4, 1.45, 0, g);
+  const c = makeCat({ color, size: 0.9, outfit: 'patient', mask: icu }); c.tail.visible = false;
+  const outer = new THREE.Group(); outer.rotation.x = -Math.PI / 2; outer.position.set(-0.5, 1.75, 0); g.add(outer);
+  outer.add(c.root); c.root.rotation.z = -Math.PI / 2;
+  mesh(rbox(2.4, 0.9, 2.0, 0.3), pick(['#ffd59e', '#c9b6ff', '#ffb3c7', '#a8e0ff']), -0.55, 1.78, 0, g);
+  const name = pick(NAMES); const lb = textSprite('🤒 ' + name); lb.position.set(0, 3.4, 0); g.add(lb);
+  npcs.push({ role: 'patient', name });
+  anims.push(t => { const b = 1 + Math.sin(t * (icu ? 4 : 2) + c.phase) * 0.06; c.body.scale.set(1, 1, b); c.head.rotation.y = Math.sin(t * 0.4 + c.phase) * 0.2; });
+  // IV
+  const ivs = icu ? [[1.1, 1.5], [0.3, 1.6], [-0.5, 1.5]] : [[1.1, 1.45]];
+  ivs.forEach(([ix, iz], i) => {
+    mesh(cyl(0.05, 4), '#b8bfd1', ix, 2, iz, g); mesh(rbox(0.7, 0.05, 0.05, 0.02), '#b8bfd1', ix, 3.95, iz, g);
+    mesh(rbox(0.45, 0.7, 0.15, 0.07), M(['#fff3a0', '#ffd6e0', '#dff1ff'][i], { transparent: true, opacity: 0.85 }), ix, 3.5, iz, g);
+    tube([[ix, 3.15, iz], [ix - 0.1, 2.4, iz + 0.05], [0.55, 2.05, 0.6]], '#dff6ff', 0.03, g);
+  });
+  // monitor
+  const mon = new THREE.Group(); mon.position.set(1.3, 0, -1.55); g.add(mon);
+  mesh(cyl(0.06, 2.6), '#b8bfd1', 0, 1.3, 0, mon);
+  const scr = new THREE.Group(); scr.position.y = 2.9; scr.rotation.y = icu ? -Math.PI / 2 : 0; mon.add(scr);
+  mesh(rbox(1.1, 0.8, 0.15, 0.07), '#6b6f8a', 0, 0, 0, scr); screen(ecg.t, 0.95, 0.62, 0, 0, 0.08, scr);
+  if (icu) makeIcuMachines(g, c);
+  if (icu) block(x - 1.1, z - 2.6, x + 1.1, z + 2.6); else block(x - 2.2, z - 1.7, x + 2.2, z + 1.7);
+}
+function makeIcuMachines(g) {
+  const chest = [0.8, 2.1, 0], mask = [1.3, 2.25, 0];
+  // ventilator with bellows
+  mesh(rbox(1.2, 2.4, 1, 0.25), '#c9b6ff', 0.3, 1.2, -2.3, g);
+  const bel = mesh(cyl(0.35, 0.8, 16), '#a8e0ff', 0.3, 2.8, -2.3, g);
+  const lights = [0, 1, 2].map(i => mesh(new THREE.SphereGeometry(0.09, 8, 6), new THREE.MeshStandardMaterial({ color: ['#ff9fb8', '#b8f2c9', '#fff3a0'][i], emissive: ['#ff5c8a', '#4dff8f', '#ffe44d'][i] }), (i - 1) * 0.3, 1.8, -1.78, g));
+  lights.forEach((l, i) => l.position.x += 0.3);
+  tube([[0.3, 3.1, -2.3], [0.9, 3.6, -1.2], mask], '#a8e0ff', 0.06, g);
+  // monitor tower with beacon
+  mesh(cyl(0.07, 4.4), '#b8bfd1', 0.2, 2.2, 2.4, g);
+  for (const y of [2.2, 3.0, 3.8]) { const s = new THREE.Group(); s.position.set(0.2, y, 2.4); s.rotation.y = -Math.PI / 2; g.add(s); mesh(rbox(1, 0.7, 0.15, 0.07), '#6b6f8a', 0, 0, 0, s); screen(ecg.t, 0.86, 0.55, 0, 0, 0.08, s); }
+  const beacon = mesh(new THREE.ConeGeometry(0.3, 0.5, 12), new THREE.MeshStandardMaterial({ color: '#ffcfa8', emissive: '#ff8a3d' }), 0.2, 4.7, 2.4, g);
+  tube([[0.2, 2.2, 2.2], [0.6, 2.9, 1.2], chest], '#ffb3c7', 0.045, g);
+  // ECMO spinner
+  mesh(rbox(1.1, 1.1, 1.1, 0.25), '#b8f2c9', -2.9, 0.55, -1.4, g);
+  const wheel = mesh(new THREE.TorusGeometry(0.5, 0.13, 10, 24), '#ff9fb8', -2.9, 1.75, -1.4, g);
+  const blood = mesh(cyl(0.22, 0.5, 12), '#ff7a9c', -2.9, 1.75, -1.4, g); blood.rotation.x = Math.PI / 2;
+  tube([[-2.9, 1.2, -1.0], [-1.6, 1.9, -0.6], chest], '#ff7a9c', 0.05, g);
+  tube([[-2.6, 1.2, -1.8], [-1.2, 2.5, -1.3], [0.2, 2.1, -0.3]], '#ffd59e', 0.05, g);
+  // piston pump
+  mesh(rbox(0.9, 1.3, 0.9, 0.2), '#ffd59e', -2.9, 0.65, 1.5, g);
+  const piston = mesh(cyl(0.18, 0.9), '#a9adc2', -2.9, 1.6, 1.5, g);
+  tube([[-2.9, 1.9, 1.5], [-1.4, 2.8, 1.0], chest], '#b8f2c9', 0.05, g);
+  tube([[-2.5, 1.0, 1.9], [-0.8, 2.3, 1.6], [0.4, 2.0, 0.5]], '#c9b6ff', 0.045, g);
+  // robot lamp arm
+  mesh(cyl(0.12, 5.2), '#a9adc2', 2.6, 2.6, -1.3, g);
+  const arm = new THREE.Group(); arm.position.set(2.6, 5.1, -1.3); g.add(arm);
+  mesh(rbox(3, 0.2, 0.2, 0.08), '#a9adc2', -1.5, 0, 0, arm);
+  mesh(new THREE.SphereGeometry(0.5, 14, 8, 0, Math.PI * 2, 0, Math.PI / 2), M('#fff3a0', { side: THREE.DoubleSide, emissive: '#fff3a0', emissiveIntensity: 0.4 }), -2.9, -0.2, 0, arm).rotation.x = Math.PI;
+  const ph = Math.random() * 6;
+  anims.push(t => {
+    bel.scale.y = 0.6 + 0.45 * (0.5 + 0.5 * Math.sin(t * 4 + ph));
+    lights.forEach((l, i) => l.material.emissiveIntensity = (Math.sin(t * 6 + i * 2 + ph) > 0) ? 1.2 : 0.1);
+    beacon.rotation.y = t * 5; beacon.material.emissiveIntensity = 0.6 + 0.6 * Math.abs(Math.sin(t * 5));
+    wheel.rotation.z = t * 4; blood.rotation.y = t * 3;
+    piston.position.y = 1.6 + Math.sin(t * 7 + ph) * 0.3;
+    arm.rotation.y = Math.sin(t * 0.6 + ph) * 0.35;
+  });
+}
+for (const z of [-1, 6, 13]) { makeBed(27, z, false, pick(PASTELS)); if (z !== 6) makeBed(15.5, z, false, pick(PASTELS)); }
+for (const x of [-5.5, 0, 5.5]) makeBed(x, -16.5, true, pick(PASTELS));
+
+// reception
+mesh(rbox(6, 1.3, 1.3, 0.3), '#ffd59e', 0, 0.65, 2); block(-3, 1.35, 3, 2.65);
+signPlane('RECEPTION', 4, 0.8, '#fff8f0', 0, 1.6, 2.7);
+
+// ---------- walking NPCs ----------
+const ZONES = { ward: [10, -4, 31, 20], icu: [-8.5, -20.5, 8.5, -7], hall: [-8, -5, 8, 20], office: [-30, -18, -10, 20] };
+function freeSpot(zs) {
+  for (let i = 0; i < 40; i++) { const [x1, z1, x2, z2] = ZONES[pick(zs)]; const x = rand(x1, x2), z = rand(z1, z2); if (!blocked(x, z)) return [x, z]; }
+  return [0, 12];
+}
+function makeWalker(role, zs) {
+  const name = pick(NAMES);
+  const title = { doctor: 'Dr. ', nurse: 'Syster ', student: 'Stud. ' }[role] || '';
+  const c = makeCat({ color: pick(PASTELS), size: rand(0.85, 1.15), outfit: role });
+  const [x, z] = freeSpot(zs); c.root.position.set(x, 0, z); scene.add(c.root);
+  const lb = textSprite(title + name); lb.position.y = 3.2; c.root.add(lb);
+  const w = { c, zs, target: freeSpot(zs), wait: rand(0, 3), speed: rand(1.8, 2.8) };
+  npcs.push({ role, name });
+  anims.push((t, dt) => {
+    const p = c.root.position; let moving = false;
+    if (w.wait > 0) w.wait -= dt;
+    else {
+      const dx = w.target[0] - p.x, dz = w.target[1] - p.z, d = Math.hypot(dx, dz);
+      if (d < 0.25) { w.wait = rand(1, 5); w.target = freeSpot(zs); }
+      else {
+        const st = Math.min(d, w.speed * dt), nx = p.x + dx / d * st, nz = p.z + dz / d * st;
+        if (blocked(nx, nz)) { w.target = freeSpot(zs); w.wait = 0.3; }
+        else { p.x = nx; p.z = nz; moving = true; c.root.rotation.y = lerpAngle(c.root.rotation.y, Math.atan2(dx, dz), dt * 8); }
+      }
+    }
+    animWalk(c, t, dt, moving);
+  });
+}
+function lerpAngle(a, b, k) { let d = ((b - a + Math.PI) % (Math.PI * 2) + Math.PI * 2) % (Math.PI * 2) - Math.PI; return a + d * Math.min(1, k); }
+for (let i = 0; i < 4; i++) makeWalker('doctor', ['ward', 'icu', 'hall']);
+for (let i = 0; i < 4; i++) makeWalker('nurse', ['ward', 'icu']);
+for (let i = 0; i < 5; i++) makeWalker('student', ['hall', 'ward', 'office']);
+// receptionist
+{ const c = makeCat({ color: pick(PASTELS), size: 1, outfit: 'nurse' }); c.root.position.set(0, 0, 0.6); scene.add(c.root); const lb = textSprite('Syster Svea'); lb.position.y = 3.2; c.root.add(lb); npcs.push({ role: 'nurse' });
+  anims.push((t, dt) => { animWalk(c, t, dt, false); c.arms[1].rotation.x = -2.6 + Math.sin(t * 6) * 0.4; }); }
+
+// ---------- player ----------
+const SAVE = 'kattsjukhuset-me';
+let me; try { me = JSON.parse(localStorage.getItem(SAVE)); } catch (e) {}
+if (!me || !me.id) me = { id: Math.random().toString(36).slice(2, 10), name: 'Katt ' + pick(NAMES), color: pick(PASTELS), size: 1, outfit: 'student' };
+const saveMe = () => { try { localStorage.setItem(SAVE, JSON.stringify(me)); } catch (e) {} };
+const player = { c: null, x: 0, z: 13, ry: Math.PI, vy: 0, y: 0, key: '' };
+function appearanceKey(d) { return [d.name, d.color, d.size, d.outfit].join('|'); }
+function buildCatFor(obj, d, isMe) {
+  if (obj.c) scene.remove(obj.c.root);
+  obj.c = makeCat({ color: d.color, size: +d.size, outfit: d.outfit });
+  const lb = textSprite((isMe ? '⭐ ' : '') + d.name, { bg: isMe ? '#fff3a0' : '#ffffff' }); lb.position.y = 3.25; obj.c.root.add(lb);
+  scene.add(obj.c.root); obj.key = appearanceKey(d);
+}
+buildCatFor(player, me, true);
+function bubble(obj, text) {
+  if (!obj.c) return;
+  if (obj.bub) obj.c.root.remove(obj.bub);
+  const b = textSprite('💬 ' + text.slice(0, 22), { bg: '#ffffff', w: 3.4 }); b.position.y = 4; obj.c.root.add(b); obj.bub = b;
+  clearTimeout(obj.bubT); obj.bubT = setTimeout(() => { obj.c && obj.c.root.remove(b); if (obj.bub === b) obj.bub = null; }, 4500);
+}
+
+// ---------- input ----------
+const keys = {}; let clickTarget = null, zoom = 1.35;
+const chatBox = $('#chatBox'), chatIn = $('#chatIn');
+addEventListener('keydown', e => {
+  if (document.activeElement === chatIn) {
+    if (e.key === 'Enter') { const v = chatIn.value.trim(); if (v) sendChat(v); chatIn.value = ''; chatBox.classList.add('hide'); chatIn.blur(); }
+    if (e.key === 'Escape') { chatBox.classList.add('hide'); chatIn.blur(); }
+    return;
+  }
+  if (document.activeElement && document.activeElement.tagName === 'INPUT') return;
+  if (!$('#mMe').classList.contains('hide')) return;
+  keys[e.key.toLowerCase()] = true;
+  if (e.key === 'Enter') { chatBox.classList.remove('hide'); setTimeout(() => chatIn.focus(), 0); }
+  if (e.key === ' ' && player.y <= 0.001) player.vy = 9;
+  if (e.key.toLowerCase() === 'm') sendChat('Mjau! 🐾');
+  if (e.key.startsWith('Arrow') || e.key === ' ') e.preventDefault();
+});
+addEventListener('keyup', e => keys[e.key.toLowerCase()] = false);
+addEventListener('wheel', e => { zoom = Math.max(0.45, Math.min(2.2, zoom * (1 + e.deltaY * 0.001))); }, { passive: true });
+const ray = new THREE.Raycaster(), floorPlane = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0), hit = new THREE.Vector3();
+renderer.domElement.addEventListener('pointerdown', e => {
+  ray.setFromCamera(new THREE.Vector2(e.clientX / innerWidth * 2 - 1, -(e.clientY / innerHeight) * 2 + 1), camera);
+  if (ray.ray.intersectPlane(floorPlane, hit)) clickTarget = [hit.x, hit.z];
+});
+$('#bChat').onclick = () => { chatBox.classList.toggle('hide'); if (!chatBox.classList.contains('hide')) chatIn.focus(); };
+
+// ---------- UI: customise ----------
+const params = new URLSearchParams(location.search);
+const room = params.get('room');
+if (room) { $('#meTitle').textContent = 'Du är inbjuden! 💌'; $('#meSub').textContent = 'En katt har bjudit in dig till kattsjukhuset. Skapa din katt och hoppa in!'; }
+const sw = $('#fSw');
+function renderSwatches() {
+  sw.innerHTML = '';
+  PASTELS.forEach(c => { const b = document.createElement('button'); b.style.background = c; b.className = c === me.color ? 'on' : ''; b.onclick = () => { me.color = c; renderSwatches(); liveUpdate(); }; sw.appendChild(b); });
+  const ci = document.createElement('input'); ci.type = 'color'; ci.value = me.color; ci.oninput = () => { me.color = ci.value; liveUpdate(); }; sw.appendChild(ci);
+}
+function fillForm() { $('#fName').value = me.name; $('#fSize').value = me.size; $('#fSizeV').textContent = (+me.size).toFixed(2); $('#fOutfit').value = me.outfit; renderSwatches(); }
+function liveUpdate() {
+  me.name = ($('#fName').value.trim() || 'Katt').slice(0, 16); me.size = +$('#fSize').value; me.outfit = $('#fOutfit').value;
+  $('#fSizeV').textContent = me.size.toFixed(2);
+  if (appearanceKey(me) !== player.key) { buildCatFor(player, me, true); }
+  saveMe();
+}
+['#fName', '#fSize', '#fOutfit'].forEach(s => $(s).addEventListener('input', liveUpdate));
+$('#fGo').onclick = () => { liveUpdate(); $('#mMe').classList.add('hide'); };
+$('#bMe').onclick = () => { fillForm(); $('#mMe').classList.remove('hide'); };
+fillForm();
+
+let toastT;
+function toast(msg) { let t = $('.toast'); if (!t) { t = document.createElement('div'); t.className = 'toast'; document.body.appendChild(t); } t.textContent = msg; t.style.opacity = 1; clearTimeout(toastT); toastT = setTimeout(() => t.style.opacity = 0, 2600); }
+function logMsg(name, text) { const d = document.createElement('div'); d.textContent = name + ': ' + text; const l = $('#log'); l.appendChild(d); while (l.children.length > 6) l.firstChild.remove(); setTimeout(() => d.remove(), 20000); }
+
+// ---------- multiplayer (PeerJS / WebRTC) ----------
+const remotes = new Map(); // id -> {d, c, key, x, z, ry, lastSeen}
+let peer = null, isHost = !room, hostConn = null, conns = [], inviteLink = '';
+const base = location.origin + location.pathname;
+function setInvite(id) { inviteLink = base + '?room=' + encodeURIComponent(id); $('#invLink').textContent = inviteLink; }
+function myState() { return { ...me, x: +player.x.toFixed(2), z: +player.z.toFixed(2), ry: +player.ry.toFixed(2), y: +player.y.toFixed(2), mv: player.moving ? 1 : 0 }; }
+function upsertRemote(p) {
+  if (!p || !p.id || p.id === me.id) return;
+  let r = remotes.get(p.id);
+  if (!r) { r = { d: p, x: p.x, z: p.z, ry: p.ry, y: 0 }; remotes.set(p.id, r); buildCatFor(r, p, false); r.c.root.position.set(p.x, 0, p.z); toast('🐱 ' + p.name + ' kom in!'); }
+  r.d = p; r.lastSeen = performance.now();
+  if (appearanceKey(p) !== r.key) buildCatFor(r, p, false);
+}
+function removeRemote(id) { const r = remotes.get(id); if (!r) return; if (r.c) scene.remove(r.c.root); remotes.delete(id); toast('👋 ' + r.d.name + ' gick hem'); }
+function handle(data, conn) {
+  if (!data || typeof data !== 'object') return;
+  if (data.t === 's') { upsertRemote(data.p); if (conn) conn.pid = data.p.id; }
+  if (data.t === 'all') { const ids = new Set(); data.ps.forEach(p => { ids.add(p.id); upsertRemote(p); }); for (const id of [...remotes.keys()]) if (!ids.has(id)) removeRemote(id); }
+  if (data.t === 'chat') {
+    const r = remotes.get(data.id); if (r) bubble(r, data.text); logMsg(r ? r.d.name : '?', data.text);
+    if (isHost) conns.forEach(c => c !== conn && c.open && c.send(data));
+  }
+}
+function sendChat(text) {
+  text = String(text).slice(0, 80); bubble(player, text); logMsg(me.name, text);
+  const msg = { t: 'chat', id: me.id, text };
+  if (isHost) conns.forEach(c => c.open && c.send(msg)); else if (hostConn && hostConn.open) hostConn.send(msg);
+}
+function setupConn(c) {
+  c.on('data', d => handle(d, c));
+  c.on('close', () => { conns = conns.filter(x => x !== c); if (isHost && c.pid) removeRemote(c.pid); if (!isHost && c === hostConn) { toast('Värden lämnade 😿 – du är nu värd för ett nytt rum'); for (const id of [...remotes.keys()]) removeRemote(id); becomeHost(); } });
+}
+function becomeHost() { isHost = true; hostConn = null; if (peer && peer.id) setInvite(peer.id); }
+function startNet() {
+  if (!window.Peer) { $('#invLink').textContent = 'Multiplayer kunde inte laddas 😿'; return; }
+  peer = new Peer('kattsjukhus-' + Math.random().toString(36).slice(2, 9));
+  peer.on('open', id => {
+    if (isHost) setInvite(id);
+    else {
+      setInvite(room);
+      hostConn = peer.connect(room, { reliable: true });
+      hostConn.on('open', () => toast('🐾 Ansluten till kattsjukhuset!'));
+      setupConn(hostConn);
+    }
+  });
+  peer.on('connection', c => { if (!isHost) { c.close(); return; } conns.push(c); setupConn(c); });
+  peer.on('error', err => { if (err.type === 'peer-unavailable' && !isHost) { toast('Rummet finns inte längre – du är nu värd 🏥'); becomeHost(); } else if (err.type !== 'peer-unavailable') console.warn(err); });
+  let tries = 0;
+  peer.on('disconnected', () => { if (tries++ < 3) setTimeout(() => { try { peer.reconnect(); } catch (e) {} }, 2000 * tries); else $('#invLink').textContent = 'Kunde inte nå multiplayer-servern 😿 Ladda om sidan.'; });
+  setInterval(() => {
+    if (isHost) { const msg = { t: 'all', ps: [myState(), ...[...remotes.values()].map(r => r.d)] }; conns.forEach(c => c.open && c.send(msg)); }
+    else if (hostConn && hostConn.open) hostConn.send({ t: 's', p: myState() });
+    $('#online').textContent = '🟢 ' + (1 + remotes.size) + ' online';
+  }, 100);
+}
+startNet();
+
+async function copyInvite() { if (!inviteLink) return toast('Ansluter fortfarande…'); try { await navigator.clipboard.writeText(inviteLink); toast('📋 Länk kopierad! Skicka den till en katt'); } catch (e) { toast('Markera länken och kopiera'); } }
+$('#bInvite').onclick = () => $('#mInvite').classList.remove('hide');
+$('#invClose').onclick = () => $('#mInvite').classList.add('hide');
+$('#invCopy').onclick = copyInvite;
+$('#invShare').onclick = async () => { if (navigator.share && inviteLink) { try { await navigator.share({ title: 'Kattsjukhuset', text: 'Bli en katt med mig på kattsjukhuset! 🐱🩺', url: inviteLink }); } catch (e) {} } else copyInvite(); };
+
+// ---------- loop ----------
+const clock = new THREE.Clock(); let dashT = 0, crmT = 0;
+const camPos = new THREE.Vector3(0, 15, 30);
+drawDashboards();
+$('#loading').remove();
+renderer.setAnimationLoop(() => {
+  const dt = Math.min(clock.getDelta(), 0.05), t = clock.elapsedTime;
+  // player movement
+  let mx = 0, mz = 0;
+  if (keys['w'] || keys['arrowup']) mz -= 1; if (keys['s'] || keys['arrowdown']) mz += 1;
+  if (keys['a'] || keys['arrowleft']) mx -= 1; if (keys['d'] || keys['arrowright']) mx += 1;
+  if (mx || mz) clickTarget = null;
+  else if (clickTarget) { const dx = clickTarget[0] - player.x, dz = clickTarget[1] - player.z, d = Math.hypot(dx, dz); if (d < 0.2) clickTarget = null; else { mx = dx / d; mz = dz / d; } }
+  player.moving = !!(mx || mz);
+  if (player.moving) {
+    const l = Math.hypot(mx, mz), sp = 5.5 * dt, nx = player.x + mx / l * sp, nz = player.z + mz / l * sp;
+    const r = 0.45 * me.size;
+    if (!blocked(nx, nz, r)) { player.x = nx; player.z = nz; }
+    else if (!blocked(nx, player.z, r)) player.x = nx;
+    else if (!blocked(player.x, nz, r)) player.z = nz;
+    else clickTarget = null;
+    player.ry = lerpAngle(player.ry, Math.atan2(mx, mz), dt * 12);
+  }
+  player.vy -= 25 * dt; player.y = Math.max(0, player.y + player.vy * dt); if (player.y === 0) player.vy = 0;
+  player.c.root.position.set(player.x, player.y, player.z); player.c.root.rotation.y = player.ry;
+  animWalk(player.c, t, dt, player.moving && player.y === 0);
+  // remotes
+  for (const r of remotes.values()) {
+    const k = Math.min(1, dt * 10); r.x += (r.d.x - r.x) * k; r.z += (r.d.z - r.z) * k; r.ry = lerpAngle(r.ry, r.d.ry, k); r.y += ((r.d.y || 0) - r.y) * k;
+    r.c.root.position.set(r.x, r.y, r.z); r.c.root.rotation.y = r.ry; animWalk(r.c, t, dt, !!r.d.mv);
+    if (!isHost && performance.now() - (r.lastSeen || 0) > 5000) removeRemote(r.d.id);
+  }
+  anims.forEach(f => f(t, dt));
+  drawEcg(dt);
+  if ((crmT += dt) > 0.5) { crmT = 0; drawCrm(t); }
+  if ((dashT += dt) > 1) { dashT = 0; drawDashboards(); }
+  // camera
+  const want = new THREE.Vector3(player.x, 13 * zoom + 2, player.z + 15 * zoom);
+  camPos.lerp(want, Math.min(1, dt * 4)); camera.position.copy(camPos); camera.lookAt(player.x, 1.2, player.z - 1);
+  renderer.render(scene, camera);
+});
+</script>
+</body>
+</html>
